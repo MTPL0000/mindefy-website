@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="w-full bg-white px-32 py-3 bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4]">
+    <header className="w-full bg-white px-32 py-3 bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] postion sticky">
       <div className="max-w-[1400px] mx-auto flex items-center justify-between">
         {/* Left: Logo + Title */}
         <div className="relative w-44 aspect-[3.88/1]">

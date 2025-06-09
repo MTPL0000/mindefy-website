@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="w-full min-h-screen bg-gradient-to-r from-[#f3f4ff] via-white to-[#fff3f0] flex items-center justify-center relative overflow-hidden px-6">
+    <section className="w-full min-h-screen bg-gradient-to-r from-[#f3f4ff] #FFFFF to-[#fff3f0] flex items-center justify-center relative overflow-hidden px-6">
       {/* Floating 3D Characters */}
       <div className="absolute left-10 top-1/2 -translate-y-1/2 w-[29.45rem] h-[36.095rem] animate-">
         <Image
