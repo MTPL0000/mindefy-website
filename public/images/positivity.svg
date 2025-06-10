@@ -1,0 +1,15 @@
+<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="64" height="64" rx="15" transform="matrix(1 0 0 -1 0.92688 64.4685)" fill="url(#paint0_linear_1690_28661)"/>
+<foreignObject x="2.92688" y="2.46851" width="80" height="80"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(4px);clip-path:url(#bgblur_0_1690_28661_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="8" x="0.5" y="-0.5" width="63" height="63" rx="14.5" transform="matrix(1 0 0 -1 10.9269 73.4685)" fill="#EEEEEE" fill-opacity="0.61" stroke="white"/>
+<circle cx="43.4269" cy="40.9685" r="13.5" stroke="#6EB94C" stroke-width="2"/>
+<circle cx="39.4269" cy="37.9685" r="1.5" fill="#6EB94C"/>
+<circle cx="48.4269" cy="37.9685" r="1.5" fill="#6EB94C"/>
+<path d="M48.6663 44.129C48.5405 44.7511 48.2935 45.3424 47.9392 45.8691C47.5849 46.3957 47.1304 46.8474 46.6016 47.1984C46.0727 47.5494 45.4799 47.7928 44.857 47.9147C44.2341 48.0366 43.5933 48.0346 42.9711 47.9089C42.349 47.7831 41.7577 47.536 41.2311 47.1818C40.7044 46.8275 40.2527 46.373 39.9017 45.8441C39.5507 45.3153 39.3073 44.7225 39.1854 44.0996" stroke="#6EB94C" stroke-width="2" stroke-linecap="round"/>
+<defs>
+<clipPath id="bgblur_0_1690_28661_clip_path" transform="translate(-2.92688 -2.46851)"><rect x="0.5" y="-0.5" width="63" height="63" rx="14.5" transform="matrix(1 0 0 -1 10.9269 73.4685)"/>
+</clipPath><linearGradient id="paint0_linear_1690_28661" x1="32" y1="0" x2="32" y2="64" gradientUnits="userSpaceOnUse">
+<stop stop-color="#76CD4E"/>
+<stop offset="1" stop-color="#CAFFC9" stop-opacity="0.34"/>
+</linearGradient>
+</defs>
+</svg>

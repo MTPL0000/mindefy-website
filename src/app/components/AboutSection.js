@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="  py-20 font-poppins">
+    <section className="  py-20 font-poppins ">
       <div className="flex flex-col ">
         <div className="">
           <div className="text-center mb-8">
