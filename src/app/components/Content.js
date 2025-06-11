@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Content() {
   return (
-    <div className="  mt-[5rem] ml-[13.56rem] mr-[13.56rem]  w-[62.87rem] h-[71.62rem] ">
+    <div className="  mt-[5rem] ml-[15.56rem] mr-[13.56rem]  w-[62.87rem] h-[71.62rem] ">
       {/* Mission Section */}
       <section className="flex flex-col justify-items-center mb-[4.5rem] w-[62.87rem] h-[18.31rem]">
         <div>
