@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export default function YourHour() {
+export default function GreenBill() {
   useEffect(() => {
     // Handle DaisyUI dropdown behavior - close others when one opens
     const dropdowns = document.querySelectorAll(".dropdown");
@@ -32,37 +32,27 @@ export default function YourHour() {
   }, []);
 
   return (
-    <section className="max-w-[72.37rem]   mx-auto py-20">
-      {/* Header */}
-      <div className="text-center mb-20">
-        <p className="text-[#FF5225] text-[1rem] font-bold tracking-wider uppercase mb-8">
-          PORTFOLIO
-        </p>
-        <h1 className="text-[2.5rem] font-semibold text-gray-900">
-          Recent Product Works
-        </h1>
-      </div>
-
+    <section className="max-w-[72.37rem] mx-auto py-20">
       {/* Main Content - Flex Layout */}
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-14 items-center">
         {/* Left Content */}
         <div className="flex-1 space-y-6 mb-10 lg:space-y-8">
           {/* App Title */}
-          <div>
+          <div className="mb-10">
             <h2 className="text-4xl sm:text-3xl font-bold text-[#2B2B2B] mb-2">
-              YourHour
+              Greenbill
             </h2>
             <h3 className="text-4xl sm:text-xl lg:text-4xl text-gray-700 mb-4 lg:mb-[1.62rem]">
-              Empowering Digital Wellbeing
+              A Sustainable Solution for Digital Bill Management
             </h3>
             <p className="text-base lg:text-lg text-gray-600 leading-relaxed">
-              YourHour is a revolutionary mobile application designed to empower
-              individuals to take charge of their digital lives. With an array
-              of intuitive features and insights, YourHour offers a
-              comprehensive solution to help users achieve a healthier balance
-              between screen time and real-life experiences. By tracking and
-              analyzing screen time usage, setting personalized reminders, and
-              providing a focus mode for uninterrupted productivity.
+              An innovative application developed by Mindefy, designed to
+              revolutionize digital bill generation and management while
+              promoting environmental sustainability. With a strong focus on
+              environmental sustainability and efficiency, GreenBill is
+              revolutionizing the way businesses generate and manage bills. Say
+              goodbye to paper waste and embrace a paperless future with our
+              comprehensive suite of apps: Merchant, Admin, and Customer.
             </p>
           </div>
 
@@ -73,7 +63,7 @@ export default function YourHour() {
               <div className="dropdown dropdown-bottom w-full">
                 <details data-dropdown="dashboard" className="dropdown-details">
                   <summary className="w-full flex items-center justify-between text-left px-1  rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
+                    <span className="text-base sm:text-lg lg:text-xl font-extrabold text-gray-700 dropdown-text">
                       Screen Time Monitoring
                     </span>
                     <svg
@@ -110,7 +100,7 @@ export default function YourHour() {
                   className="dropdown-details"
                 >
                   <summary className="w-full flex items-center justify-between text-left  px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
+                    <span className="text-base sm:text-lg lg:text-xl font-extrabold text-gray-700 dropdown-text">
                       Customizable Reminders and Alerts
                     </span>
                     <svg
@@ -143,7 +133,7 @@ export default function YourHour() {
               <div className="dropdown dropdown-bottom w-full">
                 <details data-dropdown="addiction" className="dropdown-details">
                   <summary className="w-full flex items-center justify-between text-left px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
+                    <span className="text-base sm:text-lg lg:text-xl font-extrabold text-gray-700 dropdown-text">
                       Focus Mode
                     </span>
                     <svg
@@ -177,7 +167,7 @@ export default function YourHour() {
               <div className="dropdown dropdown-bottom w-full">
                 <details data-dropdown="stories" className="dropdown-details">
                   <summary className="w-full flex items-center justify-between text-left  px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
+                    <span className="text-base sm:text-lg lg:text-xl font-extrabold text-gray-700 dropdown-text">
                       Goal Setting and Achievements
                     </span>
                     <svg
@@ -211,7 +201,7 @@ export default function YourHour() {
               <div className="dropdown dropdown-bottom w-full">
                 <details data-dropdown="analytics" className="dropdown-details">
                   <summary className="w-full flex items-center justify-between text-left  px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
+                    <span className="text-base sm:text-lg lg:text-xl font-extrabold text-gray-700 dropdown-text">
                       Usage Analytics
                     </span>
                     <svg
@@ -265,14 +255,19 @@ export default function YourHour() {
 
         {/* Right Content - Phone */}
         <div className="flex-1 relative">
-          <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
+          <div className="relative w-[35.93rem] h-[47.5rem] lg:max-w-xl xl:max-w-2xl mx-auto">
             <img
-              src="/images/smartphone.svg"
-              alt="YourHour mobile app mockups showing dashboard and features"
-              className="w-full h-auto"
+              src="/images/greenbill.webp"
+              alt="YourHour mobile app mockups showig dashboard and features"
+              className=""
             />
           </div>
         </div>
+      </div>
+      <div className=" flex justify-center mt-16">
+        <button className="bg-black text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-800 transition">
+          View All Projects
+        </button>
       </div>
 
       {/* CSS for dropdown styling and arrow rotation */}

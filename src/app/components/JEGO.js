@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export default function YourHour() {
+export default function JEGO() {
   useEffect(() => {
     // Handle DaisyUI dropdown behavior - close others when one opens
     const dropdowns = document.querySelectorAll(".dropdown");
@@ -24,57 +24,64 @@ export default function YourHour() {
       }
     });
 
-    // Initially open the first dropdown (Curated Dashboard)
-    const firstDropdown = document.querySelector('[data-dropdown="dashboard"]');
+    // Initially open the first dropdown (Personal Transformation)
+    const firstDropdown = document.querySelector(
+      '[data-dropdown="transformation"]'
+    );
     if (firstDropdown) {
       firstDropdown.setAttribute("open", "");
     }
   }, []);
 
   return (
-    <section className="max-w-[72.37rem]   mx-auto py-20">
-      {/* Header */}
-      <div className="text-center mb-20">
-        <p className="text-[#FF5225] text-[1rem] font-bold tracking-wider uppercase mb-8">
-          PORTFOLIO
-        </p>
-        <h1 className="text-[2.5rem] font-semibold text-gray-900">
-          Recent Product Works
-        </h1>
-      </div>
-
+    <section className="max-w-[72.37rem] mx-auto ">
       {/* Main Content - Flex Layout */}
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-14 items-center">
-        {/* Left Content */}
-        <div className="flex-1 space-y-6 mb-10 lg:space-y-8">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-14 ">
+        {/* Left Content - Device Mockups */}
+        <div className="flex-1 relative">
+          <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl  mx-auto">
+            <img
+              src="/images/jegolaptop.webp"
+              alt="JEGO application shown on laptop and mobile devices"
+              className="w-full"
+            />
+          </div>
+        </div>
+
+        {/* Right Content */}
+        <div className="flex-1 space-y-6 lg:space-y-8">
           {/* App Title */}
-          <div>
+          <div className="mb-10">
             <h2 className="text-4xl sm:text-3xl font-bold text-[#2B2B2B] mb-2">
-              YourHour
+              JEGO - Redefining
             </h2>
             <h3 className="text-4xl sm:text-xl lg:text-4xl text-gray-700 mb-4 lg:mb-[1.62rem]">
-              Empowering Digital Wellbeing
+              Growth And Transformation
             </h3>
             <p className="text-base lg:text-lg text-gray-600 leading-relaxed">
-              YourHour is a revolutionary mobile application designed to empower
-              individuals to take charge of their digital lives. With an array
-              of intuitive features and insights, YourHour offers a
-              comprehensive solution to help users achieve a healthier balance
-              between screen time and real-life experiences. By tracking and
-              analyzing screen time usage, setting personalized reminders, and
-              providing a focus mode for uninterrupted productivity.
+              The collaborative application development journey between Mindefy
+              and JEGO signifies a shared commitment to inspiring and empowering
+              individuals. Together, we have harnessed cutting-edge
+              technologies, user-centric design, and iterative development
+              processes to create remarkable applications that revolutionize
+              personal growth journeys. By leveraging our expertise in app
+              development and digital solutions, we have helped JEGO create a
+              unique and impactful platform.
             </p>
           </div>
 
           {/* Dropdown Sections */}
-          <div className="space-y-5  lg:space-y-6">
-            {/* Curated Dashboard */}
+          <div className="space-y-4 lg:space-y-6">
+            {/* Personal Transformation */}
             <div className="pb-4">
               <div className="dropdown dropdown-bottom w-full">
-                <details data-dropdown="dashboard" className="dropdown-details">
-                  <summary className="w-full flex items-center justify-between text-left px-1  rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
-                      Screen Time Monitoring
+                <details
+                  data-dropdown="transformation"
+                  className="dropdown-details"
+                >
+                  <summary className="w-full flex items-center justify-between text-left  px-1 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
+                    <span className="text-base sm:text-lg lg:text-xl font-extrabold text-gray-700 dropdown-text">
+                      Personal Transformation
                     </span>
                     <svg
                       className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow"
@@ -91,60 +98,27 @@ export default function YourHour() {
                     </svg>
                   </summary>
                   <div className="mt-3">
-                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed pl-1 ">
-                      Users can track their daily and weekly screen time usage
-                      across various apps and categories, gaining insights into
-                      their digital habits and identifying areas for
-                      improvement.
+                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
+                      JEGO has had a profound impact on individuals' personal
+                      growth and transformation. Users have reported improved
+                      self-awareness and significant positive changes in their
+                      mindset and behaviors.
                     </p>
                   </div>
                 </details>
               </div>
             </div>
 
-            {/* Smart & Curated Challenges */}
-            <div className=" pb-4">
+            {/* Global Accessibility */}
+            <div className="pb-4">
               <div className="dropdown dropdown-bottom w-full">
                 <details
-                  data-dropdown="challenges"
+                  data-dropdown="accessibility"
                   className="dropdown-details"
                 >
                   <summary className="w-full flex items-center justify-between text-left  px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
-                      Customizable Reminders and Alerts
-                    </span>
-                    <svg
-                      className="w-5 h- lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </summary>
-                  <div className="mt-3">
-                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed pl-1 ">
-                      Users can set personalized reminders and alerts to help
-                      them take regular breaks, reduce excessive screen time,
-                      and establish healthier usage patterns.
-                    </p>
-                  </div>
-                </details>
-              </div>
-            </div>
-
-            {/* Addiction Level */}
-            <div className=" pb-4">
-              <div className="dropdown dropdown-bottom w-full">
-                <details data-dropdown="addiction" className="dropdown-details">
-                  <summary className="w-full flex items-center justify-between text-left px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
-                      Focus Mode
+                    <span className="text-lg sm:text-lg lg:text-xl font-extrabold text-gray-700 dropdown-text">
+                      Global Accessibility
                     </span>
                     <svg
                       className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow"
@@ -161,24 +135,25 @@ export default function YourHour() {
                     </svg>
                   </summary>
                   <div className="mt-3">
-                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed pl-1 ">
-                      YourHour includes a Focus Mode that allows users to block
-                      distractions by temporarily disabling selected apps or
-                      notifications, enabling them to concentrate on important
-                      tasks or enjoy screen-free time.
+                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
+                      JEGO's platform is designed to be accessible worldwide,
+                      breaking down geographical barriers to personal
+                      development. The application supports multiple languages
+                      and offers culturally relevant content for diverse
+                      audiences.
                     </p>
                   </div>
                 </details>
               </div>
             </div>
 
-            {/* Read YourStories */}
-            <div className=" pb-4">
+            {/* Community Building */}
+            <div className="pb-4">
               <div className="dropdown dropdown-bottom w-full">
-                <details data-dropdown="stories" className="dropdown-details">
+                <details data-dropdown="community" className="dropdown-details">
                   <summary className="w-full flex items-center justify-between text-left  px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
-                      Goal Setting and Achievements
+                    <span className="text-base sm:text-lg lg:text-xl font-extrabold text-gray-700 dropdown-text">
+                      Community Building
                     </span>
                     <svg
                       className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow"
@@ -195,27 +170,27 @@ export default function YourHour() {
                     </svg>
                   </summary>
                   <div className="mt-3">
-                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed pl-1  ">
-                      Users can set goals for reducing screen time or achieving
-                      specific usage targets. The app tracks progress and
-                      rewards users with achievements upon reaching milestones,
-                      providing motivation and a sense of accomplishment.
+                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
+                      JEGO fosters a supportive community where users can
+                      connect, share experiences, and learn from each other. The
+                      platform includes discussion forums, group challenges, and
+                      collaborative projects to enhance the learning experience.
                     </p>
                   </div>
                 </details>
               </div>
             </div>
 
-            {/* Usage Analytics */}
-            <div className=" pb-4">
+            {/* Positive Social Impact */}
+            <div className="pb-4">
               <div className="dropdown dropdown-bottom w-full">
-                <details data-dropdown="analytics" className="dropdown-details">
+                <details data-dropdown="impact" className="dropdown-details">
                   <summary className="w-full flex items-center justify-between text-left  px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
-                      Usage Analytics
+                    <span className="text-base sm:text-lg lg:text-xl font-extrabold text-gray-700 dropdown-text">
+                      Positive Social Impact
                     </span>
                     <svg
-                      className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400   transition-transform duration-300 ease-in-out dropdown-arrow"
+                      className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -229,9 +204,11 @@ export default function YourHour() {
                     </svg>
                   </summary>
                   <div className="mt-3">
-                    <p className="text-sm lg:text-base text-gray-600 \ leading-relaxed pl-1 ">
-                      Comprehensive analytics showing detailed patterns of your
-                      app usage, screen time trends, and productivity insights.
+                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
+                      Beyond individual growth, JEGO is committed to creating
+                      positive social change. The platform encourages users to
+                      apply their personal development in ways that benefit
+                      their communities and address social challenges.
                     </p>
                   </div>
                 </details>
@@ -260,17 +237,6 @@ export default function YourHour() {
                 />
               </svg>
             </a>
-          </div>
-        </div>
-
-        {/* Right Content - Phone */}
-        <div className="flex-1 relative">
-          <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
-            <img
-              src="/images/smartphone.svg"
-              alt="YourHour mobile app mockups showing dashboard and features"
-              className="w-full h-auto"
-            />
           </div>
         </div>
       </div>
