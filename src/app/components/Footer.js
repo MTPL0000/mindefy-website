@@ -5,9 +5,9 @@ export default function Footer() {
 
   return (
     <footer
-      className="w-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-400 text-[#212353] relative overflow-hidden"
+      className="w-full text-[#212353] relative overflow-hidden"
       style={{
-        background: "linear-gradient(to right, #d2cbee, #FFFFFF, #edbaad)",
+        background: "linear-gradient(165deg, #f2f2f5, #FFFFFF, #edbaad)",
       }}
     >
       <div className="container mx-auto px-[8.83rem] h-full flex flex-col justify-between mb- pt-[3.94rem]">
