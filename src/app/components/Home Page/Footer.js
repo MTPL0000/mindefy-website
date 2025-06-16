@@ -65,9 +65,9 @@ export default function Footer() {
             </div>
 
             {/* Company */}
-            <div className="flex-1 min-w-[12rem]">
+            <div className="flex-1 ">
               <h3 className="text-lg font-semibold mb-4">COMPANY</h3>
-              <div className="space-y-6 text-sm opacity-90">
+              <div className="space-y-4 text-sm opacity-90">
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">
                   About
                 </p>
@@ -87,9 +87,9 @@ export default function Footer() {
             </div>
 
             {/* Product */}
-            <div className="flex-1 min-w-[12rem]">
+            <div className="flex-1 ">
               <h3 className="text-lg font-semibold mb-4">PRODUCT</h3>
-              <div className="space-y-6 text-sm opacity-90">
+              <div className="space-y-4 text-sm opacity-90">
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">
                   YourHour
                 </p>
@@ -111,14 +111,14 @@ export default function Footer() {
             {/* Services */}
             <div className="flex-1 ">
               <h3 className="text-lg font-semibold mb-4">SERVICES</h3>
-              <div className="space-y-6 text-sm opacity-90">
+              <div className="space-y-4 text-sm opacity-90">
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">
                   Android App Development
                 </p>
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">
                   Hybrid App Development
                 </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
+                <p className="hover:opacity-100 cursor-pointer transition-opacity ">
                   Enterprise Business Development
                 </p>
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">

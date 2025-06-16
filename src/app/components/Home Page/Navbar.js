@@ -1,6 +1,11 @@
-// app/components/Navbar.js (or wherever your component lives)
+"use client";
+
+import { useState } from "react";
+import ServicesDrop from "./ServicesDrop";
 
 export default function Navbar() {
+  const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+
   return (
     <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-6 md:px-16 py-4 sticky top-0 z-20 shadow">
       <div className="flex items-center justify-between">
@@ -27,7 +32,27 @@ export default function Navbar() {
           <a href="#" className="hover:text-[#2c2178]">
             About Us
           </a>
-          <span className="hover:text-[#2c2178] cursor-pointer">Services</span>
+
+          {/* Services with dropdown */}
+          <div
+            className="relative group"
+            onMouseEnter={() => setShowServicesDropdown(true)}
+            onMouseLeave={() => setShowServicesDropdown(false)}
+          >
+            <span className="hover:text-[#2c2178] cursor-pointer">
+              Services
+            </span>
+
+            {/* Services Dropdown - positioned at top of page with no gap */}
+            <div className="absolute left-0 top-[100%] w-max">
+              {/* Invisible bridge to prevent hover gap */}
+              <div className="h-[0.5rem] w-full"></div>
+
+              {/* Actual dropdown */}
+              {showServicesDropdown && <ServicesDrop />}
+            </div>
+          </div>
+
           <span className="hover:text-[#2c2178] cursor-pointer">Products</span>
           <span className="hover:text-[#2c2178] cursor-pointer">Projects</span>
           <span className="hover:text-[#2c2178] cursor-pointer">
@@ -48,7 +73,10 @@ export default function Navbar() {
         <a href="#" className="hover:text-[#2c2178]">
           About Us
         </a>
+
+        {/* Mobile Services (no hover, could add click toggle if needed) */}
         <span className="hover:text-[#2c2178] cursor-pointer">Services</span>
+
         <span className="hover:text-[#2c2178] cursor-pointer">Products</span>
         <span className="hover:text-[#2c2178] cursor-pointer">Projects</span>
         <span className="hover:text-[#2c2178] cursor-pointer">
