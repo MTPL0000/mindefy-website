@@ -1,14 +1,15 @@
-import AboutSection from "./components/Home Page/AboutSection";
-import HeroSection from "./components/Home Page/HeroSection";
-import Navbar from "./components/Home Page/Navbar";
-import Content from "./components/Home Page/Content";
-import Services from "./components/Home Page/Services";
-import YouHour from "./components/Home Page/YourHour";
-import JEGO from "./components/Home Page/JEGO";
-import GreenBill from "./components/Home Page/GreenBill";
-import Testimonials from "./components/Home Page/Testimonials";
-import Footer from "./components/Home Page/Footer";
-import Blog from "./components/Home Page/Blog";
+import AboutSection from "./components/HomePage/AboutSection";
+import HeroSection from "./components/HomePage/HeroSection";
+import Navbar from "./components/HomePage/Navbar";
+import Content from "./components/HomePage/Content";
+import Services from "./components/HomePage/Services";
+import YouHour from "./components/HomePage/YourHour";
+import JEGO from "./components/HomePage/JEGO";
+import GreenBill from "./components/HomePage/GreenBill";
+import Testimonials from "./components/HomePage/Testimonials";
+import Footer from "./components/HomePage/Footer";
+import Blog from "./components/HomePage/Blog";
+import ContactUs from "./components/HomePage/ContactUs";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <GreenBill />
       <Testimonials />
       <Blog />
+      <ContactUs />
       <Footer />
     </>
   );
