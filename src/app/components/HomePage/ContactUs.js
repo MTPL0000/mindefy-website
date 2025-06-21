@@ -52,15 +52,15 @@ export default function ContactUs() {
 
   return (
     <section className="w-full py-[3.43rem] ">
-      <div className="max-w-[75rem] mx-auto">
+      <div className="max-w-[75rem] mx-auto ">
         <h1 className="text-[2.12rem] font-semibold text-center mb-[3rem]">
           Lets Get In Touch
         </h1>
 
-        <div className="flex md:flex-row gap-[3rem]">
+        <div className="flex md:flex-row gap-[3rem] items-center">
           {/* Left Column - Image and Contact Info */}
           <div className="flex-1">
-            <div className="relative w-full h-[27rem] mb-[2.3rem]">
+            <div className=" opacity-85 relative w-[33.75rem] h-[29.31rem] mb-[2.3rem]">
               <Image
                 src="/images/ContactUs2.webp"
                 alt="Mindefy Office"
@@ -78,7 +78,7 @@ export default function ContactUs() {
 
           {/* Right Column - Contact Form */}
           <div className="flex-1">
-            <form onSubmit={handleSubmit} className="space-y-[1.75rem]">
+            <form onSubmit={handleSubmit} className="space-y-[.75rem]">
               {/* Full Name Field */}
               <div>
                 <label

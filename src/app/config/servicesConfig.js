@@ -27,7 +27,7 @@ export const servicesData = [
   },
   {
     id: "mean-mern-stack",
-    title: "Mean & MERN Stack Development",
+    title: "MEAN & MERN Stack Development",
     category: "Modern Application Development",
     route: "/mean-mern-stack-development",
     component: "MeanMern",
@@ -53,7 +53,7 @@ export const servicesData = [
   // IT/Staff Argumentation
   {
     id: "it-consulting",
-    title: "IT Consulting Services",
+    title: "Staff Augmentation Services",
     category: "IT/Staff Argumentation",
     route: "/it-consulting",
     component: "ITConsulting",
@@ -61,7 +61,7 @@ export const servicesData = [
   },
   {
     id: "startup-incubation-it",
-    title: "Startup Incubation Services",
+    title: "IT Consulting Services",
     category: "IT/Staff Argumentation",
     route: "/startup-incubation-it",
     component: "StartupIncubationIT",

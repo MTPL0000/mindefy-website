@@ -55,7 +55,7 @@ export default function Navbar() {
                 <div className="fixed left-0 top-[4rem] w-full h-[5rem] z-30"></div>
 
                 {/* Actual dropdown positioned from left edge */}
-                <div className="fixed left-0 top-[4rem] w-full flex justify-start  z-40">
+                <div className="fixed left-0 top-[4.5rem] w-full flex justify-start  z-40">
                   <ServicesDrop />
                 </div>
               </>
