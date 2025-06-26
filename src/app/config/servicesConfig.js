@@ -52,19 +52,19 @@ export const servicesData = [
 
   // IT/Staff Argumentation
   {
-    id: "it-consulting",
+    id: "staff-services",
     title: "Staff Augmentation Services",
     category: "IT/Staff Argumentation",
-    route: "/it-consulting",
-    component: "ITConsulting",
+    route: "/staff-services",
+    component: "SAS",
     description: "Professional IT consulting",
   },
   {
-    id: "startup-incubation-it",
+    id: "it-consulting",
     title: "IT Consulting Services",
     category: "IT/Staff Argumentation",
-    route: "/startup-incubation-it",
-    component: "StartupIncubationIT",
+    route: "/it-consulting",
+    component: "ITC",
     description: "IT startup support and incubation",
   },
 

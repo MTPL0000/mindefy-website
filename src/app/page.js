@@ -11,7 +11,7 @@ import Footer from "./components/HomePage/Footer";
 import Blog from "./components/HomePage/Blog";
 import ContactUs from "./components/HomePage/ContactUs";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Navbar />

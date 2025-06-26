@@ -15,8 +15,8 @@ export default function IOS() {
       <section className=" mt-28 mx-auto ">
         <div className=" mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
-            Ios Development
+          <p className="text-[#FF5225] text-[1rem] font-bold tracking-widest  mb-[1.25rem]">
+            iOS DEVELOPMENT
           </p>
 
           {/* Main Title */}

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ServicesDrop from "./ServicesDrop";
+import Link from "next/link";
 
 export default function Navbar() {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
@@ -10,15 +11,16 @@ export default function Navbar() {
     <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-6 md:px-16 py-4 sticky top-0 z-20 shadow">
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <button src="/HomePage">
-          <div className="relative w-36 md:w-44 aspect-[3.88/1]">
+
+        <Link href="/">
+          <div className="relative w-36 md:w-44 aspect-[3.88/1] cursor-pointer">
             <img
               src="/images/nav-logo.svg"
               alt="Mindefy Logo"
               className="w-full h-full object-contain"
             />
           </div>
-        </button>
+        </Link>
 
         {/* Hamburger menu toggle (checkbox hack) */}
         <input type="checkbox" id="menu-toggle" className="hidden peer" />
@@ -41,12 +43,12 @@ export default function Navbar() {
             onMouseEnter={() => setShowServicesDropdown(true)}
             onMouseLeave={() => setShowServicesDropdown(false)}
           >
-            <span className="hover:text-[#2c2178] cursor-pointer py-2">
+            <p className="hover:text-[#2c2178] h-12 mt-1.5  cursor-pointer py-2">
               Services
               <select>
                 <option></option>
               </select>
-            </span>
+            </p>
 
             {/* Services Dropdown with hover bridge */}
             {showServicesDropdown && (
