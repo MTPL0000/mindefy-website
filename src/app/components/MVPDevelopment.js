@@ -104,12 +104,12 @@ export default function MVPDevelopment() {
       </div>
 
       {/* Product Development Services Section */}
-      <section className="mt-[3.75rem]">
-        <div className="max-w-[75rem] mx-auto px-6 relative">
+      <section className="mt-[3.75rem] mb-80 ">
+        <div className="max-w-[75rem] mx-auto  relative">
           {/* Central Rocket Image */}
-          <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-full  h-full z-10">
+          <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-[95rem]  h-[152.5rem] z-10">
             <Image
-              src="/images/MVP1.webp"
+              src="/images/MVProcket.webp"
               alt="Rocket Development Process"
               fill
               className="object-contain"
@@ -117,10 +117,10 @@ export default function MVPDevelopment() {
           </div>
 
           {/* Services Timeline Layout */}
-          <div className="relative z-10 space-y-[6rem]">
+          <div className="relative z-10 space-y-[-11rem]">
             {/* Service 1: Agile Methodology - Left Side */}
             <div className="flex items-center">
-              <div className="w-1/2 pr-12">
+              <div className="w-1/2 pl-12">
                 <div className="">
                   <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
                     <Image
@@ -155,7 +155,7 @@ export default function MVPDevelopment() {
             {/* Service 2: MVP Design - Right Side */}
             <div className="flex items-center">
               <div className="w-1/2"></div>
-              <div className="w-1/2 pl-12">
+              <div className="w-1/2 pl-15">
                 <div className="">
                   <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
                     <Image
@@ -187,22 +187,22 @@ export default function MVPDevelopment() {
 
             {/* Service 3: Market Research - Left Side */}
             <div className="flex items-center">
-              <div className="w-1/2 pr-12">
+              <div className="w-1/2 pl-12">
                 <div className="">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
-                      <Image
-                        src="/images/market-research-illustration.png"
-                        alt="MVP Launch and Market Research"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
+                  <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <Image
+                      src="/images/MVP4.webp"
+                      alt="MVP Launch and Market Research"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="flex items-start w-[30.75rem]">
                     <div className="flex-1">
-                      <h3 className="text-[1.125rem] font-bold text-[#000000] mb-3 leading-tight">
+                      <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
                         MVP Launch and Market Research
                       </h3>
-                      <p className="text-[0.875rem] text-[#444444] leading-relaxed text-justify">
+                      <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
                         We provide support throughout the MVP launch phase,
                         conducting comprehensive market research to identify
                         target audiences, analyze competitor trends, and ensure
@@ -220,14 +220,22 @@ export default function MVPDevelopment() {
             {/* Service 4: Product Development as-a-Service - Right Side */}
             <div className="flex items-center">
               <div className="w-1/2"></div>
-              <div className="w-1/2 pl-12">
-                <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <div className="flex items-start gap-4 mb-4">
+              <div className="w-1/2 pl-15">
+                <div className="">
+                  <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <Image
+                      src="/images/MVP5.webp"
+                      alt="Product Development as-a-Service"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="flex items-start w-[30.75rem]">
                     <div className="flex-1">
-                      <h3 className="text-[1.125rem] font-bold text-[#000000] mb-3 leading-tight">
+                      <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
                         Product Development as-a-Service
                       </h3>
-                      <p className="text-[0.875rem] text-[#444444] leading-relaxed text-justify">
+                      <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
                         We offer Product Development as-a-Service, a
                         comprehensive solution designed to support companies
                         throughout their entire product development journey. Our
@@ -237,14 +245,6 @@ export default function MVPDevelopment() {
                         industry expertise.
                       </p>
                     </div>
-                    <div className="relative w-[8rem] h-[8rem] flex-shrink-0">
-                      <Image
-                        src="/images/product-service-illustration.png"
-                        alt="Product Development as-a-Service"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -252,22 +252,22 @@ export default function MVPDevelopment() {
 
             {/* Service 5: Innovation Lab - Left Side */}
             <div className="flex items-center">
-              <div className="w-1/2 pr-12">
-                <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="relative w-[8rem] h-[8rem] flex-shrink-0">
-                      <Image
-                        src="/images/innovation-lab-illustration.png"
-                        alt="Innovation Lab"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
+              <div className="w-1/2 pl-12">
+                <div className="">
+                  <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <Image
+                      src="/images/MVP6.webp"
+                      alt="Innovation Lab"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="flex items-start w-[30.75rem]">
                     <div className="flex-1">
-                      <h3 className="text-[1.125rem] font-bold text-[#000000] mb-3 leading-tight">
+                      <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
                         Innovation Lab
                       </h3>
-                      <p className="text-[0.875rem] text-[#444444] leading-relaxed text-justify">
+                      <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
                         Our Innovation Lab serves as a collaborative space where
                         creative ideas and cutting-edge technologies come
                         together to drive breakthrough innovations. Our
@@ -282,17 +282,22 @@ export default function MVPDevelopment() {
               </div>
               <div className="w-1/2"></div>
             </div>
-          </div>
 
-          {/* Bottom Astronaut */}
-          <div className="relative z-20 flex justify-center mt-12">
-            <div className="relative w-[6rem] h-[6rem]">
-              <Image
-                src="/images/astronaut-figure.png"
-                alt="Astronaut Innovation"
-                fill
-                className="object-contain"
-              />
+            {/* Bottom Astronaut */}
+            <div className="flex items-center">
+              <div className="w-1/2"></div>
+              <div className="w-1/2 pl-12">
+                <div className="">
+                  <div className="relative w-[14.625rem] h-[20.75rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <Image
+                      src="/images/Astronout.webp"
+                      alt="Product Development as-a-Service"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
