@@ -60,9 +60,9 @@ export default function ContactUs() {
         <div className="flex md:flex-row gap-[3rem] items-center">
           {/* Left Column - Image and Contact Info */}
           <div className="flex-1">
-            <div className=" opacity-85 relative w-[33.75rem] h-[29.31rem] mb-[2.3rem]">
+            <div className=" opacity-92 relative w-[33.75rem] h-[29.31rem] mb-[2.3rem]">
               <Image
-                src="/images/ContactUs2.webp"
+                src="/images/footer1.jpg"
                 alt="Mindefy Office"
                 fill
                 className="object-cover rounded-[0.5rem]"
