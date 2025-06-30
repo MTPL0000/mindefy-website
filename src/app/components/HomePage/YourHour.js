@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect } from "react";
 
 export default function YourHour() {
@@ -267,11 +266,10 @@ export default function YourHour() {
         {/* Right Content - Phone */}
         <div className="flex-1 relative">
           <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
-            <Image
+            <img
               src="/images/smartphone.svg"
               alt="YourHour mobile app mockups showing dashboard and features"
               className="w-full h-auto"
-              fill
             />
           </div>
         </div>
