@@ -3,9 +3,11 @@
 import { useState } from "react";
 import ServicesDrop from "./ServicesDrop";
 import Link from "next/link";
+import ProductsDropdown from "./ProductsDropdown";
 
 export default function Navbar() {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+  const [showProductsDropdown, setShowProductsDropdown] = useState(false);
 
   return (
     <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-6 md:px-16 py-4 sticky top-0 z-20 shadow">
@@ -64,7 +66,30 @@ export default function Navbar() {
             )}
           </div>
 
-          <span className="hover:text-[#2c2178] cursor-pointer">Products</span>
+          {/* Products with dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setShowProductsDropdown(true)}
+            onMouseLeave={() => setShowProductsDropdown(false)}
+          >
+            <p className="hover:text-[#2c2178] h-12 mt-1.5  cursor-pointer py-2">
+              Products
+              <select>
+                <option></option>
+              </select>
+            </p>
+
+            {/* Products Dropdown with hover bridge */}
+            {showProductsDropdown && (
+              <>
+                {/* Actual dropdown positioned from left edge */}
+                <div className="fixed left-[45%] top-[4.5rem] z-40">
+                  <ProductsDropdown />
+                </div>
+              </>
+            )}
+          </div>
+
           <span className="hover:text-[#2c2178] cursor-pointer">Projects</span>
           <span className="hover:text-[#2c2178] cursor-pointer">
             Mindful UX "Design Studio"
