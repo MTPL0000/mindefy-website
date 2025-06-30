@@ -1,5 +1,5 @@
-import YourHour from "../components/HomePage/YourHour";
+import YourHourProduct from "../components/products/YourHour";
 
 export default function YourHourDevelopmentPage() {
-  return <YourHour />;
+  return <YourHourProduct />;
 }

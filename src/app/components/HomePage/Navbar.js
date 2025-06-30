@@ -4,10 +4,13 @@ import { useState } from "react";
 import ServicesDrop from "./ServicesDrop";
 import Link from "next/link";
 import ProductsDropdown from "./ProductsDropdown";
+import { ProjectDropdown } from "./ProjectDropdown";
+import Image from "next/image";
 
 export default function Navbar() {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showProductsDropdown, setShowProductsDropdown] = useState(false);
+  const [showProjectsDropdown, setShowProjectsDropdown] = useState(false);
 
   return (
     <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-6 md:px-16 py-4 sticky top-0 z-20 shadow">
@@ -16,9 +19,10 @@ export default function Navbar() {
 
         <Link href="/">
           <div className="relative w-36 md:w-44 aspect-[3.88/1] cursor-pointer">
-            <img
+            <Image
               src="/images/nav-logo.svg"
               alt="Mindefy Logo"
+              fill
               className="w-full h-full object-contain"
             />
           </div>
@@ -34,7 +38,7 @@ export default function Navbar() {
         </label>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-6 font-semibold text-sm md:text-base text-[#3B3C4A]">
+        <div className="hidden md:flex items-baseline space-x-6 font-semibold text-sm md:text-base text-[#3B3C4A]">
           <a href="#" className="hover:text-[#2c2178]">
             About Us
           </a>
@@ -45,11 +49,15 @@ export default function Navbar() {
             onMouseEnter={() => setShowServicesDropdown(true)}
             onMouseLeave={() => setShowServicesDropdown(false)}
           >
-            <p className="hover:text-[#2c2178] h-12 mt-1.5  cursor-pointer py-2">
+            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5  cursor-pointer py-2">
               Services
-              <select>
-                <option></option>
-              </select>
+              <Image
+                src="/images/dropdown-icon.png"
+                alt="All Screens"
+                width={10}
+                height={10}
+                className="object-contain"
+              />
             </p>
 
             {/* Services Dropdown with hover bridge */}
@@ -72,11 +80,15 @@ export default function Navbar() {
             onMouseEnter={() => setShowProductsDropdown(true)}
             onMouseLeave={() => setShowProductsDropdown(false)}
           >
-            <p className="hover:text-[#2c2178] h-12 mt-1.5  cursor-pointer py-2">
+            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5  cursor-pointer py-2">
               Products
-              <select>
-                <option></option>
-              </select>
+              <Image
+                src="/images/dropdown-icon.png"
+                alt="All Screens"
+                width={10}
+                height={10}
+                className="object-contain"
+              />
             </p>
 
             {/* Products Dropdown with hover bridge */}
@@ -90,7 +102,34 @@ export default function Navbar() {
             )}
           </div>
 
-          <span className="hover:text-[#2c2178] cursor-pointer">Projects</span>
+          {/* Projects with dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setShowProjectsDropdown(true)}
+            onMouseLeave={() => setShowProjectsDropdown(false)}
+          >
+            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2">
+              Projects
+              <Image
+                src="/images/dropdown-icon.png"
+                alt="All Screens"
+                width={10}
+                height={10}
+                className="object-contain"
+              />
+            </p>
+
+            {/* Projects Dropdown with hover bridge */}
+            {showProjectsDropdown && (
+              <>
+                {/* Actual dropdown positioned from left edge */}
+                <div className="fixed left-[50.5%] top-[4.5rem] z-40">
+                  <ProjectDropdown />
+                </div>
+              </>
+            )}
+          </div>
+
           <span className="hover:text-[#2c2178] cursor-pointer">
             Mindful UX "Design Studio"
           </span>
