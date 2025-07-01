@@ -12,21 +12,21 @@ export default function Ecommerce() {
       <Navbar />
 
       {/* Hero Section - Matching the provided image */}
-      <section className=" mt-28 mx-auto ">
-        <div className=" mx-auto text-center">
+      <section className="mt-28 mx-auto px-4 xl:px-0">
+        <div className="mx-auto text-center">
           {/* Header Tag */}
           <p className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
             Ecommerce and Market Place
           </p>
 
           {/* Main Title */}
-          <h1 className="text-[2.25rem]  font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto">
+          <h1 className="text-xl md:text-2xl xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto px-4 xl:px-0">
             Mindefy: Your Ecommerce & Marketplace Transformation Partner
           </h1>
 
           {/* Description Paragraphs */}
-          <div className="w-[60.25rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.75rem]">
-            <p className="text-[1rem] text-[#444444] leading-relaxed ">
+          <div className="w-full max-w-2xl xl:w-[60.25rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.75rem] px-4 xl:px-0">
+            <p className="text-[1rem] text-[#444444] leading-relaxed">
               In the fast-paced realm of eCommerce and online marketplaces, your
               ability to adapt and thrive depends on two crucial elements:
               having the right platform and partnering with the right expert.
@@ -38,8 +38,8 @@ export default function Ecommerce() {
             </p>
           </div>
 
-          {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative  w-full h-[30.125rem] mx-auto mb-[5rem]">
+          {/* Hero Image */}
+          <div className="relative w-full h-48 md:h-64 lg:h-80 xl:h-[30.125rem] mx-auto mb-[5rem]">
             <Image
               src="/images/MMS.webp"
               alt="Hybrid App Development - Developer working with mobile app design"
@@ -51,44 +51,44 @@ export default function Ecommerce() {
         </div>
       </section>
 
-      <div className="w-[43.56rem] mx-auto">
+      <div className="w-full max-w-2xl xl:w-[43.56rem] mx-auto px-4 xl:px-0">
         <div className="mt-5 mb-3">
-          <p className="font-semibold text-[1.75rem] text-[#000000] mb-4">
+          <p className="font-semibold text-lg xl:text-[1.75rem] text-[#000000] mb-4">
             Experience Ecommerce Excellence with Mindefy
           </p>
-          <p className=" ml-2.5 font-normal text-[1rem] ">
-            <span className="font-semibold text-[1.25rem]">
+          <p className="ml-0 xl:ml-2.5 font-normal text-[1rem]">
+            <span className="font-semibold text-lg xl:text-[1.25rem]">
               Shopify and Magento
             </span>{" "}
             are two platforms are pivotal to your success.{" "}
           </p>
         </div>
         <div
-          className="w-[41.25rem] mx-auto rounded-xl p-5 bg-[#FFFFFF]"
+          className="w-full max-w-2xl xl:w-[41.25rem] mx-auto rounded-xl p-5 bg-[#FFFFFF]"
           style={{
             boxShadow:
               "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
           }}
         >
-          <p className="font-semibold text-[1.25rem] ">
+          <p className="font-semibold text-lg xl:text-[1.25rem]">
             Mindefy is committed to elevating these platforms beyond the
             ordinary to deliver the best eCommerce solution
           </p>
         </div>
       </div>
 
-      {/* Hero Section */}
-      <section className="mt-28 mx-auto">
-        <div className="max-w-[72.5rem] mx-auto ">
-          <div className="flex bg-[#F3FFF4] rounded-xl py-10  px-2.5">
-            <div className="flex-1 w-[35.25rem] ml-2.5 ">
-              <p className="text-[1.75rem]  font-semibold  uppercase text-[#033505]">
+      {/* Shopify Section */}
+      <section className="mt-28 mx-auto px-4 xl:px-0">
+        <div className="max-w-6xl xl:max-w-[72.5rem] mx-auto">
+          <div className="flex flex-col lg:flex-row bg-[#F3FFF4] rounded-xl py-10 px-4 xl:px-2.5">
+            <div className="flex-1 w-full xl:w-[35.25rem] ml-0 xl:ml-2.5 mb-6 lg:mb-0">
+              <p className="text-xl xl:text-[1.75rem] font-semibold uppercase text-[#033505]">
                 Shopify
               </p>
-              <p className="text-[1.75rem] mb-3  font-normal text-[#033505] ">
+              <p className="text-xl xl:text-[1.75rem] mb-3 font-normal text-[#033505]">
                 Seamless Commerce at Your Fingertips
               </p>
-              <p className="text-[1rem] w-[35.25rem] font-normal  text-[#033505] leading-relaxed text-justify">
+              <p className="text-[1rem] w-full xl:w-[35.25rem] font-normal text-[#033505] leading-relaxed text-justify">
                 Shopify is synonymous with its simplicity and versatility.
                 Whether you're an emerging startup or an established brand
                 looking to broaden your digital footprint, Mindefy's Shopify
@@ -98,7 +98,7 @@ export default function Ecommerce() {
             </div>
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center">
-                <div className="w-[35.06rem]  h-[14.125rem] relative">
+                <div className="w-full max-w-sm xl:w-[35.06rem] h-32 md:h-48 xl:h-[14.125rem] relative">
                   <Image
                     src="/images/shopify.webp"
                     alt="JavaScript Stack"
@@ -111,9 +111,9 @@ export default function Ecommerce() {
           </div>
 
           {/* Services Sections */}
-          <div className=" mt-[3.75rem] w-[46.375rem] mx-auto space-y-[3.75rem]">
+          <div className="mt-[3.75rem] w-full max-w-3xl xl:w-[46.375rem] mx-auto space-y-[3.75rem]">
             {/* Shopify Store Setup */}
-            <h3 className="text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
+            <h3 className="text-lg xl:text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
               Shopify Store Setup
             </h3>
             <div className="space-y-9">
@@ -133,8 +133,7 @@ export default function Ecommerce() {
             </div>
 
             {/* Custom Development */}
-
-            <h3 className="text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
+            <h3 className="text-lg xl:text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
               Custom Development
             </h3>
             <div className="space-y-9">
@@ -154,14 +153,13 @@ export default function Ecommerce() {
             </div>
 
             {/* Shopify SEO */}
-
-            <h3 className="text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
+            <h3 className="text-lg xl:text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
               Shopify SEO
             </h3>
             <div className="space-y-9">
               <p className="text-[1rem] font-normal text-[#000000] leading-relaxed text-left tracking-wide">
                 In the crowded online marketplace, visibility is everything.
-                <br></br>
+                <br className="hidden xl:block" />
                 Mindefy offers SEO optimization services specifically designed
                 for Shopify, ensuring that your products are easily discoverable
                 by your target audience.
@@ -176,18 +174,19 @@ export default function Ecommerce() {
           </div>
         </div>
       </section>
-      {/* Hero Section */}
-      <section className="mt-28 mx-auto">
-        <div className="max-w-[72.5rem] mx-auto ">
-          <div className="flex bg-[#F4E5FF] rounded-xl py-10  px-2.5">
-            <div className="flex-1 w-[34rem] ml-2.5 ">
-              <p className="text-[1.75rem]  font-semibold  uppercase text-[#2D0150]">
+
+      {/* Magento Section */}
+      <section className="mt-28 mx-auto px-4 xl:px-0">
+        <div className="max-w-6xl xl:max-w-[72.5rem] mx-auto">
+          <div className="flex flex-col lg:flex-row bg-[#F4E5FF] rounded-xl py-10 px-4 xl:px-2.5">
+            <div className="flex-1 w-full xl:w-[34rem] ml-0 xl:ml-2.5 mb-6 lg:mb-0">
+              <p className="text-xl xl:text-[1.75rem] font-semibold uppercase text-[#2D0150]">
                 Magento
               </p>
-              <p className="text-[1.75rem] mb-3  font-normal text-[#2D0150] ">
+              <p className="text-xl xl:text-[1.75rem] mb-3 font-normal text-[#2D0150]">
                 Scaling Your Ecommerce Heights
               </p>
-              <p className="text-[1rem] w-[34rem] tracking-wide font-normal  text-[#444444] leading-relaxed text-justify">
+              <p className="text-[1rem] w-full xl:w-[34rem] tracking-wide font-normal text-[#444444] leading-relaxed text-justify">
                 For businesses with grand ambitions and complex needs, Magento
                 is the platform of choice. Our Magento experts harness the full
                 power of this platform to revolutionize your eCommerce
@@ -196,7 +195,7 @@ export default function Ecommerce() {
             </div>
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center">
-                <div className="w-[35.06rem]  h-[14.125rem] relative">
+                <div className="w-full max-w-sm xl:w-[35.06rem] h-32 md:h-48 xl:h-[14.125rem] relative">
                   <Image
                     src="/images/magneto.webp"
                     alt="JavaScript Stack"
@@ -209,9 +208,9 @@ export default function Ecommerce() {
           </div>
 
           {/* Services Sections */}
-          <div className=" mt-[3.75rem] w-[46.375rem] mx-auto space-y-[3.75rem]">
-            {/* Shopify Store Setup */}
-            <h3 className="text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
+          <div className="mt-[3.75rem] w-full max-w-3xl xl:w-[46.375rem] mx-auto space-y-[3.75rem]">
+            {/* Magento Development */}
+            <h3 className="text-lg xl:text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
               Magento Development
             </h3>
             <div className="space-y-9">
@@ -230,9 +229,8 @@ export default function Ecommerce() {
               </p>
             </div>
 
-            {/* Custom Development */}
-
-            <h3 className="text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
+            {/* Custom Extensions */}
+            <h3 className="text-lg xl:text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
               Custom Extensions
             </h3>
             <div className="space-y-9">
@@ -250,19 +248,18 @@ export default function Ecommerce() {
               </p>
             </div>
 
-            {/* Shopify SEO */}
-
-            <h3 className="text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
+            {/* Migration Services */}
+            <h3 className="text-lg xl:text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
               Migration Services
             </h3>
             <div className="space-y-9">
-              <p className="text-[1rem] font-normal text-[#000000] leading-relaxed text-justify">
+              <p className="text-[1rem] font-normal text-[#000000] leading-relaxed text-left xl:text-justify">
                 Transitioning your existing eCommerce store to Magento is a
                 complex task that can be daunting. Mindefy's migration
                 specialists have the experience and expertise to ensure the
                 process is seamless and free from disruptions. .
               </p>
-              <p className="text-[1rem] font-normal text-[#000000] leading-relaxed text-justify">
+              <p className="text-[1rem] font-normal text-[#000000] leading-relaxed text-left xl:text-justify">
                 Our migration services are designed to minimize downtime, data
                 loss, and disruptions, providing a smooth path to leveraging
                 Magento's robust features. We take every step necessary to
