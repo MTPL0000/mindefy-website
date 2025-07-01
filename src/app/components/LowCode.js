@@ -12,23 +12,23 @@ export default function LowCode() {
       <Navbar />
 
       {/* Hero Section - Matching the provided image */}
-      <section className=" mt-28 mx-auto ">
-        <div className=" mx-auto text-center">
+      <section className="mt-20 lg:mt-28 px-4 sm:px-6 lg:px-0">
+        <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <p className="text-[#FF5225] text-sm lg:text-[1rem] font-bold tracking-widest uppercase mb-4 lg:mb-[1.25rem]">
             Low Code Development
           </p>
 
           {/* Main Title */}
-          <h1 className="text-[2.25rem]  font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-6 lg:mb-7 leading-tight max-w-full sm:max-w-2xl lg:max-w-[50rem] mx-auto">
             <span className="font-normal">Transforming </span>Development
             <span className="font-normal"> with </span>Mindefy's Low-Code
             Platform
           </h1>
 
           {/* Description Paragraphs */}
-          <div className="w-[61.375rem] font-normal mx-auto  mb-[2.25rem] text-justify space-y-[1.25rem]">
-            <p className="text-[1rem] text-[#444444] leading-relaxed">
+          <div className="max-w-full sm:max-w-2xl lg:max-w-[61.375rem] font-normal mx-auto mb-6 lg:mb-[2.25rem] text-justify space-y-4 lg:space-y-[1.25rem]">
+            <p className="text-sm lg:text-[1rem] text-[#444444] leading-relaxed">
               Experience the incredible possibilities of Low-Code Platform
               Development with Mindefy, where we offer cutting-edge solutions
               tailored to your needs. As a renowned leader in Low-Code
@@ -41,18 +41,21 @@ export default function LowCode() {
             </p>
           </div>
 
-          {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative  w-full h-[30.125rem] mx-auto mb-6">
-            <Image
-              src="/images/ARD.webp"
-              alt="Web Application Development - Developer working with web applications"
-              fill
-              className="object-contain"
-              priority
-            />
+          {/* Hero Image */}
+          <div className="relative w-full max-w-full mx-auto mb-6 lg:mb-6">
+            <div className="relative h-48 sm:h-64 md:h-80 lg:h-[30.125rem]">
+              <Image
+                src="/images/ARD.webp"
+                alt="Web Application Development - Developer working with web applications"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
-          <div className="w-[60.25rem] mx-auto mb-20">
-            <p className="text-justify text-[1rem] font-normal text-[#444444] ">
+          
+          <div className="max-w-full sm:max-w-2xl lg:max-w-[60.25rem] mx-auto mb-12 lg:mb-20">
+            <p className="text-justify text-sm lg:text-[1rem] font-normal text-[#444444]">
               Low-Code Platform Development offers a powerful solution by
               enabling the rapid creation and deployment of enterprise-grade
               applications with minimal hand-coding. These platforms provide a
@@ -65,14 +68,14 @@ export default function LowCode() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[60.25rem] mb-[5rem]">
-        <div className=" text-[#000000] w-[60.25rem]  text-[1.5rem] font-semibold mb-6 ">
+      <div className="mx-auto max-w-full sm:max-w-2xl lg:max-w-[60.25rem] mb-12 lg:mb-[5rem] px-4 sm:px-6 lg:px-0">
+        <div className="text-[#000000] text-lg sm:text-xl lg:text-[1.5rem] font-semibold mb-4 lg:mb-6">
           <p>
-            Collaborate with Mindefy for Low-Code<br></br>Platform Excellence
+            Collaborate with Mindefy for Low-Code<br className="hidden lg:block"></br>Platform Excellence
           </p>
         </div>
-        <div className="font-normal  text-[1rem] text-justify text-[#444444]">
-          <p className="mb-5">
+        <div className="font-normal text-sm lg:text-[1rem] text-justify text-[#444444] space-y-4 lg:space-y-5">
+          <p>
             By partnering with Mindefy, you gain a trusted technology partner
             committed to your success.Whether you need to build custom
             applications, automate workflows, enhance customer experiences, or
@@ -89,42 +92,44 @@ export default function LowCode() {
       </div>
 
       {/* React and Angular Detailed Section */}
-      <section className=" ">
-        <div className="max-w-[72.5rem] mx-auto ">
+      <section className="px-4 sm:px-6 lg:px-0">
+        <div className="max-w-full lg:max-w-[72.5rem] mx-auto">
           {/* Header Illustration */}
-          <div className=" mb-[5rem]">
-            <div className="relative  w-full h-[30.125rem] mx-auto mb-[7.25rem]">
-              <Image
-                src="/images/IOS.webp"
-                alt="MEAN MERN Stack Development - Developer working with web applications"
-                fill
-                className="object-contain"
-                priority
-              />
+          <div className="mb-12 lg:mb-[5rem]">
+            <div className="relative w-full max-w-full mx-auto mb-12 lg:mb-[7.25rem]">
+              <div className="relative h-48 sm:h-64 md:h-80 lg:h-[30.125rem]">
+                <Image
+                  src="/images/IOS.webp"
+                  alt="MEAN MERN Stack Development - Developer working with web applications"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* MEAN and MERN Advantages Section */}
-      <section className="mt-24 ">
-        <div className="max-w-[62.5rem] mx-auto ">
+      <section className="mt-12 lg:mt-24 px-4 sm:px-6 lg:px-0">
+        <div className="max-w-full lg:max-w-[62.5rem] mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[2.5rem]">
-            <h2 className="text-[1.75rem] font-semibold text-[#000000] mb-4">
+          <div className="text-center mb-8 lg:mb-[2.5rem]">
+            <h2 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] mb-4">
               Why Low-Code Platform Development ?
             </h2>
           </div>
 
           {/* Advantages Content */}
-          <div className="flex flex-col gap-[2.75rem] max-w-[60.375rem] mx-auto">
+          <div className="flex flex-col gap-6 lg:gap-[2.75rem] max-w-full lg:max-w-[60.375rem] mx-auto">
             {/* Full JavaScript Stack */}
-            <div className="flex bg-[#E5F8FB] rounded-2xl  ">
-              <div className="flex-1 w-[36.06rem]  my-[3rem] ml-2.5 ">
-                <h3 className="text-[1.5rem] font-semibold text-[#000000] pb-4">
+            <div className="flex flex-col lg:flex-row bg-[#E5F8FB] rounded-2xl overflow-hidden">
+              <div className="flex-1 p-4 sm:p-6 lg:p-0 lg:w-[36.06rem] lg:my-[3rem] lg:ml-2.5 order-2 lg:order-1">
+                <h3 className="text-base sm:text-lg lg:text-[1.5rem] font-semibold text-[#000000] mb-3 lg:mb-4">
                   Accelerated Application Delivery
                 </h3>
-                <p className="text-[1rem] w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-[1rem] text-[#444444] leading-relaxed text-justify lg:max-w-[34.312rem]">
                   Low-Code platforms allow for rapid application development,
                   significantly reducing time-to-market. With visual modeling
                   and pre-built components, developers can quickly assemble
@@ -132,39 +137,35 @@ export default function LowCode() {
                   streamlining the development process.
                 </p>
               </div>
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-[23.18rem] my-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/MARD2.svg"
-                      alt="JavaScript Stack"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+              <div className="flex-shrink-0 order-1 lg:order-2 flex justify-center items-center p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[23.18rem] lg:h-[16.56rem] lg:my-2.5 relative">
+                  <Image
+                    src="/images/MARD2.svg"
+                    alt="JavaScript Stack"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </div>
 
             {/* Scalability and Performance */}
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-[23.18rem] my-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/MARD3.svg"
-                      alt="Performance"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+            <div className="flex flex-col lg:flex-row overflow-hidden">
+              <div className="flex-shrink-0 order-1 flex justify-center items-center p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[23.18rem] lg:h-[16.56rem] lg:my-2.5 relative">
+                  <Image
+                    src="/images/MARD3.svg"
+                    alt="Performance"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
-              <div className="flex-1 w-[36.06rem]  my-[3rem] ml-2.5">
-                <h3 className="text-[1.5rem] font-semibold text-[#000000] pb-4">
+              <div className="flex-1 p-4 sm:p-6 lg:p-0 lg:w-[36.06rem] lg:my-[3rem] lg:ml-2.5 order-2">
+                <h3 className="text-base sm:text-lg lg:text-[1.5rem] font-semibold text-[#000000] mb-3 lg:mb-4">
                   Enhanced Productivity
                 </h3>
-                <p className="text-[1rem] w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-[1rem] text-[#444444] leading-relaxed text-justify lg:max-w-[34.312rem]">
                   By abstracting away complex coding tasks, Low-Code platforms
                   enable developers to focus on solving business challenges and
                   delivering value. This increased productivity translates into
@@ -175,51 +176,47 @@ export default function LowCode() {
             </div>
 
             {/* Rapid Development */}
-            <div className="flex bg-[#E5F8FB] rounded-2xl">
-              <div className="flex-1 w-[36.06rem]  my-[3rem] ml-2.5">
-                <h3 className="text-[1.5rem] font-semibold text-[#000000] pb-4">
+            <div className="flex flex-col lg:flex-row bg-[#E5F8FB] rounded-2xl overflow-hidden">
+              <div className="flex-1 p-4 sm:p-6 lg:p-0 lg:w-[36.06rem] lg:my-[3rem] lg:ml-2.5 order-2 lg:order-1">
+                <h3 className="text-base sm:text-lg lg:text-[1.5rem] font-semibold text-[#000000] mb-3 lg:mb-4">
                   Scalability and Future-Proofing
                 </h3>
-                <p className="text-[1rem] w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-[1rem] text-[#444444] leading-relaxed text-justify lg:max-w-[34.312rem]">
                   Low-Code platforms are designed to support scalability and
                   growth. As your business evolves, these platforms provide the
                   flexibility to scale applications, handle increased user
                   loads, and incorporate new features and functionalities.
                 </p>
               </div>
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-[23.18rem] my-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/IOS1.webp"
-                      alt="Rapid Development"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+              <div className="flex-shrink-0 order-1 lg:order-2 flex justify-center items-center p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[23.18rem] lg:h-[16.56rem] lg:my-2.5 relative">
+                  <Image
+                    src="/images/IOS1.webp"
+                    alt="Rapid Development"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </div>
 
             {/* Code Reusability */}
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center ">
-                  <div className="w-[23.18rem] my-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/WAD1.svg"
-                      alt="Code Reusability"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+            <div className="flex flex-col lg:flex-row overflow-hidden">
+              <div className="flex-shrink-0 order-1 flex justify-center items-center p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[23.18rem] lg:h-[16.56rem] lg:my-2.5 relative">
+                  <Image
+                    src="/images/WAD1.svg"
+                    alt="Code Reusability"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
-              <div className="flex-1 w-[36.06rem]  my-[3rem] ml-2.5">
-                <h3 className="text-[1.5rem] font-semibold text-[#000000] pb-4">
+              <div className="flex-1 p-4 sm:p-6 lg:p-0 lg:w-[36.06rem] lg:my-[3rem] lg:ml-2.5 order-2">
+                <h3 className="text-base sm:text-lg lg:text-[1.5rem] font-semibold text-[#000000] mb-3 lg:mb-4">
                   Flexibility and Agility
                 </h3>
-                <p className="text-[1rem] w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-[1rem] text-[#444444] leading-relaxed text-justify lg:max-w-[34.312rem]">
                   Low-Code platforms offer flexibility in adapting to changing
                   business requirements. With visual modeling and drag-and-drop
                   capabilities, developers can easily modify and iterate on
@@ -230,12 +227,12 @@ export default function LowCode() {
             </div>
 
             {/* Flexibility and Extensibility */}
-            <div className="flex rounded-2xl bg-[#E5F8FB]">
-              <div className="flex-1 w-[36.06rem]  my-[3rem] ml-2.5">
-                <h3 className="text-[1.5rem] font-semibold text-[#000000] pb-4">
+            <div className="flex flex-col lg:flex-row rounded-2xl bg-[#E5F8FB] overflow-hidden">
+              <div className="flex-1 p-4 sm:p-6 lg:p-0 lg:w-[36.06rem] lg:my-[3rem] lg:ml-2.5 order-2 lg:order-1">
+                <h3 className="text-base sm:text-lg lg:text-[1.5rem] font-semibold text-[#000000] mb-3 lg:mb-4">
                   Seamless Integration
                 </h3>
-                <p className="text-[1rem] w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-[1rem] text-[#444444] leading-relaxed text-justify lg:max-w-[34.312rem]">
                   Low-Code platforms provide robust integration capabilities,
                   allowing for seamless integration with existing systems and
                   third-party applications. This enables organizations to
@@ -243,16 +240,14 @@ export default function LowCode() {
                   functionality of their applications.
                 </p>
               </div>
-              <div className="flex-shrink-0">
-                <div className=" flex items-center justify-center">
-                  <div className="w-[23.18rem] my-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/ARD1.webp"
-                      alt="Flexibility"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+              <div className="flex-shrink-0 order-1 lg:order-2 flex justify-center items-center p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[23.18rem] lg:h-[16.56rem] lg:my-2.5 relative">
+                  <Image
+                    src="/images/ARD1.webp"
+                    alt="Flexibility"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -261,14 +256,14 @@ export default function LowCode() {
       </section>
 
       {/* Our Expertise in Low-Code Platform Development Section */}
-      <section className=" mt-20">
-        <div className="max-w-[62.5rem] mx-auto ">
+      <section className="mt-12 lg:mt-20 px-4 sm:px-6 lg:px-0">
+        <div className="max-w-full lg:max-w-[62.5rem] mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[2.25rem]">
-            <h2 className="text-[2rem] font-semibold text-[#000000] mb-4">
-              Our Expertise in Low-Code Platform<br></br> Development
+          <div className="text-center mb-8 lg:mb-[2.25rem]">
+            <h2 className="text-lg sm:text-xl lg:text-[2rem] font-semibold text-[#000000] mb-4">
+              Our Expertise in Low-Code Platform<br className="hidden lg:block"></br> Development
             </h2>
-            <p className="text-[1rem] text-[#444444] leading-relaxed max-w-[60rem] mx-auto text-justify">
+            <p className="text-sm lg:text-[1rem] text-[#444444] leading-relaxed max-w-full lg:max-w-[60rem] mx-auto text-justify">
               At Mindefy, we have a team of experienced Low-Code developers
               proficient in platforms such as OutSystems, Appian, ServiceNow,
               Zoho Creator, and Magic XPA. We leverage our expertise to deliver
@@ -280,24 +275,24 @@ export default function LowCode() {
           </div>
 
           {/* Platform Cards */}
-          <div className="flex flex-col gap-[1.875rem] max-w-[62.5rem] mx-auto mb-[3.75rem]">
+          <div className="flex flex-col gap-4 lg:gap-[1.875rem] max-w-full lg:max-w-[62.5rem] mx-auto mb-12 lg:mb-[3.75rem]">
             {/* OutSystems */}
-            <div className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg shadow-lg">
-              <div className="flex-shrink-0">
-                <div className="w-[16.18rem] my-2.5 h-[13.875rem] relative">
+            <div className="flex flex-col lg:flex-row items-start bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:block p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[16.18rem] lg:h-[13.875rem] lg:my-2.5 relative">
                   <Image
                     src="/images/LC1.webp"
-                    alt="Performance"
+                    alt="OutSystems Platform"
                     fill
                     className="object-contain"
                   />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-4 lg:mx-2.5">
+                <h3 className="text-base sm:text-lg lg:text-[1.25rem] lg:mt-2.5 font-semibold text-[#000000] mb-3 lg:mb-4">
                   OutSystems: Accelerate Your Digital Transformation
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-12">
+                <p className="text-sm lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4 lg:mb-12">
                   OutSystems is a robust Low-Code platform that enables
                   organizations to build, deploy, and manage enterprise
                   applications with speed and agility. It works with its visual
@@ -312,22 +307,22 @@ export default function LowCode() {
             </div>
 
             {/* Appian */}
-            <div className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg shadow-lg">
-              <div className="flex-shrink-0">
-                <div className="w-[16.18rem] my-2.5 h-[13.875rem] relative">
+            <div className="flex flex-col lg:flex-row items-start bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:block p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[16.18rem] lg:h-[13.875rem] lg:my-2.5 relative">
                   <Image
                     src="/images/LC2.webp"
-                    alt="Performance"
+                    alt="Appian Platform"
                     fill
                     className="object-contain"
                   />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-4 lg:mx-2.5">
+                <h3 className="text-base sm:text-lg lg:text-[1.25rem] lg:mt-2.5 font-semibold text-[#000000] mb-3 lg:mb-4">
                   Appian: Drive Business Process Automation
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-12">
+                <p className="text-sm lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4 lg:mb-12">
                   Appian is a powerful Low-Code platform that combines business
                   process management, artificial intelligence, and low-code
                   development capabilities. With Appian, you can streamline and
@@ -341,22 +336,22 @@ export default function LowCode() {
             </div>
 
             {/* ServiceNow */}
-            <div className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg shadow-lg">
-              <div className="flex-shrink-0">
-                <div className="w-[16.18rem]  my-2.5 h-[13.875rem] relative">
+            <div className="flex flex-col lg:flex-row items-start bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:block p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[16.18rem] lg:h-[13.875rem] lg:my-2.5 relative">
                   <Image
                     src="/images/LC3.svg"
-                    alt="Performance"
+                    alt="ServiceNow Platform"
                     fill
                     className="object-contain"
                   />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-4 lg:mx-2.5">
+                <h3 className="text-base sm:text-lg lg:text-[1.25rem] lg:mt-2.5 font-semibold text-[#000000] mb-3 lg:mb-4">
                   ServiceNow: Transform IT Service Management
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-12">
+                <p className="text-sm lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4 lg:mb-12">
                   ServiceNow is a leading Low-Code platform for IT service
                   management (ITSM) and digital workflows. With ServiceNow, you
                   can streamline IT operations, automate service requests, and
@@ -369,22 +364,22 @@ export default function LowCode() {
             </div>
 
             {/* Zoho Creator */}
-            <div className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg shadow-lg">
-              <div className="flex-shrink-0">
-                <div className="w-[16.18rem] my-2.5 h-[13.875rem] relative">
+            <div className="flex flex-col lg:flex-row items-start bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:block p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[16.18rem] lg:h-[13.875rem] lg:my-2.5 relative">
                   <Image
                     src="/images/LC4.svg"
-                    alt="Performance"
+                    alt="Zoho Creator Platform"
                     fill
                     className="object-contain"
                   />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-4 lg:mx-2.5">
+                <h3 className="text-base sm:text-lg lg:text-[1.25rem] lg:mt-2.5 font-semibold text-[#000000] mb-3 lg:mb-4">
                   Zoho Creator: Build Custom Business Applications
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-12">
+                <p className="text-sm lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4 lg:mb-12">
                   Zoho Creator is a versatile Low-Code platform that empowers
                   businesses to create custom applications without extensive
                   coding. With its intuitive drag-and-drop interface and
@@ -398,24 +393,22 @@ export default function LowCode() {
             </div>
 
             {/* Magic XPA */}
-            <div className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg shadow-lg">
-              <div className="flex-shrink-0">
-                <div>
-                  <div className="w-[16.18rem] my-2.5 h-[13.875rem] relative">
-                    <Image
-                      src="/images/LC5.svg"
-                      alt="Performance"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+            <div className="flex flex-col lg:flex-row items-start bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:block p-4 lg:p-0">
+                <div className="w-32 h-24 sm:w-40 sm:h-32 lg:w-[16.18rem] lg:h-[13.875rem] lg:my-2.5 relative">
+                  <Image
+                    src="/images/LC5.svg"
+                    alt="Magic XPA Platform"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-4 lg:mx-2.5">
+                <h3 className="text-base sm:text-lg lg:text-[1.25rem] lg:mt-2.5 font-semibold text-[#000000] mb-3 lg:mb-4">
                   Magic XPA: Accelerate Enterprise Application Development
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-12">
+                <p className="text-sm lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4 lg:mb-12">
                   Magic XPA is a comprehensive Low-Code platform that enables
                   rapid development of enterprise applications for web, mobile,
                   and desktop environments. With its model-driven development

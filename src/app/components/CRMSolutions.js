@@ -12,22 +12,22 @@ export default function CRMSolutions() {
       <Navbar />
 
       {/* Hero Section - Matching the provided image */}
-      <section className=" mt-28 mx-auto ">
-        <div className=" mx-auto text-center">
+      <section className="mt-28 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto text-center">
           {/* Header Tag */}
           <p className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
             CRM Solutions
           </p>
 
           {/* Main Title */}
-          <h1 className="text-[2.25rem]  font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto">
+          <h1 className="text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto px-4">
             <span className="font-normal">Unleash the </span>Power of
             Connections
             <span className="font-normal"> with </span>Mindefy's CRM Mastery
           </h1>
 
           {/* Description Paragraphs */}
-          <div className="w-[61.375rem] font-normal mx-auto  mb-[2.25rem] text-justify space-y-[1.25rem]">
+          <div className="w-full max-w-[61.375rem] font-normal mx-auto mb-[2.25rem] px-4 lg:text-justify text-left space-y-[1.25rem]">
             <p className="text-[1rem] text-[#444444] leading-relaxed">
               Mindefy , your trusted partner in the art of forging meaningful
               relationships with your customers. In today's dynamic business
@@ -38,7 +38,7 @@ export default function CRMSolutions() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative  w-full h-[30.125rem] mx-auto mb-6">
+          <div className="relative w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] mx-auto mb-6">
             <Image
               src="/images/CRM.webp"
               alt="Web Application Development - Developer working with web applications"
@@ -51,27 +51,27 @@ export default function CRMSolutions() {
       </section>
 
       {/* Our Expertise in Low-Code Platform Development Section */}
-      <section className=" mt-20">
-        <div className="max-w-[62.5rem] mx-auto    ">
+      <section className="mt-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[62.5rem] mx-auto">
           {/* Section Header */}
           <div className="text-center mb-[3.75rem]">
-            <h2 className="text-[2rem] font-semibold text-[#000000] mb-4">
+            <h2 className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-semibold text-[#000000] mb-4">
               Our CRM Solutions<br></br> Where Connections Lead to Triumph
             </h2>
           </div>
 
           {/* Platform Cards */}
-          <div className="flex flex-col gap-[1.625rem] max-w-[62.75rem] mx-auto mb-[3.75rem]   ">
+          <div className="flex flex-col gap-[1.625rem] max-w-[62.75rem] mx-auto mb-[3.75rem]">
             {/* OutSystems */}
             <div
-              className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg "
+              className="flex flex-col lg:flex-row items-start gap-4 lg:gap-6.25 bg-white p-4 lg:px-1.5 lg:py-0 rounded-lg"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0">
-                <div className="w-[16.18rem] my-2.5 h-[13.875rem] relative">
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
                   <Image
                     src="/images/CRM1.webp"
                     alt="Performance"
@@ -80,11 +80,11 @@ export default function CRMSolutions() {
                   />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 lg:mx-2.5">
+                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
                   Customer-Centric Brilliance
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4">
+                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   At Mindefy, our core mission is to make every customer feel
                   like a VIP. Our CRM solutions are meticulously designed to
                   enhance every touchpoint with your customers, fostering
@@ -101,14 +101,14 @@ export default function CRMSolutions() {
 
             {/* Appian */}
             <div
-              className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg "
+              className="flex flex-col lg:flex-row items-start gap-4 lg:gap-6.25 bg-white p-4 lg:px-1.5 lg:py-0 rounded-lg"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0">
-                <div className="w-[16.18rem] my-2.5 h-[13.875rem] relative">
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
                   <Image
                     src="/images/CRM2.webp"
                     alt="Performance"
@@ -117,11 +117,11 @@ export default function CRMSolutions() {
                   />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 lg:mx-2.5">
+                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
                   Seamless Harmony
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4">
+                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   Appian is a powerful Low-Code platform that combines business
                   process management, artificial intelligence, and low-code
                   development capabilities. With Appian, you can streamline and
@@ -136,14 +136,14 @@ export default function CRMSolutions() {
 
             {/* ServiceNow */}
             <div
-              className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg"
+              className="flex flex-col lg:flex-row items-start gap-4 lg:gap-6.25 bg-white p-4 lg:px-1.5 lg:py-0 rounded-lg"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0">
-                <div className="w-[16.18rem]  my-2.5 h-[13.875rem] relative">
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
                   <Image
                     src="/images/CRM3.webp"
                     alt="Performance"
@@ -152,11 +152,11 @@ export default function CRMSolutions() {
                   />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 lg:mx-2.5">
+                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
                   Tailored Brilliance
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4">
+                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   Every business is as unique as a fingerprint, and
                   cookie-cutter CRM solutions won't suffice. At Mindefy, we
                   approach CRM as an art, not a science. We pay keen attention
@@ -172,14 +172,14 @@ export default function CRMSolutions() {
 
             {/* Zoho Creator */}
             <div
-              className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg "
+              className="flex flex-col lg:flex-row items-start gap-4 lg:gap-6.25 bg-white p-4 lg:px-1.5 lg:py-0 rounded-lg"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0">
-                <div className="w-[16.18rem] my-2.5 h-[13.875rem] relative">
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
                   <Image
                     src="/images/CRM4.webp"
                     alt="Performance"
@@ -188,11 +188,11 @@ export default function CRMSolutions() {
                   />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 lg:mx-2.5">
+                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
                   Real-Time Vision
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4">
+                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   Mindefy's CRM solutions provide real-time insights into
                   customer behavior, market trends, and sales performance. Armed
                   with this visionary knowledge, you can make data-powered
@@ -207,29 +207,27 @@ export default function CRMSolutions() {
 
             {/* Magic XPA */}
             <div
-              className="flex items-start gap-6.25 bg-white px-1.5 rounded-lg "
+              className="flex flex-col lg:flex-row items-start gap-4 lg:gap-6.25 bg-white p-4 lg:px-1.5 lg:py-0 rounded-lg"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0">
-                <div>
-                  <div className="w-[16.18rem] my-2.5 h-[13.875rem] relative">
-                    <Image
-                      src="/images/CRM5.webp"
-                      alt="Performance"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
+                  <Image
+                    src="/images/CRM5.webp"
+                    alt="Performance"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
-              <div className="flex-1 mx-2.5">
-                <h3 className="text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 lg:mx-2.5">
+                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
                   Legendary Support
                 </h3>
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify mb-4">
+                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   Mindefy's commitment to your success knows no bounds. Our
                   dedicated support team is at your service around the clock,
                   24/7. From the initial implementation of the CRM solution to
@@ -246,11 +244,11 @@ export default function CRMSolutions() {
       </section>
 
       {/* MEAN and MERN Advantages Section */}
-      <section className="mt-24 ">
-        <div className="max-w-[55rem] mx-auto ">
+      <section className="mt-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[55rem] mx-auto">
           {/* Section Header */}
           <div className="text-center mb-[2.5rem]">
-            <h2 className="text-[2rem] font-semibold text-[#000000] ">
+            <h2 className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-semibold text-[#000000]">
               The Advantages of Opting for Mindefy's CRM Services
             </h2>
           </div>
@@ -259,17 +257,17 @@ export default function CRMSolutions() {
           <div className="flex flex-col gap-[2.5rem] max-w-[55rem] mx-auto">
             {/* Full JavaScript Stack */}
             <div
-              className="flex bg-[#F0EDF8] rounded-2xl  "
+              className="flex flex-col lg:flex-row bg-[#F0EDF8] rounded-2xl p-4 lg:p-0"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-1 w-[27.75rem]  my-2.5 ml-6">
-                <h3 className="text-[1.5rem] ml-3.5  mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 w-full lg:w-[27.75rem] my-2.5 lg:ml-6 order-2 lg:order-1">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Maestros at Your Service
                 </h3>
-                <p className="text-[1rem] mx-3.5 mb-2.5 w-[26rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
                   Mindefy's CRM services provide you with access to a team of
                   CRM virtuosos. These experts have honed their skills in the
                   art of customer relationship management across diverse
@@ -280,9 +278,9 @@ export default function CRMSolutions() {
                   and loyalty.
                 </p>
               </div>
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 order-1 lg:order-2">
                 <div className="flex items-center justify-center">
-                  <div className="w-[21.25rem] my-[4.198rem] mr-6 h-[13.60rem] relative">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-[21.25rem] my-4 lg:my-[4.198rem] lg:mr-6 h-[12rem] sm:h-[13rem] lg:h-[13.60rem] relative">
                     <Image
                       src="/images/CRM7.webp"
                       alt="JavaScript Stack"
@@ -296,15 +294,15 @@ export default function CRMSolutions() {
 
             {/* Scalability and Performance */}
             <div
-              className="flex rounded-xl"
+              className="flex flex-col lg:flex-row rounded-xl p-4 lg:p-0"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 order-1">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18.75rem] my-[3rem] ml-6 mr-12 h-[17.63rem] relative">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-[18.75rem] my-4 lg:my-[3rem] lg:ml-6 lg:mr-12 h-[12rem] sm:h-[15rem] lg:h-[17.63rem] relative">
                     <Image
                       src="/images/CRM8.webp"
                       alt="Performance"
@@ -314,11 +312,11 @@ export default function CRMSolutions() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-[27.75rem]  my-14 ml-6">
-                <h3 className="text-[1.5rem] ml-3.5  mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 w-full lg:w-[27.75rem] my-4 lg:my-14 lg:ml-6 order-2">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Innovation Unleashed
                 </h3>
-                <p className="text-[1rem] mx-3.5 mb-2.5 w-[26rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
                   Stay ahead of the curve with Mindefy's groundbreaking CRM
                   solutions, infused with the latest technology and
                   industry-leading best practices. We're committed to keeping
@@ -332,17 +330,17 @@ export default function CRMSolutions() {
 
             {/* Rapid Development */}
             <div
-              className="flex bg-[#F0EDF8] rounded-2xl "
+              className="flex flex-col lg:flex-row bg-[#F0EDF8] rounded-2xl p-4 lg:p-0"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-1 w-[27.75rem]  my-14 ml-6">
-                <h3 className="text-[1.5rem] ml-3.5  mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 w-full lg:w-[27.75rem] my-4 lg:my-14 lg:ml-6 order-2 lg:order-1">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Scale the Summit
                 </h3>
-                <p className="text-[1rem] mx-3.5 mb-2.5 w-[26rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
                   Mindefy's CRM solutions are flexible and scalable, designed to
                   grow with your business. Whether you're a budding startup or
                   an established global enterprise, our CRM systems evolve to
@@ -352,9 +350,9 @@ export default function CRMSolutions() {
                   customer relationships and growth as your business expands.
                 </p>
               </div>
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 order-1 lg:order-2">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18.75rem] my-[3rem] ml-6 mr-12 h-[17.63rem] relative">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-[18.75rem] my-4 lg:my-[3rem] lg:ml-6 lg:mr-12 h-[12rem] sm:h-[15rem] lg:h-[17.63rem] relative">
                     <Image
                       src="/images/CRM6.webp"
                       alt="Rapid Development"
@@ -368,15 +366,15 @@ export default function CRMSolutions() {
 
             {/* Code Reusability */}
             <div
-              className="flex rounded-xl"
+              className="flex flex-col lg:flex-row rounded-xl p-4 lg:p-0"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0">
-                <div className="flex items-center ">
-                  <div className="w-[18.75rem] my-[3rem] ml-6 mr-12 h-[17.63rem] relative">
+              <div className="flex-shrink-0 order-1">
+                <div className="flex items-center">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-[18.75rem] my-4 lg:my-[3rem] lg:ml-6 lg:mr-12 h-[12rem] sm:h-[15rem] lg:h-[17.63rem] relative">
                     <Image
                       src="/images/CRM10.webp"
                       alt="Code Reusability"
@@ -386,11 +384,11 @@ export default function CRMSolutions() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-[27.75rem]  my-14 ml-6">
-                <h3 className="text-[1.5rem] ml-3.5  mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 w-full lg:w-[27.75rem] my-4 lg:my-14 lg:ml-6 order-2">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Ironclad Security
                 </h3>
-                <p className="text-[1rem] mx-3.5 mb-2.5 w-[26rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
                   Mindefy places a paramount emphasis on the security of your
                   data. We employ state-of-the-art security measures to protect
                   your sensitive information. Your data's safety is our utmost
@@ -404,17 +402,17 @@ export default function CRMSolutions() {
 
             {/* Flexibility and Extensibility */}
             <div
-              className="flex bg-[#F0EDF8] rounded-2xl "
+              className="flex flex-col lg:flex-row bg-[#F0EDF8] rounded-2xl p-4 lg:p-0"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-1 w-[27.75rem]  my-[4.125rem] ml-6">
-                <h3 className="text-[1.5rem] ml-3.5  mt-2.5 font-semibold text-[#000000] mb-4">
+              <div className="flex-1 w-full lg:w-[27.75rem] my-4 lg:my-[4.125rem] lg:ml-6 order-2 lg:order-1">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Results That Shine
                 </h3>
-                <p className="text-[1rem] mx-3.5 mb-2.5 w-[26rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
                   Join the ranks of delighted clients who have experienced
                   tangible outcomes, from soaring customer satisfaction to
                   turbocharged sales, all thanks to Mindefy's CRM brilliance.
@@ -423,9 +421,9 @@ export default function CRMSolutions() {
                   competitive edge and quantifiable growth.
                 </p>
               </div>
-              <div className="flex-shrink-0">
-                <div className=" flex items-center justify-center">
-                  <div className="w-[21.75rem] my-[3rem] ml-6 mr-12 h-[21.75rem] relative">
+              <div className="flex-shrink-0 order-1 lg:order-2">
+                <div className="flex items-center justify-center">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-[21.75rem] my-4 lg:my-[3rem] lg:ml-6 lg:mr-12 h-[12rem] sm:h-[15rem] lg:h-[21.75rem] relative">
                     <Image
                       src="/images/CRM9.webp"
                       alt="Flexibility"
