@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export const ProjectDropdown = () => {
   return (
-    <div className="pt-8 bg-white shadow-lg rounded-[0.5rem] z-20">
-      {/* Column 1: YourHour Application */}
-      <div className="flex pt-0 pb-2 pl-6 pr-6 items-center justify-center">
-        <ul className="space-y-1.5 text-[#333333] font-medium text-[0.85rem] mb-4">
+    <div className="pt-4 sm:pt-6 lg:pt-8 bg-white shadow-lg rounded-[0.5rem] z-20 min-w-[120px] sm:min-w-[150px]">
+      {/* Project Links */}
+      <div className="flex pt-0 pb-2 sm:pb-4 px-4 sm:px-6 items-center justify-center">
+        <ul className="space-y-1 sm:space-y-1.5 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem]">
           <li>
             <Link
               href="/your-hour"
-              className="hover:text-red-600 hover:font-semibold block"
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               EarlyFoods
             </Link>
@@ -18,7 +18,7 @@ export const ProjectDropdown = () => {
           <li>
             <Link
               href="/your-hour"
-              className="hover:text-red-600 hover:font-semibold block"
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               JEGO
             </Link>
@@ -26,7 +26,7 @@ export const ProjectDropdown = () => {
           <li>
             <Link
               href="/your-hour"
-              className="hover:text-red-600 hover:font-semibold block"
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               SoliStack
             </Link>
@@ -34,7 +34,7 @@ export const ProjectDropdown = () => {
           <li>
             <Link
               href="/your-hour"
-              className="hover:text-red-600 hover:font-semibold block"
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               GreenBill
             </Link>
@@ -42,7 +42,7 @@ export const ProjectDropdown = () => {
           <li>
             <Link
               href="/your-hour"
-              className="hover:text-red-600 hover:font-semibold block"
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               MachOne
             </Link>
