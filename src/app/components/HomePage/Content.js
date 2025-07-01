@@ -2,30 +2,35 @@ import Image from "next/image";
 
 export default function Content() {
   return (
-    <div className="  mt-[5rem] ml-[15.56rem] mr-[13.56rem]  w-[62.87rem] h-[71.62rem] ">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       {/* Mission Section */}
-      <section className="flex flex-col justify-items-center mb-[4.5rem] w-[62.87rem] h-[18.31rem]">
-        <div>
-          <h4 className="text-[1rem] text-[#FF5225] font-bold uppercase ml-10   ">
+      <section className="mb-12 sm:mb-16 lg:mb-20">
+        <div className="mb-6 sm:mb-8">
+          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center lg:text-left lg:ml-4">
             Who We Are
           </h4>
         </div>
-        <div className="flex flex-row items-start gap-2 px-10 py-10 mt-1">
-          <div className="w-[2.93rem] h-[5.62rem] relative">
-            <Image
-              src="/images/1.svg"
-              alt="Step 1"
-              fill
-              className="object-cotain"
-            />
+        
+        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 xl:gap-12">
+          {/* Step Number */}
+          <div className="flex-shrink-0 order-1 lg:order-1">
+            <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[2.93rem] lg:h-[5.62rem] relative">
+              <Image
+                src="/images/1.svg"
+                alt="Step 1"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
 
-          <div>
-            <h2 className="text-3xl font-normal text-black">Our</h2>
-            <h1 className="text-3xl font-semibold text-black mb-[1.62rem]">
+          {/* Mission Content */}
+          <div className="flex-1 order-3 lg:order-2 text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">Our</h2>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
               Mission
             </h1>
-            <p className="text-gray-600 w-[39.75rem] h-[8rem] mb-6 ">
+            <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto lg:mx-0">
               Our mission is to empower businesses with cutting-edge technology
               solutions that propel growth, enhance efficiency, and drive
               sustainable success. As a conscious and aware team, we always
@@ -35,58 +40,73 @@ export default function Content() {
             </p>
             <a
               href="#"
-              className="text-purple-600 font-semibold flex items-center gap-2"
+              className="text-purple-600 font-semibold inline-flex items-center gap-2 hover:underline transition-colors"
             >
               READ MORE
               <span className="text-xl">&#8594;</span>
             </a>
           </div>
-          <div className="flex justify-center">
-            <img
-              src="/images/Switch.svg"
-              alt="Mission Icon"
-              className="w-[14.37rem] h-[13.28rem] object-contain"
-            />
+
+          {/* Mission Icon */}
+          <div className="flex-shrink-0 order-2 lg:order-3">
+            <div className="w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.37rem] lg:h-[13.28rem]">
+              <img
+                src="/images/Switch.svg"
+                alt="Mission Icon"
+                className="w-full h-full object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="flex flex-col justify-items-center mb-[4.5rem] w-[62.87rem] h-[16.56rem]">
-        <div>
-          <div>
-            <h4 className="text-[1rem] text-[#FF5225] font-bold uppercase ml-[20.1rem]">
-              What We Strive For
-            </h4>
-          </div>
-          <div className="flex flex-row justify-between  px-10 py-10  mt-1 ">
-            <div className="flex justify-center  ">
+      {/* Vision Section */}
+      <section className="mb-12 sm:mb-16 lg:mb-20">
+        <div className="mb-6 sm:mb-8">
+          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center">
+            What We Strive For
+          </h4>
+        </div>
+        
+        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 xl:gap-12">
+          {/* Vision Icon */}
+          <div className="flex-shrink-0 order-2 lg:order-1">
+            <div className="w-48 h-36 sm:w-56 sm:h-44 lg:w-[18rem] lg:h-[13.28rem]">
               <img
                 src="/images/binoculours.svg"
                 alt="Vision Icon"
-                className="w-[18rem] h-[13.28rem] object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
-            <div className=" flex flex-row justify-items-center ml-10">
-              <div className="w-[4.56rem] h-[5.68rem] relative ">
-                <img
-                  src="/images/2.svg"
-                  alt="Step 2"
-                  className="object-contain"
-                />
+          </div>
+
+          {/* Vision Content */}
+          <div className="flex-1 order-3 lg:order-2 text-center lg:text-left">
+            <div className="flex flex-col sm:flex-row lg:flex-row items-center lg:items-start gap-4 lg:gap-6">
+              {/* Step Number */}
+              <div className="flex-shrink-0 order-1">
+                <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[4.56rem] lg:h-[5.68rem] relative">
+                  <img
+                    src="/images/2.svg"
+                    alt="Step 2"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
 
-              <div>
-                <h2 className="text-[2rem] font-normal text-black">Our</h2>
-                <h1 className="text-[2rem] font-semibold text-black mb-[1.62rem]">
+              {/* Text Content */}
+              <div className="order-2">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">Our</h2>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
                   Vision
                 </h1>
-                <p className="text-gray-600 w-[35.56rem] h-[3.75rem] mb-6">
+                <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto lg:mx-0">
                   Our goal at Mindefy is to be the top option for companies
                   looking for disruptive technology solutions worldwide.
                 </p>
                 <a
                   href="#"
-                  className="text-purple-600 font-semibold flex items-center "
+                  className="text-purple-600 font-semibold inline-flex items-center gap-2 hover:underline transition-colors"
                 >
                   READ MORE <span className="text-xl">→</span>
                 </a>
@@ -97,37 +117,43 @@ export default function Content() {
       </section>
 
       {/* Values Section */}
-      <section className="flex flex-col justify-items-center mb-[4.5rem] w-[62.87rem] h-[18.31rem]">
-        <div>
-          <h4 className="text-[1rem] text-[#FF5225] font-bold uppercase ml-10">
+      <section className="mb-12 sm:mb-16 lg:mb-20">
+        <div className="mb-6 sm:mb-8">
+          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center lg:text-left lg:ml-4">
             Guiding Principles
           </h4>
         </div>
-        <div className="flex flex-row items-start gap-1 px-10 py-10 mt-1 ">
-          <div className="w-[4.8rem] h-[5.62rem] relative ">
-            <Image
-              src="/images/3.svg"
-              alt="Step 3"
-              fill
-              className="object-contain"
-            />
+        
+        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 xl:gap-12">
+          {/* Step Number */}
+          <div className="flex-shrink-0 order-1 lg:order-1">
+            <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[4.8rem] lg:h-[5.62rem] relative">
+              <Image
+                src="/images/3.svg"
+                alt="Step 3"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
 
-          <div className="">
-            <div className=" mb-12">
-              <h2 className="text-[2rem] font-normal text-black">Our</h2>
-              <h1 className="text-[2rem] font-semibold text-black mb-[1.62rem]">
+          {/* Values Content */}
+          <div className="flex-1 order-3 lg:order-2 text-center lg:text-left">
+            <div className="mb-8 sm:mb-10 lg:mb-12">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">Our</h2>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
                 Values
               </h1>
-              <p className="text-gray-600 w-[35.56rem] h-[3.75rem] mb-6 font-normal text-[1.125rem]">
+              <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto lg:mx-0">
                 With an emphasis on innovation, agility, and quality in
                 execution, we are motivated by a client-centric philosophy.
               </p>
             </div>
 
-            <div className="flex justify-between gap-6">
+            {/* Values Icons Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
               <div className="text-center">
-                <div className="relative w-[5rem] h-[5rem] mx-auto">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
                   <Image
                     src="/images/bulb.svg"
                     alt="Innovation"
@@ -135,10 +161,10 @@ export default function Content() {
                     className="object-contain"
                   />
                 </div>
-                <p className="mt-2 font-semibold">Innovation</p>
+                <p className="text-sm sm:text-base font-semibold">Innovation</p>
               </div>
               <div className="text-center">
-                <div className="relative w-[5rem] h-[5rem] mx-auto">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
                   <Image
                     src="/images/growth.svg"
                     alt="Growth"
@@ -146,10 +172,10 @@ export default function Content() {
                     className="object-contain"
                   />
                 </div>
-                <p className="mt-2 font-semibold">Growth</p>
+                <p className="text-sm sm:text-base font-semibold">Growth</p>
               </div>
               <div className="text-center">
-                <div className="relative w-[5rem] h-[5rem] mx-auto">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
                   <Image
                     src="/images/teamwork.svg"
                     alt="Teamwork"
@@ -157,10 +183,10 @@ export default function Content() {
                     className="object-contain"
                   />
                 </div>
-                <p className="mt-2 font-semibold">Teamwork</p>
+                <p className="text-sm sm:text-base font-semibold">Teamwork</p>
               </div>
               <div className="text-center">
-                <div className="relative w-[5rem] h-[5rem] mx-auto">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
                   <Image
                     src="/images/commitment.svg"
                     alt="Commitment"
@@ -168,10 +194,10 @@ export default function Content() {
                     className="object-contain"
                   />
                 </div>
-                <p className="mt-2 font-semibold">Commitment</p>
+                <p className="text-sm sm:text-base font-semibold">Commitment</p>
               </div>
-              <div className="text-center">
-                <div className="relative w-[5rem] h-[5rem] mx-auto">
+              <div className="text-center col-span-2 sm:col-span-1">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
                   <Image
                     src="/images/positivity.svg"
                     alt="Positivity"
@@ -179,25 +205,28 @@ export default function Content() {
                     className="object-contain"
                   />
                 </div>
-                <p className="mt-2 font-semibold">Positivity</p>
+                <p className="text-sm sm:text-base font-semibold">Positivity</p>
               </div>
             </div>
 
             <a
               href="#"
-              className=" mt-6 text-purple-600 font-semibold flex items-center gap-2"
+              className="text-purple-600 font-semibold inline-flex items-center gap-2 hover:underline transition-colors"
             >
               READ MORE <span className="text-xl">→</span>
             </a>
           </div>
 
-          <div className="relative w-[14.375rem] h-[13.28rem] ">
-            <Image
-              src="/images/diamond.svg"
-              alt="Values Icon"
-              fill
-              className="object-contain"
-            />
+          {/* Values Icon */}
+          <div className="flex-shrink-0 order-2 lg:order-3">
+            <div className="w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.375rem] lg:h-[13.28rem] relative">
+              <Image
+                src="/images/diamond.svg"
+                alt="Values Icon"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>

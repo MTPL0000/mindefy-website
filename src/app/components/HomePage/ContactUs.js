@@ -51,39 +51,33 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="w-full py-[3.43rem] ">
-      <div className="max-w-[75rem] mx-auto ">
-        <h1 className="text-[2.12rem] font-semibold text-center mb-[3rem]">
-          Lets Get In Touch
+    <section className="w-full py-12 sm:py-16 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.12rem] font-semibold text-center mb-8 sm:mb-12 lg:mb-16">
+          Let's Get In Touch
         </h1>
 
-        <div className="flex md:flex-row gap-[3rem] items-center">
-          {/* Left Column - Image and Contact Info */}
-          <div className="flex-1">
-            <div className=" opacity-92 relative w-[33.75rem] h-[29.31rem] mb-[2.3rem]">
+        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center lg:items-start">
+          {/* Left Column - Image */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+            <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl aspect-[33.75/29.31] opacity-90">
               <Image
                 src="/images/footer1.jpg"
                 alt="Mindefy Office"
                 fill
-                className="object-cover rounded-[0.5rem]"
+                className="object-cover rounded-lg shadow-lg"
               />
             </div>
-
-            {/* <div className="text-[0.875rem] text-[#000000] w-45 font-normal  cursor-pointer space-y-[1.156rem]">
-              <p className="hover:text-blue-500">rahul@mindefy.tech</p>
-              <p>+91-731-2996160</p>
-              <p>+91-90961-26060</p>
-            </div> */}
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="flex-1">
-            <form onSubmit={handleSubmit} className="space-y-[.75rem]">
+          <div className="w-full lg:w-1/2 max-w-lg mx-auto lg:mx-0">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               {/* Full Name Field */}
               <div>
                 <label
                   htmlFor="fullName"
-                  className="block text-[0.875rem]  font-medium mb-[0.5rem]"
+                  className="block text-sm sm:text-base font-medium mb-2"
                 >
                   Full Name <span className="text-red-500">*</span>
                 </label>
@@ -95,7 +89,7 @@ export default function ContactUs() {
                   onChange={handleChange}
                   required
                   placeholder="John David"
-                  className="w-full px-[1rem] py-[0.75rem] border bg-[#F8F8F8] border-gray-300 rounded-[0.75rem] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border bg-[#F8F8F8] border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
                 />
               </div>
 
@@ -103,7 +97,7 @@ export default function ContactUs() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-[0.875rem] font-medium mb-[0.5rem]"
+                  className="block text-sm sm:text-base font-medium mb-2"
                 >
                   Email <span className="text-red-500">*</span>
                 </label>
@@ -115,7 +109,7 @@ export default function ContactUs() {
                   onChange={handleChange}
                   required
                   placeholder="yourname@gmail.com"
-                  className="w-full px-[1rem] py-[0.75rem] bg-[#F8F8F8] border border-gray-300 rounded-[0.75rem] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-[#F8F8F8] border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
                 />
               </div>
 
@@ -123,53 +117,54 @@ export default function ContactUs() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-[0.875rem] font-medium mb-[0.5rem]"
+                  className="block text-sm sm:text-base font-medium mb-2"
                 >
                   Message
                 </label>
                 <textarea
-                  type="message"
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Hello there! I would like to talk about how to..."
-                  rows={5}
-                  className="w-full h-[9.75rem] px-[1rem] py-[0.75rem] bg-[#F8F8F8] border border-gray-300  rounded-[0.75rem] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows={4}
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-[#F8F8F8] border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 resize-vertical min-h-[120px] text-sm sm:text-base"
                 />
               </div>
 
               {/* File Upload */}
               <div>
-                <p className="text-[0.875rem] font-medium text-center mb-[0.75rem]">
+                <p className="text-sm sm:text-base font-medium text-center mb-3">
                   or
                 </p>
                 <label
                   htmlFor="document"
-                  className="block text-[0.875rem] font-medium mb-[0.75rem]"
+                  className="block text-sm sm:text-base font-medium mb-3"
                 >
                   Attach A Document
                 </label>
                 <div
-                  className={`border border-gray-300 rounded-[0.75rem]  bg-[#F8F8F8] p-[1rem] text-center cursor-pointer ${
+                  className={`border rounded-xl bg-[#F8F8F8] p-4 sm:p-6 text-center cursor-pointer transition-colors ${
                     isDragging
                       ? "border-blue-500 bg-blue-50"
-                      : "border-gray-300"
+                      : "border-gray-300 hover:border-gray-400"
                   }`}
                   onDragOver={handleDragOver}
                   onDragLeave={handleDragLeave}
                   onDrop={handleDrop}
+                  onClick={() => document.getElementById('document').click()}
                 >
                   <input
                     type="file"
                     id="document"
                     onChange={handleFileChange}
                     className="hidden"
+                    accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png"
                   />
-                  <div className="flex flex-row items-center justify-center gap-[0.5rem]">
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-[1.5rem] w-[1.5rem] text-gray-400"
+                      className="h-6 w-6 sm:h-8 sm:w-8 text-gray-400"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -181,24 +176,26 @@ export default function ContactUs() {
                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
                       />
                     </svg>
-                    <p className="text-[0.875rem] text-[#666666]">
-                      {file ? file.name : "Drop here to attach or"}
-                    </p>
-                    {!file && (
-                      <p className="text-[0.75rem] text-[#808080]">
-                        <span className="text-[#5E9AFF]">upload</span>
-                        {""} Max size: 5MB
+                    <div className="text-center sm:text-left">
+                      <p className="text-sm sm:text-base text-[#666666]">
+                        {file ? file.name : "Drop here to attach or"}
                       </p>
-                    )}
+                      {!file && (
+                        <p className="text-xs sm:text-sm text-[#808080]">
+                          <span className="text-[#5E9AFF] hover:underline">upload</span>
+                          {" "} Max size: 5MB
+                        </p>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Submit Button */}
-              <div className="flex justify-center">
+              <div className="flex justify-center pt-4">
                 <button
                   type="submit"
-                  className="bg-[#005EFF] text-white px-[2rem] font-normal text-[0.875rem] py-[0.75rem]  cursor-pointer rounded-full hover:bg-blue-600 transition-colors duration-300"
+                  className="bg-[#005EFF] text-white px-6 sm:px-8 py-2 sm:py-3 font-medium text-sm sm:text-base cursor-pointer rounded-full hover:bg-blue-600 transition-colors duration-300 min-w-[120px]"
                 >
                   Submit
                 </button>

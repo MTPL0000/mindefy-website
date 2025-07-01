@@ -47,19 +47,19 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="bg-gray-50 py-8">
-      <div className="max-w-[67.25rem] mx-auto px-4">
+    <section className="bg-gray-50 py-12 sm:py-16 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <p className="text-[#FF5225] text-[1rem] font-bold tracking-wider uppercase mb-7">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+          <p className="text-[#FF5225] text-sm sm:text-base font-bold tracking-wider uppercase mb-4 sm:mb-6 lg:mb-7">
             CLIENTS TESTIMONIAL
           </p>
-          <h2 className="text-[2.5rem] font-normal text-[#2B2B2B] mb-7 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-normal text-[#2B2B2B] mb-4 sm:mb-6 lg:mb-7 leading-tight">
             What {""}
-            <span className="text-[2.5rem] font-semibold">Our Customers</span>
+            <span className="font-semibold">Our Customers</span>
             {""} Are Saying
           </h2>
-          <p className="text-[1rem] font-normal text-[#444444] leading-relaxed max-w-[67.25rem] mx-auto">
+          <p className="text-sm sm:text-base lg:text-lg font-normal text-[#444444] leading-relaxed max-w-4xl mx-auto">
             Partnering with Mindefy has been a game-changer for their business.
             Their team of experts has helped us modernize our IT infrastructure,
             streamline our processes, and enhance overall efficiency. Mindefy's
@@ -71,104 +71,59 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Testimonials Flex Container */}
-        <div className="flex flex-wrap gap-8 ml-4 mb-12">
-          {/* First Row */}
-          <div className="flex flex-col lg:flex-row gap-8">
-            {testimonials.slice(0, 2).map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="flex-1 w-[30.375rem] h-[19.87rem] rounded-2xl pl-6 pt-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                {/* Testimonial Title */}
-                <h3 className="text-[1.375rem] font-semibold text-[#2B2B2B] pr-[3.25rem] mb-4 leading-tight">
-                  "{testimonial.title}"
-                </h3>
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-12 lg:mb-16">
+          {testimonials.map((testimonial) => (
+            <div
+              key={testimonial.id}
+              className="bg-white rounded-2xl p-6 sm:p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300 h-auto min-h-[300px] sm:min-h-[350px] lg:min-h-[400px] flex flex-col"
+            >
+              {/* Testimonial Title */}
+              <h3 className="text-lg sm:text-xl lg:text-[1.375rem] font-semibold text-[#2B2B2B] mb-3 sm:mb-4 lg:mb-6 leading-tight flex-shrink-0">
+                "{testimonial.title}"
+              </h3>
 
-                {/* Testimonial Content */}
-                <p className="text-[1rem] font-normal text-gray-600 pr-[2.128rem] leading-relaxed mb-8">
-                  {testimonial.content}
-                </p>
+              {/* Testimonial Content */}
+              <p className="text-sm sm:text-base lg:text-lg font-normal text-gray-600 leading-relaxed mb-6 sm:mb-8 lg:mb-10 flex-grow">
+                {testimonial.content}
+              </p>
 
-                {/* Author Section */}
-                <div className="flex items-center pb-8 pr-6 gap-4">
-                  {/* Company Logo */}
-                  <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
-                    <img
-                      src={testimonial.logo || "/placeholder.svg"}
-                      alt={testimonial.logoAlt}
-                      className="w-16 h-16 object-contain"
-                    />
-                  </div>
+              {/* Author Section */}
+              <div className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+                {/* Company Logo */}
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
+                  <img
+                    src={testimonial.logo || "/placeholder.svg"}
+                    alt={testimonial.logoAlt}
+                    className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 object-contain"
+                  />
+                </div>
 
-                  {/* Author Info */}
-                  <div>
-                    <p className="text-[0.875rem] font-normal text-[#000000] mb-1">
-                      {testimonial.position}
-                    </p>
-                    <p className="text-[1.125rem] font-medium text-[#2B2B2B]">
-                      {testimonial.author}
-                    </p>
-                  </div>
+                {/* Author Info */}
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs sm:text-sm lg:text-[0.875rem] font-normal text-[#000000] mb-1 leading-tight">
+                    {testimonial.position}
+                  </p>
+                  <p className="text-sm sm:text-base lg:text-[1.125rem] font-medium text-[#2B2B2B] leading-tight">
+                    {testimonial.author}
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
-
-          {/* Second Row */}
-          <div className="flex flex-col lg:flex-row gap-8">
-            {testimonials.slice(2, 4).map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="flex-1 w-[30.375rem] h-[19.87rem] rounded-[1rem] pl-6 pt-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                {/* Testimonial Title */}
-                <h3 className="text-[1.25rem] font-semibold text-[#2B2B2B] pr-[3.25rem] mb-4 leading-tight">
-                  "{testimonial.title}"
-                </h3>
-
-                {/* Testimonial Content */}
-                <p className="text-[1rem] font-normal text-gray-600 pr-[2.128rem] leading-relaxed mb-8">
-                  {testimonial.content}
-                </p>
-
-                {/* Author Section */}
-                <div className="flex items-center pb-8 pr-6 gap-4">
-                  {/* Company Logo */}
-                  <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
-                    <img
-                      src={testimonial.logo || "/placeholder.svg"}
-                      alt={testimonial.logoAlt}
-                      className="w-16 h-16 object-contain"
-                    />
-                  </div>
-
-                  {/* Author Info */}
-                  <div>
-                    <p className="text-[0.875rem] font-normal text-[#000000] mb-1">
-                      {testimonial.position}
-                    </p>
-                    <p className="text-[1.125rem] font-medium text-[#2B2B2B]">
-                      {testimonial.author}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
-        {/* View All Button - Opens in New Tab */}
+        {/* View All Button */}
         <div className="text-center">
           <Link
             href="/testimonials-more"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center bg-[#2B2B2B] text-white px-8 py-4 rounded-full text-[1rem] font-medium hover:bg-gray-800 transition-colors duration-300"
+            className="inline-flex items-center bg-[#2B2B2B] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-medium hover:bg-gray-800 transition-colors duration-300"
           >
             View All Testimonials
             <svg
-              className="ml-3 w-5 h-5"
+              className="ml-2 sm:ml-3 w-4 h-4 sm:w-5 sm:h-5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
