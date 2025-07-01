@@ -211,7 +211,7 @@ export default function Navbar() {
                   </div>
                   <div className="space-y-1 pt-2">
                     <p className="font-semibold text-[#332771]">Startup Support & Consulting</p>
-                    <Link href="/startup-consulting" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Startup Support and Consulting</Link>
+                    <Link href="/startup-support" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Startup Support and Consulting</Link>
                     <Link href="/mvp-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">MVP Development & PMF Test</Link>
                     <Link href="/white-label-solutions" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">White Label App Solutions</Link>
                     <Link href="/startup-incubation-consulting" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Startup Incubation Services</Link>
