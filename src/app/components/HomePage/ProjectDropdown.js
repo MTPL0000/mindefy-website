@@ -25,7 +25,7 @@ export const ProjectDropdown = () => {
           </li>
           <li>
             <Link
-              href="/your-hour"
+              href="/soli-stack"
               className="hover:text-red-600 hover:font-semibold block"
             >
               SoliStack
@@ -33,7 +33,7 @@ export const ProjectDropdown = () => {
           </li>
           <li>
             <Link
-              href="/your-hour"
+              href="/digi-bill"
               className="hover:text-red-600 hover:font-semibold block"
             >
               GreenBill
@@ -41,7 +41,7 @@ export const ProjectDropdown = () => {
           </li>
           <li>
             <Link
-              href="/your-hour"
+              href="/mach-one"
               className="hover:text-red-600 hover:font-semibold block"
             >
               MachOne
