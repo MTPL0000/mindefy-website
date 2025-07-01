@@ -12,29 +12,29 @@ export default function StartupIncubationConsulting() {
       <Navbar />
 
       {/* Hero Section - Matching the provided image */}
-      <section className=" mt-28 mx-auto ">
-        <div className=" mx-auto text-center">
+      <section className="mt-28 mx-auto px-4 xl:px-0">
+        <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <p className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
             Startup Incubation Services
           </p>
 
           {/* Main Title */}
-          <h1 className="text-[2.25rem]  font-semibold text-[#000000] mb-7 leading-tight max-w-[55.25rem] mx-auto">
+          <h1 className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[55.25rem] mx-auto px-4 xl:px-0">
             <span className="font-medium">Unlock Your </span>Startup Potential
-            with <br></br>Mindefy's Incubation Services
+            with <br className="hidden sm:block"></br>Mindefy's Incubation Services
           </h1>
 
           {/* Description Paragraphs */}
-          <div className="w-[61.375rem] font-normal mx-auto  mb-[2.25rem] text-justify space-y-[1.25rem]">
-            <p className="text-[1rem] text-[#444444] leading-relaxed">
+          <div className="w-full max-w-[61.375rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.25rem] px-4 xl:px-0">
+            <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed">
               <span className="font-semibold">
                 Are you an aspiring entrepreneur brimming with groundbreaking
                 ideas
               </span>
               , but not sure how to bring them to life?
             </p>
-            <p className="text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed">
               Look no further! At Mindefy, we specialize in incubating
               innovative concepts and nurturing them into successful ventures.
               Our Startup Incubation Services are designed to empower
@@ -48,7 +48,7 @@ export default function StartupIncubationConsulting() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative  w-full h-[30.125rem] mx-auto mb-6">
+          <div className="relative w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] mx-auto mb-6">
             <Image
               src="/images/WAD.webp"
               alt="Web Application Development - Developer working with web applications"
@@ -61,14 +61,14 @@ export default function StartupIncubationConsulting() {
       </section>
 
       {/* Why Mindefy is the Ideal Partner Section */}
-      <section className="  mt-20">
+      <section className="mt-20 px-4 xl:px-0">
         <div className="max-w-[62.75rem] mx-auto">
           {/* 2x2 Grid Layout */}
-          <div className="flex flex-wrap  max-w-[62.75rem] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:flex xl:flex-wrap w-full max-w-[62.75rem] mx-auto">
             {/* Expertise and Experience */}
-            <div className="bg-white flex-1 max-w-[31.375rem] border-r border-b border-[#000000]  basis-[calc(50%-1rem)]">
-              <div className="flex items-center ml-[26.375rem] mb-4">
-                <div className=" relative w-15 h-15 mr-5 mt-5">
+            <div className="bg-white border border-[#000000] md:border-r md:border-b md:border-l-0 md:border-t-0 xl:flex-1 xl:max-w-[31.375rem] xl:border-r xl:border-b xl:border-l-0 xl:border-t-0 xl:basis-[calc(50%-1rem)]">
+              <div className="flex items-center justify-center xl:justify-end xl:ml-[26.375rem] mb-4">
+                <div className="relative w-15 h-15 mt-5">
                   <Image
                     src="/images/SIS1.svg"
                     alt="Expertise and Experience"
@@ -77,12 +77,12 @@ export default function StartupIncubationConsulting() {
                   />
                 </div>
               </div>
-              <div className="mx-5 mb-5 w-[28.875rem] ">
-                <h3 className="ml-[9.4375rem] mb-5 text-[1.5rem] font-semibold text-[#000000]">
+              <div className="mx-5 mb-5 xl:w-[28.875rem]">
+                <h3 className="text-center xl:ml-[9.4375rem] xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000]">
                   Turning Ideas into Action
                 </h3>
 
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
                   We specialize in taking these initial concepts and
                   transforming them into actionable strategies. Whether your
                   idea is in its infancy or well-formed, our team collaborates
@@ -96,9 +96,9 @@ export default function StartupIncubationConsulting() {
             </div>
 
             {/* Advanced Tools and Technologies */}
-            <div className="bg-white flex-1 max-w-[31.375rem] border-l border-b border-[#000000]  basis-[calc(50%-1rem)]">
-              <div className="flex items-center  mb-4">
-                <div className="relative w-15 h-15 ml-5 mt-5">
+            <div className="bg-white border border-[#000000] md:border-l md:border-b md:border-r-0 md:border-t-0 xl:flex-1 xl:max-w-[31.375rem] xl:border-l xl:border-b xl:border-r-0 xl:border-t-0 xl:basis-[calc(50%-1rem)]">
+              <div className="flex items-center justify-center xl:justify-start mb-4">
+                <div className="relative w-15 h-15 xl:ml-5 mt-5">
                   <Image
                     src="/images/SIS2.svg"
                     alt="Advanced Tools and Technologies"
@@ -107,12 +107,12 @@ export default function StartupIncubationConsulting() {
                   />
                 </div>
               </div>
-              <div className="mx-5 mb-5 w-[28.875rem]">
-                <h3 className="mb-5 text-[1.5rem] font-semibold text-[#000000]">
+              <div className="mx-5 mb-5 xl:w-[28.875rem]">
+                <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000]">
                   End-to-End Support
                 </h3>
 
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
                   Mindefy offers comprehensive, end-to-end services to assist
                   you in navigating the intricacies of transforming your idea
                   into a viable startup. This level of support covers every
@@ -127,9 +127,9 @@ export default function StartupIncubationConsulting() {
             </div>
 
             {/* Agile Testing Methodologies */}
-            <div className="bg-white flex-1 max-w-[31.375rem] border-r border-t border-[#000000]  basis-[calc(50%-1rem)]">
-              <div className="flex items-center ml-[26.375rem] mb-4">
-                <div className="relative w-15 h-15 mr-5 mt-5">
+            <div className="bg-white border border-[#000000] md:border-r md:border-t md:border-l-0 md:border-b-0 xl:flex-1 xl:max-w-[31.375rem] xl:border-r xl:border-t xl:border-l-0 xl:border-b-0 xl:basis-[calc(50%-1rem)]">
+              <div className="flex items-center justify-center xl:justify-end xl:ml-[26.375rem] mb-4">
+                <div className="relative w-15 h-15 mt-5">
                   <Image
                     src="/images/SIS3.svg"
                     alt="Agile Testing Methodologies"
@@ -138,12 +138,12 @@ export default function StartupIncubationConsulting() {
                   />
                 </div>
               </div>
-              <div className="mx-5 mb-5 w-[28.875rem]">
-                <h3 className="ml-[11.5rem] mb-5 text-[1.5rem] font-semibold text-[#000000]">
+              <div className="mx-5 mb-5 xl:w-[28.875rem]">
+                <h3 className="text-center xl:ml-[11.5rem] xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000]">
                   Prototyping Excellence
                 </h3>
 
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
                   An essential stage in our incubation process involves creating
                   the first prototype of your product or service. This phase is
                   pivotal as it takes your concept from the abstract to the
@@ -158,9 +158,9 @@ export default function StartupIncubationConsulting() {
             </div>
 
             {/* Customer Satisfaction */}
-            <div className="bg-white flex-1 max-w-[31.375rem] border-l border-t border-[#000000]  basis-[calc(50%-1rem)]">
-              <div className="flex items-center mb-4">
-                <div className="relative w-15 h-15 ml-5 mt-5">
+            <div className="bg-white border border-[#000000] md:border-l md:border-t md:border-r-0 md:border-b-0 xl:flex-1 xl:max-w-[31.375rem] xl:border-l xl:border-t xl:border-r-0 xl:border-b-0 xl:basis-[calc(50%-1rem)]">
+              <div className="flex items-center justify-center xl:justify-start mb-4">
+                <div className="relative w-15 h-15 xl:ml-5 mt-5">
                   <Image
                     src="/images/SIS4.svg"
                     alt="Customer Satisfaction"
@@ -169,12 +169,12 @@ export default function StartupIncubationConsulting() {
                   />
                 </div>
               </div>
-              <div className="mx-5 mb-5 w-[28.875rem]">
-                <h3 className="mb-5 text-[1.5rem] font-semibold text-[#000000]">
+              <div className="mx-5 mb-5 xl:w-[28.875rem]">
+                <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000]">
                   Market Testing
                 </h3>
 
-                <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
                   Before making a full-scale commitment to production, it's
                   vital to test the market. Mindefy assists you in conducting
                   rigorous market research and validation. This step ensures
@@ -191,11 +191,11 @@ export default function StartupIncubationConsulting() {
       </section>
 
       {/* MEAN and MERN Advantages Section */}
-      <section className="mt-24 ">
-        <div className="max-w-[68.375rem] mx-auto ">
+      <section className="mt-24 px-4 xl:px-0">
+        <div className="max-w-[68.375rem] mx-auto">
           {/* Section Header */}
           <div className="text-center mb-[3.75rem]">
-            <h2 className="text-[1.75rem] font-semibold text-[#000000] ">
+            <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] px-4 xl:px-0">
               Mindefy offers a range of compelling reasons that make it a top
               choice for incubating startup ideas:
             </h2>
@@ -205,17 +205,17 @@ export default function StartupIncubationConsulting() {
           <div className="flex flex-col gap-[1.75rem] max-w-[60.625rem] mx-auto">
             {/* Full JavaScript Stack */}
             <div
-              className="flex bg-[#F4F4FF] rounded-2xl  "
+              className="flex flex-col lg:flex-row bg-[#F4F4FF] rounded-2xl overflow-hidden"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-1 w-[36.06rem] my-[4.125rem] ml-6 ">
-                <p className="text-[1.5rem]  font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-6 lg:py-[4.125rem] lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
+                <p className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
                   Experience and Expertise
                 </p>
-                <p className="text-[1rem]  w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   With years of experience in startup incubation, Mindefy has
                   accumulated invaluable knowledge and insights. We've
                   successfully shepherded numerous ideas to thriving businesses,
@@ -225,39 +225,35 @@ export default function StartupIncubationConsulting() {
                   and solutions.
                 </p>
               </div>
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-[23.18rem] my-11 mr-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/SIS5.webp"
-                      alt="JavaScript Stack"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-11 lg:mr-2.5">
+                  <Image
+                    src="/images/SIS5.webp"
+                    alt="JavaScript Stack"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </div>
 
             {/* Scalability and Performance */}
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-[23.18rem] my-11 ml-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/SIS6.webp"
-                      alt="Performance"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+            <div className="flex flex-col-reverse lg:flex-row overflow-hidden">
+              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-11 lg:ml-2.5">
+                  <Image
+                    src="/images/SIS6.webp"
+                    alt="Performance"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
-              <div className="flex-1 w-[36.06rem] my-[3.25rem] ml-2.5 ">
-                <h3 className="text-[1.5rem]  font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-6 lg:py-[3.25rem] lg:pl-4 lg:pr-6 xl:w-[36.06rem]">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
                   Tailored Solutions
                 </h3>
-                <p className="text-[1rem]  w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Mindefy understands that every startup idea is unique, and a
                   one-size-fits-all approach doesn't work. Our strength lies in
                   our ability to customize our services to fit your specific
@@ -272,17 +268,17 @@ export default function StartupIncubationConsulting() {
 
             {/* Rapid Development */}
             <div
-              className="flex bg-[#F4F4FF] rounded-2xl"
+              className="flex flex-col lg:flex-row bg-[#F4F4FF] rounded-2xl overflow-hidden"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-1 w-[36.06rem] my-[2.375rem] ml-6">
-                <h3 className="text-[1.5rem]  font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-6 lg:py-[2.375rem] lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
                   Comprehensive Resources
                 </h3>
-                <p className="text-[1rem]  w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Mindefy provides a wealth of resources to support your
                   entrepreneurial journey. This includes mentorship from
                   experienced professionals who offer invaluable guidance,
@@ -294,39 +290,35 @@ export default function StartupIncubationConsulting() {
                   to thrive.
                 </p>
               </div>
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-[23.18rem] my-11 mr-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/SIS7.webp"
-                      alt="Rapid Development"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-11 lg:mr-2.5">
+                  <Image
+                    src="/images/SIS7.webp"
+                    alt="Rapid Development"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </div>
 
             {/* Code Reusability */}
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center ">
-                  <div className="w-[23.18rem] my-11 ml-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/SIS8.webp"
-                      alt="Code Reusability"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+            <div className="flex flex-col-reverse lg:flex-row overflow-hidden">
+              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-11 lg:ml-2.5">
+                  <Image
+                    src="/images/SIS8.webp"
+                    alt="Code Reusability"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
-              <div className="flex-1 w-[36.06rem] my-[3.25rem] ml-2.5">
-                <h3 className="text-[1.5rem]  font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-6 lg:py-[3.25rem] lg:pl-4 lg:pr-6 xl:w-[36.06rem]">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
                   Strategic Partnerships
                 </h3>
-                <p className="text-[1rem]  w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   We develop scalable and maintainable test frameworks that
                   serve as a foundation for your test automation efforts. Our
                   frameworks provide a structured approach to test script
@@ -340,17 +332,17 @@ export default function StartupIncubationConsulting() {
 
             {/* Flexibility and Extensibility */}
             <div
-              className="flex rounded-2xl bg-[#F4F4FF]"
+              className="flex flex-col lg:flex-row rounded-2xl bg-[#F4F4FF] overflow-hidden"
               style={{
                 boxShadow:
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-1 w-[36.06rem] my-[3.25rem] ml-6">
-                <h3 className="text-[1.5rem]  font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-6 lg:py-[3.25rem] lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
                   Test Planning and Strategy
                 </h3>
-                <p className="text-[1rem]  w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Our experienced QA professionals work closely with you to
                   create a comprehensive test plan and strategy. We conduct a
                   thorough analysis of your application, define testing
@@ -361,38 +353,34 @@ export default function StartupIncubationConsulting() {
                   to application quality assurance.
                 </p>
               </div>
-              <div className="flex-shrink-0">
-                <div className=" flex items-center justify-center">
-                  <div className="w-[23.18rem] my-11 mr-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/SIS9.webp"
-                      alt="Flexibility"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-11 lg:mr-2.5">
+                  <Image
+                    src="/images/SIS9.webp"
+                    alt="Flexibility"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </div>
             {/* Code Reusability */}
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center ">
-                  <div className="w-[23.18rem] my-11 ml-2.5 h-[16.56rem] relative">
-                    <Image
-                      src="/images/SIS10.webp"
-                      alt="Code Reusability"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+            <div className="flex flex-col-reverse lg:flex-row overflow-hidden">
+              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-11 lg:ml-2.5">
+                  <Image
+                    src="/images/SIS10.webp"
+                    alt="Code Reusability"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
-              <div className="flex-1 w-[36.06rem] my-[3.25rem] ml-6">
-                <h3 className="text-[1.5rem]  font-semibold text-[#000000] mb-4">
+              <div className="flex-1 p-6 lg:py-[3.25rem] lg:pl-4 lg:pr-6 xl:w-[36.06rem]">
+                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
                   Test Execution and Reporting
                 </h3>
-                <p className="text-[1rem]  w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Mindefy has cultivated strategic partnerships with industry
                   leaders, investors, and seasoned mentors. These partnerships
                   offer a wealth of opportunities for your startup's success.
@@ -409,15 +397,15 @@ export default function StartupIncubationConsulting() {
         </div>
       </section>
 
-      <div className="w-[68.375rem] mx-auto px-3 flex flex-row justify-between">
-        <div className="w-[36.18rem] mx-1.5 ml-3">
-          <div className="mx-3.5 mt-[5.09rem] mb-8">
-            <p className="font-semibold text-2xl text-[#2C1010] ">
+      <div className="w-full max-w-[68.375rem] mx-auto px-4 xl:px-3 flex flex-col lg:flex-row justify-between items-center">
+        <div className="w-full lg:w-[36.18rem] lg:mx-1.5 lg:ml-3">
+          <div className="lg:mx-3.5 mt-8 lg:mt-[5.09rem] mb-6 lg:mb-8">
+            <p className="font-semibold text-[1.5rem] lg:text-2xl text-[#2C1010] text-center lg:text-left">
               Proven Track Record
             </p>
           </div>
-          <div className="mx-3.5 mb-[5.093rem]">
-            <p className="font-normal text-[1rem] text-justify text-[#444444] leading-relaxed ">
+          <div className="lg:mx-3.5 mb-8 lg:mb-[5.093rem]">
+            <p className="font-normal text-[0.875rem] lg:text-[1rem] text-justify text-[#444444] leading-relaxed">
               Mindefy's portfolio of successful startups serves as a testament
               to our capabilities. These are entrepreneurs who entrusted Mindefy
               to incubate their ideas, and the results speak for themselves:
@@ -428,7 +416,7 @@ export default function StartupIncubationConsulting() {
             </p>
           </div>
         </div>
-        <div className="w-[23.25rem] h-[23.375rem] relative">
+        <div className="w-[18rem] lg:w-[23.25rem] h-[18rem] lg:h-[23.375rem] relative flex-shrink-0">
           <Image
             src="/images/SIS11.webp"
             alt="Code Reusability"
