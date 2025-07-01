@@ -25,24 +25,24 @@ export const ProjectDropdown = () => {
           </li>
           <li>
             <Link
-              href="/your-hour"
-              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
+              href="/soli-stack"
+              className="hover:text-red-600 hover:font-semibold block"
             >
               SoliStack
             </Link>
           </li>
           <li>
             <Link
-              href="/your-hour"
-              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
+              href="/digi-bill"
+              className="hover:text-red-600 hover:font-semibold block"
             >
               GreenBill
             </Link>
           </li>
           <li>
             <Link
-              href="/your-hour"
-              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
+              href="/mach-one"
+              className="hover:text-red-600 hover:font-semibold block"
             >
               MachOne
             </Link>
