@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Footer from "./HomePage/Footer";
 import Navbar from "./HomePage/Navbar";
+import ContactUs from "./HomePage/ContactUs";
 
 export default function AboutUsPage() {
   const values = [
@@ -45,35 +46,33 @@ export default function AboutUsPage() {
   return (
     <section className="mx-auto bg-white">
       <Navbar />
-      <section className="max-w-[90rem] mx-auto pt-16">
+      <section className="max-w-7xl mx-auto pt-12 sm:pt-16 px-4 sm:px-6 lg:px-8">
         {/* Heading section */}
-        <div className="flex flex-col items-center justify-center gap-5 mt-8 mb-8">
-          <p className="text-[#FF5225] text-base font-bold tracking-wider uppercase">
+        <div className="flex flex-col items-center justify-center gap-4 sm:gap-5 lg:gap-6 mt-6 sm:mt-8 mb-6 sm:mb-8">
+          <p className="text-[#FF5225] text-sm sm:text-base font-bold tracking-wider uppercase">
             ABOUT US
           </p>
-          <span className="text-4xl font-normal text-[#000000]">
-            Transforming{" "}
-            <span className="text-4xl font-semibold text-[#000000]">
-              Business Payments and Processes{" "}
-            </span>
-            for
-          </span>
-          <span className="text-4xl font-normal text-[#000000]">
-            companies and financial institutions around the world.
-          </span>
-          <span className="text-4xl font-normal text-[#000000]">
-            Obsessed with{" "}
-            <span className="text-4xl font-semibold text-[#000000]">
-              Removing Complexity. Automating and
-              <br />
-            </span>
-          </span>
-          <span className="text-4xl font-semibold text-[#000000]">
-            {" "}
-            Digitising all That is Possible.
-          </span>
+          
+          {/* Responsive heading with better text flow */}
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-normal text-[#000000] leading-tight">
+              <span className="block sm:inline">Transforming </span>
+              <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-semibold text-[#000000]">
+                Business Payments and Processes{" "}
+              </span>
+              <span className="block sm:inline">for companies and financial institutions around the world.</span>
+            </h1>
+            
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-normal text-[#000000] leading-tight mt-4 sm:mt-6">
+              <span className="block sm:inline">Obsessed with </span>
+              <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-semibold text-[#000000]">
+                Removing Complexity. Automating and Digitising all That is Possible.
+              </span>
+            </h2>
+          </div>
 
-          <div className="m-auto relative aspect-[2/1] w-full overflow-hidden">
+          {/* Responsive image container */}
+          <div className="m-auto relative aspect-[2/1] w-full max-w-5xl overflow-hidden mt-6 sm:mt-8 lg:mt-10">
             <Image
               src="/images/abt-1.png"
               alt="soli-stack"
@@ -84,44 +83,45 @@ export default function AboutUsPage() {
         </div>
 
         {/* Main section */}
-        <div className="flex flex-col items-center justify-center max-w-[72rem] mx-auto gap-9 mt-18">
-          <span className="text-3xl font-semibold text-[#000000] text-center">
+        <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-5xl mx-auto gap-6 sm:gap-8 lg:gap-9 mt-12 sm:mt-16 lg:mt-18">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#000000] text-center px-4 sm:px-0">
             Customer Delight Is The Foundation Of Our Business
-          </span>
+          </h2>
 
-          <div className="flex flex-col items-center justify-center gap-2">
-            <span className="text-base font-normal text-[#000000] text-center">
+          <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 px-4 sm:px-6 lg:px-0">
+            <p className="text-sm sm:text-base lg:text-base font-normal text-[#000000] text-center leading-relaxed">
               It leads our guiding principles. It defines our innovation to
               address new opportunities and solve real problems now,
-              anticipating ones that customers don’t even know they’ll have. It
+              anticipating ones that customers don't even know they'll have. It
               drives who and how we hire to create world-class products and
               experiences that help businesses and financial institutions pay
               and get paid.
-            </span>
-            <span className="text-base font-normal text-[#000000] text-center">
+            </p>
+            <p className="text-sm sm:text-base lg:text-base font-normal text-[#000000] text-center leading-relaxed">
               At our core we share ideas, innovate together and support each
               other personally and professionally. It is through our guiding
               principles that we achieve our common goal of exceeding
               expectations and delighting customers.
-            </span>
+            </p>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center max-w-[72rem] mx-auto gap-9 mt-21 mb-8">
-          <span className="text-3xl font-bold text-[#000000] text-center">
+        {/* Guiding principles section */}
+        <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-5xl mx-auto gap-6 sm:gap-8 lg:gap-9 mt-16 sm:mt-20 lg:mt-21 mb-12 sm:mb-16 lg:mb-20">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#000000] text-center px-4 sm:px-0">
             Our guiding principles
-          </span>
+          </h2>
 
-          <section className="bg-white py-16 px-6 md:px-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <section className="bg-white py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 text-center max-w-6xl mx-auto">
               {values.map((value, idx) => {
                 return (
                   <div
                     key={idx}
-                    className="flex flex-col items-center gap-4 group"
+                    className="flex flex-col items-center gap-3 sm:gap-4 group"
                   >
-                    <div className="relative aspect-[1/1] w-[4.5rem] rounded-full border border-[#e2e2e2] flex items-center justify-center transition-all duration-300 group-hover:border-[#8ed1fc] group-hover:bg-[#8ed1fc] overflow-hidden">
-                      <div className="m-auto relative aspect-[1/1] w-[2.5rem]">
+                    <div className="relative aspect-[1/1] w-[4rem] sm:w-[4.5rem] rounded-full border border-[#e2e2e2] flex items-center justify-center transition-all duration-300 group-hover:border-[#8ed1fc] group-hover:bg-[#8ed1fc] overflow-hidden">
+                      <div className="m-auto relative aspect-[1/1] w-[2rem] sm:w-[2.5rem]">
                         <Image
                           src={value.icon}
                           alt="icon"
@@ -130,10 +130,10 @@ export default function AboutUsPage() {
                         />
                       </div>
                     </div>
-                    <h3 className="font-medium text-lg text-[#2b2b2b]">
+                    <h3 className="font-medium text-base sm:text-lg text-[#2b2b2b] px-2 sm:px-0">
                       {value.title}
                     </h3>
-                    <p className="text-base font-normal text-[#444444] max-w-xs">
+                    <p className="text-sm sm:text-base font-normal text-[#444444] max-w-xs leading-relaxed px-2 sm:px-0">
                       {value.description}
                     </p>
                   </div>
@@ -142,13 +142,10 @@ export default function AboutUsPage() {
             </div>
           </section>
         </div>
-        {/* Footer */}
-        <div className="text-center">
-          <h4 className="text-[2.125rem] font-semibold text-[#000000]">
-            Lets Get in Touch
-          </h4>
-        </div>
       </section>
+      {/* Contact Us Section */}
+      <ContactUs />
+      {/* Footer */}
       <Footer />
     </section>
   );
