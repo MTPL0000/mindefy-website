@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ServicesDrop from "./ServicesDrop";
 import Link from "next/link";
 import ProductsDropdown from "./ProductsDropdown";
@@ -35,7 +35,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-4 sm:px-6 lg:px-16 py-4 sticky top-0 z-20 shadow">
+    <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-2 sm:px-4 lg:px-8 py-4 sticky top-0 z-20 shadow">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <Link href="/">
@@ -59,7 +59,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-baseline space-x-4 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
+        <div className="hidden md:flex items-baseline space-x-2 md:space-x-3 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
           <a href="#" className="hover:text-[#2c2178] whitespace-nowrap">
             About Us
           </a>
@@ -147,7 +147,7 @@ export default function Navbar() {
             )}
           </div>
 
-          <span className="hover:text-[#2c2178] cursor-pointer whitespace-nowrap hidden lg:block">
+          <span className="hover:text-[#2c2178] cursor-pointer whitespace-nowrap hidden md:block">
             Mindful UX "Design Studio"
           </span>
         </div>
