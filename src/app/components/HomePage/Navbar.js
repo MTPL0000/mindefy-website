@@ -60,7 +60,10 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-baseline space-x-2 md:space-x-3 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
-          <a href="#" className="hover:text-[#2c2178] whitespace-nowrap">
+          <a
+            href="/about-us"
+            className="hover:text-[#2c2178] whitespace-nowrap"
+          >
             About Us
           </a>
 
@@ -147,9 +150,12 @@ export default function Navbar() {
             )}
           </div>
 
-          <span className="hover:text-[#2c2178] cursor-pointer whitespace-nowrap hidden md:block">
+          <a
+            href="/mindful-ux"
+            className="hover:text-[#2c2178] cursor-pointer whitespace-nowrap hidden md:block"
+          >
             Mindful UX "Design Studio"
-          </span>
+          </a>
         </div>
 
         {/* Desktop CTA */}
@@ -161,14 +167,20 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Dropdown Menu */}
-      <div className={`md:hidden transition-all duration-300 ease-in-out ${
-        isMobileMenuOpen 
-          ? 'max-h-screen opacity-100 visible' 
-          : 'max-h-0 opacity-0 invisible overflow-hidden'
-      }`}>
+      <div
+        className={`md:hidden transition-all duration-300 ease-in-out ${
+          isMobileMenuOpen
+            ? "max-h-screen opacity-100 visible"
+            : "max-h-0 opacity-0 invisible overflow-hidden"
+        }`}
+      >
         <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="flex flex-col gap-4 text-sm font-medium text-[#3B3C4A] p-4">
-            <a href="#" onClick={handleMobileMenuItemClick} className="hover:text-[#2c2178] py-2">
+            <a
+              href="#"
+              onClick={handleMobileMenuItemClick}
+              className="hover:text-[#2c2178] py-2"
+            >
               About Us
             </a>
 
@@ -184,49 +196,189 @@ export default function Navbar() {
                   alt="Dropdown"
                   width={10}
                   height={10}
-                  className={`object-contain transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`}
+                  className={`object-contain transition-transform ${
+                    mobileServicesOpen ? "rotate-180" : ""
+                  }`}
                 />
               </button>
               {mobileServicesOpen && (
                 <div className="pl-4 mt-2 space-y-3 text-xs">
                   <div className="space-y-1">
-                    <p className="font-semibold text-[#332771]">Modern Application Development</p>
-                    <Link href="/web-application-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Web Application Development</Link>
-                    <Link href="/android-app-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Android App Development</Link>
-                    <Link href="/ios-app-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">iOS Development</Link>
-                    <Link href="/hybrid-app-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Hybrid App Development</Link>
-                    <Link href="/mean-mern-stack-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">MEAN & MERN Stack Development</Link>
-                    <Link href="/agile-rapid-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Agile & Rapid Application Development Model</Link>
+                    <p className="font-semibold text-[#332771]">
+                      Modern Application Development
+                    </p>
+                    <Link
+                      href="/web-application-development"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Web Application Development
+                    </Link>
+                    <Link
+                      href="/android-app-development"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Android App Development
+                    </Link>
+                    <Link
+                      href="/ios-app-development"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      iOS Development
+                    </Link>
+                    <Link
+                      href="/hybrid-app-development"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Hybrid App Development
+                    </Link>
+                    <Link
+                      href="/mean-mern-stack-development"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      MEAN & MERN Stack Development
+                    </Link>
+                    <Link
+                      href="/agile-rapid-development"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Agile & Rapid Application Development Model
+                    </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">Digital Transformation Services</p>
-                    <Link href="/digital-transformation" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Digital Transformation Services</Link>
-                    <Link href="/microservices-architecture" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Building Micro-services Architecture</Link>
-                    <Link href="/low-code-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Low Code Development</Link>
-                    <Link href="/test-automation-qa" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Application Test Automation and QA Services</Link>
+                    <p className="font-semibold text-[#332771]">
+                      Digital Transformation Services
+                    </p>
+                    <Link
+                      href="/digital-transformation"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Digital Transformation Services
+                    </Link>
+                    <Link
+                      href="/microservices-architecture"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Building Micro-services Architecture
+                    </Link>
+                    <Link
+                      href="/low-code-development"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Low Code Development
+                    </Link>
+                    <Link
+                      href="/test-automation-qa"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Application Test Automation and QA Services
+                    </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">Cloud & DevOps</p>
-                    <Link href="/cloud-devops" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Cloud & DevOps</Link>
+                    <p className="font-semibold text-[#332771]">
+                      Cloud & DevOps
+                    </p>
+                    <Link
+                      href="/cloud-devops"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Cloud & DevOps
+                    </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">Startup Support & Consulting</p>
-                    <Link href="/startup-support" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Startup Support and Consulting</Link>
-                    <Link href="/mvp-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">MVP Development & PMF Test</Link>
-                    <Link href="/white-label-solutions" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">White Label App Solutions</Link>
-                    <Link href="/startup-incubation-consulting" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Startup Incubation Services</Link>
+                    <p className="font-semibold text-[#332771]">
+                      Startup Support & Consulting
+                    </p>
+                    <Link
+                      href="/startup-support"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Startup Support and Consulting
+                    </Link>
+                    <Link
+                      href="/mvp-development"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      MVP Development & PMF Test
+                    </Link>
+                    <Link
+                      href="/white-label-solutions"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      White Label App Solutions
+                    </Link>
+                    <Link
+                      href="/startup-incubation-consulting"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Startup Incubation Services
+                    </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">Enterprise Business Solutions</p>
-                    <Link href="/enterprise-solutions" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Enterprise Business Solutions</Link>
-                    <Link href="/crm-solutions" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">CRM Solutions</Link>
-                    <Link href="/business-process-management" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Business Process Management</Link>
-                    <Link href="/ecommerce-marketplace" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">E-commerce and Marketplace</Link>
+                    <p className="font-semibold text-[#332771]">
+                      Enterprise Business Solutions
+                    </p>
+                    <Link
+                      href="/enterprise-solutions"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Enterprise Business Solutions
+                    </Link>
+                    <Link
+                      href="/crm-solutions"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      CRM Solutions
+                    </Link>
+                    <Link
+                      href="/business-process-management"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Business Process Management
+                    </Link>
+                    <Link
+                      href="/ecommerce-marketplace"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      E-commerce and Marketplace
+                    </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">IT/Staff Argumentation</p>
-                    <Link href="/staff-services" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Staff Augmentation Services</Link>
-                    <Link href="/it-consulting" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">IT Consulting Services</Link>
+                    <p className="font-semibold text-[#332771]">
+                      IT/Staff Argumentation
+                    </p>
+                    <Link
+                      href="/staff-services"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Staff Augmentation Services
+                    </Link>
+                    <Link
+                      href="/it-consulting"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      IT Consulting Services
+                    </Link>
                   </div>
                 </div>
               )}
@@ -244,12 +396,18 @@ export default function Navbar() {
                   alt="Dropdown"
                   width={10}
                   height={10}
-                  className={`object-contain transition-transform ${mobileProductsOpen ? 'rotate-180' : ''}`}
+                  className={`object-contain transition-transform ${
+                    mobileProductsOpen ? "rotate-180" : ""
+                  }`}
                 />
               </button>
               {mobileProductsOpen && (
                 <div className="pl-4 mt-2">
-                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">
+                  <Link
+                    href="/your-hour"
+                    onClick={handleMobileMenuItemClick}
+                    className="block hover:text-red-600 text-xs"
+                  >
                     YourHour
                   </Link>
                 </div>
@@ -268,25 +426,63 @@ export default function Navbar() {
                   alt="Dropdown"
                   width={10}
                   height={10}
-                  className={`object-contain transition-transform ${mobileProjectsOpen ? 'rotate-180' : ''}`}
+                  className={`object-contain transition-transform ${
+                    mobileProjectsOpen ? "rotate-180" : ""
+                  }`}
                 />
               </button>
               {mobileProjectsOpen && (
                 <div className="pl-4 mt-2 space-y-1">
-                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">EarlyFoods</Link>
-                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">JEGO</Link>
-                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">SoliStack</Link>
-                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">GreenBill</Link>
-                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">MachOne</Link>
+                  <Link
+                    href="/your-hour"
+                    onClick={handleMobileMenuItemClick}
+                    className="block hover:text-red-600 text-xs"
+                  >
+                    EarlyFoods
+                  </Link>
+                  <Link
+                    href="/your-hour"
+                    onClick={handleMobileMenuItemClick}
+                    className="block hover:text-red-600 text-xs"
+                  >
+                    JEGO
+                  </Link>
+                  <Link
+                    href="/your-hour"
+                    onClick={handleMobileMenuItemClick}
+                    className="block hover:text-red-600 text-xs"
+                  >
+                    SoliStack
+                  </Link>
+                  <Link
+                    href="/your-hour"
+                    onClick={handleMobileMenuItemClick}
+                    className="block hover:text-red-600 text-xs"
+                  >
+                    GreenBill
+                  </Link>
+                  <Link
+                    href="/your-hour"
+                    onClick={handleMobileMenuItemClick}
+                    className="block hover:text-red-600 text-xs"
+                  >
+                    MachOne
+                  </Link>
                 </div>
               )}
             </div>
 
-            <span onClick={handleMobileMenuItemClick} className="hover:text-[#2c2178] cursor-pointer py-2">
+            <span
+              onClick={handleMobileMenuItemClick}
+              className="hover:text-[#2c2178] cursor-pointer py-2"
+            >
               Mindful UX "Design Studio"
             </span>
-            
-            <button onClick={handleMobileMenuItemClick} className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white">
+
+            <button
+              onClick={handleMobileMenuItemClick}
+              className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white"
+            >
               Let's Talk
             </button>
           </div>
