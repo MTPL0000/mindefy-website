@@ -100,7 +100,7 @@ export default function MindfulUX() {
                 target="_blank"
                 className="text-[#1E4494] text-lg cursor-pointer font-semibold hover:underline"
               >
-                (Link to Product)
+                {"{Link to Product}"}
               </a>
               <p className="text-[#000000] text-base font-normal">
                 The ultimate mobile application designed to help you break your
@@ -111,10 +111,17 @@ export default function MindfulUX() {
               </p>
               <a
                 href="/your-hour"
-                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-1 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
+                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
               >
                 Case Study
-                {"->"}
+                <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+                  <Image
+                    src="/images/arrow-icon.svg"
+                    alt="image"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </a>
             </div>
           </div>
@@ -136,8 +143,9 @@ export default function MindfulUX() {
                 href="https://spector.ai/"
                 target="_blank"
                 className="text-[#1E4494] text-lg cursor-pointer font-semibold hover:underline"
+                rel="noopener noreferrer"
               >
-                (Link to Product)
+                {"{Link to Product}"}
               </a>
               <p className="text-[#000000] text-base font-normal">
                 Spector.ai is a leader in 360o Asset Health Platform and
@@ -145,9 +153,16 @@ export default function MindfulUX() {
                 help you capture more value while maximizing your asset
                 performance and integrity and achieving sustainability goals.
               </p>
-              {/* <button className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-1 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0">
+              {/* <button className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0">
                 Case Study
-                {"->"}
+                  <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+                  <Image
+                    src="/images/arrow-icon.svg"
+                    alt="image"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </button>
               */}
             </div>
@@ -189,7 +204,7 @@ export default function MindfulUX() {
                 target="_blank"
                 className="text-[#1E4494] text-lg cursor-pointer font-semibold hover:underline"
               >
-                (Link to Product)
+                {"{Link to Product}"}
               </a>
               <p className="text-[#000000] text-base font-normal">
                 A video streaming platform designed to help you have access to
@@ -199,10 +214,17 @@ export default function MindfulUX() {
               </p>
               {/*<a
                 href=""
-                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-1 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
+                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
               >
                 Case Study
-                {"->"}
+                 <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+                  <Image
+                    src="/images/arrow-icon.svg"
+                    alt="image"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </a>
               */}
             </div>
@@ -227,7 +249,7 @@ export default function MindfulUX() {
                 target="_blank"
                 className="text-[#1E4494] text-lg cursor-pointer font-semibold hover:underline"
               >
-                (Link to Product)
+                {"{Link to Product}"}
               </a>
               <p className="text-[#000000] text-base font-normal">
                 A video streaming platform designed to help you have access to
@@ -278,10 +300,17 @@ export default function MindfulUX() {
               </p>
               <a
                 href="/digi-bill"
-                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-1 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
+                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
               >
                 Case Study
-                {"->"}
+                <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+                  <Image
+                    src="/images/arrow-icon.svg"
+                    alt="image"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </a>
             </div>
           </div>
@@ -308,10 +337,17 @@ export default function MindfulUX() {
               </p>
               <a
                 href="/mach-one"
-                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-1 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
+                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
               >
                 Case Study
-                {"->"}
+                <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+                  <Image
+                    src="/images/arrow-icon.svg"
+                    alt="image"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </a>
             </div>
 
@@ -356,10 +392,17 @@ export default function MindfulUX() {
               </p>
               <a
                 href="/soli-stack"
-                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-1 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
+                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
               >
                 Case Study
-                {"->"}
+                <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+                  <Image
+                    src="/images/arrow-icon.svg"
+                    alt="image"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </a>
             </div>
           </div>
