@@ -607,6 +607,13 @@ export default function YourHourProduct() {
             </div>
           </div>
         </div>
+
+        {/* Footer */}
+        <div className="text-center">
+          <h4 className="text-[2.125rem] font-semibold text-[#000000]">
+            Lets Get in Touch
+          </h4>
+        </div>
       </section>
       <Footer />
     </section>
