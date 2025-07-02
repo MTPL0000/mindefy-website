@@ -114,10 +114,10 @@ export const servicesData = [
 
   // Startup Support & Consulting
   {
-    id: "startup-consulting",
+    id: "startup-support",
     title: "Startup Support and Consulting",
     category: "Startup Support & Consulting",
-    route: "/startup-consulting",
+    route: "/startup-support",
     component: "StartupConsulting",
     description: "Comprehensive startup support",
   },

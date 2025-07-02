@@ -11,14 +11,35 @@ export default function Navbar() {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showProductsDropdown, setShowProductsDropdown] = useState(false);
   const [showProjectsDropdown, setShowProjectsDropdown] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    // Close all mobile dropdowns when main menu closes
+    if (isMobileMenuOpen) {
+      setMobileServicesOpen(false);
+      setMobileProductsOpen(false);
+      setMobileProjectsOpen(false);
+    }
+  };
+
+  // Close mobile menu when any option is clicked
+  const handleMobileMenuItemClick = () => {
+    setIsMobileMenuOpen(false);
+    setMobileServicesOpen(false);
+    setMobileProductsOpen(false);
+    setMobileProjectsOpen(false);
+  };
 
   return (
-    <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-6 md:px-16 py-4 sticky top-0 z-20 shadow">
-      <div className="flex items-center justify-between">
+    <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-2 sm:px-4 lg:px-8 py-4 sticky top-0 z-20 shadow">
+      <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
-
         <Link href="/">
-          <div className="relative w-36 md:w-44 aspect-[3.88/1] cursor-pointer">
+          <div className="relative w-28 sm:w-36 lg:w-44 aspect-[3.88/1] cursor-pointer">
             <Image
               src="/images/nav-logo.svg"
               alt="Mindefy Logo"
@@ -28,18 +49,18 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Hamburger menu toggle (checkbox hack) */}
-        <input type="checkbox" id="menu-toggle" className="hidden peer" />
-        <label
-          htmlFor="menu-toggle"
-          className="md:hidden text-2xl font-bold cursor-pointer"
+        {/* Hamburger menu toggle */}
+        <button
+          onClick={toggleMobileMenu}
+          className="md:hidden text-2xl font-bold cursor-pointer z-30"
+          aria-label="Toggle mobile menu"
         >
-          ☰
-        </label>
+          {isMobileMenuOpen ? "✕" : "☰"}
+        </button>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-baseline space-x-6 font-semibold text-sm md:text-base text-[#3B3C4A]">
-          <a href="#" className="hover:text-[#2c2178]">
+        <div className="hidden md:flex items-baseline space-x-2 md:space-x-3 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
+          <a href="#" className="hover:text-[#2c2178] whitespace-nowrap">
             About Us
           </a>
 
@@ -49,11 +70,11 @@ export default function Navbar() {
             onMouseEnter={() => setShowServicesDropdown(true)}
             onMouseLeave={() => setShowServicesDropdown(false)}
           >
-            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5  cursor-pointer py-2">
+            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
               Services
               <Image
                 src="/images/dropdown-icon.png"
-                alt="All Screens"
+                alt="Dropdown"
                 width={10}
                 height={10}
                 className="object-contain"
@@ -63,12 +84,14 @@ export default function Navbar() {
             {/* Services Dropdown with hover bridge */}
             {showServicesDropdown && (
               <>
-                {/* Invisible hover bridge that spans full width */}
+                {/* Invisible hover bridge */}
                 <div className="fixed left-0 top-[4rem] w-full h-[5rem] z-30"></div>
 
-                {/* Actual dropdown positioned from left edge */}
-                <div className="fixed left-0 top-[4.5rem] w-full flex justify-start  z-40">
-                  <ServicesDrop />
+                {/* Actual dropdown positioned to take full width */}
+                <div className="fixed left-0 top-[4.5rem] w-full flex justify-center z-40">
+                  <div className="w-full max-w-none px-4 sm:px-6 lg:px-8">
+                    <ServicesDrop />
+                  </div>
                 </div>
               </>
             )}
@@ -80,25 +103,22 @@ export default function Navbar() {
             onMouseEnter={() => setShowProductsDropdown(true)}
             onMouseLeave={() => setShowProductsDropdown(false)}
           >
-            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5  cursor-pointer py-2">
+            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
               Products
               <Image
                 src="/images/dropdown-icon.png"
-                alt="All Screens"
+                alt="Dropdown"
                 width={10}
                 height={10}
                 className="object-contain"
               />
             </p>
 
-            {/* Products Dropdown with hover bridge */}
+            {/* Products Dropdown */}
             {showProductsDropdown && (
-              <>
-                {/* Actual dropdown positioned from left edge */}
-                <div className="fixed left-[45%] top-[4.5rem] z-40">
-                  <ProductsDropdown />
-                </div>
-              </>
+              <div className="absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40">
+                <ProductsDropdown />
+              </div>
             )}
           </div>
 
@@ -108,58 +128,169 @@ export default function Navbar() {
             onMouseEnter={() => setShowProjectsDropdown(true)}
             onMouseLeave={() => setShowProjectsDropdown(false)}
           >
-            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2">
+            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
               Projects
               <Image
                 src="/images/dropdown-icon.png"
-                alt="All Screens"
+                alt="Dropdown"
                 width={10}
                 height={10}
                 className="object-contain"
               />
             </p>
 
-            {/* Projects Dropdown with hover bridge */}
+            {/* Projects Dropdown */}
             {showProjectsDropdown && (
-              <>
-                {/* Actual dropdown positioned from left edge */}
-                <div className="fixed left-[50.5%] top-[4.5rem] z-40">
-                  <ProjectDropdown />
-                </div>
-              </>
+              <div className="absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40">
+                <ProjectDropdown />
+              </div>
             )}
           </div>
 
-          <span className="hover:text-[#2c2178] cursor-pointer">
+          <span className="hover:text-[#2c2178] cursor-pointer whitespace-nowrap hidden md:block">
             Mindful UX "Design Studio"
           </span>
         </div>
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <button className="px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white">
+          <button className="px-3 lg:px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white text-sm lg:text-base whitespace-nowrap">
             Let's Talk
           </button>
         </div>
       </div>
 
       {/* Mobile Dropdown Menu */}
-      <div className="peer-checked:flex hidden md:hidden flex-col gap-4 mt-4 text-sm font-medium text-[#3B3C4A]">
-        <a href="#" className="hover:text-[#2c2178]">
-          About Us
-        </a>
+      <div className={`md:hidden transition-all duration-300 ease-in-out ${
+        isMobileMenuOpen 
+          ? 'max-h-screen opacity-100 visible' 
+          : 'max-h-0 opacity-0 invisible overflow-hidden'
+      }`}>
+        <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
+          <div className="flex flex-col gap-4 text-sm font-medium text-[#3B3C4A] p-4">
+            <a href="#" onClick={handleMobileMenuItemClick} className="hover:text-[#2c2178] py-2">
+              About Us
+            </a>
 
-        {/* Mobile Services (no hover, could add click toggle if needed) */}
-        <span className="hover:text-[#2c2178] cursor-pointer">Services</span>
+            {/* Mobile Services Dropdown */}
+            <div>
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left"
+              >
+                Services
+                <Image
+                  src="/images/dropdown-icon.png"
+                  alt="Dropdown"
+                  width={10}
+                  height={10}
+                  className={`object-contain transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+              {mobileServicesOpen && (
+                <div className="pl-4 mt-2 space-y-3 text-xs">
+                  <div className="space-y-1">
+                    <p className="font-semibold text-[#332771]">Modern Application Development</p>
+                    <Link href="/web-application-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Web Application Development</Link>
+                    <Link href="/android-app-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Android App Development</Link>
+                    <Link href="/ios-app-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">iOS Development</Link>
+                    <Link href="/hybrid-app-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Hybrid App Development</Link>
+                    <Link href="/mean-mern-stack-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">MEAN & MERN Stack Development</Link>
+                    <Link href="/agile-rapid-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Agile & Rapid Application Development Model</Link>
+                  </div>
+                  <div className="space-y-1 pt-2">
+                    <p className="font-semibold text-[#332771]">Digital Transformation Services</p>
+                    <Link href="/digital-transformation" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Digital Transformation Services</Link>
+                    <Link href="/microservices-architecture" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Building Micro-services Architecture</Link>
+                    <Link href="/low-code-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Low Code Development</Link>
+                    <Link href="/test-automation-qa" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Application Test Automation and QA Services</Link>
+                  </div>
+                  <div className="space-y-1 pt-2">
+                    <p className="font-semibold text-[#332771]">Cloud & DevOps</p>
+                    <Link href="/cloud-devops" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Cloud & DevOps</Link>
+                  </div>
+                  <div className="space-y-1 pt-2">
+                    <p className="font-semibold text-[#332771]">Startup Support & Consulting</p>
+                    <Link href="/startup-support" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Startup Support and Consulting</Link>
+                    <Link href="/mvp-development" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">MVP Development & PMF Test</Link>
+                    <Link href="/white-label-solutions" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">White Label App Solutions</Link>
+                    <Link href="/startup-incubation-consulting" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Startup Incubation Services</Link>
+                  </div>
+                  <div className="space-y-1 pt-2">
+                    <p className="font-semibold text-[#332771]">Enterprise Business Solutions</p>
+                    <Link href="/enterprise-solutions" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Enterprise Business Solutions</Link>
+                    <Link href="/crm-solutions" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">CRM Solutions</Link>
+                    <Link href="/business-process-management" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Business Process Management</Link>
+                    <Link href="/ecommerce-marketplace" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">E-commerce and Marketplace</Link>
+                  </div>
+                  <div className="space-y-1 pt-2">
+                    <p className="font-semibold text-[#332771]">IT/Staff Argumentation</p>
+                    <Link href="/staff-services" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">Staff Augmentation Services</Link>
+                    <Link href="/it-consulting" onClick={handleMobileMenuItemClick} className="block hover:text-red-600">IT Consulting Services</Link>
+                  </div>
+                </div>
+              )}
+            </div>
 
-        <span className="hover:text-[#2c2178] cursor-pointer">Products</span>
-        <span className="hover:text-[#2c2178] cursor-pointer">Projects</span>
-        <span className="hover:text-[#2c2178] cursor-pointer">
-          Mindful UX "Design Studio"
-        </span>
-        <button className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white">
-          Let's Talk
-        </button>
+            {/* Mobile Products Dropdown */}
+            <div>
+              <button
+                onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left"
+              >
+                Products
+                <Image
+                  src="/images/dropdown-icon.png"
+                  alt="Dropdown"
+                  width={10}
+                  height={10}
+                  className={`object-contain transition-transform ${mobileProductsOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+              {mobileProductsOpen && (
+                <div className="pl-4 mt-2">
+                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">
+                    YourHour
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Mobile Projects Dropdown */}
+            <div>
+              <button
+                onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left"
+              >
+                Projects
+                <Image
+                  src="/images/dropdown-icon.png"
+                  alt="Dropdown"
+                  width={10}
+                  height={10}
+                  className={`object-contain transition-transform ${mobileProjectsOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+              {mobileProjectsOpen && (
+                <div className="pl-4 mt-2 space-y-1">
+                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">EarlyFoods</Link>
+                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">JEGO</Link>
+                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">SoliStack</Link>
+                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">GreenBill</Link>
+                  <Link href="/your-hour" onClick={handleMobileMenuItemClick} className="block hover:text-red-600 text-xs">MachOne</Link>
+                </div>
+              )}
+            </div>
+
+            <span onClick={handleMobileMenuItemClick} className="hover:text-[#2c2178] cursor-pointer py-2">
+              Mindful UX "Design Studio"
+            </span>
+            
+            <button onClick={handleMobileMenuItemClick} className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white">
+              Let's Talk
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
   );
