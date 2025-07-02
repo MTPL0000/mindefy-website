@@ -6,6 +6,7 @@ const Solistack = () => {
   return (
     <div className="m-auto bg-white">
       <Navbar />
+      {/* Header Section */}
       <section className="flex flex-col items-center justify-center gap-8 md:gap-12 lg:gap-16 xl:gap-24 mx-auto pt-8 md:pt-16 px-4 md:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto gap-6 md:gap-8 lg:gap-12 mt-4 md:mt-8">
           <div className="flex flex-col items-center justify-center gap-3 md:gap-5">
@@ -33,20 +34,23 @@ const Solistack = () => {
             complete route and all orders on one screen.
           </span>
         </div>
+      </section>
 
-        {/* Main Image */}
-        <div className="flex items-center justify-center w-full bg-[linear-gradient(180deg,rgba(255,255,255,0.6)_0%,rgba(234,177,33,0.57)_52.4%,rgba(254,254,254,0.6)_100%)] px-4 md:px-6 lg:px-8">
-          <div className="m-auto relative aspect-[2/1] w-full max-w-7xl overflow-hidden">
-            <Image
-              src="/images/projects/ST-1.webp"
-              alt="soli-stack Dashboard"
-              fill
-              className="object-contain"
-            />
-          </div>
+      {/* Main Image - Full Width */}
+      <div className="w-full bg-[linear-gradient(180deg,rgba(255,255,255,0.6)_0%,rgba(234,177,33,0.57)_52.4%,rgba(254,254,254,0.6)_100%)]">
+        <div className="relative aspect-[2/1] w-full overflow-hidden">
+          <Image
+            src="/images/projects/ST-1.webp"
+            alt="soli-stack Dashboard"
+            fill
+            className="object-contain"
+          />
         </div>
+      </div>
 
-        <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-5xl xl:max-w-6xl m-auto gap-4 md:gap-6 lg:gap-8 px-4 md:px-6 lg:px-8">
+      {/* Features Section */}
+      <section className="flex flex-col items-center justify-center gap-8 md:gap-12 lg:gap-16 xl:gap-24 mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-16">
+        <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-5xl xl:max-w-6xl m-auto gap-4 md:gap-6 lg:gap-8">
           <span className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#000000] text-center px-4">
             Solistack's Transformative Service Offerings
           </span>
@@ -219,13 +223,12 @@ const Solistack = () => {
               />
             </div>
           </div>
-        </div>
-
-        {/* Footer Call to Action */}
-        <div className="text-center px-4">
-          <h4 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-[#000000]">
-            Lets Get in Touch
-          </h4>
+          {/* Footer Call to Action */}
+          <div className="text-center">
+            <h4 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-[#000000]">
+              Lets Get in Touch
+            </h4>
+          </div>
         </div>
       </section>
       <Footer />
