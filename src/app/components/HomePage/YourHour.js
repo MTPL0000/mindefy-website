@@ -212,7 +212,7 @@ export default function YourHour() {
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end order-1 lg:order-2">
           <div className="relative max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full">
             <img
-              src="/images/yh-1.webp"
+              src="/images/smartphone.svg"
               alt="YourHour application shown on mobile devices"
               className="w-full h-auto object-contain"
             />
