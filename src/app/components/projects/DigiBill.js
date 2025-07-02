@@ -6,29 +6,29 @@ const DigiBill = () => {
   return (
     <div className="m-auto bg-white">
       <Navbar />
-      <section className="flex flex-col items-center justify-center gap-[6rem] mx-auto pt-16">
-        <div className="flex flex-col items-center justify-center max-w-[60rem] mx-auto gap-12 mt-8">
-          <div className="flex flex-col items-center justify-center gap-5">
-            <p className="text-[#FF5225] text-base font-bold tracking-wider uppercase">
+      <section className="flex flex-col items-center justify-center gap-16 lg:gap-24 pt-16">
+        <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-6xl mx-auto gap-8 lg:gap-12 mt-8 px-4 lg:px-8">
+          <div className="flex flex-col items-center justify-center gap-4 lg:gap-5">
+            <p className="text-[#FF5225] text-sm lg:text-base font-bold tracking-wider uppercase">
               DigiBill
             </p>
             <div className="flex flex-col items-center justify-center gap-2">
-              <span className="text-4xl font-normal text-[#000000] text-center">
+              <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
                 DigiBill{" "}
-                <span className="text-4xl font-semibold text-[#000000] text-center">
+                <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                   A Sustainable Solution <br />
                 </span>
               </span>
-              <span className="text-4xl font-normal text-[#000000] text-center">
+              <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
                 For{" "}
-                <span className="text-4xl font-semibold text-[#000000] text-center">
+                <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                   Digital Bill{" "}
                 </span>
                 Management
               </span>
             </div>
           </div>
-          <span className="text-base font-normal text-[#000000] text-justify">
+          <span className="text-sm lg:text-base font-normal text-[#000000] text-justify">
             An innovative application developed by Mindefy, designed to
             revolutionize digital bill generation and management while promoting
             environmental sustainability. With a strong focus on environmental
@@ -40,8 +40,8 @@ const DigiBill = () => {
         </div>
 
         {/* Main Image */}
-        <div className="flex items-center justify-center w-full bg-[linear-gradient(180deg,_rgba(255,255,255,0.6)_0%,_rgba(26,204,64,0.57)_52.4%,_rgba(254,254,254,0.6)_100%)]">
-          <div className="m-auto relative aspect-[2/1] w-[70rem] overflow-hidden">
+        <div className="w-full bg-[linear-gradient(180deg,_rgba(255,255,255,0.6)_0%,_rgba(26,204,64,0.57)_52.4%,_rgba(254,254,254,0.6)_100%)]">
+          <div className="m-auto relative aspect-[16/9] md:aspect-[2/1] w-full max-w-[70rem] overflow-hidden">
             <Image
               src="/images/projects/DB-1.webp"
               alt="DigiBill Dashboard"
@@ -52,34 +52,34 @@ const DigiBill = () => {
         </div>
 
         {/* Key Functionality Section */}
-        <div className="flex flex-col items-center justify-center max-w-[72.5rem] mx-auto gap-21">
-          <div className="flex flex-col items-center justify-center max-w-[60rem] mx-auto gap-12">
-            <div className="flex flex-col items-center justify-center gap-5">
-              <p className="text-[#FF5225] text-base font-bold tracking-wider uppercase">
+        <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-[72.5rem] mx-auto gap-16 lg:gap-21 px-4 lg:px-8">
+          <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-6xl mx-auto gap-8 lg:gap-12">
+            <div className="flex flex-col items-center justify-center gap-4 lg:gap-5">
+              <p className="text-[#FF5225] text-sm lg:text-base font-bold tracking-wider uppercase">
                 Merchant App
               </p>
               <div className="flex flex-col items-center justify-center gap-2">
-                <span className="text-4xl font-normal text-[#000000] text-center">
+                <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
                   Streamline{" "}
-                  <span className="text-4xl font-semibold text-[#000000] text-center">
+                  <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                     Your Billing <br />
                   </span>
                 </span>
-                <span className="text-4xl font-normal text-[#000000] text-center">
-                  <span className="text-4xl font-semibold text-[#000000] text-center">
+                <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
+                  <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                     Process Digitally{" "}
                   </span>
                   with{" "}
-                  <span className="text-4xl font-semibold text-[#000000] text-center">
+                  <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                     DigiBill
                   </span>
                 </span>
               </div>
             </div>
-            <span className="text-base font-normal text-[#000000] text-justify">
+            <span className="text-sm lg:text-base font-normal text-[#000000] text-justify">
               With the DigiBill Merchant app you can bid farewell to the hassle
               of paper bills and embrace the efficiency of digital transactions.
-              Seamlessly integrated with your store’s operations, the Merchant
+              Seamlessly integrated with your store's operations, the Merchant
               app allows you to generate and manage bills electronically,
               streamlining your billing process and reducing errors. Gain
               insights into sales, view transaction history, and provide
@@ -87,20 +87,20 @@ const DigiBill = () => {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center mx-auto gap-25">
+          <div className="flex flex-col items-center justify-center mx-auto gap-16 lg:gap-25">
             <div className="flex flex-col items-center justify-center gap-3">
-              <h3 className="text-4xl text-[#000000] font-semibold text-center">
+              <h3 className="text-2xl lg:text-4xl text-[#000000] font-semibold text-center">
                 Highlighting The Key Functionality
               </h3>
-              <h3 className="text-4xl text-[#000000] font-semibold text-center">
+              <h3 className="text-2xl lg:text-4xl text-[#000000] font-semibold text-center">
                 of Our Merchant App
               </h3>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-15">
-              <div className="flex items-center justify-center gap-20">
-                <div className="w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[6.25rem] overflow-hidden">
+            <div className="flex flex-col items-center justify-center gap-10 lg:gap-15">
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20">
+                <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
+                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-1.svg"
                       alt="DigiBill icon"
@@ -109,17 +109,17 @@ const DigiBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                       Simplified bill generation
                     </h4>
-                    <p className="text-base font-normal text-[#000000] text-center">
+                    <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
                       Create and manage bills digitally, eliminating the need
                       for paper-based invoices.
                     </p>
                   </div>
                 </div>
-                <div className="w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[6.25rem] overflow-hidden">
+                <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
+                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-2.svg"
                       alt="DigiBill icon"
@@ -128,20 +128,20 @@ const DigiBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                       Sales tracking
                     </h4>
-                    <p className="text-base font-normal text-[#000000] text-center">
-                      Keep a close eye on your store’s sales performance with
+                    <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
+                      Keep a close eye on your store's sales performance with
                       real-time analytics and reporting.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center justify-center gap-15">
-                <div className="w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[6.25rem] overflow-hidden">
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-15">
+                <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
+                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-3.svg"
                       alt="DigiBill icon"
@@ -150,17 +150,17 @@ const DigiBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                       Transaction history
                     </h4>
-                    <p className="text-base font-normal text-[#000000] text-center">
+                    <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
                       Access a comprehensive record of past transactions for
                       accurate record-keeping and reconciliation.
                     </p>
                   </div>
                 </div>
-                <div className="w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[6.25rem] overflow-hidden">
+                <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
+                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-4.svg"
                       alt="DigiBill icon"
@@ -169,17 +169,17 @@ const DigiBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                       Customization options
                     </h4>
-                    <p className="text-base font-normal text-[#000000] text-center">
-                      Personalize bills with your store’s logo and branding for
+                    <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
+                      Personalize bills with your store's logo and branding for
                       a professional touch.
                     </p>
                   </div>
                 </div>
-                <div className="w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[6.25rem] overflow-hidden">
+                <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
+                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-5.svg"
                       alt="DigiBill icon"
@@ -188,10 +188,10 @@ const DigiBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                       Instant digital billing
                     </h4>
-                    <p className="text-base font-normal text-[#000000] text-center">
+                    <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
                       Provide customers with immediate access to digital bills,
                       enhancing convenience and efficiency.
                     </p>
@@ -200,23 +200,23 @@ const DigiBill = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center max-w-[60rem] mx-auto gap-12">
-              <div className="flex flex-col items-center justify-center gap-5">
-                <p className="text-[#FF5225] text-base font-bold tracking-wider uppercase">
+            <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-6xl mx-auto gap-8 lg:gap-12">
+              <div className="flex flex-col items-center justify-center gap-4 lg:gap-5">
+                <p className="text-[#FF5225] text-sm lg:text-base font-bold tracking-wider uppercase">
                   Admin App
                 </p>
-                <span className="text-4xl font-normal text-[#000000] text-center">
+                <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
                   Simplify{" "}
-                  <span className="text-4xl font-semibold text-[#000000] text-center">
+                  <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                     Multi-branch Management{" "}
                   </span>
                   with{" "}
-                  <span className="text-4xl font-semibold text-[#000000] text-center">
+                  <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                     DigiBill
                   </span>
                 </span>
               </div>
-              <span className="text-base font-normal text-[#000000] text-justify">
+              <span className="text-sm lg:text-base font-normal text-[#000000] text-justify">
                 For owners with multiple branches, the DigiBill Admin app
                 provides a centralized dashboard for effortless monitoring and
                 management. Gain valuable insights into business operations,
@@ -228,7 +228,7 @@ const DigiBill = () => {
               </span>
             </div>
 
-            <div className="relative aspect-[2/1] w-full overflow-hidden">
+            <div className="relative aspect-[16/9] md:aspect-[2/1] w-full overflow-hidden">
               <Image
                 src="/images/projects/DB-2.webp"
                 alt="DigiBill Dashboard"
@@ -237,23 +237,23 @@ const DigiBill = () => {
               />
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-15">
-              <div className="w-[34rem] bg-gradient-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-6 px-15 rounded-[10px]">
-                <span className="text-[1.25rem] text-[#FFFFFF] font-semibold text-center">
+            <div className="flex flex-col items-center justify-center gap-10 lg:gap-15">
+              <div className="w-full max-w-[34rem] bg-gradient-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-4 lg:py-6 px-8 lg:px-15 rounded-[10px]">
+                <span className="text-lg lg:text-[1.25rem] text-[#FFFFFF] font-semibold text-center block">
                   Key Features of Our Dynamic Admin App
                 </span>
               </div>
-              <div className="w-[72.5rem] flex justify-center ml-[6rem]">
-                <div className="flex flex-col justify-center gap-4">
-                  <h3 className="text-3xl font-semibold text-[#000000]">
+              <div className="w-full max-w-[72.5rem] flex flex-col lg:flex-row justify-center items-center gap-8">
+                <div className="flex flex-col justify-center gap-4 flex-1">
+                  <h3 className="text-2xl lg:text-3xl font-semibold text-[#000000]">
                     Centralized dashboard
                   </h3>
-                  <p className="text-[#000000] text-base font-normal">
+                  <p className="text-[#000000] text-sm lg:text-base font-normal">
                     Monitor and manage multiple branches from a single,
                     intuitive interface.
                   </p>
                 </div>
-                <div className="relative aspect-[1/1] w-full overflow-hidden">
+                <div className="relative aspect-[1/1] w-full max-w-[20rem] lg:max-w-none lg:flex-1 overflow-hidden">
                   <Image
                     src="/images/projects/DB-4.webp"
                     alt="DigiBill Dashboard"
@@ -264,33 +264,33 @@ const DigiBill = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-12">
-              <div className="flex flex-col items-center justify-center max-w-[60rem] mx-auto gap-12">
-                <div className="flex flex-col items-center justify-center gap-5">
-                  <p className="text-[#FF5225] text-base font-bold tracking-wider uppercase">
+            <div className="flex flex-col items-center justify-center gap-8 lg:gap-12">
+              <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-6xl mx-auto gap-8 lg:gap-12">
+                <div className="flex flex-col items-center justify-center gap-4 lg:gap-5">
+                  <p className="text-[#FF5225] text-sm lg:text-base font-bold tracking-wider uppercase">
                     Customer App
                   </p>
                   <div className="flex flex-col items-center justify-center gap-2">
-                    <span className="text-4xl font-normal text-[#000000] text-center">
+                    <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
                       Empower{" "}
-                      <span className="text-4xl font-semibold text-[#000000] text-center">
+                      <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                         Shoppers{" "}
                       </span>
                       with{" "}
-                      <span className="text-4xl font-semibold text-[#000000] text-center">
+                      <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                         Convenient <br />
                       </span>
                     </span>
-                    <span className="text-4xl font-normal text-[#000000] text-center">
-                      <span className="text-4xl font-semibold text-[#000000] text-center">
+                    <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
+                      <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                         Digital Bill Features
                       </span>
                     </span>
                   </div>
                 </div>
-                <span className="text-base font-normal text-[#000000] text-justify">
+                <span className="text-sm lg:text-base font-normal text-[#000000] text-justify">
                   The DigiBill Customer puts the power of digital billing in
-                  your customers’ hands. Access and manage bills digitally,
+                  your customers' hands. Access and manage bills digitally,
                   eliminating the need for paper records. With personalized
                   accounts, users can conveniently track shopping expenses,
                   review past bills, and monitor spending patterns. Add family
@@ -300,7 +300,7 @@ const DigiBill = () => {
                   sustainable.
                 </span>
               </div>
-              <div className="relative aspect-[1.8/1] w-full overflow-hidden">
+              <div className="relative aspect-[4/3] md:aspect-[1.8/1] w-full overflow-hidden">
                 <Image
                   src="/images/projects/DB-3.webp"
                   alt="DigiBill Dashboard"
@@ -310,16 +310,16 @@ const DigiBill = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-15">
-              <div className="w-fit bg-gradient-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-6 px-15 rounded-[10px]">
-                <span className="text-[1.25rem] text-[#FFFFFF] font-semibold text-center">
+            <div className="flex flex-col items-center justify-center gap-10 lg:gap-15">
+              <div className="w-full max-w-fit bg-gradient-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-4 lg:py-6 px-8 lg:px-15 rounded-[10px]">
+                <span className="text-lg lg:text-[1.25rem] text-[#FFFFFF] font-semibold text-center block">
                   Key Features of Our Innovative Customer App
                 </span>
               </div>
-              <div className="flex flex-wrap items-center justify-center gap-10">
+              <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center gap-10">
                 <div className="flex flex-col items-center justify-center gap-10">
-                  <div className="w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[6rem] overflow-hidden">
+                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
+                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-1.svg"
                         alt="DigiBill icon"
@@ -328,17 +328,17 @@ const DigiBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                         Digital bill access
                       </h4>
-                      <p className="text-base font-normal text-[#000000]">
+                      <p className="text-sm lg:text-base font-normal text-[#000000]">
                         Access and manage bills digitally, eliminating the need
                         for paper records and enhancing convenience.
                       </p>
                     </div>
                   </div>
-                  <div className="w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[6rem] overflow-hidden">
+                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
+                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-2.svg"
                         alt="DigiBill icon"
@@ -347,17 +347,17 @@ const DigiBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                         Family member integration
                       </h4>
-                      <p className="text-base font-normal text-[#000000]">
+                      <p className="text-sm lg:text-base font-normal text-[#000000]">
                         Add family members to the app for easy tracking of
                         collective shopping expenses.
                       </p>
                     </div>
                   </div>
-                  <div className="w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[6rem] overflow-hidden">
+                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
+                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-3.svg"
                         alt="DigiBill icon"
@@ -366,10 +366,10 @@ const DigiBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                         Real-time notifications
                       </h4>
-                      <p className="text-base font-normal text-[#000000]">
+                      <p className="text-sm lg:text-base font-normal text-[#000000]">
                         Receive instant alerts on new bills, payment reminders,
                         and exclusive discounts.
                       </p>
@@ -378,8 +378,8 @@ const DigiBill = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-10">
-                  <div className="w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[6rem] overflow-hidden">
+                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
+                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-4.svg"
                         alt="DigiBill icon"
@@ -388,17 +388,17 @@ const DigiBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                         Expense tracking
                       </h4>
-                      <p className="text-base font-normal text-[#000000]">
+                      <p className="text-sm lg:text-base font-normal text-[#000000]">
                         Monitor and track shopping expenses, helping customers
                         stay on top of their budgets.
                       </p>
                     </div>
                   </div>
-                  <div className="w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[6rem] overflow-hidden">
+                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
+                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-5.svg"
                         alt="DigiBill icon"
@@ -407,17 +407,17 @@ const DigiBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                         Spending insights
                       </h4>
-                      <p className="text-base font-normal text-[#000000]">
+                      <p className="text-sm lg:text-base font-normal text-[#000000]">
                         Gain valuable insights into spending patterns, enabling
                         customers to make informed financial decisions.
                       </p>
                     </div>
                   </div>
-                  <div className="w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[6rem] overflow-hidden">
+                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
+                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-6.svg"
                         alt="DigiBill icon"
@@ -426,10 +426,10 @@ const DigiBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
                         Personalized offers
                       </h4>
-                      <p className="text-base font-normal text-[#000000]">
+                      <p className="text-sm lg:text-base font-normal text-[#000000]">
                         Enjoy customized discounts and offers based on shopping
                         preferences and behaviors.
                       </p>
@@ -439,23 +439,23 @@ const DigiBill = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-15">
-              <div className="flex flex-col items-center justify-center max-w-[60rem] mx-auto gap-12">
-                <div className="flex flex-col items-center justify-center gap-5">
+            <div className="flex flex-col items-center justify-center gap-10 lg:gap-15">
+              <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-6xl mx-auto gap-8 lg:gap-12">
+                <div className="flex flex-col items-center justify-center gap-4 lg:gap-5">
                   <div className="flex flex-col items-center justify-center gap-2">
-                    <span className="text-4xl font-normal text-[#000000] text-center">
+                    <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
                       The{" "}
-                      <span className="text-4xl font-semibold text-[#000000] text-center">
+                      <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                         Reasons to Opt{" "}
                       </span>
                       For{" "}
-                      <span className="text-4xl font-semibold text-[#000000] text-center">
+                      <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                         DigiBill
                       </span>
                     </span>
-                    <span className="text-4xl font-normal text-[#000000] text-center">
+                    <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
                       In Your{" "}
-                      <span className="text-4xl font-semibold text-[#000000] text-center">
+                      <span className="text-2xl lg:text-4xl font-semibold text-[#000000] text-center">
                         Billing Workflow
                       </span>
                     </span>
@@ -463,15 +463,15 @@ const DigiBill = () => {
                 </div>
               </div>
 
-              <div className="w-[60rem] flex flex-col items-center justify-center gap-12">
-                <div className="flex flex-col items-start justify-center gap-7">
+              <div className="w-full max-w-4xl lg:max-w-[60rem] flex flex-col items-center justify-center gap-8 lg:gap-12">
+                <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Environmental Sustainability
-                      <span className="absolute left-0 -bottom-1 h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
-                  <p className="text-base font-normal text-[#000000]">
+                  <p className="text-sm lg:text-base font-normal text-[#000000]">
                     By eliminating paper bills, DigiBill significantly reduces
                     the consumption of paper, contributing to a greener and more
                     sustainable future. Embracing digital billing helps to
@@ -479,14 +479,14 @@ const DigiBill = () => {
                     associated with paper production, and minimize waste.
                   </p>
                 </div>
-                <div className="flex flex-col items-start justify-center gap-7">
+                <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Growth and Scalability
-                      <span className="absolute left-0 -bottom-1 h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
-                  <p className="text-base font-normal text-[#000000]">
+                  <p className="text-sm lg:text-base font-normal text-[#000000]">
                     DigiBill facilitates business growth and scalability by
                     providing a solid foundation for efficient billing
                     processes. With centralized control and real-time insights
@@ -498,14 +498,14 @@ const DigiBill = () => {
                     market.
                   </p>
                 </div>
-                <div className="flex flex-col items-start justify-center gap-7">
+                <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Streamlined Operations
-                      <span className="absolute left-0 -bottom-1 h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
-                  <p className="text-base font-normal text-[#000000]">
+                  <p className="text-sm lg:text-base font-normal text-[#000000]">
                     DigiBill simplifies and streamlines the billing process,
                     benefiting merchants and store owners. By digitizing the
                     billing process with the Merchant app, businesses can save
@@ -516,14 +516,14 @@ const DigiBill = () => {
                     efficiency.
                   </p>
                 </div>
-                <div className="flex flex-col items-start justify-center gap-7">
+                <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Centralized Management
-                      <span className="absolute left-0 -bottom-1 h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
-                  <p className="text-base font-normal text-[#000000]">
+                  <p className="text-sm lg:text-base font-normal text-[#000000]">
                     The Admin app of DigiBill offers business owners with
                     multiple branches a centralized dashboard for streamlined
                     management. This comprehensive tool provides valuable
@@ -536,14 +536,14 @@ const DigiBill = () => {
                     growth.
                   </p>
                 </div>
-                <div className="flex flex-col items-start justify-center gap-7">
+                <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Cost Savings
-                      <span className="absolute left-0 -bottom-1 h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
-                  <p className="text-base font-normal text-[#000000]">
+                  <p className="text-sm lg:text-base font-normal text-[#000000]">
                     DigiBill can help businesses save costs in various ways. By
                     eliminating paper bills, businesses can reduce expenses
                     associated with printing, stationery, and physical storage.
@@ -555,14 +555,14 @@ const DigiBill = () => {
                     efficiency, leading to long-term financial benefits.
                   </p>
                 </div>
-                <div className="flex flex-col items-start justify-center gap-7">
+                <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Data Security and Accessibility
-                      <span className="absolute left-0 -bottom-1 h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
-                  <p className="text-base font-normal text-[#000000]">
+                  <p className="text-sm lg:text-base font-normal text-[#000000]">
                     DigiBill ensures the security and privacy of sensitive
                     billing information. By storing digital bills in secure
                     servers, it minimizes the risk of physical document loss or
@@ -573,14 +573,14 @@ const DigiBill = () => {
                     convenience for both businesses and customers.
                   </p>
                 </div>
-                <div className="flex flex-col items-start justify-center gap-7">
+                <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Enhanced Customer Experience
-                      <span className="absolute left-0 -bottom-1 h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
-                  <p className="text-base font-normal font-poppins text-[#000000]">
+                  <p className="text-sm lg:text-base font-normal font-poppins text-[#000000]">
                     DigiBill's Customer app elevates the shopping experience for
                     customers. By providing instant access to digital bills,
                     customers can conveniently track their expenses, review past
@@ -598,8 +598,8 @@ const DigiBill = () => {
         </div>
 
         {/* Footer */}
-        <div className="text-center">
-          <h4 className="text-[2.125rem] font-semibold text-[#000000]">
+        <div className="text-center px-4">
+          <h4 className="text-xl lg:text-[2.125rem] font-semibold text-[#000000]">
             Lets Get in Touch
           </h4>
         </div>
