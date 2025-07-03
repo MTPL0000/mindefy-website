@@ -1,6 +1,7 @@
 import Navbar from "../HomePage/Navbar";
 import Footer from "../HomePage/Footer";
 import Image from "next/image";
+import ContactUs from "../HomePage/ContactUs";
 
 const MachONE = () => {
   return (
@@ -201,14 +202,10 @@ const MachONE = () => {
             </p>
           </div>
         </div>
-
-        {/* Footer */}
-        <div className="text-center px-4 sm:px-6 lg:px-8 mt-8 lg:mt-16">
-          <h4 className="text-xl sm:text-2xl lg:text-[2.125rem] font-semibold text-black">
-            Lets Get in Touch
-          </h4>
-        </div>
       </section>
+      {/*contact us*/}
+      <ContactUs />
+      {/*footer*/}
       <Footer />
     </div>
   );
