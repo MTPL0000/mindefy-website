@@ -32,7 +32,7 @@ export default function Services() {
               <div className="flex items-start gap-4 mb-4 sm:mb-6">
                 <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-[4.125rem] lg:h-[4.125rem] flex-shrink-0">
                   <Image
-                    src="/images/rocket.svg"
+                    src="/images/rocket.webp"
                     alt="Rocket Icon"
                     fill
                     className="object-contain"
