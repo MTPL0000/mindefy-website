@@ -65,7 +65,7 @@ export default function HeroSection() {
                 <Image src="/images/Bottomline.svg" alt="Bottomline" fill className="object-contain" />
               </div>
               <div className="relative w-32 aspect-[2.39/1] flex-shrink-0">
-                <Image src="/images/solistack.svg" alt="Solistack" fill className="object-contain" />
+                <Image src="/images/solistack.png" alt="Solistack" fill className="object-contain" />
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function HeroSection() {
               <Image src="/images/Bottomline.svg" alt="Bottomline" fill className="object-contain" />
             </div>
             <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
-              <Image src="/images/solistack.svg" alt="Solistack" fill className="object-contain" />
+              <Image src="/images/solistack.png" alt="Solistack" fill className="object-contain" />
             </div>
           </div>
         </div>
