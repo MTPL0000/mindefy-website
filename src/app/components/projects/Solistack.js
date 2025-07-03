@@ -1,3 +1,4 @@
+import ContactUs from "../HomePage/ContactUs";
 import Footer from "../HomePage/Footer";
 import Navbar from "../HomePage/Navbar";
 import Image from "next/image";
@@ -223,14 +224,11 @@ const Solistack = () => {
               />
             </div>
           </div>
-          {/* Footer Call to Action */}
-          <div className="text-center">
-            <h4 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-[#000000]">
-              Lets Get in Touch
-            </h4>
-          </div>
         </div>
       </section>
+      {/*contact us*/}
+      <ContactUs />
+      {/*footer*/}
       <Footer />
     </div>
   );
