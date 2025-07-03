@@ -21,7 +21,7 @@ export default function Blog() {
           <div className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div className="relative aspect-[1.36/1] w-full overflow-hidden">
               <Image
-                src="/images/blog1.png"
+                src="/images/blog1.webp"
                 alt="Microservices geometric pattern"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
@@ -59,7 +59,7 @@ export default function Blog() {
           <div className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div className="relative aspect-[1.36/1] w-full overflow-hidden">
               <Image
-                src="/images/blog2.png"
+                src="/images/blog2.webp"
                 alt="Hand drawing upward curve"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
@@ -97,7 +97,7 @@ export default function Blog() {
           <div className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300 md:col-span-2 lg:col-span-1">
             <div className="relative aspect-[1.36/1] w-full overflow-hidden">
               <Image
-                src="/images/blog3.png"
+                src="/images/blog3.webp"
                 alt="Home office setup"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
