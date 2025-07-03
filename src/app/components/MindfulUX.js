@@ -153,6 +153,20 @@ export default function MindfulUX() {
                 help you capture more value while maximizing your asset
                 performance and integrity and achieving sustainability goals.
               </p>
+              <a
+                href="/spector"
+                className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
+              >
+                Case Study
+                <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+                  <Image
+                    src="/images/arrow-icon.svg"
+                    alt="image"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </a>
             </div>
 
             <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
