@@ -53,7 +53,7 @@ export default function TestimonialsMore() {
         "Mindefy has been extremely intricate in taking both our website design and executing it well. They have been very responsive in all our requests. Done all the steep documentation, quality checks and delivered the final impeccably. We would definitely recommend for discussion-worthy. Love their ethics and principles. It's a great team overall!",
       clientName: "Mrs. Shalini Santhosh",
       clientPosition: "Founder, Haircut Beauty Salon, Dubai",
-      companyLogo: "/images/earlyfoods.svg",
+      companyLogo: "/images/earlyfoods.webp",
       companyName: "Website Design Co.",
     },
   ];
