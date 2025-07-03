@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Floating 3D Characters - Hidden on mobile and small tablets */}
       <div className="absolute left-4 lg:left-8 xl:left-10 top-1/2 -translate-y-1/2 w-40 h-48 lg:w-[18rem] lg:h-[22rem] xl:w-[25rem] xl:h-[30rem] 2xl:w-[29.45rem] 2xl:h-[36.095rem] animate-pulse hidden md:block">
         <Image
-          src="/images/boy.svg"
+          src="/images/boy.png"
           alt="Character Left"
           fill
           className="object-contain"
@@ -16,7 +16,7 @@ export default function HeroSection() {
 
       <div className="absolute right-4 lg:right-8 xl:right-10 top-1/2 -translate-y-1/2 w-40 h-48 lg:w-[18rem] lg:h-[22rem] xl:w-[25rem] xl:h-[30rem] 2xl:w-[29.45rem] 2xl:h-[36.095rem] animate-pulse hidden md:block">
         <Image
-          src="/images/girl.svg"
+          src="/images/girl.png"
           alt="Character Right"
           fill
           className="object-contain"
