@@ -56,7 +56,7 @@ export default function AboutSection() {
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <div className="relative w-64 sm:w-80 lg:w-96 xl:w-[29.75rem] aspect-square">
               <Image 
-                src="/images/specs.svg" 
+                src="/images/specs.webp" 
                 fill 
                 alt="Mindefy 3D Character" 
                 className="object-contain"
