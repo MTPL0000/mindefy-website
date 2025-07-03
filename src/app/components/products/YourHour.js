@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Navbar from "../HomePage/Navbar";
 import Footer from "../HomePage/Footer";
+import ContactUs from "../HomePage/ContactUs";
 
 export default function YourHourProduct() {
   return (
@@ -607,14 +608,10 @@ export default function YourHourProduct() {
             </div>
           </div>
         </div>
-
-        {/* Footer */}
-        <div className="text-center">
-          <h4 className="text-[2.125rem] font-semibold text-[#000000]">
-            Lets Get in Touch
-          </h4>
-        </div>
       </section>
+      {/*contact us*/}
+      <ContactUs />
+      {/*footer*/}
       <Footer />
     </section>
   );
