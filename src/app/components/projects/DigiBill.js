@@ -1,3 +1,4 @@
+import ContactUs from "../HomePage/ContactUs";
 import Footer from "../HomePage/Footer";
 import Navbar from "../HomePage/Navbar";
 import Image from "next/image";
@@ -596,14 +597,10 @@ const DigiBill = () => {
             </div>
           </div>
         </div>
-
-        {/* Footer */}
-        <div className="text-center px-4">
-          <h4 className="text-xl lg:text-[2.125rem] font-semibold text-[#000000]">
-            Lets Get in Touch
-          </h4>
-        </div>
       </section>
+      {/*contact us*/}
+      <ContactUs />
+      {/*footer*/}
       <Footer />
     </div>
   );
