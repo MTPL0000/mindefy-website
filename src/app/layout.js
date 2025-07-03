@@ -9,8 +9,56 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Mindefy Technologies",
-  description: "Your description here",
+  metadataBase: new URL('https://mindefy.com'),
+  title: {
+    template: '%s | Mindefy Technologies',
+    default: 'Mindefy Technologies - Innovative Software Solutions & Development',
+  },
+  description: "Leading software development company providing innovative solutions for enterprises and startups. Expert in mobile app development, web applications, AI, and digital transformation.",
+  keywords: ["software development", "mobile app development", "web development", "AI solutions", "digital transformation", "enterprise solutions", "startup consulting"],
+  authors: [{ name: "Mindefy Technologies" }],
+  creator: "Mindefy Technologies",
+  publisher: "Mindefy Technologies",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://mindefy.com',
+    siteName: 'Mindefy Technologies',
+    title: 'Mindefy Technologies - Innovative Software Solutions & Development',
+    description: 'Leading software development company providing innovative solutions for enterprises and startups. Expert in mobile app development, web applications, AI, and digital transformation.',
+    images: [
+      {
+        url: '/images/logo/mindefy-logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Mindefy Technologies Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mindefy Technologies - Innovative Software Solutions & Development',
+    description: 'Leading software development company providing innovative solutions for enterprises and startups.',
+    images: ['/images/logo/mindefy-logo.png'],
+  },
+  verification: {
+    google: 'your-google-site-verification-code',
+    // Add other verification codes as needed
+  },
+  alternates: {
+    canonical: 'https://mindefy.com',
+  },
   icons: {
     icon: [
       {
@@ -51,16 +99,19 @@ export const metadata = {
       {
         rel: 'mask-icon',
         url: '/images/logo/mindefy-logo.svg',
-        color: '#D84426', // Your brand color from the SVG
+        color: '#D84426',
       }
     ],
   },
-  manifest: '/site.webmanifest', // For PWA support
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.variable}>
+      <head>
+        <link rel="canonical" href="https://mindefy.com" />
+      </head>
       <body className="font-poppins overflow-x-hidden">{children}</body>
     </html>
   );

@@ -10,10 +10,13 @@ import Testimonials from "./components/HomePage/Testimonials";
 import Footer from "./components/HomePage/Footer";
 import Blog from "./components/HomePage/Blog";
 import ContactUs from "./components/HomePage/ContactUs";
+import StructuredData, { organizationData, websiteData } from "./components/StructuredData";
 
 export default function HomePage() {
   return (
     <>
+      <StructuredData data={organizationData} />
+      <StructuredData data={websiteData} />
       <Navbar />
       <HeroSection />
       <AboutSection />

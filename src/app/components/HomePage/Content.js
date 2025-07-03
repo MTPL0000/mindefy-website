@@ -51,7 +51,7 @@ export default function Content() {
           <div className="flex-shrink-0 order-2 lg:order-3">
             <div className="w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.37rem] lg:h-[13.28rem]">
               <img
-                src="/images/Switch.svg"
+                src="/images/Switch.webp"
                 alt="Mission Icon"
                 className="w-full h-full object-contain"
               />
@@ -73,7 +73,7 @@ export default function Content() {
           <div className="flex-shrink-0 order-2 lg:order-1">
             <div className="w-48 h-36 sm:w-56 sm:h-44 lg:w-[18rem] lg:h-[13.28rem]">
               <img
-                src="/images/binoculours.svg"
+                src="/images/binoculours.webp"
                 alt="Vision Icon"
                 className="w-full h-full object-contain"
               />
@@ -221,7 +221,7 @@ export default function Content() {
           <div className="flex-shrink-0 order-2 lg:order-3">
             <div className="w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.375rem] lg:h-[13.28rem] relative">
               <Image
-                src="/images/diamond.svg"
+                src="/images/diamond.webp"
                 alt="Values Icon"
                 fill
                 className="object-contain"

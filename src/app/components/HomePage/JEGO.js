@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect } from "react";
 
 export default function JEGO() {
@@ -40,11 +41,11 @@ export default function JEGO() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-14">
           {/* Left Content - Device Mockups */}
           <div className="flex-1 relative">
-            <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
-              <img
+            <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto aspect-[5/4]">
+              <Image
                 src="/images/jegolaptop.webp"
                 alt="JEGO application shown on laptop and mobile devices"
-                className="w-full h-auto"
+                fill
               />
             </div>
           </div>

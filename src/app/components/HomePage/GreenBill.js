@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect } from "react";
 
 export default function GreenBill() {
@@ -235,11 +236,11 @@ export default function GreenBill() {
 
           {/* Right Content - Device Mockups */}
           <div className="flex-1 relative">
-            <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
-              <img
+            <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto aspect-[1.043/1]">
+              <Image
                 src="/images/greenbill.webp"
                 alt="GreenBill application interface"
-                className="w-full h-auto"
+                fill
               />
             </div>
           </div>
