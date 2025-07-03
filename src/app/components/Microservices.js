@@ -50,7 +50,7 @@ export default function Microservices() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] mx-auto mb-[4.5rem] px-4 lg:px-0">
+          <div className="relative w-full sm:w-[85%] md:w-[70%] lg:w-[60%] xl:w-[52.39%] aspect-[4/3] sm:aspect-[3/2] md:aspect-[16/10] lg:aspect-[16/9] mx-auto mb-6">
             <Image
               src="/images/MJA.webp"
               alt="Hybrid App Development - Developer working with mobile app design"

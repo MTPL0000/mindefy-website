@@ -50,7 +50,7 @@ export default function EnterpriseSolutions() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-[27.5rem] mx-auto mb-6">
+          <div className="relative w-full sm:w-[85%] md:w-[70%] lg:w-[60%] xl:w-[52.39%] aspect-[4/3] sm:aspect-[3/2] md:aspect-[16/10] lg:aspect-[16/9] mx-auto mb-6">
             <Image
               src="/images/MJA.webp"
               alt="Web Application Development - Developer working with web applications"

@@ -41,7 +41,7 @@ export default function Testimonials() {
         "Mindefy has been extremely intricate in doing both our website design and executing it well. They are a process oriented company, and have all the...",
       author: "Mrs. Shalini Santhosh",
       position: "Founder & Director at Early Foods, Dubai",
-      logo: "/images/earlyfoods.svg",
+      logo: "/images/earlyfoods.webp",
       logoAlt: "Early Foods Logo",
     },
   ];

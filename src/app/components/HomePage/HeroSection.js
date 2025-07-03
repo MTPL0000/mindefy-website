@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Floating 3D Characters - Hidden on mobile and small tablets */}
       <div className="absolute left-4 lg:left-8 xl:left-10 top-1/2 -translate-y-1/2 w-40 h-48 lg:w-[18rem] lg:h-[22rem] xl:w-[25rem] xl:h-[30rem] 2xl:w-[29.45rem] 2xl:h-[36.095rem] animate-pulse hidden md:block">
         <Image
-          src="/images/boy.svg"
+          src="/images/boy.png"
           alt="Character Left"
           fill
           className="object-contain"
@@ -16,7 +16,7 @@ export default function HeroSection() {
 
       <div className="absolute right-4 lg:right-8 xl:right-10 top-1/2 -translate-y-1/2 w-40 h-48 lg:w-[18rem] lg:h-[22rem] xl:w-[25rem] xl:h-[30rem] 2xl:w-[29.45rem] 2xl:h-[36.095rem] animate-pulse hidden md:block">
         <Image
-          src="/images/girl.svg"
+          src="/images/girl.png"
           alt="Character Right"
           fill
           className="object-contain"
@@ -65,30 +65,30 @@ export default function HeroSection() {
                 <Image src="/images/Bottomline.svg" alt="Bottomline" fill className="object-contain" />
               </div>
               <div className="relative w-32 aspect-[2.39/1] flex-shrink-0">
-                <Image src="/images/solistack.svg" alt="Solistack" fill className="object-contain" />
+                <Image src="/images/solistack.png" alt="Solistack" fill className="object-contain" />
               </div>
             </div>
           </div>
 
           {/* Tablet and Desktop: Grid layout */}
-          <div className="hidden sm:grid grid-cols-3 md:grid-cols-6 gap-4 lg:gap-8 items-center justify-items-center max-w-5xl mx-auto">
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
+          <div className="hidden sm:grid grid-cols-3 md:grid-cols-6 gap-8 md:gap-12 lg:gap-16 items-center justify-items-center max-w-6xl mx-auto px-6">
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
               <Image src="/images/Kotak.svg" alt="Kotak" fill className="object-contain" />
             </div>
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
               <Image src="/images/netlink.svg" alt="Netlink" fill className="object-contain" />
             </div>
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
               <Image src="/images/krungthai.svg" alt="Krungthai" fill className="object-contain" />
             </div>
-            <div className="relative w-12 sm:w-16 lg:w-21 aspect-[7/6]">
+            <div className="relative w-8 sm:w-12 lg:w-16 aspect-[7/6] p-2 sm:p-3 lg:p-4">
               <Image src="/images/mst.svg" alt="MST" fill className="object-contain" />
             </div>
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
               <Image src="/images/Bottomline.svg" alt="Bottomline" fill className="object-contain" />
             </div>
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
-              <Image src="/images/solistack.svg" alt="Solistack" fill className="object-contain" />
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
+              <Image src="/images/solistack.png" alt="Solistack" fill className="object-contain" />
             </div>
           </div>
         </div>

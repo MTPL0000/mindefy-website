@@ -301,9 +301,15 @@ const DigiBill = () => {
                   sustainable.
                 </span>
               </div>
-              <div className="relative aspect-[4/3] md:aspect-[1.8/1] w-full overflow-hidden">
+              <div
+                className="relative aspect-[4/3] md:aspect-[1.8/1] w-full overflow-hidden rounded-3xl"
+                style={{
+                  background:
+                    "linear-gradient(180deg, #80DA48 0%, #8CEB58 25%, #63D646 50%, #63D646 75%, #1BCC40 90%, #1ACA3F 100%)",
+                }}
+              >
                 <Image
-                  src="/images/projects/DB-3.webp"
+                  src="/images/projects/DB-3.png"
                   alt="DigiBill Dashboard"
                   fill
                   className="object-cover"
