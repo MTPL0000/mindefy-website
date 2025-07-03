@@ -71,23 +71,23 @@ export default function HeroSection() {
           </div>
 
           {/* Tablet and Desktop: Grid layout */}
-          <div className="hidden sm:grid grid-cols-3 md:grid-cols-6 gap-4 lg:gap-8 items-center justify-items-center max-w-5xl mx-auto">
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
+          <div className="hidden sm:grid grid-cols-3 md:grid-cols-6 gap-8 md:gap-12 lg:gap-16 items-center justify-items-center max-w-6xl mx-auto px-6">
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
               <Image src="/images/Kotak.svg" alt="Kotak" fill className="object-contain" />
             </div>
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
               <Image src="/images/netlink.svg" alt="Netlink" fill className="object-contain" />
             </div>
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
               <Image src="/images/krungthai.svg" alt="Krungthai" fill className="object-contain" />
             </div>
-            <div className="relative w-12 sm:w-16 lg:w-21 aspect-[7/6]">
+            <div className="relative w-8 sm:w-12 lg:w-16 aspect-[7/6] p-2 sm:p-3 lg:p-4">
               <Image src="/images/mst.svg" alt="MST" fill className="object-contain" />
             </div>
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
               <Image src="/images/Bottomline.svg" alt="Bottomline" fill className="object-contain" />
             </div>
-            <div className="relative w-24 sm:w-32 lg:w-44 aspect-[2.39/1]">
+            <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
               <Image src="/images/solistack.png" alt="Solistack" fill className="object-contain" />
             </div>
           </div>
