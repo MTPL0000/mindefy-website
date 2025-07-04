@@ -1,4 +1,4 @@
-import Ecommerce from "../components/Ecommerce";
+import { LazyEcommerce } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function EcommerceMarketplacePage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <Ecommerce />
+      <LazyEcommerce />
     </>
   );
 }
