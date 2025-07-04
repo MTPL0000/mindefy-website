@@ -1,4 +1,4 @@
-import DigitalTransformation from "../components/DigitalTransformation";
+import { LazyDigitalTransformation } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function DigitalTransformationPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <DigitalTransformation />
+      <LazyDigitalTransformation />
     </>
   );
 }
