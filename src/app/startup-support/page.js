@@ -1,4 +1,4 @@
-import StartupConsulting from "../components/StartupConsulting";
+import { LazyStartupConsulting } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function StartupSupportPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <StartupConsulting />
+      <LazyStartupConsulting />
     </>
   );
 }
