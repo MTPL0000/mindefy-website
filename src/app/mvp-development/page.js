@@ -1,4 +1,4 @@
-import MVPDevelopment from "../components/MVPDevelopment";
+import { LazyMVPDevelopment } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function MVPDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <MVPDevelopment />
+      <LazyMVPDevelopment />
     </>
   );
 }
