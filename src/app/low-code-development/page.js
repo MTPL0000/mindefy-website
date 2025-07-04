@@ -1,4 +1,4 @@
-import LowCode from "../components/LowCode";
+import { LazyLowCode } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function LowCodeDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LowCode />
+      <LazyLowCode />
     </>
   );
 }
