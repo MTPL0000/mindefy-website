@@ -1,4 +1,4 @@
-import WebApp from "../components/WebApp";
+import { LazyWebApp } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function WebApplicationDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <WebApp />
+      <LazyWebApp />
     </>
   );
 }
