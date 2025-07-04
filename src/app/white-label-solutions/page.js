@@ -1,4 +1,4 @@
-import WhiteLabel from "../components/WhiteLabel";
+import { LazyWhiteLabel } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function WhiteLabelSolutionsPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <WhiteLabel />
+      <LazyWhiteLabel />
     </>
   );
 }
