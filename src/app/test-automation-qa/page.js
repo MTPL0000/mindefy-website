@@ -1,4 +1,4 @@
-import TestAutomation from "../components/TestAutomation";
+import { LazyTestAutomation } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function TestAutomationQAPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <TestAutomation />
+      <LazyTestAutomation />
     </>
   );
 }
