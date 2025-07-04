@@ -1,4 +1,4 @@
-import MeanMern from "../components/MeanMern";
+import { LazyMeanMern } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function MeanMernStackDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <MeanMern />
+      <LazyMeanMern />
     </>
   );
 }
