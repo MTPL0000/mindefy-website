@@ -57,3 +57,4 @@ export const LazyWhiteLabel = createLazyServiceComponent('WhiteLabel');
 export const LazyMVPDevelopment = createLazyServiceComponent('MVPDevelopment');
 export const LazyMindfulUX = createLazyServiceComponent('MindfulUX');
 export const LazyCDS = createLazyServiceComponent('CDS');
+export const LazyBPM = createLazyServiceComponent('BPM');
