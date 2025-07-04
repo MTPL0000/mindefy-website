@@ -225,13 +225,13 @@ export default function EarlyFoods() {
     <div className="bg-[#E9F6F6] flex flex-col">
       <Navbar />
       <section className="w-full flex flex-col items-center justify-center gap-16">
-        <div className="relative h-[866px] w-full overflow-hidden">
-          <div className="m-auto w-[58rem] flex flex-col items-center justify-center gap-4 mt-24">
+        <div className="relative max-w-[90rem] mx-auto overflow-hidden pt-24">
+          <div className="m-auto max-w-[58rem] flex flex-col items-center justify-center gap-4 relative z-10 px-4 text-center">
             <h3 className="text-[#FC6B81] text-3xl font-medium">CASE STUDY</h3>
-            <div className="relative aspect-[2/1] w-[13.25rem] overflow-hidden">
+            <div className="relative aspect-[2/1] w-[13.25rem]">
               <Image
                 src="/images/projects/EF-logo.png"
-                alt="image"
+                alt="logo"
                 fill
                 className="object-contain"
               />
@@ -253,18 +253,20 @@ export default function EarlyFoods() {
           </div>
           <Image
             src="/images/projects/EF-bg-1.png"
-            alt="image"
-            fill
-            className="object-contain"
+            alt="bg-decor"
+            width={1440}
+            height={866}
+            className="object-contain absolute top-0 left-0"
           />
-        </div>
-        <div className="relative aspect-[2/1] w-full overflow-hidden">
-          <Image
-            src="/images/projects/EF-1.png"
-            alt="image"
-            fill
-            className="object-contain"
-          />
+          <div className="relative w-full max-w-[90rem] mx-auto mt-10 px-4 z-10">
+            <Image
+              src="/images/projects/EF-1.png"
+              alt="device preview"
+              width={1440}
+              height={866}
+              className="w-full h-auto object-contain"
+            />
+          </div>
         </div>
 
         <div className="m-auto w-[43.75rem] flex flex-col items-center justify-center gap-2">
