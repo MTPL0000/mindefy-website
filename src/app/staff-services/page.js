@@ -1,4 +1,4 @@
-import SAS from "../components/SAS";
+import { LazySAS } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function StaffServicesPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <SAS />
+      <LazySAS />
     </>
   );
 }
