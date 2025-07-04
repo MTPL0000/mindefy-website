@@ -222,9 +222,9 @@ export default function EarlyFoods() {
   ];
 
   return (
-    <div className="bg-[#E9F6F6] flex flex-col">
+    <div className="bg-[#E9F6F6]">
       <Navbar />
-      <section className="w-full flex flex-col items-center justify-center gap-16">
+      <section className="w-full flex flex-col items-center justify-center gap-12">
         <div className="relative max-w-[90rem] mx-auto overflow-hidden pt-24">
           <div className="m-auto max-w-[58rem] flex flex-col items-center justify-center gap-4 relative z-10 px-4 text-center">
             <h3 className="text-[#FC6B81] text-3xl font-medium">CASE STUDY</h3>
@@ -284,7 +284,6 @@ export default function EarlyFoods() {
         </div>
 
         <div className="max-w-[71.5rem] mx-auto flex items-center justify-between  gap-15">
-          {/* Left Text Section */}
           <div className="w-[60%] flex flex-col items-start justify-center gap-5">
             <h3 className="text-[#FC6B81] text-2xl font-normal uppercase tracking-wide">
               Get Started
@@ -323,7 +322,6 @@ export default function EarlyFoods() {
             </a>
           </div>
 
-          {/* Right Image Section */}
           <div className="relative w-[80%] aspect-[1.3/1]">
             <Image
               src="/images/projects/EF-2.png"
@@ -335,7 +333,6 @@ export default function EarlyFoods() {
         </div>
 
         <div className="max-w-[71.5rem] mx-auto flex items-center justify-between gap-15 mt-5">
-          {/* Left Text Section */}
           <div className="w-[60%] flex flex-col items-start justify-center gap-5">
             <h2 className="text-[#52B7B7] text-[2.65rem] font-semibold leading-tight uppercase">
               The STORY
@@ -357,7 +354,6 @@ export default function EarlyFoods() {
             </p>
           </div>
 
-          {/* Right Image Section */}
           <div className="relative w-[80%] aspect-[1.3/1]">
             <Image
               src="/images/projects/EF-3.png"
@@ -369,7 +365,6 @@ export default function EarlyFoods() {
         </div>
 
         <div className="w-[71.5rem] mx-auto  py-16 px-6">
-          {/* Section Heading */}
           <div className="flex justify-between items-start mb-12">
             <div>
               <h3 className="text-[#F690A1] text-[2rem] font-normal flex items-center gap-2">
@@ -394,18 +389,15 @@ export default function EarlyFoods() {
             </div>
           </div>
 
-          {/* 4-Step Process */}
           <div className="grid grid-cols-4 gap-6 text-start">
             {list.map((step, i) => (
               <div key={i} className="flex flex-col items-start">
-                {/* Dot and Line */}
                 <div className="flex flex-col items-center relative">
                   <span className="w-6 h-6 bg-[#FA798D] rounded-full mb-2"></span>
                   {i !== 3 && (
                     <div className="h-[1px] w-full border-dashed border-t-2 border-[#FC6B81] absolute top-2 left-[50%] translate-x-[12px] z-[-1] w-[150%] sm:w-[120%]"></div>
                   )}
                 </div>
-                {/* Text */}
                 <h4 className="text-[#F8889A] text-xl font-semibold mt-3">
                   {step.title}
                 </h4>
@@ -418,7 +410,6 @@ export default function EarlyFoods() {
         </div>
 
         <div className="w-[71.5rem] mx-auto px-6">
-          {/* Section Heading */}
           <div className="flex flex-col gap-3 items-start">
             <h2 className="text-[#52B7B7] text-5xl font-extrabold mt-2">
               Design Timeline
@@ -440,7 +431,6 @@ export default function EarlyFoods() {
 
         <div className="w-[71.5rem] mx-auto px-6">
           <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-            {/* Step Blocks */}
             {dataList.map((section, index) => (
               <div key={index}>
                 <div className="bg-[#CBEBEB] text-[#52B7B7] text-base px-4 py-2 rounded-md font-semibold mb-4">
@@ -457,10 +447,8 @@ export default function EarlyFoods() {
         </div>
 
         <div className="w-full mx-auto px-6 mt-4">
-          {/* Section Heading */}
-
           <div className="relative aspect-[3/1] w-full overflow-hidden">
-            <div className="relative z-30 flex flex-col gap-2 items-center">
+            <div className="relative z-10 flex flex-col gap-2 items-center">
               <h2 className="text-[#52B7B7] text-5xl font-extrabold mt-2 mb-4">
                 My Role
               </h2>
@@ -504,7 +492,6 @@ export default function EarlyFoods() {
         </div>
 
         <div className="w-[71.5rem] mx-auto">
-          {/* Section Heading */}
           <div className="flex justify-between items-center mb-8">
             <div>
               <h3 className="text-[#FC6B81] text-[2rem] font-normal flex items-center gap-2">
@@ -529,9 +516,7 @@ export default function EarlyFoods() {
             </div>
           </div>
 
-          {/* Heatmap + Feedback Sticky Notes */}
           <div className="w-full flex flex-col lg:flex-row gap-12">
-            {/* Left: Heatmap Image */}
             <div className="flex flex-col gap-8">
               <div className="relative">
                 <Image
@@ -553,7 +538,6 @@ export default function EarlyFoods() {
               </div>
             </div>
 
-            {/* Right: Sticky Notes */}
             <div className="w-full lg:w-[38%] grid grid-cols-2 gap-4">
               {notes.map((text, i) => (
                 <div
@@ -694,11 +678,9 @@ export default function EarlyFoods() {
                   key={idx}
                   className="relative bg-[#CBEBEB] px-10 py-14 w-[35.5rem] h-[23rem] flex flex-col justify-end"
                 >
-                  {/* Quote icon */}
                   <div className="absolute top-6 right-9 text-[#E9F6F6] text-[12rem] leading-none font-serif select-none">
                     &rdquo;
                   </div>
-                  {/* Name & Role */}
                   <div className="mb-7">
                     <h4 className="text-[#52B7B7] font-bold text-lg mb-1">
                       {item.name}
@@ -707,7 +689,6 @@ export default function EarlyFoods() {
                       {item.role}
                     </p>
                   </div>
-                  {/* Feedback */}
                   <p className="text-[#377D7D] text-lg font-normal leading-8">
                     {item.feedback}
                   </p>
@@ -718,7 +699,6 @@ export default function EarlyFoods() {
         </div>
 
         <div className="w-full mx-auto px-6 mt-4">
-          {/* Section Heading */}
           <div
             style={{
               background: "#E9F6F6",
@@ -730,8 +710,7 @@ export default function EarlyFoods() {
             }}
             className="relative w-full overflow-hidden bg-[#E9F7F7]"
           >
-            {/* Section Content */}
-            <div className="relative z-30 flex flex-col gap-2 items-center pt-16 pb-24">
+            <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                 User Persona
               </h2>
@@ -743,9 +722,7 @@ export default function EarlyFoods() {
             </div>
           </div>
 
-          {/* Profile + Personality */}
           <div className="max-w-[75rem] mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-            {/* Left: User Profile Info */}
             <div className="mt-12">
               <div className="flex gap-5">
                 <div className="relative">
@@ -789,7 +766,6 @@ export default function EarlyFoods() {
               </p>
             </div>
 
-            {/* Right: Personality */}
             <div className="relative ml-20">
               <Image
                 src="/images/projects/EF-9.png"
@@ -801,7 +777,6 @@ export default function EarlyFoods() {
             </div>
           </div>
 
-          {/* Grid Cards: Interests, Influences, Goals, etc. */}
           <div className="max-w-[75rem] mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
             {personaCards.map((card, i) => (
               <div
@@ -818,6 +793,95 @@ export default function EarlyFoods() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="w-full mx-auto">
+          <div className="relative overflow-hidden">
+            <div className="relative top-[10rem] flex flex-col gap-2 items-center">
+              <h2 className="text-[#52B7B7] text-5xl font-extrabold mb-4">
+                Empathy Map
+              </h2>
+              <span className="w-[47rem] text-[#377D7D] text-base font-normal text-center">
+                An empathy map is a collaborative visualization used to
+                articulate what we know about a particular type of user. It
+                helps to synthesize research data to bit assist to understand
+                how people make decisions.
+              </span>
+            </div>
+            <Image
+              src="/images/projects/EF-10.webp"
+              alt="image"
+              width={1440}
+              height={1760}
+              className="object-contain w-full"
+            />
+          </div>
+
+          <div className="w-[72rem] mx-auto mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-[#CBEBEB] flex flex-col justify-center w-[36rem] h-[25rem] p-10 relative">
+                <div className="absolute top-2 right-9 text-[#377D7D] text-[12rem] leading-none font-serif select-none">
+                  &rdquo;
+                </div>
+                <h3 className="text-4xl font-bold text-[#F690A1] mb-4 text-center">
+                  Gain
+                </h3>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Enhanced Accessibility of Help and Support
+                  </li>
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Favourites and Wish List Feature
+                  </li>
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Simplified Sign-Up/Sign-In Process
+                  </li>
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Comprehensive and Sequential Product Imagery
+                  </li>
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Estimated Delivery Time
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#CBEBEB] flex flex-col justify-center w-[36rem] h-[25rem] p-10 relative">
+                <div className="absolute top-2 right-9 text-[#377D7D] text-[12rem] leading-none font-serif select-none">
+                  &rdquo;
+                </div>
+                <h3 className="text-4xl font-bold text-[#F690A1] mb-4 text-center">
+                  Pain
+                </h3>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Irrelevant Filter Options
+                  </li>
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Misplaced Content in Product Information
+                  </li>
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Inclusion of Product-Based FAQs
+                  </li>
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Product Texture Details
+                  </li>
+                  <li className="flex items-start text-[#377D7D] text-lg font-medium">
+                    <span className="mr-2">•</span>
+                    Age Group Specifications
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
