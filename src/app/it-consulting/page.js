@@ -1,4 +1,4 @@
-import ITC from "../components/ITC";
+import { LazyITC } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function ITConsultingPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <ITC />
+      <LazyITC />
     </>
   );
 }

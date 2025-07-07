@@ -1,4 +1,4 @@
-import CRMSolutions from "../components/CRMSolutions";
+import { LazyCRMSolutions } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function CRMSolutionsPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <CRMSolutions />
+      <LazyCRMSolutions />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import AgileRapid from "../components/AgileRapid";
+import { LazyAAD } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function AgileRapidDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <AgileRapid />
+      <LazyAAD />
     </>
   );
 }

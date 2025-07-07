@@ -1,4 +1,4 @@
-import EnterpriseSolutions from "../components/EnterpriseSolutions";
+import { LazyEnterpriseSolutions } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function EnterpriseSolutionsPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <EnterpriseSolutions />
+      <LazyEnterpriseSolutions />
     </>
   );
 }
