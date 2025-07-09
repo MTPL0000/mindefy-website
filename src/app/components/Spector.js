@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function SpectorCaseStudy() {
+export default function Spector() {
   return (
     <div className="m-auto bg-white">
       <section className="flex flex-col items-center justify-center gap-8 md:gap-16 lg:gap-24 pt-8 md:pt-16">
