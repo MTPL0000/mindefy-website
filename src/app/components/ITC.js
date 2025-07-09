@@ -1,9 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Navbar from "./HomePage/Navbar";
-import ContactUs from "./HomePage/ContactUs";
-import Footer from "./HomePage/Footer";
 
 export default function ITC() {
   return (
