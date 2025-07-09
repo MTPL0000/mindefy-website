@@ -160,7 +160,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <button className="px-3 lg:px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white text-sm lg:text-base whitespace-nowrap">
+          <button className="px-3 lg:px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white text-sm lg:text-base whitespace-nowrap cursor-pointer">
             Let's Talk
           </button>
         </div>
@@ -188,7 +188,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left"
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Services
                 <Image
@@ -388,7 +388,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
-                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left"
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Products
                 <Image
@@ -418,7 +418,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
-                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left"
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Projects
                 <Image
@@ -482,7 +482,7 @@ export default function Navbar() {
 
             <button
               onClick={handleMobileMenuItemClick}
-              className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white"
+              className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white cursor-pointer"
             >
               Let's Talk
             </button>
