@@ -204,7 +204,7 @@ export default function Navbar() {
               {mobileServicesOpen && (
                 <div className="pl-4 mt-2 space-y-3 text-xs">
                   <div className="space-y-1">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Modern Application Development
                     </p>
                     <Link
@@ -251,7 +251,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Digital Transformation Services
                     </p>
                     <Link
@@ -284,7 +284,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Cloud & DevOps
                     </p>
                     <Link
@@ -296,7 +296,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Startup Support & Consulting
                     </p>
                     <Link
@@ -329,7 +329,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Enterprise Business Solutions
                     </p>
                     <Link
@@ -362,7 +362,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       IT/Staff Argumentation
                     </p>
                     <Link
