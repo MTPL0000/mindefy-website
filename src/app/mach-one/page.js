@@ -1,4 +1,4 @@
-import MachONE from "../components/projects/MachONE";
+import { LazyMachONE } from "../utils/lazyLoadService";
 import StructuredData, { createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -29,7 +29,7 @@ export default function MachOnePage() {
   return (
     <>
       <StructuredData data={breadcrumbData} />
-      <MachONE />
+      <LazyMachONE />
     </>
   );
 }
