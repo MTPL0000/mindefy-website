@@ -7,22 +7,22 @@ export const ProjectDropdown = () => {
       {/* Project Links */}
       <div className="flex pt-0 pb-2 sm:pb-4 px-4 sm:px-6 items-center justify-center">
         <ul className="space-y-1 sm:space-y-1.5 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem]">
-          <li>
+          {/* <li>
             <Link
               href="/early-foods"
               className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               EarlyFoods
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link
               href="/your-hour"
               className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               JEGO
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/soli-stack"

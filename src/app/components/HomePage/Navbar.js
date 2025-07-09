@@ -487,20 +487,20 @@ export default function Navbar() {
               </button>
               {mobileProjectsOpen && (
                 <div className="pl-4 mt-2 space-y-1">
-                  <Link
+                  {/* <Link
                     href="/your-hour"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
                     EarlyFoods
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     href="/your-hour"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
                     JEGO
-                  </Link>
+                  </Link> */}
                   <Link
                     href="/your-hour"
                     onClick={handleMobileMenuItemClick}
