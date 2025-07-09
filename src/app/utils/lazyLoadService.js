@@ -68,3 +68,4 @@ export const LazySolistack = createLazyServiceComponent('projects/Solistack');
 export const LazyYourHour = createLazyServiceComponent('products/YourHour');
 export const LazyDigiBill = createLazyServiceComponent('projects/DigiBill');
 export const LazyMachONE = createLazyServiceComponent('projects/MachONE');
+export const LazyTestimonialsMore = createLazyServiceComponent('TestimonialsMore');

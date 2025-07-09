@@ -1,4 +1,4 @@
-import TestimonialsMore from "../components/TestimonialsMore";
+import { LazyTestimonialsMore } from "../utils/lazyLoadService";
 import StructuredData, { createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -28,7 +28,7 @@ export default function TestimonialsMorePage() {
   return (
     <>
       <StructuredData data={breadcrumbData} />
-      <TestimonialsMore />
+      <LazyTestimonialsMore />
     </>
   );
 }
