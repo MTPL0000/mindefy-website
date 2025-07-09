@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Hybrid App Development Services - Mindefy Technologies",
     description: "Cross-platform hybrid app development services by Mindefy Technologies. Build apps that work seamlessly on both iOS and Android platforms with single codebase.",
-    url: "https://mindefy.com/hybrid-app-development",
+    url: "https://mindefy.tech/hybrid-app-development",
   },
   twitter: {
     title: "Hybrid App Development Services - Mindefy Technologies",
     description: "Cross-platform hybrid app development services by Mindefy Technologies. Build apps that work seamlessly on both iOS and Android platforms with single codebase.",
   },
   alternates: {
-    canonical: "https://mindefy.com/hybrid-app-development",
+    canonical: "https://mindefy.tech/hybrid-app-development",
   },
 };
 
@@ -24,13 +24,13 @@ export default function HybridAppDevelopmentPage() {
     name: "Hybrid App Development",
     description: "Cross-platform hybrid app development services by Mindefy Technologies. Build apps that work seamlessly on both iOS and Android platforms with single codebase.",
     serviceType: "Mobile App Development",
-    url: "https://mindefy.com/hybrid-app-development"
+    url: "https://mindefy.tech/hybrid-app-development"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Hybrid App Development", url: "https://mindefy.com/hybrid-app-development" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Hybrid App Development", url: "https://mindefy.tech/hybrid-app-development" }
   ]);
 
   return (

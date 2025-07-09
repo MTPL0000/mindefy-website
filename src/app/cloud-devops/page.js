@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Cloud & DevOps Solutions - Mindefy Technologies",
     description: "Professional cloud and DevOps solutions by Mindefy Technologies. Streamline your development lifecycle with cloud infrastructure and automated deployment.",
-    url: "https://mindefy.com/cloud-devops",
+    url: "https://mindefy.tech/cloud-devops",
   },
   twitter: {
     title: "Cloud & DevOps Solutions - Mindefy Technologies",
     description: "Professional cloud and DevOps solutions by Mindefy Technologies. Streamline your development lifecycle with cloud infrastructure and automated deployment.",
   },
   alternates: {
-    canonical: "https://mindefy.com/cloud-devops",
+    canonical: "https://mindefy.tech/cloud-devops",
   },
 };
 
@@ -24,13 +24,13 @@ export default function CloudDevOpsPage() {
     name: "Cloud & DevOps Solutions",
     description: "Professional cloud and DevOps solutions by Mindefy Technologies. Streamline your development lifecycle with cloud infrastructure and automated deployment.",
     serviceType: "Cloud & DevOps",
-    url: "https://mindefy.com/cloud-devops"
+    url: "https://mindefy.tech/cloud-devops"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Cloud & DevOps", url: "https://mindefy.com/cloud-devops" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Cloud & DevOps", url: "https://mindefy.tech/cloud-devops" }
   ]);
 
   return (

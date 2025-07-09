@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Digital Transformation Services - Mindefy Technologies",
     description: "Comprehensive digital transformation services by Mindefy Technologies to modernize your business processes and technology infrastructure for the digital age.",
-    url: "https://mindefy.com/digital-transformation",
+    url: "https://mindefy.tech/digital-transformation",
   },
   twitter: {
     title: "Digital Transformation Services - Mindefy Technologies",
     description: "Comprehensive digital transformation services by Mindefy Technologies to modernize your business processes and technology infrastructure for the digital age.",
   },
   alternates: {
-    canonical: "https://mindefy.com/digital-transformation",
+    canonical: "https://mindefy.tech/digital-transformation",
   },
 };
 
@@ -24,13 +24,13 @@ export default function DigitalTransformationPage() {
     name: "Digital Transformation",
     description: "Comprehensive digital transformation services by Mindefy Technologies to modernize your business processes and technology infrastructure for the digital age.",
     serviceType: "Digital Transformation",
-    url: "https://mindefy.com/digital-transformation"
+    url: "https://mindefy.tech/digital-transformation"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Digital Transformation", url: "https://mindefy.com/digital-transformation" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Digital Transformation", url: "https://mindefy.tech/digital-transformation" }
   ]);
 
   return (

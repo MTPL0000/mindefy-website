@@ -7,6 +7,6 @@ export default function robots() {
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://mindefy.com/sitemap.xml',
+    sitemap: 'https://mindefy.tech/sitemap.xml',
   };
 } 

@@ -10,22 +10,22 @@ export const metadata = {
   openGraph: {
     title: "Spector.ai - AI-Driven Asset Health Platform - Mindefy Technologies",
     description: "Spector.ai is a leader in 360° Asset Health Platform and solutions based on AI and AI Agents. Maximize asset performance, integrity, and sustainability with advanced AI-driven insights.",
-    url: "https://mindefy.com/spector",
+    url: "https://mindefy.tech/spector",
   },
   twitter: {
     title: "Spector.ai - AI-Driven Asset Health Platform - Mindefy Technologies",
     description: "Spector.ai is a leader in 360° Asset Health Platform and solutions based on AI and AI Agents. Maximize asset performance, integrity, and sustainability with advanced AI-driven insights.",
   },
   alternates: {
-    canonical: "https://mindefy.com/spector",
+    canonical: "https://mindefy.tech/spector",
   },
 };
 
 export default function SpectorPage() {
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Projects", url: "https://mindefy.com/projects" },
-    { name: "Spector.ai", url: "https://mindefy.com/spector" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Projects", url: "https://mindefy.tech/projects" },
+    { name: "Spector.ai", url: "https://mindefy.tech/spector" }
   ]);
 
   return (

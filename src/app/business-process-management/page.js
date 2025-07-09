@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Business Process Management (BPM) Solutions - Mindefy Technologies",
     description: "Streamline your business operations with BPM solutions by Mindefy Technologies. Optimize workflows, automate processes, and improve efficiency.",
-    url: "https://mindefy.com/business-process-management",
+    url: "https://mindefy.tech/business-process-management",
   },
   twitter: {
     title: "Business Process Management (BPM) Solutions - Mindefy Technologies",
     description: "Streamline your business operations with BPM solutions by Mindefy Technologies. Optimize workflows, automate processes, and improve efficiency.",
   },
   alternates: {
-    canonical: "https://mindefy.com/business-process-management",
+    canonical: "https://mindefy.tech/business-process-management",
   },
 };
 
@@ -24,13 +24,13 @@ export default function BusinessProcessManagementPage() {
     name: "Business Process Management (BPM) Solutions",
     description: "Streamline your business operations with BPM solutions by Mindefy Technologies. Optimize workflows, automate processes, and improve efficiency.",
     serviceType: "Business Process Management",
-    url: "https://mindefy.com/business-process-management"
+    url: "https://mindefy.tech/business-process-management"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Business Process Management", url: "https://mindefy.com/business-process-management" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Business Process Management", url: "https://mindefy.tech/business-process-management" }
   ]);
 
   return (

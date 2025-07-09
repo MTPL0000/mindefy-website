@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "E-commerce & Marketplace Development - Mindefy Technologies",
     description: "Custom e-commerce and marketplace development services by Mindefy Technologies. Build scalable online stores and multi-vendor marketplaces with modern technology.",
-    url: "https://mindefy.com/ecommerce-marketplace",
+    url: "https://mindefy.tech/ecommerce-marketplace",
   },
   twitter: {
     title: "E-commerce & Marketplace Development - Mindefy Technologies",
     description: "Custom e-commerce and marketplace development services by Mindefy Technologies. Build scalable online stores and multi-vendor marketplaces with modern technology.",
   },
   alternates: {
-    canonical: "https://mindefy.com/ecommerce-marketplace",
+    canonical: "https://mindefy.tech/ecommerce-marketplace",
   },
 };
 
@@ -24,13 +24,13 @@ export default function EcommerceMarketplacePage() {
     name: "E-commerce & Marketplace Development",
     description: "Custom e-commerce and marketplace development services by Mindefy Technologies. Build scalable online stores and multi-vendor marketplaces with modern technology.",
     serviceType: "E-commerce Development",
-    url: "https://mindefy.com/ecommerce-marketplace"
+    url: "https://mindefy.tech/ecommerce-marketplace"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "E-commerce & Marketplace", url: "https://mindefy.com/ecommerce-marketplace" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "E-commerce & Marketplace", url: "https://mindefy.tech/ecommerce-marketplace" }
   ]);
 
   return (

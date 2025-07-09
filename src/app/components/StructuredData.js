@@ -13,8 +13,8 @@ export const organizationData = {
   "@type": "Organization",
   "name": "Mindefy Technologies",
   "description": "Leading software development company providing innovative solutions for enterprises and startups.",
-  "url": "https://mindefy.com",
-  "logo": "https://mindefy.com/images/logo/mindefy-logo.png",
+  "url": "https://mindefy.tech",
+  "logo": "https://mindefy.tech/images/logo/mindefy-logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "Customer Service",
@@ -49,7 +49,7 @@ export const websiteData = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Mindefy Technologies",
-  "url": "https://mindefy.com",
+  "url": "https://mindefy.tech",
   "description": "Leading software development company providing innovative solutions for enterprises and startups.",
   "publisher": {
     "@type": "Organization",
@@ -59,7 +59,7 @@ export const websiteData = {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://mindefy.com/search?q={search_term_string}"
+      "urlTemplate": "https://mindefy.tech/search?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
@@ -74,7 +74,7 @@ export const createServiceData = (service) => ({
   "provider": {
     "@type": "Organization",
     "name": "Mindefy Technologies",
-    "url": "https://mindefy.com"
+    "url": "https://mindefy.tech"
   },
   "serviceType": service.serviceType,
   "areaServed": "Worldwide",

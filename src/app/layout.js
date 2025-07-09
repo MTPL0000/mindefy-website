@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://mindefy.com'),
+  metadataBase: new URL('https://mindefy.tech'),
   title: {
     template: '%s | Mindefy Technologies',
     default: 'Mindefy Technologies - Innovative Software Solutions & Development',
@@ -36,7 +36,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://mindefy.com',
+    url: 'https://mindefy.tech',
     siteName: 'Mindefy Technologies',
     title: 'Mindefy Technologies - Innovative Software Solutions & Development',
     description: 'Leading software development company providing innovative solutions for enterprises and startups. Expert in mobile app development, web applications, AI, and digital transformation.',
@@ -60,7 +60,7 @@ export const metadata = {
     // Add other verification codes as needed
   },
   alternates: {
-    canonical: 'https://mindefy.com',
+    canonical: 'https://mindefy.tech',
   },
   icons: {
     icon: [
@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.variable}>
       <head>
-        <link rel="canonical" href="https://mindefy.com" />
+        <link rel="canonical" href="https://mindefy.tech" />
       </head>
       <body className="font-poppins overflow-x-hidden">
         <Navbar />

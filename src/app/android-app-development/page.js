@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Android App Development Services - Mindefy Technologies",
     description: "Professional Android app development services by Mindefy Technologies. Build native Android applications with cutting-edge technology and expert developers.",
-    url: "https://mindefy.com/android-app-development",
+    url: "https://mindefy.tech/android-app-development",
   },
   twitter: {
     title: "Android App Development Services - Mindefy Technologies",
     description: "Professional Android app development services by Mindefy Technologies. Build native Android applications with cutting-edge technology and expert developers.",
   },
   alternates: {
-    canonical: "https://mindefy.com/android-app-development",
+    canonical: "https://mindefy.tech/android-app-development",
   },
 };
 
@@ -24,13 +24,13 @@ export default function AndroidAppDevelopmentPage() {
     name: "Android App Development",
     description: "Professional Android app development services by Mindefy Technologies. Build native Android applications with cutting-edge technology and expert developers.",
     serviceType: "Mobile App Development",
-    url: "https://mindefy.com/android-app-development"
+    url: "https://mindefy.tech/android-app-development"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Android App Development", url: "https://mindefy.com/android-app-development" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Android App Development", url: "https://mindefy.tech/android-app-development" }
   ]);
 
   return (
