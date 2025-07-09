@@ -8,6 +8,7 @@ import { ProjectDropdown } from "./ProjectDropdown";
 import Image from "next/image";
 
 export default function Navbar() {
+  
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showProductsDropdown, setShowProductsDropdown] = useState(false);
   const [showProjectsDropdown, setShowProjectsDropdown] = useState(false);
