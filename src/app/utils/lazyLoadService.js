@@ -65,3 +65,4 @@ export const LazyCDS = createLazyServiceComponent('CDS');
 export const LazyBPM = createLazyServiceComponent('BPM');
 export const LazyAboutUs = createLazyServiceComponent('AboutUs');
 export const LazySolistack = createLazyServiceComponent('projects/Solistack');
+export const LazyYourHour = createLazyServiceComponent('products/YourHour');
