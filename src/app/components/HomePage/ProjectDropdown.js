@@ -15,14 +15,14 @@ export const ProjectDropdown = () => {
               EarlyFoods
             </Link>
           </li> */}
-          <li>
+          {/* <li>
             <Link
               href="/your-hour"
               className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               JEGO
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/soli-stack"

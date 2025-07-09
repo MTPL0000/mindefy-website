@@ -494,13 +494,13 @@ export default function Navbar() {
                   >
                     EarlyFoods
                   </Link> */}
-                  <Link
+                  {/* <Link
                     href="/your-hour"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
                     JEGO
-                  </Link>
+                  </Link> */}
                   <Link
                     href="/your-hour"
                     onClick={handleMobileMenuItemClick}
