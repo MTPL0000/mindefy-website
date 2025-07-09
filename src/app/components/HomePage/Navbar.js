@@ -160,7 +160,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <button className="px-3 lg:px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white text-sm lg:text-base whitespace-nowrap">
+          <button className="px-3 lg:px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white text-sm lg:text-base whitespace-nowrap cursor-pointer">
             Let's Talk
           </button>
         </div>
@@ -177,7 +177,7 @@ export default function Navbar() {
         <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="flex flex-col gap-4 text-sm font-medium text-[#3B3C4A] p-4">
             <a
-              href="#"
+              href="/about-us"
               onClick={handleMobileMenuItemClick}
               className="hover:text-[#2c2178] py-2"
             >
@@ -188,7 +188,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left"
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Services
                 <Image
@@ -204,7 +204,7 @@ export default function Navbar() {
               {mobileServicesOpen && (
                 <div className="pl-4 mt-2 space-y-3 text-xs">
                   <div className="space-y-1">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Modern Application Development
                     </p>
                     <Link
@@ -251,7 +251,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Digital Transformation Services
                     </p>
                     <Link
@@ -284,7 +284,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Cloud & DevOps
                     </p>
                     <Link
@@ -296,7 +296,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Startup Support & Consulting
                     </p>
                     <Link
@@ -329,7 +329,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Enterprise Business Solutions
                     </p>
                     <Link
@@ -362,7 +362,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <p className="font-semibold text-[#332771]">
+                    <p className="font-semibold text-[#332771] text-sm">
                       IT/Staff Argumentation
                     </p>
                     <Link
@@ -388,7 +388,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
-                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left"
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Products
                 <Image
@@ -418,7 +418,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
-                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left"
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Projects
                 <Image
@@ -472,16 +472,17 @@ export default function Navbar() {
               )}
             </div>
 
-            <span
+            <a
+              href="/mindful-ux"
               onClick={handleMobileMenuItemClick}
               className="hover:text-[#2c2178] cursor-pointer py-2"
             >
               Mindful UX "Design Studio"
-            </span>
+            </a>
 
             <button
               onClick={handleMobileMenuItemClick}
-              className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white"
+              className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white cursor-pointer"
             >
               Let's Talk
             </button>

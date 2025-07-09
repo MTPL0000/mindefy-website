@@ -1,4 +1,4 @@
-import AboutUsPage from "../components/AboutUs";
+import { LazyAboutUs } from "../utils/lazyLoadService";
 
 export const metadata = {
   title: "About Us",
@@ -19,5 +19,5 @@ export const metadata = {
 };
 
 export default function AboutUs() {
-  return <AboutUsPage />;
+  return <LazyAboutUs />;
 }
