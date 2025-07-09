@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Startup Incubation & Consulting Services - Mindefy Technologies",
     description: "Professional startup incubation and consulting services by Mindefy Technologies. Nurture your startup from concept to market with expert guidance and support.",
-    url: "https://mindefy.com/startup-incubation-consulting",
+    url: "https://mindefy.tech/startup-incubation-consulting",
   },
   twitter: {
     title: "Startup Incubation & Consulting Services - Mindefy Technologies",
     description: "Professional startup incubation and consulting services by Mindefy Technologies. Nurture your startup from concept to market with expert guidance and support.",
   },
   alternates: {
-    canonical: "https://mindefy.com/startup-incubation-consulting",
+    canonical: "https://mindefy.tech/startup-incubation-consulting",
   },
 };
 
@@ -24,13 +24,13 @@ export default function StartupIncubationConsultingPage() {
     name: "Startup Incubation & Consulting Services",
     description: "Professional startup incubation and consulting services by Mindefy Technologies. Nurture your startup from concept to market with expert guidance and support.",
     serviceType: "Startup Incubation",
-    url: "https://mindefy.com/startup-incubation-consulting"
+    url: "https://mindefy.tech/startup-incubation-consulting"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Startup Incubation", url: "https://mindefy.com/startup-incubation-consulting" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Startup Incubation", url: "https://mindefy.tech/startup-incubation-consulting" }
   ]);
 
   return (

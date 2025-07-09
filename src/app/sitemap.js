@@ -1,7 +1,7 @@
 export const dynamic = 'force-static';
 
 export default function sitemap() {
-  const baseUrl = 'https://mindefy.com';
+  const baseUrl = 'https://mindefy.tech';
   
   const routes = [
     {

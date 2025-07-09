@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "IT Consulting Services - Mindefy Technologies",
     description: "Professional IT consulting services by Mindefy Technologies. Strategic technology guidance, digital transformation consulting, and technical advisory services.",
-    url: "https://mindefy.com/it-consulting",
+    url: "https://mindefy.tech/it-consulting",
   },
   twitter: {
     title: "IT Consulting Services - Mindefy Technologies",
     description: "Professional IT consulting services by Mindefy Technologies. Strategic technology guidance, digital transformation consulting, and technical advisory services.",
   },
   alternates: {
-    canonical: "https://mindefy.com/it-consulting",
+    canonical: "https://mindefy.tech/it-consulting",
   },
 };
 
@@ -24,13 +24,13 @@ export default function ITConsultingPage() {
     name: "IT Consulting Services",
     description: "Professional IT consulting services by Mindefy Technologies. Strategic technology guidance, digital transformation consulting, and technical advisory services.",
     serviceType: "IT Consulting",
-    url: "https://mindefy.com/it-consulting"
+    url: "https://mindefy.tech/it-consulting"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "IT Consulting", url: "https://mindefy.com/it-consulting" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "IT Consulting", url: "https://mindefy.tech/it-consulting" }
   ]);
 
   return (

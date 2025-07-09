@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Low-Code Development Services - Mindefy Technologies",
     description: "Accelerate your digital transformation with low-code development services by Mindefy Technologies. Build applications faster with minimal traditional coding.",
-    url: "https://mindefy.com/low-code-development",
+    url: "https://mindefy.tech/low-code-development",
   },
   twitter: {
     title: "Low-Code Development Services - Mindefy Technologies",
     description: "Accelerate your digital transformation with low-code development services by Mindefy Technologies. Build applications faster with minimal traditional coding.",
   },
   alternates: {
-    canonical: "https://mindefy.com/low-code-development",
+    canonical: "https://mindefy.tech/low-code-development",
   },
 };
 
@@ -24,13 +24,13 @@ export default function LowCodeDevelopmentPage() {
     name: "Low-Code Development Services",
     description: "Accelerate your digital transformation with low-code development services by Mindefy Technologies. Build applications faster with minimal traditional coding.",
     serviceType: "Low-Code Development",
-    url: "https://mindefy.com/low-code-development"
+    url: "https://mindefy.tech/low-code-development"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Low-Code Development", url: "https://mindefy.com/low-code-development" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Low-Code Development", url: "https://mindefy.tech/low-code-development" }
   ]);
 
   return (

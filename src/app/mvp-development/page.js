@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "MVP Development Services - Mindefy Technologies",
     description: "Minimum Viable Product (MVP) development services by Mindefy Technologies for startups and enterprises. Launch faster with validated ideas and rapid prototyping.",
-    url: "https://mindefy.com/mvp-development",
+    url: "https://mindefy.tech/mvp-development",
   },
   twitter: {
     title: "MVP Development Services - Mindefy Technologies",
     description: "Minimum Viable Product (MVP) development services by Mindefy Technologies for startups and enterprises. Launch faster with validated ideas and rapid prototyping.",
   },
   alternates: {
-    canonical: "https://mindefy.com/mvp-development",
+    canonical: "https://mindefy.tech/mvp-development",
   },
 };
 
@@ -24,13 +24,13 @@ export default function MVPDevelopmentPage() {
     name: "MVP Development",
     description: "Minimum Viable Product (MVP) development services by Mindefy Technologies for startups and enterprises. Launch faster with validated ideas and rapid prototyping.",
     serviceType: "MVP Development",
-    url: "https://mindefy.com/mvp-development"
+    url: "https://mindefy.tech/mvp-development"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "MVP Development", url: "https://mindefy.com/mvp-development" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "MVP Development", url: "https://mindefy.tech/mvp-development" }
   ]);
 
   return (

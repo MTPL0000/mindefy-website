@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "MEAN & MERN Stack Development Services - Mindefy Technologies",
     description: "Full-stack MEAN and MERN development services by Mindefy Technologies. Build modern web applications using MongoDB, Express.js, Angular/React, and Node.js.",
-    url: "https://mindefy.com/mean-mern-stack-development",
+    url: "https://mindefy.tech/mean-mern-stack-development",
   },
   twitter: {
     title: "MEAN & MERN Stack Development Services - Mindefy Technologies",
     description: "Full-stack MEAN and MERN development services by Mindefy Technologies. Build modern web applications using MongoDB, Express.js, Angular/React, and Node.js.",
   },
   alternates: {
-    canonical: "https://mindefy.com/mean-mern-stack-development",
+    canonical: "https://mindefy.tech/mean-mern-stack-development",
   },
 };
 
@@ -24,13 +24,13 @@ export default function MeanMernStackDevelopmentPage() {
     name: "MEAN & MERN Stack Development",
     description: "Full-stack MEAN and MERN development services by Mindefy Technologies. Build modern web applications using MongoDB, Express.js, Angular/React, and Node.js.",
     serviceType: "Full Stack Development",
-    url: "https://mindefy.com/mean-mern-stack-development"
+    url: "https://mindefy.tech/mean-mern-stack-development"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "MEAN & MERN Stack Development", url: "https://mindefy.com/mean-mern-stack-development" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "MEAN & MERN Stack Development", url: "https://mindefy.tech/mean-mern-stack-development" }
   ]);
 
   return (

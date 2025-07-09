@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Microservices Architecture Development - Mindefy Technologies",
     description: "Design and develop scalable microservices architecture by Mindefy Technologies for modern, distributed applications with enhanced performance and reliability.",
-    url: "https://mindefy.com/microservices-architecture",
+    url: "https://mindefy.tech/microservices-architecture",
   },
   twitter: {
     title: "Microservices Architecture Development - Mindefy Technologies",
     description: "Design and develop scalable microservices architecture by Mindefy Technologies for modern, distributed applications with enhanced performance and reliability.",
   },
   alternates: {
-    canonical: "https://mindefy.com/microservices-architecture",
+    canonical: "https://mindefy.tech/microservices-architecture",
   },
 };
 
@@ -24,13 +24,13 @@ export default function MicroservicesArchitecturePage() {
     name: "Microservices Architecture Development",
     description: "Design and develop scalable microservices architecture by Mindefy Technologies for modern, distributed applications with enhanced performance and reliability.",
     serviceType: "Architecture Development",
-    url: "https://mindefy.com/microservices-architecture"
+    url: "https://mindefy.tech/microservices-architecture"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Microservices Architecture", url: "https://mindefy.com/microservices-architecture" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Microservices Architecture", url: "https://mindefy.tech/microservices-architecture" }
   ]);
 
   return (
