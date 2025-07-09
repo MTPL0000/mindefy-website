@@ -179,7 +179,7 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/testimonials-more`,
+      url: `${baseUrl}/testimonials`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,

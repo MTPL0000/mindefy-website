@@ -116,7 +116,7 @@ export default function Testimonials() {
         {/* View All Button */}
         <div className="text-center">
           <Link
-            href="/testimonials-more"
+            href="/testimonials"
             target="_self"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-[#2B2B2B] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-medium hover:bg-gray-800 transition-colors duration-300"

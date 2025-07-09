@@ -8,21 +8,21 @@ export const metadata = {
   openGraph: {
     title: "Client Testimonials & Reviews - Mindefy Technologies",
     description: "Read what our clients say about Mindefy Technologies. Discover testimonials and reviews from satisfied customers who have experienced our exceptional services.",
-    url: "https://mindefy.com/testimonials-more",
+    url: "https://mindefy.com/testimonials",
   },
   twitter: {
     title: "Client Testimonials & Reviews - Mindefy Technologies",
     description: "Read what our clients say about Mindefy Technologies. Discover testimonials and reviews from satisfied customers who have experienced our exceptional services.",
   },
   alternates: {
-    canonical: "https://mindefy.com/testimonials-more",
+    canonical: "https://mindefy.com/testimonials",
   },
 };
 
 export default function TestimonialsMorePage() {
   const breadcrumbData = createBreadcrumbData([
     { name: "Home", url: "https://mindefy.com" },
-    { name: "Testimonials", url: "https://mindefy.com/testimonials-more" }
+    { name: "Testimonials", url: "https://mindefy.com/testimonials" }
   ]);
 
   return (
