@@ -8,14 +8,14 @@ export default function MindfulUX() {
   return (
     <section className="mx-auto bg-white">
       <Navbar />
-      <section className="mx-auto pt-16">
+      <section className="mx-auto">
         <div
           style={{
             background: `radial-gradient(circle at bottom, #eeeafc 1%, #f9f3f0 80%, #ffffff 90%)`,
           }}
           className="min-h-[70vh] md:h-[50.5rem] flex flex-col items-center justify-center gap-8 md:gap-12 px-4 py-12 md:py-0"
         >
-          <div className="relative aspect-[1/1] w-16 md:w-[7.5rem] overflow-hidden">
+          <div className="relative aspect-[1/1] w-20 md:w-36 overflow-hidden">
             <Image
               src="/images/logo/mindefy-logo.svg"
               alt="logo"
@@ -24,7 +24,7 @@ export default function MindfulUX() {
             />
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
-            <p className="text-[#342871] text-2xl md:text-4xl font-bold tracking-wider text-center">
+            <p className="text-[#342871] text-5xl md:text-7xl font-semibold tracking-normal text-center">
               MindfulUX
             </p>
             <p className="text-[#D84326] text-lg md:text-2xl font-medium tracking-wider text-center">
