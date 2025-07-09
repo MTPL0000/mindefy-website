@@ -472,12 +472,13 @@ export default function Navbar() {
               )}
             </div>
 
-            <span
+            <a
+              href="/mindful-ux"
               onClick={handleMobileMenuItemClick}
               className="hover:text-[#2c2178] cursor-pointer py-2"
             >
               Mindful UX "Design Studio"
-            </span>
+            </a>
 
             <button
               onClick={handleMobileMenuItemClick}
