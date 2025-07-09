@@ -177,7 +177,7 @@ export default function Navbar() {
         <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="flex flex-col gap-4 text-sm font-medium text-[#3B3C4A] p-4">
             <a
-              href="#"
+              href="/about-us"
               onClick={handleMobileMenuItemClick}
               className="hover:text-[#2c2178] py-2"
             >
