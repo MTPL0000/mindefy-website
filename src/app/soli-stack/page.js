@@ -1,4 +1,4 @@
-import Solistack from "../components/projects/Solistack";
+import { LazySolistack } from "../utils/lazyLoadService";
 import StructuredData, { createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -29,7 +29,7 @@ export default function SoliStackPage() {
   return (
     <>
       <StructuredData data={breadcrumbData} />
-      <Solistack />
+      <LazySolistack />
     </>
   );
 }

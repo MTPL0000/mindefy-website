@@ -1,4 +1,4 @@
-import DigiBill from "../components/projects/DigiBill";
+import { LazyDigiBill } from "../utils/lazyLoadService";
 import StructuredData, { createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -29,7 +29,7 @@ export default function DigiBillPage() {
   return (
     <>
       <StructuredData data={breadcrumbData} />
-      <DigiBill />
+      <LazyDigiBill />
     </>
   );
 }

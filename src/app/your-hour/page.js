@@ -1,4 +1,4 @@
-import YourHour from "../components/products/YourHour";
+import { LazyYourHour } from "../utils/lazyLoadService";
 import StructuredData, { createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -29,7 +29,7 @@ export default function YourHourPage() {
   return (
     <>
       <StructuredData data={breadcrumbData} />
-      <YourHour />
+      <LazyYourHour />
     </>
   );
 }
