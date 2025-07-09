@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Footer from "./HomePage/Footer";
-import Navbar from "./HomePage/Navbar";
 
 export default function TestimonialsMore() {
   const testimonials = [
@@ -60,9 +58,6 @@ export default function TestimonialsMore() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navbar */}
-      <Navbar />
-
       {/* Main Content */}
       <main className="py-16 px-[1rem]">
         <div className="max-w-[81.875rem] mx-auto">
@@ -150,9 +145,6 @@ export default function TestimonialsMore() {
           </div>
         </div>
       </main>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }
