@@ -34,6 +34,25 @@ export default function Navbar() {
     setMobileProjectsOpen(false);
   };
 
+  // Function to scroll to contact section
+  const scrollToContact = () => {
+    setTimeout(() => {
+      requestAnimationFrame(() => {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        } else {
+          console.warn("Contact section not found");
+        }
+      });
+    }, 100); // Slight delay ensures layout is complete
+
+    handleMobileMenuItemClick();
+  };
+
   return (
     <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-2 sm:px-4 lg:px-8 py-4 sticky top-0 z-20 shadow">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
@@ -160,7 +179,10 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <button className="px-3 lg:px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white text-sm lg:text-base whitespace-nowrap">
+          <button
+            onClick={scrollToContact}
+            className="px-3 lg:px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white text-sm lg:text-base whitespace-nowrap"
+          >
             Let's Talk
           </button>
         </div>
@@ -480,7 +502,7 @@ export default function Navbar() {
             </span>
 
             <button
-              onClick={handleMobileMenuItemClick}
+              onClick={scrollToContact}
               className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white"
             >
               Let's Talk

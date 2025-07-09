@@ -24,14 +24,6 @@ export default function JEGO() {
         });
       }
     });
-
-    // Initially open the first dropdown (Personal Transformation)
-    const firstDropdown = document.querySelector(
-      '[data-dropdown="transformation"]'
-    );
-    if (firstDropdown) {
-      firstDropdown.setAttribute("open", "");
-    }
   }, []);
 
   return (
@@ -60,10 +52,10 @@ export default function JEGO() {
               <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-gray-700 mb-4 lg:mb-[1.62rem]">
                 Growth And Transformation
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
-                The collaborative application development journey between Mindefy
-                and JEGO signifies a shared commitment to inspiring and empowering
-                individuals. Together, we have harnessed cutting-edge
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 text-justify leading-relaxed">
+                The collaborative application development journey between
+                Mindefy and JEGO signifies a shared commitment to inspiring and
+                empowering individuals. Together, we have harnessed cutting-edge
                 technologies, user-centric design, and iterative development
                 processes to create remarkable applications that revolutionize
                 personal growth journeys. By leveraging our expertise in app
@@ -75,14 +67,14 @@ export default function JEGO() {
             {/* Dropdown Sections */}
             <div className="space-y-4 lg:space-y-6">
               {/* Personal Transformation */}
-              <div className="pb-4">
+              <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
                   <details
                     data-dropdown="transformation"
                     className="dropdown-details"
                   >
-                    <summary className="w-full flex items-center justify-between text-left px-1 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-extrabold text-gray-700 dropdown-text">
+                    <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
+                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
                         Personal Transformation
                       </span>
                       <svg
@@ -100,11 +92,12 @@ export default function JEGO() {
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
+                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600 text-justify leading-relaxed pl-1">
                         JEGO has had a profound impact on individuals' personal
                         growth and transformation. Users have reported improved
-                        self-awareness and significant positive changes in their
-                        mindset and behaviors.
+                        self-awareness, enhanced well-being, increased
+                        confidence, and a greater sense of purpose in their
+                        lives.
                       </p>
                     </div>
                   </details>
@@ -112,14 +105,14 @@ export default function JEGO() {
               </div>
 
               {/* Global Accessibility */}
-              <div className="pb-4">
+              <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
                   <details
                     data-dropdown="accessibility"
                     className="dropdown-details"
                   >
-                    <summary className="w-full flex items-center justify-between text-left px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-extrabold text-gray-700 dropdown-text">
+                    <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
+                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
                         Global Accessibility
                       </span>
                       <svg
@@ -137,12 +130,12 @@ export default function JEGO() {
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
-                        JEGO's platform is designed to be accessible worldwide,
-                        breaking down geographical barriers to personal
-                        development. The application supports multiple languages
-                        and offers culturally relevant content for diverse
-                        audiences.
+                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600 text-justify leading-relaxed pl-1">
+                        JEGO has made high-quality personal development
+                        education accessible to individuals around the globe.
+                        The platform's mobile application and online nature have
+                        democratized learning, breaking down geographical
+                        barriers and offering flexible access to knowledge.
                       </p>
                     </div>
                   </details>
@@ -150,11 +143,14 @@ export default function JEGO() {
               </div>
 
               {/* Community Building */}
-              <div className="pb-4">
+              <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
-                  <details data-dropdown="community" className="dropdown-details">
-                    <summary className="w-full flex items-center justify-between text-left px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-extrabold text-gray-700 dropdown-text">
+                  <details
+                    data-dropdown="community"
+                    className="dropdown-details"
+                  >
+                    <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
+                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
                         Community Building
                       </span>
                       <svg
@@ -172,11 +168,12 @@ export default function JEGO() {
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
-                        JEGO fosters a supportive community where users can
-                        connect, share experiences, and learn from each other. The
-                        platform includes discussion forums, group challenges, and
-                        collaborative projects to enhance the learning experience.
+                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600 text-justify leading-relaxed pl-1">
+                        The community aspect of JEGO has created a supportive
+                        ecosystem where learners can connect, share experiences,
+                        and form meaningful relationships. Users have reported a
+                        sense of belonging and the opportunity to network with
+                        like-minded individuals.
                       </p>
                     </div>
                   </details>
@@ -184,11 +181,11 @@ export default function JEGO() {
               </div>
 
               {/* Positive Social Impact */}
-              <div className="pb-4">
+              <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
                   <details data-dropdown="impact" className="dropdown-details">
-                    <summary className="w-full flex items-center justify-between text-left px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-extrabold text-gray-700 dropdown-text">
+                    <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
+                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
                         Positive Social Impact
                       </span>
                       <svg
@@ -206,20 +203,82 @@ export default function JEGO() {
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
-                        Through its focus on personal growth and transformation,
-                        JEGO contributes to positive social change by empowering
-                        individuals to become better versions of themselves and
-                        positively impact their communities.
+                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600 text-justify leading-relaxed pl-1">
+                        JEGO's emphasis on personal growth and well-being has
+                        had a ripple effect on society. Users have applied their
+                        learnings to improve relationships, contribute to their
+                        communities, and create positive change in various
+                        spheres of life.
                       </p>
                     </div>
                   </details>
                 </div>
               </div>
+              <a
+                href="#"
+                className=" ml-2 inline-flex items-center text-lg font-medium text-[#6A53E1] hover:underline group transition-all duration-300"
+              >
+                VIEW CASE STUDY
+                <span className="ml-2 transition-transform group-hover:translate">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="#BCA6FF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-6 h-6"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
+
+      {/* CSS for dropdown styling and arrow rotation */}
+      <style jsx>{`
+        /* Arrow rotation when dropdown is open */
+        details[open] .dropdown-arrow {
+          transform: rotate(180deg);
+        }
+
+        /* Change text color to purple when dropdown is open */
+        details[open] .dropdown-text {
+          color: #9333ea !important;
+          transition: color 0.3s ease;
+        }
+
+        /* Add background, rounded corners, and padding when open */
+        details[open] {
+          background-color: #f4f0ff;
+          border-radius: 0.5rem;
+          padding: 1rem;
+        }
+
+        /* Default text color transition */
+        .dropdown-text {
+          transition: color 0.5s ease;
+        }
+
+        /* Hide default marker */
+        details summary::-webkit-details-marker {
+          display: none;
+        }
+        details summary::marker {
+          display: none;
+        }
+
+        /* Smooth transitions for dropdown */
+        .dropdown-details {
+          transition: all 0.3s ease;
+        }
+      `}</style>
     </section>
   );
 }

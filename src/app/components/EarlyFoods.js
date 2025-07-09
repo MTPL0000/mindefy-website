@@ -132,14 +132,14 @@ export default function EarlyFoods() {
     "Indicator of changing the image",
     "Next product can have a affordance",
     "A checkbox will be a perfect cue for user to see and confirm the selected category",
-    "sometimes appear on not contextual to page’s data",
+    "sometimes appear on not contextual to page's data",
     "Filters can be lot more dynamic and the list we see now should go under dropdown on top",
     "Sorting can be brought in",
     "Image per category will help user know what exactly they will find inside and also generate curiosity",
     "Quick shop flow can be changed to View Product Details",
     "Reviews can be hidden",
     "Avoid Images with text",
-    "The action of “Quick shop” can be performed by “add to cart” button",
+    'The action of "Quick shop" can be performed by "add to cart" button',
     "Alignment of of the product on product grid",
   ];
 
@@ -148,13 +148,13 @@ export default function EarlyFoods() {
       name: "Neha Kumar",
       role: "Mother",
       feedback:
-        "Can you please make the app for the phone . iPhone or android and make it user friendly and easy to purchase. No COD | Technical Difficulty",
+        "Can you please make the app for the phone . iPhone or android and make it user friendly and easy to purchase.No COD | Technical Difficulty",
     },
     {
       name: "Hima Shah",
       role: "Teacher",
       feedback:
-        "Couldn’t find the Laddoos category easily, but rest all was good | Can’t find products.. example Rusks.. I have to search",
+        "Couldn't find the Laddoos category easily, but rest all was good | Can't find products.. example Rusks.. I have to search",
     },
     {
       name: "Ramya",
@@ -178,7 +178,7 @@ export default function EarlyFoods() {
       name: "Lik Emy",
       role: "Food Seller",
       feedback:
-        "I cant able to find right products to my baby i didn’t understood what to order of its month wise seperated its its easy to find",
+        "I cant able to find right products to my baby i didn't understood what to order of its month wise seperated its its easy to find",
     },
   ];
 
@@ -219,6 +219,72 @@ export default function EarlyFoods() {
       title: "Pain points and frustrations",
       items: ["Sugar in everything", "Artificial Colors", "Hidden ingredients"],
     },
+  ];
+  const column1 = [
+    "31% of parents of children aged 3–7 said they eat organic food at least once a week.",
+    "75% of parents said they are interested in buying organic baby food products online",
+    "8% saying they would be very interested in purchasing packaged ready-to-eat meals.",
+    "72% of new mothers said they are interested in convenient, pre-prepared meals",
+    "A significant percentage of parents purchase baby food, and the majority of the baby food purchases are for convenience.",
+    "The e-store image is an important factor continue influencing the purchase intention rate of consumers.",
+    "Convenience is the primary factor for purchasing baby food online, followed by price and product reviews.",
+  ];
+
+  const column2 = [
+    "76% of parents said they would be interested in purchasing pre-prepared, ready-to-eat food items for their children, particularly if the food items are organic or GMO-free.",
+    "72% of new mothers said they are interested in convenient, pre-prepared meals",
+    "87% said they would be more likely to buy a product if it has been endorsed by a trusted source.",
+
+    "92% of new mothers said they are interested in price discounts on website purchases",
+    "Organic and specialty baby foods have a lower market share, but are more likely to be purchased by those in higher socio-economic levels.",
+    "Product information and design of the e-store are key factors in driving purchase intention.",
+  ];
+
+  const column3 = [
+    "92% of new mothers said they are interested in price discounts on website purchases",
+    "87% said they would be more likely to buy a product if it has been endorsed by a trusted source",
+    "18% saying they would be very interested in purchasing packaged ready-to-eat meals.",
+    "Parents conduct research prior to purchasing baby care products, with the majority of the research being online.",
+    "Consumers prefer an e-store with more information, modern design, and fewer distractions.",
+  ];
+  const problems = [
+    "Irrelevant Filter Options",
+    "Misplaced Content in Product Information",
+    "Photo Clarity Enhancement",
+    "Footer Title Revisions",
+    "Testimonial Section Revamp",
+    "Inclusion of Product-Based FAQs",
+    "Visual Breaks on Landing Page",
+    "Blog Section Renaming",
+    "Incorporation of User Reviews",
+    "Sugar-Free Products Elaboration",
+    "Product Texture Details",
+    "Age Group Specifications",
+    "Bundle Offers on Product",
+    "Clear Product Information",
+  ];
+  const fullRows = problems.slice(0, Math.floor(problems.length / 3) * 3); // multiples of 3
+  const lastRow = problems.slice(fullRows.length); // 1 or 2 remaining items
+
+  const solutions = [
+    "Enhance Support Accessibility",
+    "Encouraging User Feedback",
+    "Referral Program & Promotion Codes",
+    "Enhanced Search Functionality",
+    "Favourites and Wish List Feature",
+    "Personalized User Experience",
+    "Simplified Sign-Up/Sign-In Process",
+    "New User Shopping Guide",
+    "Sequential Product Imagery",
+    "Unique Selling Point (USP) Emphasis",
+    "Recommend Product and Filters",
+    "Dynamic Product Page Banners",
+    "Estimated Delivery Time",
+    "Comprehensive User Profile",
+    "Introducing New Iconography",
+    "Improved UX Writing",
+    "Gamified Newsletter Subscription",
+    "Redesigned Navigation Menu and Website Flow",
   ];
 
   return (
@@ -268,7 +334,6 @@ export default function EarlyFoods() {
             />
           </div>
         </div>
-
         <div className="m-auto w-[43.75rem] flex flex-col items-center justify-center gap-2">
           <h3 className="text-[#FC6B81] text-2xl font-normal uppercase">
             INTRODUCTION
@@ -282,7 +347,6 @@ export default function EarlyFoods() {
             children.
           </p>
         </div>
-
         <div className="max-w-[71.5rem] mx-auto flex items-center justify-between  gap-15">
           <div className="w-[60%] flex flex-col items-start justify-center gap-5">
             <h3 className="text-[#FC6B81] text-2xl font-normal uppercase tracking-wide">
@@ -300,15 +364,14 @@ export default function EarlyFoods() {
               who are beginning to develop their taste buds and also building
               their body.
             </p>
-
             <span className="block text-[#FC6B81] text-xl font-normal mb-2">
               Platform
             </span>
-
             <a
               className="inline-flex items-center gap-3 bg-[#FC6B81] hover:bg-[#e65570] transition rounded-lg px-6 py-3"
               href="https://earlyfoods.com/"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="relative aspect-[1.2/1] w-[1.5rem] overflow-hidden">
                 <Image
@@ -321,7 +384,6 @@ export default function EarlyFoods() {
               <span className="text-white text-lg font-medium">Web</span>
             </a>
           </div>
-
           <div className="relative w-[80%] aspect-[1.3/1]">
             <Image
               src="/images/projects/EF-2.png"
@@ -331,7 +393,6 @@ export default function EarlyFoods() {
             />
           </div>
         </div>
-
         <div className="max-w-[71.5rem] mx-auto flex items-center justify-between gap-15 mt-5">
           <div className="w-[60%] flex flex-col items-start justify-center gap-5">
             <h2 className="text-[#52B7B7] text-[2.65rem] font-semibold leading-tight uppercase">
@@ -348,12 +409,11 @@ export default function EarlyFoods() {
             <p className="text-[#2B7575] text-lg font-normal text-justify leading-relaxed">
               Think about Instagram—some people are a bit wary about buying
               stuff online because of bad experiences on other platforms. It
-              gets even trickier when it’s about health, especially for
+              gets even trickier when it's about health, especially for
               themselves and their kids. So, we need to figure out how to make
               them feel comfy and trust us right from the start.
             </p>
           </div>
-
           <div className="relative w-[80%] aspect-[1.3/1]">
             <Image
               src="/images/projects/EF-3.png"
@@ -363,7 +423,6 @@ export default function EarlyFoods() {
             />
           </div>
         </div>
-
         <div className="w-[71.5rem] mx-auto  py-16 px-6">
           <div className="flex justify-between items-start mb-12">
             <div>
@@ -388,7 +447,6 @@ export default function EarlyFoods() {
               </ul>
             </div>
           </div>
-
           <div className="grid grid-cols-4 gap-6 text-start">
             {list.map((step, i) => (
               <div key={i} className="flex flex-col items-start">
@@ -408,7 +466,6 @@ export default function EarlyFoods() {
             ))}
           </div>
         </div>
-
         <div className="w-[71.5rem] mx-auto px-6">
           <div className="flex flex-col gap-3 items-start">
             <h2 className="text-[#52B7B7] text-5xl font-extrabold mt-2">
@@ -417,7 +474,6 @@ export default function EarlyFoods() {
             <span className="text-[#2B7575] text-lg font-normal">
               Our achievement in the journey depicted in numbers
             </span>
-
             <div className="relative aspect-[2/1] w-full overflow-hidden">
               <Image
                 src="/images/projects/EF-4.png"
@@ -428,7 +484,6 @@ export default function EarlyFoods() {
             </div>
           </div>
         </div>
-
         <div className="w-[71.5rem] mx-auto px-6">
           <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
             {dataList.map((section, index) => (
@@ -445,7 +500,6 @@ export default function EarlyFoods() {
             ))}
           </div>
         </div>
-
         <div className="w-full mx-auto px-6 mt-4">
           <div className="relative aspect-[3/1] w-full overflow-hidden">
             <div className="relative z-10 flex flex-col gap-2 items-center">
@@ -465,7 +519,6 @@ export default function EarlyFoods() {
               className="object-contain"
             />
           </div>
-
           <div className="w-[80rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 text-center">
             {roleList.map((item, index) => (
               <div
@@ -474,7 +527,7 @@ export default function EarlyFoods() {
               >
                 <div className="relative aspect-[1/1] w-[2rem] overflow-hidden">
                   <Image
-                    src={item.icon}
+                    src={item.icon || "/placeholder.svg"}
                     alt={item.title}
                     fill
                     className="object-contain"
@@ -490,7 +543,6 @@ export default function EarlyFoods() {
             ))}
           </div>
         </div>
-
         <div className="w-[71.5rem] mx-auto">
           <div className="flex justify-between items-center mb-8">
             <div>
@@ -515,7 +567,6 @@ export default function EarlyFoods() {
               </ul>
             </div>
           </div>
-
           <div className="w-full flex flex-col lg:flex-row gap-12">
             <div className="flex flex-col gap-8">
               <div className="relative">
@@ -537,7 +588,6 @@ export default function EarlyFoods() {
                 />
               </div>
             </div>
-
             <div className="w-full lg:w-[38%] grid grid-cols-2 gap-4">
               {notes.map((text, i) => (
                 <div
@@ -550,7 +600,6 @@ export default function EarlyFoods() {
             </div>
           </div>
         </div>
-
         <div className="w-[71.5rem] mx-auto mt-12">
           <div className="mx-auto flex flex-col gap-15">
             <div className="flex flex-col justify-between items-start gap-6">
@@ -566,7 +615,6 @@ export default function EarlyFoods() {
                     USER RESEARCH
                   </h1>
                 </div>
-
                 <div>
                   <h4 className="text-[#F88598] text-base font-bold mb-2">
                     Research Plan
@@ -591,7 +639,6 @@ export default function EarlyFoods() {
                 in addition to my own findings
               </p>
             </div>
-
             <div>
               <h3 className="flex items-center justify-start gap-2.5 text-[#F88598] text-4xl font-bold mb-4">
                 <div className="bg-[#F88598] w-2.5 h-11"></div>SURVEY
@@ -613,7 +660,6 @@ export default function EarlyFoods() {
                 . the target audience were between the age 21–50 Years old
               </p>
             </div>
-
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="relative">
                 <Image
@@ -624,7 +670,6 @@ export default function EarlyFoods() {
                   className="object-contain"
                 />
               </div>
-
               <div className="relative">
                 <Image
                   src="/images/projects/EFS-2.png"
@@ -634,7 +679,6 @@ export default function EarlyFoods() {
                   className="object-contain"
                 />
               </div>
-
               <div className="relative">
                 <Image
                   src="/images/projects/EFS-3.png"
@@ -644,7 +688,6 @@ export default function EarlyFoods() {
                   className="object-contain"
                 />
               </div>
-
               <div className="relative">
                 <Image
                   src="/images/projects/EFS-4.png"
@@ -657,7 +700,6 @@ export default function EarlyFoods() {
             </div>
           </div>
         </div>
-
         <div className="w-[71.5rem] mx-auto mt-5">
           <div className="mx-auto flex flex-col gap-12">
             <div>
@@ -671,7 +713,6 @@ export default function EarlyFoods() {
                 and invited them at different times.
               </p>
             </div>
-
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
               {interviewCards.map((item, idx) => (
                 <div
@@ -765,7 +806,6 @@ export default function EarlyFoods() {
                 Thanks
               </p>
             </div>
-
             <div className="relative ml-20">
               <Image
                 src="/images/projects/EF-9.png"
@@ -776,7 +816,6 @@ export default function EarlyFoods() {
               />
             </div>
           </div>
-
           <div className="max-w-[75rem] mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
             {personaCards.map((card, i) => (
               <div
@@ -795,7 +834,6 @@ export default function EarlyFoods() {
             ))}
           </div>
         </div>
-
         <div className="w-full mx-auto">
           <div className="relative overflow-hidden">
             <div className="relative top-[10rem] flex flex-col gap-2 items-center">
@@ -817,7 +855,6 @@ export default function EarlyFoods() {
               className="object-contain w-full"
             />
           </div>
-
           <div className="w-[72rem] mx-auto mt-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-[#CBEBEB] flex flex-col justify-center w-[36rem] h-[25rem] p-10 relative">
@@ -850,7 +887,6 @@ export default function EarlyFoods() {
                   </li>
                 </ul>
               </div>
-
               <div className="bg-[#CBEBEB] flex flex-col justify-center w-[36rem] h-[25rem] p-10 relative">
                 <div className="absolute top-2 right-9 text-[#377D7D] text-[12rem] leading-none font-serif select-none">
                   &rdquo;
@@ -882,6 +918,934 @@ export default function EarlyFoods() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* User Journey Map Section */}
+        <div className="w-full mx-auto mt-16 px-6">
+          <div className="max-w-[75rem] mx-auto">
+            {/* Header Section */}
+            <div className="flex justify-between items-start mb-[3.185rem]">
+              <div>
+                <h3 className="text-[#F88598] text-[2rem] font-normal flex items-center gap-2 mb-2">
+                  <span>
+                    <Image
+                      src="/images/EF.png"
+                      alt="User Journey Map - Complete journey phases with touchpoints, doing, opportunities and needs sections"
+                      width={32}
+                      height={32}
+                      className="w-full h-auto object-contain"
+                    />
+                  </span>
+                  Define
+                </h3>
+                <h2 className="text-[#52B7B7] text-[4rem] font-bold">
+                  USER JOURNEY MAP
+                </h2>
+              </div>
+              <div className="w-[10.68rem] mt-8 ">
+                <h4 className="text-[#F88598] text-base font-bold mb-2">
+                  Point take away
+                </h4>
+                <div className="flex gap-8">
+                  <ul className="text-[#2B7575] text-sm font-normal space-y-1">
+                    <li>• Entice</li>
+                    <li>• Enter</li>
+                    <li>• Engage</li>
+                  </ul>
+                  <ul className="text-[#2B7575] text-sm font-normal space-y-1">
+                    <li>• Exit</li>
+                    <li>• Extend</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* Journey Map Container */}
+            <div className="  overflow-hidden">
+              {/* Main Journey Map Image */}
+              <div className="relative w-full">
+                <Image
+                  src="/images/earlyfoods1.webp"
+                  alt="User Journey Map - Complete journey phases with touchpoints, doing, opportunities and needs sections"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              {/* Summary Section Image */}
+              <div className="relative w-full mt-[3.1rem] mb-[2.875rem]">
+                <Image
+                  src="/images/earlyfoods2.webp"
+                  alt="User Journey Map Summary - Satisfaction metrics and total respondent data"
+                  width={1200}
+                  height={200}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Extensive Research Section */}
+        <div className="w-6xl mx-auto mt-16  bg-[#E8F4F4]">
+          <div className=" mx-auto ">
+            {/* Header Section */}
+            <div className="flex justify-between items-start mb-8">
+              <div>
+                <h3 className="text-[#F690A1] text-[2rem] font-normal flex items-center gap-2 mb-2">
+                  <span className="w-8" role="img" aria-label="pin">
+                    📍
+                  </span>
+                  Define
+                </h3>
+                <h2 className="text-[#52B7B7] text-[4rem] font-bold">
+                  Extensive Research
+                </h2>
+              </div>
+              <div className="w-[22.31rem] mt-8">
+                <h4 className="text-[#F690A1] text-left text-base font-bold mb-2">
+                  Research Plan
+                </h4>
+                <div className="flex gap-8">
+                  <ul className="text-[#2B7575] text-sm font-normal space-y-1">
+                    <li>• Methodology</li>
+                    <li>• Competitor Research</li>
+                    <li>• Extensive Survey</li>
+                  </ul>
+                  <ul className="text-[#2B7575] text-sm font-normal space-y-1">
+                    <li>• Behaviour Psychology</li>
+                    <li>• Gaps & Fixes</li>
+                    <li>• Backlogs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Introduction Section */}
+            <div className="mb-8 w-[71.5rem] mx-auto">
+              <h3 className="text-[#52B7B7] text-[2rem] font-bold mb-4">
+                Introduction
+              </h3>
+              <p className="text-[#2B7575] font-medium text-base  leading-relaxed mb-4">
+                This research uses the{" "}
+                <span className="text-[1.25rem]  font-semibold text-[#2B7575]">
+                  Stimulus-Organism-Response (S-O-R)
+                </span>{" "}
+                paradigm to understand online consumer behaviour, particularly
+                in the context of baby foods e-Stores, with the intention to
+                explore the effect of perceived value as a mediator.
+              </p>
+              <p className="text-[#2B7575] font-medium text-base  leading-relaxed mb-4">
+                <span className="text-[1.25rem]  font-semibold text-[#2B7575]">
+                  Stimulus
+                </span>{" "}
+                in this context is the Baby Food E-Store image for ages 0-3. The
+                research uses four dimensions of the image:{" "}
+                <span className="text-[1.25rem]  font-semibold text-[#2B7575]">
+                  e-store design, order fulfilment, communication services, and
+                  security and confidentiality.
+                </span>{" "}
+                These parameters are chosen to reflect consumers' perception of
+                the online store's functionality.
+              </p>
+              <p className="text-[#2B7575] font-medium text-base  leading-relaxed mb-4">
+                <span className="text-[1.25rem]  font-semibold text-[#2B7575]">
+                  The organism
+                </span>{" "}
+                in this context is{" "}
+                <span className="text-[1.25rem]  font-semibold text-[#2B7575]">
+                  the Perceived Value
+                </span>
+                , seen as a comparison of the benefits received versus the cost
+                paid during the buying process. This extends beyond simply the
+                income-cost comparison, it also incorporates consumers'
+                expectations and feelings towards a specific product or service.
+                The research adopts Hallem and Barth's division of consumers'
+                perceived value into emotional and functional values.
+              </p>
+              <p className="text-[#2B7575] font-medium text-base  leading-relaxed mb-6">
+                <span className="text-[1.25rem]  font-semibold text-[#2B7575]">
+                  Response
+                </span>{" "}
+                refers to{" "}
+                <span className="text-[1.25rem]  font-semibold text-[#2B7575]">
+                  consumers' purchase intention
+                </span>
+                , which will be measured against the baby food e-store image and
+                the perceived value derived from it. The S-O-R model aims to
+                provide insights into what features can genuinely capture
+                consumers' intentions, satisfy their needs, and increase their
+                online consumer behaviours, particularly in the continuously
+                evolving online market.
+              </p>
+            </div>
+
+            {/* Baby Food E-Store Image Section */}
+            <div className="bg-[#C8E6E6] rounded-3xl p-6 mb-8 text-center">
+              <h3 className="text-[#52B7B7] text-xl font-semibold">
+                Baby Food E-Store Image
+              </h3>
+            </div>
+
+            <div className="w-[60.5rem] mx-auto  flex flex-row justify-between">
+              <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
+                <span className="text-[#52B7B7] text-2xl font-bold">S</span>
+              </div>
+              <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
+                <span className="text-[#52B7B7] text-2xl font-bold">O</span>
+              </div>
+              <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
+                <span className="text-[#52B7B7] text-2xl font-bold">R</span>
+              </div>
+            </div>
+            {/* S-O-R Model Diagram */}
+            <div className=" w-[60.5rem] mx-auto  mb-8">
+              <div className="flex justify-center items-center space-x-12">
+                {/* S Section */}
+                <div className="">
+                  <div className="space-y-2">
+                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-8 pr-16 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                      <p className="  text-sm  w-[9.06rem] font-semibold">
+                        E-Store Design
+                      </p>
+                    </div>
+                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                      <span className="text-sm  w-[9.06rem] font-semibold">
+                        Order Fulfilment
+                      </span>
+                    </div>
+                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                      <span className="text-sm  w-[9.06rem] font-semibold">
+                        Communication
+                      </span>
+                    </div>
+                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                      <span className="text-sm  w-[9.06rem] font-semibold">
+                        Security
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Arrow 1 */}
+                <div className="flex flex-col items-center">
+                  <svg
+                    width="40"
+                    height="20"
+                    viewBox="0 0 40 20"
+                    className="text-gray-400"
+                  >
+                    <path
+                      d="M0 10 L30 10 M25 5 L30 10 L25 15"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                    />
+                  </svg>
+                </div>
+
+                {/* O Section */}
+                <div className="">
+                  <div className="space-y-2">
+                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                      <span className="text-sm  w-[9.06rem] font-semibold">
+                        Emotional Value
+                      </span>
+                    </div>
+                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                      <span className="text-sm  w-[9.06rem] font-semibold">
+                        Functional Value
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Arrow 2 */}
+                <div className="flex flex-col items-center">
+                  <svg
+                    width="40"
+                    height="20"
+                    viewBox="0 0 40 20"
+                    className="text-gray-400"
+                  >
+                    <path
+                      d="M0 10 L30 10 M25 5 L30 10 L25 15"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                    />
+                  </svg>
+                </div>
+
+                {/* R Section */}
+                <div className="">
+                  <div>
+                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                      <span className="text-sm  w-[9.06rem] font-semibold">
+                        Purchase Intention
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Diagram Description */}
+            <p className=" text-justify mb-12 text-base text-[#2B7575] mt-6 font-medium">
+              This research focuses on the impact of different aspects of
+              e-commerce platforms on the perceived value of the customer and
+              their subsequent purchase intention. The hypotheses can be
+              summarized as follows:
+            </p>
+            {/* Detailed Explanations */}
+            <div className="space-y-12">
+              {/* E-store Design */}
+              <div className="   flex flex-row gap-9">
+                <h4 className="text-[#2B7575] w-[13.75rem] text-2xl font-semibold mb-3">
+                  E-store Design:
+                </h4>
+                <p className="text-[#2B7575] text-justify w-[55.43rem] font-medium text-base leading-relaxed">
+                  The design of an online shop, including elements like page
+                  layout, art design, search functions, and convenience,
+                  significantly affects the customers' perceived emotional and
+                  functional value. Poorly designed stores can lead to customer
+                  rejection.
+                </p>
+              </div>
+
+              {/* Order Fulfillment */}
+              <div className=" flex flex-row gap-9">
+                <h4 className="text-[#2B7575] w-[13.75rem] text-2xl font-semibold mb-3">
+                  Order Fulfillment:
+                </h4>
+                <p className="text-[#2B7575] text-justify w-[55.43rem] font-medium text-base leading-relaxed">
+                  The consistency of an e-commerce platform in fulfilling its
+                  promises to customers impacts the perceived functional and
+                  emotional value. Inconsistencies can lead to a decrease in
+                  perceived value and customer trust.
+                </p>
+              </div>
+
+              {/* Communication Service */}
+              <div className=" flex flex-row gap-9">
+                <h4 className="text-[#2B7575] w-[13.75rem] text-2xl font-semibold mb-3">
+                  Communication Service:
+                </h4>
+                <p className="text-[#2B7575] text-justify w-[55.43rem] font-medium text-base leading-relaxed">
+                  The quality of the customer service, including timely and
+                  professional responses, affects the perceived emotional and
+                  functional value. Frequent communication and exchanges between
+                  buyers and sellers can increase trust and, therefore,
+                  perceived value.
+                </p>
+              </div>
+
+              {/* Security */}
+              <div className=" flex flex-row gap-9">
+                <h4 className="text-[#2B7575] w-[13.75rem] text-2xl font-semibold mb-3">
+                  Security:
+                </h4>
+                <p className="text-[#2B7575] text-justify w-[55.43rem] font-medium text-base leading-relaxed">
+                  The image of security and confidentiality is crucial for easy
+                  and safe online shopping. Concerns about personal data leaks,
+                  unsafe payment methods, and unclear commissions can impact the
+                  perceived emotional and functional value.
+                </p>
+              </div>
+
+              {/* Perceived Value and Purchase Intention */}
+              <div className="">
+                <h4 className="text-[#2B7575] text-2xl font-bold ">
+                  Perceived Value and Purchase Intention:
+                </h4>
+                <p className="text-[#2B7575] text-base font-medium leading-relaxed">
+                  A positive perceived value, both emotional and functional, can
+                  significantly drive consumers' purchasing behavior. Higher
+                  perceived benefits compared to costs result in stronger
+                  purchase intention.
+                </p>
+              </div>
+
+              {/* Mediating Effect */}
+              <div className="">
+                <h4 className="text-[#2B7575] text-2xl font-bold">
+                  Mediating Effect of Perceived Value:
+                </h4>
+                <p className="text-[#2B7575] text-base font-medium leading-relaxed">
+                  The image of the online store can impact customers' perceived
+                  value, which in turn influences their purchase intentions.
+                  Both emotional and functional value play a mediating role
+                  between the online store image and customer purchase
+                  intentions.
+                </p>
+              </div>
+
+              {/* Context Summary */}
+              <div className="">
+                <p className="text-[#2B7575] text-base font-medium leading-relaxed">
+                  In the context of a baby food online store, these hypotheses
+                  suggest that factors like design, order fulfillment,
+                  communication service, and security strongly influence the
+                  customer's overall experience and their decision to make a
+                  purchase.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Competitor Analysis Section */}
+        <div className="w-full mx-auto mt-20  bg-[#E9F6F6]">
+          <div className=" mx-auto py-12">
+            {/* Header Section */}
+            <div
+              style={{
+                background: "#E9F6F6",
+                width: "100%",
+                height: "100%",
+                borderBottomLeftRadius: "50% 100%",
+                borderBottomRightRadius: "50% 100%",
+                boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
+              }}
+              className="relative w-full overflow-hidden bg-[#E9F7F7] mb-12"
+            >
+              <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
+                <h2 className="text-[#52B7B7] text-5xl font-extrabold">
+                  Competitor Analysis
+                </h2>
+                <p className="text-[#377D7D] text-base font-normal text-center w-[47rem]">
+                  To evaluate the features, usability, and user experience of
+                  competitors' products or services. This analysis helps
+                  identify strengths, weaknesses, opportunities, and threats in
+                  the market, enabling designers and companies to uncover gaps,
+                  differentiate their offerings, and enhance user satisfaction.
+                </p>
+              </div>
+            </div>
+
+            {/* Competitors Container */}
+            <div className="space-y-7 w-[45.81rem] mx-auto">
+              {/* Manna Foods */}
+              <div className="">
+                <div className="flex items-center ">
+                  {/* Logo Section */}
+                  <div className="flex-shrink-0">
+                    <div className="relative w-[16rem] mr-7 h-[16rem] mx-auto ">
+                      <Image
+                        src="/images/EF(manna).svg"
+                        alt="Maana"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content Section */}
+                  <div className="flex-1 w-[28.06rem]">
+                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                      Manna Foods
+                    </h3>
+
+                    {/* Unique Value Proposition */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Unique value proposition
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        Manna Foods is offering healthy, organic, and GMO-free
+                        baby food products.
+                      </p>
+                    </div>
+
+                    {/* Advantages */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Advantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        The advantages include its continued focus on producing
+                        natural, organic products as well as its established
+                        reputation in the industry.
+                      </p>
+                    </div>
+
+                    {/* Disadvantages */}
+                    <div>
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Disadvantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        The disadvantage includes the relatively high cost of
+                        its products.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* My Toddler */}
+              <div className="">
+                <div className="flex items-center ">
+                  {/* Content Section */}
+                  <div className="flex-1  ">
+                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                      My Toddler
+                    </h3>
+
+                    {/* Unique Value Proposition */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Unique value proposition
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        My Toddler, the unique value proposition is providing
+                        affordable and convenient baby food and meal options.
+                      </p>
+                    </div>
+
+                    {/* Advantages */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Advantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        The advantages include its competitive pricing and
+                        easy-to-access platform, as well as its selection of
+                        healthy food items.
+                      </p>
+                    </div>
+
+                    {/* Disadvantages */}
+                    <div>
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Disadvantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        The disadvantage includes its limited range of product
+                        offerings.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Logo Section */}
+                  <div className="flex-shrink-0">
+                    <div className="relative w-[16rem] ml-7 h-[16rem] mx-auto">
+                      <Image
+                        src="/images/EF2.png"
+                        alt="Web Application Development - Developer working with web applications"
+                        fill
+                        className="object-contain"
+                        priority
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* TOTS AND MOMS */}
+              <div className="">
+                <div className="flex items-center ">
+                  {/* Logo Section */}
+                  <div className="flex-shrink-0">
+                    <div className="relative w-[16rem] mr-7 h-[16rem] mx-auto ">
+                      <Image
+                        src="/images/EF3.png"
+                        alt="Maana"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content Section */}
+                  <div className="flex-1 w-[28.06rem]">
+                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                      Tots and Moms
+                    </h3>
+
+                    {/* Unique Value Proposition */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Unique value proposition
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        Tots and Moms, the unique value proposition is
+                        highlighting health and nutrition in its product
+                        offerings.
+                      </p>
+                    </div>
+
+                    {/* Advantages */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Advantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        The advantages include its focus on healthy and natural
+                        ingredients, as well as its commitment to customer
+                        satisfaction.
+                      </p>
+                    </div>
+
+                    {/* Disadvantages */}
+                    <div>
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Disadvantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        The disadvantage includes its lack of a direct to
+                        consumer e-commerce platform.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* My TIMIOS */}
+              <div className="">
+                <div className="flex items-center ">
+                  {/* Content Section */}
+                  <div className="flex-1  ">
+                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                      My Timios
+                    </h3>
+
+                    {/* Unique Value Proposition */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Unique value proposition
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        The unique value proposition is providing a personalized
+                        shopping cart based on a customer's individual needs.
+                      </p>
+                    </div>
+
+                    {/* Advantages */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Advantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        The advantages include its personalized shopping
+                        experience and its range of organic, whole food options.
+                      </p>
+                    </div>
+
+                    {/* Disadvantages */}
+                    <div>
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Disadvantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        The disadvantage includes the high price of its
+                        products.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Logo Section */}
+                  <div className="flex-shrink-0">
+                    <div className="relative w-[16rem] ml-7 h-[16rem] mx-auto">
+                      <Image
+                        src="/images/EF4.png"
+                        alt="Web Application Development - Developer working with web applications"
+                        fill
+                        className="object-contain"
+                        priority
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* SLURP FARM */}
+              <div className="">
+                <div className="flex items-center ">
+                  {/* Logo Section */}
+                  <div className="flex-shrink-0">
+                    <div className="relative w-[16rem] mr-7 h-[16rem] mx-auto ">
+                      <Image
+                        src="/images/EF5.png"
+                        alt="Maana"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content Section */}
+                  <div className="flex-1 w-[28.06rem]">
+                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                      Slurrp Farm
+                    </h3>
+
+                    {/* Unique Value Proposition */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Unique value proposition
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        Slurp Farm offers organic, preservative-free, and
+                        healthy food products for children, focusing on the
+                        provision of essential nutrients.
+                      </p>
+                    </div>
+
+                    {/* Advantages */}
+                    <div className="">
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Advantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        Transparent Branding: Their focus on transparency about
+                        their ingredients builds trust with customers.
+                      </p>
+                    </div>
+
+                    {/* Disadvantages */}
+                    <div>
+                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                        Disadvantages
+                      </h4>
+                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                        Perception of Taste: While Slurp Farm works hard to make
+                        their products tasty, some children (or their parents)
+                        may prefer the taste of less healthy, but more
+                        traditionally flavorful options.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Market Research Section */}
+        <div className="w-full mx-auto mt-20 px-6 bg-[#E9F6F6] relative overflow-hidden">
+          <div className=" mx-auto py-16">
+            {/* Header Section */}
+            <div
+              style={{
+                background: "#E9F6F6",
+                width: "100%",
+                height: "100%",
+                borderBottomLeftRadius: "50% 100%",
+                borderBottomRightRadius: "50% 100%",
+                boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
+              }}
+              className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
+            >
+              <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
+                <h2 className="text-[#52B7B7] text-5xl font-extrabold">
+                  Market Research
+                </h2>
+                <p className="text-[#377D7D] text-base font-normal text-center w-[47rem]">
+                  Market research involves gathering, analyzing, and
+                  interpreting information about a market, including a product's
+                  or service's nature, characteristics, and potential customer
+                  base.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[#E9F6F6] min-h-screen p-8">
+              <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 justify-center">
+                {[column1, column2, column3].map((col, i) => (
+                  <div key={i} className="flex flex-col gap-16">
+                    {col.map((text, j) => (
+                      <div
+                        key={j}
+                        className="bg-[#FFD966] w-[15rem] p-5 text-base font-normal rounded-sm shadow-md"
+                      >
+                        {text}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Summary Section */}
+            <div className="w-[60.5rem] mx-auto mb-[3.75rem]">
+              <p className="text-[#2B7575] text-[1.25rem] font-medium leading-relaxed text-justify">
+                These findings indicate that there is a strong market for
+                organic and healthier pre-prepared and ready-to-eat meals and
+                snacks among parents and new mothers. It is likely that such a
+                product would be successful in the market if it is backed by
+                trusted sources, offers convenience and reduces stress (such as
+                reductions in cost), and offers
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full mx-auto mt-20 mb-[7.5rem] px-6 bg-[#E9F6F6] relative overflow-hidden">
+          {/* Header */}
+          <div
+            style={{
+              background: "#E9F6F6",
+              width: "100%",
+              height: "100%",
+              borderBottomLeftRadius: "50% 100%",
+              borderBottomRightRadius: "50% 100%",
+              boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
+            }}
+            className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
+          >
+            <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
+              <h2 className="text-[#52B7B7] text-5xl font-extrabold">
+                The Problems
+              </h2>
+              <p className="text-[#377D7D] text-base font-normal text-center w-[47rem]">
+                After the extensive research, surveys, and interviews I was able
+                to find out these problems in the current user experience and
+                visual elements, below mentioned are only the high priority
+                problems.
+              </p>
+            </div>
+          </div>
+
+          {/* Full Rows (3-column grid) */}
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
+            {fullRows.map((item, i) => (
+              <div
+                key={i}
+                className="bg-[#FFD4DA] max-w-[22.375rem] p-4.5 rounded-lg font-bold text-xl text-[#5F5456] shadow"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+
+          {/* Last row centered (only if not a multiple of 3) */}
+          {lastRow.length > 0 && (
+            <div className="max-w-6xl mx-auto flex justify-center gap-6 flex-wrap">
+              {lastRow.map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-[#FFD4DA] max-w-[22.375rem] p-4.5 rounded-lg font-bold text-xl text-[#5F5456] shadow"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+        <div className="w-full mx-auto mt-20 mb-[7.5rem] px-6 bg-[#E8F4F4] relative overflow-hidden">
+          {/* Header */}
+          <div
+            style={{
+              background: "#E9F6F6",
+              width: "100%",
+              height: "100%",
+              borderBottomLeftRadius: "50% 100%",
+              borderBottomRightRadius: "50% 100%",
+              boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
+            }}
+            className="relative w-full overflow-hidden bg-[#E9F7F7] mb-12"
+          >
+            <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
+              <h2 className="text-[#52B7B7] text-5xl font-extrabold">
+                The Solutions
+              </h2>
+              <p className="text-[#377D7D] text-base font-normal text-center w-[47rem]">
+                Based on the problems we found out below are the solutions that
+                we proposed client in order to enhance the overall User
+                experience and enhance the joy of shopping from the Early Foods.
+              </p>
+            </div>
+          </div>
+
+          {/* Simple Grid Layout */}
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {solutions.map((item, i) => (
+              <div
+                key={i}
+                className="bg-[#CBEBEB] max-w-[22.375rem] p-4.5 rounded-lg font-bold text-xl text-[#2B7575] shadow"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="bg-[#eaf6f6] w-[71.75rem] mx-auto  ">
+          {/* Header Section */}
+            <div className="flex justify-between items-center">
+              <div>
+                <h3 className="text-[#F690A1] text-[2rem] font-normal flex items-center gap-2 mb-2">
+                  <span className="w-8" role="img" aria-label="pin">
+                    📍
+                  </span>
+                  UI Design
+                </h3>
+                <h2 className="text-[#52B7B7] text-[4rem] font-bold">
+                  Visual Design
+                </h2>
+              </div>
+              <div className="w-[22.31rem] mt-8">
+                <h4 className="text-[#F690A1] text-left text-base font-bold mb-2">
+                  Point take away
+                </h4>
+                <div className="flex gap-8">
+                  <ul className="text-[#2B7575] text-sm font-normal space-y-1">
+                    <li>• UI Screens</li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          {/* Top laptop screen with annotations */}
+          <div className="flex justify-center mb-12">
+            <Image
+              src="/images/EF-laptop.webp" // Replace with actual path
+              alt="Main UI with annotations"
+              width={800}
+              height={400}
+              className="rounded-xl shadow-lg"
+            />
+          </div>
+
+          {/* Middle row: 3 laptop images */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center max-w-6xl mx-auto mb-12">
+            <Image
+              src="/images/laptop2.png"
+              alt="Product detail UI"
+              width={320}
+              height={200}
+              className="rounded-xl shadow"
+            />
+            <Image
+              src="/images/laptop3.png"
+              alt="Category UI"
+              width={320}
+              height={200}
+              className="rounded-xl shadow"
+            />
+            <Image
+              src="/images/laptop4.png"
+              alt="Another UI screen"
+              width={320}
+              height={200}
+              className="rounded-xl shadow"
+            />
+          </div>
+
+          {/* Bottom row: Before section */}
+          <div className="text-center mb-4">
+            <h3 className="text-2xl font-bold text-cyan-800">Before</h3>
+          </div>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+            <Image
+              src="/images/before1.png"
+              alt="Old homepage"
+              width={400}
+              height={250}
+              className="rounded-xl shadow"
+            />
+            <Image
+              src="/images/before2.png"
+              alt="Old product page"
+              width={400}
+              height={250}
+              className="rounded-xl shadow"
+            />
           </div>
         </div>
       </section>

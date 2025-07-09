@@ -2,19 +2,18 @@ import Image from "next/image";
 
 export default function Content() {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+    <div className="container  max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       {/* Mission Section */}
       <section className="mb-12 sm:mb-16 lg:mb-20">
         <div className="mb-6 sm:mb-8">
-          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center lg:text-left lg:ml-4">
+          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase lg:text-left ml-5 ">
             Who We Are
           </h4>
         </div>
-        
-        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 xl:gap-12">
+        <div className="flex flex-col sm:flex-row lg:flex-row items-center lg:items-start gap-4 lg:gap-6">
           {/* Step Number */}
           <div className="flex-shrink-0 order-1 lg:order-1">
-            <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[2.93rem] lg:h-[5.62rem] relative">
+            <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[4.56rem] lg:h-[5.68rem] relative">
               <Image
                 src="/images/1.svg"
                 alt="Step 1"
@@ -26,7 +25,9 @@ export default function Content() {
 
           {/* Mission Content */}
           <div className="flex-1 order-3 lg:order-2 text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">Our</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">
+              Our
+            </h2>
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
               Mission
             </h1>
@@ -38,13 +39,13 @@ export default function Content() {
               play a considerable role in enhancing the life of users and
               benefit society at large.
             </p>
-            <a
+            {/* <a
               href="#"
               className="text-purple-600 font-semibold inline-flex items-center gap-2 hover:underline transition-colors"
             >
               READ MORE
               <span className="text-xl">&#8594;</span>
-            </a>
+            </a> */}
           </div>
 
           {/* Mission Icon */}
@@ -63,11 +64,11 @@ export default function Content() {
       {/* Vision Section */}
       <section className="mb-12 sm:mb-16 lg:mb-20">
         <div className="mb-6 sm:mb-8">
-          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center">
+          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase  lg:text-left lg:ml-85">
             What We Strive For
           </h4>
         </div>
-        
+
         <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 xl:gap-12">
           {/* Vision Icon */}
           <div className="flex-shrink-0 order-2 lg:order-1">
@@ -96,7 +97,9 @@ export default function Content() {
 
               {/* Text Content */}
               <div className="order-2">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">Our</h2>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">
+                  Our
+                </h2>
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
                   Vision
                 </h1>
@@ -104,12 +107,12 @@ export default function Content() {
                   Our goal at Mindefy is to be the top option for companies
                   looking for disruptive technology solutions worldwide.
                 </p>
-                <a
+                {/* <a
                   href="#"
                   className="text-purple-600 font-semibold inline-flex items-center gap-2 hover:underline transition-colors"
                 >
                   READ MORE <span className="text-xl">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -119,15 +122,15 @@ export default function Content() {
       {/* Values Section */}
       <section className="mb-12 sm:mb-16 lg:mb-20">
         <div className="mb-6 sm:mb-8">
-          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center lg:text-left lg:ml-4">
+          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center lg:text-left lg:ml-3">
             Guiding Principles
           </h4>
         </div>
-        
-        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 xl:gap-12">
+
+        <div className="flex flex-col sm:flex-row lg:flex-row items-center lg:items-start gap-4 lg:gap-6 ">
           {/* Step Number */}
           <div className="flex-shrink-0 order-1 lg:order-1">
-            <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[4.8rem] lg:h-[5.62rem] relative">
+            <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[4.56rem] lg:h-[5.68rem] relative">
               <Image
                 src="/images/3.svg"
                 alt="Step 3"
@@ -140,7 +143,9 @@ export default function Content() {
           {/* Values Content */}
           <div className="flex-1 order-3 lg:order-2 text-center lg:text-left">
             <div className="mb-8 sm:mb-10 lg:mb-12">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">Our</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">
+                Our
+              </h2>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
                 Values
               </h1>
@@ -209,12 +214,12 @@ export default function Content() {
               </div>
             </div>
 
-            <a
+            {/* <a
               href="#"
               className="text-purple-600 font-semibold inline-flex items-center gap-2 hover:underline transition-colors"
             >
               READ MORE <span className="text-xl">→</span>
-            </a>
+            </a> */}
           </div>
 
           {/* Values Icon */}

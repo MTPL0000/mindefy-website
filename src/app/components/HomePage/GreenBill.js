@@ -47,26 +47,29 @@ export default function GreenBill() {
               <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-gray-700 mb-4 lg:mb-[1.62rem]">
                 A Sustainable Solution for Digital Bill Management
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 text-justify leading-relaxed">
                 An innovative application developed by Mindefy, designed to
                 revolutionize digital bill generation and management while
                 promoting environmental sustainability. With a strong focus on
                 environmental sustainability and efficiency, GreenBill is
-                revolutionizing the way businesses generate and manage bills. Say
-                goodbye to paper waste and embrace a paperless future with our
-                comprehensive suite of apps: Merchant, Admin, and Customer.
+                revolutionizing the way businesses generate and manage bills.
+                Say goodbye to paper waste and embrace a paperless future with
+                our comprehensive suite of apps: Merchant, Admin, and Customer.
               </p>
             </div>
 
             {/* Dropdown Sections */}
             <div className="space-y-4 lg:space-y-6">
               {/* Curated Dashboard */}
-              <div className="pb-4">
+              <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
-                  <details data-dropdown="dashboard" className="dropdown-details">
-                    <summary className="w-full flex items-center justify-between text-left px-1 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-extrabold text-gray-700 dropdown-text">
-                        Screen Time Monitoring
+                  <details
+                    data-dropdown="dashboard"
+                    className="dropdown-details"
+                  >
+                    <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg  transition-colors cursor-pointer list-none dropdown-summary">
+                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
+                        Simplified bill generation
                       </span>
                       <svg
                         className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow flex-shrink-0"
@@ -83,11 +86,9 @@ export default function GreenBill() {
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
-                        Users can track their daily and weekly screen time usage
-                        across various apps and categories, gaining insights into
-                        their digital habits and identifying areas for
-                        improvement.
+                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600 text-justify leading-relaxed pl-1">
+                        Create and manage bills digitally, eliminating the need
+                        for paper-based invoices.
                       </p>
                     </div>
                   </details>
@@ -95,15 +96,15 @@ export default function GreenBill() {
               </div>
 
               {/* Smart & Curated Challenges */}
-              <div className="pb-4">
+              <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
                   <details
                     data-dropdown="challenges"
                     className="dropdown-details"
                   >
-                    <summary className="w-full flex items-center justify-between text-left px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-extrabold text-gray-700 dropdown-text">
-                        Customizable Reminders and Alerts
+                    <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
+                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
+                        Sales tracking
                       </span>
                       <svg
                         className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow flex-shrink-0"
@@ -120,10 +121,9 @@ export default function GreenBill() {
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
-                        Users can set personalized reminders and alerts to help
-                        them take regular breaks, reduce excessive screen time,
-                        and establish healthier usage patterns.
+                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600 text-justify leading-relaxed pl-1">
+                        Keep a close eye on your store's sales performance with
+                        real-time analytics and reporting.
                       </p>
                     </div>
                   </details>
@@ -131,12 +131,15 @@ export default function GreenBill() {
               </div>
 
               {/* Addiction Level */}
-              <div className="pb-4">
+              <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
-                  <details data-dropdown="addiction" className="dropdown-details">
-                    <summary className="w-full flex items-center justify-between text-left px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-extrabold text-gray-700 dropdown-text">
-                        Focus Mode
+                  <details
+                    data-dropdown="addiction"
+                    className="dropdown-details"
+                  >
+                    <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
+                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
+                        Transaction history
                       </span>
                       <svg
                         className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow flex-shrink-0"
@@ -153,11 +156,9 @@ export default function GreenBill() {
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
-                        YourHour includes a Focus Mode that allows users to block
-                        distractions by temporarily disabling selected apps or
-                        notifications, enabling them to concentrate on important
-                        tasks or enjoy screen-free time.
+                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600 text-justify leading-relaxed pl-1">
+                        Access a comprehensive record of past transactions for
+                        accurate record-keeping and reconciliation.
                       </p>
                     </div>
                   </details>
@@ -165,12 +166,12 @@ export default function GreenBill() {
               </div>
 
               {/* Read YourStories */}
-              <div className="pb-4">
+              <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
                   <details data-dropdown="stories" className="dropdown-details">
-                    <summary className="w-full flex items-center justify-between text-left px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-extrabold text-gray-700 dropdown-text">
-                        Goal Setting and Achievements
+                    <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
+                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
+                        Instant digital billing
                       </span>
                       <svg
                         className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow flex-shrink-0"
@@ -187,11 +188,9 @@ export default function GreenBill() {
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
-                        Users can set goals for reducing screen time or achieving
-                        specific usage targets. The app tracks progress and
-                        rewards users with achievements upon reaching milestones,
-                        providing motivation and a sense of accomplishment.
+                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600 text-justify leading-relaxed pl-1">
+                        Provide customers with immediate access to digital
+                        bills, enhancing convenience and efficiency.
                       </p>
                     </div>
                   </details>
@@ -199,12 +198,15 @@ export default function GreenBill() {
               </div>
 
               {/* Usage Analytics */}
-              <div className="pb-4">
+              <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
-                  <details data-dropdown="analytics" className="dropdown-details">
-                    <summary className="w-full flex items-center justify-between text-left px-1 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-extrabold text-gray-700 dropdown-text">
-                        Usage Analytics
+                  <details
+                    data-dropdown="analytics"
+                    className="dropdown-details"
+                  >
+                    <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
+                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
+                        Customization options
                       </span>
                       <svg
                         className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow flex-shrink-0"
@@ -221,16 +223,39 @@ export default function GreenBill() {
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed pl-1">
-                        Comprehensive analytics provide detailed insights into
-                        usage patterns, helping users understand their digital
-                        behavior and make informed decisions about their screen
-                        time management.
+                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600  text-justify leading-relaxed pl-1">
+                        Personalize bills with your store's logo and branding
+                        for a professional touch. Seamless integration:
+                        Integrate the Merchant app with your existing systems
+                        and processes for a smooth transition to digital
+                        billing.
                       </p>
                     </div>
                   </details>
                 </div>
               </div>
+              <a
+                href="digi-bill"
+                className=" ml-2 inline-flex items-center text-lg font-medium text-[#6A53E1] hover:underline group transition-all duration-300"
+              >
+                VIEW CASE STUDY
+                <span className="ml-2 transition-transform group-hover:translate">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="#BCA6FF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-6 h-6"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
 
@@ -246,6 +271,45 @@ export default function GreenBill() {
           </div>
         </div>
       </div>
+
+      {/* CSS for dropdown styling and arrow rotation */}
+      <style jsx>{`
+        /* Arrow rotation when dropdown is open */
+        details[open] .dropdown-arrow {
+          transform: rotate(180deg);
+        }
+
+        /* Change text color to purple when dropdown is open */
+        details[open] .dropdown-text {
+          color: #9333ea !important;
+          transition: color 0.3s ease;
+        }
+
+        /* Add background, rounded corners, and padding when open */
+        details[open] {
+          background-color: #f4f0ff;
+          border-radius: 0.5rem;
+          padding: 1rem;
+        }
+
+        /* Default text color transition */
+        .dropdown-text {
+          transition: color 0.5s ease;
+        }
+
+        /* Hide default marker */
+        details summary::-webkit-details-marker {
+          display: none;
+        }
+        details summary::marker {
+          display: none;
+        }
+
+        /* Smooth transitions for dropdown */
+        .dropdown-details {
+          transition: all 0.3s ease;
+        }
+      `}</style>
     </section>
   );
 }

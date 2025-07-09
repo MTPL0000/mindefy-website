@@ -44,7 +44,9 @@ export default function Footer() {
             {/* India Office */}
             <div className="space-y-4 sm:space-y-6 lg:space-y-8">
               <div>
-                <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">INDIA OFFICE</h3>
+                <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+                  INDIA OFFICE
+                </h3>
                 <div className="text-xs sm:text-sm opacity-90 space-y-1">
                   <p>201, Atulya IT Park,</p>
                   <p>Khandwa Road, Indore-452001</p>
@@ -57,7 +59,9 @@ export default function Footer() {
 
               {/* UAE Office */}
               <div>
-                <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">UAE OFFICE</h3>
+                <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+                  UAE OFFICE
+                </h3>
                 <div className="text-xs sm:text-sm opacity-90 space-y-1">
                   <p>Dubai Silicon Oasis, DDP, Building A1,</p>
                   <p>Dubai, United Arab Emirates</p>
@@ -68,20 +72,18 @@ export default function Footer() {
 
             {/* Company */}
             <div>
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">COMPANY</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+                COMPANY
+              </h3>
               <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">
                   About
                 </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
-                  Career
-                </p>
+
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">
                   Testimonials
                 </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
-                  Infrastructure
-                </p>
+
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">
                   Blog
                 </p>
@@ -90,7 +92,9 @@ export default function Footer() {
 
             {/* Product */}
             <div>
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">PRODUCT</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+                PRODUCT
+              </h3>
               <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">
                   YourHour
@@ -112,7 +116,9 @@ export default function Footer() {
 
             {/* Services */}
             <div>
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">SERVICES</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+                SERVICES
+              </h3>
               <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
                 <p className="hover:opacity-100 cursor-pointer transition-opacity">
                   Android App Development

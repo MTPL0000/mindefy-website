@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 export default function Blog() {
@@ -28,14 +29,14 @@ export default function Blog() {
               />
             </div>
             <div className="p-4 sm:p-6 lg:p-8 text-[#30233D]">
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-4 sm:mb-6 lg:mb-8">
+              <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold mb-4 sm:mb-6 lg:mb-8">
                 MICROSERVICES
               </h3>
               <p className="text-sm sm:text-base lg:text-lg text-justify font-normal mb-4 sm:mb-6 leading-relaxed">
                 Micro-services in this era is getting so much attention from
                 articles, social media, conference presentation
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
+              {/* <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
                 Read More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +52,7 @@ export default function Blog() {
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   />
                 </svg>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -69,11 +70,11 @@ export default function Blog() {
               <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4 sm:mb-6 leading-tight">
                 THE DIFFERENCE BETWEEN "AVERAGE AND SUCCESS"
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal mb-4 sm:mb-6 leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal  leading-relaxed">
                 The amount of free time, we as humans have now was never been
                 the same as before.
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
+              {/* <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
                 Read More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +90,7 @@ export default function Blog() {
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   />
                 </svg>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -104,14 +105,14 @@ export default function Blog() {
               />
             </div>
             <div className="p-4 sm:p-6 lg:p-8 text-[#30233D]">
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-4 sm:mb-6">
+              <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold mb-4 sm:mb-6">
                 THE OFFICE AWAY FROM OFFICE!
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal mb-4 sm:mb-6 leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
                 Companies, in the face of this global pandemic, have asked their
                 employees to Work From Home.
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
+              {/* <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
                 Read More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +128,7 @@ export default function Blog() {
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   />
                 </svg>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

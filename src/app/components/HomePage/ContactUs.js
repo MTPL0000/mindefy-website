@@ -51,7 +51,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="w-full py-12 sm:py-16 lg:py-20">
+    <section id="contact" className="w-full py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.12rem] font-semibold text-center mb-8 sm:mb-12 lg:mb-16">
           Let's Get In Touch
@@ -152,7 +152,7 @@ export default function ContactUs() {
                   onDragOver={handleDragOver}
                   onDragLeave={handleDragLeave}
                   onDrop={handleDrop}
-                  onClick={() => document.getElementById('document').click()}
+                  onClick={() => document.getElementById("document").click()}
                 >
                   <input
                     type="file"
@@ -182,8 +182,10 @@ export default function ContactUs() {
                       </p>
                       {!file && (
                         <p className="text-xs sm:text-sm text-[#808080]">
-                          <span className="text-[#5E9AFF] hover:underline">upload</span>
-                          {" "} Max size: 5MB
+                          <span className="text-[#5E9AFF] hover:underline">
+                            upload
+                          </span>{" "}
+                          Max size: 5MB
                         </p>
                       )}
                     </div>

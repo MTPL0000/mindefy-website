@@ -45,27 +45,57 @@ export default function HeroSection() {
           <p className="text-base sm:text-lg font-semibold text-gray-800 mb-4 sm:mb-6">
             Client and Partner Alliances
           </p>
-          
+
           {/* Mobile: Scrollable logos */}
           <div className="block sm:hidden overflow-x-auto pb-4">
             <div className="flex gap-6 min-w-max px-4">
               <div className="relative w-32 aspect-[2.39/1] flex-shrink-0">
-                <Image src="/images/Kotak.svg" alt="Kotak" fill className="object-contain" />
+                <Image
+                  src="/images/Kotak.svg"
+                  alt="Kotak"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div className="relative w-32 aspect-[2.39/1] flex-shrink-0">
-                <Image src="/images/netlink.svg" alt="Netlink" fill className="object-contain" />
+                <Image
+                  src="/images/netlink.svg"
+                  alt="Netlink"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div className="relative w-32 aspect-[2.39/1] flex-shrink-0">
-                <Image src="/images/krungthai.svg" alt="Krungthai" fill className="object-contain" />
+                <Image
+                  src="/images/krungthai.svg"
+                  alt="Krungthai"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div className="relative w-16 aspect-[7/6] flex-shrink-0">
-                <Image src="/images/mst.svg" alt="MST" fill className="object-contain" />
+                <Image
+                  src="/images/mst.svg"
+                  alt="MST"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div className="relative w-32 aspect-[2.39/1] flex-shrink-0">
-                <Image src="/images/Bottomline.svg" alt="Bottomline" fill className="object-contain" />
+                <Image
+                  src="/images/Bottomline.svg"
+                  alt="Bottomline"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div className="relative w-32 aspect-[2.39/1] flex-shrink-0">
-                <Image src="/images/solistack.png" alt="Solistack" fill className="object-contain" />
+                <Image
+                  src="/images/solistack.png"
+                  alt="Solistack"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>
@@ -73,22 +103,52 @@ export default function HeroSection() {
           {/* Tablet and Desktop: Grid layout */}
           <div className="hidden sm:grid grid-cols-3 md:grid-cols-6 gap-8 md:gap-12 lg:gap-16 items-center justify-items-center max-w-6xl mx-auto px-6">
             <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
-              <Image src="/images/Kotak.svg" alt="Kotak" fill className="object-contain" />
+              <Image
+                src="/images/Kotak.svg"
+                alt="Kotak"
+                fill
+                className="object-contain"
+              />
             </div>
             <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
-              <Image src="/images/netlink.svg" alt="Netlink" fill className="object-contain" />
+              <Image
+                src="/images/netlink.svg"
+                alt="Netlink"
+                fill
+                className="object-contain"
+              />
             </div>
             <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
-              <Image src="/images/krungthai.svg" alt="Krungthai" fill className="object-contain" />
+              <Image
+                src="/images/krungthai.svg"
+                alt="Krungthai"
+                fill
+                className="object-contain"
+              />
             </div>
             <div className="relative w-8 sm:w-12 lg:w-16 aspect-[7/6] p-2 sm:p-3 lg:p-4">
-              <Image src="/images/mst.svg" alt="MST" fill className="object-contain" />
+              <Image
+                src="/images/mst.svg"
+                alt="MST"
+                fill
+                className="object-contain"
+              />
             </div>
             <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
-              <Image src="/images/Bottomline.svg" alt="Bottomline" fill className="object-contain" />
+              <Image
+                src="/images/Bottomline.svg"
+                alt="Bottomline"
+                fill
+                className="object-contain"
+              />
             </div>
             <div className="relative w-16 sm:w-24 lg:w-32 aspect-[2.39/1] p-2 sm:p-3 lg:p-4">
-              <Image src="/images/solistack.png" alt="Solistack" fill className="object-contain" />
+              <Image
+                src="/images/solistack.png"
+                alt="Solistack"
+                fill
+                className="object-contain"
+              />
             </div>
           </div>
         </div>
