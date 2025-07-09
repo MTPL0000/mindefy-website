@@ -6,3 +6,8 @@
 @theme {
   --font-poppins: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
+
+/* Enable smooth scrolling for the page */
+html {
+  scroll-behavior: smooth;
+}
