@@ -1,16 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Navbar from "./HomePage/Navbar";
-import ContactUs from "./HomePage/ContactUs";
-import Footer from "./HomePage/Footer";
 
 export default function AAD() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navbar */}
-      <Navbar />
-
       {/* Hero Section - Responsive Design */}
       <section className="mt-16 sm:mt-20 lg:mt-28 px-4 sm:px-6 lg:px-8 xl:px-16 bg-white">
         <div className="container mx-auto text-center max-w-7xl">
@@ -297,12 +291,6 @@ export default function AAD() {
           </div>
         </div>
       </section>
-
-      {/* Contact Us Section */}
-      <ContactUs />
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

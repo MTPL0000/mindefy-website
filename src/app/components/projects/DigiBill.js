@@ -1,12 +1,8 @@
-import ContactUs from "../HomePage/ContactUs";
-import Footer from "../HomePage/Footer";
-import Navbar from "../HomePage/Navbar";
 import Image from "next/image";
 
 const DigiBill = () => {
   return (
     <div className="m-auto bg-white">
-      <Navbar />
       <section className="flex flex-col items-center justify-center gap-16 lg:gap-24 pt-16">
         <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-6xl mx-auto gap-8 lg:gap-12 mt-8 px-4 lg:px-8">
           <div className="flex flex-col items-center justify-center gap-4 lg:gap-5">
@@ -604,10 +600,6 @@ const DigiBill = () => {
           </div>
         </div>
       </section>
-      {/*contact us*/}
-      <ContactUs />
-      {/*footer*/}
-      <Footer />
     </div>
   );
 };

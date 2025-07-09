@@ -1,4 +1,4 @@
-import SpectorCaseStudy from "../components/Spector";
+import { LazySpector } from "../utils/lazyLoadService";
 import StructuredData, { createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -31,7 +31,7 @@ export default function SpectorPage() {
   return (
     <>
       <StructuredData data={breadcrumbData} />
-      <SpectorCaseStudy />
+      <LazySpector />
     </>
   );
 }

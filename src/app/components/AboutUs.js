@@ -1,7 +1,4 @@
 import Image from "next/image";
-import Footer from "./HomePage/Footer";
-import Navbar from "./HomePage/Navbar";
-import ContactUs from "./HomePage/ContactUs";
 
 export default function AboutUsPage() {
   const values = [
@@ -45,7 +42,6 @@ export default function AboutUsPage() {
 
   return (
     <section className="mx-auto bg-white">
-      <Navbar />
       <section className="max-w-7xl mx-auto pt-12 sm:pt-16 px-4 sm:px-6 lg:px-8">
         {/* Heading section */}
         <div className="flex flex-col items-center justify-center gap-4 sm:gap-5 lg:gap-6 mt-6 sm:mt-8 mb-6 sm:mb-8">
@@ -143,10 +139,6 @@ export default function AboutUsPage() {
           </section>
         </div>
       </section>
-      {/* Contact Us Section */}
-      <ContactUs />
-      {/* Footer */}
-      <Footer />
     </section>
   );
 }

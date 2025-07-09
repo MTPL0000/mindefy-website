@@ -1,6 +1,9 @@
 // src/app/layout.js
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/HomePage/Navbar";
+import ContactUs from "./components/HomePage/ContactUs";
+import Footer from "./components/HomePage/Footer";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -112,7 +115,12 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="canonical" href="https://mindefy.com" />
       </head>
-      <body className="font-poppins overflow-x-hidden">{children}</body>
+      <body className="font-poppins overflow-x-hidden">
+        <Navbar />
+        {children}
+        <ContactUs />
+        <Footer />
+      </body>
     </html>
   );
 }

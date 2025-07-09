@@ -1,12 +1,8 @@
-import ContactUs from "../HomePage/ContactUs";
-import Footer from "../HomePage/Footer";
-import Navbar from "../HomePage/Navbar";
 import Image from "next/image";
 
 const Solistack = () => {
   return (
     <div className="m-auto bg-white">
-      <Navbar />
       {/* Header Section */}
       <section className="flex flex-col items-center justify-center gap-8 md:gap-12 lg:gap-16 xl:gap-24 mx-auto pt-8 md:pt-16 px-4 md:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto gap-6 md:gap-8 lg:gap-12 mt-4 md:mt-8">
@@ -226,10 +222,6 @@ const Solistack = () => {
           </div>
         </div>
       </section>
-      {/*contact us*/}
-      <ContactUs />
-      {/*footer*/}
-      <Footer />
     </div>
   );
 };

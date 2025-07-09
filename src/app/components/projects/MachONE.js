@@ -1,13 +1,8 @@
-import Navbar from "../HomePage/Navbar";
-import Footer from "../HomePage/Footer";
 import Image from "next/image";
-import ContactUs from "../HomePage/ContactUs";
 
 const MachONE = () => {
   return (
     <div className="m-auto bg-white">
-      <Navbar />
-      
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center gap-8 lg:gap-16 pt-16">
         <div className="flex flex-col items-center justify-center max-w-4xl mx-auto gap-6 lg:gap-12 mt-8 px-4 sm:px-6 lg:px-8">
@@ -203,10 +198,6 @@ const MachONE = () => {
           </div>
         </div>
       </section>
-      {/*contact us*/}
-      <ContactUs />
-      {/*footer*/}
-      <Footer />
     </div>
   );
 };

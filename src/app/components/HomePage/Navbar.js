@@ -505,7 +505,7 @@ export default function Navbar() {
               onClick={() => {
                 handleMobileMenuItemClick();
                 scrollToContact();
-              }
+              }}
               className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white cursor-pointer"
             >
               Let's Talk

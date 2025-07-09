@@ -1,16 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Navbar from "./HomePage/Navbar";
-import ContactUs from "./HomePage/ContactUs";
-import Footer from "./HomePage/Footer";
 
 export default function ITC() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navbar */}
-      <Navbar />
-
       {/* Hero Section - Matching the provided image */}
       <section className="mt-20 sm:mt-24 lg:mt-28 mx-auto px-4 sm:px-6 lg:px-0">
         <div className="mx-auto text-center">
@@ -638,12 +632,6 @@ export default function ITC() {
           </div>
         </div>
       </section>
-
-      {/* Contact Us Section */}
-      <ContactUs />
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }
