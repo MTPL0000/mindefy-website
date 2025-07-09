@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Footer from "./HomePage/Footer";
 import Navbar from "./HomePage/Navbar";
@@ -39,7 +40,9 @@ export default function MindfulUX() {
         >
           <div className="m-auto max-w-7xl px-4 md:px-8 py-16 md:py-20 flex flex-col items-center justify-center gap-5">
             <div className="flex flex-col items-center justify-center gap-2">
-              <h3 className="text-2xl md:text-4xl font-semibold text-[#262626] text-center">About</h3>
+              <h3 className="text-2xl md:text-4xl font-semibold text-[#262626] text-center">
+                About
+              </h3>
               <span className="text-[#262626] text-lg md:text-xl font-normal text-center">
                 Mindful UX - Design Studio
               </span>
@@ -214,6 +217,20 @@ export default function MindfulUX() {
                 fields of psychology, yoga, and the tools and knowledge you need
                 to live your life in full spectrum, and achieve True Fulfilment.
               </p>
+              <a
+                href="#"
+                className="bg-[#231F20] text-[#FFFFFF] px-4 md:px-6 py-3 md:py-4 rounded-sm text-xl md:text-2xl lg:text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
+              >
+                Case Study
+                <div className="relative aspect-[1.5/1] w-6 md:w-8 overflow-hidden">
+                  <Image
+                    src="/images/arrow-icon.svg"
+                    alt="image"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </section>
@@ -244,6 +261,20 @@ export default function MindfulUX() {
                 fields of psychology, yoga, and the tools and knowledge you need
                 to live your life in full spectrum, and achieve True Fulfilment.
               </p>
+              <a
+                href="/early-foods"
+                className="bg-[#231F20] text-[#FFFFFF] px-4 md:px-6 py-3 md:py-4 rounded-sm text-xl md:text-2xl lg:text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
+              >
+                Case Study
+                <div className="relative aspect-[1.5/1] w-6 md:w-8 overflow-hidden">
+                  <Image
+                    src="/images/arrow-icon.svg"
+                    alt="image"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </a>
             </div>
 
             <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">

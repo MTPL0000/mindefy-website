@@ -15,7 +15,7 @@ export default function LazyLoadWrapper({ children, threshold = 0.1, rootMargin 
         if (entry.isIntersecting) {
           setIsVisible(true);
           // Add artificial delay in development to see the loader
-          const delay = process.env.NODE_ENV === 'development' ? 2000 : 100;
+          const delay = process.env.NODE_ENV === 'development' ? 100 : 100;
           setTimeout(() => setHasLoaded(true), delay);
           observer.disconnect();
         }

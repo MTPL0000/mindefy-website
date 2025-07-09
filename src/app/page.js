@@ -10,7 +10,10 @@ import Testimonials from "./components/HomePage/Testimonials";
 import Footer from "./components/HomePage/Footer";
 import Blog from "./components/HomePage/Blog";
 import ContactUs from "./components/HomePage/ContactUs";
-import StructuredData, { organizationData, websiteData } from "./components/StructuredData";
+import StructuredData, {
+  organizationData,
+  websiteData,
+} from "./components/StructuredData";
 import LazyLoadWrapper from "./components/LazyLoadWrapper";
 
 export default function HomePage() {
@@ -22,36 +25,23 @@ export default function HomePage() {
       <HeroSection />
       <AboutSection />
       <Content />
-      
+
       {/* Lazy load sections below the fold */}
-      <LazyLoadWrapper>
-        <Services />
-      </LazyLoadWrapper>
-      
-      <LazyLoadWrapper>
-        <YouHour />
-      </LazyLoadWrapper>
-      
-      <LazyLoadWrapper>
-        <JEGO />
-      </LazyLoadWrapper>
-      
-      <LazyLoadWrapper>
-        <GreenBill />
-      </LazyLoadWrapper>
-      
-      <LazyLoadWrapper>
-        <Testimonials />
-      </LazyLoadWrapper>
-      
-      <LazyLoadWrapper>
-        <Blog />
-      </LazyLoadWrapper>
-      
-      <LazyLoadWrapper>
-        <ContactUs />
-      </LazyLoadWrapper>
-      
+
+      <Services />
+
+      <YouHour />
+
+      <JEGO />
+
+      <GreenBill />
+
+      <Testimonials />
+
+      <Blog />
+
+      <ContactUs />
+
       <Footer />
     </>
   );

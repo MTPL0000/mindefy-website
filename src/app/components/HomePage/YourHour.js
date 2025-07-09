@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function YourHour() {
@@ -26,14 +27,10 @@ export default function YourHour() {
     });
 
     // Initially open the first dropdown (Curated Dashboard)
-    const firstDropdown = document.querySelector('[data-dropdown="dashboard"]');
-    if (firstDropdown) {
-      firstDropdown.setAttribute("open", "");
-    }
-  }, []);
+  });
 
   return (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-7xl ">
       {/* Header */}
       <div className="text-center mb-12 sm:mb-16 lg:mb-20">
         <p className="text-[#FF5225] text-sm sm:text-base font-bold tracking-wider uppercase mb-6 sm:mb-8">
@@ -45,7 +42,7 @@ export default function YourHour() {
       </div>
 
       {/* Main Content - Responsive Layout */}
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center lg:items-start">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center lg:items-start ">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 space-y-6 lg:space-y-8 order-2 lg:order-1">
           {/* App Title */}
@@ -56,7 +53,7 @@ export default function YourHour() {
             <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-gray-700 mb-4 lg:mb-6">
               Empowering Digital Wellbeing
             </h3>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base lg:text-lg text-justify text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               YourHour is a revolutionary mobile application designed to empower
               individuals to take charge of their digital lives. With an array
               of intuitive features and insights, YourHour offers a
@@ -70,11 +67,11 @@ export default function YourHour() {
           {/* Dropdown Sections */}
           <div className="space-y-4 sm:space-y-5 lg:space-y-6">
             {/* Screen Time Monitoring */}
-            <div className="pb-3 sm:pb-4">
+            <div className="pb-3 sm:pb-1">
               <div className="dropdown dropdown-bottom w-full">
                 <details data-dropdown="dashboard" className="dropdown-details">
                   <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 rounded-lg transition-colors cursor-pointer list-none dropdown-summary hover:bg-gray-50">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
+                    <span className="text-base sm:text-lg lg:text-xl font-semibold text-gray-700 dropdown-text">
                       Screen Time Monitoring
                     </span>
                     <svg
@@ -92,7 +89,7 @@ export default function YourHour() {
                     </svg>
                   </summary>
                   <div className="mt-3 px-2 sm:px-3">
-                    <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
+                    <p className="text-sm sm:text-base lg:text-base font-medium text-gray-600 text-justify leading-relaxed">
                       Users can track their daily and weekly screen time usage
                       across various apps and categories, gaining insights into
                       their digital habits and identifying areas for
@@ -104,14 +101,14 @@ export default function YourHour() {
             </div>
 
             {/* Customizable Reminders and Alerts */}
-            <div className="pb-3 sm:pb-4">
+            <div className="pb-3 sm:pb-1">
               <div className="dropdown dropdown-bottom w-full">
                 <details
                   data-dropdown="challenges"
                   className="dropdown-details"
                 >
                   <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
+                    <span className="text-base sm:text-lg lg:text-xl font-semibold text-gray-700 dropdown-text">
                       Customizable Reminders and Alerts
                     </span>
                     <svg
@@ -129,7 +126,7 @@ export default function YourHour() {
                     </svg>
                   </summary>
                   <div className="mt-3 px-2 sm:px-3">
-                    <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
+                    <p className="text-sm sm:text-base lg:text-base font-medium text-gray-600 text-justify leading-relaxed">
                       Users can set personalized reminders and alerts to help
                       them take regular breaks, reduce excessive screen time,
                       and establish healthier usage patterns.
@@ -140,11 +137,11 @@ export default function YourHour() {
             </div>
 
             {/* Focus Mode */}
-            <div className="pb-3 sm:pb-4">
+            <div className="pb-3 sm:pb-1">
               <div className="dropdown dropdown-bottom w-full">
                 <details data-dropdown="addiction" className="dropdown-details">
                   <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
+                    <span className="text-base sm:text-lg lg:text-xl font-semibold text-gray-700 dropdown-text">
                       Focus Mode
                     </span>
                     <svg
@@ -162,7 +159,7 @@ export default function YourHour() {
                     </svg>
                   </summary>
                   <div className="mt-3 px-2 sm:px-3">
-                    <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
+                    <p className="text-sm sm:text-base lg:text-base font-medium text-gray-600 text-justify leading-relaxed">
                       YourHour includes a Focus Mode that allows users to block
                       distractions by temporarily disabling selected apps or
                       notifications, enabling them to concentrate on important
@@ -174,11 +171,11 @@ export default function YourHour() {
             </div>
 
             {/* Goal Setting and Achievements */}
-            <div className="pb-3 sm:pb-4">
+            <div className="pb-3 sm:pb-1">
               <div className="dropdown dropdown-bottom w-full">
                 <details data-dropdown="stories" className="dropdown-details">
                   <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                    <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dropdown-text">
+                    <span className="text-base sm:text-lg lg:text-xl font-semibold text-gray-700 dropdown-text">
                       Goal Setting and Achievements
                     </span>
                     <svg
@@ -196,7 +193,7 @@ export default function YourHour() {
                     </svg>
                   </summary>
                   <div className="mt-3 px-2 sm:px-3">
-                    <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
+                    <p className="text-sm sm:text-base lg:text-base font-medium text-gray-600 text-justify leading-relaxed">
                       Users can set goals for reducing screen time or achieving
                       specific usage targets. The app tracks progress and
                       rewards users with achievements upon reaching milestones,
@@ -206,6 +203,28 @@ export default function YourHour() {
                 </details>
               </div>
             </div>
+            <Link
+              href="/your-hour"
+              className=" ml-2 inline-flex items-center text-lg font-medium text-[#6A53E1] hover:underline group transition-all duration-300"
+            >
+              VIEW CASE STUDY
+              <span className="ml-2 transition-transform group-hover:translate">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="#BCA6FF"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-6 h-6"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </span>
+            </Link>
           </div>
         </div>
 
