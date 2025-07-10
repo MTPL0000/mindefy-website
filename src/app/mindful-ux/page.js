@@ -1,4 +1,4 @@
-import MindfulUX from "../components/MindfulUX";
+import { LazyMindfulUX } from "../utils/lazyLoadService";
 import StructuredData, { createServiceData, createBreadcrumbData } from "../components/StructuredData";
 
 export const metadata = {
@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Mindful UX Design Services - Mindefy Technologies",
     description: "Create exceptional user experiences with mindful UX design services by Mindefy Technologies. User-centered design that focuses on usability and engagement.",
-    url: "https://mindefy.com/mindful-ux",
+    url: "https://mindefy.tech/mindful-ux",
   },
   twitter: {
     title: "Mindful UX Design Services - Mindefy Technologies",
     description: "Create exceptional user experiences with mindful UX design services by Mindefy Technologies. User-centered design that focuses on usability and engagement.",
   },
   alternates: {
-    canonical: "https://mindefy.com/mindful-ux",
+    canonical: "https://mindefy.tech/mindful-ux",
   },
 };
 
@@ -24,20 +24,20 @@ export default function MindfulUXPage() {
     name: "Mindful UX Design Services",
     description: "Create exceptional user experiences with mindful UX design services by Mindefy Technologies. User-centered design that focuses on usability and engagement.",
     serviceType: "UX Design",
-    url: "https://mindefy.com/mindful-ux"
+    url: "https://mindefy.tech/mindful-ux"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Mindful UX", url: "https://mindefy.com/mindful-ux" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Mindful UX", url: "https://mindefy.tech/mindful-ux" }
   ]);
 
   return (
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <MindfulUX />
+      <LazyMindfulUX />
     </>
   );
 }

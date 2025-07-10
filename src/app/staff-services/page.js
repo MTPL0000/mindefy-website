@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Staff Augmentation Services - Mindefy Technologies",
     description: "Professional staff augmentation services by Mindefy Technologies. Scale your team with skilled developers, designers, and technical experts on demand.",
-    url: "https://mindefy.com/staff-services",
+    url: "https://mindefy.tech/staff-services",
   },
   twitter: {
     title: "Staff Augmentation Services - Mindefy Technologies",
     description: "Professional staff augmentation services by Mindefy Technologies. Scale your team with skilled developers, designers, and technical experts on demand.",
   },
   alternates: {
-    canonical: "https://mindefy.com/staff-services",
+    canonical: "https://mindefy.tech/staff-services",
   },
 };
 
@@ -24,13 +24,13 @@ export default function StaffServicesPage() {
     name: "Staff Augmentation Services",
     description: "Professional staff augmentation services by Mindefy Technologies. Scale your team with skilled developers, designers, and technical experts on demand.",
     serviceType: "Staff Augmentation",
-    url: "https://mindefy.com/staff-services"
+    url: "https://mindefy.tech/staff-services"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "Staff Services", url: "https://mindefy.com/staff-services" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "Staff Services", url: "https://mindefy.tech/staff-services" }
   ]);
 
   return (

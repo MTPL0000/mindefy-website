@@ -17,7 +17,7 @@ export const ProjectDropdown = () => {
           </li>
           <li>
             <Link
-              href="/your-hour"
+              href="/jego"
               className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               JEGO

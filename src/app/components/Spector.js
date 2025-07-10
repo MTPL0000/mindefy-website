@@ -1,13 +1,10 @@
 "use client";
-import Image from "next/image";
-import Footer from "./HomePage/Footer";
-import Navbar from "./HomePage/Navbar";
-import ContactUs from "./HomePage/ContactUs";
 
-export default function SpectorCaseStudy() {
+import Image from "next/image";
+
+export default function Spector() {
   return (
     <div className="m-auto bg-white">
-      <Navbar />
       <section className="flex flex-col items-center justify-center gap-8 md:gap-16 lg:gap-24 pt-8 md:pt-16">
         <div className="w-full flex flex-col gap-2 items-center justify-center">
           <div className="flex flex-col gap-1 items-center justify-center max-w-4xl lg:max-w-6xl mx-auto mt-4 md:mt-8 px-4">
@@ -463,8 +460,6 @@ export default function SpectorCaseStudy() {
           </div>
         </div>
       </section>
-      <ContactUs />
-      <Footer />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 export const dynamic = 'force-static';
 
 export default function sitemap() {
-  const baseUrl = 'https://mindefy.com';
+  const baseUrl = 'https://mindefy.tech';
   
   const routes = [
     {
@@ -149,12 +149,6 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/projects`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/digi-bill`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
@@ -179,7 +173,7 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/testimonials-more`,
+      url: `${baseUrl}/testimonials`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,

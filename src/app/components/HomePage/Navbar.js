@@ -8,6 +8,7 @@ import { ProjectDropdown } from "./ProjectDropdown";
 import Image from "next/image";
 
 export default function Navbar() {
+  
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showProductsDropdown, setShowProductsDropdown] = useState(false);
   const [showProjectsDropdown, setShowProjectsDropdown] = useState(false);
@@ -36,21 +37,54 @@ export default function Navbar() {
 
   // Function to scroll to contact section
   const scrollToContact = () => {
-    setTimeout(() => {
+    // Close mobile menu first
+    handleMobileMenuItemClick();
+    
+    // Function to calculate and scroll to contact section with retry logic
+    const performScroll = (attempt = 1) => {
+      const contactSection = document.getElementById("contact");
+      
+      if (!contactSection) {
+        console.warn("Contact section not found on current page");
+        return;
+      }
+
+      // Wait for any ongoing layout changes to complete
       requestAnimationFrame(() => {
-        const contactSection = document.getElementById("contact");
-        if (contactSection) {
-          contactSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        } else {
-          console.warn("Contact section not found");
+        // Force layout recalculation
+        void contactSection.offsetHeight;
+        
+        // Get current positions
+        const rect = contactSection.getBoundingClientRect();
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Calculate absolute position from top of document
+        const absoluteTop = rect.top + scrollY;
+        
+        // Account for navbar (120px) and add small buffer
+        const targetPosition = Math.max(0, absoluteTop - 120);
+        
+        // Perform smooth scroll
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth"
+        });
+        
+        // Verify scroll worked correctly (optional retry for complex pages)
+        if (attempt === 1) {
+          setTimeout(() => {
+            const newRect = contactSection.getBoundingClientRect();
+            // If element is not near the top of viewport, try again once
+            if (newRect.top > 200) {
+              performScroll(2);
+            }
+          }, 1000);
         }
       });
-    }, 100); // Slight delay ensures layout is complete
+    };
 
-    handleMobileMenuItemClick();
+    // Initial delay to ensure page is stable
+    setTimeout(() => performScroll(), 200);
   };
 
   return (
@@ -454,20 +488,20 @@ export default function Navbar() {
               </button>
               {mobileProjectsOpen && (
                 <div className="pl-4 mt-2 space-y-1">
-                  <Link
+                  {/* <Link
                     href="/your-hour"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
                     EarlyFoods
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     href="/your-hour"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
                     JEGO
-                  </Link>
+                  </Link> */}
                   <Link
                     href="/your-hour"
                     onClick={handleMobileMenuItemClick}
@@ -502,10 +536,7 @@ export default function Navbar() {
             </a>
 
             <button
-              onClick={() => {
-                handleMobileMenuItemClick();
-                scrollToContact();
-              }
+              onClick={scrollToContact}
               className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white cursor-pointer"
             >
               Let's Talk

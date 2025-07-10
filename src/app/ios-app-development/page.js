@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "iOS App Development Services - Mindefy Technologies",
     description: "Expert iOS app development services by Mindefy Technologies. Create native iPhone and iPad applications with Swift and cutting-edge iOS technologies.",
-    url: "https://mindefy.com/ios-app-development",
+    url: "https://mindefy.tech/ios-app-development",
   },
   twitter: {
     title: "iOS App Development Services - Mindefy Technologies",
     description: "Expert iOS app development services by Mindefy Technologies. Create native iPhone and iPad applications with Swift and cutting-edge iOS technologies.",
   },
   alternates: {
-    canonical: "https://mindefy.com/ios-app-development",
+    canonical: "https://mindefy.tech/ios-app-development",
   },
 };
 
@@ -24,13 +24,13 @@ export default function IOSAppDevelopmentPage() {
     name: "iOS App Development",
     description: "Expert iOS app development services by Mindefy Technologies. Create native iPhone and iPad applications with Swift and cutting-edge iOS technologies.",
     serviceType: "Mobile App Development",
-    url: "https://mindefy.com/ios-app-development"
+    url: "https://mindefy.tech/ios-app-development"
   });
 
   const breadcrumbData = createBreadcrumbData([
-    { name: "Home", url: "https://mindefy.com" },
-    { name: "Services", url: "https://mindefy.com/#services" },
-    { name: "iOS App Development", url: "https://mindefy.com/ios-app-development" }
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    { name: "iOS App Development", url: "https://mindefy.tech/ios-app-development" }
   ]);
 
   return (
