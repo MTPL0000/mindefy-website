@@ -155,7 +155,7 @@ export default function RootLayout({ children }) {
         {children}
         <ContactUs />
         <Footer />
-        <PWAInstallPrompt />
+        {/* <PWAInstallPrompt /> */}
       </body>
     </html>
   );
