@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "./components/HomePage/Navbar";
 import ContactUs from "./components/HomePage/ContactUs";
 import Footer from "./components/HomePage/Footer";
+import PWAInstallPrompt from "./components/PWAInstallPrompt";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -127,12 +128,34 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${poppins.variable} ${notoSans.variable} ${fredoka.variable}`}>
       <head>
         <link rel="canonical" href="https://mindefy.tech" />
+        
+        {/* PWA Meta Tags */}
+        <meta name="application-name" content="Mindefy Technologies" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Mindefy" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="#D84426" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        
+        {/* Apple Touch Icons */}
+        <link rel="apple-touch-icon" href="/images/logo/mindefy-logo.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/logo/mindefy-logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo/mindefy-logo.png" />
+        <link rel="apple-touch-icon" sizes="167x167" href="/images/logo/mindefy-logo.png" />
+        
+        {/* Additional Meta Tags for PWA */}
+        <meta name="theme-color" content="#D84426" />
+        <meta name="color-scheme" content="light" />
       </head>
       <body className="font-poppins overflow-x-hidden">
         <Navbar />
         {children}
         <ContactUs />
         <Footer />
+        <PWAInstallPrompt />
       </body>
     </html>
   );
