@@ -16,6 +16,11 @@ export default function Navbar() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
+  
+  // States for transition effects
+  const [servicesTransitioning, setServicesTransitioning] = useState(false);
+  const [productsTransitioning, setProductsTransitioning] = useState(false);
+  const [projectsTransitioning, setProjectsTransitioning] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -37,9 +42,24 @@ export default function Navbar() {
 
   // Close all desktop dropdowns when any dropdown item is clicked
   const handleDesktopDropdownItemClick = () => {
-    setShowServicesDropdown(false);
-    setShowProductsDropdown(false);
-    setShowProjectsDropdown(false);
+    // Start transition effect
+    if (showServicesDropdown) setServicesTransitioning(true);
+    if (showProductsDropdown) setProductsTransitioning(true);
+    if (showProjectsDropdown) setProjectsTransitioning(true);
+    
+    // Close dropdowns after a brief delay to allow transition
+    setTimeout(() => {
+      setShowServicesDropdown(false);
+      setShowProductsDropdown(false);
+      setShowProjectsDropdown(false);
+      
+      // Reset transition states
+      setTimeout(() => {
+        setServicesTransitioning(false);
+        setProductsTransitioning(false);
+        setProjectsTransitioning(false);
+      }, 50);
+    }, 150);
   };
 
   // Function to scroll to contact section
@@ -151,7 +171,9 @@ export default function Navbar() {
                 <div className="fixed left-0 top-[4rem] w-full h-[5rem] z-30"></div>
 
                 {/* Actual dropdown positioned to take full width */}
-                <div className="fixed left-0 top-[4.5rem] w-full flex justify-center z-40">
+                <div className={`fixed left-0 top-[4.5rem] w-full flex justify-center z-40 transition-opacity duration-200 ease-in-out ${
+                  servicesTransitioning ? 'opacity-0' : 'opacity-100'
+                }`}>
                   <div className="w-full max-w-none">
                     <ServicesDrop onItemClick={handleDesktopDropdownItemClick} />
                   </div>
@@ -179,7 +201,9 @@ export default function Navbar() {
 
             {/* Products Dropdown */}
             {showProductsDropdown && (
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40">
+              <div className={`absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40 transition-opacity duration-200 ease-in-out ${
+                productsTransitioning ? 'opacity-0' : 'opacity-100'
+              }`}>
                 <ProductsDropdown onItemClick={handleDesktopDropdownItemClick} />
               </div>
             )}
@@ -204,7 +228,9 @@ export default function Navbar() {
 
             {/* Projects Dropdown */}
             {showProjectsDropdown && (
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40">
+              <div className={`absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40 transition-opacity duration-200 ease-in-out ${
+                projectsTransitioning ? 'opacity-0' : 'opacity-100'
+              }`}>
                 <ProjectDropdown onItemClick={handleDesktopDropdownItemClick} />
               </div>
             )}
