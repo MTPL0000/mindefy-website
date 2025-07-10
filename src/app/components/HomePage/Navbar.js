@@ -395,14 +395,14 @@ export default function Navbar() {
                       2D & 3D Game Animation
                     </Link>
                     <Link
-                      href="/game-animation"
+                      href="/unity-unreal"
                       onClick={handleMobileMenuItemClick}
                       className="block hover:text-red-600"
                     >
                       Unity 3D & Unreal Engine Development
                     </Link>
                     <Link
-                      href="/game-animation"
+                      href="/ar-vr-game-development"
                       onClick={handleMobileMenuItemClick}
                       className="block hover:text-red-600"
                     >
