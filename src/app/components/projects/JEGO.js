@@ -343,6 +343,223 @@ export default function JEGO() {
           </div>
         </div>
       </section>
+      {/* Market Research Grid Section */}
+      <section className="w-full flex flex-col items-center justify-center">
+        <div className="w-full max-w-6xl flex flex-col px-[3.125rem] gap-8">
+          {/* Row 1 */}
+          <div className="flex flex-row ">
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                LinkedIn Learning
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[3.14rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Khan Academy
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                68% Experienced Learners
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                42% Budget Constraints
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                32 Average age of Online Learning
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Lack of time 61%
+              </span>
+            </div>
+          </div>
+
+          {/* Row 2 */}
+          <div className="flex flex-row ">
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Udemy
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[3.14rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Skillshare
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.125rem] w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Online Education will be worth $374 Billion by year 2026
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E]  w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                More learning due to social distancing each of the 2020 pandemic
+              </span>
+            </div>
+          </div>
+
+          {/* Row 3 */}
+          <div className="flex flex-row">
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Domestika
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Coursera
+              </span>
+            </div>
+          </div>
+
+          {/* Row 4 */}
+          <div className="flex flex-row">
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                MasterClass
+              </span>
+            </div>
+            
+          </div>
+
+          {/* Demographics Row */}
+          <div className="flex flex-row mt-8">
+            <div className="bg-[#F7DE66]  mr-[3.81rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#483E0F] w-[7.875rem]  text-base font-medium font-inter text-center">
+                16-22 <br></br>Gen Z
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Bored Learners
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Stuck at Home Learners
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Expanding Skillset Learners
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Business Offered Learners
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E]  w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Advancing Skills Learners
+              </span>
+            </div>
+          </div>
+
+          <hr class="h-px my-8 bg-[#286D7C] border-0 dark:bg-[#286D7C]"></hr>
+
+          {/* Millennials Row */}
+          <div className="flex flex-row ">
+            <div className="bg-[#F7DE66]  mr-[3.81rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#483E0F] w-[7.875rem]  text-base font-medium font-inter text-center">
+                25-38 Millennials
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Influencer generation
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Spends 3 hours on average per day
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                The Smallest earning potential
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.166rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                On track to be the best educated generation
+              </span>
+            </div>
+          </div>
+
+          <hr class="h-px my-8 bg-[#286D7C] border-0 dark:bg-[#286D7C]"></hr>
+
+          {/* Boomers Row */}
+          <div className="flex flex-row ">
+            <div className="bg-[#F7DE66]  mr-[3.81rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#483E0F] w-[7.875rem]  text-base font-medium font-inter text-center">
+                56-74 Boomers
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.125rem] w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Slowest down in social media use
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.125rem] w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                19% College Degree
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.125rem] w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Less Money than other generation
+              </span>
+            </div>
+          </div>
+
+          {/* Gen X Row */}
+          <div className="flex flex-row">
+            <div className="bg-[#F7DE66]  mr-[3.81rem] w-[9.375rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#483E0F] w-[7.875rem]  text-base font-medium font-inter text-center">
+                39-55 Gen X
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.125rem] w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                The Smallest Generation
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.125rem] w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Best Earning Years
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.125rem] w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                29% College Degree
+              </span>
+            </div>
+          </div>
+
+          {/* Final Row */}
+          <div className="flex flex-row">
+            
+            <div className="bg-[#3E8D9E] ml-[13.18rem] mr-[1.125rem] w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                Great increase in social media     
+              </span>
+            </div>
+            <div className="bg-[#3E8D9E] mr-[1.125rem] w-[16.25rem] h-[9.375rem] pt-[0.780rem]  pl-[0.780rem]  pr-[.719rem]">
+              <span className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium font-inter text-center">
+                The Fastest growing smartphone owners
+              </span>
+            </div>
+            
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
