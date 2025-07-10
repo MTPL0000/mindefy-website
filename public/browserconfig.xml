@@ -5,7 +5,7 @@
             <square150x150logo src="/images/logo/mindefy-logo.png"/>
             <square310x310logo src="/images/logo/mindefy-logo.png"/>
             <wide310x150logo src="/images/logo/mindefy-logo.png"/>
-            <TileColor>#D84426</TileColor>
+            <TileColor>#FFFFFF</TileColor>
         </tile>
     </msapplication>
 </browserconfig> 
