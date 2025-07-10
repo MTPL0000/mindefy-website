@@ -14,7 +14,7 @@ export default function GameAnimation() {
 
           {/* Main Title */}
           <h1 className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[55.25rem] mx-auto px-4 xl:px-0">
-            Immersive Game Animation That Brings<br></br> Worlds to Life
+            Immersive Game Animation That Brings<br className="hidden sm:block"></br> Worlds to Life
           </h1>
 
           {/* Description Paragraphs */}
@@ -35,10 +35,10 @@ export default function GameAnimation() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-[30.125rem] mx-auto mb-20">
+          <div className="relative w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] mx-auto mb-12 lg:mb-20">
             <Image
               src="/images/GA1.svg"
-              alt="Web Application Development - Developer working with web applications"
+              alt="Game Animation - Immersive 2D and 3D game animation services"
               fill
               className="object-contain"
               priority
@@ -48,12 +48,12 @@ export default function GameAnimation() {
       </section>
 
       {/* 2D Game Art & Development Section */}
-      <section className="bg-white ">
+      <section className="bg-white px-4 xl:px-0">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-[3.75rem] items-center">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[3.75rem] items-center">
             {/* Left Image */}
-            <div className="flex-1">
-              <div className="relative w-[25rem] ml-2.5 h-[25rem] ">
+            <div className="flex-1 w-full flex justify-center lg:justify-start">
+              <div className="relative w-[20rem] sm:w-[22rem] lg:w-[25rem] xl:w-[25rem] h-[20rem] sm:h-[22rem] lg:h-[25rem] xl:h-[25rem] lg:ml-2.5">
                 <Image
                   src="/images/GA2.webp"
                   alt="2D Game Art & Development"
@@ -64,12 +64,12 @@ export default function GameAnimation() {
             </div>
 
             {/* Right Content */}
-            <div className="flex-1">
-              <h2 className="text-2xl font-semibold  text-[#232323] mb-8">
+            <div className="flex-1 w-full">
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#232323] mb-6 lg:mb-8">
                 2D Game Art & Development
               </h2>
 
-              <p className="text-base text-[#444444]  text-justify font-normal leading-relaxed mb-3">
+              <p className="text-sm sm:text-base text-[#444444] text-justify font-normal leading-relaxed mb-4 lg:mb-3">
                 At Mindefy Technologies, we bring your game ideas to life
                 through stunning 2D visuals and robust gameplay mechanics. Our
                 team excels in both 2D game art and development, delivering
@@ -79,8 +79,8 @@ export default function GameAnimation() {
                 player experience across mobile, web, PC, and consoles.
               </p>
 
-              <div className="mb-3">
-                <h3 className="text-[#444444] font-normal   mb-3">
+              <div className="mb-4 lg:mb-3">
+                <h3 className="text-[#444444] font-normal mb-3">
                   Our Expertise Includes:
                 </h3>
                 <ul className="text-sm text-[#444444] space-y-2">
@@ -98,7 +98,7 @@ export default function GameAnimation() {
                 </ul>
               </div>
 
-              <p className="text-[1rem] text-[#444444]  text-justify leading-relaxed">
+              <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
                 Whether you're building a fast-paced arcade game or a
                 story-driven adventure, we combine creativity and code to make
                 it happen.
@@ -109,16 +109,16 @@ export default function GameAnimation() {
       </section>
 
       {/* 3D Game Art & Development Section */}
-      <section className="bg-white mb-20 ">
+      <section className="bg-white mb-12 lg:mb-20 px-4 xl:px-0 mt-12 lg:mt-0">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-[3.75rem] items-center">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[3.75rem] items-center">
             {/* Left Content */}
-            <div className="flex-1">
-              <h2 className="text-2xl font-semibold  text-[#232323] mb-8">
+            <div className="flex-1 w-full order-2 lg:order-1">
+              <h2 className="text-xl sm:text-2xl font-semibold text-[#232323] mb-6 lg:mb-8">
                 3D Game Art & Development
               </h2>
 
-              <p className="text-base text-[#444444]  text-justify font-normal leading-relaxed mb-3">
+              <p className="text-sm sm:text-base text-[#444444] text-justify font-normal leading-relaxed mb-4 lg:mb-3">
                 At Mindefy Technologies, we specialize in crafting high-quality
                 3D games that deliver immersive experiences across platforms.
                 From detailed character models and lifelike environments to
@@ -128,8 +128,8 @@ export default function GameAnimation() {
                 console.
               </p>
 
-              <div className="mb-3">
-                <h3 className="text-[#444444] font-normal   mb-3">
+              <div className="mb-4 lg:mb-3">
+                <h3 className="text-[#444444] font-normal mb-3">
                   Our Expertise Includes:
                 </h3>
                 <ul className="text-sm text-[#444444] space-y-2">
@@ -141,15 +141,15 @@ export default function GameAnimation() {
                 </ul>
               </div>
 
-              <p className="text-[1rem] text-[#444444]  text-justify leading-relaxed">
+              <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
                 Whether it's a casual 3D game or a complex simulation, we bring
                 your vision to life with precision, creativity, and scalability.
               </p>
             </div>
 
             {/* Right Image */}
-            <div className="flex-1">
-              <div className="  relative w-[25rem] mr-2.5 h-[25rem]">
+            <div className="flex-1 w-full flex justify-center lg:justify-end order-1 lg:order-2">
+              <div className="relative w-[20rem] sm:w-[22rem] lg:w-[25rem] xl:w-[25rem] h-[20rem] sm:h-[22rem] lg:h-[25rem] xl:h-[25rem] lg:mr-2.5">
                 <Image
                   src="/images/GA3.svg"
                   alt="3D Game Art & Development"
@@ -163,23 +163,22 @@ export default function GameAnimation() {
       </section>
 
       {/* Our Work Section */}
-      <section className="bg-white ">
+      <section className="bg-white px-4 xl:px-0">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-[2.5rem]  font-bold text-[#000000] text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-[2.5rem] font-bold text-[#000000] text-center mb-8 lg:mb-12">
             Our Work
           </h2>
           
-
-          <div className="flex flex-row  gap-20">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             {/* 3D Game Column */}
-            <div className="flex-1 w-[28.375rem]">
-              <h3 className="text-[1.75rem] font-semibold text-[#000000] text-center mb-3">
+            <div className="flex-1 w-full">
+              <h3 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] text-center mb-4 lg:mb-3">
                 3D Game
               </h3>
-              <div className="  relative w-[28.375rem]  h-[20.125rem]">
+              <div className="relative w-full max-w-[28.375rem] mx-auto h-[15rem] sm:h-[18rem] lg:h-[20.125rem]">
                 <Image
                   src="/images/GA4.webp"
-                  alt="3D Game Art & Development"
+                  alt="3D Game Development - Mindefy Technologies"
                   fill
                   className="object-contain"
                 />
@@ -187,19 +186,18 @@ export default function GameAnimation() {
             </div>
 
             {/* 2D Game Column */}
-            <div className="flex-1">
-              <h3 className="text-[1.75rem] font-semibold text-[#000000] text-center mb-3">
+            <div className="flex-1 w-full">
+              <h3 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] text-center mb-4 lg:mb-3">
                 2D Game
               </h3>
-              <div className="relative w-[39.25rem]  h-[20.687rem]">
+              <div className="relative w-full max-w-[39.25rem] mx-auto h-[15rem] sm:h-[18rem] lg:h-[20.687rem]">
                 <Image
                   src="/images/GA5.webp"
-                  alt="3D Game Art & Development"
+                  alt="2D Game Development - Mindefy Technologies"
                   fill
                   className="object-contain"
                 />
               </div>
-              
             </div>
           </div>
         </div>

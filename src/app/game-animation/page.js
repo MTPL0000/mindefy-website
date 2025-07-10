@@ -4,45 +4,41 @@ import GameAnimation from "../components/gameAnimation";
 
 
 export const metadata = {
-  title: "game development",
-  description: "Expert iOS app development services by Mindefy Technologies. Create native iPhone and iPad applications with Swift and cutting-edge iOS technologies.",
-  keywords: ["ios app development", "iphone app development", "ipad app development", "swift development", "native ios apps", "apple app development"],
+  title: "Game Animation & Development Services - Mindefy Technologies",
+  description: "Professional 2D and 3D game animation and development services by Mindefy Technologies. Create immersive gaming experiences with cutting-edge animation and game development technologies.",
+  keywords: ["game animation", "game development", "2D game animation", "3D game animation", "game art", "unity development", "unreal engine", "mobile game development", "game design"],
   openGraph: {
-    title: "iOS App Development Services - Mindefy Technologies",
-    description: "Expert iOS app development services by Mindefy Technologies. Create native iPhone and iPad applications with Swift and cutting-edge iOS technologies.",
-    url: "https://mindefy.tech/ios-app-development",
+    title: "Game Animation & Development Services - Mindefy Technologies",
+    description: "Professional 2D and 3D game animation and development services by Mindefy Technologies. Create immersive gaming experiences with cutting-edge animation and game development technologies.",
+    url: "https://mindefy.tech/game-animation",
   },
   twitter: {
-    title: "iOS App Development Services - Mindefy Technologies",
-    description: "Expert iOS app development services by Mindefy Technologies. Create native iPhone and iPad applications with Swift and cutting-edge iOS technologies.",
+    title: "Game Animation & Development Services - Mindefy Technologies",
+    description: "Professional 2D and 3D game animation and development services by Mindefy Technologies. Create immersive gaming experiences with cutting-edge animation and game development technologies.",
   },
   alternates: {
-    canonical: "https://mindefy.tech/ios-app-development",
+    canonical: "https://mindefy.tech/game-animation",
   },
 };
 
 export default function gameAnimation() {
   const serviceData = createServiceData({
-    name: "Game Development",
-    description: "Expert iOS app development services by Mindefy Technologies. Create native iPhone and iPad applications with Swift and cutting-edge iOS technologies.",
-    serviceType: "Mobile App Development",
+    name: "Game Animation & Development",
+    description: "Professional 2D and 3D game animation and development services by Mindefy Technologies. Create immersive gaming experiences with cutting-edge animation and game development technologies.",
+    serviceType: "Game Development",
     url: "/game-animation"
   });
 
   const breadcrumbData = createBreadcrumbData([
     { name: "Home", url: "https://mindefy.tech" },
     { name: "Services", url: "https://mindefy.tech/#services" },
-    { name: "iOS App Development", url: "https://mindefy.tech/ios-app-development" }
+    { name: "Game Animation & Development", url: "https://mindefy.tech/game-animation" }
   ]);
 
   return (
     <>
-      {/* <StructuredData data={serviceData} />
+      <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyIOS /> */}
-      <div>
-      
-      </div>
       <GameAnimation/>
     </>
   );
