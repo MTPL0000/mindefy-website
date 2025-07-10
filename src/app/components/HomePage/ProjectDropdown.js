@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-export const ProjectDropdown = () => {
+export const ProjectDropdown = ({ onItemClick }) => {
   return (
     <div className="pt-4 sm:pt-6 lg:pt-8 bg-white shadow-lg rounded-[0.5rem] z-20 min-w-[120px] sm:min-w-[150px]">
       {/* Project Links */}
@@ -26,6 +26,7 @@ export const ProjectDropdown = () => {
           <li>
             <Link
               href="/soli-stack"
+              onClick={onItemClick}
               className="hover:text-red-600 hover:font-semibold block"
             >
               SoliStack
@@ -34,6 +35,7 @@ export const ProjectDropdown = () => {
           <li>
             <Link
               href="/digi-bill"
+              onClick={onItemClick}
               className="hover:text-red-600 hover:font-semibold block"
             >
               GreenBill
@@ -42,6 +44,7 @@ export const ProjectDropdown = () => {
           <li>
             <Link
               href="/mach-one"
+              onClick={onItemClick}
               className="hover:text-red-600 hover:font-semibold block"
             >
               MachOne

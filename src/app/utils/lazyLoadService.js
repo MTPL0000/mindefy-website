@@ -15,11 +15,12 @@ export function createLazyServiceComponent(componentPath, options = {}) {
     //   });
     // }
     // return importPromise;
-    return new Promise(resolve => {
-      setTimeout(() => {
-        importPromise.then(resolve);
-      }, 500); // 0.5 second delay in development
-    });
+    // return new Promise(resolve => {
+    //   setTimeout(() => {
+    //     importPromise.then(resolve);
+    //   }, 500); // 0.5 second delay in development
+    // });
+    return importPromise;
   }, {
     loading: () => (
       <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
