@@ -1,11 +1,24 @@
 // src/app/layout.js
 import { Poppins } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
+import { Fredoka } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-poppins",
+});
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600"], // you can adjust as needed
+  variable: "--font-noto",
+});
+
+const fredoka = Fredoka({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-fredoka",
 });
 
 export const metadata = {
@@ -108,7 +121,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" className={`${poppins.variable} ${notoSans.variable} ${fredoka.variable}`}>
       <head>
         <link rel="canonical" href="https://mindefy.com" />
       </head>

@@ -1,6 +1,3 @@
-import ContactUs from "./HomePage/ContactUs";
-import Footer from "./HomePage/Footer";
-import Navbar from "./HomePage/Navbar";
 import Image from "next/image";
 
 export default function EarlyFoods() {
@@ -287,9 +284,34 @@ export default function EarlyFoods() {
     "Redesigned Navigation Menu and Website Flow",
   ];
 
+  const icons = [
+    { src: "/images/transparency.svg", label: "Transparency" },
+    { src: "/images/secure.svg", label: "Secure" },
+    { src: "/icons/fresh-food.svg", label: "Fresh Food" },
+    { src: "/icons/refined-flour.svg", label: "Refined Flour" },
+    { src: "/icons/sugar-salt.svg", label: "Added Sugar/Salt" },
+    { src: "/icons/thickeners.svg", label: "Thickeners" },
+    { src: "/icons/soda.svg", label: "Soda" },
+    { src: "/icons/artificial.svg", label: "Artificial Flour" },
+    { src: "/icons/milk.svg", label: "Milk Powder" },
+    { src: "/icons/preservatives.svg", label: "Preservatives" },
+    { src: "/icons/bad-stuff.svg", label: "Bad Stuff" },
+    { src: "/icons/almond.svg", label: "Almond" },
+    { src: "/icons/jowar.svg", label: "Jowar millet" },
+    { src: "/icons/ragi.svg", label: "Ragi millet" },
+    { src: "/icons/bajra.svg", label: "Bajra millet" },
+    { src: "/icons/flax.svg", label: "Flax seeds" },
+    { src: "/icons/sesame.svg", label: "Sesame seeds" },
+    { src: "/icons/curry.svg", label: "Curry leaves" },
+    { src: "/icons/jaggery.svg", label: "Jaggery" },
+    { src: "/icons/rice.svg", label: "Rice" },
+    { src: "/icons/wheat.svg", label: "Whole Wheat" },
+    { src: "/icons/rava.svg", label: "Rava" },
+    { src: "/icons/oil.svg", label: "Oil" },
+  ];
+
   return (
     <div className="bg-[#E9F6F6]">
-      <Navbar />
       <section className="w-full flex flex-col items-center justify-center gap-12">
         <div className="relative max-w-[90rem] mx-auto overflow-hidden pt-24">
           <div className="m-auto max-w-[58rem] flex flex-col items-center justify-center gap-4 relative z-10 px-4 text-center">
@@ -749,7 +771,7 @@ export default function EarlyFoods() {
               borderBottomRightRadius: "50% 100%",
               boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
             }}
-            className="relative w-full overflow-hidden bg-[#E9F7F7]"
+            className="relative w-full overflow-hidden bg-[#E9F6F7]"
           >
             <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
@@ -1081,7 +1103,7 @@ export default function EarlyFoods() {
             </div>
 
             {/* Baby Food E-Store Image Section */}
-            <div className="bg-[#C8E6E6] rounded-3xl p-6 mb-8 text-center">
+            <div className="bg-[#C8E6E6] rounded-3xl p-6 mb-20 text-center">
               <h3 className="text-[#52B7B7] text-xl font-semibold">
                 Baby Food E-Store Image
               </h3>
@@ -1100,10 +1122,10 @@ export default function EarlyFoods() {
             </div>
             {/* S-O-R Model Diagram */}
             <div className=" w-[60.5rem] mx-auto  mb-8">
-              <div className="flex justify-center items-center space-x-12">
+              <div className="flex justify-center items-center ">
                 {/* S Section */}
                 <div className="">
-                  <div className="space-y-2">
+                  <div className="space-y-5">
                     <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-8 pr-16 py-5 rounded-3xl  border-l-4 border-[#F88598]">
                       <p className="  text-sm  w-[9.06rem] font-semibold">
                         E-Store Design
@@ -1129,24 +1151,20 @@ export default function EarlyFoods() {
 
                 {/* Arrow 1 */}
                 <div className="flex flex-col items-center">
-                  <svg
-                    width="40"
-                    height="20"
-                    viewBox="0 0 40 20"
-                    className="text-gray-400"
-                  >
-                    <path
-                      d="M0 10 L30 10 M25 5 L30 10 L25 15"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
+                  <div className="relative w-full ">
+                    <Image
+                      src="/images/EF-ER1.png"
+                      alt="arrow"
+                      width={133}
+                      height={288}
+                      className=" object-contain"
                     />
-                  </svg>
+                  </div>
                 </div>
 
                 {/* O Section */}
                 <div className="">
-                  <div className="space-y-2">
+                  <div className="space-y-5">
                     <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
                       <span className="text-sm  w-[9.06rem] font-semibold">
                         Emotional Value
@@ -1162,19 +1180,15 @@ export default function EarlyFoods() {
 
                 {/* Arrow 2 */}
                 <div className="flex flex-col items-center">
-                  <svg
-                    width="40"
-                    height="20"
-                    viewBox="0 0 40 20"
-                    className="text-gray-400"
-                  >
-                    <path
-                      d="M0 10 L30 10 M25 5 L30 10 L25 15"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
+                  <div className="relative w-full ">
+                    <Image
+                      src="/images/EF-ER2.png"
+                      alt="arrow"
+                      width={133}
+                      height={288}
+                      className=" object-contain"
                     />
-                  </svg>
+                  </div>
                 </div>
 
                 {/* R Section */}
@@ -1191,7 +1205,7 @@ export default function EarlyFoods() {
             </div>
 
             {/* Diagram Description */}
-            <p className=" text-justify mb-12 text-base text-[#2B7575] mt-6 font-medium">
+            <p className=" text-justify mb-12 text-base text-[#2B7575] mt-10 font-medium">
               This research focuses on the impact of different aspects of
               e-commerce platforms on the perceived value of the customer and
               their subsequent purchase intention. The hypotheses can be
@@ -1306,13 +1320,13 @@ export default function EarlyFoods() {
                 borderBottomRightRadius: "50% 100%",
                 boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
               }}
-              className="relative w-full overflow-hidden bg-[#E9F7F7] mb-12"
+              className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
             >
               <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
                 <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                   Competitor Analysis
                 </h2>
-                <p className="text-[#377D7D] text-base font-normal text-center w-[47rem]">
+                <p className="text-[#377D7D]  leading-relaxed text-base font-normal text-center w-[47rem]">
                   To evaluate the features, usability, and user experience of
                   competitors' products or services. This analysis helps
                   identify strengths, weaknesses, opportunities, and threats in
@@ -1619,8 +1633,8 @@ export default function EarlyFoods() {
           </div>
         </div>
         {/* Market Research Section */}
-        <div className="w-full mx-auto mt-20 px-6 bg-[#E9F6F6] relative overflow-hidden">
-          <div className=" mx-auto py-16">
+        <div className="w-full mx-auto mt- px-6 bg-[#E9F6F6] relative overflow-hidden">
+          <div className=" mx-auto pt-16">
             {/* Header Section */}
             <div
               style={{
@@ -1633,11 +1647,11 @@ export default function EarlyFoods() {
               }}
               className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
             >
-              <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
+              <div className="relative flex flex-col gap-2 items-center pt- pb-24">
                 <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                   Market Research
                 </h2>
-                <p className="text-[#377D7D] text-base font-normal text-center w-[47rem]">
+                <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-[47rem]">
                   Market research involves gathering, analyzing, and
                   interpreting information about a market, including a product's
                   or service's nature, characteristics, and potential customer
@@ -1646,7 +1660,7 @@ export default function EarlyFoods() {
               </div>
             </div>
 
-            <div className="bg-[#E9F6F6] min-h-screen p-8">
+            <div className="bg-[#E9F6F6] p-10">
               <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 justify-center">
                 {[column1, column2, column3].map((col, i) => (
                   <div key={i} className="flex flex-col gap-16">
@@ -1676,7 +1690,7 @@ export default function EarlyFoods() {
             </div>
           </div>
         </div>
-        <div className="w-full mx-auto mt-20 mb-[7.5rem] px-6 bg-[#E9F6F6] relative overflow-hidden">
+        <div className="w-full mx-auto mt- mb-[7.5rem] px-6 bg-[#E9F6F6] relative overflow-hidden">
           {/* Header */}
           <div
             style={{
@@ -1689,11 +1703,11 @@ export default function EarlyFoods() {
             }}
             className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
           >
-            <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
+            <div className="relative flex flex-col gap-2 items-center pt- pb-24">
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                 The Problems
               </h2>
-              <p className="text-[#377D7D] text-base font-normal text-center w-[47rem]">
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-[47rem]">
                 After the extensive research, surveys, and interviews I was able
                 to find out these problems in the current user experience and
                 visual elements, below mentioned are only the high priority
@@ -1728,7 +1742,7 @@ export default function EarlyFoods() {
             </div>
           )}
         </div>
-        <div className="w-full mx-auto mt-20 mb-[7.5rem] px-6 bg-[#E8F4F4] relative overflow-hidden">
+        <div className="w-full mx-auto  mb-[7.5rem] px-6 bg-[#E9F6F6] relative overflow-hidden">
           {/* Header */}
           <div
             style={{
@@ -1739,13 +1753,13 @@ export default function EarlyFoods() {
               borderBottomRightRadius: "50% 100%",
               boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
             }}
-            className="relative w-full overflow-hidden bg-[#E9F7F7] mb-12"
+            className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
           >
-            <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
+            <div className="relative flex flex-col gap-2 items-center pt- pb-24">
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                 The Solutions
               </h2>
-              <p className="text-[#377D7D] text-base font-normal text-center w-[47rem]">
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-[47rem]">
                 Based on the problems we found out below are the solutions that
                 we proposed client in order to enhance the overall User
                 experience and enhance the joy of shopping from the Early Foods.
@@ -1765,92 +1779,350 @@ export default function EarlyFoods() {
             ))}
           </div>
         </div>
-        <div className="bg-[#eaf6f6] w-[71.75rem] mx-auto  ">
+        <div className="bg-[#eaf6f6] w-full mx-auto  ">
           {/* Header Section */}
-            <div className="flex justify-between items-center">
-              <div>
-                <h3 className="text-[#F690A1] text-[2rem] font-normal flex items-center gap-2 mb-2">
-                  <span className="w-8" role="img" aria-label="pin">
-                    📍
-                  </span>
-                  UI Design
-                </h3>
-                <h2 className="text-[#52B7B7] text-[4rem] font-bold">
-                  Visual Design
-                </h2>
-              </div>
-              <div className="w-[22.31rem] mt-8">
-                <h4 className="text-[#F690A1] text-left text-base font-bold mb-2">
-                  Point take away
-                </h4>
-                <div className="flex gap-8">
-                  <ul className="text-[#2B7575] text-sm font-normal space-y-1">
-                    <li>• UI Screens</li>
-                    
-                  </ul>
-                </div>
+          <div className="flex justify-between items-start w-[71.75rem] mx-auto">
+            <div className="">
+              <h3 className="text-[#F690A1] text-[2rem] font-normal flex items-center gap-2 mb-2">
+                <span className="w-8" role="img" aria-label="pin">
+                  📍
+                </span>
+                UI Design
+              </h3>
+              <h2 className="text-[#52B7B7] text-[4rem] font-bold">
+                Visual Design
+              </h2>
+            </div>
+            <div className="w-[22.31rem] pl-[10rem] mt-8">
+              <h4 className="text-[#F690A1] text-left text-base font-bold mb-2">
+                Point take away
+              </h4>
+              <div className="flex gap-8">
+                <ul className="text-[#2B7575] text-sm font-normal space-y-1">
+                  <li>• UI Screens</li>
+                </ul>
               </div>
             </div>
+          </div>
           {/* Top laptop screen with annotations */}
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center my-[4.5rem] ">
             <Image
-              src="/images/EF-laptop.webp" // Replace with actual path
+              src="/images/EF-laptop1.webp" // Replace with actual path
               alt="Main UI with annotations"
-              width={800}
-              height={400}
-              className="rounded-xl shadow-lg"
+              width={1147}
+              height={506}
+              className="object-contain"
             />
           </div>
 
-          {/* Middle row: 3 laptop images */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center max-w-6xl mx-auto mb-12">
+          {/* Middle row: 2 laptop images */}
+          <div className="grid grid-cols-1 md:grid-cols-2  gap-6 justify-items-center max-w-6xl mx-auto mb-[4.5rem]">
             <Image
-              src="/images/laptop2.png"
+              src="/images/EF-laptop2.webp"
               alt="Product detail UI"
-              width={320}
-              height={200}
-              className="rounded-xl shadow"
+              width={559}
+              height={400}
+              className="object-contain"
             />
             <Image
-              src="/images/laptop3.png"
+              src="/images/EF-laptop3.webp"
               alt="Category UI"
-              width={320}
-              height={200}
-              className="rounded-xl shadow"
-            />
-            <Image
-              src="/images/laptop4.png"
-              alt="Another UI screen"
-              width={320}
-              height={200}
-              className="rounded-xl shadow"
+              width={559}
+              height={400}
+              className="object-contain"
             />
           </div>
 
           {/* Bottom row: Before section */}
-          <div className="text-center mb-4">
-            <h3 className="text-2xl font-bold text-cyan-800">Before</h3>
+          <div className="text-center mb-6">
+            <h3 className="text-5xl font-bold text-[#52B7B7]">Before</h3>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-7">
             <Image
-              src="/images/before1.png"
+              src="/images/EF-Laptop4.webp"
               alt="Old homepage"
-              width={400}
-              height={250}
-              className="rounded-xl shadow"
+              width={559}
+              height={400}
+              className="object-contain"
             />
             <Image
-              src="/images/before2.png"
+              src="/images/EF-Laptop5.webp"
               alt="Old product page"
-              width={400}
-              height={250}
-              className="rounded-xl shadow"
+              width={559}
+              height={400}
+              className="object-contain"
+            />
+          </div>
+        </div>
+
+        <div className="bg-[#eaf6f6] py-12 px-4 ">
+          {/* Header */}
+          <div className="mb-10  relative">
+            <p className="text-[#F690A1] font-normal text-[2rem]">
+              📍 UI Design
+            </p>
+            <h1 className="text-[4rem] font-bold text-[#52B7B7]">
+              Style Guide
+            </h1>
+            <p className="absolute right-0 top-0 font-normal text-[#2B7575] text-sm text-left mt-7">
+              <span className="text-[#F88598] font-bold text-base">
+                Point take away
+              </span>{" "}
+              <br />• Typography <br />• Color <br />• Iconography
+            </p>
+          </div>
+
+          <div className="flex flex-row">
+            {/* Side Label */}
+            <div className="bg-[#F88CA2] w-10 h-86 mt-2.5 mr-12  flex items-center justify-center">
+              <p className="text-white font-bold text-2xl px-2 py-[3.75rem] rotate-180 writing-vertical-lr">
+                COLOR STYLE GUIDE
+              </p>
+            </div>
+
+            {/* Color Tables */}
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Primary Main */}
+              <div>
+                <h3 className="text-[#3BB7AC] text-[2rem] font-medium font-noto">
+                  Primary - Main
+                </h3>
+                <p className="text-xs font-normal text-[#F690A1] mt-2 font-noto">
+                  Colors that represent EarlyFood brand, used as primary color.
+                </p>
+                <div className="mt-4 space-y-0.5">
+                  {/* Color Card 1 */}
+                  <div className="bg-white p-4  flex items-center gap-4">
+                    <div className="w-9 h-9 rounded-full bg-[#FFB6C1]"></div>
+                    <div className="text-sm font-normal font-noto">
+                      <p className="font-medium text-base">
+                        Main 01 (EF Light Pink)
+                      </p>
+                      <p className="text-[#666666] text-xs">
+                        #FFB6C1 &nbsp; | &nbsp; EF-Light Pink/06-base
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Color Card 2 */}
+                  <div className="bg-white p-4  flex items-center gap-4">
+                    <div className="w-9 h-9 rounded-full bg-[#87CEFA]"></div>
+                    <div className="text-sm font-normal font-noto">
+                      <p className="font-medium text-base">
+                        Main 02 (EF Sky Blue)
+                      </p>
+                      <p className="text-[#666666] text-xs">
+                        #87CEFA &nbsp; | &nbsp; EF-Sky Blue/06-base
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Color Card 3 */}
+                  <div className="bg-white p-4  flex items-center gap-4">
+                    <div className="w-9 h-9 rounded-full bg-[#B4E2E2]"></div>
+                    <div className="text-sm font-normal font-noto">
+                      <p className="font-medium text-base">
+                        Main 03 (EF Green)
+                      </p>
+                      <p className="text-[#666666] text-xs">
+                        #B4E2E2 &nbsp; | &nbsp; EF-Green/06-base
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Primary Supplementary */}
+              <div>
+                <h3 className="text-[#3BB7AC] text-[2rem] font-medium font-noto">
+                  Primary - Supplementary
+                </h3>
+                <p className="text-xs font-normal text-[#F690A1] mt-2 font-noto">
+                  Colors that complement the use of primary colors.
+                </p>
+                <div className="mt-4 space-y-0.5">
+                  {/* Supplementary 01 */}
+                  <div className="bg-white p-4  flex items-center gap-4">
+                    <div className="w-9 h-9 rounded-full bg-[#D5C7FF]"></div>
+                    <div className="text-sm font-normal font-noto">
+                      <p className="font-medium text-base">
+                        Supplementary 01 (Lavender Blue)
+                      </p>
+                      <p className="text-[#666666] text-xs">
+                        #D5C7FF &nbsp; | &nbsp; Lavender Blue/06-base
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Supplementary 02 */}
+                  <div className="bg-white p-4  flex items-center gap-4">
+                    <div className="w-9 h-9 rounded-full bg-[#FFEEA2]"></div>
+                    <div className="text-sm font-normal font-noto">
+                      <p className="font-medium text-base">
+                        Supplementary 02 (Yellow)
+                      </p>
+                      <p className="text-[#666666] text-xs">
+                        #FFEEA2 &nbsp; | &nbsp; Yellow/06-base
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Supplementary 03 */}
+                  <div className="bg-white p-4  flex items-center gap-4">
+                    <div className="w-9 h-9 rounded-full bg-[#FFD9A0]"></div>
+                    <div className="text-sm font-normal font-noto">
+                      <p className="font-medium text-base">
+                        Supplementary 03 (Caramel)
+                      </p>
+                      <p className="text-[#666666] text-xs">
+                        #FFD9A0 &nbsp; | &nbsp; Caramel/06-base
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Typography Section */}
+          <div className=" mt-16 mb-16">
+            <p className="text-[#F690A1] font-bold text-[2rem] mb-11">
+              📍 Typography
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-[#CBEBEB] rounded-lg  ">
+                <div className="flex flex-row items-center py-7 px-12">
+                  <div className="w-3 h-3 mr-7 bg-[#377D7D]"></div>
+                  <div>
+                    <p className="text-xs font-normal text-[#377D7D] ">
+                      Primary Typeface
+                    </p>
+                    <p className="text-2xl font-bold text-[#377D7D] ">
+                      Fredoka One
+                    </p>
+                    <p className="text-xs font-normal text-[#377D7D] ">
+                      01 LOWER CASE | 02 REGULAR
+                    </p>
+                  </div>
+                </div>
+                <div className="text-[2rem] text-justify font-fredoka font-semibold text-[#377D7D] w-[25rem] mx-[5.375rem] tracking-widest leading-relaxed mb-12">
+                  a b c d e f g h i j <br></br>k l m n o p q r s<br></br> t u v
+                  w x y z
+                </div>
+              </div>
+              <div className="bg-[#CBEBEB] rounded-lg  ">
+                <div className="flex flex-row items-center py-7 px-12">
+                  <div className="w-3 h-3 mr-7 bg-[#377D7D]"></div>
+                  <div>
+                    <p className="text-xs font-normal text-[#377D7D]">
+                      Primary Typeface
+                    </p>
+                    <p className="text-2xl font-bold text-[#377D7D]">
+                      Noto Sans
+                    </p>
+                    <p className="text-xs font-normal text-[#377D7D]">
+                      01 REGULAR | 02 SEMI BOLD | 03 BOLD
+                    </p>
+                  </div>
+                </div>
+                <div className="text-[2rem] font-noto font-semibold text-[#377D7D] w-[25rem] mx-[5.375rem] tracking-widest leading-relaxed mb-12 ">
+                  a b c d e f g h i j <br></br>k l m n o p q r s<br></br> t u v
+                  w x y z
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Iconography */}
+          <div className="">
+            <p className=" text-[#F690A1] font-bold text-[2rem] mb-12">
+              📍 ICONOGRAPHY
+            </p>
+            {/* First Row - 10 Icons */}
+            <div className="flex justify-center  ">
+              <Image
+                src="/images/Icons.webp" // Replace with actual path
+                alt="Main UI with annotations"
+                width={1168}
+                height={220}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="w-full mx-auto mt-20  px-6 bg-[#E8F4F4] relative overflow-hidden">
+          <div
+            style={{
+              background: "#E9F6F6",
+              width: "100%",
+              height: "100%",
+              borderBottomLeftRadius: "50% 100%",
+              borderBottomRightRadius: "50% 100%",
+              boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
+            }}
+            className="relative w-full overflow-hidden bg-[#E9F6F6] "
+          >
+            <div className="relative flex flex-col gap-2 items-center  pb-24">
+              <h2 className="text-[#52B7B7] text-5xl font-extrabold">
+                Information Architecture
+              </h2>
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-[46.875rem]">
+                People often use the word “Information Architecture” to mean the
+                menus on website or apps, but thats not really correct. while
+                menus are a part of IA. they’re really only one part of it.
+                Information architecture is all about organisation of
+                information in a clear and logical way. such organisation
+                follows a clear purpose helping users navigate complex sets of
+                information
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center mt-[6rem] ">
+            <Image
+              src="/images/EF-INFO.webp" // Replace with actual path
+              alt="Main UI with annotations"
+              width={1147}
+              height={1600}
+              className="object-contain"
+            />
+          </div>
+        </div>
+        <div className="w-full mx-auto  px-6 bg-[#E9F6F6] relative overflow-hidden">
+          <div
+            style={{
+              background: "#E9F6F6",
+              width: "100%",
+              height: "100%",
+              borderBottomLeftRadius: "50% 100%",
+              borderBottomRightRadius: "50% 100%",
+              boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
+              top: "10rem",
+            }}
+            className="relative w-full overflow-hidden bg-[#E9F6F6] "
+          >
+            <div className="relative flex flex-col gap-2 items-center  pb-24">
+              <h2 className="text-[#52B7B7] text-5xl font-extrabold">
+                UI Design
+              </h2>
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-[47rem]">
+                Every components layout structures, and color combinations are
+                backed by strong human psychology of perceiving experiences
+                quoted by sir Don Norman in the book - The design of everyday
+                Things.
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center  ">
+            <Image
+              src="/images/UIDesgin.webp" // Replace with actual path
+              alt="Main UI with annotations"
+              width={1440}
+              height={2000}
+              className="object-contain"
             />
           </div>
         </div>
       </section>
-      <ContactUs />
-      <Footer />
     </div>
   );
 }
