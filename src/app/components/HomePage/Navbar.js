@@ -385,6 +385,32 @@ export default function Navbar() {
                   </div>
                   <div className="space-y-1 pt-2">
                     <p className="font-semibold text-[#332771] text-sm">
+                      Game Development
+                    </p>
+                    <Link
+                      href="/game-animation"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      2D & 3D Game Animation
+                    </Link>
+                    <Link
+                      href="/unity-unreal"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      Unity 3D & Unreal Engine Development
+                    </Link>
+                    <Link
+                      href="/ar-vr-game-development"
+                      onClick={handleMobileMenuItemClick}
+                      className="block hover:text-red-600"
+                    >
+                      AR/VR Game Development
+                    </Link>
+                  </div>
+                  <div className="space-y-1 pt-2">
+                    <p className="font-semibold text-[#332771] text-sm">
                       Startup Support & Consulting
                     </p>
                     <Link

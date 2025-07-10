@@ -89,6 +89,24 @@ export default function ServicesDrop({ onItemClick }) {
               ))}
             </ul>
           </div>
+          <div>
+            <h3 className="text-base sm:text-lg lg:text-[1.25rem] xl:text-[1.3rem] font-semibold text-[#332771] mb-2 lg:mb-3">
+              Game Development
+            </h3>
+            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem] xl:text-[0.9rem]">
+              {groupedServices["Game Development"]?.map((service) => (
+                <li key={service.id}>
+                  <Link
+                    href={service.route}
+                    onClick={onItemClick}
+                    className="hover:text-red-600 hover:font-semibold block py-0.5 transition-colors duration-200"
+                  >
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Column 3: Startup Support & Consulting + Enterprise Business Solutions */}

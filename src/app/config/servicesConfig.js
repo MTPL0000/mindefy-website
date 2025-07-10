@@ -111,6 +111,31 @@ export const servicesData = [
     component: "CloudDevOps",
     description: "Cloud and DevOps solutions",
   },
+  // GAME DEVELOPMENT
+  {
+    id: "2D & 3D Game Animation",
+    title: "2D & 3D Game Animation",
+    category: "Game Development",
+    route: "/game-animation",
+    component: "gameAnimation",
+    description: "2D & 3D Game Animation",
+  },
+  {
+    id: "Unity and unreal game development",
+    title: "Unity and unreal game development",
+    category: "Game Development",
+    route: "/unity-unreal",
+    component: "unityunreal",
+    description: "Unity and unreal game development",
+  },
+  {
+    id: "AR VR Game Development",
+    title: "AR VR Game Development",
+    category: "Game Development",
+    route: "/ar-vr-game-development",
+    component: "AR VR Game Development",
+    description: "AR VR Game Development",
+  },
 
   // Startup Support & Consulting
   {
