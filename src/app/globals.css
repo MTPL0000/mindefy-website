@@ -7,6 +7,18 @@
   --font-poppins: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
 
+.writing-vertical-lr {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+.font-noto {
+  font-family: var(--font-noto);
+}
+
+.font-fredoka {
+  font-family: var(--font-fredoka);
+
+
 /* Enable smooth scrolling for the page */
 html {
   scroll-behavior: smooth;
