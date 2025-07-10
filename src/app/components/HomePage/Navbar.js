@@ -152,7 +152,7 @@ export default function Navbar() {
 
                 {/* Actual dropdown positioned to take full width */}
                 <div className="fixed left-0 top-[4.5rem] w-full flex justify-center z-40">
-                  <div className="w-full max-w-none px-4 sm:px-6 lg:px-8">
+                  <div className="w-full max-w-none">
                     <ServicesDrop onItemClick={handleDesktopDropdownItemClick} />
                   </div>
                 </div>

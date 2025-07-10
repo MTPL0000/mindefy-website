@@ -5,7 +5,7 @@ import { groupedServices } from "../../config/servicesConfig";
 
 export default function ServicesDrop({ onItemClick }) {
   return (
-    <div className="w-full pt-4 sm:pt-6 lg:pt-8 bg-white shadow-lg rounded-[0.5rem] z-20">
+    <div className="w-full pt-4 sm:pt-6 lg:pt-8 bg-white shadow-lg z-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20 pb-4 sm:pb-6 lg:pb-8">
         {/* Column 1: Modern Application Development + IT/Staff Argumentation */}
         <div className="space-y-4 sm:space-y-6">
