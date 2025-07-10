@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { groupedServices } from "../../config/servicesConfig";
 
-export default function ServicesDrop() {
+export default function ServicesDrop({ onItemClick }) {
   return (
     <div className="w-full pt-4 sm:pt-6 lg:pt-8 bg-white shadow-lg rounded-[0.5rem] z-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20 pb-4 sm:pb-6 lg:pb-8">
@@ -18,6 +18,7 @@ export default function ServicesDrop() {
                 <li key={service.id}>
                   <Link
                     href={service.route}
+                    onClick={onItemClick}
                     className="hover:text-red-600 hover:font-semibold block py-0.5 transition-colors duration-200"
                   >
                     {service.title}
@@ -36,6 +37,7 @@ export default function ServicesDrop() {
                 <li key={service.id}>
                   <Link
                     href={service.route}
+                    onClick={onItemClick}
                     className="hover:text-red-600 hover:font-semibold block py-0.5 transition-colors duration-200"
                   >
                     {service.title}
@@ -58,6 +60,7 @@ export default function ServicesDrop() {
                   <li key={service.id}>
                     <Link
                       href={service.route}
+                      onClick={onItemClick}
                       className="hover:text-red-600 hover:font-semibold block py-0.5 transition-colors duration-200"
                     >
                       {service.title}
@@ -77,6 +80,7 @@ export default function ServicesDrop() {
                 <li key={service.id}>
                   <Link
                     href={service.route}
+                    onClick={onItemClick}
                     className="hover:text-red-600 hover:font-semibold block py-0.5 transition-colors duration-200"
                   >
                     {service.title}
@@ -98,6 +102,7 @@ export default function ServicesDrop() {
                 <li key={service.id}>
                   <Link
                     href={service.route}
+                    onClick={onItemClick}
                     className="hover:text-red-600 hover:font-semibold block py-0.5 transition-colors duration-200"
                   >
                     {service.title}
@@ -116,6 +121,7 @@ export default function ServicesDrop() {
                 <li key={service.id}>
                   <Link
                     href={service.route}
+                    onClick={onItemClick}
                     className="hover:text-red-600 hover:font-semibold block py-0.5 transition-colors duration-200"
                   >
                     {service.title}

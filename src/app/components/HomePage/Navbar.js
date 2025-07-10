@@ -35,6 +35,13 @@ export default function Navbar() {
     setMobileProjectsOpen(false);
   };
 
+  // Close all desktop dropdowns when any dropdown item is clicked
+  const handleDesktopDropdownItemClick = () => {
+    setShowServicesDropdown(false);
+    setShowProductsDropdown(false);
+    setShowProjectsDropdown(false);
+  };
+
   // Function to scroll to contact section
   const scrollToContact = () => {
     // Close mobile menu first
@@ -146,7 +153,7 @@ export default function Navbar() {
                 {/* Actual dropdown positioned to take full width */}
                 <div className="fixed left-0 top-[4.5rem] w-full flex justify-center z-40">
                   <div className="w-full max-w-none px-4 sm:px-6 lg:px-8">
-                    <ServicesDrop />
+                    <ServicesDrop onItemClick={handleDesktopDropdownItemClick} />
                   </div>
                 </div>
               </>
@@ -173,7 +180,7 @@ export default function Navbar() {
             {/* Products Dropdown */}
             {showProductsDropdown && (
               <div className="absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40">
-                <ProductsDropdown />
+                <ProductsDropdown onItemClick={handleDesktopDropdownItemClick} />
               </div>
             )}
           </div>
@@ -198,7 +205,7 @@ export default function Navbar() {
             {/* Projects Dropdown */}
             {showProjectsDropdown && (
               <div className="absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40">
-                <ProjectDropdown />
+                <ProjectDropdown onItemClick={handleDesktopDropdownItemClick} />
               </div>
             )}
           </div>

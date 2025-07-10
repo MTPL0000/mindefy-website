@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-export default function ProductsDropdown() {
+export default function ProductsDropdown({ onItemClick }) {
   return (
     <div className="pt-4 sm:pt-6 lg:pt-8 bg-white shadow-lg rounded-[0.5rem] z-20 min-w-[120px] sm:min-w-[150px]">
       {/* Column 1: YourHour Application */}
@@ -10,6 +10,7 @@ export default function ProductsDropdown() {
           <li>
             <Link
               href="/your-hour"
+              onClick={onItemClick}
               className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >
               YourHour
