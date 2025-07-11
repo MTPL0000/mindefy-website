@@ -1308,8 +1308,8 @@ export default function EarlyFoods() {
           </div>
         </div>
         {/* Competitor Analysis Section */}
-        <div className="w-full mx-auto mt-20  bg-[#E9F6F6]">
-          <div className=" mx-auto py-12">
+        <div className="w-full mx-auto mt-12 sm:mt-16 lg:mt-20 bg-[#E9F6F6]">
+          <div className="mx-auto py-8 sm:py-10 lg:py-12">
             {/* Header Section */}
             <div
               style={{
@@ -1320,13 +1320,13 @@ export default function EarlyFoods() {
                 borderBottomRightRadius: "50% 100%",
                 boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
               }}
-              className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
+              className="relative w-full overflow-hidden bg-[#E9F6F6] mb-8 sm:mb-10 lg:mb-12"
             >
-              <div className="relative flex flex-col gap-2 items-center pt-16 pb-24">
-                <h2 className="text-[#52B7B7] text-5xl font-extrabold">
+              <div className="relative flex flex-col gap-2 items-center pt-12 sm:pt-14 lg:pt-16 pb-16 sm:pb-20 lg:pb-24 px-4 sm:px-6">
+                <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center">
                   Competitor Analysis
                 </h2>
-                <p className="text-[#377D7D]  leading-relaxed text-base font-normal text-center w-[47rem]">
+                <p className="text-[#377D7D] leading-relaxed text-sm sm:text-base font-normal text-center w-full max-w-[47rem] px-4">
                   To evaluate the features, usability, and user experience of
                   competitors' products or services. This analysis helps
                   identify strengths, weaknesses, opportunities, and threats in
@@ -1337,13 +1337,13 @@ export default function EarlyFoods() {
             </div>
 
             {/* Competitors Container */}
-            <div className="space-y-7 w-[45.81rem] mx-auto">
+            <div className="space-y-6 sm:space-y-7 w-full max-w-[45.81rem] mx-auto px-4 sm:px-6 lg:px-0">
               {/* Manna Foods */}
               <div className="">
-                <div className="flex items-center ">
+                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0">
                   {/* Logo Section */}
-                  <div className="flex-shrink-0">
-                    <div className="relative w-3xs aspect-square mr-7 mx-auto ">
+                  <div className="flex-shrink-0 order-1 sm:order-1">
+                    <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square mr-0 sm:mr-7 mx-auto">
                       <Image
                         src="/images/EF(manna).svg"
                         alt="Maana"
@@ -1354,28 +1354,28 @@ export default function EarlyFoods() {
                   </div>
 
                   {/* Content Section */}
-                  <div className="flex-1 w-[28.06rem]">
-                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                  <div className="flex-1 w-full sm:w-[28.06rem] order-2 sm:order-2">
+                    <h3 className="text-[#2B7575] text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center sm:text-left">
                       Manna Foods
                     </h3>
 
                     {/* Unique Value Proposition */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Unique value proposition
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         Manna Foods is offering healthy, organic, and GMO-free
                         baby food products.
                       </p>
                     </div>
 
                     {/* Advantages */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Advantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         The advantages include its continued focus on producing
                         natural, organic products as well as its established
                         reputation in the industry.
@@ -1384,10 +1384,10 @@ export default function EarlyFoods() {
 
                     {/* Disadvantages */}
                     <div>
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Disadvantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         The disadvantage includes the relatively high cost of
                         its products.
                       </p>
@@ -1398,30 +1398,30 @@ export default function EarlyFoods() {
 
               {/* My Toddler */}
               <div className="">
-                <div className="flex items-center ">
+                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0">
                   {/* Content Section */}
-                  <div className="flex-1  ">
-                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                  <div className="flex-1 w-full order-2 sm:order-1">
+                    <h3 className="text-[#2B7575] text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center sm:text-left">
                       My Toddler
                     </h3>
 
                     {/* Unique Value Proposition */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Unique value proposition
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         My Toddler, the unique value proposition is providing
                         affordable and convenient baby food and meal options.
                       </p>
                     </div>
 
                     {/* Advantages */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Advantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         The advantages include its competitive pricing and
                         easy-to-access platform, as well as its selection of
                         healthy food items.
@@ -1430,10 +1430,10 @@ export default function EarlyFoods() {
 
                     {/* Disadvantages */}
                     <div>
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Disadvantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         The disadvantage includes its limited range of product
                         offerings.
                       </p>
@@ -1441,8 +1441,8 @@ export default function EarlyFoods() {
                   </div>
 
                   {/* Logo Section */}
-                  <div className="flex-shrink-0">
-                    <div className="relative w-3xs aspect-square ml-7 mx-auto">
+                  <div className="flex-shrink-0 order-1 sm:order-2">
+                    <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square ml-0 sm:ml-7 mx-auto">
                       <Image
                         src="/images/EF2.png"
                         alt="Web Application Development - Developer working with web applications"
@@ -1456,10 +1456,10 @@ export default function EarlyFoods() {
               </div>
               {/* TOTS AND MOMS */}
               <div className="">
-                <div className="flex items-center ">
+                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0">
                   {/* Logo Section */}
-                  <div className="flex-shrink-0">
-                    <div className="relative w-3xs aspect-square mr-7 mx-auto ">
+                  <div className="flex-shrink-0 order-1 sm:order-1">
+                    <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square mr-0 sm:mr-7 mx-auto">
                       <Image
                         src="/images/EF3.png"
                         alt="Maana"
@@ -1470,17 +1470,17 @@ export default function EarlyFoods() {
                   </div>
 
                   {/* Content Section */}
-                  <div className="flex-1 w-[28.06rem]">
-                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                  <div className="flex-1 w-full sm:w-[28.06rem] order-2 sm:order-2">
+                    <h3 className="text-[#2B7575] text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center sm:text-left">
                       Tots and Moms
                     </h3>
 
                     {/* Unique Value Proposition */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Unique value proposition
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         Tots and Moms, the unique value proposition is
                         highlighting health and nutrition in its product
                         offerings.
@@ -1488,11 +1488,11 @@ export default function EarlyFoods() {
                     </div>
 
                     {/* Advantages */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Advantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         The advantages include its focus on healthy and natural
                         ingredients, as well as its commitment to customer
                         satisfaction.
@@ -1501,10 +1501,10 @@ export default function EarlyFoods() {
 
                     {/* Disadvantages */}
                     <div>
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Disadvantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         The disadvantage includes its lack of a direct to
                         consumer e-commerce platform.
                       </p>
@@ -1515,30 +1515,30 @@ export default function EarlyFoods() {
 
               {/* My TIMIOS */}
               <div className="">
-                <div className="flex items-center ">
+                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0">
                   {/* Content Section */}
-                  <div className="flex-1  ">
-                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                  <div className="flex-1 w-full order-2 sm:order-1">
+                    <h3 className="text-[#2B7575] text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center sm:text-left">
                       My Timios
                     </h3>
 
                     {/* Unique Value Proposition */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Unique value proposition
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         The unique value proposition is providing a personalized
                         shopping cart based on a customer's individual needs.
                       </p>
                     </div>
 
                     {/* Advantages */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Advantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         The advantages include its personalized shopping
                         experience and its range of organic, whole food options.
                       </p>
@@ -1546,10 +1546,10 @@ export default function EarlyFoods() {
 
                     {/* Disadvantages */}
                     <div>
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Disadvantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         The disadvantage includes the high price of its
                         products.
                       </p>
@@ -1557,8 +1557,8 @@ export default function EarlyFoods() {
                   </div>
 
                   {/* Logo Section */}
-                  <div className="flex-shrink-0">
-                    <div className="relative w-3xs aspect-square ml-7 mx-auto">
+                  <div className="flex-shrink-0 order-1 sm:order-2">
+                    <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square ml-0 sm:ml-7 mx-auto">
                       <Image
                         src="/images/EF4.png"
                         alt="Web Application Development - Developer working with web applications"
@@ -1573,10 +1573,10 @@ export default function EarlyFoods() {
 
               {/* SLURP FARM */}
               <div className="">
-                <div className="flex items-center ">
+                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0">
                   {/* Logo Section */}
-                  <div className="flex-shrink-0">
-                    <div className="relative w-3xs aspect-square mr-7 mx-auto ">
+                  <div className="flex-shrink-0 order-1 sm:order-1">
+                    <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square mr-0 sm:mr-7 mx-auto">
                       <Image
                         src="/images/EF5.png"
                         alt="Maana"
@@ -1587,17 +1587,17 @@ export default function EarlyFoods() {
                   </div>
 
                   {/* Content Section */}
-                  <div className="flex-1 w-[28.06rem]">
-                    <h3 className="text-[#2B7575] text-2xl font-bold mb-6">
+                  <div className="flex-1 w-full sm:w-[28.06rem] order-2 sm:order-2">
+                    <h3 className="text-[#2B7575] text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center sm:text-left">
                       Slurrp Farm
                     </h3>
 
                     {/* Unique Value Proposition */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Unique value proposition
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         Slurp Farm offers organic, preservative-free, and
                         healthy food products for children, focusing on the
                         provision of essential nutrients.
@@ -1605,11 +1605,11 @@ export default function EarlyFoods() {
                     </div>
 
                     {/* Advantages */}
-                    <div className="">
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                    <div className="mb-3 sm:mb-4">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Advantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         Transparent Branding: Their focus on transparency about
                         their ingredients builds trust with customers.
                       </p>
@@ -1617,10 +1617,10 @@ export default function EarlyFoods() {
 
                     {/* Disadvantages */}
                     <div>
-                      <h4 className="text-[#333333] text-xl font-semibold mb-2">
+                      <h4 className="text-[#333333] text-lg sm:text-xl font-semibold mb-2">
                         Disadvantages
                       </h4>
-                      <p className="text-[#2B7575] text-base font-medium leading-relaxed mb-2 text-justify">
+                      <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed mb-2 text-justify">
                         Perception of Taste: While Slurp Farm works hard to make
                         their products tasty, some children (or their parents)
                         may prefer the taste of less healthy, but more
