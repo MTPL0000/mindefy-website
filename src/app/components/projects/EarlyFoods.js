@@ -1205,20 +1205,20 @@ export default function EarlyFoods() {
             </div>
 
             {/* Diagram Description */}
-            <p className=" text-justify mb-12 text-base text-[#2B7575] mt-10 font-medium">
+            <p className="text-justify mb-8 sm:mb-10 lg:mb-12 text-sm sm:text-base text-[#2B7575] mt-8 sm:mt-10 font-medium px-4 sm:px-6 lg:px-0">
               This research focuses on the impact of different aspects of
               e-commerce platforms on the perceived value of the customer and
               their subsequent purchase intention. The hypotheses can be
               summarized as follows:
             </p>
             {/* Detailed Explanations */}
-            <div className="space-y-12">
+            <div className="space-y-8 sm:space-y-10 lg:space-y-12 px-4 sm:px-6 lg:px-0">
               {/* E-store Design */}
-              <div className="   flex flex-row gap-9">
-                <h4 className="text-[#2B7575] w-[13.75rem] text-2xl font-semibold mb-3">
+              <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-9">
+                <h4 className="text-[#2B7575] w-full lg:w-[13.75rem] text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 flex-shrink-0">
                   E-store Design:
                 </h4>
-                <p className="text-[#2B7575] text-justify w-[55.43rem] font-medium text-base leading-relaxed">
+                <p className="text-[#2B7575] text-justify w-full lg:w-[55.43rem] font-medium text-sm sm:text-base leading-relaxed">
                   The design of an online shop, including elements like page
                   layout, art design, search functions, and convenience,
                   significantly affects the customers' perceived emotional and
@@ -1228,11 +1228,11 @@ export default function EarlyFoods() {
               </div>
 
               {/* Order Fulfillment */}
-              <div className=" flex flex-row gap-9">
-                <h4 className="text-[#2B7575] w-[13.75rem] text-2xl font-semibold mb-3">
+              <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-9">
+                <h4 className="text-[#2B7575] w-full lg:w-[13.75rem] text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 flex-shrink-0">
                   Order Fulfillment:
                 </h4>
-                <p className="text-[#2B7575] text-justify w-[55.43rem] font-medium text-base leading-relaxed">
+                <p className="text-[#2B7575] text-justify w-full lg:w-[55.43rem] font-medium text-sm sm:text-base leading-relaxed">
                   The consistency of an e-commerce platform in fulfilling its
                   promises to customers impacts the perceived functional and
                   emotional value. Inconsistencies can lead to a decrease in
@@ -1241,11 +1241,11 @@ export default function EarlyFoods() {
               </div>
 
               {/* Communication Service */}
-              <div className=" flex flex-row gap-9">
-                <h4 className="text-[#2B7575] w-[13.75rem] text-2xl font-semibold mb-3">
+              <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-9">
+                <h4 className="text-[#2B7575] w-full lg:w-[13.75rem] text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 flex-shrink-0">
                   Communication Service:
                 </h4>
-                <p className="text-[#2B7575] text-justify w-[55.43rem] font-medium text-base leading-relaxed">
+                <p className="text-[#2B7575] text-justify w-full lg:w-[55.43rem] font-medium text-sm sm:text-base leading-relaxed">
                   The quality of the customer service, including timely and
                   professional responses, affects the perceived emotional and
                   functional value. Frequent communication and exchanges between
@@ -1255,11 +1255,11 @@ export default function EarlyFoods() {
               </div>
 
               {/* Security */}
-              <div className=" flex flex-row gap-9">
-                <h4 className="text-[#2B7575] w-[13.75rem] text-2xl font-semibold mb-3">
+              <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-9">
+                <h4 className="text-[#2B7575] w-full lg:w-[13.75rem] text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 flex-shrink-0">
                   Security:
                 </h4>
-                <p className="text-[#2B7575] text-justify w-[55.43rem] font-medium text-base leading-relaxed">
+                <p className="text-[#2B7575] text-justify w-full lg:w-[55.43rem] font-medium text-sm sm:text-base leading-relaxed">
                   The image of security and confidentiality is crucial for easy
                   and safe online shopping. Concerns about personal data leaks,
                   unsafe payment methods, and unclear commissions can impact the
@@ -1268,11 +1268,11 @@ export default function EarlyFoods() {
               </div>
 
               {/* Perceived Value and Purchase Intention */}
-              <div className="">
-                <h4 className="text-[#2B7575] text-2xl font-bold ">
+              <div className="mt-6 sm:mt-8 lg:mt-10">
+                <h4 className="text-[#2B7575] text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3">
                   Perceived Value and Purchase Intention:
                 </h4>
-                <p className="text-[#2B7575] text-base font-medium leading-relaxed">
+                <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed">
                   A positive perceived value, both emotional and functional, can
                   significantly drive consumers' purchasing behavior. Higher
                   perceived benefits compared to costs result in stronger
@@ -1282,10 +1282,10 @@ export default function EarlyFoods() {
 
               {/* Mediating Effect */}
               <div className="">
-                <h4 className="text-[#2B7575] text-2xl font-bold">
+                <h4 className="text-[#2B7575] text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3">
                   Mediating Effect of Perceived Value:
                 </h4>
-                <p className="text-[#2B7575] text-base font-medium leading-relaxed">
+                <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed">
                   The image of the online store can impact customers' perceived
                   value, which in turn influences their purchase intentions.
                   Both emotional and functional value play a mediating role
@@ -1296,7 +1296,7 @@ export default function EarlyFoods() {
 
               {/* Context Summary */}
               <div className="">
-                <p className="text-[#2B7575] text-base font-medium leading-relaxed">
+                <p className="text-[#2B7575] text-sm sm:text-base font-medium leading-relaxed">
                   In the context of a baby food online store, these hypotheses
                   suggest that factors like design, order fulfillment,
                   communication service, and security strongly influence the
