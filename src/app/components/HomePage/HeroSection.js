@@ -1,5 +1,6 @@
 // src/app/components/HeroSection.js
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -35,9 +36,9 @@ export default function HeroSection() {
           Proven Technology Frameworks and Acting as Native Accelerators.
         </p>
         <div className="mt-8 sm:mt-12 lg:mt-16">
-          <button className="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-800 transition">
+          <Link href="/mindful-ux" className="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-800 transition">
             Learn More →
-          </button>
+          </Link>
         </div>
 
         {/* Client Logos */}

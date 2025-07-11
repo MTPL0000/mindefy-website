@@ -215,7 +215,7 @@ export default function JEGO() {
                 </div>
               </div>
               <a
-                href="#"
+                href="/jego"
                 className=" ml-2 inline-flex items-center text-lg font-medium text-[#6A53E1] hover:underline group transition-all duration-300"
               >
                 VIEW CASE STUDY

@@ -8,7 +8,7 @@ export default function Blog() {
         {/* Blog Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <p className="tracking-widest text-[#FF5225] text-sm sm:text-base font-bold mb-4 sm:mb-6 uppercase">
-            BLOG
+            BLOGS
           </p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-normal leading-tight">
             <span className="text-gray-900 font-bold">Insights & Advice</span>{" "}
@@ -134,11 +134,11 @@ export default function Blog() {
         </div>
 
         {/* View All Button */}
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="bg-gray-900 text-white py-3 sm:py-4 px-6 sm:px-8 rounded-full hover:bg-gray-800 cursor-pointer transition-colors duration-300 text-sm sm:text-base lg:text-lg font-medium">
             View All
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

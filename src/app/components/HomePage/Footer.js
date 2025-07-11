@@ -76,41 +76,58 @@ export default function Footer() {
                 COMPANY
               </h3>
               <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
+                <a
+                  href="/about-us"
+                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                >
                   About
-                </p>
+                </a>
 
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
+                <a
+                  href="/testimonials"
+                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                >
                   Testimonials
-                </p>
-
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
-                  Blog
-                </p>
+                </a>
               </div>
             </div>
 
             {/* Product */}
             <div>
               <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
-                PRODUCT
+                PORTFOLIO
               </h3>
-              <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
+              <div className="space-y-4 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
+                <a
+                  href="/your-hour"
+                  className="block  hover:opacity-100 cursor-pointer transition-opacity"
+                >
                   YourHour
-                </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
-                  Jego
-                </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
-                  MachONE
-                </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
-                  SoliStack
-                </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
+                </a>
+                <a
+                  href="/spector"
+                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  Spector
+                </a>
+                <a
+                  href="/early-foods"
+                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  Early Foods
+                </a>
+                <a
+                  href="/jego"
+                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  JEGO
+                </a>
+                <a
+                  href="/digi-bill"
+                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                >
                   GreenBill
-                </p>
+                </a>
               </div>
             </div>
 
@@ -120,18 +137,36 @@ export default function Footer() {
                 SERVICES
               </h3>
               <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
-                  Android App Development
-                </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
+                <a
+                  href="/hybrid-app-development"
+                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                >
                   Hybrid App Development
-                </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
-                  Enterprise Business Development
-                </p>
-                <p className="hover:opacity-100 cursor-pointer transition-opacity">
-                  IT/Staff Augmentation
-                </p>
+                </a>
+                <a
+                  href="/startup-support"
+                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  Startup Support & Consulting
+                </a>
+                <a
+                  href="/digital-transformation"
+                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  Digital Transformation
+                </a>
+                <a
+                  href="/mvp-development"
+                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  MVP Dev. & PMF Test
+                </a>
+                <a
+                  href="/staff-services"
+                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  Staff Augmenation Services
+                </a>
               </div>
             </div>
           </div>

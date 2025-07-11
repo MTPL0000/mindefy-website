@@ -481,7 +481,7 @@ export default function YourHourProduct() {
                   </div>
                   <div className="flex flex-col items-start justify-center gap-4">
                     <h3 className="text-xl md:text-2xl font-semibold text-[#000000] text-center md:text-left">
-                      overloading with Features
+                      Overloading with Features
                     </h3>
                     <p className="text-sm md:text-base font-normal text-[#000000] leading-relaxed text-center md:text-left">
                       Despite numerous ideas and feature requests, the team

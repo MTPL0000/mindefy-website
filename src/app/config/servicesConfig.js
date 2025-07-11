@@ -122,7 +122,7 @@ export const servicesData = [
   },
   {
     id: "Unity and unreal game development",
-    title: "Unity and unreal game development",
+    title: "Unity and Unreal game development",
     category: "Game Development",
     route: "/unity-unreal",
     component: "unityunreal",
