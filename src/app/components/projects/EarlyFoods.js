@@ -1009,7 +1009,7 @@ export default function EarlyFoods() {
         </div>
 
         {/* Extensive Research Section */}
-        <div className="w-full mx-auto mt-12 sm:mt-16 bg-[#E8F4F4]">
+        <div className="w-full md:w-4xl lg:w-6xl mx-auto mt-12 sm:mt-16 bg-[#E8F4F4]">
           <div className="mx-auto px-4 sm:px-6">
             {/* Header Section */}
             <div className="flex flex-col lg:flex-row justify-between items-start mb-6 sm:mb-8 gap-6 lg:gap-0">
@@ -1108,102 +1108,102 @@ export default function EarlyFoods() {
                 Baby Food E-Store Image
               </h3>
             </div>
+            <div className="hidden lg:block">
+              <div className="w-[60.5rem] mx-auto  flex flex-row justify-between">
+                <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
+                  <span className="text-[#52B7B7] text-2xl font-bold">S</span>
+                </div>
+                <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
+                  <span className="text-[#52B7B7] text-2xl font-bold">O</span>
+                </div>
+                <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
+                  <span className="text-[#52B7B7] text-2xl font-bold">R</span>
+                </div>
+              </div>
+              {/* S-O-R Model Diagram */}
+              <div className=" w-[60.5rem] mx-auto  mb-8">
+                <div className="flex justify-center items-center ">
+                  {/* S Section */}
+                  <div className="">
+                    <div className="space-y-5">
+                      <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-8 pr-16 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                        <p className="  text-sm  w-[9.06rem] font-semibold">
+                          E-Store Design
+                        </p>
+                      </div>
+                      <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                        <span className="text-sm  w-[9.06rem] font-semibold">
+                          Order Fulfilment
+                        </span>
+                      </div>
+                      <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                        <span className="text-sm  w-[9.06rem] font-semibold">
+                          Communication
+                        </span>
+                      </div>
+                      <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                        <span className="text-sm  w-[9.06rem] font-semibold">
+                          Security
+                        </span>
+                      </div>
+                    </div>
+                  </div>
 
-            <div className="w-[60.5rem] mx-auto  flex flex-row justify-between">
-              <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
-                <span className="text-[#52B7B7] text-2xl font-bold">S</span>
-              </div>
-              <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
-                <span className="text-[#52B7B7] text-2xl font-bold">O</span>
-              </div>
-              <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
-                <span className="text-[#52B7B7] text-2xl font-bold">R</span>
+                  {/* Arrow 1 */}
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-full ">
+                      <Image
+                        src="/images/EF-ER1.png"
+                        alt="arrow"
+                        width={133}
+                        height={288}
+                        className=" object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  {/* O Section */}
+                  <div className="">
+                    <div className="space-y-5">
+                      <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                        <span className="text-sm  w-[9.06rem] font-semibold">
+                          Emotional Value
+                        </span>
+                      </div>
+                      <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                        <span className="text-sm  w-[9.06rem] font-semibold">
+                          Functional Value
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Arrow 2 */}
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-full ">
+                      <Image
+                        src="/images/EF-ER2.png"
+                        alt="arrow"
+                        width={133}
+                        height={288}
+                        className=" object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  {/* R Section */}
+                  <div className="">
+                    <div>
+                      <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
+                        <span className="text-sm  w-[9.06rem] font-semibold">
+                          Purchase Intention
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            {/* S-O-R Model Diagram */}
-            <div className=" w-[60.5rem] mx-auto  mb-8">
-              <div className="flex justify-center items-center ">
-                {/* S Section */}
-                <div className="">
-                  <div className="space-y-5">
-                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-8 pr-16 py-5 rounded-3xl  border-l-4 border-[#F88598]">
-                      <p className="  text-sm  w-[9.06rem] font-semibold">
-                        E-Store Design
-                      </p>
-                    </div>
-                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
-                      <span className="text-sm  w-[9.06rem] font-semibold">
-                        Order Fulfilment
-                      </span>
-                    </div>
-                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
-                      <span className="text-sm  w-[9.06rem] font-semibold">
-                        Communication
-                      </span>
-                    </div>
-                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
-                      <span className="text-sm  w-[9.06rem] font-semibold">
-                        Security
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Arrow 1 */}
-                <div className="flex flex-col items-center">
-                  <div className="relative w-full ">
-                    <Image
-                      src="/images/EF-ER1.png"
-                      alt="arrow"
-                      width={133}
-                      height={288}
-                      className=" object-contain"
-                    />
-                  </div>
-                </div>
-
-                {/* O Section */}
-                <div className="">
-                  <div className="space-y-5">
-                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
-                      <span className="text-sm  w-[9.06rem] font-semibold">
-                        Emotional Value
-                      </span>
-                    </div>
-                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
-                      <span className="text-sm  w-[9.06rem] font-semibold">
-                        Functional Value
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Arrow 2 */}
-                <div className="flex flex-col items-center">
-                  <div className="relative w-full ">
-                    <Image
-                      src="/images/EF-ER2.png"
-                      alt="arrow"
-                      width={133}
-                      height={288}
-                      className=" object-contain"
-                    />
-                  </div>
-                </div>
-
-                {/* R Section */}
-                <div className="">
-                  <div>
-                    <div className="bg-[#F4F1FB] w-[12.31rem] mx-auto pl-9 py-5 rounded-3xl  border-l-4 border-[#F88598]">
-                      <span className="text-sm  w-[9.06rem] font-semibold">
-                        Purchase Intention
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Diagram Description */}
             <p className="text-justify mb-8 sm:mb-10 lg:mb-12 text-sm sm:text-base text-[#2B7575] mt-8 sm:mt-10 font-medium px-4 sm:px-6 lg:px-0">
               This research focuses on the impact of different aspects of
