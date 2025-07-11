@@ -547,13 +547,13 @@ export default function Navbar() {
               </button>
               {mobileProjectsOpen && (
                 <div className="pl-4 mt-2 space-y-1">
-                  {/* <Link
-                    href="/your-hour"
+                  <Link
+                    href="/early-foods"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
                     EarlyFoods
-                  </Link> */}
+                  </Link>
                   {/* <Link
                     href="/your-hour"
                     onClick={handleMobileMenuItemClick}
@@ -562,21 +562,21 @@ export default function Navbar() {
                     JEGO
                   </Link> */}
                   <Link
-                    href="/your-hour"
+                    href="/soli-stack"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
                     SoliStack
                   </Link>
                   <Link
-                    href="/your-hour"
+                    href="/digi-bill"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
                     GreenBill
                   </Link>
                   <Link
-                    href="/your-hour"
+                    href="/mach-one"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
