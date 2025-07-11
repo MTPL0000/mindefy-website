@@ -6,28 +6,52 @@ import { useEffect } from "react";
 
 export default function YourHour() {
   useEffect(() => {
-    // Handle DaisyUI dropdown behavior - close others when one opens
-    const dropdowns = document.querySelectorAll(".dropdown");
+    // Force close all dropdowns with a small delay to override any default behavior
+    const forceCloseDropdowns = () => {
+      const dropdowns = document.querySelectorAll(".dropdown-details");
+      dropdowns.forEach((dropdown) => {
+        dropdown.removeAttribute("open");
+        dropdown.open = false;
+      });
+    };
 
+    // Close immediately and after a small delay
+    forceCloseDropdowns();
+    const timeoutId = setTimeout(forceCloseDropdowns, 100);
+
+    // Handle DaisyUI dropdown behavior - close others when one opens
+    const handleDropdownClick = (dropdown) => {
+      return () => {
+        // Close all other dropdowns
+        const allDropdowns = document.querySelectorAll(".dropdown-details");
+        allDropdowns.forEach((otherDropdown) => {
+          if (otherDropdown !== dropdown) {
+            otherDropdown.removeAttribute("open");
+            otherDropdown.open = false;
+          }
+        });
+      };
+    };
+
+    const clickHandlers = [];
+    const dropdowns = document.querySelectorAll(".dropdown-details");
     dropdowns.forEach((dropdown) => {
       const summary = dropdown.querySelector("summary");
       if (summary) {
-        summary.addEventListener("click", () => {
-          // Close all other dropdowns
-          dropdowns.forEach((otherDropdown) => {
-            if (otherDropdown !== dropdown) {
-              const otherDetails = otherDropdown.querySelector("details");
-              if (otherDetails) {
-                otherDetails.removeAttribute("open");
-              }
-            }
-          });
-        });
+        const handler = handleDropdownClick(dropdown);
+        summary.addEventListener("click", handler);
+        clickHandlers.push({ summary, handler });
       }
     });
 
-    // Initially open the first dropdown (Curated Dashboard)
-  });
+    // Cleanup function
+    return () => {
+      clearTimeout(timeoutId);
+      clickHandlers.forEach(({ summary, handler }) => {
+        summary.removeEventListener("click", handler);
+      });
+    };
+  }, []);
 
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-7xl ">
@@ -253,13 +277,6 @@ export default function YourHour() {
           transition: color 0.3s ease;
         }
 
-        /* Add background, rounded corners, and padding when open */
-        details[open] {
-          background-color: #f4f0ff;
-          border-radius: 0.5rem;
-          padding: 1rem;
-        }
-
         /* Default text color transition */
         .dropdown-text {
           transition: color 0.5s ease;
@@ -276,6 +293,24 @@ export default function YourHour() {
         /* Smooth transitions for dropdown */
         .dropdown-details {
           transition: all 0.3s ease;
+        }
+
+        /* Ensure dropdowns are closed by default */
+        .dropdown-details:not([open]) > div {
+          display: none;
+        }
+
+        /* Force closed state */
+        .dropdown-details {
+          background-color: transparent !important;
+          padding: 0 !important;
+        }
+
+        /* Only apply open styles when actually open */
+        .dropdown-details[open] {
+          background-color: #f4f0ff !important;
+          border-radius: 0.5rem !important;
+          padding: 1rem !important;
         }
       `}</style>
     </section>

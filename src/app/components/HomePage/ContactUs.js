@@ -126,7 +126,7 @@ export default function ContactUs() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Hello there! I would like to talk about how to..."
+                  placeholder="Hello there! I would like to talk about my project..."
                   rows={4}
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-[#F8F8F8] border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 resize-vertical min-h-[120px] text-sm sm:text-base"
                 />
