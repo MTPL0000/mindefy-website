@@ -1808,32 +1808,29 @@ export default function EarlyFoods() {
           {/* Top laptop screen with annotations */}
           <div className="flex justify-center my-[4.5rem] ">
             <Image
-              src="/images/EF-laptop1.webp" // Replace with actual path
+              src="/images/EF-Laptop1.webp" // Replace with actual path
               alt="Main UI with annotations"
               width={1147}
               height={506}
               className="object-contain"
-              unoptimized={true}
             />
           </div>
 
           {/* Middle row: 2 laptop images */}
           <div className="grid grid-cols-1 md:grid-cols-2  gap-6 justify-items-center max-w-6xl mx-auto mb-[4.5rem]">
             <Image
-              src="/images/EF-laptop2.webp"
+              src="/images/EF-Laptop2.webp"
               alt="Product detail UI"
               width={559}
               height={400}
               className="object-contain"
-              unoptimized={true}
             />
             <Image
-              src="/images/EF-laptop3.webp"
+              src="/images/EF-Laptop3.webp"
               alt="Category UI"
               width={559}
               height={400}
               className="object-contain"
-              unoptimized={true}
             />
           </div>
 
