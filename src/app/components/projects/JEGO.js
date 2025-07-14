@@ -1470,23 +1470,21 @@ export default function JEGO() {
         </div>
       </section>
 
-      <div>
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <h1 className="text-white text-[2rem] font-bold mb-[4.5rem] ">
-            Backlogs
-          </h1>
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <h1 className="text-white text-[2rem] font-bold mb-[4.5rem] ">
+          Backlogs
+        </h1>
 
-          {/* Grid Container */}
-          <div className="grid grid-cols-7 gap-0.5">
-            {backlogItems.map((item, index) => (
-              <div key={index} className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-                <p className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
+        {/* Grid Container */}
+        <div className="grid grid-cols-7 gap-0.5">
+          {backlogItems.map((item, index) => (
+            <div key={index} className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
+              <p className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
+                {item}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -1618,181 +1616,171 @@ export default function JEGO() {
         </div>
       </div>
 
-      <div>
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <h1 className="text-[#FFFFFF] text-[2rem] font-bold mb-12 text-center ">
-            Branding
-          </h1>
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <h1 className="text-[#FFFFFF] text-[2rem] font-bold mb-12 text-center ">
+          Branding
+        </h1>
 
-          {/* Fontface Section */}
-          <section className="flex flex-row gap-24">
-            <div>
-              <h2 className="text-[#F7DE66] text-2xl font-bold ">Fontface</h2>
-            </div>
+        {/* Fontface Section */}
+        <section className="flex flex-row gap-24">
+          <div>
+            <h2 className="text-[#F7DE66] text-2xl font-bold ">Fontface</h2>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className=" rounded-lg  ">
-                <div className="flex flex-row items-center mb-7 font-fredoka">
-                  <div className="w-3 h-3 mr-7 bg-[#C9F5FF]"></div>
-                  <div>
-                    <p className="text-xs font-normal text-[#C9F5FF] ">
-                      Primary Typeface
-                    </p>
-                    <p className="text-2xl font-bold text-[#C9F5FF] ">
-                      Fredoka One
-                    </p>
-                    <p className="text-xs font-normal text-[#C9F5FF] ">
-                      01 LOWER CASE | 02 REGULAR
-                    </p>
-                  </div>
-                </div>
-                <div className="text-[2rem] text-justify font-fredoka font-semibold text-[#C9F5FF] w-[25rem]  tracking-widest leading-relaxed mb-12">
-                  a b c d e f g h i j <br></br>k l m n o p q r s<br></br> t u v
-                  w x y z
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className=" rounded-lg  ">
+              <div className="flex flex-row items-center mb-7 font-fredoka">
+                <div className="w-3 h-3 mr-7 bg-[#C9F5FF]"></div>
+                <div>
+                  <p className="text-xs font-normal text-[#C9F5FF] ">
+                    Primary Typeface
+                  </p>
+                  <p className="text-2xl font-bold text-[#C9F5FF] ">
+                    Fredoka One
+                  </p>
+                  <p className="text-xs font-normal text-[#C9F5FF] ">
+                    01 LOWER CASE | 02 REGULAR
+                  </p>
                 </div>
               </div>
-              <div className=" rounded-lg  ">
-                <div className="flex flex-row items-center mb-7 font-noto">
-                  <div className="w-3 h-3 mr-7 bg-[#C9F5FF]"></div>
-                  <div>
-                    <p className="text-xs font-normal text-[#C9F5FF]">
-                      Primary Typeface
-                    </p>
-                    <p className="text-2xl font-bold text-[#C9F5FF]">
-                      Noto Sans
-                    </p>
-                    <p className="text-xs font-normal text-[#C9F5FF]">
-                      01 REGULAR | 02 SEMI BOLD | 03 BOLD
-                    </p>
-                  </div>
-                </div>
-                <div className="text-[2rem] font-noto font-semibold text-[#C9F5FF] w-[25rem]  tracking-widest leading-relaxed mb-12 ">
-                  a b c d e f g h i j <br></br>k l m n o p q r s<br></br> t u v
-                  w x y z
-                </div>
+              <div className="text-[2rem] text-justify font-fredoka font-semibold text-[#C9F5FF] w-[25rem]  tracking-widest leading-relaxed mb-12">
+                a b c d e f g h i j <br></br>k l m n o p q r s<br></br> t u v w
+                x y z
               </div>
             </div>
-          </section>
-
-          {/* Colors Section */}
-          <section className="flex flex-row gap-32 ">
-            <div>
-              <h2 className="text-[#F7DE66] text-2xl font-bold ">Colors</h2>
-            </div>
-
-            <div className="grid grid-cols-2 gap-8 ">
-              {/* Primary Colors */}
-              <div className="border-1 border-[#286D7C] rounded-xl text-center w-[27.75rem] shadow-xl">
-                <h3 className="text-[#F5FDFF] text-5xl font-semibold mb-7 mt-14">
-                  #164E5A
-                </h3>
-                <p className="text-[#3E8D9E] font-normal text-2xl mb-7">
-                  Primary
-                </p>
-                <div className="flex gap-2 w-[26.5rem] mx-2.5 mb-14">
-                  {primaryColors.map((color, index) => (
-                    <div
-                      key={index}
-                      className="w-10 h-10 rounded"
-                      style={{ backgroundColor: color }}
-                    ></div>
-                  ))}
+            <div className=" rounded-lg  ">
+              <div className="flex flex-row items-center mb-7 font-noto">
+                <div className="w-3 h-3 mr-7 bg-[#C9F5FF]"></div>
+                <div>
+                  <p className="text-xs font-normal text-[#C9F5FF]">
+                    Primary Typeface
+                  </p>
+                  <p className="text-2xl font-bold text-[#C9F5FF]">Noto Sans</p>
+                  <p className="text-xs font-normal text-[#C9F5FF]">
+                    01 REGULAR | 02 SEMI BOLD | 03 BOLD
+                  </p>
                 </div>
               </div>
-
-              {/* Secondary Colors */}
-              <div className="border-1 border-[#F7DE66]] bg-[#F7DE66] rounded-xl text-center w-[27.75rem] shadow-xl">
-                <h3 className="text-[#483E0F] text-5xl font-semibold mb-7 mt-14">
-                  #F7DE66
-                </h3>
-                <p className="text-[#A08D32] font-normal text-2xl mb-7">
-                  Primary
-                </p>
-                <div className="flex gap-2 w-[26.5rem] mx-2.5 mb-14">
-                  {secondaryColors.map((color, index) => (
-                    <div
-                      key={index}
-                      className="w-10 h-10 rounded"
-                      style={{ backgroundColor: color }}
-                    ></div>
-                  ))}
-                </div>
+              <div className="text-[2rem] font-noto font-semibold text-[#C9F5FF] w-[25rem]  tracking-widest leading-relaxed mb-12 ">
+                a b c d e f g h i j <br></br>k l m n o p q r s<br></br> t u v w
+                x y z
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* App Icon Section */}
-          <section className="mt-10 mr-10">
-            <h2 className="text-[#F7DE66] text-2xl font-bold mb-12">
-              App Icon
-            </h2>
-            {/* Logo Design */}
-            <div className="relative w-[1440px] aspect-[2/1] overflow-hidden">
-              <Image
-                src="/images/projects/JG-4.webp"
-                alt="JEGO Logo"
-                fill
-                className="object-contain"
-              />
+        {/* Colors Section */}
+        <section className="flex flex-row gap-32 ">
+          <div>
+            <h2 className="text-[#F7DE66] text-2xl font-bold ">Colors</h2>
+          </div>
+
+          <div className="grid grid-cols-2 gap-8 ">
+            {/* Primary Colors */}
+            <div className="border-1 border-[#286D7C] rounded-xl text-center w-[27.75rem] shadow-xl">
+              <h3 className="text-[#F5FDFF] text-5xl font-semibold mb-7 mt-14">
+                #164E5A
+              </h3>
+              <p className="text-[#3E8D9E] font-normal text-2xl mb-7">
+                Primary
+              </p>
+              <div className="flex gap-2 w-[26.5rem] mx-2.5 mb-14">
+                {primaryColors.map((color, index) => (
+                  <div
+                    key={index}
+                    className="w-10 h-10 rounded"
+                    style={{ backgroundColor: color }}
+                  ></div>
+                ))}
+              </div>
             </div>
-          </section>
-        </div>
+
+            {/* Secondary Colors */}
+            <div className="border-1 border-[#F7DE66]] bg-[#F7DE66] rounded-xl text-center w-[27.75rem] shadow-xl">
+              <h3 className="text-[#483E0F] text-5xl font-semibold mb-7 mt-14">
+                #F7DE66
+              </h3>
+              <p className="text-[#A08D32] font-normal text-2xl mb-7">
+                Primary
+              </p>
+              <div className="flex gap-2 w-[26.5rem] mx-2.5 mb-14">
+                {secondaryColors.map((color, index) => (
+                  <div
+                    key={index}
+                    className="w-10 h-10 rounded"
+                    style={{ backgroundColor: color }}
+                  ></div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* App Icon Section */}
+        <section className="mt-10 mr-10">
+          <h2 className="text-[#F7DE66] text-2xl font-bold mb-12">App Icon</h2>
+          {/* Logo Design */}
+          <div className="relative w-[1440px] aspect-[2/1] overflow-hidden">
+            <Image
+              src="/images/projects/JG-4.webp"
+              alt="JEGO Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+        </section>
       </div>
 
-      <section>
-        <div className="max-w-6xl mx-auto flex flex-col gap-10">
-          {/* ────────────── Block 1 ────────────── */}
-          <div className="flex flex-col md:flex-row items-center gap-[3.875rem]">
-            {/* phone mock‑up */}
-            <div className="flex-shrink-0">
-              <Image
-                src="/images/JEGO-Iphone.webp" // 390 × 800 or similar
-                width={620}
-                height={855}
-                alt="Mentors phone UI"
-                className="object-contain"
-                priority
-              />
-            </div>
-
-            {/* copy */}
-            <div className="w-[26.5rem] ">
-              <h3 className=" text-[#F7DE66] text-3xl font-bold mb-7">
-                Mentors
-              </h3>
-              <p className=" text-[#C9F5FF] leading-relaxed text-sm md:text-base opacity-90">
-                Now meet the Mentors, influential personalities and creator of
-                life changing courses brought to you by Jego.
-              </p>
-            </div>
+      <div className="max-w-6xl mx-auto flex flex-col gap-10">
+        {/* ────────────── Block 1 ────────────── */}
+        <div className="flex flex-col md:flex-row items-center gap-[3.875rem]">
+          {/* phone mock‑up */}
+          <div className="flex-shrink-0">
+            <Image
+              src="/images/JEGO-Iphone.webp"
+              width={620}
+              height={855}
+              alt="Mentors phone UI"
+              className="object-contain"
+              priority
+            />
           </div>
 
-          {/* ────────────── Block 2 (reversed on md+) ────────────── */}
-          <div className="  flex flex-row items-center gap-[3.875rem]">
-            {/* copy */}
-            <div className="w-[26.5rem] ml-[8.437rem]">
-              <h3 className="text-[#F7DE66]  text-3xl font-bold mb-7">
-                Jego Home
-              </h3>
-              <p className="text-[#C9F5FF] leading-relaxed text-sm md:text-base opacity-90">
-                The all new home page is designed with user centric approach it
-                helps user navigate to any course content or setting fluently.
-              </p>
-            </div>
-            {/* phone mock‑up */}
-            <div className="flex-shrink-0">
-              <Image
-                src="/images/JEGO-Iphone1.webp" // 390 × 800 or similar
-                width={344}
-                height={696}
-                alt="Jego Home phone UI"
-                className="object-contain"
-              />
-            </div>
+          {/* copy */}
+          <div className="w-[26.5rem] ">
+            <h3 className=" text-[#F7DE66] text-3xl font-bold mb-7">Mentors</h3>
+            <p className=" text-[#C9F5FF] leading-relaxed text-sm md:text-base opacity-90">
+              Now meet the Mentors, influential personalities and creator of
+              life changing courses brought to you by Jego.
+            </p>
           </div>
         </div>
-      </section>
+
+        {/* ────────────── Block 2 (reversed on md+) ────────────── */}
+        <div className="  flex flex-row items-center gap-[3.875rem]">
+          {/* copy */}
+          <div className="w-[26.5rem] ml-[8.437rem]">
+            <h3 className="text-[#F7DE66]  text-3xl font-bold mb-7">
+              Jego Home
+            </h3>
+            <p className="text-[#C9F5FF] leading-relaxed text-sm md:text-base opacity-90">
+              The all new home page is designed with user centric approach it
+              helps user navigate to any course content or setting fluently.
+            </p>
+          </div>
+          {/* phone mock‑up */}
+          <div className="flex-shrink-0">
+            <Image
+              src="/images/JEGO-Iphone1.webp" // 390 × 800 or similar
+              width={344}
+              height={696}
+              alt="Jego Home phone UI"
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </div>
 
       <div className="mt-[3.35rem]">
         <div className=" relative w-[89.937rem] h-[27.18rem] overflow-hidden ">
