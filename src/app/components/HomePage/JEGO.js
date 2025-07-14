@@ -45,7 +45,7 @@ export default function JEGO() {
           {/* Right Content */}
           <div className="flex-1 space-y-6 lg:space-y-8">
             {/* App Title */}
-            <div className="mb-8 lg:mb-10">
+            <div className="text-center lg:text-left mb-8 lg:mb-10">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2B2B2B] mb-2">
                 JEGO - Redefining
               </h2>
