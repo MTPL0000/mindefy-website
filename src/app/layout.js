@@ -7,6 +7,7 @@ import Navbar from "./components/HomePage/Navbar";
 import ContactUs from "./components/HomePage/ContactUs";
 import Footer from "./components/HomePage/Footer";
 import PWAInstallPrompt from "./components/PWAInstallPrompt";
+import { Analytics } from "@vercel/analytics/next"
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -156,6 +157,7 @@ export default function RootLayout({ children }) {
         <ContactUs />
         <Footer />
         {/* <PWAInstallPrompt /> */}
+        <Analytics />
       </body>
     </html>
   );
