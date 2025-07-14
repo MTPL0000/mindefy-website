@@ -1813,6 +1813,7 @@ export default function EarlyFoods() {
               width={1147}
               height={506}
               className="object-contain"
+              unoptimized={true}
             />
           </div>
 
@@ -1824,6 +1825,7 @@ export default function EarlyFoods() {
               width={559}
               height={400}
               className="object-contain"
+              unoptimized={true}
             />
             <Image
               src="/images/EF-laptop3.webp"
@@ -1831,6 +1833,7 @@ export default function EarlyFoods() {
               width={559}
               height={400}
               className="object-contain"
+              unoptimized={true}
             />
           </div>
 

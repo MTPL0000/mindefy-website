@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 export default function GreenBill() {
+
   useEffect(() => {
     // Handle DaisyUI dropdown behavior - close others when one opens
     const dropdowns = document.querySelectorAll(".dropdown");
@@ -33,33 +34,32 @@ export default function GreenBill() {
   }, []);
 
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-8 xl:px-16 py-12 sm:py-16 lg:py-20">
-      <div className="container mx-auto max-w-7xl">
-        {/* Main Content - Flex Layout */}
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-14 items-center">
-          {/* Left Content */}
-          <div className="flex-1 space-y-6 mb-8 lg:mb-10 lg:space-y-8">
-            {/* App Title */}
-            <div className="mb-8 lg:mb-10">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2B2B2B] mb-2">
-                Greenbill
-              </h2>
-              <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-gray-700 mb-4 lg:mb-[1.62rem]">
-                A Sustainable Solution for Digital Bill Management
-              </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-600 text-justify leading-relaxed">
-                An innovative application developed by Mindefy, designed to
-                revolutionize digital bill generation and management while
-                promoting environmental sustainability. With a strong focus on
-                environmental sustainability and efficiency, GreenBill is
-                revolutionizing the way businesses generate and manage bills.
-                Say goodbye to paper waste and embrace a paperless future with
-                our comprehensive suite of apps: Merchant, Admin, and Customer.
-              </p>
-            </div>
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-7xl ">
+      {/* Main Content - Responsive Layout */}
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center lg:items-start ">
+        {/* Left Content */}
+        <div className="w-full lg:w-1/2 space-y-6 lg:space-y-8 order-2 lg:order-1">
+          {/* App Title */}
+          <div className="text-center lg:text-left">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2B2B2B] mb-2">
+              GreenBill
+            </h2>
+            <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-gray-700 mb-4 lg:mb-6">
+              A Sustainable Solution for Digital Bill Management
+            </h3>
+            <p className="text-sm sm:text-base lg:text-lg text-justify text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              An innovative application developed by Mindefy, designed to
+              revolutionize digital bill generation and management while
+              promoting environmental sustainability. With a strong focus on
+              environmental sustainability and efficiency, GreenBill is
+              revolutionizing the way businesses generate and manage bills. Say
+              goodbye to paper waste and embrace a paperless future with our
+              comprehensive suite of apps: Merchant, Admin, and Customer.
+            </p>
+          </div>
 
-            {/* Dropdown Sections */}
-            <div className="space-y-4 lg:space-y-6">
+          {/* Dropdown Sections */}
+          <div className="space-y-4 lg:space-y-6">
               {/* Curated Dashboard */}
               <div className="pb-1">
                 <div className="dropdown dropdown-bottom w-full">
@@ -257,17 +257,16 @@ export default function GreenBill() {
                 </span>
               </a>
             </div>
-          </div>
+        </div>
 
-          {/* Right Content - Device Mockups */}
-          <div className="flex-1 relative">
-            <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto aspect-[1.043/1]">
-              <Image
-                src="/images/greenbill.webp"
-                alt="GreenBill application interface"
-                fill
-              />
-            </div>
+        {/* Right Content - Device Mockups */}
+        <div className="flex-1 w-full lg:w-1/2 flex justify-center lg:justify-end order-1 lg:order-2">
+          <div className="relative max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full aspect-[1.043/1]">
+            <Image
+              src="/images/greenbill.webp"
+              alt="GreenBill application shown on mobile devices"
+              fill
+            />
           </div>
         </div>
       </div>
