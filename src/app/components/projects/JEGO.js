@@ -1048,165 +1048,156 @@ export default function JEGO() {
           </h2>
 
           {/* Persona Card */}
-          <div className="">
-            {/* Header */}
-            {/* Main Content */}
-            <div className="flex gap-7 mb-16">
-              {/* Left Side - Image and Basic Info */}
-              <div className="flex flex-col gap-6">
-                {/* Profile Image Placeholder */}
-                <div className="">
-                  {/* This is where you'll place your image */}
-                  <div className="relative w-55 h-61">
-                    <Image
-                      src="/images/UP-PP.webp"
-                      alt="Profile Picture"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
 
-                {/* Basic Information */}
-                <div className="flex flex-col gap-[1.875rem] w-48.5 text-[#FFFFFF]">
-                  <div className="text-xl text-[#C9F5FF]">
-                    <span className=" block font-normal">Age:</span>
-                    <span className="font-medium">29 Years</span>
-                  </div>
-                  <div className="text-xl text-[#C9F5FF]">
-                    <span className="block font-normal">Occupation:</span>
-                    <span className="font-medium">Developer</span>
-                  </div>
-                  <div className="text-xl text-[#C9F5FF]">
-                    <span className="block font-normal">Location:</span>
-                    <span className="font-medium">Ahmedabad</span>
-                  </div>
-                  <div className="text-xl text-[#C9F5FF]">
-                    <span className="block font-normal">Education:</span>
-                    <span className="font-medium">BE Graduate</span>
-                  </div>
-                  <div className="text-xl text-[#C9F5FF]">
-                    <span className="block font-normal">Status:</span>
-                    <span className="font-medium">Unmarried/Single</span>
-                  </div>
-                </div>
+          <div className="flex gap-7 mb-16">
+            <div className="flex flex-col gap-6">
+              <div className="relative w-55 h-61">
+                <Image
+                  src="/images/UP-PP.webp"
+                  alt="Profile Picture"
+                  fill
+                  className="object-contain"
+                />
               </div>
 
-              {/* Right Side - Name, Bio, and Personality */}
-              <div className="flex-1 flex flex-col gap-6">
-                {/* Name and Bio */}
-                <div>
-                  <h4 className="text-[#F7DE66] font-semibold text-4xl mb-2">
-                    Siddharth Desai
-                  </h4>
-                  <span className="text-[#F7DE66] text-[1.625rem] font-semibold block mb-2">
-                    Bio
-                  </span>
-                  <p className="text-[#C9F5FF] text-xl text-justify font-normal ">
-                    Siddharth is a cheerful, kind, and helpful person who values
-                    his family and friends. He has experience teaching and is
-                    currently working in IT. He also intakes some commissioned
-                    projects which help him master trending technologies to
-                    advance in his career.
-                  </p>
+              {/* Basic Information */}
+              <div className="flex flex-col gap-[1.875rem] w-48.5 text-[#FFFFFF]">
+                <div className="text-xl text-[#C9F5FF]">
+                  <span className=" block font-normal">Age:</span>
+                  <span className="font-medium">29 Years</span>
                 </div>
-
-                {/* Personality Traits */}
-                <div className="ml-25">
-                  <h5 className="text-[#F7DE66] font-semibold text-[1.25rem] mb-4.5">
-                    Personality
-                  </h5>
-                  <div className="relative w-[45.43rem] h-[26.43rem]">
-                    <Image
-                      src="/images/UP1.webp"
-                      alt="Profile Picture"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                <div className="text-xl text-[#C9F5FF]">
+                  <span className="block font-normal">Occupation:</span>
+                  <span className="font-medium">Developer</span>
+                </div>
+                <div className="text-xl text-[#C9F5FF]">
+                  <span className="block font-normal">Location:</span>
+                  <span className="font-medium">Ahmedabad</span>
+                </div>
+                <div className="text-xl text-[#C9F5FF]">
+                  <span className="block font-normal">Education:</span>
+                  <span className="font-medium">BE Graduate</span>
+                </div>
+                <div className="text-xl text-[#C9F5FF]">
+                  <span className="block font-normal">Status:</span>
+                  <span className="font-medium">Unmarried/Single</span>
                 </div>
               </div>
             </div>
 
-            {/* Bottom Section - Interests, Influences, etc. */}
-            <div className="grid grid-cols-3 gap-12 text-[#FFFFFF]">
-              {/* Interests */}
+            {/* Right Side - Name, Bio, and Personality */}
+            <div className="flex-1 flex flex-col gap-6">
+              {/* Name and Bio */}
               <div>
-                <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
-                  Interests
-                </h5>
-                <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
-                  <li>Cricket watching and Playing</li>
-                  <li>News</li>
-                  <li>Coding</li>
-                  <li>Punjabi Music</li>
-                </ul>
+                <h4 className="text-[#F7DE66] font-semibold text-4xl mb-2">
+                  Siddharth Desai
+                </h4>
+                <span className="text-[#F7DE66] text-[1.625rem] font-semibold block mb-2">
+                  Bio
+                </span>
+                <p className="text-[#C9F5FF] text-xl text-justify font-normal ">
+                  Siddharth is a cheerful, kind, and helpful person who values
+                  his family and friends. He has experience teaching and is
+                  currently working in IT. He also intakes some commissioned
+                  projects which help him master trending technologies to
+                  advance in his career.
+                </p>
               </div>
 
-              {/* Influences */}
-              <div>
-                <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
-                  Influences
+              {/* Personality Traits */}
+              <div className="ml-25">
+                <h5 className="text-[#F7DE66] font-semibold text-[1.25rem] mb-4.5">
+                  Personality
                 </h5>
-                <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
-                  <li>MS Dhoni</li>
-                  <li>Father (Teacher)</li>
-                  <li>Batch mates</li>
-                  <li>Indian Gods and Literature</li>
-                </ul>
+                <div className="relative w-[45.43rem] h-[26.43rem]">
+                  <Image
+                    src="/images/UP1.webp"
+                    alt="Profile Picture"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
+            </div>
+          </div>
 
-              {/* Needs & Expectations */}
-              <div>
-                <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
-                  Needs & Expectations
-                </h5>
-                <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
-                  <li>Learning New Skills</li>
-                  <li>Change the city</li>
-                  <li>become financially independent</li>
-                </ul>
-              </div>
+          <div className="grid grid-cols-3 gap-12 text-[#FFFFFF]">
+            {/* Interests */}
+            <div>
+              <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
+                Interests
+              </h5>
+              <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
+                <li>Cricket watching and Playing</li>
+                <li>News</li>
+                <li>Coding</li>
+                <li>Punjabi Music</li>
+              </ul>
+            </div>
 
-              {/* Motivations */}
-              <div>
-                <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
-                  Motivations
-                </h5>
-                <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
-                  <li>Project completion</li>
-                  <li>Promotions in job</li>
-                  <li>Healthy and happy family</li>
-                  <li>Good and trusted friends</li>
-                </ul>
-              </div>
+            {/* Influences */}
+            <div>
+              <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
+                Influences
+              </h5>
+              <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
+                <li>MS Dhoni</li>
+                <li>Father (Teacher)</li>
+                <li>Batch mates</li>
+                <li>Indian Gods and Literature</li>
+              </ul>
+            </div>
 
-              {/* Goals */}
-              <div>
-                <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
-                  Goals
-                </h5>
-                <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
-                  <li>Financial Freedom</li>
-                  <li>Excel in Career</li>
-                  <li>Own a Home and Car</li>
-                  <li>Getting married to good person</li>
-                </ul>
-              </div>
+            {/* Needs & Expectations */}
+            <div>
+              <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
+                Needs & Expectations
+              </h5>
+              <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
+                <li>Learning New Skills</li>
+                <li>Change the city</li>
+                <li>become financially independent</li>
+              </ul>
+            </div>
 
-              {/* Frustrations */}
-              <div>
-                <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
-                  Frustrations
-                </h5>
-                <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
-                  <li>Lack of focus</li>
-                  <li>Short attention span</li>
-                  <li>No decided career guide</li>
-                  <li>Age</li>
-                  <li>Current Town</li>
-                </ul>
-              </div>
+            {/* Motivations */}
+            <div>
+              <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
+                Motivations
+              </h5>
+              <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
+                <li>Project completion</li>
+                <li>Promotions in job</li>
+                <li>Healthy and happy family</li>
+                <li>Good and trusted friends</li>
+              </ul>
+            </div>
+
+            {/* Goals */}
+            <div>
+              <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
+                Goals
+              </h5>
+              <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
+                <li>Financial Freedom</li>
+                <li>Excel in Career</li>
+                <li>Own a Home and Car</li>
+                <li>Getting married to good person</li>
+              </ul>
+            </div>
+
+            {/* Frustrations */}
+            <div>
+              <h5 className="text-[#F7DE66] font-semibold text-3xl mb-7">
+                Frustrations
+              </h5>
+              <ul className="space-y-4 text-xl text-[#C9F5FF] font-normal">
+                <li>Lack of focus</li>
+                <li>Short attention span</li>
+                <li>No decided career guide</li>
+                <li>Age</li>
+                <li>Current Town</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -1747,10 +1738,9 @@ export default function JEGO() {
             />
           </div>
 
-          {/* copy */}
           <div className="w-[26.5rem] ">
             <h3 className=" text-[#F7DE66] text-3xl font-bold mb-7">Mentors</h3>
-            <p className=" text-[#C9F5FF] leading-relaxed text-sm md:text-base opacity-90">
+            <p className=" text-[#C9F5FF] leading-relaxed font-normal text-xl opacity-90">
               Now meet the Mentors, influential personalities and creator of
               life changing courses brought to you by Jego.
             </p>
@@ -1759,12 +1749,11 @@ export default function JEGO() {
 
         {/* ────────────── Block 2 (reversed on md+) ────────────── */}
         <div className="  flex flex-row items-center gap-[3.875rem]">
-          {/* copy */}
           <div className="w-[26.5rem] ml-[8.437rem]">
             <h3 className="text-[#F7DE66]  text-3xl font-bold mb-7">
               Jego Home
             </h3>
-            <p className="text-[#C9F5FF] leading-relaxed text-sm md:text-base opacity-90">
+            <p className="text-[#C9F5FF] leading-relaxed font-normal text-xl opacity-90">
               The all new home page is designed with user centric approach it
               helps user navigate to any course content or setting fluently.
             </p>
@@ -1772,7 +1761,7 @@ export default function JEGO() {
           {/* phone mock‑up */}
           <div className="flex-shrink-0">
             <Image
-              src="/images/JEGO-Iphone1.webp" // 390 × 800 or similar
+              src="/images/JEGO-Iphone1.webp"
               width={344}
               height={696}
               alt="Jego Home phone UI"
@@ -1798,10 +1787,10 @@ export default function JEGO() {
           {/* Left Content */}
           <div className="flex flex-col items-center justify-between gap-16">
             <div className="flex-shrink-0 w-[33.25rem] h-[20rem] mt-20 px-16">
-              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
+              <h3 className="text-3xl font-bold text-[#F7DE66] mb-4">
                 Onboarding
               </h3>
-              <p className="text-lg leading-relaxed text-cyan-100">
+              <p className="text-xl leading-relaxed text-[#C9F5FF] font-normal">
                 The onboarding is intended to explain the user about the Jego
                 app and then help him register to the system.
               </p>
@@ -1819,29 +1808,42 @@ export default function JEGO() {
           </div>
 
           {/* Right Phone Mockups Grid */}
-          <div className="w-[33.25rem] flex flex-col items-center justify-between gap-10 px-16">
-            {/* Top Row */}
-            <div className="flex justify-end">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/projects/JG-7.webp"
-                  alt="image"
-                  width={344}
-                  height={696}
-                  className="object-contain"
-                />
-              </div>
+
+          {/* Background Image */}
+          <div className="w-full relative">
+            <div className="absolute w-full h-[2040px] opacity-70 z-0">
+              <Image
+                src="/images/projects/JG-BG.webp"
+                alt="image"
+                fill
+                className="object-contain"
+              />
             </div>
 
-            <div className="flex justify-start">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/projects/JG-8.webp"
-                  alt="image"
-                  width={344}
-                  height={696}
-                  className="object-contain"
-                />
+            <div className="w-[33.25rem] flex flex-col items-center justify-between gap-10 px-16 z-30">
+              {/* Top Row */}
+              <div className="flex justify-end">
+                <div className="relative overflow-hidden">
+                  <Image
+                    src="/images/projects/JG-7.webp"
+                    alt="image"
+                    width={344}
+                    height={696}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              <div className="flex justify-start">
+                <div className="relative overflow-hidden">
+                  <Image
+                    src="/images/projects/JG-8.webp"
+                    alt="image"
+                    width={344}
+                    height={696}
+                    className="object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1874,8 +1876,8 @@ export default function JEGO() {
       <section className="w-6xl mx-auto">
         {/* Left Content */}
         <div className="relative top-[10rem] flex flex-col items-start gap-6">
-          <h3 className="text-2xl font-bold text-[#F7DE66]">Courses</h3>
-          <p className="text-lg leading-relaxed text-[#C9F5FF]">
+          <h3 className="text-3xl font-bold text-[#F7DE66]">Courses</h3>
+          <p className="text-xl leading-relaxed text-[#C9F5FF] font-normal">
             Equiped with powerfull search and filters <br />
             the courses page help you access content.
           </p>
@@ -1891,8 +1893,8 @@ export default function JEGO() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center justify-center gap-20">
-        <div className="flex items-start justify-between gap-10">
+      <section className="w-full flex flex-col items-center justify-center gap-20">
+        <div className="mx-auto flex items-start justify-between gap-10">
           {/* Left Content */}
           <div className="flex justify-end">
             <div className="relative overflow-hidden">
@@ -1909,10 +1911,10 @@ export default function JEGO() {
           {/* Right Content */}
           <div className="flex flex-col items-center justify-between gap-16">
             <div className="flex-shrink-0 w-[35rem] mb-10 px-16">
-              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
+              <h3 className="text-[#F7DE66] text-3xl font-bold mb-4">
                 Search, Events & Profile
               </h3>
-              <p className="text-lg leading-relaxed text-cyan-100">
+              <p className="text-xl font-normal leading-relaxed text-[#C9F5FF]">
                 Some of the most powerful pages to navigate through application
                 The Search, The Events & Profile and Settings.
               </p>
@@ -1930,100 +1932,112 @@ export default function JEGO() {
           </div>
         </div>
 
-        <div className="flex flex-row items-center gap-16">
-          <div className="flex-shrink-0">
+        <div className="w-full relative">
+          {/* Background Image */}
+          <div className="absolute top-12 w-full h-full opacity-70 z-0">
             <Image
-              src="/images/projects/JG-13.webp"
-              width={344}
-              height={696}
-              alt="Jego Home phone UI"
+              src="/images/projects/JG-BG-1.png"
+              alt="image"
+              fill
               className="object-contain"
             />
           </div>
-          <div className="w-[26.5rem] pl-8">
-            <h3 className="text-[#F7DE66] text-3xl font-bold mb-7">
-              Home and Mastery
-            </h3>
-            <p className="text-[#C9F5FF] leading-relaxed text-sm md:text-base opacity-90">
-              Dynamic home page offers you to promote what’s now going on and
-              the Mastery helps you with guided path to achieve your goals.
-            </p>
-          </div>
-        </div>
 
-        <div className="flex items-start justify-between gap-10">
-          {/* left Content */}
-          <div className="flex flex-col items-center justify-between gap-16">
-            <div className="flex-shrink-0 w-[32rem] mt-25 mb-30 px-16">
-              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
-                About Mentors
+          <div className="relative w-[67rem] mx-auto flex flex-row items-center gap-16">
+            <div className="flex-shrink-0">
+              <Image
+                src="/images/projects/JG-13.webp"
+                width={344}
+                height={696}
+                alt="Jego Home phone UI"
+                className="object-contain"
+              />
+            </div>
+            <div className="w-[26.5rem] pl-8">
+              <h3 className="text-[#F7DE66] text-3xl font-bold mb-7">
+                Home and Mastery
               </h3>
-              <p className="text-lg leading-relaxed text-cyan-100">
-                Mentors and their profile helps you know more about your
-                teachers.
+              <p className="text-[#C9F5FF] leading-relaxed text-xl font-normal opacity-90">
+                Dynamic home page offers you to promote what’s now going on and
+                the Mastery helps you with guided path to achieve your goals.
               </p>
             </div>
+          </div>
 
-            <div className="relative overflow-hidden">
-              <Image
-                src="/images/projects/JG-15.webp"
-                alt="image"
-                width={344}
-                height={696}
-                className="object-contain"
-              />
+          <div className="relative w-[67rem] mx-auto flex items-start justify-between gap-10">
+            {/* left Content */}
+            <div className="flex flex-col items-center justify-between gap-16">
+              <div className="flex-shrink-0 w-[32rem] mt-25 mb-30 px-16">
+                <h3 className="text-[#F7DE66] text-3xl font-bold mb-4">
+                  About Mentors
+                </h3>
+                <p className="text-[#C9F5FF] leading-relaxed text-xl font-normal">
+                  Mentors and their profile helps you know more about your
+                  teachers.
+                </p>
+              </div>
+
+              <div className="relative overflow-hidden">
+                <Image
+                  src="/images/projects/JG-15.webp"
+                  alt="image"
+                  width={344}
+                  height={696}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Right Content */}
+            <div className="flex justify-end">
+              <div className="relative overflow-hidden">
+                <Image
+                  src="/images/projects/JG-14.webp"
+                  alt="image"
+                  width={344}
+                  height={696}
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Right Content */}
-          <div className="flex justify-end">
-            <div className="relative overflow-hidden">
-              <Image
-                src="/images/projects/JG-14.webp"
-                alt="image"
-                width={344}
-                height={696}
-                className="object-contain"
-              />
-            </div>
-          </div>
-        </div>
+          <div className="relative w-[67rem] mx-auto flex items-start justify-between gap-10">
+            {/* left Content */}
+            <div className="flex flex-col items-center justify-between gap-16">
+              <div className="flex-shrink-0 w-[32rem] mt-25 mb-30 px-16">
+                <h3 className="text-[#F7DE66] text-3xl font-bold mb-4">
+                  Lessons and Player
+                </h3>
+                <p className="text-[#C9F5FF] leading-relaxed text-xl font-normal">
+                  Browse your lessons, download to watch offline and make your
+                  list of favourites. The player is equipped with all the
+                  powerful speed and captions.
+                </p>
+              </div>
 
-        <div className="flex items-start justify-between gap-10">
-          {/* left Content */}
-          <div className="flex flex-col items-center justify-between gap-16">
-            <div className="flex-shrink-0 w-[32rem] mt-25 mb-30 px-16">
-              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
-                Lessons and Player
-              </h3>
-              <p className="text-lg leading-relaxed text-cyan-100">
-                Browse your lessons, download to watch offline and make your
-                list of favourites. The player is equipped with all the powerful
-                speed and captions.
-              </p>
+              <div className="relative overflow-hidden">
+                <Image
+                  src="/images/projects/JG-17.webp"
+                  alt="image"
+                  width={344}
+                  height={696}
+                  className="object-contain"
+                />
+              </div>
             </div>
 
-            <div className="relative overflow-hidden">
-              <Image
-                src="/images/projects/JG-17.webp"
-                alt="image"
-                width={344}
-                height={696}
-                className="object-contain"
-              />
-            </div>
-          </div>
-
-          {/* Right Content */}
-          <div className="flex justify-end">
-            <div className="relative overflow-hidden">
-              <Image
-                src="/images/projects/JG-16.webp"
-                alt="image"
-                width={344}
-                height={696}
-                className="object-contain"
-              />
+            {/* Right Content */}
+            <div className="flex justify-end">
+              <div className="relative overflow-hidden">
+                <Image
+                  src="/images/projects/JG-16.webp"
+                  alt="image"
+                  width={344}
+                  height={696}
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -2033,8 +2047,8 @@ export default function JEGO() {
         <div className="flex flex-col items-start justify-center relative z-10 max-w-7xl mx-auto px-4">
           {/* Header */}
           <div className="mb-18">
-            <h2 className="text-3xl font-bold text-yellow-300 mb-4">Web UI</h2>
-            <p className="text-lg text-[#C9F5FF] max-w-[38.63rem]">
+            <h2 className="text-[#F7DE66] text-3xl font-bold mb-4">Web UI</h2>
+            <p className="text-[#C9F5FF] leading-relaxed text-xl font-normal max-w-[38.63rem]">
               The Jego web UI takes user experience to the next level with the
               power of cloud you can continue your learning on larger screen
               with Jego Web.
@@ -2128,10 +2142,10 @@ export default function JEGO() {
         <div className="flex flex-col items-start justify-center relative z-10 max-w-7xl mx-auto px-4">
           {/* Header */}
           <div className="mb-18">
-            <h2 className="text-3xl font-bold text-yellow-300 mb-4">
+            <h2 className="text-[#F7DE66] text-3xl font-bold mb-4">
               Components
             </h2>
-            <p className="text-lg text-[#C9F5FF] max-w-[38.63rem]">
+            <p className="text-[#C9F5FF] leading-relaxed text-xl font-normal max-w-[38.63rem]">
               Components and Variants used it this entire system.
             </p>
           </div>
@@ -2228,7 +2242,7 @@ export default function JEGO() {
 
       <section className="w-6xl mx-auto py-16">
         <div className="flex flex-col items-start justify-center relative z-10 max-w-7xl mx-auto px-4">
-          <h2 className="mb-18 text-3xl font-bold text-yellow-300">The Grid</h2>
+          <h2 className="mb-18 text-[#F7DE66] text-3xl font-bold">The Grid</h2>
 
           <div className="flex items-center justify-center gap-5">
             <Image
