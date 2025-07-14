@@ -405,6 +405,7 @@ export default function JEGO() {
           </div>
         </div>
       </section>
+
       {/* Market Research Grid Section */}
       <section className="w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-6xl flex flex-col px-[3.125rem] gap-8">
@@ -1468,7 +1469,8 @@ export default function JEGO() {
           </div>
         </div>
       </section>
-      <div className="">
+
+      <div>
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <h1 className="text-white text-[2rem] font-bold mb-[4.5rem] ">
@@ -1502,6 +1504,7 @@ export default function JEGO() {
           />
         </div>
       </div>
+
       <div className="w-6xl mx-auto">
         <p className=" text-[#FFFFFF] font-bold text-3xl mb-20">
           Web Wireframe
@@ -1615,7 +1618,7 @@ export default function JEGO() {
         </div>
       </div>
 
-      <div className="">
+      <div>
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <h1 className="text-[#FFFFFF] text-[2rem] font-bold mb-12 text-center ">
@@ -1720,43 +1723,24 @@ export default function JEGO() {
           </section>
 
           {/* App Icon Section */}
-          <section>
-            <h2 className="text-[#F7DE66] text-2xl font-bold mb-12 ">
+          <section className="mt-10 mr-10">
+            <h2 className="text-[#F7DE66] text-2xl font-bold mb-12">
               App Icon
             </h2>
-
-            <div className="flex flex-col items-center gap-8">
-              {/* Logo Design */}
-              <div className="relative">
-                <div className="w-64 h-32 bg-gray-600 rounded-lg flex items-center justify-center">
-                  <Image
-                    src="/images/branding/logo-design.png"
-                    alt="JEGO Logo Design"
-                    width={256}
-                    height={128}
-                    className="object-contain"
-                  />
-                </div>
-              </div>
-
-              {/* App Icons */}
-              <div className="relative">
-                <div className="w-72 h-48 bg-[#5AAEC0] rounded-3xl flex items-center justify-center p-8">
-                  <Image
-                    src="/images/branding/app-icons.png"
-                    alt="JEGO App Icons"
-                    width={288}
-                    height={192}
-                    className="object-contain"
-                  />
-                </div>
-              </div>
+            {/* Logo Design */}
+            <div className="relative w-[1440px] aspect-[2/1] overflow-hidden">
+              <Image
+                src="/images/projects/JG-4.webp"
+                alt="JEGO Logo"
+                fill
+                className="object-contain"
+              />
             </div>
           </section>
         </div>
       </div>
 
-      <section className="">
+      <section>
         <div className="max-w-6xl mx-auto flex flex-col gap-10">
           {/* ────────────── Block 1 ────────────── */}
           <div className="flex flex-col md:flex-row items-center gap-[3.875rem]">
@@ -1810,7 +1794,7 @@ export default function JEGO() {
         </div>
       </section>
 
-      <div className="mt-[3.35rem] ">
+      <div className="mt-[3.35rem]">
         <div className=" relative w-[89.937rem] h-[27.18rem] overflow-hidden ">
           <Image
             src="/images/JEGO-GO1.webp"
@@ -1820,47 +1804,462 @@ export default function JEGO() {
           />
         </div>
       </div>
-      <section className="">
-      <div className="max-w-6xl mx-auto">
-        {/* Heading */}
-        <div className="text-[#F7DE66] mb-7 w-[26.5rem]">
-          <h3 className="text-lg font-bold text-[#FFD966] mb-2">Onboarding</h3>
-          <p className="text-[1.25rem] leading-relaxed text-[#C9F5FF]">
-            The onboarding is intended to explain the user about the Jego app and then help him register to the system.
+
+      <section className="py-12">
+        <div className="flex items-start justify-between gap-10">
+          {/* Left Content */}
+          <div className="flex flex-col items-center justify-between gap-16">
+            <div className="flex-shrink-0 w-[33.25rem] h-[20rem] mt-20 px-16">
+              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
+                Onboarding
+              </h3>
+              <p className="text-lg leading-relaxed text-cyan-100">
+                The onboarding is intended to explain the user about the Jego
+                app and then help him register to the system.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden">
+              <Image
+                src="/images/projects/JG-5.webp"
+                alt="image"
+                width={344}
+                height={696}
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Right Phone Mockups Grid */}
+          <div className="w-[33.25rem] flex flex-col items-center justify-between gap-10 px-16">
+            {/* Top Row */}
+            <div className="flex justify-end">
+              <div className="relative overflow-hidden">
+                <Image
+                  src="/images/projects/JG-7.webp"
+                  alt="image"
+                  width={344}
+                  height={696}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            <div className="flex justify-start">
+              <div className="relative overflow-hidden">
+                <Image
+                  src="/images/projects/JG-8.webp"
+                  alt="image"
+                  width={344}
+                  height={696}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Row - Additional Phone Mockups */}
+        <div className="flex items-center justify-between gap-10 px-22 mt-16">
+          <div className="relative overflow-hidden">
+            <Image
+              src="/images/projects/JG-6.webp"
+              alt="image"
+              width={344}
+              height={696}
+              className="object-contain"
+            />
+          </div>
+
+          <div className="relative overflow-hidden">
+            <Image
+              src="/images/projects/JG-9.webp"
+              alt="image"
+              width={344}
+              height={696}
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="w-6xl mx-auto">
+        {/* Left Content */}
+        <div className="relative top-[10rem] flex flex-col items-start gap-6">
+          <h3 className="text-2xl font-bold text-[#F7DE66]">Courses</h3>
+          <p className="text-lg leading-relaxed text-[#C9F5FF]">
+            Equiped with powerfull search and filters <br />
+            the courses page help you access content.
           </p>
         </div>
 
-        {/* Background Image */}
-        {/* <div className="absolute top-0 right-0 h-full w-1/2">
+        <div className="relative w-full aspect-[1/1] overflow-hidden">
           <Image
-            src="/images/JEGO-GO1.webp" // Add your image path
-            alt="Background shape"
+            src="/images/projects/JG-10.webp"
+            alt="image"
             fill
-            className="object-contain object-right opacity-60 pointer-events-none"
+            className="object-contain"
           />
-        </div> */}
+        </div>
+      </section>
 
-        {/* Phone Layout */}
-        <div className="relative z-10 flex flex-col justify-items-center">
-          {/* Column 1 */}
-          <div className="">
-            <Image src="/images/onboarding-1.png" alt="Onboarding 1" width={220} height={475} className="rounded-xl shadow-xl" />
-            <Image src="/images/onboarding-2.png" alt="Onboarding 2" width={220} height={475} className="rounded-xl shadow-xl" />
+      <section className="flex flex-col items-center justify-center gap-20">
+        <div className="flex items-start justify-between gap-10">
+          {/* Left Content */}
+          <div className="flex justify-end">
+            <div className="relative overflow-hidden">
+              <Image
+                src="/images/projects/JG-12.webp"
+                alt="image"
+                width={344}
+                height={696}
+                className="object-contain"
+              />
+            </div>
           </div>
 
-          {/* Column 2 */}
-          <div className="">
-            <Image src="/images/onboarding-3.png" alt="Onboarding 3" width={220} height={475} className="rounded-xl shadow-xl" />
-          </div>
+          {/* Right Content */}
+          <div className="flex flex-col items-center justify-between gap-16">
+            <div className="flex-shrink-0 w-[35rem] mb-10 px-16">
+              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
+                Search, Events & Profile
+              </h3>
+              <p className="text-lg leading-relaxed text-cyan-100">
+                Some of the most powerful pages to navigate through application
+                The Search, The Events & Profile and Settings.
+              </p>
+            </div>
 
-          {/* Column 3 */}
-          <div className="">
-            <Image src="/images/signin.png" alt="Sign in" width={220} height={475} className="rounded-xl shadow-xl" />
-            <Image src="/images/create-account.png" alt="Create account" width={220} height={475} className="rounded-xl shadow-xl" />
+            <div className="relative overflow-hidden">
+              <Image
+                src="/images/projects/JG-11.webp"
+                alt="image"
+                width={423}
+                height={696}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+
+        <div className="flex flex-row items-center gap-16">
+          <div className="flex-shrink-0">
+            <Image
+              src="/images/projects/JG-13.webp"
+              width={344}
+              height={696}
+              alt="Jego Home phone UI"
+              className="object-contain"
+            />
+          </div>
+          <div className="w-[26.5rem] pl-8">
+            <h3 className="text-[#F7DE66] text-3xl font-bold mb-7">
+              Home and Mastery
+            </h3>
+            <p className="text-[#C9F5FF] leading-relaxed text-sm md:text-base opacity-90">
+              Dynamic home page offers you to promote what’s now going on and
+              the Mastery helps you with guided path to achieve your goals.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-start justify-between gap-10">
+          {/* left Content */}
+          <div className="flex flex-col items-center justify-between gap-16">
+            <div className="flex-shrink-0 w-[32rem] mt-25 mb-30 px-16">
+              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
+                About Mentors
+              </h3>
+              <p className="text-lg leading-relaxed text-cyan-100">
+                Mentors and their profile helps you know more about your
+                teachers.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden">
+              <Image
+                src="/images/projects/JG-15.webp"
+                alt="image"
+                width={344}
+                height={696}
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Right Content */}
+          <div className="flex justify-end">
+            <div className="relative overflow-hidden">
+              <Image
+                src="/images/projects/JG-14.webp"
+                alt="image"
+                width={344}
+                height={696}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-start justify-between gap-10">
+          {/* left Content */}
+          <div className="flex flex-col items-center justify-between gap-16">
+            <div className="flex-shrink-0 w-[32rem] mt-25 mb-30 px-16">
+              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
+                Lessons and Player
+              </h3>
+              <p className="text-lg leading-relaxed text-cyan-100">
+                Browse your lessons, download to watch offline and make your
+                list of favourites. The player is equipped with all the powerful
+                speed and captions.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden">
+              <Image
+                src="/images/projects/JG-17.webp"
+                alt="image"
+                width={344}
+                height={696}
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Right Content */}
+          <div className="flex justify-end">
+            <div className="relative overflow-hidden">
+              <Image
+                src="/images/projects/JG-16.webp"
+                alt="image"
+                width={344}
+                height={696}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-6xl mx-auto relative overflow-hidden">
+        <div className="flex flex-col items-start justify-center relative z-10 max-w-7xl mx-auto px-4">
+          {/* Header */}
+          <div className="mb-18">
+            <h2 className="text-3xl font-bold text-yellow-300 mb-4">Web UI</h2>
+            <p className="text-lg text-[#C9F5FF] max-w-[38.63rem]">
+              The Jego web UI takes user experience to the next level with the
+              power of cloud you can continue your learning on larger screen
+              with Jego Web.
+            </p>
+          </div>
+
+          {/* Masonry Grid Layout */}
+          <div className="grid grid-cols-12 gap-8 auto-rows-min">
+            {/* Row 1 - Top Section */}
+            <div className="col-span-6 row-span-2">
+              <Image
+                src="/images/projects/JG-19.webp"
+                alt="Login Screen"
+                width={556}
+                height={393}
+                className="object-contain"
+              />
+            </div>
+
+            <div className="col-span-6 row-span-2">
+              <Image
+                src="/images/projects/JG-20.webp"
+                alt="What is Jego"
+                width={556}
+                height={393}
+                className="object-contain"
+              />
+            </div>
+
+            {/* Row 2 - Middle Large Section */}
+            <div className="col-span-8 row-span-3">
+              <Image
+                src="/images/projects/JG-21.webp"
+                alt="User Profiles"
+                width={834}
+                height={593}
+                className="object-contain"
+              />
+            </div>
+            <div className="col-span-4 row-span-3">
+              <Image
+                src="/images/projects/JG-22.webp"
+                alt="Main Dashboard"
+                width={276}
+                height={272}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-23.webp"
+                alt="Course Management"
+                width={276}
+                height={272}
+                className="object-contain"
+              />
+            </div>
+
+            {/* Row 3 - Middle Large Section */}
+            <div className="col-span-6 row-span-2">
+              <Image
+                src="/images/projects/JG-24.webp"
+                alt="Learning Interface"
+                width={556}
+                height={672}
+                className="object-contain"
+              />
+              <div className="mt-8">
+                <Image
+                  src="/images/projects/JG-26.webp"
+                  alt="Course Details"
+                  width={556}
+                  height={890}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            <div className="mt-14 col-span-6 row-span-2">
+              <Image
+                src="/images/projects/JG-25.webp"
+                alt="Course Catalog"
+                width={556}
+                height={1470}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-6xl mx-auto relative overflow-hidden">
+        <div className="flex flex-col items-start justify-center relative z-10 max-w-7xl mx-auto px-4">
+          {/* Header */}
+          <div className="mb-18">
+            <h2 className="text-3xl font-bold text-yellow-300 mb-4">
+              Components
+            </h2>
+            <p className="text-lg text-[#C9F5FF] max-w-[38.63rem]">
+              Components and Variants used it this entire system.
+            </p>
+          </div>
+
+          {/* Masonry Grid Layout */}
+          <div className="grid grid-cols-12 gap-x-3 gap-y-3 auto-rows-min">
+            {/* Col 1 - Left Section */}
+            <div className="col-span-6 flex flex-col gap-y-3">
+              <Image
+                src="/images/projects/JG-27.webp"
+                alt="Component"
+                width={614}
+                height={406}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-28.webp"
+                alt="Component"
+                width={614}
+                height={187}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-29.webp"
+                alt="Component"
+                width={614}
+                height={554}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-30.webp"
+                alt="Component"
+                width={614}
+                height={615}
+                className="object-contain"
+              />
+            </div>
+
+            {/* Col 2 - Right Section */}
+            <div className="col-span-6 flex flex-col gap-y-3">
+              <Image
+                src="/images/projects/JG-31.webp"
+                alt="Component"
+                width={510}
+                height={261}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-32.webp"
+                alt="Component"
+                width={510}
+                height={261}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-33.webp"
+                alt="Component"
+                width={510}
+                height={131}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-34.webp"
+                alt="Component"
+                width={510}
+                height={131}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-35.webp"
+                alt="Component"
+                width={510}
+                height={131}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-36.webp"
+                alt="Component"
+                width={510}
+                height={131}
+                className="object-contain"
+              />
+              <Image
+                src="/images/projects/JG-37.webp"
+                alt="Component"
+                width={510}
+                height={300}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-6xl mx-auto py-16">
+        <div className="flex flex-col items-start justify-center relative z-10 max-w-7xl mx-auto px-4">
+          <h2 className="mb-18 text-3xl font-bold text-yellow-300">The Grid</h2>
+
+          <div className="flex items-center justify-center gap-5">
+            <Image
+              src="/images/projects/JG-38.webp"
+              alt="Component"
+              width={864}
+              height={800}
+              className="object-contain"
+            />
+            <Image
+              src="/images/projects/JG-39.webp"
+              alt="Component"
+              width={250}
+              height={756}
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
