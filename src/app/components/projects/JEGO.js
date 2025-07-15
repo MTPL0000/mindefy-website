@@ -62,6 +62,56 @@ export default function JEGO() {
     "#FFFCF0",
   ];
 
+  // Data for each group
+  const brainstormGroups = [
+    {
+      title: "I Like",
+      notes: [
+        "Speed variation options",
+        "Learning Categories",
+        "Learning at my convenience",
+        "Lessons I can like to revisit and watch again",
+        "Loyalty Crystals usability with in-app purchase",
+        "Events",
+        "Meaning of JEGO",
+        "The daily wisdom and Quotes",
+      ],
+    },
+    {
+      title: "I Wish",
+      notes: [
+        "Offline Learning",
+        "Learning from Multiple Mentors",
+        "A learning path to know where to start",
+        "Interact with like-minded people",
+        "Bifurcation of learning expertise before choosing the course",
+        "A little more about the course and the mentor",
+        "PRE Instructions for Meditation courses",
+        "Scorecards/ Leader board",
+        "QA at the end to know things learned",
+        "Questions with instructors feedback",
+        "Easy shareable progress",
+      ],
+    },
+    {
+      title: "What If",
+      notes: [
+        "Community to chat with people learning same things",
+        "Some kind of marking to pass the class",
+        "Can bring in more content from other mentors as well",
+        "Family plans for premium members",
+        "Little more emphasis on crystal to treat them as streaks",
+        "Download lessons for certain period to watch offline on convenience",
+        "A Progress dashboard to see the activities",
+        "Motivation factors such as Badges",
+        "A full page lesson with copy of the video content some facts and information",
+        "Practical projects or activities",
+        "Subtitles/Copy of the Video Narration",
+        "Reviews on Class",
+      ],
+    },
+  ];
+
   return (
     <main className="bg-[#164E5A] w-full flex flex-col items-center justify-center gap-32 pb-16 mx-auto">
       {/* Main Image */}
@@ -716,7 +766,7 @@ export default function JEGO() {
                 Feeling Emotion
               </h3>
             </div>
-            <div className="flex flex-col gap-4 items-center">
+            <div className="flex flex-col gap-4 lg:items-center md:items-start">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-[#F7DE66] rounded-full flex items-center justify-center">
                   <span className="text-[#164E5A] text-lg">😊</span>
@@ -726,7 +776,7 @@ export default function JEGO() {
                 </span>
               </div>
             </div>
-            <div className="flex flex-col gap-4 items-center">
+            <div className="flex flex-col gap-4 lg:items-center md:items-start">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-[#F7DE66] rounded-full flex items-center justify-center">
                   <span className="text-[#164E5A] text-lg">😤</span>
@@ -736,7 +786,7 @@ export default function JEGO() {
                 </span>
               </div>
             </div>
-            <div className="flex flex-col gap-4 items-center">
+            <div className="flex flex-col gap-4 lg:items-center md:items-start">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-[#F7DE66] rounded-full flex items-center justify-center">
                   <span className="text-[#164E5A] text-lg">😕</span>
@@ -1206,59 +1256,10 @@ export default function JEGO() {
 
       {/* Brainstorm and Ideation Section */}
       {(() => {
-        // Data for each group
-        const brainstormGroups = [
-          {
-            title: "I Like",
-            notes: [
-              "Speed variation options",
-              "Learning Categories",
-              "Learning at my convenience",
-              "Lessons I can like to revisit and watch again",
-              "Loyalty Crystals usability with in-app purchase",
-              "Events",
-              "Meaning of JEGO",
-              "The daily wisdom and Quotes",
-            ],
-          },
-          {
-            title: "I Wish",
-            notes: [
-              "Offline Learning",
-              "Learning from Multiple Mentors",
-              "A learning path to know where to start",
-              "Interact with like-minded people",
-              "Bifurcation of learning expertise before choosing the course",
-              "A little more about the course and the mentor",
-              "PRE Instructions for Meditation courses",
-              "Scorecards/ Leader board",
-              "QA at the end to know things learned",
-              "Questions with instructors feedback",
-              "Easy shareable progress",
-            ],
-          },
-          {
-            title: "What If",
-            notes: [
-              "Community to chat with people learning same things",
-              "Some kind of marking to pass the class",
-              "Can bring in more content from other mentors as well",
-              "Family plans for premium members",
-              "Little more emphasis on crystal to treat them as streaks",
-              "Download lessons for certain period to watch offline on convenience",
-              "A Progress dashboard to see the activities",
-              "Motivation factors such as Badges",
-              "A full page lesson with copy of the video content some facts and information",
-              "Practical projects or activities",
-              "Subtitles/Copy of the Video Narration",
-              "Reviews on Class",
-            ],
-          },
-        ];
         return (
-          <section className="w-full max-w-6xl px-2 sm:px-4 flex flex-col items-center justify-center">
+          <section className="w-full max-w-6xl px-2 sm:px-4 flex flex-col items-center justify-center px-4">
             <div className="w-full max-w-6xl flex flex-col items-start gap-10">
-              <h2 className="text-[#FFFFFF] font-bold text-[2rem] text-left mb-4">
+              <h2 className="font-semibold text-xl md:text-[2rem] text-[#FFFFFF] mb-4">
                 Brainstorm and Ideation
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-20 w-full">
@@ -1277,7 +1278,7 @@ export default function JEGO() {
                       </span>
                     </div>
                     {/* Blue sticky notes in 2-column grid */}
-                    <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 gap-8 w-full">
+                    <div className="grid-cols-2 sm:grid-cols-3 md:grid-cols-2 grid lg:grid-cols-2 gap-8 w-full">
                       {group.notes.map((note, nidx) => (
                         <div
                           key={nidx}
@@ -1332,7 +1333,7 @@ export default function JEGO() {
           />
         </div>
       </div>
-      <div className="w-full max-w-6xl mx-auto px-2 sm:px-4">
+      <div className="w-full max-w-6xl mx-auto px-6 sm:px-4">
         <p className="text-[#FFFFFF] font-bold text-2xl md:text-3xl mb-8 md:mb-20">
           Web Wireframe
         </p>
@@ -1434,7 +1435,7 @@ export default function JEGO() {
             />
           </div>
           <div></div>
-          <div className="mt-[-5rem] md:mt-[-15rem] relative aspect-[371/296] overflow-hidden">
+          <div className="lg:mt-[-15rem] md:mt-[-15rem] sm:mt-0 relative aspect-[371/296] overflow-hidden">
             <Image
               src="/images/JEGO-WF13.png"
               alt="Profile Picture"
@@ -1462,7 +1463,7 @@ export default function JEGO() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="rounded-lg">
               <div className="flex flex-row items-center lg:mb-4 md:mb-7 font-fredoka">
-                <div className="w-3 h-3 lg:mr-4 md:mr-7 bg-[#C9F5FF]"></div>
+                <div className="w-3 h-3 mr-4 md:mr-7 bg-[#C9F5FF]"></div>
                 <div>
                   <p className="text-xs font-normal text-[#C9F5FF]">
                     Primary Typeface
@@ -1481,7 +1482,7 @@ export default function JEGO() {
             </div>
             <div className="rounded-lg">
               <div className="flex flex-row items-center lg:mb-4 md:mb-7 font-noto">
-                <div className="w-3 h-3 lg:mr-4 md:mr-7 bg-[#C9F5FF]"></div>
+                <div className="w-3 h-3 mr-4 md:mr-7 bg-[#C9F5FF]"></div>
                 <div>
                   <p className="text-xs font-normal text-[#C9F5FF]">
                     Primary Typeface
@@ -1551,7 +1552,7 @@ export default function JEGO() {
         </section>
 
         {/* App Icon Section */}
-        <section className="mt-10 mr-10">
+        <section className="mt-10 mr-10 px-4 sm:px-6 lg:px-8 w-full">
           <h2 className="text-[#F7DE66] lg:text-xl md:text-2xl font-bold">
             App Icon
           </h2>
@@ -1566,9 +1567,9 @@ export default function JEGO() {
           </div>
         </section>
       </div>
-      <div className="max-w-6xl mx-auto flex flex-col gap-10">
+      <div className="max-w-6xl sm:w-full mx-auto flex flex-col gap-10">
         {/* ────────────── Block 1 ────────────── */}
-        <div className="flex items-center lg:gap-[3.875rem] md:gap-0">
+        <div className="flex items-center lg:flex-row md:flex-row sm:flex-col lg:gap-[3.875rem] md:gap-0">
           {/* phone mock‑up */}
           <div className="flex-shrink-0">
             <Image
