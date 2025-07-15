@@ -11,6 +11,8 @@ export default function ContactUs() {
   });
   const [file, setFile] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +21,19 @@ export default function ContactUs() {
 
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files[0]) {
-      setFile(e.target.files[0]);
+      const selectedFile = e.target.files[0];
+      
+      // Check file size (5MB limit)
+      if (selectedFile.size > 5 * 1024 * 1024) {
+        setSubmitStatus({
+          type: 'error',
+          message: 'File size must be less than 5MB'
+        });
+        return;
+      }
+      
+      setFile(selectedFile);
+      setSubmitStatus({ type: '', message: '' });
     }
   };
 
@@ -37,17 +51,73 @@ export default function ContactUs() {
     setIsDragging(false);
 
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      setFile(e.dataTransfer.files[0]);
+      const droppedFile = e.dataTransfer.files[0];
+      
+      // Check file size (5MB limit)
+      if (droppedFile.size > 5 * 1024 * 1024) {
+        setSubmitStatus({
+          type: 'error',
+          message: 'File size must be less than 5MB'
+        });
+        return;
+      }
+      
+      setFile(droppedFile);
+      setSubmitStatus({ type: '', message: '' });
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData, file);
-    // Reset form after submission
-    setFormData({ fullName: "", email: "", message: "" });
-    setFile(null);
+    setIsSubmitting(true);
+    setSubmitStatus({ type: '', message: '' });
+
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('fullName', formData.fullName);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('message', formData.message);
+      
+      if (file) {
+        formDataToSend.append('file', file);
+      }
+
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        body: formDataToSend,
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitStatus({
+          type: 'success',
+          message: result.message
+        });
+        
+        // Reset form
+        setFormData({ fullName: "", email: "", message: "" });
+        setFile(null);
+        
+        // Reset file input
+        const fileInput = document.getElementById("document");
+        if (fileInput) fileInput.value = '';
+        
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: result.message || 'Failed to send message'
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus({
+        type: 'error',
+        message: 'Network error. Please try again later.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -193,13 +263,29 @@ export default function ContactUs() {
                 </div>
               </div>
 
+              {/* Status Messages */}
+              {submitStatus.message && (
+                <div className={`text-center p-3 rounded-lg ${
+                  submitStatus.type === 'success' 
+                    ? 'bg-green-100 text-green-700 border border-green-200' 
+                    : 'bg-red-100 text-red-700 border border-red-200'
+                }`}>
+                  {submitStatus.message}
+                </div>
+              )}
+
               {/* Submit Button */}
               <div className="flex justify-center pt-4">
                 <button
                   type="submit"
-                  className="bg-[#005EFF] text-white px-6 sm:px-8 py-2 sm:py-3 font-medium text-sm sm:text-base cursor-pointer rounded-full hover:bg-blue-600 transition-colors duration-300 min-w-[120px]"
+                  disabled={isSubmitting}
+                  className={`px-6 sm:px-8 py-2 sm:py-3 font-medium text-sm sm:text-base rounded-full transition-colors duration-300 min-w-[120px] ${
+                    isSubmitting
+                      ? 'bg-gray-400 cursor-not-allowed text-white'
+                      : 'bg-[#005EFF] text-white hover:bg-blue-600 cursor-pointer'
+                  }`}
                 >
-                  Submit
+                  {isSubmitting ? 'Sending...' : 'Submit'}
                 </button>
               </div>
             </form>
