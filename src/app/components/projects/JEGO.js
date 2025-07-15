@@ -1205,248 +1205,100 @@ export default function JEGO() {
       </section>
 
       {/* Brainstorm and Ideation Section */}
-      <section className="w-[71.25rem] flex flex-col items-center justify-center">
-        <div className="w-[71.25rem] flex flex-col items-start gap-[4.5rem]">
-          <h2 className="text-[#FFFFFF] font-bold text-[2rem]  text-left">
-            Brainstorm and Ideation
-          </h2>
-
-          {/* Sticky Notes Grid */}
-          <div className="w-[70.375rem] grid grid-cols-6 gap-3  ">
-            {/* I Like Column */}
-            <div className="bg-[#F7DE66] w-[10rem] h-[10rem] ">
-              <h3 className="text-[#483E0F] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                I Like
-              </h3>
+      {(() => {
+        // Data for each group
+        const brainstormGroups = [
+          {
+            title: "I Like",
+            notes: [
+              "Speed variation options",
+              "Learning Categories",
+              "Learning at my convenience",
+              "Lessons I can like to revisit and watch again",
+              "Loyalty Crystals usability with in-app purchase",
+              "Events",
+              "Meaning of JEGO",
+              "The daily wisdom and Quotes",
+            ],
+          },
+          {
+            title: "I Wish",
+            notes: [
+              "Offline Learning",
+              "Learning from Multiple Mentors",
+              "A learning path to know where to start",
+              "Interact with like-minded people",
+              "Bifurcation of learning expertise before choosing the course",
+              "A little more about the course and the mentor",
+              "PRE Instructions for Meditation courses",
+              "Scorecards/ Leader board",
+              "QA at the end to know things learned",
+              "Questions with instructors feedback",
+              "Easy shareable progress",
+            ],
+          },
+          {
+            title: "What If",
+            notes: [
+              "Community to chat with people learning same things",
+              "Some kind of marking to pass the class",
+              "Can bring in more content from other mentors as well",
+              "Family plans for premium members",
+              "Little more emphasis on crystal to treat them as streaks",
+              "Download lessons for certain period to watch offline on convenience",
+              "A Progress dashboard to see the activities",
+              "Motivation factors such as Badges",
+              "A full page lesson with copy of the video content some facts and information",
+              "Practical projects or activities",
+              "Subtitles/Copy of the Video Narration",
+              "Reviews on Class",
+            ],
+          },
+        ];
+        return (
+          <section className="w-full max-w-6xl px-2 sm:px-4 flex flex-col items-center justify-center">
+            <div className="w-full max-w-6xl flex flex-col items-start gap-10">
+              <h2 className="text-[#FFFFFF] font-bold text-[2rem] text-left mb-4">
+                Brainstorm and Ideation
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-20 w-full">
+                {brainstormGroups.map((group, idx) => (
+                  <div
+                    key={group.title}
+                    className="flex flex-col items-left h-full"
+                  >
+                    {/* Yellow header sticky note */}
+                    <div className="flex flex-col items-center justify-between bg-[#F7DE66] w-[10rem] h-[10rem] mb-4">
+                      <h3 className="text-[#483E0F] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
+                        {group.title}
+                      </h3>
+                      <span className="text-[#483E0F] w-[7.875rem] text-sm font-medium  ml-[0.83rem] mb-[0.83rem] mr-[0.793rem]">
+                        Artist Banda
+                      </span>
+                    </div>
+                    {/* Blue sticky notes in 2-column grid */}
+                    <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 gap-8 w-full">
+                      {group.notes.map((note, nidx) => (
+                        <div
+                          key={nidx}
+                          className="bg-[#3E8D9E] w-[10rem] h-[10rem] aspect-square flex flex-col justify-between items-start px-2 py-2 shadow-md"
+                        >
+                          <h4 className="text-[#C9F5FF] text-base font-semibold text-left w-full mb-2">
+                            {note}
+                          </h4>
+                          <span className="text-[#483E0F]  text-xs font-normal mt-auto">
+                            Artist Banda
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-
-            {/* Empty space */}
-            <div></div>
-
-            {/* I Wish Column */}
-            <div className="bg-[#F7DE66] w-[10rem] h-[10rem] ">
-              <h3 className="text-[#483E0F] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                I Wish
-              </h3>
-            </div>
-
-            {/* Empty space */}
-            <div></div>
-
-            {/* What If Column */}
-            <div className="bg-[#F7DE66] w-[10rem] h-[10rem] ">
-              <h3 className="text-[#483E0F] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                What If
-              </h3>
-            </div>
-
-            {/* Empty space */}
-            <div></div>
-
-            {/* Row 2 */}
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Speed variation options
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Learning Categories
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Offline Learning
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Learning from Multiple Mentors
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Community to chat with people learning same things
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Some kind of marking to pass the class
-              </h4>
-            </div>
-
-            {/* Row 3 */}
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Learning at my convenience
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Lessons I can like to revisit and watch again
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                A learning path to know where to start
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Interact with like-minded people
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Can bring in more content from other mentors as well
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Family plans for premium members
-              </h4>
-            </div>
-
-            {/* Row 4 */}
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Loyalty Crystals usability with in-app purchase
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Events
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Bifurcation of learning expertise before choosing the course
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                A little more about the course and the mentor
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Little more emphasis on crystal to treat them as streaks
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Download options for certain period to watch offline on
-                convenience
-              </h4>
-            </div>
-
-            {/* Row 5 */}
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Meaning of JEGO
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Pre-instructions for Meditation courses
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Scorecards/ Leaderboard
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                QA at the end to know things learned
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                A Progress dashboard to see the activities
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Motivation factors such as Badges
-              </h4>
-            </div>
-
-            {/* Row 6 */}
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                The daily wisdom and Quotes
-              </h4>
-            </div>
-
-            <div></div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Questions with instructors feedback
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Easy shareable progress
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                A full page lesson with copy of the video content some facts and
-                information
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Practical projects or activities
-              </h4>
-            </div>
-
-            {/* Row 7 */}
-            <div></div>
-            <div></div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Subtitles/Copy of the Video Narration
-              </h4>
-            </div>
-
-            <div className="bg-[#3E8D9E] w-[10rem] h-[10rem]">
-              <h4 className="text-[#C9F5FF] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
-                Reviews on Class
-              </h4>
-            </div>
-
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </section>
+          </section>
+        );
+      })()}
 
       {/* Backlogs Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
