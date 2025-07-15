@@ -113,7 +113,7 @@ export default function JEGO() {
   ];
 
   return (
-    <main className="bg-[#164E5A] w-full flex flex-col items-center justify-center gap-32 pb-16 mx-auto">
+    <main className="bg-[#164E5A] w-full flex flex-col items-center justify-center gap-32 pb-16 px-4 md:px-0 lg:px-0 mx-auto">
       {/* Main Image */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
         <Image
@@ -140,7 +140,7 @@ export default function JEGO() {
         </div>
       </section>
       {/* About Section */}
-      <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row gap-8">
+      <section className="container mx-auto max-w-7xl px-4 justify-between sm:px-6 lg:px-8 w-full flex flex-col md:flex-row gap-8">
         <h3 className="text-[#FFFFFF] font-bold text-2xl sm:text-3xl font-poppins text-left mb-4 md:mb-0">
           About the project
         </h3>
@@ -1257,7 +1257,7 @@ export default function JEGO() {
       {/* Brainstorm and Ideation Section */}
       {(() => {
         return (
-          <section className="w-full max-w-6xl px-2 sm:px-4 flex flex-col items-center justify-center px-4">
+          <section className="w-full max-w-6x lg:px-4 md:px-4 flex flex-col items-center justify-center">
             <div className="w-full max-w-6xl flex flex-col items-start gap-10">
               <h2 className="font-semibold text-xl md:text-[2rem] text-[#FFFFFF] mb-4">
                 Brainstorm and Ideation
@@ -1278,11 +1278,11 @@ export default function JEGO() {
                       </span>
                     </div>
                     {/* Blue sticky notes in 2-column grid */}
-                    <div className="grid-cols-2 sm:grid-cols-3 md:grid-cols-2 grid lg:grid-cols-2 gap-8 w-full">
+                    <div className="grid-cols-2 sm:grid-cols-3 md:grid-cols-1 grid lg:grid-cols-2 gap-6 w-full">
                       {group.notes.map((note, nidx) => (
                         <div
                           key={nidx}
-                          className="bg-[#3E8D9E] w-[10rem] h-[10rem] aspect-square flex flex-col justify-between items-start px-2 py-2 shadow-md"
+                          className="bg-[#3E8D9E] w-full h-[12rem] lg:h-[10rem] md:h-[10rem] aspect-square flex flex-col justify-between items-start px-2 py-2 shadow-md"
                         >
                           <h4 className="text-[#C9F5FF] text-base font-semibold text-left w-full mb-2">
                             {note}
@@ -1435,7 +1435,7 @@ export default function JEGO() {
             />
           </div>
           <div></div>
-          <div className="lg:mt-[-15rem] md:mt-[-15rem] sm:mt-0 relative aspect-[371/296] overflow-hidden">
+          <div className="lg:mt-[-15rem] md:mt-0 sm:mt-0 relative aspect-[371/296] overflow-hidden">
             <Image
               src="/images/JEGO-WF13.png"
               alt="Profile Picture"
@@ -1567,34 +1567,32 @@ export default function JEGO() {
           </div>
         </section>
       </div>
-      <div className="max-w-6xl sm:w-full mx-auto flex flex-col gap-10">
+      <div className="max-w-6xl w-full mx-auto flex flex-col gap-10 px-2 sm:px-4">
         {/* ────────────── Block 1 ────────────── */}
-        <div className="flex items-center lg:flex-row md:flex-row sm:flex-col lg:gap-[3.875rem] md:gap-0">
+        <div className="flex flex-col lg:flex-row md:flex-row lg:gap-[3.875rem] md:gap-0 gap-8 items-center">
           {/* phone mock‑up */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 w-full max-w-[620px] mx-auto">
             <Image
               src="/images/JEGO-Iphone.webp"
               width={620}
               height={855}
               alt="Mentors phone UI"
-              className="object-contain"
+              className="object-contain w-full h-auto"
               priority
             />
           </div>
-
-          <div className="w-[26.5rem]">
-            <h3 className=" text-[#F7DE66] text-3xl font-bold mb-7">Mentors</h3>
-            <p className=" text-[#C9F5FF] leading-relaxed font-normal text-xl opacity-90">
+          <div className="w-full max-w-xl mt-6 lg:mt-0 px-5">
+            <h3 className="text-[#F7DE66] text-3xl font-bold mb-7">Mentors</h3>
+            <p className="text-[#C9F5FF] leading-relaxed font-normal text-xl opacity-90">
               Now meet the Mentors, influential personalities and creator of
               life changing courses brought to you by Jego.
             </p>
           </div>
         </div>
-
-        {/* ────────────── Block 2 (reversed on  md+) ────────────── */}
-        <div className="flex flex-row items-center gap-[3.875rem]">
-          <div className="w-[26.5rem] lg:ml-[8.437rem] md:ml-8">
-            <h3 className="text-[#F7DE66]  text-3xl font-bold mb-7">
+        {/* ────────────── Block 2 (reversed on md+) ────────────── */}
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-[3.875rem]">
+          <div className="w-full max-w-xl mt-6 md:mt-0 md:ml-8 lg:ml-[8.437rem] px-5">
+            <h3 className="text-[#F7DE66] text-3xl font-bold mb-7">
               Jego Home
             </h3>
             <p className="text-[#C9F5FF] leading-relaxed font-normal text-xl opacity-90">
@@ -1603,19 +1601,19 @@ export default function JEGO() {
             </p>
           </div>
           {/* phone mock‑up */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 w-full max-w-[344px] mx-auto">
             <Image
               src="/images/JEGO-Iphone1.webp"
               width={344}
               height={696}
               alt="Jego Home phone UI"
-              className="object-contain"
+              className="object-contain w-full h-auto"
             />
           </div>
         </div>
       </div>
-      <div className="mt-[3.35rem]">
-        <div className=" relative w-[89.937rem] h-[27.18rem] overflow-hidden ">
+      <div className="mt-[3.35rem] w-full px-2 sm:px-4">
+        <div className="relative w-full max-w-[1440px] h-auto aspect-[2/1] mx-auto overflow-hidden">
           <Image
             src="/images/JEGO-GO1.webp"
             alt="Profile Picture"
@@ -1624,11 +1622,11 @@ export default function JEGO() {
           />
         </div>
       </div>
-      <section className="py-12">
-        <div className="flex items-start justify-between gap-10">
+      <section className="py-12 w-full px-2 sm:px-4">
+        <div className="flex flex-col md:flex-row lg:flex-row items-center justify-between gap-10">
           {/* Left Content */}
-          <div className="flex flex-col items-center justify-between gap-16">
-            <div className="flex-shrink-0 lg:w-[33.25rem] h-[20rem] mt-20 px-16 md:w-[25rem]">
+          <div className="flex flex-col items-center justify-between gap-16 w-full max-w-lg mx-auto">
+            <div className="lg:mt-20 flex-shrink-0 w-full h-auto mt-10 px-5 md:w-[25rem]">
               <h3 className="text-3xl font-bold text-[#F7DE66] mb-4">
                 Onboarding
               </h3>
@@ -1637,23 +1635,19 @@ export default function JEGO() {
                 app and then help him register to the system.
               </p>
             </div>
-
-            <div className="relative overflow-hidden lg:ml-0 md:ml-16">
+            <div className="relative overflow-hidden w-full max-w-[344px] mx-auto">
               <Image
                 src="/images/projects/JG-5.webp"
                 alt="image"
                 width={344}
                 height={696}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
             </div>
           </div>
-
           {/* Right Phone Mockups Grid */}
-
-          {/* Background Image */}
-          <div className="w-full relative">
-            <div className="absolute w-full h-[2040px] opacity-70 z-0">
+          <div className="w-full max-w-lg mx-auto relative flex flex-col gap-10">
+            <div className="absolute w-full h-full opacity-70 z-0 hidden md:block">
               <Image
                 src="/images/projects/JG-BG.webp"
                 alt="image"
@@ -1661,70 +1655,66 @@ export default function JEGO() {
                 className="object-contain"
               />
             </div>
-
-            <div className="w-[33.25rem] flex flex-col items-center justify-between gap-10 px-16 z-30">
-              {/* Top Row */}
+            <div className="flex flex-col gap-10 z-10">
               <div className="flex justify-end">
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden w-full max-w-[344px] mx-auto">
                   <Image
                     src="/images/projects/JG-7.webp"
                     alt="image"
                     width={344}
                     height={696}
-                    className="object-contain"
+                    className="object-contain w-full h-auto"
                   />
                 </div>
               </div>
-
               <div className="flex justify-start">
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden w-full max-w-[344px] mx-auto">
                   <Image
                     src="/images/projects/JG-8.webp"
                     alt="image"
                     width={344}
                     height={696}
-                    className="object-contain"
+                    className="object-contain w-full h-auto"
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         {/* Bottom Row - Additional Phone Mockups */}
-        <div className="flex items-center justify-between gap-10 px-22 mt-16">
-          <div className="relative overflow-hidden">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 px-0 md:px-22 mt-16 w-full">
+          <div className="relative overflow-hidden w-full max-w-[344px] mx-auto">
             <Image
               src="/images/projects/JG-6.webp"
               alt="image"
               width={344}
               height={696}
-              className="object-contain"
+              className="object-contain w-full h-auto"
             />
           </div>
-
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden w-full max-w-[344px] mx-auto">
             <Image
               src="/images/projects/JG-9.webp"
               alt="image"
               width={344}
               height={696}
-              className="object-contain"
+              className="object-contain w-full h-auto"
             />
           </div>
         </div>
       </section>
-      <section className="w-6xl mx-auto lg:px-0 md:px-6">
-        {/* Left Content */}
-        <div className="relative lg:top-[10rem] flex flex-col items-start gap-6 md:top-16">
+      <section className="w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-0">
+        {/* Text Section */}
+        <div className="relative lg:top-[10rem] md:top-16 w-full flex flex-col items-start gap-6 mt-10 md:mt-16 lg:mt-40">
           <h3 className="text-3xl font-bold text-[#F7DE66]">Courses</h3>
           <p className="text-xl leading-relaxed text-[#C9F5FF] font-normal">
-            Equiped with powerfull search and filters <br />
+            Equiped with powerful search and filters <br />
             the courses page help you access content.
           </p>
         </div>
 
-        <div className="relative w-full lg:aspect-[1/1] md:aspect-[2.5/1] overflow-hidden">
+        {/* Image Section */}
+        <div className="relative w-full aspect-[2/1] md:aspect-[2.5/1] lg:aspect-[1/1] mt-8">
           <Image
             src="/images/projects/JG-10.webp"
             alt="image"
@@ -1733,8 +1723,10 @@ export default function JEGO() {
           />
         </div>
       </section>
+
       <section className="w-full flex flex-col items-center justify-center gap-20">
-        <div className="mx-auto flex items-start justify-between gap-10">
+        {/* Section 1 */}
+        <div className="mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Left Content */}
           <div className="flex justify-end lg:ml-0 md:ml-8">
             <div className="relative overflow-hidden">
@@ -1750,7 +1742,7 @@ export default function JEGO() {
 
           {/* Right Content */}
           <div className="flex flex-col items-center justify-between gap-16">
-            <div className="flex-shrink-0 w-[35rem] mb-10 px-16">
+            <div className="w-full max-w-xl mb-10 px-5 lg:pl-8 mt-6 lg:mt-0">
               <h3 className="text-[#F7DE66] text-3xl font-bold mb-4">
                 Search, Events & Profile
               </h3>
@@ -1759,8 +1751,7 @@ export default function JEGO() {
                 The Search, The Events & Profile and Settings.
               </p>
             </div>
-
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden w-full max-w-[423px] mx-auto">
               <Image
                 src="/images/projects/JG-11.webp"
                 alt="image"
@@ -1772,9 +1763,10 @@ export default function JEGO() {
           </div>
         </div>
 
-        <div className="w-full relative">
+        {/* Section 2 with Background */}
+        <div className="w-full relative mt-10">
           {/* Background Image */}
-          <div className="absolute top-12 w-full h-full opacity-70 z-0">
+          <div className="absolute top-12 w-full h-full opacity-70 z-0 hidden md:block">
             <Image
               src="/images/projects/JG-BG-1.png"
               alt="image"
@@ -1783,17 +1775,18 @@ export default function JEGO() {
             />
           </div>
 
-          <div className="relative lg:w-[67rem] md:w-full mx-auto flex flex-row items-center md:justify-center md:gap-8 lg:gap-16">
-            <div className="flex-shrink-0">
+          {/* Home and Mastery */}
+          <div className="relative mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center md:gap-8 lg:gap-16 lg:w-[67rem] w-full">
+            <div className="flex-shrink-0 w-full max-w-[344px] mx-auto">
               <Image
                 src="/images/projects/JG-13.webp"
                 width={344}
                 height={696}
                 alt="Jego Home phone UI"
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
             </div>
-            <div className="w-[26.5rem] pl-8">
+            <div className="w-full max-w-xl px-5 lg:pl-8 mt-6 lg:mt-0">
               <h3 className="text-[#F7DE66] text-3xl font-bold mb-7">
                 Home and Mastery
               </h3>
@@ -1804,10 +1797,11 @@ export default function JEGO() {
             </div>
           </div>
 
-          <div className="relative lg:w-[67rem] md:w-full mx-auto flex items-start lg:justify-between md:justify-center md:gap-5 lg:gap-10">
-            {/* left Content */}
+          {/* About Mentors */}
+          <div className="relative mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center md:gap-5 lg:gap-10 mt-16 lg:w-[67rem] w-full">
+            {/* Left */}
             <div className="flex flex-col items-center justify-between gap-16">
-              <div className="flex-shrink-0 lg:w-[32rem] md:w-[28rem] mt-25 mb-30 lg:px-16 md:px-0">
+              <div className="w-full lg:mt-25 lg:mb-30 max-w-xl px-5 lg:pl-8 mt-0">
                 <h3 className="text-[#F7DE66] text-3xl font-bold mb-4">
                   About Mentors
                 </h3>
@@ -1816,7 +1810,6 @@ export default function JEGO() {
                   teachers.
                 </p>
               </div>
-
               <div className="relative overflow-hidden">
                 <Image
                   src="/images/projects/JG-15.webp"
@@ -1828,24 +1821,25 @@ export default function JEGO() {
               </div>
             </div>
 
-            {/* Right Content */}
-            <div className="flex justify-end">
-              <div className="relative overflow-hidden">
+            {/* Right */}
+            <div className="flex justify-end w-full max-w-[344px] mx-auto lg:mx-0 mt-10 lg:mt-0">
+              <div className="relative overflow-hidden w-full">
                 <Image
                   src="/images/projects/JG-14.webp"
                   alt="image"
                   width={344}
                   height={696}
-                  className="object-contain"
+                  className="object-contain w-full h-auto"
                 />
               </div>
             </div>
           </div>
 
-          <div className="relative lg:w-[67rem] md:w-full mx-auto flex items-start lg:justify-between md:justify-center md:gap-5 lg:gap-10">
-            {/* left Content */}
+          {/* Lessons and Player */}
+          <div className="relative mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center md:gap-5 lg:gap-10 mt-16 lg:w-[67rem] w-full">
+            {/* Left */}
             <div className="flex flex-col items-center justify-between gap-16">
-              <div className="flex-shrink-0 lg:w-[32rem] md:w-[28rem] mt-25 mb-30 lg:px-16 md:px-0">
+              <div className="w-full max-w-xl lg:mt-25 lg:mb-30 px-5 lg:pl-8 mt-6">
                 <h3 className="text-[#F7DE66] text-3xl font-bold mb-4">
                   Lessons and Player
                 </h3>
@@ -1855,7 +1849,6 @@ export default function JEGO() {
                   powerful speed and captions.
                 </p>
               </div>
-
               <div className="relative overflow-hidden">
                 <Image
                   src="/images/projects/JG-17.webp"
@@ -1867,25 +1860,26 @@ export default function JEGO() {
               </div>
             </div>
 
-            {/* Right Content */}
-            <div className="flex justify-end">
-              <div className="relative overflow-hidden">
+            {/* Right */}
+            <div className="flex justify-end w-full max-w-[344px] mx-auto lg:mx-0 mt-10 lg:mt-0">
+              <div className="relative overflow-hidden w-full">
                 <Image
                   src="/images/projects/JG-16.webp"
                   alt="image"
                   width={344}
                   height={696}
-                  className="object-contain"
+                  className="object-contain w-full h-auto"
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="w-6xl md:w-full mx-auto relative overflow-hidden">
-        <div className="flex flex-col items-start justify-center relative z-10 max-w-7xl mx-auto px-4">
+
+      <section className="w-full max-w-7xl mx-auto px-5 sm:px-4">
+        <div className="flex flex-col items-start justify-center relative z-10 w-full">
           {/* Header */}
-          <div className="mb-18">
+          <div className="mb-10">
             <h2 className="text-[#F7DE66] text-3xl font-bold mb-4">Web UI</h2>
             <p className="text-[#C9F5FF] leading-relaxed text-xl font-normal max-w-[38.63rem]">
               The Jego web UI takes user experience to the next level with the
@@ -1893,93 +1887,88 @@ export default function JEGO() {
               with Jego Web.
             </p>
           </div>
-
           {/* Masonry Grid Layout */}
-          <div className="grid lg:grid-cols-12 md:grid-cols-6 md:mx-auto gap-8 auto-rows-min">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-8 auto-rows-min">
             {/* Row 1 - Top Section */}
-            <div className="lg:col-span-6 md:col-span-3 row-span-2">
+            <div className="lg:col-span-6 md:col-span-1 row-span-2">
               <Image
                 src="/images/projects/JG-19.webp"
                 alt="Login Screen"
                 width={556}
                 height={393}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
             </div>
-
-            <div className="lg:col-span-6 md:col-span-3 row-span-2">
+            <div className="lg:col-span-6 md:col-span-1 row-span-2">
               <Image
                 src="/images/projects/JG-20.webp"
                 alt="What is Jego"
                 width={556}
                 height={393}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
             </div>
-
             {/* Row 2 - Middle Large Section */}
-            <div className="lg:col-span-8 md:col-span-3 row-span-3">
+            <div className="lg:col-span-8 md:col-span-1 row-span-3">
               <Image
                 src="/images/projects/JG-21.webp"
                 alt="User Profiles"
                 width={834}
                 height={593}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
             </div>
-            <div className="lg:col-span-4 md:col-span-3 row-span-3">
+            <div className="lg:col-span-4 md:col-span-1 row-span-3 flex flex-col gap-4">
               <Image
                 src="/images/projects/JG-22.webp"
                 alt="Main Dashboard"
                 width={276}
                 height={272}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-23.webp"
                 alt="Course Management"
                 width={276}
                 height={272}
-                className="object-contain lg:block md:hidden"
+                className="object-contain w-full h-auto hidden lg:block md:hidden"
               />
             </div>
-
             {/* Row 3 - Middle Large Section */}
-            <div className="lg:col-span-6 md:col-span-3 row-span-2">
+            <div className="lg:col-span-6 md:col-span-1 row-span-2 flex flex-col gap-4">
               <Image
                 src="/images/projects/JG-24.webp"
                 alt="Learning Interface"
                 width={556}
                 height={672}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
-              <div className="mt-8">
+              <div className="mt-4">
                 <Image
                   src="/images/projects/JG-26.webp"
                   alt="Course Details"
                   width={556}
                   height={890}
-                  className="object-contain"
+                  className="object-contain w-full h-auto"
                 />
               </div>
             </div>
-
-            <div className="mt-14 lg:col-span-6 md:col-span-3 row-span-2">
+            <div className="mt-4 lg:col-span-6 md:col-span-1 row-span-2">
               <Image
                 src="/images/projects/JG-25.webp"
                 alt="Course Catalog"
                 width={556}
                 height={1470}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="w-6xl mx-auto relative overflow-hidden">
-        <div className="flex flex-col items-start justify-center relative z-10 max-w-7xl mx-auto px-4">
+      <section className="w-full max-w-7xl mx-auto px-5 sm:px-4">
+        <div className="flex flex-col items-start justify-center relative z-10 w-full">
           {/* Header */}
-          <div className="mb-18">
+          <div className="mb-10">
             <h2 className="text-[#F7DE66] text-3xl font-bold mb-4">
               Components
             </h2>
@@ -1987,102 +1976,101 @@ export default function JEGO() {
               Components and Variants used it this entire system.
             </p>
           </div>
-
           {/* Masonry Grid Layout */}
-          <div className="grid lg:grid-cols-12 md:grid-cols-8 gap-x-3 gap-y-3 auto-rows-min">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-8 auto-rows-min">
             {/* Col 1 - Left Section */}
-            <div className="col-span-6 md:grid-cols-4 flex flex-col gap-y-3">
+            <div className="col-span-1 lg:col-span-6 flex flex-col gap-4">
               <Image
                 src="/images/projects/JG-27.webp"
                 alt="Component"
                 width={614}
                 height={406}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-28.webp"
                 alt="Component"
                 width={614}
                 height={187}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-29.webp"
                 alt="Component"
                 width={614}
                 height={554}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-30.webp"
                 alt="Component"
                 width={614}
                 height={615}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
             </div>
-
             {/* Col 2 - Right Section */}
-            <div className="col-span-6 md:grid-cols-4 flex flex-col gap-y-3">
+            <div className="col-span-1 lg:col-span-6 flex flex-col gap-4">
               <Image
                 src="/images/projects/JG-31.webp"
                 alt="Component"
                 width={510}
                 height={261}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-32.webp"
                 alt="Component"
                 width={510}
                 height={261}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-33.webp"
                 alt="Component"
                 width={510}
                 height={131}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-34.webp"
                 alt="Component"
                 width={510}
                 height={131}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-35.webp"
                 alt="Component"
                 width={510}
                 height={131}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-36.webp"
                 alt="Component"
                 width={510}
                 height={131}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
               <Image
                 src="/images/projects/JG-37.webp"
                 alt="Component"
                 width={510}
                 height={300}
-                className="object-contain"
+                className="object-contain w-full h-auto"
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="w-6xl mx-auto py-16 md:px-12">
-        <div className="flex flex-col items-start justify-center relative z-10 max-w-7xl mx-auto px-4">
-          <h2 className="mb-18 text-[#F7DE66] text-3xl font-bold">The Grid</h2>
-
-          <div className="flex lg:flex-row md:flex-col sm:flex-col items-center justify-center md:items-start md:gap-10 gap-5">
-            <div className="relative w-[864px] md:w-[700px] aspect-[1/1]">
+      <section className="w-full max-w-7xl mx-auto py-16 px-6 md:px-12 sm:px-10">
+        <div className="flex flex-col items-start justify-center relative z-10 w-full">
+          <h2 className="mb-10 lg:mb-18 text-[#F7DE66] text-3xl font-bold">
+            The Grid
+          </h2>
+          <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col items-center justify-center md:items-start md:gap-10 gap-5 w-full">
+            <div className="relative w-full max-w-[864px] md:w-[700px] aspect-[1/1] mx-auto">
               <Image
                 src="/images/projects/JG-38.webp"
                 alt="Component"
@@ -2090,13 +2078,15 @@ export default function JEGO() {
                 className="object-contain"
               />
             </div>
-            <Image
-              src="/images/projects/JG-39.webp"
-              alt="Component"
-              width={250}
-              height={756}
-              className="object-contain"
-            />
+            <div className="w-full max-w-[250px] mx-auto">
+              <Image
+                src="/images/projects/JG-39.webp"
+                alt="Component"
+                width={250}
+                height={756}
+                className="object-contain w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
