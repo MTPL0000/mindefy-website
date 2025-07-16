@@ -1519,7 +1519,7 @@ export default function JEGO() {
               <p className="text-[#3E8D9E] font-normal text-lg md:text-2xl mb-4 md:mb-7">
                 Primary
               </p>
-              <div className="flex gap-1 md:gap-2 lg:w-full md:w-[26.5rem] mx-auto mb-6 md:mb-14 justify-center">
+              <div className="flex gap-1 md:gap-2 lg:w-full md:w-[26.5rem] mx-auto mb-6 md:mb-14 justify-center lg:px-2">
                 {primaryColors.map((color, index) => (
                   <div
                     key={index}
@@ -1538,7 +1538,7 @@ export default function JEGO() {
               <p className="text-[#A08D32] font-normal text-lg md:text-2xl mb-4 md:mb-7">
                 Primary
               </p>
-              <div className="flex gap-1 md:gap-2 lg:w-full md:w-[26.5rem] mx-auto mb-6 md:mb-14 justify-center">
+              <div className="flex gap-1 md:gap-2 lg:w-full md:w-[26.5rem] mx-auto mb-6 md:mb-14 justify-center lg:px-2">
                 {secondaryColors.map((color, index) => (
                   <div
                     key={index}
