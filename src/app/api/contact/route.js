@@ -113,7 +113,7 @@ export async function POST(request) {
     return NextResponse.json({
       success: true,
       message:
-        "🙌 Thanks for your message! We’ll be in touch soon to learn more about what you need. We’re looking forward to working with you!",
+        "Thank you! Your message has been sent successfully. Our team will get back to you shortly.",
     });
 
   } catch (error) {
