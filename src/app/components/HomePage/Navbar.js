@@ -808,6 +808,13 @@ export default function Navbar() {
                     EarlyFoods
                   </Link>
                   <Link
+                    href="/jego"
+                    onClick={handleMobileMenuItemClick}
+                    className="block hover:text-red-600 text-xs"
+                  >
+                    JEGO
+                  </Link>
+                  <Link
                     href="/soli-stack"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
