@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 export default function ContactUs() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -12,7 +14,95 @@ export default function ContactUs() {
   const [file, setFile] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+  const [submitStatus, setSubmitStatus] = useState({ type: "", message: "" });
+
+  // URL tracking utility function for form submission success
+  const updateUrlWithTracking = () => {
+    try {
+      // Generate Unix timestamp for consistent tracking
+      const timestamp = Date.now();
+
+      // Read and preserve all existing URL parameters using URLSearchParams
+      const currentParams = new URLSearchParams(window.location.search);
+
+      // Store original parameters for preservation
+      const originalParams = new Map();
+      for (const [key, value] of currentParams.entries()) {
+        originalParams.set(key, value);
+      }
+
+      // Handle multiple form submissions by updating timestamp on subsequent submissions
+      // This ensures the latest submission timestamp is always reflected
+      currentParams.set("form_submitted", "true");
+      currentParams.set("timestamp", timestamp.toString());
+
+      // Construct new URL with all preserved and tracking parameters
+      const newUrl = `${window.location.pathname}?${currentParams.toString()}`;
+
+      // Check if History API is supported before attempting URL modification
+      if (
+        typeof window !== "undefined" &&
+        window.history &&
+        window.history.pushState
+      ) {
+        try {
+          // Primary method: Update URL using Next.js router with scroll: false
+          // This uses browser history API without page navigation or reload
+          router.push(newUrl, { scroll: false });
+        } catch (routerError) {
+          console.warn(
+            "Next.js router failed, falling back to History API:",
+            routerError
+          );
+
+          // Fallback: Use browser History API directly
+          window.history.pushState(null, "", newUrl);
+        }
+      } else {
+        // Fallback behavior for browsers that don't support History API
+        console.warn("History API not supported, URL tracking disabled");
+
+        // Alternative: Could use hash-based tracking or localStorage for analytics
+        // For now, we'll just log the tracking data for debugging
+        console.info("Form submission tracking data:", {
+          form_submitted: true,
+          timestamp: timestamp,
+          originalParams: Object.fromEntries(originalParams),
+        });
+      }
+    } catch (error) {
+      // Comprehensive error handling to ensure non-blocking operation
+      console.warn("URL tracking failed:", error);
+
+      // Additional fallback: Attempt basic History API usage
+      try {
+        if (
+          typeof window !== "undefined" &&
+          window.history &&
+          window.history.pushState
+        ) {
+          const timestamp = Date.now();
+          const basicParams = new URLSearchParams(window.location.search);
+          basicParams.set("form_submitted", "true");
+          basicParams.set("timestamp", timestamp.toString());
+          const basicUrl = `${
+            window.location.pathname
+          }?${basicParams.toString()}`;
+          window.history.pushState(null, "", basicUrl);
+        }
+      } catch (fallbackError) {
+        console.warn("All URL tracking methods failed:", fallbackError);
+
+        // Final fallback: Log tracking data for manual analytics collection
+        console.info("Manual tracking data collection:", {
+          form_submitted: true,
+          timestamp: Date.now(),
+          url: window.location.href,
+          error: fallbackError.message,
+        });
+      }
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,18 +112,18 @@ export default function ContactUs() {
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files[0]) {
       const selectedFile = e.target.files[0];
-      
+
       // Check file size (5MB limit)
       if (selectedFile.size > 5 * 1024 * 1024) {
         setSubmitStatus({
-          type: 'error',
-          message: 'File size must be less than 5MB'
+          type: "error",
+          message: "File size must be less than 5MB",
         });
         return;
       }
-      
+
       setFile(selectedFile);
-      setSubmitStatus({ type: '', message: '' });
+      setSubmitStatus({ type: "", message: "" });
     }
   };
 
@@ -52,38 +142,38 @@ export default function ContactUs() {
 
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
       const droppedFile = e.dataTransfer.files[0];
-      
+
       // Check file size (5MB limit)
       if (droppedFile.size > 5 * 1024 * 1024) {
         setSubmitStatus({
-          type: 'error',
-          message: 'File size must be less than 5MB'
+          type: "error",
+          message: "File size must be less than 5MB",
         });
         return;
       }
-      
+
       setFile(droppedFile);
-      setSubmitStatus({ type: '', message: '' });
+      setSubmitStatus({ type: "", message: "" });
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus({ type: '', message: '' });
+    setSubmitStatus({ type: "", message: "" });
 
     try {
       const formDataToSend = new FormData();
-      formDataToSend.append('fullName', formData.fullName);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('message', formData.message);
-      
+      formDataToSend.append("fullName", formData.fullName);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("message", formData.message);
+
       if (file) {
-        formDataToSend.append('file', file);
+        formDataToSend.append("file", file);
       }
 
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         body: formDataToSend,
       });
 
@@ -91,29 +181,31 @@ export default function ContactUs() {
 
       if (response.ok && result.success) {
         setSubmitStatus({
-          type: 'success',
-          message: result.message
+          type: "success",
+          message: result.message,
         });
-        
+
         // Reset form
         setFormData({ fullName: "", email: "", message: "" });
         setFile(null);
-        
+
         // Reset file input
         const fileInput = document.getElementById("document");
-        if (fileInput) fileInput.value = '';
-        
+        if (fileInput) fileInput.value = "";
+
+        // Add URL tracking after successful form submission
+        updateUrlWithTracking();
       } else {
         setSubmitStatus({
-          type: 'error',
-          message: result.message || 'Failed to send message'
+          type: "error",
+          message: result.message || "Failed to send message",
         });
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error("Error submitting form:", error);
       setSubmitStatus({
-        type: 'error',
-        message: 'Network error. Please try again later.'
+        type: "error",
+        message: "Network error. Please try again later.",
       });
     } finally {
       setIsSubmitting(false);
@@ -265,11 +357,13 @@ export default function ContactUs() {
 
               {/* Status Messages */}
               {submitStatus.message && (
-                <div className={`text-center p-3 rounded-lg ${
-                  submitStatus.type === 'success' 
-                    ? 'bg-green-100 text-green-700 border border-green-200' 
-                    : 'bg-red-100 text-red-700 border border-red-200'
-                }`}>
+                <div
+                  className={`text-center p-3 rounded-lg ${
+                    submitStatus.type === "success"
+                      ? "bg-green-100 text-green-700 border border-green-200"
+                      : "bg-red-100 text-red-700 border border-red-200"
+                  }`}
+                >
                   {submitStatus.message}
                 </div>
               )}
@@ -281,11 +375,11 @@ export default function ContactUs() {
                   disabled={isSubmitting}
                   className={`px-6 sm:px-8 py-2 sm:py-3 font-medium text-sm sm:text-base rounded-full transition-colors duration-300 min-w-[120px] ${
                     isSubmitting
-                      ? 'bg-gray-400 cursor-not-allowed text-white'
-                      : 'bg-[#005EFF] text-white hover:bg-blue-600 cursor-pointer'
+                      ? "bg-gray-400 cursor-not-allowed text-white"
+                      : "bg-[#005EFF] text-white hover:bg-blue-600 cursor-pointer"
                   }`}
                 >
-                  {isSubmitting ? 'Sending...' : 'Submit'}
+                  {isSubmitting ? "Sending..." : "Submit"}
                 </button>
               </div>
             </form>
