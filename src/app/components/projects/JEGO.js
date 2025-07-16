@@ -113,7 +113,7 @@ export default function JEGO() {
   ];
 
   return (
-    <main className="bg-[#164E5A] w-full flex flex-col items-center justify-center gap-32 pb-16 px-4 md:px-0 lg:px-0 mx-auto">
+    <main className="bg-[#164E5A] w-full flex flex-col items-center justify-center gap-32 pb-16 md:px-0 lg:px-0 mx-auto">
       {/* Main Image */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
         <Image
@@ -1140,7 +1140,7 @@ export default function JEGO() {
               </div>
 
               {/* Personality Traits */}
-              <div className="ml-0 md:ml-25">
+              <div className="ml-0">
                 <h5 className="text-[#F7DE66] font-semibold text-lg md:text-[1.25rem] mb-4 md:mb-4.5">
                   Personality
                 </h5>
@@ -1257,7 +1257,7 @@ export default function JEGO() {
       {/* Brainstorm and Ideation Section */}
       {(() => {
         return (
-          <section className="w-full max-w-6x lg:px-4 md:px-4 flex flex-col items-center justify-center">
+          <section className="w-full max-w-6x px-4 flex flex-col items-center justify-center">
             <div className="w-full max-w-6xl flex flex-col items-start gap-10">
               <h2 className="font-semibold text-xl md:text-[2rem] text-[#FFFFFF] mb-4">
                 Brainstorm and Ideation
@@ -1284,10 +1284,10 @@ export default function JEGO() {
                           key={nidx}
                           className="bg-[#3E8D9E] w-full h-[12rem] lg:h-[10rem] md:h-[10rem] aspect-square flex flex-col justify-between items-start px-2 py-2 shadow-md"
                         >
-                          <h4 className="text-[#C9F5FF] text-base font-semibold text-left w-full mb-2">
+                          <h4 className="text-[#C9F5FF] text-sm font-semibold text-left w-full mb-2">
                             {note}
                           </h4>
-                          <span className="text-[#483E0F]  text-xs font-normal mt-auto">
+                          <span className="text-[#483E0F]  text-sm font-normal mt-auto">
                             Artist Banda
                           </span>
                         </div>
@@ -1460,7 +1460,7 @@ export default function JEGO() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="rounded-lg">
               <div className="flex flex-row items-center lg:mb-4 md:mb-7 font-fredoka">
                 <div className="w-3 h-3 mr-4 md:mr-7 bg-[#C9F5FF]"></div>
@@ -1705,7 +1705,7 @@ export default function JEGO() {
       </section>
       <section className="w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-0">
         {/* Text Section */}
-        <div className="relative lg:top-[10rem] md:top-16 w-full flex flex-col items-start gap-6 mt-10 md:mt-16 lg:mt-40">
+        <div className="relative lg:top-[10rem] md:top-5 w-full flex flex-col items-start gap-6 mt-10 md:mt-16 lg:mt-40">
           <h3 className="text-3xl font-bold text-[#F7DE66]">Courses</h3>
           <p className="text-xl leading-relaxed text-[#C9F5FF] font-normal">
             Equiped with powerful search and filters <br />
