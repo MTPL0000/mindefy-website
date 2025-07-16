@@ -101,7 +101,7 @@ export async function POST(request) {
 
     // Mail options
     const mailOptions = {
-      from: `"${name}" <${process.env.SENDER_EMAIL}>`,
+      from: `Mindefy Sales Lead <${process.env.SENDER_EMAIL}>`,
       to: [
         process.env.TO_EMAIL_1,
         process.env.TO_EMAIL_2,
