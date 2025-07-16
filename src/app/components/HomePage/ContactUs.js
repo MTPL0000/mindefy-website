@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 export default function ContactUs() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -13,6 +15,82 @@ export default function ContactUs() {
   const [isDragging, setIsDragging] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+
+  // URL tracking utility function for form submission success
+  const updateUrlWithTracking = () => {
+    try {
+      // Generate Unix timestamp for consistent tracking
+      const timestamp = Date.now();
+      
+      // Read and preserve all existing URL parameters using URLSearchParams
+      const currentParams = new URLSearchParams(window.location.search);
+      
+      // Store original parameters for preservation
+      const originalParams = new Map();
+      for (const [key, value] of currentParams.entries()) {
+        originalParams.set(key, value);
+      }
+      
+      // Handle multiple form submissions by updating timestamp on subsequent submissions
+      // This ensures the latest submission timestamp is always reflected
+      currentParams.set('form_submitted', 'true');
+      currentParams.set('timestamp', timestamp.toString());
+      
+      // Construct new URL with all preserved and tracking parameters
+      const newUrl = `${window.location.pathname}?${currentParams.toString()}`;
+      
+      // Check if History API is supported before attempting URL modification
+      if (typeof window !== 'undefined' && window.history && window.history.pushState) {
+        try {
+          // Primary method: Update URL using Next.js router with scroll: false
+          // This uses browser history API without page navigation or reload
+          router.push(newUrl, { scroll: false });
+        } catch (routerError) {
+          console.warn('Next.js router failed, falling back to History API:', routerError);
+          
+          // Fallback: Use browser History API directly
+          window.history.pushState(null, '', newUrl);
+        }
+      } else {
+        // Fallback behavior for browsers that don't support History API
+        console.warn('History API not supported, URL tracking disabled');
+        
+        // Alternative: Could use hash-based tracking or localStorage for analytics
+        // For now, we'll just log the tracking data for debugging
+        console.info('Form submission tracking data:', {
+          form_submitted: true,
+          timestamp: timestamp,
+          originalParams: Object.fromEntries(originalParams)
+        });
+      }
+      
+    } catch (error) {
+      // Comprehensive error handling to ensure non-blocking operation
+      console.warn('URL tracking failed:', error);
+      
+      // Additional fallback: Attempt basic History API usage
+      try {
+        if (typeof window !== 'undefined' && window.history && window.history.pushState) {
+          const timestamp = Date.now();
+          const basicParams = new URLSearchParams(window.location.search);
+          basicParams.set('form_submitted', 'true');
+          basicParams.set('timestamp', timestamp.toString());
+          const basicUrl = `${window.location.pathname}?${basicParams.toString()}`;
+          window.history.pushState(null, '', basicUrl);
+        }
+      } catch (fallbackError) {
+        console.warn('All URL tracking methods failed:', fallbackError);
+        
+        // Final fallback: Log tracking data for manual analytics collection
+        console.info('Manual tracking data collection:', {
+          form_submitted: true,
+          timestamp: Date.now(),
+          url: window.location.href,
+          error: fallbackError.message
+        });
+      }
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -102,6 +180,9 @@ export default function ContactUs() {
         // Reset file input
         const fileInput = document.getElementById("document");
         if (fileInput) fileInput.value = '';
+        
+        // Add URL tracking after successful form submission
+        updateUrlWithTracking();
         
       } else {
         setSubmitStatus({
