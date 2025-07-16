@@ -92,6 +92,13 @@ export async function POST(request) {
       });
     }
 
+    // Generate date in DDMMYYYY format
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const year = now.getFullYear();
+    const dateString = `${day}${month}${year}`;
+
     // Mail options
     const mailOptions = {
       from: `"${name}" <${process.env.SENDER_EMAIL}>`,
@@ -101,7 +108,7 @@ export async function POST(request) {
         process.env.TO_EMAIL_3,
       ],
       replyTo: email,
-      subject: `New Contact Form Submission from ${name}`,
+      subject: `New Lead Submission from Mindefy Website - ${dateString}`,
       html: emailContent,
       attachments,
     };
