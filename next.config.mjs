@@ -3,8 +3,8 @@ import withPWA from 'next-pwa';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Enable static optimization
-  output: 'export',
-  trailingSlash: true,
+  // output: 'export',
+  // trailingSlash: true,
   images: {
     unoptimized: true,
     formats: ['image/webp', 'image/avif'],
