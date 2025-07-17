@@ -8,7 +8,7 @@ export default function MindfulUX() {
         style={{
           background: `radial-gradient(circle at bottom, #eeeafc 1%, #f9f3f0 80%, #ffffff 90%)`,
         }}
-        className="min-h-[70vh] md:h-[50.5rem] flex flex-col items-center justify-center gap-8 md:gap-12 px-4 py-12 md:py-0"
+        className="flex flex-col items-center justify-center gap-8 md:gap-12 px-4 py-20 md:py-56"
       >
         <div className="relative aspect-[1/1] w-20 md:w-36 overflow-hidden">
           <Image
@@ -18,7 +18,7 @@ export default function MindfulUX() {
             className="object-contain"
           />
         </div>
-        <div className="flex flex-col items-center justify-center gap-2">
+        <div className="flex flex-col items-center justify-center gap-2 md:gap-4">
           <p className="text-[#342871] text-5xl md:text-7xl font-semibold tracking-normal text-center">
             MindfulUX
           </p>
