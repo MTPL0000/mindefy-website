@@ -9,17 +9,17 @@ export default function WebApp() {
       <section className="mt-16 sm:mt-20 lg:mt-28 px-4 sm:px-6 lg:px-8 xl:px-16 bg-white">
         <div className="container mx-auto text-center max-w-7xl">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-sm sm:text-base lg:text-lg font-bold tracking-wider uppercase mb-4 sm:mb-5 lg:mb-6">
+          <h1 className="text-[#FF5225] text-sm sm:text-base lg:text-lg font-bold tracking-wider uppercase mb-4 sm:mb-5 lg:mb-6">
             Web Application Development
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#000000] mb-6 sm:mb-7 lg:mb-8 leading-tight max-w-4xl mx-auto px-4">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#000000] mb-6 sm:mb-7 lg:mb-8 leading-tight max-w-4xl mx-auto px-4">
             <span className="font-normal"> Empower </span>Your Business{" "}
             <span className="font-normal">with </span>
             Custom Web Application Development{" "}
             <span className="font-normal">Services</span>
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="max-w-4xl font-normal mx-auto mb-6 sm:mb-8 lg:mb-9 text-center sm:text-justify space-y-4 sm:space-y-5 lg:space-y-6">
@@ -52,19 +52,21 @@ export default function WebApp() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-4 sm:mb-5 lg:mb-6">
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] leading-tight">
-              Revolutionize Your Business with<br className="hidden sm:block" /> Cutting-Edge Enterprise
-              Java Web Applications
+              Revolutionize Your Business with
+              <br className="hidden sm:block" /> Cutting-Edge Enterprise Java
+              Web Applications
             </h2>
           </div>
           <div className="font-normal text-sm sm:text-base lg:text-lg text-center sm:text-justify text-[#444444] leading-relaxed">
             <p>
               Mindefy, The leading provider of enterprise Java web applications.
-              We specialize in delivering high-quality solutions that leverage the
-              power of Java to drive your business forward. Whether you're a small
-              startup or a large corporation, our enterprise Java web applications
-              are tailored to meet your specific needs and empower your
-              organization for success. With Mindefy harness the power of
-              enterprise Java web applications and stay ahead of the competition.
+              We specialize in delivering high-quality solutions that leverage
+              the power of Java to drive your business forward. Whether you're a
+              small startup or a large corporation, our enterprise Java web
+              applications are tailored to meet your specific needs and empower
+              your organization for success. With Mindefy harness the power of
+              enterprise Java web applications and stay ahead of the
+              competition.
             </p>
           </div>
         </div>
@@ -75,37 +77,40 @@ export default function WebApp() {
         <div className="container mx-auto max-w-4xl">
           <div className="mb-4 sm:mb-5 lg:mb-6">
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] leading-tight">
-              Stay Ahead of the Curve with React and <br className="hidden sm:block" />Angular Web
-              Application Development Services
+              Stay Ahead of the Curve with React and{" "}
+              <br className="hidden sm:block" />
+              Angular Web Application Development Services
             </h2>
           </div>
           <div className="space-y-6 sm:space-y-8 lg:space-y-10 font-normal text-sm sm:text-base lg:text-lg text-center sm:text-justify text-[#444444] leading-relaxed">
             <p>
               Experience the power of cutting-edge web applications developed
               using the industry-leading frameworks, React and Angular. We
-              specialize in delivering innovative, high-performance web solutions.
-              With our expertise in React and Angular, we create custom web
-              applications that drive engagement, boost productivity, and propel
-              your business forward. From intuitive user interfaces to scalable
-              enterprise solutions, our skilled team of developers is committed to
-              delivering exceptional results tailored to your unique needs.
+              specialize in delivering innovative, high-performance web
+              solutions. With our expertise in React and Angular, we create
+              custom web applications that drive engagement, boost productivity,
+              and propel your business forward. From intuitive user interfaces
+              to scalable enterprise solutions, our skilled team of developers
+              is committed to delivering exceptional results tailored to your
+              unique needs.
             </p>
             <p>
-              At Mindefy, we have a talented team of developers proficient in both
-              React and Angular. These cutting-edge frameworks empower us to
-              create dynamic and interactive web applications with ease. We stay
-              up to date with the latest advancements in the field, ensuring that
-              our clients receive state-of-the-art solutions that leverage the
-              full potential of React and Angular.
+              At Mindefy, we have a talented team of developers proficient in
+              both React and Angular. These cutting-edge frameworks empower us
+              to create dynamic and interactive web applications with ease. We
+              stay up to date with the latest advancements in the field,
+              ensuring that our clients receive state-of-the-art solutions that
+              leverage the full potential of React and Angular.
             </p>
             <p>
               We understand that each business has unique requirements, which is
-              why we offer tailored web application development services. Our team
-              works closely with you to understand your specific goals and create
-              customized solutions that align perfectly with your business needs.
-              From conceptualization to deployment, we ensure that your web
-              application is built to your exact specifications, providing a
-              seamless user experience and achieving your desired outcomes.
+              why we offer tailored web application development services. Our
+              team works closely with you to understand your specific goals and
+              create customized solutions that align perfectly with your
+              business needs. From conceptualization to deployment, we ensure
+              that your web application is built to your exact specifications,
+              providing a seamless user experience and achieving your desired
+              outcomes.
             </p>
           </div>
         </div>
@@ -130,8 +135,8 @@ export default function WebApp() {
           {/* React Section */}
           <div className="max-w-4xl mx-auto mb-8 sm:mb-10 lg:mb-12">
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] mb-4 sm:mb-5 lg:mb-6 text-center lg:text-left leading-tight">
-              Empower Your Business with <br className="hidden sm:block" />Next-Generation React Web
-              Applications
+              Empower Your Business with <br className="hidden sm:block" />
+              Next-Generation React Web Applications
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-[#444444] leading-relaxed text-center sm:text-justify">
               React has gained immense popularity for its component-based
@@ -146,8 +151,9 @@ export default function WebApp() {
           {/* Angular Section */}
           <div className="max-w-4xl mx-auto mb-8 sm:mb-10 lg:mb-12">
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] mb-4 sm:mb-5 lg:mb-6 text-center lg:text-left leading-tight">
-              Amplify Your Online Presence with<br className="hidden sm:block" /> High-Performance
-              Angular Web Applications
+              Amplify Your Online Presence with
+              <br className="hidden sm:block" /> High-Performance Angular Web
+              Applications
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-[#444444] leading-relaxed text-center sm:text-justify">
               Angular, known for its comprehensive framework and robust

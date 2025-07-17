@@ -28,9 +28,9 @@ export default function Content() {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">
               Our
             </h2>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
               Mission
-            </h1>
+            </p>
             <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto lg:mx-0">
               Our mission is to empower businesses with cutting-edge technology
               solutions that propel growth, enhance efficiency, and drive
@@ -86,9 +86,9 @@ export default function Content() {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">
               Our
             </h2>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
               Vision
-            </h1>
+            </p>
             <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto lg:mx-0">
               Our goal at Mindefy is to be the top option for companies looking
               for disruptive technology solutions worldwide.in enhancing the
@@ -143,9 +143,9 @@ export default function Content() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black">
                 Our
               </h2>
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
+              <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4 sm:mb-6 lg:mb-[1.62rem]">
                 Values
-              </h1>
+              </p>
               <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto lg:mx-0">
                 With an emphasis on innovation, agility, and quality in
                 execution, we are motivated by a client-centric philosophy.

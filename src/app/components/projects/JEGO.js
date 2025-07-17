@@ -1303,9 +1303,7 @@ export default function JEGO() {
 
       {/* Backlogs Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-        <h1 className="text-white text-[2rem] font-bold mb-[4.5rem]">
-          Backlogs
-        </h1>
+        <p className="text-white text-[2rem] font-bold mb-[4.5rem]">Backlogs</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-0.5">
           {backlogItems.map((item, index) => (
             <div
@@ -1448,9 +1446,9 @@ export default function JEGO() {
 
       <div className="w-full max-w-6xl mx-auto px-2 sm:px-4">
         {/* Header */}
-        <h1 className="text-[#FFFFFF] text-2xl md:text-[2rem] font-bold mb-8 md:mb-12 text-center">
+        <p className="text-[#FFFFFF] text-2xl md:text-[2rem] font-bold mb-8 md:mb-12 text-center">
           Branding
-        </h1>
+        </p>
 
         {/* Fontface Section */}
         <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row gap-8 md:gap-24">

@@ -9,17 +9,17 @@ export default function MeanMern() {
       <section className=" mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className=" mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
             Mean and Mern Stack Development
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2.25rem]  font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto px-4 sm:px-0">
+          <p className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2.25rem]  font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto px-4 sm:px-0">
             MEAN and MERN Stack Dеvеlopmеnt{" "}
             <span className="font-normal">Empowеring Businеssеs with </span>
             Scalablе <span className="font-normal">and </span>Agilе Wеb
             Solutions
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-[60.25rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.25rem] px-4 sm:px-6 lg:px-0">

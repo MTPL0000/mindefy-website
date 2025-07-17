@@ -8,14 +8,15 @@ export default function GameAnimation() {
       <section className="mt-28 mx-auto px-4 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
             2D & 3D Game Animation
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[55.25rem] mx-auto px-4 xl:px-0">
-            Immersive Game Animation That Brings<br className="hidden sm:block"></br> Worlds to Life
-          </h1>
+          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[55.25rem] mx-auto px-4 xl:px-0">
+            Immersive Game Animation That Brings
+            <br className="hidden sm:block"></br> Worlds to Life
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-[61.375rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.25rem] px-4 xl:px-0">
@@ -168,7 +169,7 @@ export default function GameAnimation() {
           <h2 className="text-2xl sm:text-3xl lg:text-[2.5rem] font-bold text-[#000000] text-center mb-8 lg:mb-12">
             Our Work
           </h2>
-          
+
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             {/* 3D Game Column */}
             <div className="flex-1 w-full">

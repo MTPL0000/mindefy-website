@@ -9,18 +9,18 @@ export default function IOS() {
       <section className="mt-16 sm:mt-20 lg:mt-28 px-4 sm:px-6 lg:px-8 xl:px-16 bg-white">
         <div className="container mx-auto text-center max-w-7xl">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-sm sm:text-base lg:text-lg font-bold tracking-wider uppercase mb-4 sm:mb-5 lg:mb-6">
+          <h1 className="text-[#FF5225] text-sm sm:text-base lg:text-lg font-bold tracking-wider uppercase mb-4 sm:mb-5 lg:mb-6">
             iOS DEVELOPMENT
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#000000] mb-6 sm:mb-7 lg:mb-8 leading-tight max-w-4xl mx-auto px-4">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#000000] mb-6 sm:mb-7 lg:mb-8 leading-tight max-w-4xl mx-auto px-4">
             <span className="font-normal">Unlock Your </span>Business Potential{" "}
             <span className="font-normal">with Expert </span>
             <span className="font-medium">
               iOS Application Development Services
             </span>
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="max-w-4xl font-normal mx-auto mb-6 sm:mb-8 lg:mb-9 text-center sm:text-justify space-y-4 sm:space-y-5 lg:space-y-6">

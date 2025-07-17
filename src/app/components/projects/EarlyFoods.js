@@ -613,9 +613,9 @@ export default function EarlyFoods() {
                     </span>{" "}
                     Preparation
                   </h4>
-                  <h1 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-[4rem] font-bold mt-1 uppercase">
+                  <p className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-[4rem] font-bold mt-1 uppercase">
                     USER RESEARCH
-                  </h1>
+                  </p>
                 </div>
 
                 <div>
@@ -1829,9 +1829,7 @@ export default function EarlyFoods() {
             <p className="text-[#F690A1] font-normal text-[2rem]">
               📍 UI Design
             </p>
-            <h1 className="text-[4rem] font-bold text-[#52B7B7]">
-              Style Guide
-            </h1>
+            <p className="text-[4rem] font-bold text-[#52B7B7]">Style Guide</p>
             <p className="absolute right-0 top-0 font-normal text-[#2B7575] text-sm text-left mt-7">
               <span className="text-[#F88598] font-bold text-base">
                 Point take away

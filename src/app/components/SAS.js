@@ -9,18 +9,18 @@ export default function SAS() {
       <section className="mt-20 md:mt-28 mx-auto px-4 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-[0.875rem] md:text-[1rem] font-bold tracking-widest uppercase mb-[1rem] md:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] md:text-[1rem] font-bold tracking-widest uppercase mb-[1rem] md:mb-[1.25rem]">
             it/staff Augmentation
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-[1.5rem] md:text-[2rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-7 leading-tight max-w-[90%] md:max-w-[45rem] lg:max-w-[50rem] mx-auto px-2 md:px-0">
+          <p className="text-[1.5rem] md:text-[2rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-7 leading-tight max-w-[90%] md:max-w-[45rem] lg:max-w-[50rem] mx-auto px-2 md:px-0">
             <span className="font-normal">Reliable</span> IT Staff Augmentation
             Services
             <span className="font-normal"> for </span> Flexible{" "}
             <span className="font-normal">and </span>
             Skilled Resources
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-[95%] md:w-[85%] lg:w-[60.25rem] font-normal mx-auto mb-[1.5rem] md:mb-[2.25rem] text-justify space-y-[1rem] md:space-y-[1.75rem] px-2 md:px-0">
@@ -105,7 +105,9 @@ export default function SAS() {
                 }}
               >
                 <div className="w-full md:w-[18rem] lg:w-[21.875rem] h-[3rem] md:h-[4rem] lg:h-[4.5rem] mb-[0.75rem] md:mb-[1.125rem]">
-                  <h3 className="font-semibold text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem]">{item.title}</h3>
+                  <h3 className="font-semibold text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem]">
+                    {item.title}
+                  </h3>
                 </div>
                 <div className="relative w-[10rem] md:w-[12rem] lg:w-[13.875rem] h-[9rem] md:h-[11rem] lg:h-[12.375rem] mb-[0.75rem] md:mb-[1.125rem]">
                   <Image

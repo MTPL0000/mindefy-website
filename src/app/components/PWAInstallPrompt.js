@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export default function PWAInstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
@@ -10,11 +10,14 @@ export default function PWAInstallPrompt() {
 
   useEffect(() => {
     // Check if it's iOS
-    const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const isIOSDevice =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     setIsIOS(isIOSDevice);
 
     // Check if already installed (standalone mode)
-    const isInStandaloneMode = window.matchMedia('(display-mode: standalone)').matches;
+    const isInStandaloneMode = window.matchMedia(
+      "(display-mode: standalone)"
+    ).matches;
     setIsStandalone(isInStandaloneMode);
 
     // Listen for the beforeinstallprompt event
@@ -24,18 +27,21 @@ export default function PWAInstallPrompt() {
       setShowInstallPrompt(true);
     };
 
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
 
     // Show iOS install instructions if on iOS and not in standalone mode
     if (isIOSDevice && !isInStandaloneMode) {
-      const hasSeenIOSPrompt = localStorage.getItem('hasSeenIOSInstallPrompt');
+      const hasSeenIOSPrompt = localStorage.getItem("hasSeenIOSInstallPrompt");
       if (!hasSeenIOSPrompt) {
         setTimeout(() => setShowInstallPrompt(true), 3000);
       }
     }
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      window.removeEventListener(
+        "beforeinstallprompt",
+        handleBeforeInstallPrompt
+      );
     };
   }, []);
 
@@ -43,8 +49,8 @@ export default function PWAInstallPrompt() {
     if (deferredPrompt) {
       deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
-      
-      if (outcome === 'accepted') {
+
+      if (outcome === "accepted") {
         setDeferredPrompt(null);
         setShowInstallPrompt(false);
       }
@@ -54,7 +60,7 @@ export default function PWAInstallPrompt() {
   const handleDismiss = () => {
     setShowInstallPrompt(false);
     if (isIOS) {
-      localStorage.setItem('hasSeenIOSInstallPrompt', 'true');
+      localStorage.setItem("hasSeenIOSInstallPrompt", "true");
     }
   };
 
@@ -67,21 +73,20 @@ export default function PWAInstallPrompt() {
     <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50">
       <div className="flex items-start">
         <div className="flex-shrink-0">
-          <img 
-            src="/images/logo/mindefy-logo.png" 
-            alt="Mindefy Logo" 
+          <img
+            src="/images/logo/mindefy-logo.png"
+            alt="Mindefy Logo"
             className="h-8 w-8 rounded"
           />
         </div>
         <div className="ml-3 flex-1">
-          <h3 className="text-sm font-medium text-gray-900">
+          <h1 className="text-sm font-medium text-gray-900">
             Install Mindefy App
-          </h3>
+          </h1>
           <p className="text-xs text-gray-600 mt-1">
-            {isIOS 
+            {isIOS
               ? 'Tap the share button and select "Add to Home Screen"'
-              : 'Get quick access by installing our app on your device'
-            }
+              : "Get quick access by installing our app on your device"}
           </p>
           <div className="mt-3 flex space-x-2">
             {!isIOS && deferredPrompt && (
@@ -96,7 +101,7 @@ export default function PWAInstallPrompt() {
               onClick={handleDismiss}
               className="inline-flex items-center px-3 py-1.5 border border-gray-300 text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D84426]"
             >
-              {isIOS ? 'Got it' : 'Later'}
+              {isIOS ? "Got it" : "Later"}
             </button>
           </div>
         </div>
@@ -107,7 +112,11 @@ export default function PWAInstallPrompt() {
           >
             <span className="sr-only">Close</span>
             <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+              <path
+                fillRule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
             </svg>
           </button>
         </div>
@@ -115,4 +124,3 @@ export default function PWAInstallPrompt() {
     </div>
   );
 }
- 

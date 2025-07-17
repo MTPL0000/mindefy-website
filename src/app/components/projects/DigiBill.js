@@ -6,9 +6,9 @@ const DigiBill = () => {
       <section className="flex flex-col items-center justify-center gap-16 lg:gap-24 pt-16">
         <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-6xl mx-auto gap-8 lg:gap-12 mt-8 px-4 lg:px-8">
           <div className="flex flex-col items-center justify-center gap-4 lg:gap-5">
-            <p className="text-[#FF5225] text-sm lg:text-base font-bold tracking-wider uppercase">
+            <h1 className="text-[#FF5225] text-sm lg:text-base font-bold tracking-wider uppercase">
               DigiBill
-            </p>
+            </h1>
             <div className="flex flex-col items-center justify-center gap-2">
               <span className="text-2xl lg:text-4xl font-normal text-[#000000] text-center">
                 DigiBill{" "}
