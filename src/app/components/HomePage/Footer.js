@@ -29,10 +29,11 @@ export default function Footer() {
               {/* Additional Logos */}
               <div className="flex items-center gap-4 sm:gap-6">
                 <div className="relative w-32 sm:w-40 lg:w-[13.12rem] h-12 sm:h-16 lg:h-[4.92rem]">
-                  <img
+                  <Image
                     src="/images/Footer.webp"
                     alt="Digital India Logo"
-                    className="object-contain w-full h-full"
+                    fill
+                    className="object-contain"
                   />
                 </div>
               </div>
@@ -175,37 +176,47 @@ export default function Footer() {
         {/* Social Media Icons */}
         <div className="flex justify-center items-center gap-3 sm:gap-4 my-6 sm:my-8">
           <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <img
+            <Image
               src="/images/facebook.svg"
               alt="Facebook"
-              className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[1.5rem] lg:h-[1.5rem] object-contain"
+              width={24}
+              height={24}
+              className="object-contain"
             />
           </div>
           <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <img
+            <Image
               src="/images/twitter.svg"
               alt="Twitter"
+              width={24}
+              height={24}
               className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[1.5rem] lg:h-[1.5rem] object-contain"
             />
           </div>
           <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <img
+            <Image
               src="/images/ig.svg"
               alt="Instagram"
+              width={24}
+              height={24}
               className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[1.5rem] lg:h-[1.5rem] object-contain"
             />
           </div>
           <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <img
+            <Image
               src="/images/linkden.svg"
               alt="LinkedIn"
+              width={24}
+              height={24}
               className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[1.5rem] lg:h-[1.5rem] object-contain"
             />
           </div>
           <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <img
+            <Image
               src="/images/yt.svg"
               alt="YouTube"
+              width={24}
+              height={24}
               className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[1.5rem] lg:h-[1.5rem] object-contain"
             />
           </div>
