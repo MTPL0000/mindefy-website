@@ -1,8 +1,15 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export default function AIMLPage() {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
+
   return (
     <section className="mx-auto font-poppins">
       {/*Hero Section*/}
@@ -29,6 +36,7 @@ export default function AIMLPage() {
           </p>
         </div>
       </section>
+
       {/*About Section*/}
       <section
         style={{
@@ -231,61 +239,96 @@ export default function AIMLPage() {
           </motion.div>
         </motion.div>
       </section>
-      {
-        pageData.map((item) => (
-          <section
-          style={{
-            background: `radial-gradient(circle at bottom, #eeeafc 1%, #f9f3f0 80%, #ffffff 90%)`,
-          }}
-          className="w-full py-51 px-23 flex items-center justify-between gap-24 relative"
-          key={item.id}
-        >
-          <div className="absolute top-9 left-1/2 transform -translate-x-1/2 w-2xl aspect-[742/724.54]">
-            <Image
-              src="/images/ai-ml-2.png"
-              alt="unlock the power-Mindefy"
-              fill
-              className="object-contain -rotate-90"
-            />
-          </div>
-          {/* Inner ML section 1 */}
-          <div
-            className="w-full rounded-4xl backdrop-blur-[40px] flex justify-start items-start p-16 gap-2"
-            style={{
-              background: `radial-gradient(circle, transparent 10%, #CFDBFF 100%)`,
-              boxShadow: "8px 8px 20px 8px rgba(0, 0, 0, 0.06)",
-            }}
-          >
-            <p className="font-semibold text-[#517DF0] text-9xl">{item.id}</p>
-            <div>
-              <div>
-                <p className="font-normal text-3xl text-[#B237D6]">
-                  {item.title1}
-                </p>
-                <p className="font-semibold text-3xl text-[#517DF0]">
-                  {item.title2}
-                </p>
-              </div>
-              <p className="font-normal text-xl text-[#000000 mt-6">
-                {item.description}
-              </p>
-              <div className="font-semibold text-xl text-[#000000] mt-4">
-                {
-                  item.points.map((point) => (
-                    <p className="mt-2" key={point.heading}>
-                      &bull; {point.heading}:{" "}
-                      <span className="font-normal">
-                        {point.description}
-                      </span>
+
+      {/* Stacked Cards Section */}
+      <section
+        ref={containerRef}
+        style={{
+          background: `radial-gradient(circle at bottom, #eeeafc 1%, #f9f3f0 80%, #ffffff 90%)`,
+        }}
+        className="w-full py-32 px-8 relative"
+      >
+        <div className="absolute top-9 left-1/2 transform -translate-x-1/2 w-2xl aspect-[742/724.54] opacity-20">
+          <Image
+            src="/images/ai-ml-2.png"
+            alt="unlock the power-Mindefy"
+            fill
+            className="object-contain -rotate-90"
+          />
+        </div>
+        
+        <div className="relative max-w-4xl mx-auto min-h-[700vh]">
+          <div className="sticky top-25 h-screen overflow-hidden">
+            {pageData.map((item, index) => {
+              const cardStart = index * 0.15;
+              const cardEnd = cardStart + 0.12;
+              
+              const y = useTransform(
+                scrollYProgress,
+                [cardStart, cardEnd],
+                [400, index * 20] // Stack with 20px offset
+              );
+              
+              const scale = useTransform(
+                scrollYProgress,
+                [cardStart, cardEnd],
+                [0.9, 1 - index * 0.02] // Slight scale decrease for stacking effect
+              );
+              
+              const opacity = useTransform(
+                scrollYProgress,
+                [cardStart, cardEnd],
+                [0, 1]
+              );
+
+              return (
+                <motion.div
+                  key={item.id}
+                  className="absolute w-full rounded-4xl backdrop-blur-[40px] flex justify-start items-start p-8 md:p-16 gap-4"
+                  style={{
+                    background: `radial-gradient(circle, transparent 10%, #CFDBFF 100%)`,
+                    // boxShadow: "8px 8px 20px 8px rgba(0, 0, 0, 0.06)",
+                    y: y,
+                    scale: scale,
+                    opacity: opacity,
+                    zIndex: index + 1,
+                  }}
+                >
+                  {/* Card shadow layers for depth */}
+                  <div className="absolute inset-0 bg-black/5 rounded-4xl transform translate-x-1 translate-y-1 -z-10"></div>
+                  <div className="absolute inset-0 bg-black/3 rounded-4xl transform translate-x-2 translate-y-2 -z-20"></div>
+                  
+                  <p className="font-semibold text-[#517DF0] text-6xl md:text-9xl flex-shrink-0">
+                    {item.id}
+                  </p>
+                  
+                  <div className="flex-1">
+                    <div className="mb-4">
+                      <p className="font-normal text-2xl md:text-3xl text-[#B237D6]">
+                        {item.title1}
+                      </p>
+                      <p className="font-semibold text-2xl md:text-3xl text-[#517DF0]">
+                        {item.title2}
+                      </p>
+                    </div>
+                    <p className="font-normal text-lg md:text-xl text-[#000000] mt-6">
+                      {item.description}
                     </p>
-                  ))
-                }
-              </div>
-            </div>
+                    <div className="font-semibold text-lg md:text-xl text-[#000000] mt-4">
+                      {item.points.map((point) => (
+                        <p className="mt-2" key={point.heading}>
+                          &bull; {point.heading}:{" "}
+                          <span className="font-normal">{point.description}</span>
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
-          </section>
-        ))
-      }
+        </div>
+      </section>
     </section>
   );
 }
@@ -335,7 +378,7 @@ const pageData = [
       {
         heading: "Visualization",
         description:
-          "Using Python libraries like Pandas, Matplotlib, and Seaborn, I’ll create graphs and charts to visually uncover hidden insights in your data.",
+          "Using Python libraries like Pandas, Matplotlib, and Seaborn, I'll create graphs and charts to visually uncover hidden insights in your data.",
       },
     ],
   },
