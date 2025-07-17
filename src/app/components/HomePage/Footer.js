@@ -51,7 +51,12 @@ export default function Footer() {
                   <p>201, Atulya IT Park,</p>
                   <p>Khandwa Road, Indore-452001</p>
                   <p>(M.P.) India</p>
-                  <p className="mt-2 sm:mt-3">rahul@mindefy.tech</p>
+                  <a 
+                    href="mailto:rahul@mindefy.tech" 
+                    className="mt-2 sm:mt-3 block hover:opacity-100 cursor-pointer transition-opacity"
+                  >
+                    Email Us
+                  </a>
                   <p>+91-731-2996160</p>
                   <p>+91-90961-26060</p>
                 </div>
