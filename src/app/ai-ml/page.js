@@ -108,6 +108,52 @@ export default function AIMLPage() {
           />
         </div>
       </section>
+
+      {/*Why choose us Section*/}
+      <section
+        style={{
+          background: `radial-gradient(circle at bottom, #eeeafc 1%, #f9f3f0 80%, #ffffff 90%)`,
+        }}
+        className="w-full py-56 px-11 flex items-center justify-between gap-24"
+      >
+        <div className="relative w-full aspect-[523/510.69]">
+          <Image
+            src="/images/ai-ml-2.png"
+            alt="unlock the power-Mindefy"
+            fill
+            className="object-contain"
+          />
+        </div>
+        <div className="flex flex-col justify-start items-start gap-8">
+          <p className="font-bold text-2xl uppercase text-[#FF5225]">
+            Why Choose Us
+          </p>
+          <div className="flex flex-col justify-start items-start gap-5">
+            <p className="font-normal text-4xl text-[#3D3D3D]">
+              Empowering businesses to transform data into actionable insights
+              with cutting-edge analytics and machine learning.
+            </p>
+            <p className="font-normal text-xl text-[#444444]">
+              We are a team of data specialists committed to transforming raw
+              data into actionable intelligence. With our expertise in data
+              analytics, machine learning (ML), and AI solutions, we empower
+              businesses to make informed decisions. We focus on:
+            </p>
+            <p className="font-normal text-xl text-[#444444]">
+              &bull; Building custom ETL pipelines to consolidate and clean
+              data.
+              <br />
+              &bull; Creating scalable data lakes for organized data storage.
+              <br />
+              &bull; Integrating business intelligence (BI) tools for real-time,
+              accessible insights.
+              <br />
+              &bull; Deploying ML models that predict trends and automate
+              complex tasks.
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }
