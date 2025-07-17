@@ -116,30 +116,107 @@ export default function AIMLPage() {
         }}
         className="w-full py-56 px-11 flex items-center justify-between gap-24"
       >
-        <div className="relative w-full aspect-[523/510.69]">
+        <motion.div
+          className="relative w-full aspect-[523/510.69]"
+          initial={{ opacity: 0, x: "100%" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 80,
+            damping: 20,
+            duration: 1,
+          }}
+        >
           <Image
             src="/images/ai-ml-2.png"
             alt="unlock the power-Mindefy"
             fill
             className="object-contain"
           />
-        </div>
-        <div className="flex flex-col justify-start items-start gap-8">
-          <p className="font-bold text-2xl uppercase text-[#FF5225]">
+        </motion.div>
+        <motion.div
+          className="flex flex-col justify-start items-start gap-8"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 25,
+            duration: 0.8,
+          }}
+        >
+          <motion.p
+            className="font-bold text-2xl uppercase text-[#FF5225]"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 120,
+              damping: 25,
+              delay: 0.2,
+            }}
+          >
             Why Choose Us
-          </p>
-          <div className="flex flex-col justify-start items-start gap-5">
-            <p className="font-normal text-4xl text-[#3D3D3D]">
+          </motion.p>
+          <motion.div
+            className="flex flex-col justify-start items-start gap-5"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 25,
+              delay: 0.3,
+            }}
+          >
+            <motion.p
+              className="font-normal text-4xl text-[#3D3D3D]"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                type: "spring",
+                stiffness: 110,
+                damping: 25,
+                delay: 0.4,
+              }}
+            >
               Empowering businesses to transform data into actionable insights
               with cutting-edge analytics and machine learning.
-            </p>
-            <p className="font-normal text-xl text-[#444444]">
+            </motion.p>
+            <motion.p
+              className="font-normal text-xl text-[#444444]"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 25,
+                delay: 0.5,
+              }}
+            >
               We are a team of data specialists committed to transforming raw
               data into actionable intelligence. With our expertise in data
               analytics, machine learning (ML), and AI solutions, we empower
               businesses to make informed decisions. We focus on:
-            </p>
-            <p className="font-normal text-xl text-[#444444]">
+            </motion.p>
+            <motion.p
+              className="font-normal text-xl text-[#444444]"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 25,
+                delay: 0.6,
+              }}
+            >
               &bull; Building custom ETL pipelines to consolidate and clean
               data.
               <br />
@@ -150,9 +227,9 @@ export default function AIMLPage() {
               <br />
               &bull; Deploying ML models that predict trends and automate
               complex tasks.
-            </p>
-          </div>
-        </div>
+            </motion.p>
+          </motion.div>
+        </motion.div>
       </section>
     </section>
   );
