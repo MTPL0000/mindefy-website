@@ -231,70 +231,174 @@ export default function AIMLPage() {
           </motion.div>
         </motion.div>
       </section>
-
-      {/*ML section 1*/}
-      <section
-        style={{
-          background: `radial-gradient(circle at bottom, #eeeafc 1%, #f9f3f0 80%, #ffffff 90%)`,
-        }}
-        className="w-full py-51 px-23 flex items-center justify-between gap-24 relative"
-      >
-        <div className="absolute top-9 left-1/2 transform -translate-x-1/2 w-2xl aspect-[742/724.54]">
-          <Image
-            src="/images/ai-ml-2.png"
-            alt="unlock the power-Mindefy"
-            fill
-            className="object-contain -rotate-90"
-          />
-        </div>
-        <div
-          className="w-full rounded-4xl backdrop-blur-[40px] flex justify-start items-start p-16 gap-2"
+      {
+        pageData.map((item) => (
+          <section
           style={{
-            background: `radial-gradient(circle, transparent 10%, #CFDBFF 100%)`,
-            boxShadow: "8px 8px 20px 8px rgba(0, 0, 0, 0.06)",
+            background: `radial-gradient(circle at bottom, #eeeafc 1%, #f9f3f0 80%, #ffffff 90%)`,
           }}
+          className="w-full py-51 px-23 flex items-center justify-between gap-24 relative"
+          key={item.id}
         >
-          <p className="font-semibold text-[#517DF0] text-9xl">1</p>
-          <div>
+          <div className="absolute top-9 left-1/2 transform -translate-x-1/2 w-2xl aspect-[742/724.54]">
+            <Image
+              src="/images/ai-ml-2.png"
+              alt="unlock the power-Mindefy"
+              fill
+              className="object-contain -rotate-90"
+            />
+          </div>
+          {/* Inner ML section 1 */}
+          <div
+            className="w-full rounded-4xl backdrop-blur-[40px] flex justify-start items-start p-16 gap-2"
+            style={{
+              background: `radial-gradient(circle, transparent 10%, #CFDBFF 100%)`,
+              boxShadow: "8px 8px 20px 8px rgba(0, 0, 0, 0.06)",
+            }}
+          >
+            <p className="font-semibold text-[#517DF0] text-9xl">{item.id}</p>
             <div>
-              <p className="font-normal text-3xl text-[#B237D6]">
-                Machine Learning
+              <div>
+                <p className="font-normal text-3xl text-[#B237D6]">
+                  {item.title1}
+                </p>
+                <p className="font-semibold text-3xl text-[#517DF0]">
+                  {item.title2}
+                </p>
+              </div>
+              <p className="font-normal text-xl text-[#000000 mt-6">
+                {item.description}
               </p>
-              <p className="font-semibold text-3xl text-[#517DF0]">Solutions</p>
-            </div>
-            <p className="font-normal text-xl text-[#000000 mt-6">
-              Develop and deploy machine learning models to extract value from
-              your data, predict future trends, and automate complex
-              decision-making processes.
-            </p>
-            <div className="font-semibold text-xl text-[#000000] mt-6">
-              <p>
-                &bull; Predictive Analytics:{" "}
-                <span className="font-normal">
-                  Build regression and classification models to forecast future
-                  outcomes (e.g., sales, demand forecasting).
-                </span>
-              </p>
-
-              <p className="mt-2">
-                &bull;Custom ML Solutions:{" "}
-                <span className="font-normal">
-                  Develop models for specific needs, such as Natural Language
-                  Processing (NLP), clustering, and anomaly detection.
-                </span>
-              </p>
-              <p className="mt-2">
-                &bull; Model Deployment & Optimization:{" "}
-                <span className="font-normal">
-                  Ensure models are production-ready and optimized for
-                  performance using tools like TensorFlow, Scikit-Learn, and AWS
-                  SageMaker.
-                </span>
-              </p>
+              <div className="font-semibold text-xl text-[#000000] mt-4">
+                {
+                  item.points.map((point) => (
+                    <p className="mt-2" key={point.heading}>
+                      &bull; {point.heading}:{" "}
+                      <span className="font-normal">
+                        {point.description}
+                      </span>
+                    </p>
+                  ))
+                }
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+          </section>
+        ))
+      }
     </section>
   );
 }
+
+const pageData = [
+  {
+    id: 1,
+    title1: "Machine Learning",
+    title2: "Solutions",
+    description:
+      "Develop and deploy machine learning models to extract value from your data, predict future trends, and automate complex decision-making processes.",
+    points: [
+      {
+        heading: "Predictive Analytics",
+        description:
+          "Build regression and classification models to forecast future outcomes (e.g., sales, demand forecasting).",
+      },
+      {
+        heading: "Custom ML Solutions",
+        description:
+          "Develop models for specific needs, such as Natural Language Processing (NLP), clustering, and anomaly detection.",
+      },
+      {
+        heading: "Model Deployment & Optimization",
+        description:
+          "Ensure models are production-ready and optimized for performance using tools like TensorFlow, Scikit-Learn, and AWS SageMaker.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title1: "Exploratory",
+    title2: "Data Analysis (EDA)",
+    description:
+      "Gain deeper insights into your data through rigorous exploratory data analysis. Identify trends, correlations, and patterns that drive business decisions.",
+    points: [
+      {
+        heading: "Data Cleaning & Preparation",
+        description:
+          "Remove inconsistencies, handle missing values, and ensure your data is ready for analysis.",
+      },
+      {
+        heading: "Descriptive Statistics",
+        description:
+          "Summarize datasets to understand key metrics such as averages, distributions, and variances.",
+      },
+      {
+        heading: "Visualization",
+        description:
+          "Using Python libraries like Pandas, Matplotlib, and Seaborn, I’ll create graphs and charts to visually uncover hidden insights in your data.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title1: "Power BI &",
+    title2: "Tableau Visualization",
+    description:
+      "Design and deliver interactive dashboards and visual reports tailored to business needs, providing real-time insights for informed decision-making.",
+    points: [
+      {
+        heading: "Interactive Dashboards",
+        description:
+          "Build custom dashboards in Power BI and Tableau that allow stakeholders to drill down into specific data points.",
+      },
+      {
+        heading: "Real-Time Data Sync",
+        description:
+          "Integrate data sources to display real-time data for immediate insights.",
+      },
+      {
+        heading: "Cross-Platform Reporting",
+        description:
+          "Design reports that are accessible across desktop, mobile, and cloud platforms for flexibility and remote monitoring.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title1: "End-to-End",
+    title2: "Data Pipeline Integration",
+    description:
+      "Create seamless workflows for data ingestion, transformation, storage, and analysis to ensure efficient data movement across systems.",
+    points: [
+      {
+        heading: "ETL (Extract, Transform, Load)",
+        description:
+          "Set up data pipelines to collect, clean, and aggregate data from various sources.",
+      },
+      {
+        heading: "Cloud Integration",
+        description:
+          "Leverage cloud platforms such as AWS, Azure, or Google Cloud to store and manage large datasets.",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title1: "Data Governance",
+    title2: "& Security",
+    description:
+      "Develop and deploy machine learning models to extract value from your data, predict future trends, and automate complex decision-making processes.",
+    points: [
+      {
+        heading: "Data Quality Assurance",
+        description:
+          "Monitor data accuracy, completeness, and consistency across systems.",
+      },
+      {
+        heading: "Access Control & Encryption",
+        description:
+          "Implement security measures such as role-based access controls (RBAC) and encryption to protect sensitive information.",
+      },
+    ],
+  },
+];
