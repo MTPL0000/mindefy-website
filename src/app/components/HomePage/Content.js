@@ -50,11 +50,12 @@ export default function Content() {
 
           {/* Mission Icon */}
           <div className="flex-shrink-0 order-2 lg:order-3">
-            <div className="w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.37rem] lg:h-[13.28rem]">
-              <img
+            <div className="relative w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.37rem] lg:h-[13.28rem]">
+              <Image
                 src="/images/Switch.webp"
                 alt="Mission Icon"
-                className="w-full h-full object-contain"
+                fill
+                className="object-contain"
               />
             </div>
           </div>
@@ -105,11 +106,12 @@ export default function Content() {
 
           {/* Mission Icon */}
           <div className="flex-shrink-0 order-2 lg:order-3">
-            <div className="w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.37rem] lg:h-[13.28rem]">
-              <img
+            <div className="relative w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.37rem] lg:h-[13.28rem]">
+              <Image
                 src="/images/binoculours.webp"
                 alt="Mission Icon"
-                className="w-full h-full object-contain"
+                fill
+                className="object-contain"
               />
             </div>
           </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function PWAInstallPrompt() {
@@ -73,10 +74,12 @@ export default function PWAInstallPrompt() {
     <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50">
       <div className="flex items-start">
         <div className="flex-shrink-0">
-          <img
+          <Image
             src="/images/logo/mindefy-logo.png"
             alt="Mindefy Logo"
-            className="h-8 w-8 rounded"
+            height={32}
+            width={32}
+            className="object-contain rounded"
           />
         </div>
         <div className="ml-3 flex-1">
