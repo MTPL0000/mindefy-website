@@ -193,6 +193,21 @@ export default function ContactUs() {
         const fileInput = document.getElementById("document");
         if (fileInput) fileInput.value = "";
 
+        // Facebook Pixel Lead tracking
+        if (typeof window !== "undefined" && window.fbq) {
+          try {
+            window.fbq("track", "Lead");
+            // console.log("Facebook Pixel Lead event tracked successfully");
+          } catch (error) {
+            //nothing to catch 
+            // console.warn("Facebook Pixel tracking failed:", error);
+          }
+        } else {
+          // console.warn(
+          //   "Facebook Pixel (fbq) not found - make sure Facebook Pixel is properly installed"
+          // );
+        }
+
         // Add URL tracking after successful form submission
         updateUrlWithTracking();
       } else {
