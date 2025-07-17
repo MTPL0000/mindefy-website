@@ -19,9 +19,9 @@ export default function MindfulUX() {
           />
         </div>
         <div className="flex flex-col items-center justify-center gap-2 md:gap-4">
-          <p className="text-[#342871] text-5xl md:text-7xl font-semibold tracking-normal text-center">
+          <h1 className="text-[#342871] text-5xl md:text-7xl font-semibold tracking-normal text-center">
             MindfulUX
-          </p>
+          </h1>
           <p className="text-[#D84326] text-lg md:text-2xl font-medium tracking-wider text-center">
             A Design Studio
           </p>

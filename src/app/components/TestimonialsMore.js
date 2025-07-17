@@ -63,12 +63,12 @@ export default function TestimonialsMore() {
         <div className="max-w-[81.875rem] mx-auto">
           {/* Header Section */}
           <div className="text-center mb-8 md:mb-12 xl:mb-[5.75rem]">
-            <p className="text-[#FF5225] text-sm md:text-base xl:text-[1rem] font-bold mb-2 xl:mb-[0.5rem] tracking-wider">
+            <h1 className="text-[#FF5225] text-sm md:text-base xl:text-[1rem] font-bold mb-2 xl:mb-[0.5rem] tracking-wider">
               TESTIMONIALS
-            </p>
-            <h1 className="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-900 mb-4 md:mb-6 xl:mb-[2rem] px-4">
-              WHAT OUR CLIENTS ARE SAYING ABOUT US
             </h1>
+            <p className="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-900 mb-4 md:mb-6 xl:mb-[2rem] px-4">
+              WHAT OUR CLIENTS ARE SAYING ABOUT US
+            </p>
           </div>
 
           {/* Testimonials Grid */}
@@ -76,7 +76,8 @@ export default function TestimonialsMore() {
             {testimonials.map((testimonial) => {
               // Set unique height/width based on ID for xl screens (1440px+)
               let cardSpacing = "";
-              let responsiveClasses = "w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-1rem)]";
+              let responsiveClasses =
+                "w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-1rem)]";
 
               switch (testimonial.id) {
                 case 1:
@@ -90,14 +91,17 @@ export default function TestimonialsMore() {
                   break;
                 case 4:
                   // Shift this card upward by reducing top margin
-                  cardSpacing = "xl:w-[26.25rem] xl:h-[31.125rem] xl:mt-[-5.25rem]";
+                  cardSpacing =
+                    "xl:w-[26.25rem] xl:h-[31.125rem] xl:mt-[-5.25rem]";
                   break;
                 case 5:
                   // Shift this card upward too
-                  cardSpacing = "xl:w-[26.25rem] xl:h-[29.25rem] xl:mt-[-2rem] xl:mb-[1rem]";
+                  cardSpacing =
+                    "xl:w-[26.25rem] xl:h-[29.25rem] xl:mt-[-2rem] xl:mb-[1rem]";
                   break;
                 default:
-                  cardSpacing = "xl:w-[25rem] xl:h-[34.75rem] xl:p-[1.5rem] xl:m-[1rem]";
+                  cardSpacing =
+                    "xl:w-[25rem] xl:h-[34.75rem] xl:p-[1.5rem] xl:m-[1rem]";
               }
 
               return (

@@ -9,14 +9,14 @@ export default function ITC() {
       <section className="mt-20 sm:mt-24 lg:mt-28 mx-auto px-4 sm:px-6 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-sm sm:text-[1rem] font-bold tracking-widest uppercase mb-4 lg:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm sm:text-[1rem] font-bold tracking-widest uppercase mb-4 lg:mb-[1.25rem]">
             IT Consulting
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-xl sm:text-2xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 lg:mb-7 leading-tight max-w-sm sm:max-w-2xl lg:max-w-[50rem] mx-auto px-2 sm:px-0">
+          <p className="text-xl sm:text-2xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 lg:mb-7 leading-tight max-w-sm sm:max-w-2xl lg:max-w-[50rem] mx-auto px-2 sm:px-0">
             Cultivating Innovation with Mindefy's IT Consulting Services
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-xs sm:max-w-2xl lg:w-[61.375rem] font-normal mx-auto mb-6 lg:mb-[2.25rem] text-justify space-y-4 lg:space-y-[1.25rem] px-4 sm:px-6 lg:px-0">
@@ -282,7 +282,8 @@ export default function ITC() {
           {/* Header */}
           <div className="mb-8 lg:mb-10">
             <h2 className="p-2 lg:p-2.5 text-xl sm:text-2xl lg:text-[1.75rem] font-semibold text-[#000000] mb-4 lg:mb-6 text-center lg:text-left">
-              The Advantages of Selecting<br className="hidden lg:block" />
+              The Advantages of Selecting
+              <br className="hidden lg:block" />
               Mindefy's IT Consulting Services
             </h2>
             <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] font-normal leading-relaxed max-w-full lg:max-w-[59.125rem] mx-auto text-justify">
