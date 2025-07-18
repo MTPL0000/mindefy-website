@@ -228,11 +228,12 @@ export default function ContactUs() {
   };
 
   return (
-    <section id="contact" className="w-full py-12 sm:py-16 lg:py-20">
+    <section id="contact" className="w-full py-5 lg:py-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.12rem] font-semibold text-center mb-8 sm:mb-12 lg:mb-16">
-          Let&apos;s Get In Touch
-        </p>
+
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.12rem] font-semibold text-center mb-8 lg:mb-12">
+          Let's Get In Touch
+        </h1>
 
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center lg:items-start">
           {/* Left Column - Image */}

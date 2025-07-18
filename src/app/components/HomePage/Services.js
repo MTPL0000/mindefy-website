@@ -51,7 +51,7 @@ export default function Services() {
               {/* Service Points */}
               <ul className="list-none space-y-3 sm:space-y-4 lg:space-y-6 text-[#000000] font-medium text-xs sm:text-sm lg:text-[0.875rem] uppercase">
                 {service.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2">
+                  <li key={i} className="flex justify-start items-center gap-2">
                     <span className="text-blue-500 text-base sm:text-lg flex-shrink-0 mt-0.5">➔</span>
                     <span className="leading-relaxed">{point}</span>
                   </li>
