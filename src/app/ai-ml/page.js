@@ -284,10 +284,8 @@ export default function AIMLPage() {
               return (
                 <motion.div
                   key={item.id}
-                  className="absolute w-full rounded-4xl backdrop-blur-[40px] flex justify-start items-start p-8 md:p-16 gap-4"
+                  className="absolute w-full h-[38.75rem] rounded-4xl backdrop-blur-[40px] flex justify-start items-start p-8 md:p-16 gap-4 bg-[#cfdbff80]"
                   style={{
-                    background: `radial-gradient(circle, transparent 10%, #CFDBFF 100%)`,
-                    // boxShadow: "8px 8px 20px 8px rgba(0, 0, 0, 0.06)",
                     y: y,
                     scale: scale,
                     opacity: opacity,
@@ -295,8 +293,8 @@ export default function AIMLPage() {
                   }}
                 >
                   {/* Card shadow layers for depth */}
-                  <div className="absolute inset-0 bg-black/5 rounded-4xl transform translate-x-1 translate-y-1 -z-10"></div>
-                  <div className="absolute inset-0 bg-black/3 rounded-4xl transform translate-x-2 translate-y-2 -z-20"></div>
+                  <div className="absolute inset-0 bg-black/2 rounded-4xl transform translate-x-1 translate-y-1 -z-10"></div>
+                  <div className="absolute inset-0 bg-black/1 rounded-4xl transform translate-x-2 translate-y-2 -z-20"></div>
                   
                   <p className="font-semibold text-[#517DF0] text-6xl md:text-9xl flex-shrink-0">
                     {item.id}
