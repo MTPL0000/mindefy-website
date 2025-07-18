@@ -248,7 +248,7 @@ export default function AIMLPage() {
         }}
         className="w-full py-32 px-8 relative"
       >
-        <div className="absolute top-9 left-1/2 transform -translate-x-1/2 w-2xl aspect-[742/724.54] opacity-20">
+        <div className="sticky top-9 left-1/2 transform -translate-x-1/2 w-2xl aspect-[742/724.54] opacity-20">
           <Image
             src="/images/ai-ml-2.png"
             alt="unlock the power-Mindefy"
