@@ -1,14 +1,13 @@
 "use client";
 import Image from "next/image";
 
-
 export default function YourHourProduct() {
   return (
     <section className="max-w-[90rem] mx-auto pt-16 px-4 xl:px-0">
       <div className="flex flex-col items-center justify-center gap-5 mt-8 mb-8">
-        <p className="text-[#FF5225] text-[1rem] font-bold tracking-wider uppercase">
+        <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-wider uppercase">
           Our Product
-        </p>
+        </h1>
         <span className="text-2xl md:text-3xl xl:text-4xl font-normal text-[#000000] text-center px-4 xl:px-0">
           <span className="text-2xl md:text-3xl xl:text-4xl font-semibold text-[#000000]">
             YourHour

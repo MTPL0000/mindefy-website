@@ -6,9 +6,9 @@ const MachONE = () => {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center gap-8 lg:gap-16 pt-16">
         <div className="flex flex-col items-center justify-center max-w-4xl mx-auto gap-6 lg:gap-12 mt-8 px-4 sm:px-6 lg:px-8">
-          <p className="text-black text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-wider text-center">
+          <h1 className="text-black text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-wider text-center">
             MachONE
-          </p>
+          </h1>
           <span className="text-sm sm:text-base font-normal text-black text-justify leading-relaxed">
             Mindefy's expert development team has crafted a powerful platform
             that seamlessly integrates with existing systems, allowing for a
@@ -38,21 +38,13 @@ const MachONE = () => {
             Resource Management capabilities
           </p>
           <span className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black text-center leading-tight max-w-5xl">
-            <span className="font-semibold">
-              MachONE
-            </span>{" "}
-            Can{" "}
-            <span className="font-semibold">
-              Transform Your Business
-            </span>
+            <span className="font-semibold">MachONE</span> Can{" "}
+            <span className="font-semibold">Transform Your Business</span>
             <br />
-            With Its{" "}
-            <span className="font-semibold">
-              PROCUREMENT
-            </span>
+            With Its <span className="font-semibold">PROCUREMENT</span>
           </span>
         </div>
-        
+
         <div className="relative aspect-[2/1] w-full max-w-5xl overflow-hidden px-4 sm:px-6 lg:px-8">
           <Image
             src="/images/projects/mach-2.png"
@@ -116,18 +108,12 @@ const MachONE = () => {
             Pillars of MachONE
           </p>
           <span className="text-2xl sm:text-3xl lg:text-4xl font-normal text-black text-center leading-tight max-w-5xl">
-            <span className="font-semibold">
-              MachONE
-            </span>{" "}
-            Is{" "}
+            <span className="font-semibold">MachONE</span> Is{" "}
             <span className="font-semibold">
               Built Upon Five Essential Pillars
             </span>
             <br />
-            That{" "}
-            <span className="font-semibold">
-              Drive Exceptional
-            </span>{" "}
+            That <span className="font-semibold">Drive Exceptional</span>{" "}
             Results
           </span>
         </div>

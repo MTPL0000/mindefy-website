@@ -7,9 +7,9 @@ const Solistack = () => {
       <section className="flex flex-col items-center justify-center gap-8 md:gap-12 lg:gap-16 xl:gap-24 mx-auto pt-8 md:pt-16 px-4 md:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto gap-6 md:gap-8 lg:gap-12 mt-4 md:mt-8">
           <div className="flex flex-col items-center justify-center gap-3 md:gap-5">
-            <p className="text-[#FF5225] text-sm md:text-base font-bold tracking-wider uppercase">
+            <h1 className="text-[#FF5225] text-sm md:text-base font-bold tracking-wider uppercase">
               Soliroute
-            </p>
+            </h1>
             <span className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#000000] text-center px-4">
               Solistack Business Solutions
             </span>

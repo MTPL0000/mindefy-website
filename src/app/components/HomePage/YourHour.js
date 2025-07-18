@@ -60,9 +60,9 @@ export default function YourHour() {
         <p className="text-[#FF5225] text-sm sm:text-base font-bold tracking-wider uppercase mb-6 sm:mb-8">
           PORTFOLIO
         </p>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-semibold text-gray-900">
+        <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-semibold text-gray-900">
           Recent Product Works
-        </h1>
+        </p>
       </div>
 
       {/* Main Content - Responsive Layout */}

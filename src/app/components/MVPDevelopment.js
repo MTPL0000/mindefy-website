@@ -9,18 +9,18 @@ export default function MVPDevelopment() {
       <section className="mt-16 sm:mt-20 md:mt-24 xl:mt-28 mx-auto px-4 sm:px-6 lg:px-8 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-sm sm:text-base xl:text-[1rem] font-bold tracking-widest uppercase mb-4 sm:mb-5 xl:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm sm:text-base xl:text-[1rem] font-bold tracking-widest uppercase mb-4 sm:mb-5 xl:mb-[1.25rem]">
             product development
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-5 md:mb-6 xl:mb-7 leading-tight max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-[63.56rem] mx-auto px-2 sm:px-4 xl:px-0">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-5 md:mb-6 xl:mb-7 leading-tight max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-[63.56rem] mx-auto px-2 sm:px-4 xl:px-0">
             <span className="font-normal">Accelerate Your </span>Product
             Development
             <span className="font-normal"> with </span>Innovative Solutions
             <span className="font-normal"> and </span>Product Development
             <span className="font-normal"> as-a-Service</span>
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:w-[60.125rem] font-normal mx-auto mb-6 sm:mb-8 xl:mb-[2.25rem] text-justify space-y-4 sm:space-y-5 xl:space-y-[1.25rem] px-2 sm:px-4 xl:px-0">
@@ -118,13 +118,12 @@ export default function MVPDevelopment() {
                   Agile Methodology-based Prototyping
                 </h3>
                 <p className="text-sm sm:text-base text-[#444444] leading-relaxed text-justify">
-                  We follow Agile methodologies to streamline the
-                  prototyping phase of your product development journey.
-                  By adopting an iterative and collaborative approach, we
-                  ensure quick feedback cycles, efficient resource
-                  utilization, and rapid validation of ideas. Our
-                  prototyping process enables you to visualize and refine
-                  your product concept, saving time and reducing
+                  We follow Agile methodologies to streamline the prototyping
+                  phase of your product development journey. By adopting an
+                  iterative and collaborative approach, we ensure quick feedback
+                  cycles, efficient resource utilization, and rapid validation
+                  of ideas. Our prototyping process enables you to visualize and
+                  refine your product concept, saving time and reducing
                   development costs.
                 </p>
               </div>
@@ -146,12 +145,11 @@ export default function MVPDevelopment() {
                 </h3>
                 <p className="text-sm sm:text-base text-[#444444] leading-relaxed text-justify">
                   Our MVP (Minimum Viable Product) design and development
-                  services work closely with you to identify the core
-                  features and functionalities that will resonate with
-                  your target audience. By focusing on the essential
-                  elements, we help you quickly validate your product in
-                  the market, gather user feedback, and iterate based on
-                  real user insights.
+                  services work closely with you to identify the core features
+                  and functionalities that will resonate with your target
+                  audience. By focusing on the essential elements, we help you
+                  quickly validate your product in the market, gather user
+                  feedback, and iterate based on real user insights.
                 </p>
               </div>
             </div>
@@ -171,12 +169,11 @@ export default function MVPDevelopment() {
                   MVP Launch and Market Research
                 </h3>
                 <p className="text-sm sm:text-base text-[#444444] leading-relaxed text-justify">
-                  We provide support throughout the MVP launch phase,
-                  conducting comprehensive market research to identify
-                  target audiences, analyze competitor trends, and ensure
-                  a successful launch that resonates with your target
-                  market. Our strategic planning helps refine your product
-                  strategy for maximum impact.
+                  We provide support throughout the MVP launch phase, conducting
+                  comprehensive market research to identify target audiences,
+                  analyze competitor trends, and ensure a successful launch that
+                  resonates with your target market. Our strategic planning
+                  helps refine your product strategy for maximum impact.
                 </p>
               </div>
             </div>
@@ -196,13 +193,12 @@ export default function MVPDevelopment() {
                   Product Development as-a-Service
                 </h3>
                 <p className="text-sm sm:text-base text-[#444444] leading-relaxed text-justify">
-                  We offer Product Development as-a-Service, a
-                  comprehensive solution designed to support companies
-                  throughout their entire product development journey. Our
-                  experienced team becomes an extension of your
-                  organization, providing end-to-end support from ideation
-                  to launch with flexible engagement models and deep
-                  industry expertise.
+                  We offer Product Development as-a-Service, a comprehensive
+                  solution designed to support companies throughout their entire
+                  product development journey. Our experienced team becomes an
+                  extension of your organization, providing end-to-end support
+                  from ideation to launch with flexible engagement models and
+                  deep industry expertise.
                 </p>
               </div>
             </div>
@@ -223,12 +219,11 @@ export default function MVPDevelopment() {
                 </h3>
                 <p className="text-sm sm:text-base text-[#444444] leading-relaxed text-justify">
                   Our Innovation Lab serves as a collaborative space where
-                  creative ideas and cutting-edge technologies come
-                  together to drive breakthrough innovations. Our
-                  dedicated team of experts works closely with you to
-                  explore innovative solutions, providing access to
-                  multidisciplinary expertise, state-of-the-art tools, and
-                  rapid prototyping capabilities.
+                  creative ideas and cutting-edge technologies come together to
+                  drive breakthrough innovations. Our dedicated team of experts
+                  works closely with you to explore innovative solutions,
+                  providing access to multidisciplinary expertise,
+                  state-of-the-art tools, and rapid prototyping capabilities.
                 </p>
               </div>
             </div>
@@ -270,11 +265,11 @@ export default function MVPDevelopment() {
                         <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
                           We follow Agile methodologies to streamline the
                           prototyping phase of your product development journey.
-                          By adopting an iterative and collaborative approach, we
-                          ensure quick feedback cycles, efficient resource
+                          By adopting an iterative and collaborative approach,
+                          we ensure quick feedback cycles, efficient resource
                           utilization, and rapid validation of ideas. Our
-                          prototyping process enables you to visualize and refine
-                          your product concept, saving time and reducing
+                          prototyping process enables you to visualize and
+                          refine your product concept, saving time and reducing
                           development costs.
                         </p>
                       </div>
@@ -303,13 +298,13 @@ export default function MVPDevelopment() {
                           MVP Design and Development
                         </h3>
                         <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
-                          Our MVP (Minimum Viable Product) design and development
-                          services work closely with you to identify the core
-                          features and functionalities that will resonate with
-                          your target audience. By focusing on the essential
-                          elements, we help you quickly validate your product in
-                          the market, gather user feedback, and iterate based on
-                          real user insights.
+                          Our MVP (Minimum Viable Product) design and
+                          development services work closely with you to identify
+                          the core features and functionalities that will
+                          resonate with your target audience. By focusing on the
+                          essential elements, we help you quickly validate your
+                          product in the market, gather user feedback, and
+                          iterate based on real user insights.
                         </p>
                       </div>
                     </div>
@@ -337,10 +332,10 @@ export default function MVPDevelopment() {
                         <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
                           We provide support throughout the MVP launch phase,
                           conducting comprehensive market research to identify
-                          target audiences, analyze competitor trends, and ensure
-                          a successful launch that resonates with your target
-                          market. Our strategic planning helps refine your product
-                          strategy for maximum impact.
+                          target audiences, analyze competitor trends, and
+                          ensure a successful launch that resonates with your
+                          target market. Our strategic planning helps refine
+                          your product strategy for maximum impact.
                         </p>
                       </div>
                     </div>
@@ -370,11 +365,11 @@ export default function MVPDevelopment() {
                         <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
                           We offer Product Development as-a-Service, a
                           comprehensive solution designed to support companies
-                          throughout their entire product development journey. Our
-                          experienced team becomes an extension of your
-                          organization, providing end-to-end support from ideation
-                          to launch with flexible engagement models and deep
-                          industry expertise.
+                          throughout their entire product development journey.
+                          Our experienced team becomes an extension of your
+                          organization, providing end-to-end support from
+                          ideation to launch with flexible engagement models and
+                          deep industry expertise.
                         </p>
                       </div>
                     </div>
@@ -400,13 +395,13 @@ export default function MVPDevelopment() {
                           Innovation Lab
                         </h3>
                         <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
-                          Our Innovation Lab serves as a collaborative space where
-                          creative ideas and cutting-edge technologies come
-                          together to drive breakthrough innovations. Our
+                          Our Innovation Lab serves as a collaborative space
+                          where creative ideas and cutting-edge technologies
+                          come together to drive breakthrough innovations. Our
                           dedicated team of experts works closely with you to
                           explore innovative solutions, providing access to
-                          multidisciplinary expertise, state-of-the-art tools, and
-                          rapid prototyping capabilities.
+                          multidisciplinary expertise, state-of-the-art tools,
+                          and rapid prototyping capabilities.
                         </p>
                       </div>
                     </div>

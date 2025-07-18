@@ -9,16 +9,16 @@ export default function LowCode() {
       <section className="mt-20 lg:mt-28 px-4 sm:px-6 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-sm lg:text-[1rem] font-bold tracking-widest uppercase mb-4 lg:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm lg:text-[1rem] font-bold tracking-widest uppercase mb-4 lg:mb-[1.25rem]">
             Low Code Development
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-6 lg:mb-7 leading-tight max-w-full sm:max-w-2xl lg:max-w-[50rem] mx-auto">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-6 lg:mb-7 leading-tight max-w-full sm:max-w-2xl lg:max-w-[50rem] mx-auto">
             <span className="font-normal">Transforming </span>Development
             <span className="font-normal"> with </span>Mindefy's Low-Code
             Platform
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="max-w-full sm:max-w-2xl lg:max-w-[61.375rem] font-normal mx-auto mb-6 lg:mb-[2.25rem] text-justify space-y-4 lg:space-y-[1.25rem]">
@@ -47,7 +47,7 @@ export default function LowCode() {
               />
             </div>
           </div>
-          
+
           <div className="max-w-full sm:max-w-2xl lg:max-w-[60.25rem] mx-auto mb-12 lg:mb-20">
             <p className="text-justify text-sm lg:text-[1rem] font-normal text-[#444444]">
               Low-Code Platform Development offers a powerful solution by
@@ -65,7 +65,8 @@ export default function LowCode() {
       <div className="mx-auto max-w-full sm:max-w-2xl lg:max-w-[60.25rem] mb-12 lg:mb-[5rem] px-4 sm:px-6 lg:px-0">
         <div className="text-[#000000] text-lg sm:text-xl lg:text-[1.5rem] font-semibold mb-4 lg:mb-6">
           <p>
-            Collaborate with Mindefy for Low-Code<br className="hidden lg:block"></br>Platform Excellence
+            Collaborate with Mindefy for Low-Code
+            <br className="hidden lg:block"></br>Platform Excellence
           </p>
         </div>
         <div className="font-normal text-sm lg:text-[1rem] text-justify text-[#444444] space-y-4 lg:space-y-5">
@@ -255,7 +256,8 @@ export default function LowCode() {
           {/* Section Header */}
           <div className="text-center mb-8 lg:mb-[2.25rem]">
             <h2 className="text-lg sm:text-xl lg:text-[2rem] font-semibold text-[#000000] mb-4">
-              Our Expertise in Low-Code Platform<br className="hidden lg:block"></br> Development
+              Our Expertise in Low-Code Platform
+              <br className="hidden lg:block"></br> Development
             </h2>
             <p className="text-sm lg:text-[1rem] text-[#444444] leading-relaxed max-w-full lg:max-w-[60rem] mx-auto text-justify">
               At Mindefy, we have a team of experienced Low-Code developers

@@ -9,16 +9,16 @@ export default function CDS() {
       <section className="mt-20 xl:mt-28 mx-auto px-4 sm:px-6 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-sm sm:text-base xl:text-[1rem] font-bold tracking-widest uppercase mb-4 xl:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm sm:text-base xl:text-[1rem] font-bold tracking-widest uppercase mb-4 xl:mb-[1.25rem]">
             CLoud and Devops Services
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 xl:mb-7 leading-tight max-w-full sm:max-w-2xl lg:max-w-4xl xl:max-w-[50rem] mx-auto px-4 xl:px-0">
+          <p className="text-xl sm:text-2xl lg:text-3xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 xl:mb-7 leading-tight max-w-full sm:max-w-2xl lg:max-w-4xl xl:max-w-[50rem] mx-auto px-4 xl:px-0">
             <span className="font-normal">Partnеr with </span>Mindefy{" "}
-            <span className="font-normal">for </span> Cloud and<br className="hidden xl:block"></br> DеvOps
-            Excеllеncе
-          </h1>
+            <span className="font-normal">for </span> Cloud and
+            <br className="hidden xl:block"></br> DеvOps Excеllеncе
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-xl sm:max-w-2xl lg:max-w-4xl xl:w-[60.25rem] font-normal mx-auto mb-6 xl:mb-[2.25rem] px-4 xl:px-0 text-justify space-y-4 xl:space-y-[1.25rem]">

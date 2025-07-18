@@ -9,15 +9,15 @@ export default function BPM() {
       <section className="mt-20 md:mt-24 lg:mt-28 mx-auto px-4 md:px-6 lg:px-8 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-sm md:text-base lg:text-[1rem] font-bold tracking-widest uppercase mb-4 md:mb-5 lg:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm md:text-base lg:text-[1rem] font-bold tracking-widest uppercase mb-4 md:mb-5 lg:mb-[1.25rem]">
             Buisness Process Management
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-6 lg:mb-7 leading-tight max-w-[95%] md:max-w-[40rem] lg:max-w-[45rem] xl:max-w-[50rem] mx-auto px-2 md:px-0">
-            Revolutionize Your Business with <br className="hidden md:block" />Mindefy's Business Process
-            Management
-          </h1>
+          <p className="text-xl md:text-2xl lg:text-3xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-6 lg:mb-7 leading-tight max-w-[95%] md:max-w-[40rem] lg:max-w-[45rem] xl:max-w-[50rem] mx-auto px-2 md:px-0">
+            Revolutionize Your Business with <br className="hidden md:block" />
+            Mindefy's Business Process Management
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-[95%] md:max-w-[45rem] lg:max-w-[55rem] xl:w-[60.25rem] font-normal mx-auto mb-6 md:mb-8 lg:mb-[2.25rem] text-justify space-y-4 md:space-y-5 lg:space-y-[1.75rem] px-2 md:px-4 lg:px-6 xl:px-0">

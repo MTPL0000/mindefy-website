@@ -9,17 +9,18 @@ export default function StartupConsulting() {
       <section className="mt-20 sm:mt-24 md:mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1rem] sm:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1rem] sm:mb-[1.25rem]">
             Startup Support and Consulting
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-5 sm:mb-6 md:mb-7 leading-tight max-w-[90%] sm:max-w-[80%] md:max-w-[70%] xl:max-w-[50rem] mx-auto">
+          <p className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-5 sm:mb-6 md:mb-7 leading-tight max-w-[90%] sm:max-w-[80%] md:max-w-[70%] xl:max-w-[50rem] mx-auto">
             <span className="font-normal">Your </span>Startup's Success{" "}
             <span className="font-normal"> from </span>
-            <br className="hidden sm:block" /> Ideation <span className="font-normal">to </span>MVP
+            <br className="hidden sm:block" /> Ideation{" "}
+            <span className="font-normal">to </span>MVP
             <span className="font-normal"> with </span>Our Expertise
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60rem] xl:w-[60.25rem] font-normal mx-auto mb-[1.5rem] text-justify space-y-[1rem] sm:space-y-[1.25rem]">
@@ -35,10 +36,11 @@ export default function StartupConsulting() {
             <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed">
               We believe that guiding startups goes beyond simply telling them
               <span className="font-semibold">"what to do"</span> We also focus
-              on sharing insights<br className="hidden lg:block" /> and lessons learned on{" "}
+              on sharing insights
+              <br className="hidden lg:block" /> and lessons learned on{" "}
               <span className="font-semibold">"what not to do"</span>
-              <br className="hidden lg:block" /> This guidance ensures that startups make informed
-              decisions and steer clear of pitfalls.
+              <br className="hidden lg:block" /> This guidance ensures that
+              startups make informed decisions and steer clear of pitfalls.
             </p>
           </div>
 
