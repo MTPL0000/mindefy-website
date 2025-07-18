@@ -6,7 +6,7 @@ export default function BlogOne() {
   const blog = blogData[0];
 
   return (
-    <section className="mx-auto px-4">
+    <section className="mx-auto px-4 mb-6">
       <div className="w-full flex justify-center pt-12">
         <div className="container relative aspect-[2/1] rounded-4xl">
           <Image
@@ -84,7 +84,7 @@ export default function BlogOne() {
             <li>Features of micro-services</li>
             <li>Pros of Micro-services</li>
             <li>Top worldwide real-life examples</li>
-            <li>Where Mind-e-fy used micro-services</li>
+            <li>Where Mindefy used micro-services</li>
             <li>Why do we need microservice architecture?</li>
           </ol>
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-2">
@@ -113,7 +113,7 @@ export default function BlogOne() {
           </ol>
           <div className="w-full flex justify-center my-8">
             {/*<figure className="wp-block-image size-full">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/05/Microservice_Features.jpeg" alt="Microservice Features" className="rounded-2xl max-w-full h-auto" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/05/Microservice_Features.jpeg" alt="Microservice Features" className="rounded-2xl max-w-full h-auto" />
             </figure>*/}
           </div>
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-2">
@@ -181,7 +181,7 @@ export default function BlogOne() {
             <li>Paypal</li>
           </ol>
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-2">
-            <strong>Where Mind-e-fy used Micro-services:</strong>
+            <strong>Where Mindefy used Micro-services:</strong>
           </h2>
           <p className="text-lg font-normal text-[#444444] mt-3">
             We’ve used Micro-services in fraud management solutions, Retail
