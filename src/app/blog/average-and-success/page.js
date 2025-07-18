@@ -6,7 +6,7 @@ export default function BlogSecond() {
   const blog = blogData[1];
 
   return (
-    <section className="mx-auto px-4">
+    <section className="mx-auto px-4 mb-6">
       <div className="w-full flex justify-center pt-12">
         <div className="container relative aspect-[2/1] rounded-4xl">
           <Image
@@ -78,7 +78,7 @@ export default function BlogSecond() {
           </p>
           <div className="flex justify-center my-6">
             {/*<figure className="w-[300px] h-[200px]">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
             </figure>*/}
           </div>
           <h2 className="text-2xl font-bold text-center text-[#000000] mt-8 mb-4">
@@ -127,7 +127,7 @@ export default function BlogSecond() {
           </p>
           <div className="flex justify-center my-6">
             {/*<figure className="w-[300px] h-[200px]">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
             </figure>*/}
           </div>
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-4">
@@ -162,7 +162,7 @@ export default function BlogSecond() {
           </p>
           <div className="flex justify-center my-6">
             {/*<figure className="w-[300px] h-[200px]">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
             </figure>*/}
           </div>
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-4">
@@ -203,7 +203,7 @@ export default function BlogSecond() {
           </p>
           <div className="flex justify-center my-6">
             {/*<figure className="w-[300px] h-[200px]">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
             </figure>*/}
           </div>
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-4">

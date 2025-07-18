@@ -6,7 +6,7 @@ export default function BlogThird() {
   const blog = blogData[2];
 
   return (
-    <section className="mx-auto px-4">
+    <section className="mx-auto px-4 mb-6">
       <div className="w-full flex justify-center pt-12">
         <div className="container relative aspect-[2/1] rounded-4xl">
           <Image
@@ -79,7 +79,7 @@ export default function BlogThird() {
           </blockquote>
           <div className="flex justify-center my-6">
             {/*<figure className="aligncenter size-medium">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
             </figure>*/}
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">
@@ -93,7 +93,7 @@ export default function BlogThird() {
           </h3>
           <div className="flex justify-center my-6">
             {/*<figure className="aligncenter size-medium">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
             </figure>*/}
           </div>
           <p className="text-lg font-normal text-[#444444] mt-3">
@@ -117,7 +117,7 @@ export default function BlogThird() {
           </p>
           <div className="flex justify-center my-6">
             {/*<figure className="aligncenter size-medium">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
             </figure>*/}
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">
@@ -137,7 +137,7 @@ export default function BlogThird() {
           </p>
           <div className="flex justify-center my-6">
             {/*<figure className="aligncenter size-medium">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
             </figure>*/}
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">
@@ -159,7 +159,7 @@ export default function BlogThird() {
           </p>
           <div className="flex justify-center my-6">
             {/*<figure className="aligncenter size-medium">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
             </figure>*/}
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">
@@ -182,7 +182,7 @@ export default function BlogThird() {
           </p>
           <div className="flex justify-center my-6">
             {/*<figure className="aligncenter size-medium">
-              <img src="https://mind-e-fy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
+              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
             </figure>*/}
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">

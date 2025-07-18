@@ -23,7 +23,7 @@ export const blogData = [
 
       "In this article we will cover:",
 
-      "What should be remembered while working with Micro-services? Features of micro-services Pros of Micro-services Top worldwide real-life examples Where Mind-e-fy used micro-services Why do we need microservice architecture?",
+      "What should be remembered while working with Micro-services? Features of micro-services Pros of Micro-services Top worldwide real-life examples Where Mindefy used micro-services Why do we need microservice architecture?",
 
       "Each component of a microservice has its own:",
 
@@ -47,7 +47,7 @@ export const blogData = [
 
       "Amazon, Netflix, Uber, Twitter, Paypal",
 
-      "Where Mind-e-fy used Micro-services:",
+      "Where Mindefy used Micro-services:",
 
       "We’ve used Micro-services in fraud management solutions, Retail management Projects, and so on.",
 
