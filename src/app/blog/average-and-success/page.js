@@ -56,10 +56,10 @@ export default function BlogSecond() {
             delivered to our premises making us more sedentary and less mobile.
             We are all living vegetables.
           </p>
-          <h2 className="text-2xl font-bold text-center text-[#000000] mt-8 mb-4">
+          <h2 className="text-2xl font-bold text-left text-[#000000] mt-8 mb-4">
             <strong>Make a Timetable!</strong>
           </h2>
-          <blockquote className="text-center border-l-4 border-gray-300 pl-4 my-6">
+          <blockquote className="text-left border-l-4 border-gray-300 pl-4 my-6">
             <p className="text-lg font-semibold text-[#444444] mt-3">
               <strong>
                 We just choose to fill the voids with crappy stuffs like
@@ -81,7 +81,7 @@ export default function BlogSecond() {
               <img src="https://Mindefy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
             </figure>*/}
           </div>
-          <h2 className="text-2xl font-bold text-center text-[#000000] mt-8 mb-4">
+          <h2 className="text-2xl font-bold text-left text-[#000000] mt-8 mb-4">
             <strong>
               A Man who Lifts Twice stays Healthy, Wealthy, and Wise!
             </strong>
