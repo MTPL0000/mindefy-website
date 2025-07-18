@@ -28,8 +28,8 @@ export default function AIMLPage() {
           />
         </div>
         <div className="flex flex-col items-center justify-center gap-3 md:gap-5">
-          <h1 className="text-[#342871] text-3xl md:text-5xl font-bold tracking-normal text-center">
-            AI/ML Pages
+          <h1 className="text-[#342871] text-3xl md:text-5xl font-bold tracking-normal text-center ">
+            AI/ML
           </h1>
           <p className="text-[#D84326] text-lg md:text-4xl font-medium tracking-wider text-center">
             Mindefy Technologies Pvt. Ltd.
