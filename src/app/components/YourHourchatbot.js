@@ -35,9 +35,9 @@ const YourHourChatBot = () => {
 
   return (
     <div className="min-h-screen ">
-      <div className="max-w-[100rem] mx-auto flex flex-col lg:flex-row pt-10">
+      <div className="max-w-[100rem] mx-auto flex flex-col lg:flex-row pt-10  overflow-x-hidden">
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
-        <div className="hidden lg:block w-80 flex-shrink-0 mr-0 lg:mr-5 mb-6 lg:mb-0">
+        <div className="hidden lg:block w-80 flex-shrink-0  mb-6 lg:mb-0">
           <div className="sticky top-10">
             <div className="py-8 bg-white shadow-lg h-full">
               <nav className="space-y-1.5">
@@ -64,49 +64,47 @@ const YourHourChatBot = () => {
           {/* Introduction Section */}
           <section
             id="introduction"
-            className="mb-16 sm:mb-20 lg:mb-20 px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 lg:mt-10"
+            className="mb-16 sm:mb-20 lg:mb-20 mt-6 sm:mt-8 lg:mt-10"
             style={{
               background:
                 "linear-gradient(to bottom, #FFFFFF, #A2E3FB, #FEFEFE)",
             }}
           >
-            <div className="">
-              <div className="max-w-[57.93rem] px-[4.14rem] mx-auto">
-                <div className="flex flex-col lg:flex-row justify-between gap-[3.3125rem] items-start">
-                  {/* Left Content */}
-                  <div className="space-y-0 w-[21.56rem]">
-                    <div className=" text-[#000000] mb-[2.56rem]">
-                      <p className="font-bold text-sm mb-4">CASE STUDY</p>
-                      <h1 className="text-[1.86rem] font-semibold ">
-                        RAG-Based AI Chatbot
-                      </h1>
-                    </div>
-                    <div className="w-[20.43rem] mr-4.5">
-                      <p className="text-[#000000] font-normal text-sm leading-relaxed tracking-normal">
-                        YourHour was originally designed to monitor and reduce
-                        daily screen time with alerts. Facing rising demand for
-                        mental health support, the team enhanced the app by
-                        integrating a Retrieval-Augmented Generation (RAG) AI
-                        chatbot. This “AI companion” continued screen-time
-                        coaching while also answering mental health questions,
-                        providing personalized advice on anxiety or depression,
-                        and offering companionship—based on how screen time
-                        affects health and emotional well-being.
-                      </p>
-                    </div>
+            <div className="max-w-[57.93rem] mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex flex-col lg:flex-row justify-between gap-[3.3125rem] items-start">
+                {/* Left Content */}
+                <div className="space-y-0 w-full max-w-[21.56rem]">
+                  <div className="text-[#000000] mb-[2.56rem]">
+                    <p className="font-bold text-sm mb-4">CASE STUDY</p>
+                    <h1 className="text-[1.86rem] font-semibold ">
+                      RAG-Based AI Chatbot
+                    </h1>
                   </div>
+                  <div className="w-full max-w-[20.43rem] mr-0">
+                    <p className="text-[#000000] font-normal text-sm leading-relaxed tracking-normal">
+                      YourHour was originally designed to monitor and reduce
+                      daily screen time with alerts. Facing rising demand for
+                      mental health support, the team enhanced the app by
+                      integrating a Retrieval-Augmented Generation (RAG) AI
+                      chatbot. This “AI companion” continued screen-time
+                      coaching while also answering mental health questions,
+                      providing personalized advice on anxiety or depression,
+                      and offering companionship—based on how screen time
+                      affects health and emotional well-being.
+                    </p>
+                  </div>
+                </div>
 
-                  {/* Right Content - Chat Interface Image */}
-                  <div className="mt-[-8rem]">
-                    <div className="relative overflow-hidden">
-                      <Image
-                        src="/images/YH-MN.gif"
-                        alt="Animation"
-                        width={400}
-                        height={647}
-                        className="object-contain"
-                      />
-                    </div>
+                {/* Right Content - Chat Interface Image */}
+                <div className="mt-0 lg:mt-[-8rem] w-full flex justify-center">
+                  <div className="relative overflow-hidden">
+                    <Image
+                      src="/images/YH-MN.gif"
+                      alt="Animation"
+                      width={400}
+                      height={647}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </div>
@@ -123,9 +121,9 @@ const YourHourChatBot = () => {
               </div>
 
               {/* Challenge Cards Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-10">
-                {/* Limited Browsing Time */}
-                <div className="text-center max-w-[20rem] ml-10 mb-10.5 mx-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                {/* Card 1 */}
+                <div className="text-center w-full max-w-[20rem] mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
                     <Image
                       src="/images/YH-CB1.png"
@@ -137,14 +135,14 @@ const YourHourChatBot = () => {
                     Mental health risks from <br />
                     screen overuse
                   </h3>
-                  <p className="text-[#000000] text-sm font-light leading-relaxed px-4 sm:px-2">
+                  <p className="text-[#000000] text-sm font-light leading-relaxed">
                     Extended screen use causes stress, sleep disruption, and
                     reduced happiness.
                   </p>
                 </div>
 
-                {/* Lower Cart Value */}
-                <div className="text-center max-w-[20rem] mx-auto">
+                {/* Card 2 */}
+                <div className="text-center w-full max-w-[20rem] mx-auto">
                   <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.875rem]">
                     <Image
                       src="/images/YH-CB2.png"
@@ -156,14 +154,14 @@ const YourHourChatBot = () => {
                     Demand for
                     <br /> interactive support
                   </h3>
-                  <p className="text-[#000000] mx-8 text-sm font-light leading-relaxed px-4 sm:px-2">
+                  <p className="text-[#000000] text-sm font-light leading-relaxed">
                     Users wanted more than alerts - AI conversations soothe
                     stress and loneliness like real human connection.
                   </p>
                 </div>
 
-                {/* Need for Smart Suggestions */}
-                <div className="text-center max-w-[20rem] mb-5 mx-auto">
+                {/* Card 3 */}
+                <div className="text-center w-full max-w-[20rem] mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.87rem]">
                     <Image
                       src="/images/YH-CB3.png"
@@ -175,7 +173,7 @@ const YourHourChatBot = () => {
                     Building a trustworthy
                     <br /> knowledge base
                   </h3>
-                  <p className="text-[#000000] text-sm font-light leading-relaxed px-4 sm:px-2">
+                  <p className="text-[#000000] text-sm font-light leading-relaxed">
                     Trusted mental health content powered the chatbot’s accurate
                     and empathetic RAG-based responses.
                   </p>
