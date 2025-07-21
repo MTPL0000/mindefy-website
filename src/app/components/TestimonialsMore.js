@@ -8,7 +8,7 @@ export default function TestimonialsMore() {
       id: 1,
       title: "Trusted Java Development Partner of Decade",
       content:
-        "For the past 10 years, Mindefy Technologies has been our trusted Java development partner, providing us dedicated offshore team from India. Their expertise, transparency, and commitment to delivering high-quality solutions efficiently. The outstanding results has made them our go-to partner for innovation and agility. Highly recommended.",
+        "For the past 10 years, Mindefy Technologies has been our trusted Java development partner, providing a dedicated offshore team from India. Their expertise, transparency, and commitment to quality have helped us scale efficiently. The outsourcing model has optimized costs while ensuring innovation and agility. Highly recommended!",
       clientName: "Mr. Bunrak Saraggananda",
       clientPosition: "Chairman & CEO at Magic Software, Thailand",
       companyLogo: "/images/mst-icon.svg",
@@ -18,7 +18,7 @@ export default function TestimonialsMore() {
       id: 2,
       title: "JEGO Platform Transformation & Innovation",
       content:
-        "Over the past three years, the transformation of the JEGO platform has been incredible, from revamping mobile apps and the portal web to migrating to latest cloud architecture, the team at Mindefy Technologies has been outstanding. Their ability to deliver scalable solutions while maintaining quality has significantly enhanced our platform's efficiency and user experience. A truly reliable and innovative tech partner!",
+        "Over the past three years, the transformation of the JEGO platform has been incredible. From revamping mobile apps and the admin web to migrating the entire cloud architecture, the expertise and dedication of the team have been outstanding. Their ability to deliver scalable, high-performance solutions has significantly enhanced our platform’s efficiency and user experience. A truly reliable and innovative tech partner!",
       clientName: "Mr. Gaurav Gupta",
       clientPosition: "Poem Media TechInvest LLC, Dubai",
       companyLogo: "/images/jego-icon.svg",
@@ -28,7 +28,7 @@ export default function TestimonialsMore() {
       id: 3,
       title: "Exceptional Website Development and Beauty Salon",
       content:
-        "Mindefy Technologies has been an outstanding partner in developing the website and mobile app for Haircut and Beauty Salon. Their team delivered innovative, user-friendly solutions that has enhanced our customer experience. Their professionalism, technical expertise, and attention to detail have been exceptional and effective. I highly recommend them for anyone looking for top-notch digital solutions!",
+        "Mindefy Technologies has been an outstanding partner in developing the website and mobile app for Beloved Beauty Salon. Their team understood our vision and delivered a seamless, user-friendly platform that has enhanced our customer experience. Their professionalism, technical expertise, and dedication made the entire process smooth and efficient. I highly recommend them for anyone looking for top-notch digital solutions!",
       clientName: "Mr. Sameer Khan",
       clientPosition: "Founder, Beloved Beauty Salon, Dubai",
       companyLogo: "/images/beloved.svg",
@@ -38,9 +38,9 @@ export default function TestimonialsMore() {
       id: 4,
       title: "SoliStack Platform Development & Route Optimization Excellence",
       content:
-        "Building the SoliStack platform required a team with deep technical expertise and a strong understanding of route optimization. Mindefy Technologies delivered exactly that, crafting a robust, scalable solution that perfectly meets our needs. Their dedication, professionalism, and ability to translate complex requirements into an intuitive platform made all the difference. Highly recommended!",
+        "Building the Solistack platform required a team with deep technical expertise and a strong understanding of route optimization. Mindefy Technologies delivered exactly that, crafting a seamless, high-performing solution tailored to our needs. Their dedication, professionalism, and ability to translate complex requirements into an intuitive platform made all the difference. Highly recommended!",
       clientName: "Mr. Souad OMAR",
-      clientPosition: "Product Owner at SoliStack France",
+      clientPosition: "Product Owner at SoliStack, France",
       companyLogo: "/images/soliroute.svg",
       companyName: "SoliStack",
     },
@@ -48,9 +48,9 @@ export default function TestimonialsMore() {
       id: 5,
       title: "Precision-Driven Website Design & Execution",
       content:
-        "Mindefy has been extremely intricate in taking both our website design and executing it well. They have been very responsive in all our requests. Done all the steep documentation, quality checks and delivered the final impeccably. We would definitely recommend for discussion-worthy. Love their ethics and principles. It's a great team overall!",
+        "Mindefy has been extremely intricate in doing both our website design and executing it well. They are a process oriented company, and have all the steps documented, quality checks made thoroughly and most importantly available for discussion easily. Love their ethics and principles. It’s great when another company also thinks well for you!",
       clientName: "Mrs. Shalini Santhosh",
-      clientPosition: "Founder, Haircut Beauty Salon, Dubai",
+      clientPosition: "Founder & Director at Early Foods, Dubai",
       companyLogo: "/images/earlyfoods.webp",
       companyName: "Website Design Co.",
     },
@@ -111,7 +111,7 @@ export default function TestimonialsMore() {
                 >
                   {/* Testimonial Title */}
                   <h3 className="text-lg md:text-xl xl:text-[1.375rem] font-semibold text-[#02000D] mb-4 md:mb-6 xl:mb-[1.5rem] leading-tight">
-                    "{testimonial.title}"
+                    {testimonial.title}
                   </h3>
 
                   {/* Testimonial Content */}
@@ -133,11 +133,11 @@ export default function TestimonialsMore() {
                     </div>
 
                     <div className="p-3 md:p-4 xl:p-[1rem]">
-                      <p className="text-sm md:text-base xl:text-[0.875rem] font-medium text-gray-900">
+                      <p className="text-sm md:text-base xl:text-[0.875rem] font-medium text-[#000000]">
                         {testimonial.clientName}
                       </p>
                       {testimonial.clientPosition && (
-                        <p className="text-xs md:text-sm xl:text-[0.75rem] text-gray-500">
+                        <p className="text-xs md:text-sm xl:text-[0.75rem] text-[#2B2B2B]">
                           {testimonial.clientPosition}
                         </p>
                       )}

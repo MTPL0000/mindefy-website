@@ -81,7 +81,7 @@ export default function Testimonials() {
             >
               {/* Testimonial Title */}
               <h3 className="text-lg sm:text-xl lg:text-[1.375rem] font-semibold text-[#2B2B2B] mb-3 sm:mb-4 lg:mb-6 leading-tight flex-shrink-0">
-                "{testimonial.title}"
+                {testimonial.title}
               </h3>
 
               {/* Testimonial Content */}
@@ -104,11 +104,11 @@ export default function Testimonials() {
 
                 {/* Author Info */}
                 <div className="min-w-0 flex-1">
-                  <p className="text-xs sm:text-sm lg:text-[0.875rem] font-normal text-[#000000] mb-1 leading-tight">
-                    {testimonial.position}
-                  </p>
-                  <p className="text-sm sm:text-base lg:text-[1.125rem] font-medium text-[#2B2B2B] leading-tight">
+                  <p className="text-sm sm:text-base lg:text-[1.125rem] font-medium text-[#000000] leading-tight">
                     {testimonial.author}
+                  </p>
+                  <p className="text-xs sm:text-sm lg:text-[0.875rem] font-normal text-[#2B2B2B] mb-1 leading-tight">
+                    {testimonial.position}
                   </p>
                 </div>
               </div>
