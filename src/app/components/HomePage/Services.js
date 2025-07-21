@@ -105,7 +105,7 @@ const services = [
     title: "Mindful UX Design Studio",
     description:
       "Our team of experts combines technology, platform proficiency, and business acumen to empower startups",
-    points: ["Mindsey Design Studio", "Portfolio for UI/UX Design Work"],
+    points: ["Mindefy Design Studio", "Portfolio for UI/UX Design Work"],
   },
   {
     title: "IT Consulting & Staff Augmentation",
