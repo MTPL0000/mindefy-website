@@ -23,11 +23,9 @@ export default function HeroSection() {
   // Responsive ticker logic
   const tickerRef = useRef(null);
   const [rowWidth, setRowWidth] = useState(0);
-  console.log(rowWidth);
 
   useEffect(() => {
     function updateWidth() {
-      console.log(tickerRef.current.scrollWidth);
       if (tickerRef.current) {
         setRowWidth((tickerRef.current.scrollWidth + 20) / 2); // Only one set of logos
       }
