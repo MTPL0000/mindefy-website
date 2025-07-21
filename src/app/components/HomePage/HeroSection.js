@@ -39,7 +39,7 @@ export default function HeroSection() {
   const duration = rowWidth ? rowWidth / 100 : 20;
 
   return (
-    <section className="w-full bg-gradient-to-r from-[#f3f4ff] via-[#FFFFFF] to-[#fff3f0] flex items-center justify-center relative overflow-hidden min-h-screen">
+    <section className="w-full bg-gradient-to-r from-[#f3f4ff] via-[#FFFFFF] to-[#fff3f0] flex items-center justify-center relative overflow-hidden pt-20 pb-10 lg:pt-0 lg:pb-0 lg:min-h-screen">
       <div className="mx-auto text-center z-10 w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-semibold text-center leading-tight">
           <span className="text-[#F6BC34]">Ideation</span>{" "}
