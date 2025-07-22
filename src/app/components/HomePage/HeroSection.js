@@ -9,11 +9,11 @@ export default function HeroSection() {
   // Client logos data
   const clientLogos = [
     { src: "/images/sp-logo.png", alt: "Spector-Mindefy", aspectRatio: "36/11" },
-    { src: "/images/Kotak.svg", alt: "Kotak-Mindefy", aspectRatio: "2.39/1" },
+    { src: "/images/Kotak.png", alt: "Kotak-Mindefy", aspectRatio: "1/1" },
     { src: "/images/netlink.svg", alt: "Netlink-Mindefy", aspectRatio: "2.39/1" },
     { src: "/images/mst-hero.webp", alt: "MST-Mindefy", aspectRatio: "2.41/1" },
-    { src: "/images/krungthai.svg", alt: "Krungthai-Mindefy", aspectRatio: "2.39/1" },
-    { src: "/images/solistack.png", alt: "Solistack-Mindefy", aspectRatio: "2.39/1" },
+    { src: "/images/krungthai.webp", alt: "Krungthai-Mindefy", aspectRatio: "100/22" },
+    { src: "/images/solistack.png", alt: "Solistack-Mindefy", aspectRatio: "1685/451" },
     { src: "/images/early-foods-hero.png", alt: "Early-Foods-Mindefy", aspectRatio: "46/31" },
     { src: "/images/Bottomline.svg", alt: "Bottomline-Mindefy", aspectRatio: "2.39/1" },
     { src: "/images/jego-hero.png", alt: "Jego-Mindefy", aspectRatio: "1.91/1" },
