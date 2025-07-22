@@ -9,7 +9,7 @@ export default function HeroSection() {
   // Client logos data
   const clientLogos = [
     { src: "/images/sp-logo.png", alt: "Spector-Mindefy", aspectRatio: "36/11" },
-    { src: "/images/Kotak.png", alt: "Kotak-Mindefy", aspectRatio: "1/1" },
+    { src: "/images/kotak.png", alt: "Kotak-Mindefy", aspectRatio: "1/1" },
     { src: "/images/netlink.svg", alt: "Netlink-Mindefy", aspectRatio: "2.39/1" },
     { src: "/images/mst-hero.webp", alt: "MST-Mindefy", aspectRatio: "2.41/1" },
     { src: "/images/krungthai.webp", alt: "Krungthai-Mindefy", aspectRatio: "100/22" },
