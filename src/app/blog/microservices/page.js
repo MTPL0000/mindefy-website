@@ -7,44 +7,45 @@ export default function BlogOne() {
 
   return (
     <section className="mx-auto px-4 mb-6">
-      <div className="w-full flex justify-center pt-12">
-        <div className="container relative aspect-[2/1] rounded-4xl">
+      <div className="mx-auto container flex flex-col lg:flex-row justify-start pt-8 lg:pt-16 gap-6 lg:mb-6">
+        <div className="flex flex-col items-start justify-start">
+          <div className="container">
+            <div className="container">
+              <h1 className="text-2xl font-bold text-[#000000]">
+                {blog?.title}
+              </h1>
+            </div>
+            <div className="container">
+              <div>
+                <p className="text-lg font-semibold text-[#444444] mt-4">
+                  By {blog?.author}
+                </p>
+                <p className="text-base font-semibold text-normal text-[#444444]">
+                  {blog?.date}
+                </p>
+              </div>
+            </div>
+            <p className="text-lg font-normal text-[#444444] mt-5">
+              Micro-services in this era is getting so much attention from
+              articles, social media, conference presentation, blogs, and so on.
+              However, despite the hype, Micro-service architecture has
+              significant benefits, highly recommended for agile or RAD and the
+              delivery of complex enterprise applications.
+            </p>
+          </div>
+        </div>
+        <div className="container relative aspect-[2/1]">
           <Image
             src={blog?.blogImg}
             fill
             alt="Blog Image"
-            className="object-cover rounded-4xl"
+            className="object-contain rounded-2xl"
           />
         </div>
       </div>
-      <div className="w-full flex justify-center">
-        <div className="container mt-8">
-          <div className="container flex justify-center">
-            <h1 className="text-4xl font-bold text-[#000000] mt-4">
-              {blog?.title}
-            </h1>
-          </div>
-          <div className="container flex lg:justify-end">
-            <div>
-              <p className="text-xl font-medium text-[#444444] mt-4">
-                By {blog?.author}
-              </p>
-              <p className="font-medium text-normal text-[#444444]">
-                {blog?.date}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div className="w-full flex justify-center">
         <div className="container mt-5">
-          <p className="text-lg font-normal text-[#444444] mt-3">
-            Micro-services in this era is getting so much attention from
-            articles, social media, conference presentation, blogs, and so on.
-            However, despite the hype, Micro-service architecture has
-            significant benefits, highly recommended for agile or RAD and the
-            delivery of complex enterprise applications.
-          </p>
           <p className="text-lg font-normal text-[#444444] mt-3">
             Micro-services also known as Micro-service architecture is a method
             of designing or developing software applications or systems to
@@ -111,11 +112,7 @@ export default function BlogOne() {
             <li>Microservices are small and well-chosen deployable units.</li>
             <li>It is Event-driven interaction between the services.</li>
           </ol>
-          <div className="w-full flex justify-center my-8">
-            {/*<figure className="wp-block-image size-full">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/05/Microservice_Features.jpeg" alt="Microservice Features" className="rounded-2xl max-w-full h-auto" />
-            </figure>*/}
-          </div>
+
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-2">
             <strong>Features of Micro-service :</strong>
           </h2>
@@ -158,6 +155,16 @@ export default function BlogOne() {
               pattern.
             </li>
           </ol>
+
+          <div className="container relative aspect-[1.5/1]">
+            <Image
+              src="/images/MS-2.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
+          </div>
+
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-2">
             <strong>Pros of Microservices:&nbsp;</strong>
           </h2>
