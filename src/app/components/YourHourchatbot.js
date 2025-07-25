@@ -74,10 +74,10 @@ const YourHourChatBot = () => {
               <div className="flex flex-col lg:flex-row justify-between gap-[3.3125rem] items-start">
                 {/* Left Content */}
                 <div className="space-y-0 w-full max-w-[21.56rem]">
-                  <div className="text-[#000000] mb-[2.56rem]">
+                  <div className="text-[#000000] mb-6">
                     <p className="font-bold text-sm mb-4">CASE STUDY</p>
                     <h1 className="text-[1.86rem] font-semibold ">
-                      RAG-Based AI Chatbot
+                      Gen AI-Chatbot
                     </h1>
                   </div>
                   <div className="w-full max-w-[20.43rem] mr-0">
