@@ -72,7 +72,7 @@ const EarlyFoodsChatBot = () => {
                   Early Foods: Boosting Sales and Trust
                 </p>
                 <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-8 sm:mb-10 lg:mb-12 text-[#000000] leading-tight">
-                  AI Driven Recommendations
+                  ML Driven Recommendations
                 </p>
                 <p className="text-[#000000] mb-4 sm:mb-6 font-normal text-sm sm:text-base leading-relaxed text-left px-2 sm:px-0">
                   EarlyFoods, an e-commerce platform offering millet-based
