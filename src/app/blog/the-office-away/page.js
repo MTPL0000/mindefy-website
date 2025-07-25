@@ -7,52 +7,56 @@ export default function BlogThird() {
 
   return (
     <section className="mx-auto px-4 mb-6">
-      <div className="w-full flex justify-center pt-12">
-        <div className="container relative aspect-[2/1] rounded-4xl">
+      <div className="mx-auto container flex flex-col lg:flex-row justify-start pt-8 lg:pt-16 gap-6 lg:mb-6">
+        <div className="flex flex-col items-start justify-start">
+          <div className="container">
+            <div className="container">
+              <h1 className="text-2xl font-bold text-[#000000]">
+                {blog?.title}
+              </h1>
+            </div>
+            <div className="container">
+              <div>
+                <p className="text-lg font-semibold text-[#444444] mt-4">
+                  By {blog?.author}
+                </p>
+                <p className="text-base font-semibold text-normal text-[#444444]">
+                  {blog?.date}
+                </p>
+              </div>
+            </div>
+            <h3 className="text-xl font-bold text-[#000000] mt-5">
+              <strong>
+                Work From Home is fast turning into the new normal!
+              </strong>
+            </h3>
+            <p className="text-lg font-normal text-[#444444] mt-5">
+              Companies, in the face of this global pandemic, have asked their
+              employees to Work From Home. While these measures are aimed at
+              staunching the spread of the coronavirus, the work does not stop.
+              This, however, seems to be easier said than done. Chances are, if
+              you’re not a freelancer or a WFH veteran, you find the environment
+              not conducive to work. It is important that you establish certain
+              things in order to be more productive. And, even though we cannot
+              go on living as if nothing’s wrong, we need to put out the work
+              our employers expect from us. Here are a few tips on how to be a
+              good employee and not lose your work ethic while working from
+              home.
+            </p>
+          </div>
+        </div>
+        <div className="container relative aspect-[2/1]">
           <Image
             src={blog?.blogImg}
             fill
             alt="Blog Image"
-            className="object-cover rounded-4xl"
+            className="object-cover rounded-2xl"
           />
         </div>
       </div>
-      <div className="w-full flex justify-center">
-        <div className="container mt-8">
-          <div className="container flex justify-center">
-            <h1 className="text-4xl font-bold text-[#000000] mt-4">
-              {blog?.title}
-            </h1>
-          </div>
-          <div className="container flex lg:justify-end">
-            <div>
-              <p className="text-xl font-medium text-[#444444] mt-4">
-                By {blog?.author}
-              </p>
-              <p className="font-medium text-normal text-[#444444]">
-                {blog?.date}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div className="w-full flex justify-center">
         <div className="container mt-5">
-          <h3 className="text-2xl font-bold text-[#000000] mt-8">
-            <strong>Work From Home is fast turning into the new normal!</strong>
-          </h3>
-          <p className="text-lg font-normal text-[#444444] mt-3">
-            Companies, in the face of this global pandemic, have asked their
-            employees to Work From Home. While these measures are aimed at
-            staunching the spread of the coronavirus, the work does not stop.
-            This, however, seems to be easier said than done. Chances are, if
-            you’re not a freelancer or a WFH veteran, you find the environment
-            not conducive to work. It is important that you establish certain
-            things in order to be more productive. And, even though we cannot go
-            on living as if nothing’s wrong, we need to put out the work our
-            employers expect from us. Here are a few tips on how to be a good
-            employee and not lose your work ethic while working from home.
-          </p>
           <p className="text-lg font-normal text-[#444444] mt-3">
             And so the call for time management has echoed like a battle cry
             across the world. With organizations lobbying for better or reduced
@@ -77,10 +81,13 @@ export default function BlogThird() {
               </strong>
             </p>
           </blockquote>
-          <div className="flex justify-center my-6">
-            {/*<figure className="aligncenter size-medium">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
-            </figure>*/}
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TOA-2.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">
             <strong>
@@ -91,10 +98,13 @@ export default function BlogThird() {
           <h3 className="text-2xl font-bold text-[#000000] mt-8">
             <strong>Block Distractions!</strong>
           </h3>
-          <div className="flex justify-center my-6">
-            {/*<figure className="aligncenter size-medium">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
-            </figure>*/}
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TOA-3.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
           <p className="text-lg font-normal text-[#444444] mt-3">
             At the office, it is important to create an environment that does
@@ -115,10 +125,13 @@ export default function BlogThird() {
             work time. a clear distinction between the two will let you have the
             best of both worlds.
           </p>
-          <div className="flex justify-center my-6">
-            {/*<figure className="aligncenter size-medium">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
-            </figure>*/}
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TOA-4.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">
             <strong>
@@ -135,10 +148,13 @@ export default function BlogThird() {
             reach. Try to think of all the things that are on your desk at your
             office, and bring all of them together at your home office.
           </p>
-          <div className="flex justify-center my-6">
-            {/*<figure className="aligncenter size-medium">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
-            </figure>*/}
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TOA-5.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">
             <strong>
@@ -157,10 +173,13 @@ export default function BlogThird() {
             employer or your project partner will help you to outline the tasks
             that need to be dealt with by the end of the day.
           </p>
-          <div className="flex justify-center my-6">
-            {/*<figure className="aligncenter size-medium">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
-            </figure>*/}
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TOA-6.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">
             <strong>
@@ -180,10 +199,13 @@ export default function BlogThird() {
             desk and take a walk, use the restroom, and listen to something more
             soothing than your work.
           </p>
-          <div className="flex justify-center my-6">
-            {/*<figure className="aligncenter size-medium">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/yourhourapp_Take-small-breaks-_gap-300x200.jpg" alt="Take small breaks" className="rounded-xl mx-auto" />
-            </figure>*/}
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TOA-7.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
           <h2 className="text-3xl font-bold text-[#000000] mt-8">
             <strong>

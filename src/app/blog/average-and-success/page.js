@@ -7,43 +7,44 @@ export default function BlogSecond() {
 
   return (
     <section className="mx-auto px-4 mb-6">
-      <div className="w-full flex justify-center pt-12">
-        <div className="container relative aspect-[2/1] rounded-4xl">
+      <div className="mx-auto container flex flex-col lg:flex-row justify-start pt-8 lg:pt-16 gap-6 lg:mb-6">
+        <div className="flex flex-col items-start justify-start">
+          <div className="container">
+            <div className="container">
+              <h1 className="text-2xl font-bold text-[#000000]">
+                {blog?.title}
+              </h1>
+            </div>
+            <div className="container">
+              <div>
+                <p className="text-lg font-semibold text-[#444444] mt-4">
+                  By {blog?.author}
+                </p>
+                <p className="text-base font-semibold text-normal text-[#444444]">
+                  {blog?.date}
+                </p>
+              </div>
+            </div>
+            <p className="text-lg font-normal text-[#444444] mt-5">
+              The amount of free time, we as humans have now was never been the
+              same as before. As primal beings, we used to spend our whole life
+              looking for ways to survive and to keep ourselves and our
+              community safe.
+            </p>
+          </div>
+        </div>
+        <div className="container relative aspect-[2/1]">
           <Image
             src={blog?.blogImg}
             fill
             alt="Blog Image"
-            className="object-cover rounded-4xl"
+            className="object-cover rounded-2xl"
           />
         </div>
       </div>
-      <div className="w-full flex justify-center">
-        <div className="container mt-8">
-          <div className="container flex justify-center">
-            <h1 className="text-4xl font-bold text-[#000000] mt-4">
-              {blog?.title}
-            </h1>
-          </div>
-          <div className="container flex lg:justify-end">
-            <div>
-              <p className="text-xl font-medium text-[#444444] mt-4">
-                By {blog?.author}
-              </p>
-              <p className="font-medium text-normal text-[#444444]">
-                {blog?.date}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div className="w-full flex justify-center">
         <div className="container mt-5">
-          <p className="text-lg font-normal text-[#444444] mt-3">
-            The amount of free time, we as humans have now was never been the
-            same as before. As primal beings, we used to spend our whole life
-            looking for ways to survive and to keep ourselves and our community
-            safe.
-          </p>
           <p className="text-lg font-normal text-[#444444] mt-3">
             But now, life has become much easier to survive and everything is
             ready-to-make, we have lots of time and many ways to entertain
@@ -76,11 +77,16 @@ export default function BlogSecond() {
             with which you can get a hold of your free time to be happier and
             fulfilled.
           </p>
-          <div className="flex justify-center my-6">
-            {/*<figure className="w-[300px] h-[200px]">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
-            </figure>*/}
+
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TDB-2.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
+
           <h2 className="text-2xl font-bold text-left text-[#000000] mt-8 mb-4">
             <strong>
               A Man who Lifts Twice stays Healthy, Wealthy, and Wise!
@@ -125,10 +131,14 @@ export default function BlogSecond() {
           <p className="text-lg font-normal text-[#444444] mt-3">
             And Many More.
           </p>
-          <div className="flex justify-center my-6">
-            {/*<figure className="w-[300px] h-[200px]">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
-            </figure>*/}
+
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TDB-3.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-4">
             <strong>Aim for the Moon, You may hit the star!</strong>
@@ -160,10 +170,14 @@ export default function BlogSecond() {
             Just grab the one which is the most intriguing to you or the one you
             need the most.
           </p>
-          <div className="flex justify-center my-6">
-            {/*<figure className="w-[300px] h-[200px]">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
-            </figure>*/}
+
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TDB-4.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-4">
             <strong>Don't wait for things to settle down. Do it now!</strong>
@@ -201,10 +215,14 @@ export default function BlogSecond() {
             anxiety and fatigue and also helps you defeat the deadly habit of
             procrastination.
           </p>
-          <div className="flex justify-center my-6">
-            {/*<figure className="w-[300px] h-[200px]">
-              <img src="https://Mindefy.com/wp-content/uploads/2022/03/Youhour_app_A_Man-300x200.jpg" alt="A Man" className="rounded-xl object-cover w-full h-full" />
-            </figure>*/}
+
+          <div className="relative aspect-[1.5/1] lg:aspect-[4/1] my-10">
+            <Image
+              src="/images/TDB-5.webp"
+              fill
+              alt="Blog Image"
+              className="object-contain rounded-2xl"
+            />
           </div>
           <h2 className="text-2xl font-bold text-[#000000] mt-8 mb-4">
             <strong>Start Now and reap the rewards later!</strong>

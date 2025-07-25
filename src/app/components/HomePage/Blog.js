@@ -23,15 +23,15 @@ export default function Blog() {
           <div className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div className="relative aspect-[1.28/1] w-full overflow-hidden">
               <Image
-                src="/images/blog1.webp"
+                src="/images/MS-1.webp"
                 alt="Microservices geometric pattern"
                 fill
-                className="rounded-2xl object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="rounded-2xl object-cover"
               />
             </div>
             <div className="flex flex-col items-start gap-3 p-4 sm:p-6 lg:py-8 lg:px-2 text-[#30233D]">
-              <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold lg:mb-8">
-                MICROSERVICES
+              <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold">
+                Mastering Microservices: A Modern Approach
               </h3>
               <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
                 Micro-services in this era is getting so much attention from
@@ -63,15 +63,15 @@ export default function Blog() {
           <div className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div className="relative aspect-[1.28/1] w-full overflow-hidden">
               <Image
-                src="/images/blog2.webp"
+                src="/images/TDB-1.webp"
                 alt="Hand drawing upward curve"
                 fill
-                className="rounded-2xl object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="rounded-2xl object-cover"
               />
             </div>
             <div className="flex flex-col items-start gap-3 p-4 sm:p-6 lg:py-8 lg:px-2 text-[#30233D]">
               <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold leading-tight lg:mb-1">
-                THE DIFFERENCE BETWEEN "AVERAGE AND SUCCESS"
+                The Difference Between "Average And Success"
               </h3>
               <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
                 The amount of free time, we as humans have now was never been
@@ -106,15 +106,15 @@ export default function Blog() {
           <div className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300 md:col-span-2 lg:col-span-1">
             <div className="relative aspect-[1.28/1] w-full overflow-hidden">
               <Image
-                src="/images/blog3.webp"
+                src="/images/TOA-1.webp"
                 alt="Home office setup"
                 fill
-                className="rounded-2xl object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="rounded-2xl object-cover"
               />
             </div>
             <div className="flex flex-col items-start gap-3 p-4 sm:p-6 lg:py-8 lg:px-2 text-[#30233D]">
               <h3 className="text-xl sm:text-2xl lg:text-2xl lg:mb-8 font-semibold">
-                THE OFFICE AWAY FROM OFFICE!
+                The Office Away From Office!
               </h3>
               <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
                 Companies, in the face of this global pandemic, have asked their
