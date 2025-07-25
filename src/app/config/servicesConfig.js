@@ -1,11 +1,11 @@
 export const servicesData = [
   //Custom AI
   {
-    id: "your-hour-chatbot",
+    id: "gen-ai-chatbot",
     title: "Gen AI-Chatbot",
     category: "Custom AI Solutions",
-    route: "/your-hour-chatbot",
-    component: "YourHourChatBot",
+    route: "/gen-ai-chatbot",
+    component: "GenAIChatbot",
     description: "Custom AI Chatbot development services",
     isActive: true, // Already created
   },

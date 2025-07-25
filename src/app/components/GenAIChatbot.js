@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-const YourHourChatBot = () => {
+const GenAIChatbot = () => {
   const [activeSection, setActiveSection] = useState("introduction");
   const [isMobile, setIsMobile] = useState(false);
 
@@ -585,4 +585,4 @@ const YourHourChatBot = () => {
   );
 };
 
-export default YourHourChatBot;
+export default GenAIChatbot;
