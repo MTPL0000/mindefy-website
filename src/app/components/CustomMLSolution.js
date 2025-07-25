@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-const EarlyFoodsChatBot = () => {
+const CustomMLSolution = () => {
   const [activeSection, setActiveSection] = useState("introduction");
   const [isMobile, setIsMobile] = useState(false);
 
@@ -609,4 +609,4 @@ const EarlyFoodsChatBot = () => {
   );
 };
 
-export default EarlyFoodsChatBot;
+export default CustomMLSolution;

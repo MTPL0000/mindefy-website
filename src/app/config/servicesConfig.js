@@ -10,11 +10,11 @@ export const servicesData = [
     isActive: true, // Already created
   },
   {
-    id: "EarlyFoods-chatbot",
+    id: "custom-ml-solution",
     title: "Custom ML Solution",
     category: "Custom AI Solutions",
-    route: "/EarlyFoods-chatbot",
-    component: "EarlyFoodsChatBot",
+    route: "/custom-ml-solution",
+    component: "CustomMLSolution",
     description: "Custom ML solution development services",
     isActive: true, // Already created
   },
