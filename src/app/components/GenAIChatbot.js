@@ -45,7 +45,7 @@ const GenAIChatbot = () => {
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 ${
+                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer ${
                       activeSection === item.id
                         ? "bg-[#FAFFFA] text-[#52B7B7] hover:text-[#21ABE1] font-medium text-base border-l-4"
                         : "text-[#52B7B7] bg-[#FAFFFA] hover:text-[#21ABE1] font-medium text-base border-l-4"
