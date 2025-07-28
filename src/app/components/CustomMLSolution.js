@@ -16,13 +16,57 @@ const CustomMLSolution = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Add intersection observer for scroll-based navigation
+  useEffect(() => {
+    // Small delay to ensure DOM is ready
+    const timer = setTimeout(() => {
+      const observerOptions = {
+        root: null,
+        rootMargin: '-10% 0px -10% 0px', // Trigger when section is 10% from top and bottom
+        threshold: 0.1
+      };
+
+      const observerCallback = (entries) => {
+        // Find the section that is most visible
+        let maxIntersectionRatio = 0;
+        let mostVisibleSection = null;
+
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio > maxIntersectionRatio) {
+            maxIntersectionRatio = entry.intersectionRatio;
+            mostVisibleSection = entry.target.id;
+          }
+        });
+
+        if (mostVisibleSection) {
+          setActiveSection(mostVisibleSection);
+        }
+      };
+
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+      // Observe all navigation sections
+      const sections = document.querySelectorAll('section[id]');
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+
+      return () => {
+        sections.forEach((section) => {
+          observer.unobserve(section);
+        });
+      };
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const navigationItems = [
     { id: "introduction", label: "Introduction" },
     { id: "challenges", label: "Challenges" },
     { id: "solutions", label: "Solutions" },
     { id: "technical-implementation", label: "Technical Implementation" },
     { id: "technology-stack", label: "Technology Stack" },
-    { id: "contact", label: "Lets Get In Touch" },
   ];
 
   const handleNavClick = (sectionId) => {
@@ -47,7 +91,7 @@ const CustomMLSolution = () => {
                     onClick={() => handleNavClick(item.id)}
                     className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer ${
                       activeSection === item.id
-                        ? "bg-[#FAFFFA] text-[#52B7B7] hover:text-[#2B7575] font-medium text-base border-l-4"
+                        ? "bg-[#FAFFFA] text-[#2B7575] font-medium text-base border-l-4"
                         : "text-[#52B7B7] bg-[#FAFFFA] hover:text-[#2B7575] font-medium text-base border-l-4"
                     }`}
                   >
