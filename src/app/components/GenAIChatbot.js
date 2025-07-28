@@ -2,6 +2,15 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+const navigationItems = [
+  { id: "introduction", label: "Introduction" },
+  { id: "challenges", label: "Challenges" },
+  { id: "solutions", label: "Solutions" },
+  { id: "technical-implementation", label: "Technical Implementation" },
+  { id: "technology-stack", label: "Technology Stack" },
+  { id: "contact", label: "Lets Get In Touch" },
+];
+
 const GenAIChatbot = () => {
   const [activeSection, setActiveSection] = useState("introduction");
   const [isMobile, setIsMobile] = useState(false);
@@ -16,14 +25,28 @@ const GenAIChatbot = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const navigationItems = [
-    { id: "introduction", label: "Introduction" },
-    { id: "challenges", label: "Challenges" },
-    { id: "solutions", label: "Solutions" },
-    { id: "technical-implementation", label: "Technical Implementation" },
-    { id: "technology-stack", label: "Technology Stack" },
-    { id: "contact", label: "Lets Get In Touch" },
-  ];
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navigationItems.map(item => document.getElementById(item.id));
+      const scrollPosition = window.scrollY + 200; // Offset for better detection
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section) {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            setActiveSection(navigationItems[i].id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [navigationItems]);
 
   const handleNavClick = (sectionId) => {
     setActiveSection(sectionId);
