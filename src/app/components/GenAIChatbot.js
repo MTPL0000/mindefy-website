@@ -34,12 +34,12 @@ const GenAIChatbot = () => {
   };
 
   return (
-    <div className="min-h-screen ">
-      <div className="max-w-[100rem] mx-auto flex flex-col lg:flex-row pt-10  overflow-x-hidden">
+    <div className="min-h-screen">
+      <div className="max-w-[100rem] mx-auto flex flex-col lg:flex-row pt-10">
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
-        <div className="hidden lg:block w-80 flex-shrink-0  mb-6 lg:mb-0">
+        <div className="hidden lg:block w-80 flex-shrink-0 lg:mr-8">
           <div className="sticky top-10">
-            <div className="py-8 bg-white shadow-lg h-full">
+            <div className="py-8 bg-white shadow-lg">
               <nav className="space-y-1.5">
                 {navigationItems.map((item) => (
                   <button
