@@ -58,7 +58,11 @@ const GenAIChatbot = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-[100rem] mx-auto flex flex-col lg:flex-row pt-10">
+      <div className="max-w-[100rem] mx-auto flex flex-col lg:flex-row pt-10"
+                  style={{
+              background:
+                "linear-gradient(to bottom, #FFFFFF, #A2E3FB, #FEFEFE)",
+            }}>
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
         <div className="hidden lg:block w-80 flex-shrink-0 lg:mr-8">
           <div className="sticky top-10">
@@ -87,11 +91,7 @@ const GenAIChatbot = () => {
           {/* Introduction Section */}
           <section
             id="introduction"
-            className="mb-16 sm:mb-20 lg:mb-20 mt-6 sm:mt-8 lg:mt-10"
-            style={{
-              background:
-                "linear-gradient(to bottom, #FFFFFF, #A2E3FB, #FEFEFE)",
-            }}
+            className="pb-16 sm:pb-20 lg:pb-20 mt-6 sm:mt-8 lg:mt-10"
           >
             <div className="max-w-[57.93rem] mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col lg:flex-row justify-between gap-[3.3125rem] items-start">
@@ -135,7 +135,7 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Challenges Section */}
-          <section id="challenges" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="challenges" className="pb-24 px-4 sm:px-6 md:px-8 bg-white">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-2xl font-semibold text-[#21ABE1] ">
@@ -206,8 +206,7 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Solutions Section */}
-          {/* Solutions Section */}
-          <section id="solutions" className="mb-25 px-4 sm:px-6 md:px-8">
+          <section id="solutions" className="pb-25 px-4 sm:px-6 md:px-8 bg-white">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-10">
                 <h2 className="text-2xl font-semibold uppercase text-[#21ABE1]">
@@ -283,7 +282,7 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Technical Implementation Section */}
-          <section id="technical-implementation" className="mb-25 ">
+          <section id="technical-implementation" className="pb-25 bg-white">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-10">
                 <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-6">
@@ -451,7 +450,7 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Technology Stack Section */}
-          <section id="technology-stack" className="mb-20 px-4 sm:px-6 lg:px-8">
+          <section id="technology-stack" className="pb-20 px-4 sm:px-6 lg:px-8 bg-white">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8 sm:mb-12">
                 <h2 className="text-xl sm:text-2xl font-semibold text-[#21ABE1]">
