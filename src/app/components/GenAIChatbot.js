@@ -25,10 +25,20 @@ const GenAIChatbot = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const [showNavigation, setShowNavigation] = useState(true);
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = navigationItems.map(item => document.getElementById(item.id));
-      const scrollPosition = window.scrollY + 200; // Offset for better detection
+      const scrollPosition = window.scrollY + 500; // Offset for better detection
+      
+      // Check if we should hide the navigation
+      const techStackSection = document.getElementById('technology-stack');
+      
+      if (techStackSection) {
+        const techStackBottom = techStackSection.offsetTop + techStackSection.offsetHeight;
+        setShowNavigation(scrollPosition < techStackBottom);
+      }
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
@@ -59,26 +69,28 @@ const GenAIChatbot = () => {
   return (
     <div className="min-h-screen">
       <div className="max-w-[100rem] mx-auto pt-10 relative">
-        {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
-        <div className="hidden lg:block w-80 fixed left-0 top-0 h-screen z-10 pt-10 overflow-y-auto">
-          <div className="py-8 bg-white shadow-lg h-auto mt-10 rounded-r-lg">
-            <nav className="space-y-1.5">
-              {navigationItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => handleNavClick(item.id)}
-                  className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer ${
-                    activeSection === item.id
-                      ? "bg-[#FAFFFA] text-[#21ABE1] hover:text-[#21ABE1] font-semibold text-base border-l-4 border-[#21ABE1]"
-                      : "text-[#142E149E] bg-[#FAFFFA] font-medium text-base border-l-4 border-transparent"
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
-            </nav>
-          </div>
-        </div>
+        {/* Left Navigation Sidebar - Hidden on mobile/tablet and after technology stack section */}
+         <div 
+           className={`hidden lg:block w-80 fixed left-0 top-0 h-screen z-10 pt-10 overflow-y-auto transition-all duration-10 ${showNavigation ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+         >
+             <div className="py-8 bg-white shadow-lg h-auto mt-10 rounded-r-lg">
+              <nav className="space-y-1.5">
+                {navigationItems.map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => handleNavClick(item.id)}
+                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer ${
+                      activeSection === item.id
+                        ? "bg-[#FAFFFA] text-[#21ABE1] hover:text-[#21ABE1] font-semibold text-base border-l-4 border-[#21ABE1]"
+                        : "text-[#142E149E] bg-[#FAFFFA] font-medium text-base border-l-4 border-transparent"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </nav>
+             </div>
+           </div>
 
         {/* Main Content Area */}
         <div
@@ -387,7 +399,7 @@ const GenAIChatbot = () => {
                           fill
                         />
                       </div>
-                      <div className="text-7xl mr-7  font-normal text-[#3894FF26]">
+                      <div className="text-7xl mr-7 font-normal text-[#3894FF26]">
                         5
                       </div>
                     </div>
