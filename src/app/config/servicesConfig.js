@@ -1,4 +1,24 @@
 export const servicesData = [
+  //Custom AI
+  {
+    id: "gen-ai-chatbot",
+    title: "Gen AI-Chatbot",
+    category: "Custom AI Solutions",
+    route: "/gen-ai-chatbot",
+    component: "GenAIChatbot",
+    description: "Custom AI Chatbot development services",
+    isActive: true, // Already created
+  },
+  {
+    id: "custom-ml-solution",
+    title: "Custom ML Solution",
+    category: "Custom AI Solutions",
+    route: "/custom-ml-solution",
+    component: "CustomMLSolution",
+    description: "Custom ML solution development services",
+    isActive: true, // Already created
+  },
+
   // Modern Application Development
   {
     id: "android-app-development",
