@@ -9,16 +9,16 @@ export default function AgileRapid() {
       <section className="mt-28 mx-auto px-4 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
             Agile and Rapid Application Development
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[45rem] lg:max-w-[50rem] mx-auto px-4 lg:px-0">
+          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[45rem] lg:max-w-[50rem] mx-auto px-4 lg:px-0">
             <span className="font-normal">Unleashing </span> the Power of Agile
             <span className="font-normal"> and </span>
             <span className="font-medium">Rapid Application Development</span>
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-[90%] sm:max-w-[45rem] lg:w-[60.25rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.25rem] px-4 lg:px-0">
@@ -59,7 +59,8 @@ export default function AgileRapid() {
         <div className="">
           <p className="font-semibold text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] mb-5">
             Agile Development <br className="hidden lg:block" />
-            <span className="lg:hidden"> </span>Accelerating Innovation and Collaboration
+            <span className="lg:hidden"> </span>Accelerating Innovation and
+            Collaboration
           </p>
           <p className="font-normal text-[0.875rem] sm:text-[1rem] mb-[3.75rem] text-[#444444] text-justify">
             Our agile development methodology emphasizes iterative and
@@ -637,7 +638,8 @@ export default function AgileRapid() {
       <section className="px-4 lg:px-0">
         <div className="max-w-[90%] lg:max-w-[72.5rem] mx-auto">
           <h2 className="text-center text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-15">
-            Exploring the Key Benefits of the<br className="hidden lg:block" />
+            Exploring the Key Benefits of the
+            <br className="hidden lg:block" />
             <span className="lg:hidden"> </span>RAD Model Process
           </h2>
           <div className="flex flex-wrap justify-center gap-5 lg:gap-[3.12rem]">

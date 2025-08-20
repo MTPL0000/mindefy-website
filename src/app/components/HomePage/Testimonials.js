@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Testimonials() {
@@ -80,7 +81,7 @@ export default function Testimonials() {
             >
               {/* Testimonial Title */}
               <h3 className="text-lg sm:text-xl lg:text-[1.375rem] font-semibold text-[#2B2B2B] mb-3 sm:mb-4 lg:mb-6 leading-tight flex-shrink-0">
-                "{testimonial.title}"
+                {testimonial.title}
               </h3>
 
               {/* Testimonial Content */}
@@ -92,20 +93,22 @@ export default function Testimonials() {
               <div className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
                 {/* Company Logo */}
                 <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
-                  <img
+                  <Image
                     src={testimonial.logo || "/placeholder.svg"}
                     alt={testimonial.logoAlt}
-                    className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 object-contain"
+                    width={48}
+                    height={48}
+                    className="object-contain"
                   />
                 </div>
 
                 {/* Author Info */}
                 <div className="min-w-0 flex-1">
-                  <p className="text-xs sm:text-sm lg:text-[0.875rem] font-normal text-[#000000] mb-1 leading-tight">
-                    {testimonial.position}
-                  </p>
-                  <p className="text-sm sm:text-base lg:text-[1.125rem] font-medium text-[#2B2B2B] leading-tight">
+                  <p className="text-sm sm:text-base lg:text-[1.125rem] font-medium text-[#000000] leading-tight">
                     {testimonial.author}
+                  </p>
+                  <p className="text-xs sm:text-sm lg:text-[0.875rem] font-normal text-[#2B2B2B] mb-1 leading-tight">
+                    {testimonial.position}
                   </p>
                 </div>
               </div>

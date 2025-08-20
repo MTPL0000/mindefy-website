@@ -92,16 +92,23 @@ export async function POST(request) {
       });
     }
 
+    // Generate date in DDMMYYYY format
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const year = now.getFullYear();
+    const dateString = `${day}${month}${year}`;
+
     // Mail options
     const mailOptions = {
-      from: `"${name}" <${process.env.SENDER_EMAIL}>`,
+      from: `Mindefy Sales Lead <${process.env.SENDER_EMAIL}>`,
       to: [
         process.env.TO_EMAIL_1,
         process.env.TO_EMAIL_2,
         process.env.TO_EMAIL_3,
       ],
       replyTo: email,
-      subject: `New Contact Form Submission from ${name}`,
+      subject: `New Lead Submission from Mindefy Website - ${dateString}`,
       html: emailContent,
       attachments,
     };
@@ -110,9 +117,10 @@ export async function POST(request) {
     const info = await transporter.sendMail(mailOptions);
     console.log('Email sent successfully:', info.messageId);
 
-    return NextResponse.json({ 
-      success: true, 
-      message: 'Your message has been sent successfully!' 
+    return NextResponse.json({
+      success: true,
+      message:
+        "Thank you! Your message has been sent successfully. Our team will get back to you shortly.",
     });
 
   } catch (error) {

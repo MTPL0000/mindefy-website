@@ -9,15 +9,15 @@ export default function EnterpriseSolutions() {
       <section className="mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-widest uppercase mb-4 sm:mb-5 lg:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-widest uppercase mb-4 sm:mb-5 lg:mb-[1.25rem]">
             Enterprise Business Solutions
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-6 lg:mb-7 leading-tight max-w-full sm:max-w-4xl lg:max-w-[55.25rem] mx-auto px-4 sm:px-0">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-6 lg:mb-7 leading-tight max-w-full sm:max-w-4xl lg:max-w-[55.25rem] mx-auto px-4 sm:px-0">
             <span className="font-normal">Empower </span>Your Business
             <span> With </span>Comprehensive Enterprise Business Solution
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-4xl lg:w-[61.375rem] font-normal mx-auto mb-6 sm:mb-8 lg:mb-[2.25rem] text-justify space-y-4 sm:space-y-5 lg:space-y-[1.25rem] px-4 sm:px-6 lg:px-0">
@@ -86,7 +86,7 @@ export default function EnterpriseSolutions() {
               organizational success. These solutions include:
             </p>
           </div>
-          
+
           <div className="flex flex-col gap-6 sm:gap-7 lg:gap-[1.75rem] max-w-3xl lg:max-w-[55.31rem] mx-auto">
             {/* ERPNext */}
             <div className="flex flex-col lg:flex-row bg-[#FFF2F2] rounded-xl overflow-hidden">
@@ -216,7 +216,7 @@ export default function EnterpriseSolutions() {
                 </div>
               </div>
             </div>
-            
+
             {/* Salesforce */}
             <div className="flex flex-col lg:flex-row">
               <div className="flex-shrink-0 flex justify-center lg:block order-2 lg:order-1">

@@ -11,25 +11,25 @@ export const ProjectDropdown = ({ onItemClick }) => {
             <Link
               href="/early-foods"
               onClick={onItemClick}
-              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap cursor-pointer"
             >
               EarlyFoods
             </Link>
           </li>
-          {/*<li>
+          <li>
             <Link
               href="/jego"
-              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
+              onClick={onItemClick}
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap cursor-pointer"
             >
               JEGO
             </Link>
           </li>
-          */}
           <li>
             <Link
               href="/soli-stack"
               onClick={onItemClick}
-              className="hover:text-red-600 hover:font-semibold block"
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap cursor-pointer"
             >
               SoliStack
             </Link>
@@ -38,7 +38,7 @@ export const ProjectDropdown = ({ onItemClick }) => {
             <Link
               href="/digi-bill"
               onClick={onItemClick}
-              className="hover:text-red-600 hover:font-semibold block"
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap cursor-pointer"
             >
               GreenBill
             </Link>
@@ -47,7 +47,7 @@ export const ProjectDropdown = ({ onItemClick }) => {
             <Link
               href="/mach-one"
               onClick={onItemClick}
-              className="hover:text-red-600 hover:font-semibold block"
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap cursor-pointer"
             >
               MachOne
             </Link>

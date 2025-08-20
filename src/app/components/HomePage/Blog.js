@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Blog() {
   return (
@@ -20,115 +21,127 @@ export default function Blog() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-12 lg:mb-16">
           {/* Card 1 */}
           <div className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <div className="relative aspect-[1.36/1] w-full overflow-hidden">
+            <div className="relative aspect-[1.28/1] w-full overflow-hidden">
               <Image
-                src="/images/blog1.webp"
+                src="/images/MS-1.webp"
                 alt="Microservices geometric pattern"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="rounded-2xl object-cover"
               />
             </div>
-            <div className="p-4 sm:p-6 lg:p-8 text-[#30233D]">
-              <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold mb-4 sm:mb-6 lg:mb-8">
-                MICROSERVICES
+            <div className="flex flex-col items-start gap-3 p-4 sm:p-6 lg:py-8 lg:px-2 text-[#30233D]">
+              <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold">
+                Mastering Microservices: A Modern Approach
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal mb-4 sm:mb-6 leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
                 Micro-services in this era is getting so much attention from
                 articles, social media, conference presentation
               </p>
-              {/* <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
-                Read More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </div> */}
+              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
+                <Link href="/blog/microservices" className="flex items-center">
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <div className="relative aspect-[1.36/1] w-full overflow-hidden">
+            <div className="relative aspect-[1.28/1] w-full overflow-hidden">
               <Image
-                src="/images/blog2.webp"
+                src="/images/TDB-1.webp"
                 alt="Hand drawing upward curve"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="rounded-2xl object-cover"
               />
             </div>
-            <div className="p-4 sm:p-6 lg:p-8 text-[#30233D]">
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4 sm:mb-6 leading-tight">
-                THE DIFFERENCE BETWEEN "AVERAGE AND SUCCESS"
+            <div className="flex flex-col items-start gap-3 p-4 sm:p-6 lg:py-8 lg:px-2 text-[#30233D]">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold leading-tight lg:mb-1">
+                The Difference Between "Average And Success"
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal  leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
                 The amount of free time, we as humans have now was never been
                 the same as before.
               </p>
-              {/* <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
-                Read More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
+                <Link
+                  href="/blog/average-and-success"
+                  className="flex items-center"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </div> */}
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* Card 3 */}
           <div className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300 md:col-span-2 lg:col-span-1">
-            <div className="relative aspect-[1.36/1] w-full overflow-hidden">
+            <div className="relative aspect-[1.28/1] w-full overflow-hidden">
               <Image
-                src="/images/blog3.webp"
+                src="/images/TOA-1.webp"
                 alt="Home office setup"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                className="rounded-2xl object-cover"
               />
             </div>
-            <div className="p-4 sm:p-6 lg:p-8 text-[#30233D]">
-              <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold mb-4 sm:mb-6">
-                THE OFFICE AWAY FROM OFFICE!
+            <div className="flex flex-col items-start gap-3 p-4 sm:p-6 lg:py-8 lg:px-2 text-[#30233D]">
+              <h3 className="text-xl sm:text-2xl lg:text-2xl lg:mb-8 font-semibold">
+                The Office Away From Office!
               </h3>
               <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
                 Companies, in the face of this global pandemic, have asked their
                 employees to Work From Home.
               </p>
-              {/* <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
-                Read More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
+                <Link
+                  href="/blog/the-office-away"
+                  className="flex items-center"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </div> */}
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

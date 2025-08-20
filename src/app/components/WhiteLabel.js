@@ -9,14 +9,15 @@ export default function WhiteLabel() {
       <section className="mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
             White Label App Solution
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[80%] lg:max-w-[50rem] mx-auto px-4 sm:px-0">
-            White Label App Solutions <br className="hidden sm:block" /> for Various Industries
-          </h1>
+          <p className="text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[80%] lg:max-w-[50rem] mx-auto px-4 sm:px-0">
+            White Label App Solutions <br className="hidden sm:block" /> for
+            Various Industries
+          </p>
 
           {/* Description Paragraphs */}
           <div className="w-[90%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-[60.25rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.5rem] px-4 sm:px-0">

@@ -45,24 +45,27 @@ export default function AboutUsPage() {
       <section className="max-w-7xl mx-auto pt-12 sm:pt-16 px-4 sm:px-6 lg:px-8">
         {/* Heading section */}
         <div className="flex flex-col items-center justify-center gap-4 sm:gap-5 lg:gap-6 mt-6 sm:mt-8 mb-6 sm:mb-8">
-          <p className="text-[#FF5225] text-sm sm:text-base font-bold tracking-wider uppercase">
+          <h1 className="text-[#FF5225] text-sm sm:text-base font-bold tracking-wider uppercase">
             ABOUT US
-          </p>
-          
+          </h1>
+
           {/* Responsive heading with better text flow */}
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-normal text-[#000000] leading-tight">
+            <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-normal text-[#000000] leading-tight">
               <span className="block sm:inline">Transforming </span>
               <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-semibold text-[#000000]">
                 Business Payments and Processes{" "}
               </span>
-              <span className="block sm:inline">for companies and financial institutions around the world.</span>
-            </h1>
-            
+              <span className="block sm:inline">
+                for companies and financial institutions around the world.
+              </span>
+            </p>
+
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-normal text-[#000000] leading-tight mt-4 sm:mt-6">
               <span className="block sm:inline">Obsessed with </span>
               <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-semibold text-[#000000]">
-                Removing Complexity. Automating and Digitising all That is Possible.
+                Removing Complexity. Automating and Digitising all That is
+                Possible.
               </span>
             </h2>
           </div>

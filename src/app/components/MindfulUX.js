@@ -8,7 +8,7 @@ export default function MindfulUX() {
         style={{
           background: `radial-gradient(circle at bottom, #eeeafc 1%, #f9f3f0 80%, #ffffff 90%)`,
         }}
-        className="min-h-[70vh] md:h-[50.5rem] flex flex-col items-center justify-center gap-8 md:gap-12 px-4 py-12 md:py-0"
+        className="flex flex-col items-center justify-center gap-8 md:gap-12 px-4 py-20 md:py-56"
       >
         <div className="relative aspect-[1/1] w-20 md:w-36 overflow-hidden">
           <Image
@@ -18,10 +18,10 @@ export default function MindfulUX() {
             className="object-contain"
           />
         </div>
-        <div className="flex flex-col items-center justify-center gap-2">
-          <p className="text-[#342871] text-5xl md:text-7xl font-semibold tracking-normal text-center">
+        <div className="flex flex-col items-center justify-center gap-2 md:gap-4">
+          <h1 className="text-[#342871] text-5xl md:text-7xl font-semibold tracking-normal text-center">
             MindfulUX
-          </p>
+          </h1>
           <p className="text-[#D84326] text-lg md:text-2xl font-medium tracking-wider text-center">
             A Design Studio
           </p>
@@ -33,7 +33,7 @@ export default function MindfulUX() {
           background: `radial-gradient(circle at bottom, #eeeafc 1%, #f9f3f0 80%, #ffffff 90%)`,
         }}
       >
-        <div className="m-auto max-w-7xl px-4 md:px-8 py-16 md:py-20 flex flex-col items-center justify-center gap-5">
+        <div className="m-auto max-w-7xl px-4 md:px-8 py-16 md:py-56 flex flex-col items-center justify-center gap-5">
           <div className="flex flex-col items-center justify-center gap-2">
             <h3 className="text-2xl md:text-4xl font-semibold text-[#262626] text-center">
               About
@@ -72,7 +72,7 @@ export default function MindfulUX() {
       </div>
 
       {/* First Case Study */}
-      <section className="m-auto mt-16 md:mt-32 mb-5 w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-20">
+      <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="relative aspect-[1.5/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
             <Image
@@ -126,7 +126,7 @@ export default function MindfulUX() {
       </section>
 
       {/* Second Case Study */}
-      <section className="m-auto mt-16 md:mt-32 mb-5 bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-20">
+      <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
@@ -179,7 +179,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 3rd Case Study */}
-      <section className="m-auto mt-16 md:mt-32 mb-5 w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-20">
+      <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
             <Image
@@ -231,7 +231,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 4th Case Study */}
-      <section className="m-auto mt-16 md:mt-32 mb-5 bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-20">
+      <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
@@ -284,7 +284,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 5th Case Study */}
-      <section className="m-auto mt-16 md:mt-32 mb-5 w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-20">
+      <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
             <Image
@@ -330,7 +330,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 6th Case Study */}
-      <section className="m-auto mt-16 md:mt-32 mb-5 bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-20">
+      <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
@@ -376,7 +376,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 7th Case Study */}
-      <section className="m-auto mt-16 md:mt-32 mb-5 w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-20">
+      <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
             <Image

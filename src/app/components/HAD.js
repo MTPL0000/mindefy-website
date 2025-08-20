@@ -9,17 +9,17 @@ export default function HAD() {
       <section className="mt-16 sm:mt-20 lg:mt-28 mx-auto px-4 sm:px-6 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <p className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-[1.25rem]">
             Hybrid Application Development
-          </p>
+          </h1>
 
           {/* Main Title */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-6 lg:mb-7 leading-tight max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-[50rem] mx-auto px-2 sm:px-0">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-6 lg:mb-7 leading-tight max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-[50rem] mx-auto px-2 sm:px-0">
             <span className="font-normal">Elevate </span>Your Mobile App
             Experience <span className="font-normal">with </span>
             <span className="font-medium">Hybrid App Development </span>
             <span className="font-normal">Services</span>
-          </h1>
+          </p>
 
           {/* Description Paragraphs */}
           <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:w-[60.25rem] font-normal mx-auto mb-6 sm:mb-8 lg:mb-[2.25rem] text-center sm:text-justify lg:text-justify space-y-3 sm:space-y-4 lg:space-y-[1.25rem] px-2 sm:px-0">
@@ -202,22 +202,22 @@ export default function HAD() {
                 <div className="space-y-3 sm:space-y-4">
                   <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     Mindefy stands out as the ideal choice for React Native app
-                    development. With a wealth of experience and a highly skilled
-                    team of developers, we have the expertise and knowledge to
-                    deliver outstanding results. Our commitment to excellence,
-                    personalized approach, agile development process, and seamless
-                    integration with native features make us the preferred partner
-                    for businesses looking to create cutting-edge React Native
-                    applications.
+                    development. With a wealth of experience and a highly
+                    skilled team of developers, we have the expertise and
+                    knowledge to deliver outstanding results. Our commitment to
+                    excellence, personalized approach, agile development
+                    process, and seamless integration with native features make
+                    us the preferred partner for businesses looking to create
+                    cutting-edge React Native applications.
                   </p>
                   <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     React Native is powered by the robust React framework. React
                     Native allows developers to create native-like apps using
                     JavaScript. It offers a rich set of pre-built components,
                     libraries, and a supportive community. React Native enables
-                    rapid development, code reusability, and seamless integration
-                    with native device features, making it a popular choice for
-                    hybrid app development.
+                    rapid development, code reusability, and seamless
+                    integration with native device features, making it a popular
+                    choice for hybrid app development.
                   </p>
                 </div>
               </div>
@@ -244,31 +244,33 @@ export default function HAD() {
                 <div className="space-y-3 sm:space-y-4">
                   <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     Discover the advantages of partnering with Mindefy for your
-                    Flutter app development needs. With a proven track record and
-                    a team of experienced Flutter developers, we offer unmatched
-                    expertise in harnessing the power of this versatile framework.
-                    As a trusted leader in the industry, our commitment to
-                    delivering exceptional results sets us apart.
+                    Flutter app development needs. With a proven track record
+                    and a team of experienced Flutter developers, we offer
+                    unmatched expertise in harnessing the power of this
+                    versatile framework. As a trusted leader in the industry,
+                    our commitment to delivering exceptional results sets us
+                    apart.
                   </p>
                   <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     With our personalized solutions, collaborative approach, and
-                    agile development methodologies, we ensure your Flutter app is
-                    tailored to your unique requirements.
+                    agile development methodologies, we ensure your Flutter app
+                    is tailored to your unique requirements.
                   </p>
                   <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
-                    Benefit from Flutter's cross-platform capabilities to reach a
-                    wider audience, while our focus on quality, innovation, and
-                    timely delivery ensures a remarkable user experience. Choose
-                    us as your Flutter development partner and unlock the full
-                    potential of your app idea.
+                    Benefit from Flutter's cross-platform capabilities to reach
+                    a wider audience, while our focus on quality, innovation,
+                    and timely delivery ensures a remarkable user experience.
+                    Choose us as your Flutter development partner and unlock the
+                    full potential of your app idea.
                   </p>
                   <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     Flutter is a versatile UI toolkit for building natively
                     compiled apps for mobile, web, and desktop. Using the Dart
-                    programming language, Flutter provides a highly performant and
-                    visually appealing framework. With Flutter, you can create
-                    stunning hybrid apps with smooth animations, customizable
-                    widgets, and a single codebase for multiple platforms.
+                    programming language, Flutter provides a highly performant
+                    and visually appealing framework. With Flutter, you can
+                    create stunning hybrid apps with smooth animations,
+                    customizable widgets, and a single codebase for multiple
+                    platforms.
                   </p>
                 </div>
               </div>
@@ -298,17 +300,18 @@ export default function HAD() {
                     (PWAs) with Mindefy as your trusted development partner. As
                     industry leaders in PWA development, our experienced team of
                     developers combines cutting-edge technologies with best SEO
-                    practices to deliver outstanding web experiences. By choosing
-                    us you gain access to our expertise in leveraging PWAs' unique
-                    features, such as offline functionality, fast loading speeds,
-                    and seamless responsiveness across devices. We prioritize
-                    customization, collaboration, and agile methodologies,
-                    ensuring your PWA to your business goals and target audience.
-                    With our commitment to delivering high-quality solutions,
-                    exceptional user experiences, and improved discoverability, we
-                    empower your brand to stand out in the digital landscape.
-                    Partner with us for your PWA development needs and elevate
-                    your web presence to new heights.
+                    practices to deliver outstanding web experiences. By
+                    choosing us you gain access to our expertise in leveraging
+                    PWAs' unique features, such as offline functionality, fast
+                    loading speeds, and seamless responsiveness across devices.
+                    We prioritize customization, collaboration, and agile
+                    methodologies, ensuring your PWA to your business goals and
+                    target audience. With our commitment to delivering
+                    high-quality solutions, exceptional user experiences, and
+                    improved discoverability, we empower your brand to stand out
+                    in the digital landscape. Partner with us for your PWA
+                    development needs and elevate your web presence to new
+                    heights.
                   </p>
                   <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     PWAs combine the best of web and mobile app technologies,
