@@ -102,7 +102,7 @@ const GenAIChatbot = () => {
           {/* Introduction Section */}
           <section
             id="introduction"
-            className="pb-16 sm:pb-20 lg:pb-20 mt-6 sm:mt-8 lg:mt-10 lg:pl-80"
+            className="mt-6 sm:mt-8 lg:mt-10 lg:pl-80"
           >
             <div className="max-w-[57.93rem] mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col lg:flex-row justify-between gap-[3.3125rem] items-start">
@@ -130,13 +130,12 @@ const GenAIChatbot = () => {
                 </div>
 
                 {/* Right Content - Chat Interface Image */}
-                <div className="mt-0 lg:mt-[-8rem] w-full flex justify-center">
-                  <div className="relative overflow-hidden">
+                <div className="mt-0 lg:-mt-32 w-full flex justify-center">
+                  <div className="relative overflow-hidden w-96 aspect-[1/1.63]">
                     <Image
                       src="/images/YH-MN.gif"
                       alt="Animation"
-                      width={400}
-                      height={647}
+                      fill
                       className="object-contain"
                     />
                   </div>
@@ -144,7 +143,7 @@ const GenAIChatbot = () => {
               </div>
             </div>
           </section>
-          <div className="lg:pl-80 bg-white">
+          <div className="pt-10 lg:pt-16 lg:pl-80 bg-white">
             {/* Challenges Section */}
             <section
               id="challenges"
