@@ -17,6 +17,7 @@ export default function Navbar() {
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
 
   // New states for nested service categories
+  const [mobileCustomAIOpen, setMobileCustomAIOpen] = useState(false);
   const [mobileModernAppOpen, setMobileModernAppOpen] = useState(false);
   const [mobileDigitalTransformOpen, setMobileDigitalTransformOpen] =
     useState(false);
@@ -40,6 +41,7 @@ export default function Navbar() {
       setMobileProductsOpen(false);
       setMobileProjectsOpen(false);
       // Close all nested service categories
+      setMobileCustomAIOpen(false);
       setMobileModernAppOpen(false);
       setMobileDigitalTransformOpen(false);
       setMobileCloudDevOpsOpen(false);
@@ -57,6 +59,7 @@ export default function Navbar() {
 
     // If closing Services dropdown, reset all nested states
     if (!newServicesState) {
+      setMobileCustomAIOpen(false);
       setMobileModernAppOpen(false);
       setMobileDigitalTransformOpen(false);
       setMobileCloudDevOpsOpen(false);
@@ -74,6 +77,7 @@ export default function Navbar() {
     setMobileProductsOpen(false);
     setMobileProjectsOpen(false);
     // Close all nested service categories
+    setMobileCustomAIOpen(false);
     setMobileModernAppOpen(false);
     setMobileDigitalTransformOpen(false);
     setMobileCloudDevOpsOpen(false);
@@ -347,11 +351,61 @@ export default function Navbar() {
 
               {mobileServicesOpen && (
                 <div className="pl-4 mt-2 space-y-2 text-xs">
+                  {/* Custom AI Solutions */}
+                  <div>
+                    <button
+                      onClick={() => {
+                        // Close all other subcategories first
+                        setMobileCustomAIOpen(false);
+                        setMobileModernAppOpen(false);
+                        setMobileDigitalTransformOpen(false);
+                        setMobileCloudDevOpsOpen(false);
+                        setMobileGameDevOpen(false);
+                        setMobileStartupSupportOpen(false);
+                        setMobileEnterpriseOpen(false);
+                        setMobileITStaffOpen(false);
+                        // Then toggle this one
+                        setMobileCustomAIOpen(!mobileCustomAIOpen);
+                      }}
+                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
+                    >
+                      Custom AI Solutions
+                      <Image
+                        src="/images/dropdown-icon.png"
+                        alt="Dropdown"
+                        width={8}
+                        height={8}
+                        className={`object-contain transition-transform ${
+                          mobileCustomAIOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {mobileCustomAIOpen && (
+                      <div className="pl-4 mt-1 space-y-1">
+                        <Link
+                          href="/gen-ai-chatbot"
+                          onClick={handleMobileMenuItemClick}
+                          className="block hover:text-red-600"
+                        >
+                          Gen AI-Chatbot
+                        </Link>
+                        <Link
+                          href="/custom-ml-solution"
+                          onClick={handleMobileMenuItemClick}
+                          className="block hover:text-red-600"
+                        >
+                          Custom ML Solution
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+
                   {/* Modern Application Development */}
                   <div>
                     <button
                       onClick={() => {
                         // Close all other subcategories first
+                        setMobileCustomAIOpen(false);
                         setMobileDigitalTransformOpen(false);
                         setMobileCloudDevOpsOpen(false);
                         setMobileGameDevOpen(false);
@@ -427,6 +481,7 @@ export default function Navbar() {
                     <button
                       onClick={() => {
                         // Close all other subcategories first
+                        setMobileCustomAIOpen(false);
                         setMobileModernAppOpen(false);
                         setMobileCloudDevOpsOpen(false);
                         setMobileGameDevOpen(false);
@@ -490,6 +545,7 @@ export default function Navbar() {
                     <button
                       onClick={() => {
                         // Close all other subcategories first
+                        setMobileCustomAIOpen(false);
                         setMobileModernAppOpen(false);
                         setMobileDigitalTransformOpen(false);
                         setMobileGameDevOpen(false);
@@ -530,6 +586,7 @@ export default function Navbar() {
                     <button
                       onClick={() => {
                         // Close all other subcategories first
+                        setMobileCustomAIOpen(false);
                         setMobileModernAppOpen(false);
                         setMobileDigitalTransformOpen(false);
                         setMobileCloudDevOpsOpen(false);
@@ -584,6 +641,7 @@ export default function Navbar() {
                     <button
                       onClick={() => {
                         // Close all other subcategories first
+                        setMobileCustomAIOpen(false);
                         setMobileModernAppOpen(false);
                         setMobileDigitalTransformOpen(false);
                         setMobileCloudDevOpsOpen(false);
@@ -645,6 +703,7 @@ export default function Navbar() {
                     <button
                       onClick={() => {
                         // Close all other subcategories first
+                        setMobileCustomAIOpen(false);
                         setMobileModernAppOpen(false);
                         setMobileDigitalTransformOpen(false);
                         setMobileCloudDevOpsOpen(false);
