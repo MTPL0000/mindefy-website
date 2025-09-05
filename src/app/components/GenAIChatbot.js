@@ -68,7 +68,7 @@ const GenAIChatbot = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-[100rem] mx-auto pt-10 relative">
+      <div className="max-w-screen mx-auto pt-10 relative">
         {/* Left Navigation Sidebar - Hidden on mobile/tablet and after technology stack section */}
          <div 
            className={`hidden lg:block w-80 fixed left-0 top-0 h-screen z-10 pt-10 overflow-y-auto transition-all duration-10 ${showNavigation ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
