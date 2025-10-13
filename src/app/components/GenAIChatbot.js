@@ -68,7 +68,7 @@ const GenAIChatbot = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-[100rem] mx-auto pt-10 relative">
+      <div className="max-w-screen mx-auto pt-10 relative">
         {/* Left Navigation Sidebar - Hidden on mobile/tablet and after technology stack section */}
          <div 
            className={`hidden lg:block w-80 fixed left-0 top-0 h-screen z-10 pt-10 overflow-y-auto transition-all duration-10 ${showNavigation ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
@@ -102,10 +102,10 @@ const GenAIChatbot = () => {
           {/* Introduction Section */}
           <section
             id="introduction"
-            className="mt-6 sm:mt-8 lg:mt-10 lg:pl-80"
+            className="min-h-screen flex items-center lg:pl-80"
           >
-            <div className="max-w-[57.93rem] mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-col lg:flex-row justify-between gap-[3.3125rem] items-start">
+            <div className="max-w-[57.93rem] mx-auto px-4 sm:px-6 lg:px-8 w-full">
+              <div className="flex flex-col lg:flex-row justify-between gap-[3.3125rem] items-center min-h-screen">
                 {/* Left Content */}
                 <div className="space-y-0 w-full max-w-[21.56rem]">
                   <div className="text-[#000000] mb-6">
@@ -131,7 +131,7 @@ const GenAIChatbot = () => {
 
                 {/* Right Content - Chat Interface Image */}
                 <div className="mt-0 lg:-mt-32 w-full flex justify-center">
-                  <div className="relative overflow-hidden w-96 aspect-[1/1.63]">
+                  <div className="relative overflow-hidden h-[40.48rem] aspect-[1/1.63]">
                     <Image
                       src="/images/YH-MN.gif"
                       alt="Animation"
@@ -143,13 +143,13 @@ const GenAIChatbot = () => {
               </div>
             </div>
           </section>
-          <div className="pt-10 lg:pt-16 lg:pl-80 bg-white">
+          <div className="lg:pl-80 bg-white">
             {/* Challenges Section */}
             <section
               id="challenges"
-              className="pb-24 px-4 sm:px-6 md:px-8 bg-white"
+              className="min-h-screen flex items-center px-4 sm:px-6 md:px-8 bg-white"
             >
-              <div className="max-w-6xl mx-auto">
+              <div className="max-w-6xl mx-auto w-full">
                 <div className="text-center mb-16">
                   <h2 className="text-2xl font-semibold text-[#21ABE1] ">
                     CHALLENGES
@@ -221,9 +221,9 @@ const GenAIChatbot = () => {
             {/* Solutions Section */}
             <section
               id="solutions"
-              className="pb-25 px-4 sm:px-6 md:px-8 bg-white"
+              className="min-h-screen flex items-center px-4 sm:px-6 md:px-8 bg-white"
             >
-              <div className="max-w-6xl mx-auto">
+              <div className="max-w-6xl mx-auto w-full">
                 <div className="text-center mb-10">
                   <h2 className="text-2xl font-semibold uppercase text-[#21ABE1]">
                     Solutions
@@ -298,8 +298,8 @@ const GenAIChatbot = () => {
             </section>
 
             {/* Technical Implementation Section */}
-            <section id="technical-implementation" className="pb-25 bg-white">
-              <div className="max-w-6xl mx-auto">
+            <section id="technical-implementation" className="min-h-screen flex items-center bg-white pt-30">
+              <div className="max-w-6xl mx-auto w-full">
                 <div className="text-center mb-10">
                   <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-6">
                     Implementation
@@ -468,9 +468,9 @@ const GenAIChatbot = () => {
             {/* Technology Stack Section */}
             <section
               id="technology-stack"
-              className="pb-20 px-4 sm:px-6 lg:px-8 bg-white"
+              className="min-h-screen flex items-center px-4 sm:px-6 lg:px-8 bg-white"
             >
-              <div className="max-w-6xl mx-auto">
+              <div className="max-w-6xl mx-auto w-full">
                 <div className="text-center mb-8 sm:mb-12">
                   <h2 className="text-xl sm:text-2xl font-semibold text-[#21ABE1]">
                     TECHNOLOGY STACK
