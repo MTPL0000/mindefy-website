@@ -69,13 +69,19 @@ export function WhyChooseSection({ data }) {
           </div>
 
           {/* Right Text Section */}
-          <div className="space-y-6">
+          <div>
             {/* Title */}
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8">
               <span className="bg-gradient-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent">
                 {data.title}
               </span>
             </h2>
+
+            {data.subTitle && (
+              <p className="text-base md:text-lg text-[#444444] font-semibold leading-relaxed font-poppins">
+                {data.subTitle}
+              </p>
+            )}
 
             {/* Bullet Points */}
             <ul className="space-y-2">
@@ -90,16 +96,25 @@ export function WhyChooseSection({ data }) {
             </ul>
 
             {/* CTA Button */}
-            <div className="pt-2 flex items-center justify-center">
-              <button
-                onClick={scrollToContact}
-                className="inline-block bg-[#332771] text-white font-poppins font-medium text-sm sm:text-base px-8 sm:px-10 py-3 sm:py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
-              >
-                {data.buttonText}
-              </button>
-            </div>
+            {data.buttonText && (
+              <div className="pt-2 flex items-center justify-center">
+                <button
+                  onClick={scrollToContact}
+                  className="inline-block bg-[#332771] text-white font-poppins font-medium text-sm sm:text-base px-8 sm:px-10 py-3 sm:py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                >
+                  {data.buttonText}
+                </button>
+              </div>
+            )}
           </div>
         </div>
+        {data.ctaText && (
+          <div className="text-center mt-8">
+            <span className="inline-block border border-[#332771] text-[#332771] px-7 py-3 rounded-full font-semibold text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105">
+              {data.ctaText}
+            </span>
+          </div>
+        )}
       </div>
     </section>
   );

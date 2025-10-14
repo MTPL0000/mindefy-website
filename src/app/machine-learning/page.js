@@ -16,43 +16,32 @@ export const heroData = {
 
 export const ourMLApart = {
   title: "What Sets Our ML Apart?",
-  subtitle: "",
   cards: [
     {
-      percentage: "",
-      rate: "",
       title: "Models That Understand",
       description:
         "From deep neural networks to graph intelligence, we design ML that mirrors human intuition.",
       icon: "/images/AI-ML/models-icon.svg",
     },
     {
-      percentage: "",
-      rate: "",
       title: "Speed at Scale",
       description:
         "Whether it's milliseconds of latency or millions of predictions, our ML is engineered for performance.",
       icon: "/images/AI-ML/speed-icon.svg",
     },
     {
-      percentage: "",
-      rate: "",
       title: "End-to-End Lifecycle",
       description:
         "From data pipelines to deployment, we manage the full ML journey with MLOps excellence.",
       icon: "/images/AI-ML/lifeCycle-icon.svg",
     },
     {
-      percentage: "",
-      rate: "",
       title: "Trustworthy & Transparent",
       description:
         "Bias detection, drift monitoring, explainability — we ensure ML you can rely on.",
       icon: "/images/AI-ML/trustworthy-icon.svg",
     },
     {
-      percentage: "",
-      rate: "",
       title: "Designed for Your Industry",
       description:
         "Retail, healthcare, finance, logistics, or telecom — our ML adapts to your world.",
@@ -100,7 +89,6 @@ export const ourMLStack = {
     {
       icon: "/images/AI-ML/big-data.svg",
       title: "Data Foundation",
-      subtitle: "",
       items: [
         {
           title: "End-to-end pipelines",
@@ -119,7 +107,6 @@ export const ourMLStack = {
     {
       icon: "/images/AI-ML/ml-task.svg",
       title: "Core ML Tasks",
-      subtitle: "",
       items: [
         {
           title: "Classification",
@@ -148,7 +135,6 @@ export const ourMLStack = {
     {
       icon: "/images/AI-ML/learning.svg",
       title: "Learning Paradigms",
-      subtitle: "",
       items: [
         {
           title: "Supervised Learning",
@@ -179,7 +165,6 @@ export const ourMLStack = {
     {
       icon: "/images/AI-ML/insight.svg",
       title: "Model Innovation",
-      subtitle: "",
       items: [
         {
           title: "Deep Learning",
@@ -203,7 +188,6 @@ export const ourMLStack = {
     {
       icon: "/images/AI-ML/scale-rocket.svg",
       title: "Deployment at Scale",
-      subtitle: "",
       items: [
         {
           title: "Real-time inference APIs",
@@ -222,7 +206,6 @@ export const ourMLStack = {
     {
       icon: "/images/AI-ML/security.svg",
       title: "Lifecycle & Reliability",
-      subtitle: "",
       items: [
         {
           title: "MLOps Pipelines",
@@ -241,7 +224,6 @@ export const ourMLStack = {
     {
       icon: "/images/AI-ML/home-icon.svg",
       title: "Infrastructure Powerhouse",
-      subtitle: "",
       items: [
         {
           title: "Distributed training",
@@ -289,7 +271,6 @@ export const businessImpactData = {
     {
       icon: "/images/AI-ML/positionST-img.webp",
       title: "Positioning Statement",
-      subtitle: "",
       points: [
         {
           text: "We bring end-to-end ML engineering capability:",

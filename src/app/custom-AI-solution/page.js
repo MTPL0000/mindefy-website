@@ -54,7 +54,7 @@ export const whyAIData = {
     },
   ],
   ctaText:
-    " In today’s market, AI isn’t a choice. It’s the difference between leading and lagging.",
+    "In today’s market, AI isn’t a choice. It’s the difference between leading and lagging.",
 };
 
 export const aiOfferingsData = {
@@ -238,24 +238,19 @@ export const whyChooseData = {
   image: "/images/AI-ML/chooseUS-img.webp",
   points: [
     {
-      icon: "/images/check-green.svg",
       text: "Full-Stack AI Expertise – From generative design to predictive intelligence.",
     },
     {
-      icon: "/images/check-green.svg",
       text: "Data-Grounded RAG Systems – Accuracy and compliance you can trust.",
     },
     {
-      icon: "/images/check-green.svg",
       text: "Agentic Workflow Automation – Beyond chat, into execution.",
     },
     {
-      icon: "/images/check-green.svg",
       text: "Enterprise-Grade Platforms – Built with governance, MLOps, and scale in mind.",
     },
   ],
   buttonText: "Let’s Talk AI",
-  buttonLink: "#contact",
 };
 
 export const engagementModelData = {

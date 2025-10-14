@@ -39,6 +39,16 @@ export const servicesData = [
     isActive: true, // Already created
   },
 
+  {
+    id: "data-engineering",
+    title: "Data Engineering",
+    category: "Custom AI Solutions",
+    route: "/data-engineering",
+    component: "Data Engineering & Analytics",
+    description: "Data Engineering & Analytics development services",
+    isActive: true, // Already created
+  },
+
   // Modern Application Development
   {
     id: "android-app-development",
