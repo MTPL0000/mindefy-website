@@ -9,7 +9,7 @@ export default function BusinessImpactSection({ data }) {
           {data.cards.map((card, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               {/* Icon */}
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 mb-6 sm:mb-8">
+              <div className="relative w-60 h-55 md:w-85 md:h-70 mb-6 sm:mb-8">
                 <Image
                   src={card.icon}
                   alt={card.title}
@@ -19,27 +19,24 @@ export default function BusinessImpactSection({ data }) {
               </div>
 
               {/* Title */}
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 md:mb-8">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-4 md:mb-8">
                 <span className="bg-gradient-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent">
                   {card.title}
                 </span>
               </h2>
               {/* Subtitle */}
-              <p className="text-left text-base sm:text-xl font-bold text-[#444444] mb-4 max-w-md">
+              <p className="text-left text-base sm:text-xl font-semibold text-[#444444] mb-4 max-w-md">
                 {card.subtitle}
               </p>
 
               {/* Points List */}
-              <ul className="space-y-2 md:space-y-3 text-left w-full max-w-md">
+              <ul className="space-y-2 text-left w-full max-w-md">
                 {card.points.map((point, pointIndex) => (
-                  <li
-                    key={pointIndex}
-                    className="flex items-start gap-2 sm:gap-3"
-                  >
-                    <span className="text-black-600 font-bold text-base sm:text-lg flex-shrink-0 mt-0.5">
+                  <li key={pointIndex} className="flex items-start gap-2">
+                    <span className="text-black-600 font-semibold text-base sm:text-lg flex-shrink-0 mt-0.5">
                       •
                     </span>
-                    <span className="text-base sm:text-xl font-bold text-[#444444] leading-relaxed">
+                    <span className="text-base sm:text-xl font-semibold text-[#444444] leading-relaxed">
                       {point.text}
                     </span>
                   </li>

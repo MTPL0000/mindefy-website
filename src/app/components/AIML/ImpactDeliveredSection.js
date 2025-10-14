@@ -12,7 +12,7 @@ export function ImpactDeliveredSection({ data }) {
           </h2>
         </div>
 
-        <div className="mx-auto flex flex-wrap items-center justify-center gap-x-10 gap-y-20 md-10 md:mb-20">
+        <div className="mx-auto flex flex-wrap justify-center gap-x-10 gap-y-20">
           {data.impacts.map((impact, index) => (
             <div
               key={index}
@@ -43,11 +43,13 @@ export function ImpactDeliveredSection({ data }) {
           ))}
         </div>
 
-        <div className="text-center mt-6">
-          <span className="inline-block border border-[#332771] text-[#332771] px-7 py-3 rounded-full font-semibold text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105">
-            {data.ctaText}
-          </span>
-        </div>
+        {data.ctaText && (
+          <div className="text-center mt-10 md:mt-20">
+            <span className="inline-block border border-[#332771] text-[#332771] px-7 py-3 rounded-full font-semibold text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105">
+              {data.ctaText}
+            </span>
+          </div>
+        )}
       </div>
     </section>
   );

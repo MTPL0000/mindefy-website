@@ -3,7 +3,7 @@ import Image from "next/image";
 export function WhyAISection({ data }) {
   return (
     <section
-      className="w-full py-16 md:py-30"
+      className="w-full py-16 md:py-30 md:mb-16"
       style={{
         background:
           "linear-gradient(135deg, #0F172B 0%, #1C398E 50%, #312C85 100%)",
@@ -19,11 +19,11 @@ export function WhyAISection({ data }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-8 md:mb-16">
-          {data.cards.map((card, index) => (
+        <div className="flex justify-center gap-6 mb-8 md:mb-16 px-4 min-w-max md:min-w-0">
+          {data.cards.slice(0, 5).map((card, index) => (
             <div
               key={index}
-              className="bg-[#FFFFFF1A] border border-[#FFFFFF33] rounded-2xl p-6 hover:bg-opacity-15 transition-all duration-300 hover:transform hover:scale-105"
+              className="flex-none min-w-55 max-w-68 min-h-84 bg-[#FFFFFF1A] border border-[#FFFFFF33] rounded-2xl p-6 hover:bg-opacity-15 transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="bg-[#05DF72] w-3 h-3 rounded-full relative top-[-8px] left-[98%]"></div>
               <div className="flex flex-col items-center text-center">
@@ -36,7 +36,7 @@ export function WhyAISection({ data }) {
                   />
                 </div>
                 {card.percentage && (
-                  <div className="text-4xl  md:text-3xl font-bold text-[#FFFFFF] font-poppins">
+                  <div className="text-4xl md:text-3xl font-bold text-[#FFFFFF] font-poppins">
                     {card.percentage}
                   </div>
                 )}
@@ -56,16 +56,18 @@ export function WhyAISection({ data }) {
           ))}
         </div>
 
-        <div className="text-center">
-          <span
-            style={{
-              background: "linear-gradient(90deg, #155DFC 0%, #009689 100%)",
-            }}
-            className="font-poppins inline-block text-[#DBEAFE] px-4 md:px-8 py-2 md:py-4 rounded-2xl font-medium text-sm sm:text-base hover:shadow-lg transition-all duration-300 hover:scale-105"
-          >
-            {data.ctaText}
-          </span>
-        </div>
+        {data.ctaText && (
+          <div className="text-center">
+            <span
+              style={{
+                background: "linear-gradient(90deg, #155DFC 0%, #009689 100%)",
+              }}
+              className="font-poppins inline-block text-[#DBEAFE] px-4 md:px-8 py-2 md:py-4 rounded-2xl font-medium text-sm sm:text-base hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              {data.ctaText}
+            </span>
+          </div>
+        )}
       </div>
     </section>
   );

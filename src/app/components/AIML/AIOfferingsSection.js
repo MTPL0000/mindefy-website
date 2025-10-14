@@ -46,11 +46,11 @@ export function AIOfferingsSection({ data }) {
                     key={itemIndex}
                     className="border-l-2 border-purple-500 pl-3 sm:pl-4"
                   >
-                    <h4 className="text-sm font-semibold text-gray-900 mb-1 font-poppins">
-                      {item.title}
-                    </h4>
                     <p className="text-sm text-[#000000] font-light leading-relaxed font-poppins">
-                      {item.description}
+                      <span className="text-sm font-semibold text-gray-900 mb-1 font-poppins">
+                        {item.title}
+                      </span>{" "}
+                      - {item.description}
                     </p>
                   </div>
                 ))}

@@ -29,6 +29,16 @@ export const servicesData = [
     isActive: true, // Already created
   },
 
+  {
+    id: "machine-learning",
+    title: "Machine Learning",
+    category: "Custom AI Solutions",
+    route: "/machine-learning",
+    component: "Machine Learning Solution",
+    description: "Custom ML solution development services",
+    isActive: true, // Already created
+  },
+
   // Modern Application Development
   {
     id: "android-app-development",
