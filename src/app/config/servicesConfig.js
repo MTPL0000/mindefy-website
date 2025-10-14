@@ -49,6 +49,16 @@ export const servicesData = [
     isActive: true, // Already created
   },
 
+  {
+    id: "cloud-engineering",
+    title: "Cloud Engineering",
+    category: "Custom AI Solutions",
+    route: "/cloud-engineering",
+    component: "Cloud Engineering —Powering AI, Data & Scale",
+    description: "Cloud Engineering —Powering AI, Data & Scale",
+    isActive: true, // Already created
+  },
+
   // Modern Application Development
   {
     id: "android-app-development",
