@@ -19,6 +19,16 @@ export const servicesData = [
     isActive: true, // Already created
   },
 
+  {
+    id: "custom-AI-solution",
+    title: "Custom AI Solution",
+    category: "Custom AI Solutions",
+    route: "/custom-AI-solution",
+    component: "CustomAISolution",
+    description: "Custom AI solution development services",
+    isActive: true, // Already created
+  },
+
   // Modern Application Development
   {
     id: "android-app-development",
