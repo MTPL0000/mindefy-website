@@ -396,6 +396,38 @@ export default function Navbar() {
                         >
                           Custom ML Solution
                         </Link>
+
+                        <Link
+                          href="/custom-AI-solution"
+                          onClick={handleMobileMenuItemClick}
+                          className="block hover:text-red-600"
+                        >
+                          Custom AI Solution
+                        </Link>
+
+                        <Link
+                          href="/machine-learning"
+                          onClick={handleMobileMenuItemClick}
+                          className="block hover:text-red-600"
+                        >
+                          Machine Learning
+                        </Link>
+
+                        <Link
+                          href="/data-engineering"
+                          onClick={handleMobileMenuItemClick}
+                          className="block hover:text-red-600"
+                        >
+                          Data Engineering
+                        </Link>
+
+                        <Link
+                          href="/cloud-engineering"
+                          onClick={handleMobileMenuItemClick}
+                          className="block hover:text-red-600"
+                        >
+                          Cloud Engineering
+                        </Link>
                       </div>
                     )}
                   </div>

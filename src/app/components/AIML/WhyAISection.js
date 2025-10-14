@@ -19,11 +19,11 @@ export function WhyAISection({ data }) {
           </p>
         </div>
 
-        <div className="flex justify-center gap-6 mb-8 md:mb-16 px-4 min-w-max md:min-w-0">
+        <div className="flex flex-col md:flex-row md:justify-center px-2 md:gap-6 mb-8 md:mb-16 gap-6">
           {data.cards.slice(0, 5).map((card, index) => (
             <div
               key={index}
-              className="flex-none min-w-55 max-w-68 min-h-84 bg-[#FFFFFF1A] border border-[#FFFFFF33] rounded-2xl p-6 hover:bg-opacity-15 transition-all duration-300 hover:transform hover:scale-105"
+              className="w-full md:flex-none md:min-w-55 md:max-w-68 md:min-h-84 bg-[#FFFFFF1A] border border-[#FFFFFF33] rounded-2xl p-6 hover:bg-opacity-15 transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="bg-[#05DF72] w-3 h-3 rounded-full relative top-[-8px] left-[98%]"></div>
               <div className="flex flex-col items-center text-center">
