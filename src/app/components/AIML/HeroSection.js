@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function HeroSection({ data }) {
   return (
-    <section className="relative w-full min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+    <section className="relative w-full min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <Image
           src={data.backgroundImage}

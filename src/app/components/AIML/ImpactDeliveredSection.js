@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function ImpactDeliveredSection({ data }) {
   return (
-    <section className="w-full py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="w-full py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 xl:px-[8.83rem]">
         <div className="text-center mb-8 sm:mb-12 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">

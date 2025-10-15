@@ -23,7 +23,7 @@ export function EngagementModelSection({ data }) {
               </div>
 
               <div
-                className="flex flex-col items-center justify-center rounded-lg py-6 px-4"
+                className="flex flex-col items-center justify-center rounded-lg py-6 px-4 w-74 h-50"
                 style={{ boxShadow: "0px 0px 20px 0px #00000033" }}
               >
                 <div className="relative w-13 h-13 mb-4">
