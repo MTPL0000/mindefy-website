@@ -23,7 +23,7 @@ export function EngagementModelSection({ data }) {
               </div>
 
               <div
-                className="flex flex-col items-center justify-center rounded-lg py-6 px-4 w-74 h-50"
+                className="flex flex-col items-center justify-center rounded-lg py-6 px-4 w-full h-full max-w-74 min-h-50"
                 style={{ boxShadow: "0px 0px 20px 0px #00000033" }}
               >
                 <div className="relative w-13 h-13 mb-4">
@@ -35,11 +35,11 @@ export function EngagementModelSection({ data }) {
                   />
                 </div>
 
-                <h3 className="text-base sm:text-lg font-bold text-[#332771] mb-4 font-poppins">
+                <h3 className="text-base sm:text-lg font-bold text-[#332771] mb-4 font-poppins text-wrap">
                   {step.title}
                 </h3>
 
-                <p className="text-sm md:text-base text-[#332771] leading-relaxed font-poppins">
+                <p className="text-sm md:text-base text-[#332771] leading-relaxed font-poppins text-wrap">
                   {step.description}
                 </p>
               </div>

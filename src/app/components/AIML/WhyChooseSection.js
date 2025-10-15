@@ -100,7 +100,7 @@ export function WhyChooseSection({ data }) {
               <div className="pt-2 flex items-center justify-center">
                 <button
                   onClick={scrollToContact}
-                  className="inline-block bg-[#332771] text-white font-poppins font-medium text-sm sm:text-base px-8 sm:px-10 py-3 sm:py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                  className="inline-block cursor-pointer bg-[#332771] text-white font-poppins font-medium text-sm sm:text-base px-8 sm:px-10 py-3 sm:py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
                 >
                   {data.buttonText}
                 </button>

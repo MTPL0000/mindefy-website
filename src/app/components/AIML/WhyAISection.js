@@ -147,7 +147,7 @@ export function WhyAISection({ data }) {
                 key={index}
                 className="flex-none w-[85%] max-w-[280px] min-w-[220px] min-h-84 snap-center justify-center"
               >
-                <div className="h-full bg-[#FFFFFF1A] border border-[#FFFFFF33] rounded-2xl p-6 hover:bg-opacity-15 transition-all duration-300 hover:transform hover:scale-100">
+                <div className="h-full bg-[#FFFFFF1A] border border-[#FFFFFF33] rounded-2xl p-6 hover:bg-opacity-15 transition-all duration-300 hover:transform hover:scale-105">
                   <div className="bg-[#05DF72] w-3 h-3 rounded-full relative top-[-8px] left-[98%]"></div>
                   <div className="flex flex-col items-center text-center">
                     <div className="w-20 h-20 mb-4 relative">
