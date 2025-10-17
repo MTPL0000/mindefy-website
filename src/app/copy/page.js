@@ -16,7 +16,8 @@ export default function ImprovedCopyPage() {
         section2AnimationStarted: false,
         section3AnimationFinished: false,
         section5ScrollProgress: 0,
-        section5HasStarted: false
+        section5HasStarted: false,
+        section1ZoomedOut: false
     });
     
     // Use Framer Motion's animation controls
@@ -52,8 +53,6 @@ export default function ImprovedCopyPage() {
             }
         }
         
-        setSectionState(prev => ({ ...prev, isTransitioning: true }));
-        
         const transitions = {
             0: { down: 1 }, // Video → Image
             1: { up: 0, down: 2 }, // Image ↔ Video/Cards
@@ -65,7 +64,46 @@ export default function ImprovedCopyPage() {
         
         const nextSection = transitions[fromSection]?.[direction];
         if (nextSection !== undefined) {
+            setSectionState(prev => ({ ...prev, isTransitioning: true }));
             setCurrentSection(nextSection);
+            
+            // Reset state when going back to video section (section 0)
+            if (nextSection === 0) {
+                setSectionState(prev => ({
+                    ...prev,
+                    hasInteracted: false,
+                    section1ZoomedOut: false,
+                    section2AnimationStarted: false
+                }));
+            }
+            
+            // Handle backward scroll to section 1 - trigger zoom out animation
+            if (nextSection === 1 && direction === 'up') {
+                setSectionState(prev => ({ ...prev, scrollDisabled: true }));
+                
+                // Zoom out animation (reverse of zoom in)
+                zoomControls.start({
+                    scale: 1,
+                    opacity: 1,
+                    filter: 'blur(0px)',
+                    transition: { duration: 1.5, ease: 'easeInOut' }
+                });
+                
+                contentZoomControls.start({
+                    scale: 1,
+                    opacity: 1,
+                    transition: { duration: 1.5, ease: 'easeInOut' }
+                });
+                
+                // Mark that zoom out is complete and re-enable scroll
+                setTimeout(() => {
+                    setSectionState(prev => ({ 
+                        ...prev, 
+                        scrollDisabled: false,
+                        section1ZoomedOut: true
+                    }));
+                }, 1500);
+            }
             
             // Reset section 5 state when leaving or entering
             if (fromSection === 5 || nextSection === 5) {
@@ -89,7 +127,7 @@ export default function ImprovedCopyPage() {
                 setSectionState(prev => ({ ...prev, isTransitioning: false }));
             }, 1000);
         }
-    }, [sectionState.isTransitioning, sectionState.section5ScrollProgress]);
+    }, [sectionState.isTransitioning, sectionState.section5ScrollProgress, zoomControls, contentZoomControls]);
     
     // Simplified zoom animation using Framer Motion
     const triggerZoomAnimation = useCallback(async () => {
@@ -154,8 +192,8 @@ export default function ImprovedCopyPage() {
             scrollTimeout = setTimeout(() => {
                 const direction = e.deltaY > 0 ? 'down' : 'up';
                 
-                // Special handling for image section
-                if (currentSection === 1 && !sectionState.hasInteracted) {
+                // Special handling for image section - forward scroll only
+                if (currentSection === 1 && !sectionState.hasInteracted && direction === 'down') {
                     triggerZoomAnimation();
                     return;
                 }
