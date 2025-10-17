@@ -38,6 +38,10 @@ export default function ImprovedCopyPage() {
                     section5HasStarted: true
                 }));
                 return;
+            } else if (direction === 'down' && sectionState.section5ScrollProgress === 1) {
+                // Last card is visible, prevent further forward scrolls
+                // Don't transition to next section, just ignore the scroll
+                return;
             } else if (direction === 'up' && sectionState.section5ScrollProgress > 0) {
                 // Go backward in section 5 animation
                 setSectionState(prev => ({
