@@ -45,13 +45,6 @@ export default function ImprovedCopyPage() {
           }));
           return;
         } else if (
-          direction === "down" &&
-          sectionState.section5ScrollProgress === 1
-        ) {
-          // Last card is visible, prevent further forward scrolls
-          // Don't transition to next section, just ignore the scroll
-          return;
-        } else if (
           direction === "up" &&
           sectionState.section5ScrollProgress > 0
         ) {
@@ -72,7 +65,7 @@ export default function ImprovedCopyPage() {
       // and only when progress is already at max (3) allow transition to the next section.
       if (fromSection === 2) {
         if (direction === "down") {
-          if (sectionState.section3ScrollProgress < 3) {
+          if (sectionState.section3ScrollProgress < 6) {
             // Increment internal staged animation progress (title -> subtitle -> description -> cards)
             setSectionState((prev) => ({
               ...prev,
@@ -81,10 +74,7 @@ export default function ImprovedCopyPage() {
             }));
             return; // stay in section 2
           }
-          // else: progress === 3 -> fall through to normal transitions (move to next section)
-        }
-
-        if (direction === "up") {
+        } else if (direction === "up") {
           if (sectionState.section3ScrollProgress > 0) {
             // Go back inside section 2
             setSectionState((prev) => ({
@@ -188,7 +178,6 @@ export default function ImprovedCopyPage() {
       sectionState.isTransitioning,
       sectionState.section5ScrollProgress,
       sectionState.section3ScrollProgress,
-      sectionState.section3HasStarted,
       zoomControls,
       contentZoomControls,
     ]
@@ -300,15 +289,6 @@ export default function ImprovedCopyPage() {
   const sectionVariants = {
     visible: { opacity: 1, pointerEvents: "auto" },
     hidden: { opacity: 0, pointerEvents: "none" },
-  };
-
-  const cardVariants = {
-    hidden: { y: 100, opacity: 0 },
-    visible: (i) => ({
-      y: 0,
-      opacity: 1,
-      transition: { delay: i * 0.1, duration: 0.5 },
-    }),
   };
 
   const cardData = [
@@ -445,52 +425,45 @@ export default function ImprovedCopyPage() {
           {/* Title */}
           <motion.h2
             className="font-poppins font-medium text-[1.5rem] tracking-[20%] text-[#FF5225] mb-4"
-            initial={{ opacity: 0, y: 50 }}
-            animate={
-              currentSection === 2 && sectionState.section3ScrollProgress >= 0
-                ? { opacity: 1, y: 0 }
-                : { opacity: 0, y: 50 }
-            }
-            transition={{ duration: 0.6 }}
+            animate={{
+              opacity: sectionState.section3ScrollProgress >= 0 ? 1 : 0,
+              y: sectionState.section3ScrollProgress >= 0 ? 0 : 50,
+            }}
+            transition={{ duration: 0.4 }}
           >
             What sets Us apart
           </motion.h2>
 
-          {/* Subtitle */}
-          <motion.div
-            className="flex justify-center items-center space-x-4 mb-8"
-            initial={{ opacity: 0, y: 50 }}
-            animate={
-              currentSection === 2 && sectionState.section3ScrollProgress >= 1
-                ? { opacity: 1, y: 0 }
-                : { opacity: 0, y: 50 }
-            }
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+          {/* Subtitle (word by word) */}
+          <div className="flex justify-center items-center space-x-4 mb-8">
             {["Smart.", "Scalable.", "Strategic."].map((word, index) => (
               <motion.span
                 key={word}
                 className="font-poppins font-normal text-[2rem] text-[#3D3D3D]"
+                animate={{
+                  opacity:
+                    sectionState.section3ScrollProgress >= index + 1 ? 1 : 0,
+                  y: sectionState.section3ScrollProgress >= index + 1 ? 0 : 50,
+                }}
+                transition={{ duration: 0.4 }}
               >
                 {word}
               </motion.span>
             ))}
-          </motion.div>
+          </div>
 
           {/* Description */}
           <motion.p
             className="font-inter text-base text-center text-[#444444] mb-8 max-w-3xl mx-auto"
-            initial={{ opacity: 0, y: 50 }}
-            animate={
-              currentSection === 2 && sectionState.section3ScrollProgress >= 2
-                ? { opacity: 1, y: 0 }
-                : { opacity: 0, y: 50 }
-            }
-            transition={{ duration: 0.6, delay: 0.3 }}
+            animate={{
+              opacity: sectionState.section3ScrollProgress >= 4 ? 1 : 0,
+              y: sectionState.section3ScrollProgress >= 4 ? 0 : 50,
+            }}
+            transition={{ duration: 0.5 }}
           >
             We don't just deliver AI and data solutions — we engineer
             enterprise-grade intelligence systems that align with your business
-            vision and drive measurable value
+            vision and drive measurable value.
           </motion.p>
 
           {/* Cards */}
@@ -499,14 +472,11 @@ export default function ImprovedCopyPage() {
               <motion.div
                 key={index}
                 className="bg-white p-4 rounded-[1.25rem] shadow-md flex flex-col items-center text-center"
-                initial={{ opacity: 0, y: 100 }}
-                animate={
-                  currentSection === 2 &&
-                  sectionState.section3ScrollProgress >= 3
-                    ? { opacity: 1, y: 0 }
-                    : { opacity: 0, y: 100 }
-                }
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                animate={{
+                  opacity: sectionState.section3ScrollProgress >= 5 ? 1 : 0,
+                  y: sectionState.section3ScrollProgress >= 5 ? 0 : 100,
+                }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
               >
                 <div className="w-12 h-12 mb-2 flex items-center justify-center">
                   <img src={card.icon} alt={card.title} className="w-full" />
