@@ -79,7 +79,6 @@ export default function ImprovedCopyPage() {
     section2AnimationStarted: false,
     section3AnimationFinished: false,
     section5ScrollProgress: 0,
-    section5HasStarted: false,
     section1ZoomedOut: false,
     section3ScrollProgress: 0,
     section3HasStarted: false,
@@ -106,7 +105,6 @@ export default function ImprovedCopyPage() {
           setSectionState((prev) => ({
             ...prev,
             section5ScrollProgress: newProgress,
-            section5HasStarted: true,
           }));
 
           // Check if we've completed all animations
@@ -226,8 +224,6 @@ export default function ImprovedCopyPage() {
             ...prev,
             section5ScrollProgress:
               nextSection === 5 ? 0 : prev.section5ScrollProgress,
-            section5HasStarted:
-              nextSection === 5 ? false : prev.section5HasStarted,
           }));
 
           // Auto-start section 5 animation when entering (only show first card)
@@ -235,7 +231,6 @@ export default function ImprovedCopyPage() {
             setTimeout(() => {
               setSectionState((prev) => ({
                 ...prev,
-                section5HasStarted: true,
               }));
               // Only show AI Solutions card by default, others require scroll
             }, 1200); // Increased delay to allow centered heading to fully disappear
@@ -363,7 +358,6 @@ export default function ImprovedCopyPage() {
           setSectionState((prev) => ({
             ...prev,
             section5ScrollProgress: 1,
-            section5HasStarted: true,
           }));
         }
       }
@@ -581,11 +575,11 @@ export default function ImprovedCopyPage() {
         transition={{ duration: 0.8 }}
         style={{ display: allAnimationsComplete ? "none" : "block" }}
       >
-        <section className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-6 sm:px-8 lg:px-16 py-12">
-          <div className="container mx-auto w-full max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20">
+        <section className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-6 sm:px-8 lg:px-16 py-10">
+          <div className="container mx-auto w-full max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
             {/* Left side - Phone mockup */}
             <div className="flex-1 flex justify-center">
-              <div className="relative w-9/12 sm:w-7/12 md:w-6/12 lg:w-10/12 aspect-[0.6137/1]">
+              <div className="relative w-9/12 sm:w-7/12 md:w-6/12 lg:w-11/12 aspect-[0.6137/1]">
                 <img
                   src="/images/YH-MN.gif"
                   alt="Gen AI-Chatbot Interface"
@@ -595,7 +589,7 @@ export default function ImprovedCopyPage() {
             </div>
 
             {/* Right side - Content */}
-            <div className="flex-1 text-center lg:text-left lg:pl-12">
+            <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl font-poppins sm:text-4xl lg:text-5xl font-medium text-[#262626] mb-6">
                 Gen AI-Chatbot
               </h2>
@@ -628,10 +622,10 @@ export default function ImprovedCopyPage() {
         transition={{ duration: 0.8 }}
         style={{ display: allAnimationsComplete ? "none" : "block" }}
       >
-        <section className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#B9FFFF] to-white px-6 sm:px-8 lg:px-16 py-12">
-          <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
+        <section className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#B9FFFF] to-white px-6 sm:px-8 lg:px-16 py-10">
+          <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-8">
             {/* Left side - Content */}
-            <div className="flex-1 text-center lg:text-left lg:pr-12">
+            <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl font-poppins sm:text-4xl lg:text-5xl font-medium text-[#262626] mb-6">
                 ML Driven Recommendations
               </h2>
@@ -655,7 +649,7 @@ export default function ImprovedCopyPage() {
 
             {/* Right side - Laptop mockup */}
             <div className="flex-1 flex justify-center">
-              <div className="relative w-10/12 sm:w-8/12 md:w-7/12 lg:w-10/12 aspect-[11/7]">
+              <div className="relative w-10/12 sm:w-8/12 md:w-7/12 lg:w-11/12 aspect-[11/7]">
                 <img
                   src="/images/ai/early-foods.png"
                   alt="ML Driven Recommendations Interface"
@@ -679,107 +673,81 @@ export default function ImprovedCopyPage() {
         transition={{ duration: 0.8 }}
       >
         {/* Initial heading phase */}
-        {!sectionState.section5HasStarted ? (
+        <motion.div
+          className="flex flex-col px-6 md:px-10 lg:px-16 pt-16 pb-5"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 0.8 } }}
+        >
+          {/* Heading */}
           <motion.div
-            className="absolute inset-0 flex items-center justify-center z-10"
-            initial={{ opacity: 0 }}
-            animate={
-              currentSection === 5
-                ? { opacity: 1, transition: { duration: 0.8 } }
-                : { opacity: 0 }
-            }
-            exit={{ opacity: 0, transition: { duration: 0.8 } }}
+            className="text-center font-poppins mb-12 md:mb-16"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.8, delay: 0.2 },
+            }}
           >
-            <motion.div
-              className="text-center"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={
-                currentSection === 5
-                  ? {
-                      opacity: 1,
-                      scale: 1,
-                      transition: { duration: 0.8, delay: 0.3 },
-                    }
-                  : { opacity: 0, scale: 0.8 }
-              }
-            >
-              <h2 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-normal text-[#3D3D3D] mb-2">
-                Our Offering For Your Automation Needs-
-              </h2>
-              <h3 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-medium text-[#3D3D3D]">
-                <span className="font-semibold font-poppins">
-                  The Stack That Powers Your Future.
-                </span>
-              </h3>
-            </motion.div>
+            <h2 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-normal text-[#3D3D3D] mb-2">
+              Our Offering For Your Automation Needs-
+            </h2>
+            <h3 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-medium text-[#3D3D3D]">
+              <span className="font-semibold font-poppins">
+                The Stack That Powers Your Future.
+              </span>
+            </h3>
           </motion.div>
-        ) : (
-          <motion.div
-            className="flex flex-col px-6 md:px-10 lg:px-16 pt-16 pb-5"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.8 } }}
-          >
-            {/* Heading */}
-            <motion.div
-              className="text-center font-poppins mb-12 md:mb-16"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.8, delay: 0.2 },
-              }}
-            >
-              <h2 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-normal text-[#3D3D3D] mb-2">
-                Our Offering For Your Automation Needs-
-              </h2>
-              <h3 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-medium text-[#3D3D3D]">
-                <span className="font-semibold font-poppins">
-                  The Stack That Powers Your Future.
-                </span>
-              </h3>
-            </motion.div>
 
-            {/* Responsive 4-column cards */}
-            <div className="flex items-center justify-center">
-              <div className="w-full max-w-7xl mx-auto bg-white">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
-                  {offersCards.map((card, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 100 }}
-                      animate={
-                        currentSection === 5 &&
-                        sectionState.section5ScrollProgress >= index * 0.25
-                          ? {
-                              opacity: 1,
-                              y: 0,
-                              transition: { duration: 0.8, ease: "easeOut" },
-                            }
-                          : { opacity: 0, y: 100 }
+          {/* Responsive 4-column cards */}
+          <div className="flex items-center justify-center">
+            <div className="w-full max-w-7xl mx-auto bg-white">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
+                {offersCards.map((card, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 100 }}
+                    animate={
+                      currentSection === 5 &&
+                      sectionState.section5ScrollProgress >= index * 0.25
+                        ? {
+                            opacity: 1,
+                            y: 0,
+                            transition: { duration: 0.8, ease: "easeOut" },
+                          }
+                        : { opacity: 0, y: 100 }
+                    }
+                    className={`group py-8 px-2.5 flex flex-col justify-between bg-white h-[34rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
+                  >
+                    <div>
+                      <h4 className="text-3xl font-normal text-[#332771] mb-6 text-left font-poppins">
+                        {card.title}
+                      </h4>
+                      <p className="text-base text-[#D84326] mb-6 text-left leading-relaxed font-poppins">
+                        {card.text}
+                      </p>
+                    </div>
+                    <a
+                      href={card.link}
+                      className="w-fit flex items-center text-left text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
+                      onMouseEnter={(e) =>
+                        e.currentTarget
+                          .closest(".group")
+                          .classList.add("hovered")
                       }
-                      className={`py-8 px-2.5 flex flex-col justify-between bg-white h-[37.5rem] border-b border-l border-t-none border-r-none border-[#000000]`}
+                      onMouseLeave={(e) =>
+                        e.currentTarget
+                          .closest(".group")
+                          .classList.remove("hovered")
+                      }
                     >
-                      <div>
-                        <h4 className="text-3xl font-normal text-[#332771] mb-6 text-left font-poppins">
-                          {card.title}
-                        </h4>
-                        <p className="text-base text-[#D84326] mb-6 text-left leading-relaxed font-poppins">
-                          {card.text}
-                        </p>
-                      </div>
-                      <a
-                        href={card.link}
-                        className="w-fit flex items-center text-left text-xl font-poppins font-medium text-[#000000] hover:text-[#4A5568] transition-colors"
-                      >
-                        Learn More <span className="ml-2">→</span>
-                      </a>
-                    </motion.div>
-                  ))}
-                </div>
+                      Learn More <span className="ml-2">→</span>
+                    </a>
+                  </motion.div>
+                ))}
               </div>
             </div>
-          </motion.div>
-        )}
+          </div>
+        </motion.div>
       </motion.div>
     </div>
   );
