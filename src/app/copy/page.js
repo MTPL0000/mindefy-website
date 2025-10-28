@@ -5,6 +5,8 @@ import { useRef, useEffect, useState, useCallback } from "react";
 export default function ImprovedCopyPage() {
   const containerRef = useRef(null);
   const [currentSection, setCurrentSection] = useState(0);
+  const [allAnimationsComplete, setAllAnimationsComplete] = useState(false);
+  const [canScrollBack, setCanScrollBack] = useState(false);
 
   // Simplified state management
   const [sectionState, setSectionState] = useState({
@@ -35,14 +37,23 @@ export default function ImprovedCopyPage() {
       if (fromSection === 5) {
         if (direction === "down" && sectionState.section5ScrollProgress < 1) {
           // Progress through section 5 animation
+          const newProgress = Math.min(
+            sectionState.section5ScrollProgress + 0.25,
+            1
+          );
           setSectionState((prev) => ({
             ...prev,
-            section5ScrollProgress: Math.min(
-              prev.section5ScrollProgress + 0.25,
-              1
-            ),
+            section5ScrollProgress: newProgress,
             section5HasStarted: true,
           }));
+
+          // Check if we've completed all animations
+          if (newProgress >= 1) {
+            setTimeout(() => {
+              setAllAnimationsComplete(true);
+              setCanScrollBack(true);
+            }, 800); // Wait for animation to complete
+          }
           return;
         } else if (
           direction === "up" &&
@@ -56,6 +67,7 @@ export default function ImprovedCopyPage() {
               0
             ),
           }));
+          setAllAnimationsComplete(false);
           return;
         }
       }
@@ -244,6 +256,11 @@ export default function ImprovedCopyPage() {
     let scrollTimeout;
 
     const handleWheel = (e) => {
+      // If all animations are complete, allow native scroll
+      if (allAnimationsComplete) {
+        return; // Let browser handle scroll naturally
+      }
+
       e.preventDefault();
 
       // Check if scroll is disabled
@@ -270,11 +287,34 @@ export default function ImprovedCopyPage() {
       }, 50);
     };
 
+    // Handle scroll back to animations when user scrolls up from normal scroll
+    const handleScrollBack = () => {
+      if (allAnimationsComplete && canScrollBack) {
+        const scrollPosition =
+          window.scrollY || containerRef.current?.scrollTop || 0;
+
+        // If user scrolls to the very top, reset to animation mode
+        if (scrollPosition === 0) {
+          setAllAnimationsComplete(false);
+          setCanScrollBack(false);
+          setCurrentSection(5); // Return to section 5
+          setSectionState((prev) => ({
+            ...prev,
+            section5ScrollProgress: 1,
+            section5HasStarted: true,
+          }));
+        }
+      }
+    };
+
     const container = containerRef.current;
     if (container) {
       container.addEventListener("wheel", handleWheel, { passive: false });
+      window.addEventListener("scroll", handleScrollBack, { passive: true });
+
       return () => {
         container.removeEventListener("wheel", handleWheel);
+        window.removeEventListener("scroll", handleScrollBack);
         clearTimeout(scrollTimeout);
       };
     }
@@ -283,6 +323,8 @@ export default function ImprovedCopyPage() {
     sectionState,
     handleSectionTransition,
     triggerZoomAnimation,
+    allAnimationsComplete,
+    canScrollBack,
   ]);
 
   // Animation variants for cleaner code
@@ -333,14 +375,17 @@ export default function ImprovedCopyPage() {
   return (
     <div
       ref={containerRef}
-      className="relative h-screen w-screen overflow-hidden"
+      className={`relative w-screen ${
+        allAnimationsComplete ? "overflow-y-auto" : "h-screen overflow-hidden"
+      }`}
     >
       {/* Video Section */}
       <motion.div
-        className="absolute inset-0"
+        className="absolute inset-0 h-screen"
         variants={sectionVariants}
         animate={currentSection === 0 ? "visible" : "hidden"}
         transition={{ duration: 0.8 }}
+        style={{ display: allAnimationsComplete ? "none" : "block" }}
       >
         <video
           className="w-full h-full object-cover"
@@ -355,10 +400,11 @@ export default function ImprovedCopyPage() {
 
       {/* Image Zoom Section */}
       <motion.div
-        className="absolute inset-0"
+        className="absolute inset-0 h-screen"
         variants={sectionVariants}
         animate={currentSection === 1 ? "visible" : "hidden"}
         transition={{ duration: 0.8 }}
+        style={{ display: allAnimationsComplete ? "none" : "block" }}
       >
         <motion.div
           className="absolute inset-0 bg-cover bg-center"
@@ -416,10 +462,11 @@ export default function ImprovedCopyPage() {
 
       {/* Cards Section */}
       <motion.div
-        className="absolute inset-0 bg-gray-100"
+        className="absolute inset-0 bg-gray-100 h-screen"
         variants={sectionVariants}
         animate={currentSection === 2 ? "visible" : "hidden"}
         transition={{ duration: 0.8 }}
+        style={{ display: allAnimationsComplete ? "none" : "block" }}
       >
         <div className="w-full h-screen flex flex-col items-center justify-center px-16">
           {/* Title */}
@@ -440,12 +487,22 @@ export default function ImprovedCopyPage() {
               <motion.span
                 key={word}
                 className="font-poppins font-normal text-[2rem] text-[#3D3D3D]"
+                initial={{ opacity: 0, x: index === 0 ? -80 : 80 }}
                 animate={{
                   opacity:
                     sectionState.section3ScrollProgress >= index + 1 ? 1 : 0,
-                  y: sectionState.section3ScrollProgress >= index + 1 ? 0 : 50,
+                  x:
+                    sectionState.section3ScrollProgress >= index + 1
+                      ? 0
+                      : index === 0
+                      ? -80
+                      : 80,
                 }}
-                transition={{ duration: 0.4 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: index * 0.1,
+                }}
               >
                 {word}
               </motion.span>
@@ -493,10 +550,11 @@ export default function ImprovedCopyPage() {
 
       {/* Case Study 1 - Gen AI Chatbot */}
       <motion.div
-        className="absolute inset-0 bg-white"
+        className="absolute inset-0 bg-white h-screen"
         variants={sectionVariants}
         animate={currentSection === 3 ? "visible" : "hidden"}
         transition={{ duration: 0.8 }}
+        style={{ display: allAnimationsComplete ? "none" : "block" }}
       >
         <section className="w-full h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-8 lg:px-16">
           <div className="container mx-auto max-w-7xl flex items-center justify-between">
@@ -504,7 +562,6 @@ export default function ImprovedCopyPage() {
             <div className="flex-1 flex justify-center">
               <div className="relative w-11/12 aspect-[0.6137/1]">
                 <img
-                  // src="/images/ai/chat-bot.png"
                   src="/images/YH-MN.gif"
                   alt="Gen AI-Chatbot Interface"
                   className="w-full h-full object-contain"
@@ -540,10 +597,11 @@ export default function ImprovedCopyPage() {
 
       {/* Case Study 2 - ML Driven Recommendations */}
       <motion.div
-        className="absolute inset-0 bg-white"
+        className="absolute inset-0 bg-white h-screen"
         variants={sectionVariants}
         animate={currentSection === 4 ? "visible" : "hidden"}
         transition={{ duration: 0.8 }}
+        style={{ display: allAnimationsComplete ? "none" : "block" }}
       >
         <section className="w-full h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#B9FFFF] to-white px-8 lg:px-16">
           <div className="container mx-auto max-w-7xl flex items-center justify-between">
@@ -586,9 +644,13 @@ export default function ImprovedCopyPage() {
 
       {/* Section 5 - Our Offering For Your Automation Needs */}
       <motion.div
-        className="absolute inset-0 bg-white"
+        className={`${
+          allAnimationsComplete ? "relative" : "absolute inset-0"
+        } bg-white ${!allAnimationsComplete ? "h-screen" : ""}`}
         variants={sectionVariants}
-        animate={currentSection === 5 ? "visible" : "hidden"}
+        animate={
+          currentSection === 5 || allAnimationsComplete ? "visible" : "hidden"
+        }
         transition={{ duration: 0.8 }}
       >
         {/* Conditional rendering based on animation state */}
