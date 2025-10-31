@@ -105,7 +105,7 @@ const GenAIChatbot = () => {
             }}
           >
             <div className="max-w-[57.93rem] mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-[3.3125rem] lg:items-start">
+              <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:items-start">
                 {/* Left Content */}
                 <div className="space-y-0 w-full max-w-[21.56rem]">
                   <div className="text-[#000000] mb-6">
@@ -114,7 +114,7 @@ const GenAIChatbot = () => {
                       Gen AI-Chatbot
                     </h1>
                   </div>
-                  <div className="w-full max-w-[20.43rem] mr-0">
+                  {/* <div className="mr-0"> */}
                     <p className="text-[#000000] font-normal text-sm leading-relaxed tracking-normal">
                       YourHour was originally designed to monitor and reduce
                       daily screen time with alerts. Facing rising demand for
@@ -126,11 +126,11 @@ const GenAIChatbot = () => {
                       and offering companionship—based on how screen time
                       affects health and emotional well-being.
                     </p>
-                  </div>
+                  {/* </div> */}
                 </div>
 
                 {/* Right Content - Chat Interface Image */}
-                <div className="mt-0 lg:-mt-38 w-full flex justify-center">
+                <div className="mt-0 lg:-mt-38 flex justify-center">
                   <div className="relative overflow-hidden h-[40rem] lg:h-[52.48rem] aspect-[1/1.63]">
                     <Image
                       src="/images/YH-MN.gif"
