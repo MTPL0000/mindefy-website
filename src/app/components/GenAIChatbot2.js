@@ -142,7 +142,7 @@ const GenAIChatbot2 = () => {
             id="introduction"
             className="flex items-center mt-18"
           >
-            <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div className="mx-auto p-4 sm:px-6 lg:px-8 w-full">
               <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-start">
                 {/* Left Content */}
                 <div className="space-y-0 w-full max-w-[21.56rem]">
@@ -181,8 +181,9 @@ const GenAIChatbot2 = () => {
               </div>
             </div>
           </section>
+
           {/* Challenges Section */}
-          <section id="challenges" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="challenges" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
               <div className="text-center mb-16">
                 <h2 className="text-2xl font-semibold text-[#21ABE1] ">
@@ -253,7 +254,7 @@ const GenAIChatbot2 = () => {
           </section>
 
           {/* Solutions Section */}
-          <section id="solutions" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="solutions" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
               <div className="text-center mb-10">
                 <h2 className="text-2xl font-semibold uppercase text-[#21ABE1]">
@@ -331,7 +332,7 @@ const GenAIChatbot2 = () => {
           {/* Technical Implementation Section */}
           <section
             id="technical-implementation"
-            className="mb-24 px-4 sm:px-6 md:px-8"
+            className="mb-24 p-4 sm:px-6 md:px-8"
           >
             <div className="max-w-6xl mx-auto w-full">
               <div className="text-center mb-10">
@@ -500,7 +501,7 @@ const GenAIChatbot2 = () => {
           </section>
 
           {/* Technology Stack Section */}
-          <section id="technology-stack" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="technology-stack" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
               <div className="text-center mb-8 sm:mb-12">
                 <h2 className="text-xl sm:text-2xl font-semibold text-[#21ABE1]">

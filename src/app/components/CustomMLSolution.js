@@ -118,7 +118,7 @@ const CustomMLSolution = () => {
           {/* Introduction Section */}
           <section
             id="introduction"
-            className="mb-16 sm:mb-20 lg:mb-24 px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 lg:mt-10"
+            className="mb-16 sm:mb-20 lg:mb-24 p-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 lg:mt-10"
           >
             <div className="max-w-4xl mx-auto">
               <div className="mb-8 sm:mb-10 lg:mb-12">
@@ -153,7 +153,7 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Challenges Section */}
-          <section id="challenges" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="challenges" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-2xl font-semibold text-[#2B7575] mb-4">
@@ -247,7 +247,7 @@ const CustomMLSolution = () => {
 
           {/* Solutions Section */}
           {/* Solutions Section */}
-          <section id="solutions" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="solutions" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-[3.75rem]">
                 <h2 className="text-2xl font-semibold uppercase text-[#2B7575]">
@@ -345,7 +345,7 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Technical Implementation Section */}
-          <section id="technical-implementation" className="mb-24 ">
+          <section id="technical-implementation" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-10">
                 <h2 className="text-2xl font-semibold text-[#2B7575] mb-6">
@@ -477,7 +477,7 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Technology Stack Section */}
-          <section id="technology-stack" className="mb-20 px-4 sm:px-6 lg:px-8">
+          <section id="technology-stack" className="mb-20 p-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8 sm:mb-12">
                 <h2 className="text-xl sm:text-2xl font-semibold text-[#2B7575]">
