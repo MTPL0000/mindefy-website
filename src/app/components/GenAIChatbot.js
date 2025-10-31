@@ -95,17 +95,17 @@ const GenAIChatbot = () => {
         {/* Main Content Area */}
         <div
           className="flex-1 min-w-0"
-          style={{
-            background: "linear-gradient(to bottom, #FFFFFF, #A2E3FB, #FEFEFE)",
-          }}
         >
           {/* Introduction Section */}
           <section
             id="introduction"
-            className="min-h-screen flex items-center lg:pl-80"
+            className="flex items-center mt-18 lg:pl-80"
+            style={{
+              background: "linear-gradient(to bottom, #FFFFFF, #A2E3FB, #FEFEFE)",
+            }}
           >
             <div className="max-w-[57.93rem] mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="flex flex-col lg:flex-row justify-between gap-[3.3125rem] items-center min-h-screen">
+              <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-[3.3125rem] lg:items-start">
                 {/* Left Content */}
                 <div className="space-y-0 w-full max-w-[21.56rem]">
                   <div className="text-[#000000] mb-6">
@@ -130,8 +130,8 @@ const GenAIChatbot = () => {
                 </div>
 
                 {/* Right Content - Chat Interface Image */}
-                <div className="mt-0 lg:-mt-32 w-full flex justify-center">
-                  <div className="relative overflow-hidden h-[40.48rem] aspect-[1/1.63]">
+                <div className="mt-0 lg:-mt-38 w-full flex justify-center">
+                  <div className="relative overflow-hidden h-[40rem] lg:h-[52.48rem] aspect-[1/1.63]">
                     <Image
                       src="/images/YH-MN.gif"
                       alt="Animation"
