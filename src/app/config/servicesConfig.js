@@ -1,28 +1,9 @@
 export const servicesData = [
   //Custom AI
   {
-    id: "gen-ai-chatbot",
-    title: "Gen AI-Chatbot",
-    category: "Custom AI Solutions",
-    route: "/gen-ai-chatbot",
-    component: "GenAIChatbot",
-    description: "Custom AI Chatbot development services",
-    isActive: true, // Already created
-  },
-  {
-    id: "custom-ml-solution",
-    title: "Custom ML Solution",
-    category: "Custom AI Solutions",
-    route: "/custom-ml-solution",
-    component: "CustomMLSolution",
-    description: "Custom ML solution development services",
-    isActive: true, // Already created
-  },
-
-  {
     id: "custom-AI-solution",
     title: "Custom AI Solution",
-    category: "Custom AI Solutions",
+    category: "AI & Data Solutions",
     route: "/custom-AI-solution",
     component: "CustomAISolution",
     description: "Custom AI solution development services",
@@ -32,7 +13,7 @@ export const servicesData = [
   {
     id: "machine-learning",
     title: "Machine Learning",
-    category: "Custom AI Solutions",
+    category: "AI & Data Solutions",
     route: "/machine-learning",
     component: "Machine Learning Solution",
     description: "Custom ML solution development services",
@@ -41,8 +22,8 @@ export const servicesData = [
 
   {
     id: "data-engineering",
-    title: "Data Engineering",
-    category: "Custom AI Solutions",
+    title: "Data Engineering & Analytics",
+    category: "AI & Data Solutions",
     route: "/data-engineering",
     component: "Data Engineering & Analytics",
     description: "Data Engineering & Analytics development services",
@@ -52,7 +33,7 @@ export const servicesData = [
   {
     id: "cloud-engineering",
     title: "Cloud Engineering",
-    category: "Custom AI Solutions",
+    category: "AI & Data Solutions",
     route: "/cloud-engineering",
     component: "Cloud Engineering —Powering AI, Data & Scale",
     description: "Cloud Engineering —Powering AI, Data & Scale",

@@ -54,7 +54,7 @@ export function WhyChooseSection({ data }) {
   };
 
   return (
-    <section className="w-full py-16 md:py-20">
+    <section className="w-full py-12 md:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 xl:px-[8.83rem]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Image Section */}
@@ -97,7 +97,7 @@ export function WhyChooseSection({ data }) {
 
             {/* CTA Button */}
             {data.buttonText && (
-              <div className="pt-2 flex items-center justify-center">
+              <div className="pt-2 flex items-center justify-center mt-8 sm:mt-8">
                 <button
                   onClick={scrollToContact}
                   className="inline-block cursor-pointer bg-[#332771] text-white font-poppins font-medium text-sm sm:text-base px-8 sm:px-10 py-3 sm:py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"

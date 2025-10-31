@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function AIOfferingsSection({ data }) {
   return (
-    <section className="w-full py-16 md:py-25">
+    <section className="w-full py-12 md:py-16"> 
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 xl:px-[8.83rem]">
         <div className="text-center mb-4 lg:mb-8">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 md:mb-8">

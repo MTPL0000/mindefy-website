@@ -351,7 +351,7 @@ export default function Navbar() {
 
               {mobileServicesOpen && (
                 <div className="pl-4 mt-2 space-y-2 text-xs">
-                  {/* Custom AI Solutions */}
+                  {/* AI & Data Solutions */}
                   <div>
                     <button
                       onClick={() => {
@@ -369,7 +369,7 @@ export default function Navbar() {
                       }}
                       className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
                     >
-                      Custom AI Solutions
+                      AI & Data Solutions
                       <Image
                         src="/images/dropdown-icon.png"
                         alt="Dropdown"
@@ -381,22 +381,7 @@ export default function Navbar() {
                       />
                     </button>
                     {mobileCustomAIOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/gen-ai-chatbot"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Gen AI-Chatbot
-                        </Link>
-                        <Link
-                          href="/custom-ml-solution"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Custom ML Solution
-                        </Link>
-
+                      <div className="pl-4 mt-1 space-y-1">                     
                         <Link
                           href="/custom-AI-solution"
                           onClick={handleMobileMenuItemClick}

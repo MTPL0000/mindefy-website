@@ -11,7 +11,7 @@ export const heroData = {
     "AI, ML, and analytics succeed only when data is trusted, timely, and accessible. As a skilled Data Engineering company, we design, build, and optimize enterprise-grade data platforms that turn raw data into reliable, governed, and insight-ready assets.",
   buttonText: "Demo",
   buttonLink: "#demo",
-  backgroundImage: "/images/hero-bg.svg",
+  backgroundImage: "/images/DE-BG.webp",
 };
 
 export const ourEngineerStack = {

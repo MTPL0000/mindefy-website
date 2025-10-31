@@ -4,13 +4,13 @@ import { ImpactDeliveredSection } from "../components/AIML/ImpactDeliveredSectio
 import { WhyAISection } from "../components/AIML/WhyAISection";
 
 export const heroData = {
-  title: "Cloud Engineering —Powering AI, Data & Scale",
+  title: "Cloud Engineering - Powering AI, Data & Scale",
   subtitle: "The cloud is more than infrastructure",
   description:
-    "It’s the foundation for intelligence, speed, and innovation. We design cloud ecosystems that don’t just run your workloads — they fuel AI, accelerate ML, and scale your business with confidence.",
+    "It’s the foundation for intelligence, speed, and innovation. We design cloud ecosystems that don’t just run your workloads - they fuel AI, accelerate ML, and scale your business with confidence.",
   buttonText: "Demo",
   buttonLink: "#demo",
-  backgroundImage: "/images/hero-bg.svg",
+  backgroundImage: "/images/CLD-BG.webp",
 };
 
 export const ourCloudServices = {

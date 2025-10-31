@@ -65,7 +65,7 @@ export function WhyAISection({ data }) {
 
   return (
     <section
-      className="w-full py-16 md:py-30 md:mb-16"
+      className="w-full py-16 md:py-24 md:mb-16"
       style={{
         background:
           "linear-gradient(135deg, #0F172B 0%, #1C398E 50%, #312C85 100%)",
@@ -81,12 +81,12 @@ export function WhyAISection({ data }) {
           </p>
         </div>
 
-        <div className="relative mb-8 md:mb-16">
+        <div className="relative">
           {/* Left scroll button */}
           {canScrollLeft && (
             <button
               onClick={() => scroll("left")}
-              className="flex absolute left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-10 md:h-10 items-center justify-center bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-full backdrop-blur-sm transition-all duration-300 -ml-3 md:-ml-5 shadow-lg"
+              className="cursor-pointer flex absolute left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-10 md:h-10 items-center justify-center bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-full backdrop-blur-sm transition-all duration-300 -ml-3 md:-ml-5 shadow-lg"
               aria-label="Scroll left"
             >
               <svg
@@ -109,7 +109,7 @@ export function WhyAISection({ data }) {
           {canScrollRight && (
             <button
               onClick={() => scroll("right")}
-              className="flex absolute right-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-10 md:h-10 items-center justify-center bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-full backdrop-blur-sm transition-all duration-300 -mr-3 md:-mr-5 shadow-lg"
+              className="cursor-pointer flex absolute right-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-10 md:h-10 items-center justify-center bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-full backdrop-blur-sm transition-all duration-300 -mr-3 md:-mr-5 shadow-lg"
               aria-label="Scroll right"
             >
               <svg
@@ -182,7 +182,7 @@ export function WhyAISection({ data }) {
         </div>
 
         {data.ctaText && (
-          <div className="text-center">
+          <div className="text-center mt-8 md:mt-16">
             <span
               style={{
                 background: "linear-gradient(90deg, #155DFC 0%, #009689 100%)",

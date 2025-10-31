@@ -8,10 +8,12 @@ export const heroData = {
   title: "Machine Learning That Powers Tomorrow",
   subtitle: "Machine Learning isn’t just about algorithms",
   description:
-    " It’s about unlocking intelligence from data. From predicting customer behavior to optimizing global supply chains, our ML expertise transforms raw information into real-time, revenue-driving insights. We build ML systems that learn, adapt, and scale — giving your business the edge in an ever-changing world.",
+    "It’s about unlocking intelligence from data. From predicting customer behavior to optimizing global supply chains, our ML expertise transforms raw information into real-time, revenue-driving insights.",
+  description_1:
+    "We build ML systems that learn, adapt, and scale - giving your business the edge in an ever-changing world.",
   buttonText: "Demo",
   buttonLink: "#demo",
-  backgroundImage: "/images/hero-bg.svg",
+  backgroundImage: "/images/ML-BG.webp",
 };
 
 export const ourMLApart = {
@@ -38,7 +40,7 @@ export const ourMLApart = {
     {
       title: "Trustworthy & Transparent",
       description:
-        "Bias detection, drift monitoring, explainability — we ensure ML you can rely on.",
+        "Bias detection, drift monitoring, explainability - we ensure ML you can rely on.",
       icon: "/images/AI-ML/trustworthy-icon.svg",
     },
     {
@@ -249,7 +251,7 @@ export const ourMLStack = {
 export const businessImpactData = {
   cards: [
     {
-      icon: "/images/AI-ML/chooseUs-img.webp",
+      icon: "/images/AI-ML/ML-img_1.webp",
       title: "The Business Impact",
       subtitle:
         "Our ML isn’t just models in production — it’s business outcomes delivered. We help organizations:",
@@ -269,7 +271,7 @@ export const businessImpactData = {
       ],
     },
     {
-      icon: "/images/AI-ML/positionST-img.webp",
+      icon: "/images/AI-ML/ML-img_2.webp",
       title: "Positioning Statement",
       points: [
         {

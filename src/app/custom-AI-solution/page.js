@@ -9,10 +9,10 @@ export const heroData = {
   title: "Custom AI Solutions",
   subtitle: "Beyond Buzzwords: AI That Works In Production",
   description:
-    "Artificial Intelligence is powerful, but only if it’s applied the right way. We help organizations design and deploy AI solutions that are explainable, secure, and production-ready — not just proofs of concept.",
+    "Artificial Intelligence is powerful, but only if it’s applied the right way. We help organizations design and deploy AI solutions that are explainable, secure, and production-ready - not just proofs of concept.",
   buttonText: "Demo",
   buttonLink: "#demo",
-  backgroundImage: "/images/hero-bg.svg",
+  backgroundImage: "/images/AI-BG.webp",
 };
 
 export const whyAIData = {
