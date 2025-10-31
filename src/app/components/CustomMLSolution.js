@@ -67,6 +67,7 @@ const CustomMLSolution = () => {
     { id: "solutions", label: "Solutions" },
     { id: "technical-implementation", label: "Technical Implementation" },
     { id: "technology-stack", label: "Technology Stack" },
+    { id: "contact", label: "Lets Get In Touch" },
   ];
 
   const handleNavClick = (sectionId) => {
@@ -79,20 +80,20 @@ const CustomMLSolution = () => {
 
   return (
     <div className="min-h-screen bg-[#E9F6F6]">
-      <div className="max-w-[100rem] mx-auto flex flex-col lg:flex-row pt-10">
+      <div className="max-w-screen mx-auto flex flex-col lg:flex-row">
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
         <div className="hidden lg:block w-80 flex-shrink-0 mr-0 lg:mr-5 mb-6 lg:mb-0">
-          <div className="sticky top-10">
+          <div className="sticky top-22">
             <div className="py-8 bg-white shadow-lg h-full">
               <nav className="space-y-1.5">
                 {navigationItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer ${
+                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer border-l-4 ${
                       activeSection === item.id
-                        ? "bg-[#FAFFFA] text-[#2B7575] font-semibold text-base border-l-4"
-                        : "text-[#52B7B7] bg-[#FAFFFA] font-medium text-base border-l-4"
+                        ? "bg-[#FAFFFA] text-[#2B7575] font-semibold text-base border-[#2B7575]"
+                        : "text-[#52B7B7] bg-[#FAFFFA] font-medium text-base border-[#52B7B7]"
                     }`}
                   >
                     {item.label}
@@ -104,7 +105,7 @@ const CustomMLSolution = () => {
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 min-w-0 pt-10">
           {/* Introduction Section */}
           <section
             id="introduction"

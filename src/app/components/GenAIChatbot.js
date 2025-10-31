@@ -73,16 +73,16 @@ const GenAIChatbot = () => {
          <div 
            className={`hidden lg:block w-80 fixed left-0 top-0 h-screen z-10 pt-10 overflow-y-auto transition-all duration-10 ${showNavigation ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
          >
-             <div className="py-8 bg-white shadow-lg h-auto mt-10 rounded-r-lg">
+             <div className="py-8 bg-white shadow-lg h-auto mt-12">
               <nav className="space-y-1.5">
                 {navigationItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer ${
+                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer border-l-4 ${
                       activeSection === item.id
-                        ? "bg-[#FAFFFA] text-[#21ABE1] hover:text-[#21ABE1] font-semibold text-base border-l-4 border-[#21ABE1]"
-                        : "text-[#142E149E] bg-[#FAFFFA] font-medium text-base border-l-4 border-transparent"
+                        ? "bg-[#FAFFFA] text-[#21ABE1] hover:text-[#21ABE1] font-semibold text-base border-[#21ABE1]"
+                        : "text-[#142E149E] bg-[#FAFFFA] font-medium text-base border-[#21ABFF80]"
                     }`}
                   >
                     {item.label}
