@@ -264,7 +264,7 @@ const CustomMLSolution = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
                 {/* Collaborative Filtering */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.368/1]">
                     <Image
                       src="/images/YH-CB5.webp"
                       alt="Collaborative Filtering"
@@ -284,7 +284,7 @@ const CustomMLSolution = () => {
 
                 {/* Content-Based Filtering */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.543/1]">
                     <Image
                       src="/images/YH-CB6.webp"
                       alt="Content-Based Filtering"
@@ -304,7 +304,7 @@ const CustomMLSolution = () => {
 
                 {/* Nutritional Relevance */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.715/1]">
                     <Image
                       src="/images/YH-CB7.webp"
                       alt="Nutritional Relevance"
@@ -323,7 +323,7 @@ const CustomMLSolution = () => {
 
                 {/* Real-Time Integration */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.574/1]">
                     <Image
                       src="/images/YH-CB8.webp"
                       alt="Real-Time Integration"
