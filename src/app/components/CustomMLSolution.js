@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import useHeaderHeight from "@/hooks/useHeaderHeight";
 
 const CustomMLSolution = () => {
+  const headerHeight = useHeaderHeight();
   const [activeSection, setActiveSection] = useState("introduction");
   const [isMobile, setIsMobile] = useState(false);
 
@@ -67,32 +69,40 @@ const CustomMLSolution = () => {
     { id: "solutions", label: "Solutions" },
     { id: "technical-implementation", label: "Technical Implementation" },
     { id: "technology-stack", label: "Technology Stack" },
+    { id: "contact", label: "Lets Get In Touch" },
   ];
 
   const handleNavClick = (sectionId) => {
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
   return (
     <div className="min-h-screen bg-[#E9F6F6]">
-      <div className="max-w-[100rem] mx-auto flex flex-col lg:flex-row pt-10">
+      <div className="max-w-screen mx-auto flex flex-col lg:flex-row">
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
         <div className="hidden lg:block w-80 flex-shrink-0 mr-0 lg:mr-5 mb-6 lg:mb-0">
-          <div className="sticky top-10">
+          <div className="sticky top-22">
             <div className="py-8 bg-white shadow-lg h-full">
               <nav className="space-y-1.5">
                 {navigationItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer ${
+                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer border-l-4 ${
                       activeSection === item.id
-                        ? "bg-[#FAFFFA] text-[#2B7575] font-semibold text-base border-l-4"
-                        : "text-[#52B7B7] bg-[#FAFFFA] font-medium text-base border-l-4"
+                        ? "bg-[#FAFFFA] text-[#2B7575] font-semibold text-base border-[#2B7575]"
+                        : "text-[#52B7B7] bg-[#FAFFFA] font-medium text-base border-[#52B7B7]"
                     }`}
                   >
                     {item.label}
@@ -104,11 +114,11 @@ const CustomMLSolution = () => {
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 min-w-0 pt-10">
           {/* Introduction Section */}
           <section
             id="introduction"
-            className="mb-16 sm:mb-20 lg:mb-24 px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 lg:mt-10"
+            className="mb-16 sm:mb-20 lg:mb-24 p-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 lg:mt-10"
           >
             <div className="max-w-4xl mx-auto">
               <div className="mb-8 sm:mb-10 lg:mb-12">
@@ -143,7 +153,7 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Challenges Section */}
-          <section id="challenges" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="challenges" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-2xl font-semibold text-[#2B7575] mb-4">
@@ -237,7 +247,7 @@ const CustomMLSolution = () => {
 
           {/* Solutions Section */}
           {/* Solutions Section */}
-          <section id="solutions" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="solutions" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-[3.75rem]">
                 <h2 className="text-2xl font-semibold uppercase text-[#2B7575]">
@@ -254,7 +264,7 @@ const CustomMLSolution = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
                 {/* Collaborative Filtering */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.368/1]">
                     <Image
                       src="/images/YH-CB5.webp"
                       alt="Collaborative Filtering"
@@ -274,7 +284,7 @@ const CustomMLSolution = () => {
 
                 {/* Content-Based Filtering */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.543/1]">
                     <Image
                       src="/images/YH-CB6.webp"
                       alt="Content-Based Filtering"
@@ -294,7 +304,7 @@ const CustomMLSolution = () => {
 
                 {/* Nutritional Relevance */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.715/1]">
                     <Image
                       src="/images/YH-CB7.webp"
                       alt="Nutritional Relevance"
@@ -313,7 +323,7 @@ const CustomMLSolution = () => {
 
                 {/* Real-Time Integration */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.574/1]">
                     <Image
                       src="/images/YH-CB8.webp"
                       alt="Real-Time Integration"
@@ -335,7 +345,7 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Technical Implementation Section */}
-          <section id="technical-implementation" className="mb-24 ">
+          <section id="technical-implementation" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-10">
                 <h2 className="text-2xl font-semibold text-[#2B7575] mb-6">
@@ -467,7 +477,7 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Technology Stack Section */}
-          <section id="technology-stack" className="mb-20 px-4 sm:px-6 lg:px-8">
+          <section id="technology-stack" className="mb-20 p-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8 sm:mb-12">
                 <h2 className="text-xl sm:text-2xl font-semibold text-[#2B7575]">
