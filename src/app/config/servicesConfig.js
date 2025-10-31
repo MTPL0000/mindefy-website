@@ -2,7 +2,7 @@ export const servicesData = [
   //Custom AI
   {
     id: "custom-AI-solution",
-    title: "Custom AI Solution",
+    title: "Custom AI Solutions",
     category: "AI & Data Solutions",
     route: "/custom-AI-solution",
     component: "CustomAISolution",

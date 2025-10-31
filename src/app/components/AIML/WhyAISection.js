@@ -136,7 +136,7 @@ export function WhyAISection({ data }) {
             onMouseLeave={handleMouseLeave}
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
-            className="flex overflow-x-auto gap-6 md:gap-8 px-2 pt-3 md:pt-6 pb-4 snap-x snap-mandatory scrollbar-hide md:scrollbar-default active:cursor-grabbing select-none"
+            className="flex overflow-x-auto overflow-x-hidden gap-6 md:gap-8 px-2 pt-3 md:pt-6 pb-4 snap-x snap-mandatory scrollbar-hide md:scrollbar-default active:cursor-grabbing select-none"
             style={{
               scrollbarWidth: "thin",
               scrollbarColor: "#FFFFFF33 transparent",
