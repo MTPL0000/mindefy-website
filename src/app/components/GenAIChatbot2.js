@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import useHeaderHeight from "@/hooks/useHeaderHeight";
 
 const navigationItems = [
   { id: "introduction", label: "Introduction" },
@@ -12,6 +13,7 @@ const navigationItems = [
 ];
 
 const GenAIChatbot2 = () => {
+  const headerHeight = useHeaderHeight();
   const [activeSection, setActiveSection] = useState("introduction");
   const [isMobile, setIsMobile] = useState(false);
   const [introductionHeight, setIntroductionHeight] = useState(0);
@@ -88,11 +90,16 @@ const GenAIChatbot2 = () => {
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
-
-  console.log("Introduction section height:", introductionHeight);
 
   return (
     <div className="min-h-screen">
