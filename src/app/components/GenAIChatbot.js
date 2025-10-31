@@ -169,7 +169,7 @@ const GenAIChatbot = () => {
 
                 {/* Right Content - Chat Interface Image */}
                 <div className="mt-0 lg:-mt-38 flex justify-center">
-                  <div className="relative overflow-hidden h-[40rem] lg:h-[52.48rem] aspect-[1/1.63]">
+                  <div className="relative overflow-hidden h-[23rem] sm:h-[30rem] lg:h-[52.48rem] aspect-[1/1.63]">
                     <Image
                       src="/images/YH-MN.gif"
                       alt="Animation"
@@ -270,7 +270,7 @@ const GenAIChatbot = () => {
               {/* Solution Cards Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                 {/* Content-Based Filtering */}
-                <div className="text-center max-w-[20rem] ml-10  mx-auto">
+                <div className="text-center max-w-[20rem] ml-10 mx-auto">
                   <div className="relative mx-auto mb-4 w-[9.25rem] h-[7.87rem]">
                     <Image
                       src="/images/YH-CB4.png"
