@@ -235,7 +235,7 @@ export const aiOfferingsData = {
 
 export const whyChooseData = {
   title: "Why Enterprises Choose Us",
-  image: "/images/AI-ML/chooseUS-img.webp",
+  image: "/images/AI-ML/chooseUs-img.webp",
   points: [
     {
       text: "Full-Stack AI Expertise – From generative design to predictive intelligence.",
