@@ -183,7 +183,7 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Challenges Section */}
-          <section id="challenges" className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 p-4 sm:px-6 md:px-8">
+          <section id="challenges" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
               <div className="text-center mb-16">
                 <h2 className="text-2xl font-semibold text-[#21ABE1] ">
@@ -254,7 +254,7 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Solutions Section */}
-          <section id="solutions" className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 p-4 sm:px-6 md:px-8">
+          <section id="solutions" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
               <div className="text-center mb-10">
                 <h2 className="text-2xl font-semibold uppercase text-[#21ABE1]">
@@ -332,7 +332,7 @@ const GenAIChatbot = () => {
           {/* Technical Implementation Section */}
           <section
             id="technical-implementation"
-            className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 p-4 sm:px-6 md:px-8"
+            className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8"
           >
             <div className="max-w-6xl mx-auto w-full">
               <div className="text-center mb-10">
@@ -501,7 +501,7 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Technology Stack Section */}
-          <section id="technology-stack" className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 p-4 sm:px-6 md:px-8">
+          <section id="technology-stack" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
               <div className="text-center mb-8 sm:mb-12">
                 <h2 className="text-xl sm:text-2xl font-semibold text-[#21ABE1]">
