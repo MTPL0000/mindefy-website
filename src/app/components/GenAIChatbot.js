@@ -172,7 +172,7 @@ const GenAIChatbot = () => {
                   <div className="relative overflow-hidden h-[23rem] sm:h-[30rem] lg:h-[52.48rem] aspect-[1/1.63]">
                     <Image
                       src="/images/YH-MN.gif"
-                      alt="Animation"
+                      alt="YourHour App with AI Chatbot"
                       fill
                       className="object-contain"
                     />
@@ -193,12 +193,12 @@ const GenAIChatbot = () => {
 
               {/* Challenge Cards Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-                {/* Card 1 */}
+                {/* Card 1: Mental Health Risks from Screen Overuse */}
                 <div className="text-center w-full max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[55/63]">
                     <Image
-                      src="/images/YH-CB1.png"
-                      alt="Limited Browsing Time"
+                      src="/images/YH-CB1.svg"
+                      alt="Mental Health Risks from Screen Overuse"
                       fill
                     />
                   </div>
@@ -212,12 +212,12 @@ const GenAIChatbot = () => {
                   </p>
                 </div>
 
-                {/* Card 2 */}
+                {/* Card 2: Demand for Interactive Support */}
                 <div className="text-center w-full max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.875rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[16618/12600]">
                     <Image
-                      src="/images/YH-CB2.png"
-                      alt="Lower Cart Value"
+                      src="/images/YH-CB2.svg"
+                      alt="Demand for Interactive Support"
                       fill
                     />
                   </div>
@@ -231,12 +231,12 @@ const GenAIChatbot = () => {
                   </p>
                 </div>
 
-                {/* Card 3 */}
+                {/* Card 3: Building a Trustworthy Knowledge Base */}
                 <div className="text-center w-full max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.87rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[6209/6300]">
                     <Image
-                      src="/images/YH-CB3.png"
-                      alt="Need for Smart Suggestions"
+                      src="/images/YH-CB3.svg"
+                      alt="Building a Trustworthy Knowledge Base"
                       fill
                     />
                   </div>
@@ -269,12 +269,12 @@ const GenAIChatbot = () => {
 
               {/* Solution Cards Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                {/* Content-Based Filtering */}
+                {/* Knowledge-Augmented Q&A */}
                 <div className="text-center max-w-[20rem] ml-10 mx-auto">
-                  <div className="relative mx-auto mb-4 w-[9.25rem] h-[7.87rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[2477/2100]">
                     <Image
                       src="/images/YH-CB4.png"
-                      alt="Content-Based Filtering"
+                      alt="Knowledge-Augmented Q&A"
                       fill
                     />
                   </div>
@@ -289,12 +289,12 @@ const GenAIChatbot = () => {
                   </p>
                 </div>
 
-                {/* Nutritional Relevance */}
+                {/* Companionship & Personalized Advice */}
                 <div className="text-center max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[4063/3150]">
                     <Image
                       src="/images/YH-CB5.png"
-                      alt="Nutritional Relevance"
+                      alt="Companionship & Personalized Advice"
                       fill
                     />
                   </div>
@@ -307,12 +307,12 @@ const GenAIChatbot = () => {
                   </p>
                 </div>
 
-                {/* Real-Time Integration */}
+                {/* Holistic Well-being Focus */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.87rem] h-[7.87rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[12671/12600]">
                     <Image
                       src="/images/YH-CB6.png"
-                      alt="Real-Time Integration"
+                      alt="Holistic Well-being Focus"
                       fill
                     />
                   </div>
