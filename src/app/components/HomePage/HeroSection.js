@@ -56,8 +56,32 @@ export default function HeroSection() {
   const tickerRef = useRef(null);
   const [rowWidth, setRowWidth] = useState(0);
 
+  // State for AI animation
+  const aiRef = useRef(null);
+  // stores scroll progress (0 to 1)
+  const [scrollProgress, setScrollProgress] = useState(0);
+  // State for responsive base font size
+  const [baseFontSize, setBaseFontSize] = useState(3.75);
+  // State for hiding the "&" text
+  const [hideAmpersand, setHideAmpersand] = useState(false);
+
+  // Calculate responsive base font size
+  const getBaseFontSize = () => {
+    if (typeof window === "undefined") return 3.75;
+    const width = window.innerWidth;
+    // text-3xl = 1.875rem (mobile, < 640px)
+    // text-4xl = 2.25rem (sm, 640px - 768px)
+    // text-5xl = 3rem (md, 768px - 1024px)
+    // text-6xl = 3.75rem (lg, 1024px+)
+    if (width < 640) return 1.875;
+    if (width < 768) return 2.25;
+    if (width < 1024) return 3;
+    return 3.75;
+  };
+
   // Function to scroll to contact section
   const scrollToContact = () => {
+    // Function to calculate and scroll to contact section
     const performScroll = (attempt = 1) => {
       const contactSection = document.getElementById("contact");
 
@@ -66,24 +90,33 @@ export default function HeroSection() {
         return;
       }
 
+      // Wait for any ongoing layout changes to complete
       requestAnimationFrame(() => {
+        // Force layout recalculation
         void contactSection.offsetHeight;
 
+        // Get current positions
         const rect = contactSection.getBoundingClientRect();
         const scrollY =
           window.pageYOffset || document.documentElement.scrollTop;
 
+        // Calculate absolute position from top of document
         const absoluteTop = rect.top + scrollY;
+
+        // Account for navbar (120px) and add small buffer
         const targetPosition = Math.max(0, absoluteTop - 120);
 
+        // Perform smooth scroll
         window.scrollTo({
           top: targetPosition,
           behavior: "smooth",
         });
 
+        // Verify scroll worked correctly
         if (attempt === 1) {
           setTimeout(() => {
             const newRect = contactSection.getBoundingClientRect();
+            // If element is not near the top of viewport, try again once
             if (newRect.top > 200) {
               performScroll(2);
             }
@@ -92,6 +125,7 @@ export default function HeroSection() {
       });
     };
 
+    // Initial delay to ensure page is stable
     setTimeout(() => performScroll(), 200);
   };
 
@@ -100,31 +134,114 @@ export default function HeroSection() {
       if (tickerRef.current) {
         setRowWidth((tickerRef.current.scrollWidth + 20) / 2); // Only one set of logos
       }
+      setBaseFontSize(getBaseFontSize());
     }
     updateWidth();
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);
   }, []);
 
+  // Scroll handler for AI animation - calculates smooth progress
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSection = document.querySelector("[data-hero-section]");
+      if (!heroSection || !aiRef.current) return;
+
+      const viewportHeight = window.innerHeight;
+
+      // Calculate scroll progress
+      const scrollY = window.scrollY || window.pageYOffset;
+      const scrollStart = 0;
+      const scrollEnd = viewportHeight * 0.3;
+
+      let progress = 0;
+
+      if (scrollY >= scrollStart && scrollY <= scrollEnd) {
+        progress = (scrollY - scrollStart) / (scrollEnd - scrollStart);
+        progress = Math.max(0, Math.min(1, progress));
+      } else if (scrollY > scrollEnd) {
+        progress = 1;
+      }
+
+      setScrollProgress(progress);
+
+      // Hide ampersand when scroll progress reaches 0.3 (30%)
+      setHideAmpersand(progress > 0.3);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   // Duration based on width (optional: 100px/sec)
   const duration = rowWidth ? rowWidth / 100 : 20;
 
+  // Calculate transform values based on scroll progress
+  const translateX = -800 * scrollProgress;
+  const translateY = -200 * scrollProgress;
+  const scale = 1 - 0.25 * scrollProgress;
+
+  // Calculate font size based on scroll progress
+  const minFontSize = baseFontSize * 0.4;
+  const fontSize = baseFontSize - (baseFontSize - minFontSize) * scrollProgress;
+
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-r from-[#f3f4ff] via-[#FFFFFF] to-[#fff3f0] flex flex-col items-center justify-center text-center pt-20 pb-10 lg:pt-0 lg:pb-0 lg:min-h-screen">
+    <section
+      data-hero-section
+      className="relative w-full overflow-hidden bg-gradient-to-r from-[#f3f4ff] via-[#FFFFFF] to-[#fff3f0] flex flex-col items-center justify-center text-center pt-20 pb-10 lg:pt-0 lg:pb-0 lg:min-h-screen"
+    >
       {/* Heading Section */}
       <div className="px-4 max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 md:gap-10 lg:gap-15">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-poppins leading-tight mt-8 transition-all duration-300 ease-out">
-          <span className="text-[#F6BC34]">Your Partner For </span>
-          {/* AI text for large view - Simple black text */}
-          <span className="inline-block text-black font-bold">AI</span>
-          {/* Ampersand with smooth fade animation */}
-          <span className="text-black transition-all duration-300 ease-out">
-            {" "}
-            &{" "}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-poppins leading-tight">
+          <span
+            className="text-[#F6BC34]"
+            style={{ textAlign: hideAmpersand && "center" }}
+          >
+            Your Partner For
           </span>
-
+          {/* AI text for large view */}
+          <span
+            ref={aiRef}
+            className="hidden lg:inline-block relative mx-5"
+            style={{
+              background:
+                "linear-gradient(89.88deg, #2E33A6 1.23%, #3D2F8A 49.84%, #B3472E 98.44%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              transform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
+              fontSize: `${fontSize}rem`,
+              transition: "transform 0.3s ease-out, font-size 0.3s ease-out",
+              zIndex: scrollProgress > 0 ? 10 : 1,
+              position: "relative",
+            }}
+          >
+            AI
+          </span>
+          {/* AI text for small view */}
+          <span className="lg:hidden text-black"> AI </span>
+          <span
+            className="hidden lg:inline-block text-black transition-opacity duration-300"
+            style={{ opacity: hideAmpersand ? 0 : 1 }}
+          >
+            &
+          </span>
+          {/* & text for small view */}
+          <span className="lg:hidden text-black">
+            &
+          </span>
           <br />
-          <span className="text-[#0BB1E9]">Custom Software Development</span>
+          <span
+            className="text-[#0BB1E9]"
+            style={{
+              transition: "transform 0.5s ease-out",
+              transform: hideAmpersand ? "translateX(-2rem)" : "translateX(0)",
+            }}
+          >
+            Custom Software Development
+          </span>
         </h1>
 
         <p className="text-[#424242] font-medium font-poppins text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
