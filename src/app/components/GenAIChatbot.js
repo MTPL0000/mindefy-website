@@ -105,15 +105,16 @@ const GenAIChatbot = () => {
     <div className="min-h-screen">
       <div className="max-w-screen mx-auto flex flex-col lg:flex-row">
         <div
-          className="absolute top-22 left-0 w-full -z-10"
+          className="absolute left-0 w-full -z-10"
           style={{
             height: `${introductionHeight}px`,
+            top: `${headerHeight}px`,
             background: "linear-gradient(to bottom, #FFFFFF, #A2E3FB, #FEFEFE)",
           }}
         ></div>
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
         <div className="hidden lg:block w-80 flex-shrink-0 mr-0 mb-6 lg:mb-0 relative">
-          <div className="sticky top-22">
+          <div className="sticky" style={{ top: `${headerHeight}px` }}>
             <div className="py-8 bg-white shadow-lg h-full">
               <nav className="space-y-1.5">
                 {navigationItems.map((item) => (

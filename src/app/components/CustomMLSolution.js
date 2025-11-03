@@ -92,7 +92,7 @@ const CustomMLSolution = () => {
       <div className="max-w-screen mx-auto flex flex-col lg:flex-row">
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
         <div className="hidden lg:block w-80 flex-shrink-0 mr-0 lg:mr-5 mb-6 lg:mb-0">
-          <div className="sticky top-22">
+          <div className="sticky" style={{ top: `${headerHeight}px` }}>
             <div className="py-8 bg-white shadow-lg h-full">
               <nav className="space-y-1.5">
                 {navigationItems.map((item) => (
