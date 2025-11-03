@@ -285,7 +285,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[1.543/1]">
                     <Image
-                      src="/images/cmls-CB6.svg"
+                      src="/images/cmls-CB6.png"
                       alt="Content-Based Filtering"
                       fill
                     />
