@@ -358,7 +358,7 @@ const CustomMLSolution = () => {
               </div>
 
               {/* Implementation Steps Grid */}
-              <div className="flex flex-wrap justify-center gap-x-5 gap-y-8">
+              <div className="flex flex-wrap justify-center gap-x-20 gap-y-8">
                 {/* Step 1 */}
                 <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
