@@ -168,9 +168,9 @@ const CustomMLSolution = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
                 {/* Limited Browsing Time */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[4183/4200]">
                     <Image
-                      src="/images/cmls-CB1.webp"
+                      src="/images/cmls-CB1.svg"
                       alt="Limited Browsing Time"
                       fill
                     />
@@ -187,9 +187,9 @@ const CustomMLSolution = () => {
 
                 {/* Lower Cart Value */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[697/630]">
                     <Image
-                      src="/images/cmls-CB2.webp"
+                      src="/images/cmls-CB2.svg"
                       alt="Lower Cart Value"
                       fill
                     />
@@ -208,7 +208,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
                     <Image
-                      src="/images/cmls-CB3.webp"
+                      src="/images/cmls-CB3.svg"
                       alt="Need for Smart Suggestions"
                       fill
                     />
@@ -227,7 +227,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
                     <Image
-                      src="/images/cmls-CB4.webp"
+                      src="/images/cmls-CB4.svg"
                       alt="Risk to Conversions and AOV"
                       fill
                     />
@@ -245,7 +245,6 @@ const CustomMLSolution = () => {
             </div>
           </section>
 
-          {/* Solutions Section */}
           {/* Solutions Section */}
           <section id="solutions" className="mb-24 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto">
@@ -266,7 +265,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[1.368/1]">
                     <Image
-                      src="/images/YH-CB5.webp"
+                      src="/images/cmls-CB5.svg"
                       alt="Collaborative Filtering"
                       fill
                     />
@@ -286,7 +285,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[1.543/1]">
                     <Image
-                      src="/images/YH-CB6.webp"
+                      src="/images/cmls-CB6.svg"
                       alt="Content-Based Filtering"
                       fill
                     />
@@ -306,7 +305,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[1.715/1]">
                     <Image
-                      src="/images/YH-CB7.webp"
+                      src="/images/cmls-CB7.svg"
                       alt="Nutritional Relevance"
                       fill
                     />
@@ -325,7 +324,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[1.574/1]">
                     <Image
-                      src="/images/YH-CB8.webp"
+                      src="/images/cmls-CB8.svg"
                       alt="Real-Time Integration"
                       fill
                     />
