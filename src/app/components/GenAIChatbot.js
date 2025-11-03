@@ -354,7 +354,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I1.svg"
-                        alt="Data Collection"
+                        alt="Research and data collection"
                         fill
                       />
                     </div>
@@ -373,7 +373,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I2.svg"
-                        alt="Feature Engineering"
+                        alt="Data curation and Preprocessing"
                         fill
                       />
                     </div>
@@ -392,7 +392,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I3.svg"
-                        alt="Similarity Computation"
+                        alt="Model selection and fine-tuning"
                         fill
                       />
                     </div>
@@ -411,7 +411,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I4.svg"
-                        alt="Recommendation Logic"
+                        alt="LangChain RAG pipeline integration"
                         fill
                       />
                     </div>
@@ -430,7 +430,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I5.svg"
-                        alt="Real-Time Service"
+                        alt="Vector store deployment"
                         fill
                       />
                     </div>
@@ -449,7 +449,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I6.svg"
-                        alt="Monitoring & Retraining"
+                        alt="AWS deployment"
                         fill
                       />
                     </div>
@@ -467,7 +467,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I7.svg"
-                        alt="Monitoring & Retraining"
+                        alt="Secure chat flow"
                         fill
                       />
                     </div>
@@ -485,7 +485,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I8.svg"
-                        alt="Monitoring & Retraining"
+                        alt="Privacy and Compliance"
                         fill
                       />
                     </div>
@@ -534,7 +534,7 @@ const GenAIChatbot = () => {
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
                         <Image
                           src="/images/YH_TS2.svg"
-                          alt="Python programming language"
+                          alt="LangChain"
                           fill
                         />
                       </div>
@@ -546,7 +546,7 @@ const GenAIChatbot = () => {
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
                         <Image
                           src="/images/YH_TS3.svg"
-                          alt="Jupyter notebook"
+                          alt="Streamlit"
                           fill
                         />
                       </div>
@@ -567,7 +567,7 @@ const GenAIChatbot = () => {
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
                         <Image
                           src="/images/YH_TS4.svg"
-                          alt="AWS SageMaker"
+                          alt="OpenAI"
                           fill
                         />
                       </div>
@@ -589,7 +589,7 @@ const GenAIChatbot = () => {
                   <div className="grid grid-cols-2 sm:flex sm:justify-center sm:gap-4 lg:gap-8 gap-4 sm:flex-wrap">
                     <div className="text-center">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                        <Image src="/images/YH_TS5.svg" alt="AWS Lambda" fill />
+                        <Image src="/images/YH_TS5.svg" alt="Meta" fill />
                       </div>
                       <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                         Meta
@@ -599,7 +599,7 @@ const GenAIChatbot = () => {
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
                         <Image
                           src="/images/YH_TS6.svg"
-                          alt="AWS Kinesis"
+                          alt="Chroma"
                           fill
                         />
                       </div>
@@ -618,7 +618,7 @@ const GenAIChatbot = () => {
                   <div className="flex justify-center gap-4 sm:gap-6 lg:gap-8">
                     <div className="text-center">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                        <Image src="/images/YH_TS7.svg" alt="JavaScript" fill />
+                        <Image src="/images/YH_TS7.svg" alt="Elastic Beanstalk" fill />
                       </div>
                       <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                         Elastic Beanstalk
@@ -626,7 +626,7 @@ const GenAIChatbot = () => {
                     </div>
                     <div className="text-center">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                        <Image src="/images/YH_TS8.svg" alt="JavaScript" fill />
+                        <Image src="/images/YH_TS8.svg" alt="Simple Storage Service" fill />
                       </div>
                       <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                         Simple Storage Service
@@ -634,7 +634,7 @@ const GenAIChatbot = () => {
                     </div>
                     <div className="text-center">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                        <Image src="/images/YH_TS9.svg" alt="HTML" fill />
+                        <Image src="/images/YH_TS9.svg" alt="CloudWatch" fill />
                       </div>
                       <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                         CloudWatch
