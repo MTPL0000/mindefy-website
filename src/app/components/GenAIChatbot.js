@@ -273,7 +273,7 @@ const GenAIChatbot = () => {
                 <div className="text-center max-w-[20rem] ml-10 mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[2477/2100]">
                     <Image
-                      src="/images/YH-CB4.png"
+                      src="/images/YH-CB4.svg"
                       alt="Knowledge-Augmented Q&A"
                       fill
                     />
@@ -293,7 +293,7 @@ const GenAIChatbot = () => {
                 <div className="text-center max-w-[20rem] mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[4063/3150]">
                     <Image
-                      src="/images/YH-CB5.png"
+                      src="/images/YH-CB5.svg"
                       alt="Companionship & Personalized Advice"
                       fill
                     />
@@ -311,7 +311,7 @@ const GenAIChatbot = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[12671/12600]">
                     <Image
-                      src="/images/YH-CB6.png"
+                      src="/images/YH-CB6.svg"
                       alt="Holistic Well-being Focus"
                       fill
                     />
