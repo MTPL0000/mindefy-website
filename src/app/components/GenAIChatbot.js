@@ -115,7 +115,7 @@ const GenAIChatbot = () => {
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
         <div className="hidden lg:block w-80 flex-shrink-0 mr-0 mb-6 lg:mb-0 relative">
           <div className="sticky" style={{ top: `${headerHeight}px` }}>
-            <div className="py-8 bg-white shadow-lg h-full">
+            <div className="py-8 bg-white shadow-[2px_2px_12px_0px_rgba(0,0,0,0.2)] h-full">
               <nav className="space-y-1.5">
                 {navigationItems.map((item) => (
                   <button
