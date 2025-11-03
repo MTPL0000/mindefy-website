@@ -128,7 +128,7 @@ const CustomMLSolution = () => {
                 <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-8 sm:mb-10 lg:mb-12 text-[#000000] leading-tight">
                   ML Driven Recommendations
                 </p>
-                <p className="text-[#000000] mb-4 sm:mb-6 font-normal text-sm sm:text-base leading-relaxed text-left px-2 sm:px-0">
+                <p className="text-[#000000] mb-4 sm:mb-6 font-normal text-sm sm:text-base leading-relaxed text-center lg:text-left px-2 sm:px-0">
                   EarlyFoods, an e-commerce platform offering millet-based
                   products for new and expecting mothers, found customers
                   missing relevant items—limiting cart value. To solve this, we
@@ -155,7 +155,7 @@ const CustomMLSolution = () => {
           {/* Challenges Section */}
           <section id="challenges" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
+              <div className="text-center mb-12 lg:mb-16">
                 <h2 className="text-2xl font-semibold text-[#2B7575] mb-4">
                   CHALLENGES
                 </h2>
@@ -248,8 +248,8 @@ const CustomMLSolution = () => {
           {/* Solutions Section */}
           <section id="solutions" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-[3.75rem]">
-                <h2 className="text-2xl font-semibold uppercase text-[#2B7575]">
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold uppercase text-[#2B7575] mb-4">
                   Solutions
                 </h2>
                 <h1 className="text-[1.25rem] font-normal text-[#333333] max-w-[45.25rem] mx-auto">
@@ -346,8 +346,8 @@ const CustomMLSolution = () => {
           {/* Technical Implementation Section */}
           <section id="technical-implementation" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-10">
-                <h2 className="text-2xl font-semibold text-[#2B7575] mb-6">
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold text-[#2B7575] mb-4">
                   TECHNICAL IMPLEMENTATION
                 </h2>
                 <h1 className="text-[1.25rem] font-normal text-[#333333]">
@@ -478,7 +478,7 @@ const CustomMLSolution = () => {
           {/* Technology Stack Section */}
           <section id="technology-stack" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-8 sm:mb-12">
+              <div className="text-center mb-12 lg:mb-16">
                 <h2 className="text-xl sm:text-2xl font-semibold text-[#2B7575]">
                   TECHNOLOGY STACK
                 </h2>

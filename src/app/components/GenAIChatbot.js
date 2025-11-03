@@ -140,20 +140,20 @@ const GenAIChatbot = () => {
           <section
             ref={introductionRef}
             id="introduction"
-            className="flex items-center mt-18"
+            className="flex items-center mt-10 sm:mt-12 md:mt-14 lg:mt-18"
           >
             <div className="mx-auto p-4 sm:px-6 lg:px-8 w-full">
               <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-start">
                 {/* Left Content */}
-                <div className="space-y-0 w-full max-w-[21.56rem]">
+                <div className="space-y-0 w-full lg:max-w-[37.14%]">
                   <div className="text-[#000000] mb-6">
-                    <p className="font-bold text-sm mb-4">CASE STUDY</p>
-                    <h1 className="text-[1.86rem] font-semibold ">
+                    <p className="font-bold text-sm mb-4 text-center lg:text-left">CASE STUDY</p>
+                    <h1 className="text-[1.86rem] font-semibold text-center lg:text-left">
                       Gen AI-Chatbot
                     </h1>
                   </div>
                   {/* <div className="mr-0"> */}
-                  <p className="text-[#000000] font-normal text-sm leading-relaxed tracking-normal">
+                  <p className="text-[#000000] font-normal text-sm leading-relaxed tracking-normal text-center lg:text-left">
                     YourHour was originally designed to monitor and reduce daily
                     screen time with alerts. Facing rising demand for mental
                     health support, the team enhanced the app by integrating a
@@ -185,8 +185,8 @@ const GenAIChatbot = () => {
           {/* Challenges Section */}
           <section id="challenges" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
-              <div className="text-center mb-16">
-                <h2 className="text-2xl font-semibold text-[#21ABE1] ">
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold text-[#21ABE1]">
                   CHALLENGES
                 </h2>
               </div>
@@ -256,8 +256,8 @@ const GenAIChatbot = () => {
           {/* Solutions Section */}
           <section id="solutions" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
-              <div className="text-center mb-10">
-                <h2 className="text-2xl font-semibold uppercase text-[#21ABE1]">
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-4">
                   Solutions
                 </h2>
                 <h1 className="text-[1.25rem] font-normal leading-12 text-[#333333] max-w-[45.25rem] mx-auto">
@@ -270,7 +270,7 @@ const GenAIChatbot = () => {
               {/* Solution Cards Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                 {/* Knowledge-Augmented Q&A */}
-                <div className="text-center max-w-[20rem] ml-10 mx-auto">
+                <div className="text-center max-w-[20rem] mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[2477/2100]">
                     <Image
                       src="/images/YH-CB4.svg"
@@ -335,8 +335,8 @@ const GenAIChatbot = () => {
             className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8"
           >
             <div className="max-w-6xl mx-auto w-full">
-              <div className="text-center mb-10">
-                <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-6">
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-4">
                   TECHNICAL IMPLEMENTATION
                 </h2>
                 <h1 className="text-[1.25rem] font-normal leading-9 text-[#333333]">
@@ -503,7 +503,7 @@ const GenAIChatbot = () => {
           {/* Technology Stack Section */}
           <section id="technology-stack" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
-              <div className="text-center mb-8 sm:mb-12">
+              <div className="text-center mb-12 lg:mb-16">
                 <h2 className="text-xl sm:text-2xl font-semibold text-[#21ABE1]">
                   TECHNOLOGY STACK
                 </h2>
