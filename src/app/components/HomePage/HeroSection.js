@@ -64,6 +64,8 @@ export default function HeroSection() {
   const [baseFontSize, setBaseFontSize] = useState(3.75);
   // State for hiding the "&" text
   const [hideAmpersand, setHideAmpersand] = useState(false);
+  // State to check if device is desktop
+  const [isDesktop, setIsDesktop] = useState(false);
 
   // Calculate responsive base font size
   const getBaseFontSize = () => {
@@ -77,6 +79,12 @@ export default function HeroSection() {
     if (width < 768) return 2.25;
     if (width < 1024) return 3;
     return 3.75;
+  };
+
+  // Check if device is desktop (lg breakpoint = 1024px)
+  const checkIsDesktop = () => {
+    if (typeof window === "undefined") return false;
+    return window.innerWidth >= 1024;
   };
 
   // Function to scroll to contact section
@@ -135,15 +143,19 @@ export default function HeroSection() {
         setRowWidth((tickerRef.current.scrollWidth + 20) / 2); // Only one set of logos
       }
       setBaseFontSize(getBaseFontSize());
+      setIsDesktop(checkIsDesktop());
     }
     updateWidth();
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);
   }, []);
 
-  // Scroll handler for AI animation - calculates smooth progress
+  // Scroll handler for AI animation - only active on desktop
   useEffect(() => {
     const handleScroll = () => {
+      // Only run animation on desktop devices
+      if (!isDesktop) return;
+
       const heroSection = document.querySelector("[data-hero-section]");
       if (!heroSection || !aiRef.current) return;
 
@@ -173,19 +185,21 @@ export default function HeroSection() {
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isDesktop]);
 
   // Duration based on width (optional: 100px/sec)
   const duration = rowWidth ? rowWidth / 100 : 20;
 
-  // Calculate transform values based on scroll progress
-  const translateX = -800 * scrollProgress;
-  const translateY = -200 * scrollProgress;
-  const scale = 1 - 0.25 * scrollProgress;
+  // Calculate transform values based on scroll progress (only for desktop)
+  const translateX = isDesktop ? -800 * scrollProgress : 0;
+  const translateY = isDesktop ? -200 * scrollProgress : 0;
+  const scale = isDesktop ? 1 - 0.25 * scrollProgress : 1;
 
-  // Calculate font size based on scroll progress
+  // Calculate font size based on scroll progress (only for desktop)
   const minFontSize = baseFontSize * 0.4;
-  const fontSize = baseFontSize - (baseFontSize - minFontSize) * scrollProgress;
+  const fontSize = isDesktop
+    ? baseFontSize - (baseFontSize - minFontSize) * scrollProgress
+    : baseFontSize;
 
   return (
     <section
@@ -194,43 +208,33 @@ export default function HeroSection() {
     >
       {/* Heading Section */}
       <div className="px-4 max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 md:gap-10 lg:gap-15">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-poppins leading-tight">
-          <span
-            className="text-[#F6BC34]"
-            style={{ textAlign: hideAmpersand && "center" }}
-          >
-            Your Partner For
-          </span>
-          {/* AI text for large view */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-poppins leading-tight mt-4">
+          <span className="text-[#F6BC34] text-center">Your Partner For</span>
+
+          {/* AI text for large view only - with animation */}
           <span
             ref={aiRef}
-            className="hidden lg:inline-block relative mx-5"
+            className="hidden lg:inline-block text-black relative mx-5"
             style={{
-              background:
-                "linear-gradient(89.88deg, #2E33A6 1.23%, #3D2F8A 49.84%, #B3472E 98.44%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
               transform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
               fontSize: `${fontSize}rem`,
-              transition: "transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94), font-size 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              transition: "transform 0.3s ease-out, font-size 0.3s ease-out",
               zIndex: scrollProgress > 0 ? 10 : 1,
               position: "relative",
-              willChange: "transform, font-size",
             }}
           >
             AI
           </span>
           {/* AI text for small view */}
-          <span className="lg:hidden text-black"> AI </span>
+          <span className="lg:hidden text-black mx-3">AI</span>
+          {/* & text for large view only - with fade animation */}
           <span
-            className="hidden lg:inline-block text-black transition-opacity duration-300"
-            style={{ opacity: hideAmpersand ? 0 : 1 }}
+            className="hidden lg:inline-block text-black transition-all duration-300"
+            style={{
+              opacity: hideAmpersand ? 0 : 1,
+              display: hideAmpersand ? "none" : "inline-block",
+            }}
           >
-            &
-          </span>
-          {/* & text for small view */}
-          <span className="lg:hidden text-black">
             &
           </span>
           <br />

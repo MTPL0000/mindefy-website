@@ -231,7 +231,7 @@ export default function Navbar() {
               width: showAIInNavbar ? "auto" : "0px",
               opacity: showAIInNavbar ? 1 : 0,
               transition: "width 0.5s ease-out, opacity 0.5s ease-out",
-              marginRight: "6px",
+              marginRight: "24px",
             }}
           >
             <Link
@@ -245,21 +245,25 @@ export default function Navbar() {
                   : "translateX(0)",
                 transition: "transform 0.5s ease-out",
                 position: "relative",
-                paddingLeft: "16px",
-                paddingRight: "16px",
               }}
             >
               <span className="relative z-10 font-semibold text-black">AI</span>
 
-              {/* Glow Effect Line Animation */}
+              {/* Outer Glow Gradient Circle */}
               <div
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full z-0"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 z-0 rounded-2xl"
                 style={{
-                  background: "conic-gradient(from 0deg, #1E99FE 0deg, #6A38F5 90deg, #EB8145 180deg, #EA245A 270deg, #1E99FE 360deg)",
-                  animation: "glowLineAnimation 5s linear infinite",
-                  filter: "blur(10px)",
+                  background: `conic-gradient(
+                    from 0deg,
+                    rgba(30, 153, 254, 0.8),
+                    rgba(106, 56, 245, 0.8),
+                    rgba(235, 129, 69, 0.8),
+                    rgba(234, 36, 90, 0.8)
+                  )`,
+                  filter: "blur(8px)", // Creates soft glow
+                  animation: "rotateGradientReverse 5s linear infinite",
                 }}
-              ></div>           
+              ></div>
             </Link>
           </div>
 
@@ -470,7 +474,7 @@ export default function Navbar() {
                       />
                     </button>
                     {mobileCustomAIOpen && (
-                      <div className="pl-4 mt-1 space-y-1">                     
+                      <div className="pl-4 mt-1 space-y-1">
                         <Link
                           href="/custom-AI-solution"
                           onClick={handleMobileMenuItemClick}
