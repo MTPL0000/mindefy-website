@@ -358,9 +358,9 @@ const CustomMLSolution = () => {
               </div>
 
               {/* Implementation Steps Grid */}
-              <div className="flex flex-wrap justify-center gap-x-20 gap-y-8">
+              <div className="flex flex-wrap justify-center gap-x-5 gap-y-8">
                 {/* Step 1 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -369,17 +369,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7.5  font-normal text-[#3894FF26]">
                       1
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 mb-[3.25rem] text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Data Collection
                   </h3>
                 </div>
 
                 {/* Step 2 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -388,17 +388,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7.5  font-normal text-[#3894FF26]">
                       2
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Feature Engineering
                   </h3>
                 </div>
 
                 {/* Step 3 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -407,17 +407,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7.5  font-normal text-[#3894FF26]">
                       3
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Similarity <br /> Computation
                   </h3>
                 </div>
 
                 {/* Step 4 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -426,17 +426,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7  font-normal text-[#3894FF26]">
                       4
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Recommendation <br /> Logic
                   </h3>
                 </div>
 
                 {/* Step 5 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -445,17 +445,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7 font-normal text-[#3894FF26]">
                       5
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 mb-[3.75rem] text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Real-Time Service
                   </h3>
                 </div>
 
                 {/* Step 6 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -464,11 +464,11 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7.5  font-normal text-[#3894FF26]">
                       6
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Monitoring & <br /> Retraining
                   </h3>
                 </div>
