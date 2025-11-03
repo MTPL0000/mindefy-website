@@ -337,7 +337,7 @@ const GenAIChatbot = () => {
             <div className="max-w-6xl mx-auto w-full">
               <div className="text-center mb-10">
                 <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-6">
-                  Implementation
+                  TECHNICAL IMPLEMENTATION
                 </h2>
                 <h1 className="text-[1.25rem] font-normal leading-9 text-[#333333]">
                   The project was completed in 2 weeks following an agile,
