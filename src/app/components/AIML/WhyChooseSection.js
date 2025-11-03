@@ -110,7 +110,7 @@ export function WhyChooseSection({ data }) {
         </div>
         {data.ctaText && (
           <div className="text-center mt-8">
-            <span className="inline-block border border-[#332771] text-[#332771] px-7 py-3 rounded-full font-semibold text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <span className="inline-block border border-[#332771] text-[#332771] font-poppins px-7 py-3 rounded-full font-semibold text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105">
               {data.ctaText}
             </span>
           </div>
