@@ -235,7 +235,7 @@ const GenAIChatbot = () => {
                 <div className="text-center w-full max-w-[20rem] mx-auto">
                   <div className="relative mx-auto mb-4 h-32 aspect-[6209/6300]">
                     <Image
-                      src="/images/YH-CB3.svg"
+                      src="/images/YH-CB3.png"
                       alt="Building a Trustworthy Knowledge Base"
                       fill
                     />
