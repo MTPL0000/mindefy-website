@@ -31,11 +31,11 @@ export function ImpactDeliveredSection({ data }) {
                   />
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">
+                <h3 className="text-lg sm:text-xl font-bold font-poppins text-gray-900 mb-4">
                   {impact.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-700 font-poppins leading-relaxed">
                   {impact.description}
                 </p>
               </div>
@@ -45,7 +45,7 @@ export function ImpactDeliveredSection({ data }) {
 
         {data.ctaText && (
           <div className="text-center mt-10 md:mt-20">
-            <span className="inline-block border border-[#332771] text-[#332771] px-7 py-3 rounded-full font-semibold text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <span className="inline-block border border-[#332771] text-[#332771] font-poppins px-7 py-3 rounded-full font-semibold text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105">
               {data.ctaText}
             </span>
           </div>

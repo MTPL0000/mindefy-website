@@ -32,16 +32,16 @@ export default function BusinessImpactSection({ data }) {
               <ul className="space-y-2 text-left w-full max-w-md">
                 {/* Subtitle */}
                 {card.subtitle && (
-                  <p className="text-left text-base sm:text-xl font-semibold text-[#444444] max-w-md">
+                  <p className="text-left text-base sm:text-xl font-semibold font-poppins text-[#444444] max-w-md">
                     {card.subtitle}
                   </p>
                 )}
                 {card.points.map((point, pointIndex) => (
                   <li key={pointIndex} className="flex items-start gap-2">
-                    <span className="text-black-600 font-semibold text-base sm:text-lg flex-shrink-0 mt-0.5">
+                    <span className="text-black-600 font-normal text-base sm:text-lg font-poppins flex-shrink-0 mt-0.5">
                       •
                     </span>
-                    <span className="text-base sm:text-xl font-semibold text-[#444444] leading-relaxed">
+                    <span className="text-base sm:text-xl font-normal text-[#444444] font-poppins leading-relaxed">
                       {point.text}
                     </span>
                   </li>
@@ -53,7 +53,7 @@ export default function BusinessImpactSection({ data }) {
 
         {/* Note */}
         <div className="text-center mt-12 sm:mt-20">
-          <span className="inline-block border border-[#332771] text-[#332771] px-7 py-3 rounded-full font-semibold text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105">
+          <span className="inline-block border border-[#332771] text-[#332771] px-7 py-3 rounded-full font-semibold text-sm md:text-base font-poppins hover:shadow-lg transition-all duration-300 hover:scale-105">
             {data.noteText}
           </span>
         </div>

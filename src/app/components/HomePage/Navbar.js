@@ -188,13 +188,6 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-baseline space-x-2 md:space-x-3 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
-          <a
-            href="/about-us"
-            className="hover:text-[#2c2178] whitespace-nowrap"
-          >
-            About Us
-          </a>
-
           {/* Services with dropdown */}
           <div
             className="relative"
@@ -323,14 +316,6 @@ export default function Navbar() {
       >
         <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="flex flex-col gap-4 text-sm font-medium text-[#3B3C4A] p-4">
-            <a
-              href="/about-us"
-              onClick={handleMobileMenuItemClick}
-              className="hover:text-[#2c2178] py-2"
-            >
-              About Us
-            </a>
-
             {/* Mobile Services Dropdown */}
             <div>
               <button
