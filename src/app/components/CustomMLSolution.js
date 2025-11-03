@@ -170,7 +170,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
                     <Image
-                      src="/images/YH-CB1.webp"
+                      src="/images/cmls-CB1.webp"
                       alt="Limited Browsing Time"
                       fill
                     />
@@ -189,7 +189,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
                     <Image
-                      src="/images/YH-CB2.webp"
+                      src="/images/cmls-CB2.webp"
                       alt="Lower Cart Value"
                       fill
                     />
@@ -208,7 +208,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
                     <Image
-                      src="/images/YH-CB3.webp"
+                      src="/images/cmls-CB3.webp"
                       alt="Need for Smart Suggestions"
                       fill
                     />
@@ -227,7 +227,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
                     <Image
-                      src="/images/YH-CB4.webp"
+                      src="/images/cmls-CB4.webp"
                       alt="Risk to Conversions and AOV"
                       fill
                     />
