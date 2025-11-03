@@ -213,9 +213,10 @@ export default function HeroSection() {
               backgroundClip: "text",
               transform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
               fontSize: `${fontSize}rem`,
-              transition: "transform 0.3s ease-out, font-size 0.3s ease-out",
+              transition: "transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94), font-size 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
               zIndex: scrollProgress > 0 ? 10 : 1,
               position: "relative",
+              willChange: "transform, font-size",
             }}
           >
             AI

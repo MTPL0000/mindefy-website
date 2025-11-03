@@ -251,14 +251,13 @@ export default function Navbar() {
             >
               <span className="relative z-10 font-semibold text-black">AI</span>
 
-              {/* Outer Glow Gradient Circle */}
+              {/* Glow Effect Line Animation */}
               <div
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full z-0"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full z-0"
                 style={{
-                  background:
-                    "conic-gradient(from 0deg, #1E99FE, #6A38F5, #EB8145, #EA245A)",
-                  filter: "blur(4px)", // Creates soft glow
-                  animation: "rotateGradientReverse 5s linear infinite",
+                  background: "conic-gradient(from 0deg, #1E99FE 0deg, #6A38F5 90deg, #EB8145 180deg, #EA245A 270deg, #1E99FE 360deg)",
+                  animation: "glowLineAnimation 5s linear infinite",
+                  filter: "blur(10px)",
                 }}
               ></div>           
             </Link>

@@ -35,3 +35,30 @@ html {
     transform: rotate(-360deg);
   }
 }
+
+@keyframes glowLineAnimation {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 12px #1E99FE, 0 0 15px rgba(30, 153, 254, 0.3);
+  }
+
+  25% {
+    transform: rotate(90deg);
+    box-shadow: 0 0 12px #6A38F5, 0 0 15px rgba(106, 56, 245, 0.3);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0 0 12px #EB8145, 0 0 15px rgba(235, 129, 69, 0.3);
+  }
+
+  75% {
+    transform: rotate(270deg);
+    box-shadow: 0 0 12px #EA245A, 0 0 15px rgba(234, 36, 90, 0.3);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 12px #1E99FE, 0 0 15px rgba(30, 153, 254, 0.3);
+  }
+}
