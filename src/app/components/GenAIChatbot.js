@@ -143,9 +143,9 @@ const GenAIChatbot = () => {
             className="flex items-center mt-18"
           >
             <div className="mx-auto p-4 sm:px-6 lg:px-8 w-full">
-              <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-start">
+              <div className="flex flex-col gap-6  md:gap-8 lg:gap-18 justify-center items-center lg:flex-row lg:justify-center lg:items-start">
                 {/* Left Content */}
-                <div className="space-y-0 w-full max-w-[21.56rem]">
+                <div className="space-y-0 w-full max-w-[21.56rem] ml-6">
                   <div className="text-[#000000] mb-6">
                     <p className="font-bold text-sm mb-4">CASE STUDY</p>
                     <h1 className="text-[1.86rem] font-semibold ">
