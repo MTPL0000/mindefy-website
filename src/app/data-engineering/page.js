@@ -87,34 +87,38 @@ export const worldImpact = {
     {
       icon: "/images/AI-ML/glob-icon.svg",
       title: "E-Commerce",
-      description: "Unified customer 360 views for personalized marketing",
+      description:
+        "Unify customer data across platforms to build reliable 360° profiles - powering recommendation engines, campaign targeting, and real-time analytics.",
     },
     {
       icon: "/images/AI-ML/health-icon.svg",
       title: "Healthcare",
       description:
-        "HIPAA-compliant pipelines that accelerate research & care delivery",
+        "Enable secure, HIPAA-compliant data pipelines that integrate clinical, research, and IoT data - improving decision-making and care delivery.",
     },
     {
       icon: "/images/AI-ML/retail-icon.svg",
       title: "Financial Service",
-      description: "Real-time fraud detection powered by streaming data",
+      description:
+        "Streamline high-volume data streams to detect anomalies, monitor transactions in real time, and maintain audit-ready compliance.",
     },
     {
       icon: "/images/AI-ML/telecom.svg",
       title: "Telecom & Media",
-      description: "Lakehouses that power personalization & churn reduction",
+      description:
+        "Consolidate streaming, user, and engagement data into scalable lakehouses - driving churn prediction, content optimization, and personalization.",
     },
     {
       icon: "/images/AI-ML/manufactur-icon.svg",
       title: "Manufacturing",
-      description: "IoT-driven insights from connected machines",
+      description:
+        "Collect and process sensor data from connected equipment to enable predictive maintenance, process optimization, and downtime reduction.",
     },
   ],
 };
 
 export const positioningStatement = {
-  title: "Positioning Statement",
+  title: "Our Capabilities",
   subTitle:
     "We’re not a generic IT partner. We are career data engineers who know how to:",
   image: "/images/AI-ML/positionST-img.webp",
