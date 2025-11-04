@@ -354,7 +354,7 @@ export default function ImprovedCopyPage() {
 
             {/* Final Position Layer - Slide up animation with all content */}
             <motion.div
-              className="flex flex-col items-center justify-center w-full"
+              className="flex flex-col items-center justify-center w-full py-5"
               style={{
                 y: Math.max(0, (1 - Math.max(0, Math.min(1, section3ScrollProgress - 2.5))) * 100),
                 opacity: Math.max(0, Math.min(1, section3ScrollProgress - 2.5)),
