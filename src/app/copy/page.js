@@ -161,7 +161,7 @@ export default function ImprovedCopyPage() {
         
         // Calculate progress based on scroll position
         const scrollDistance = window.scrollY - triggerPoint + headerHeight;
-        const animationDuration = window.innerHeight * 2; // Longer animation window (2x viewport)
+        const animationDuration = window.innerHeight * 1.5; // Longer animation window (2x viewport)
         
         if (scrollDistance >= 0 && scrollDistance <= animationDuration) {
           console.log(scrollDistance, animationDuration, window.innerHeight)
@@ -467,7 +467,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-6-wrapper"
         style={{
-          minHeight: '300vh',
+          minHeight: 'calc(100vh + 1500px)',
           position: 'relative'
         }}
         className="w-full bg-white"
