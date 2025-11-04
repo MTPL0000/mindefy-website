@@ -73,6 +73,7 @@ export default function ImprovedCopyPage() {
   const [section3Progress, setSection3Progress] = useState(0);
   const [section5Progress, setSection5Progress] = useState(0);
   const [section6Progress, setSection6Progress] = useState(0);
+  const [section3ScrollProgress, setSection3ScrollProgress] = useState(0);
   const headerHeight = useHeaderHeight('nav');
 
   // console.log(section6Progress)
@@ -135,12 +136,25 @@ export default function ImprovedCopyPage() {
         }
       }
 
-      // Calculate section 3 progress (Cards section)
-      const section3Element = document.getElementById("section-3");
-      if (section3Element) {
-        const rect = section3Element.getBoundingClientRect();
-        const elementProgress = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
-        setSection3Progress(Math.floor(elementProgress * 6)); // 0-6 steps
+      // Calculate section 3 scroll progress (Cards section)
+      const section3WrapperElement = document.getElementById("section-3-wrapper");
+      if (section3WrapperElement) {
+        const wrapperRect = section3WrapperElement.getBoundingClientRect();
+        const wrapperTop = window.scrollY + wrapperRect.top;
+        const triggerPoint = wrapperTop; // When wrapper reaches header
+        
+        // Calculate progress based on scroll position
+        const scrollDistance = window.scrollY - triggerPoint + headerHeight;
+        const animationDuration = window.innerHeight * 1.5; // Longer animation window (1.5x viewport)
+        
+        if (scrollDistance >= 0 && scrollDistance <= animationDuration) {
+          const progress = scrollDistance / animationDuration;
+          setSection3ScrollProgress(progress * 4); // Continuous progress 0-4 for smooth animation
+        } else if (scrollDistance > animationDuration) {
+          setSection3ScrollProgress(4); // Keep at max
+        } else {
+          setSection3ScrollProgress(0); // Reset before trigger
+        }
       }
 
       // Calculate section 5 progress (Offerings section)
@@ -177,7 +191,7 @@ export default function ImprovedCopyPage() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [headerHeight, zoomControls, contentZoomControls, cardControls]);
+  }, [headerHeight, zoomControls, contentZoomControls, cardControls, section3ScrollProgress]);
 
   // Animation variants for cleaner code
   const sectionVariants = {
@@ -262,92 +276,137 @@ export default function ImprovedCopyPage() {
         </div>
       </div>
 
-      {/* Cards Section */}
+      {/* Cards Section - Wrapper with scroll-based animation */}
       <div
-        id="section-3"
-        className="w-full min-h-screen bg-[#FFFFFF] flex items-center justify-center py-20 relative"
-        // style={{ zIndex: 20 }}
+        id="section-3-wrapper"
+        style={{
+          minHeight: 'calc(100vh + 1500px)',
+          position: 'relative'
+        }}
+        className="w-full bg-white"
       >
-        <div className="w-full flex flex-col items-center justify-center px-16">
-          {/* Title */}
-          <motion.h2
-            className="font-poppins font-medium text-[1.5rem] tracking-[20%] text-[#FF5225] mb-4"
-            animate={{
-              opacity: section3Progress >= 0 ? 1 : 0,
-              y: section3Progress >= 0 ? 0 : 50,
-            }}
-            transition={{ duration: 0.4 }}
+        {/* Sticky container */}
+        <div
+          id="section-3"
+          style={{ 
+            position: 'sticky',
+            top: `${headerHeight}px`,
+            height: `calc(100vh - ${headerHeight}px)`,
+            zIndex: 10,
+            width: '100%',
+            backgroundColor: 'white',
+          }}
+        >
+          <motion.div
+            className="flex flex-col items-center justify-center px-16 h-full overflow-hidden relative"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.8 } }}
           >
-            What sets Us apart
-          </motion.h2>
-
-          {/* Subtitle (word by word) */}
-          <div className="flex justify-center items-center space-x-4 mb-6">
-            {["Smart.", "Scalable.", "Strategic."].map((word, index) => (
-              <motion.span
-                key={word}
-                className="font-poppins font-normal text-[2.5rem] text-[#3D3D3D]"
-                initial={{ opacity: 0, x: index === 0 ? -80 : 80 }}
-                animate={{
-                  opacity:
-                    section3Progress >= index + 1 ? 1 : 0,
-                  x:
-                    section3Progress >= index + 1
-                      ? 0
-                      : index === 0
-                      ? -80
-                      : 80,
+            {/* Center Animation Layer - Title and subtitle animate in center */}
+            <motion.div
+              className="absolute inset-0 flex flex-col items-center justify-center"
+              style={{
+                opacity: section3ScrollProgress < 2.5 ? 1 : 0,
+              }}
+              transition={{ duration: 0.5 }}
+            >
+              {/* Title - zoom in from center */}
+              <motion.h2
+                className="font-poppins font-medium text-[1.5rem] tracking-[20%] text-[#FF5225] mb-4"
+                style={{
+                  scale: section3ScrollProgress < 1 ? Math.max(0, section3ScrollProgress) : 1,
+                  opacity: section3ScrollProgress < 1 ? Math.max(0, section3ScrollProgress) : 1,
                 }}
-                transition={{
-                  duration: 0.6,
-                  ease: "easeOut",
-                  delay: index * 0.1,
-                }}
+                transition={{ type: 'spring', stiffness: 100, damping: 20 }}
               >
-                {word}
-              </motion.span>
-            ))}
-          </div>
+                What sets Us apart
+              </motion.h2>
 
-          {/* Description */}
-          <motion.p
-            className="font-inter font-normal text-base text-center text-[#444444] mb-8 max-w-3xl mx-auto"
-            animate={{
-              opacity: section3Progress >= 4 ? 1 : 0,
-              y: section3Progress >= 4 ? 0 : 50,
-            }}
-            transition={{ duration: 0.5 }}
-          >
-            We don't just deliver AI and data solutions — we engineer
-            enterprise-grade intelligence systems that align with your business
-            vision and drive measurable value.
-          </motion.p>
+              {/* Subtitle - Smart slides from left, Scalable & Strategic staggered from right */}
+              <div className="flex justify-center items-center space-x-4 mb-6">
+                {["Smart.", "Scalable.", "Strategic."].map((word, index) => {
+                  const wordProgress = Math.max(0, Math.min(1, section3ScrollProgress - 1 - (index > 0 ? (index - 1) * 0.3 : 0)));
+                  let translateX = 0;
+                  
+                  if (index === 0) {
+                    // Smart - slides from left
+                    translateX = (1 - wordProgress) * -200;
+                  } else {
+                    // Scalable & Strategic - slide from right (staggered)
+                    translateX = (1 - wordProgress) * 200;
+                  }
 
-          {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl">
-            {cardData.map((card, index) => (
-              <motion.div
-                key={index}
-                className="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center justify-center gap-6 text-center min-h-70"
-                initial={{ opacity: 0, y: 100 }}
-                animate={{
-                  opacity: section3Progress >= 5 ? 1 : 0,
-                  y: section3Progress >= 5 ? 0 : 100,
-                }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-              >
-                <div className="w-12 h-12 flex items-center justify-center">
-                  <img src={card.icon} alt={card.title} className="w-full" />
-                </div>
-                <h3 className="text-xl font-poppins font-semibold text-[#FF5225]">
-                  {card.title}
-                </h3>
-                <p className="text-sm font-poppins text-gray-600">
-                  {card.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+                  return (
+                    <motion.span
+                      key={word}
+                      className="font-poppins font-normal text-[2.5rem] text-[#3D3D3D]"
+                      style={{
+                        x: translateX,
+                        opacity: wordProgress,
+                      }}
+                      transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+                    >
+                      {word}
+                    </motion.span>
+                  );
+                })}
+              </div>
+            </motion.div>
+
+            {/* Final Position Layer - Slide up animation with all content */}
+            <motion.div
+              className="flex flex-col items-center justify-center w-full"
+              style={{
+                y: Math.max(0, (1 - Math.max(0, Math.min(1, section3ScrollProgress - 2.5))) * 100),
+                opacity: Math.max(0, Math.min(1, section3ScrollProgress - 2.5)),
+              }}
+              transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+            >
+              {/* Title at final position */}
+              <h2 className="font-poppins font-medium text-[1.5rem] tracking-[20%] text-[#FF5225] mb-4">
+                What sets Us apart
+              </h2>
+
+              {/* Subtitle at final position */}
+              <div className="flex justify-center items-center space-x-4 mb-6">
+                {["Smart.", "Scalable.", "Strategic."].map((word) => (
+                  <span
+                    key={word}
+                    className="font-poppins font-normal text-[2.5rem] text-[#3D3D3D]"
+                  >
+                    {word}
+                  </span>
+                ))}
+              </div>
+
+              {/* Description */}
+              <p className="font-inter font-normal text-base text-center text-[#444444] mb-8 max-w-3xl mx-auto">
+                We don't just deliver AI and data solutions — we engineer
+                enterprise-grade intelligence systems that align with your business
+                vision and drive measurable value.
+              </p>
+
+              {/* Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
+                {cardData.map((card, index) => (
+                  <div
+                    key={index}
+                    className="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center justify-center gap-6 text-center min-h-70"
+                  >
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={card.icon} alt={card.title} className="w-full" />
+                    </div>
+                    <h3 className="text-xl font-poppins font-semibold text-[#FF5225]">
+                      {card.title}
+                    </h3>
+                    <p className="text-sm font-poppins text-gray-600">
+                      {card.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
 
