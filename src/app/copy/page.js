@@ -557,7 +557,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-6-wrapper"
         style={{
-          minHeight: 'calc(100vh + 1500px)',
+          minHeight: 'calc(100vh + 1000px)',
           position: 'relative'
         }}
         className="w-full bg-white"
@@ -605,8 +605,9 @@ export default function ImprovedCopyPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
                   {offersCards.map((card, index) => {
                     // Calculate column translation based on section6Progress
-                    const columnProgress = Math.max(0, Math.min(1, section6Progress - index));
-                    const translateY = (1 - columnProgress) * 800; // Slide up from 800px below
+                    // First column (index 0) is fixed, others animate
+                    const columnProgress = index === 0 ? 1 : Math.max(0, Math.min(1, section6Progress - (index - 1)));
+                    const translateY = index === 0 ? 0 : (1 - columnProgress) * 450; // Only animate columns 1, 2, 3
 
                     return (
                       <motion.div
