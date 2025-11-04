@@ -1,7 +1,6 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import { useRef, useEffect, useState, useCallback } from "react";
-import { scroller } from "react-scroll";
 import { useHeaderHeight } from "@/hooks/useHeaderHeight";
 
 const cardData = [
