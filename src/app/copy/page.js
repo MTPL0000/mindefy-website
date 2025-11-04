@@ -484,7 +484,6 @@ export default function ImprovedCopyPage() {
             backgroundColor: 'white',
           }}
         >
-          {/* Initial heading phase */}
           <motion.div
             className="flex flex-col px-6 md:px-10 lg:px-16 pt-16 pb-5 h-full overflow-hidden"
             initial={{ opacity: 0 }}
@@ -510,51 +509,52 @@ export default function ImprovedCopyPage() {
               </h3>
             </motion.div>
 
-            {/* Responsive 4-column cards */}
+            {/* Responsive 4-column cards with staggered scroll animation */}
             <div className="flex items-center justify-center flex-1">
               <div className="w-full max-w-7xl mx-auto bg-white">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
-                  {offersCards.map((card, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: index === 0 ? 1 : 0, y: index === 0 ? 0 : 100 }}
-                      animate={
-                        section6Progress > index || index === 0
-                          ? {
-                              opacity: 1,
-                              y: 0,
-                              transition: { duration: 0.8, ease: "easeOut" },
-                            }
-                          : { opacity: 0, y: 100 }
-                      }
-                      className={`group py-8 px-2.5 flex flex-col justify-between bg-white h-[34rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
-                    >
-                      <div>
-                        <h4 className="text-3xl font-normal text-[#332771] mb-6 text-left font-poppins">
-                          {card.title}
-                        </h4>
-                        <p className="text-base text-[#D84326] mb-6 text-left leading-relaxed font-poppins">
-                          {card.text}
-                        </p>
-                      </div>
-                      <a
-                        href={card.link}
-                        className="w-fit flex items-center text-left text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
-                        onMouseEnter={(e) =>
-                          e.currentTarget
-                            .closest(".group")
-                            .classList.add("hovered")
-                        }
-                        onMouseLeave={(e) =>
-                          e.currentTarget
-                            .closest(".group")
-                            .classList.remove("hovered")
-                        }
+                  {offersCards.map((card, index) => {
+                    // Calculate column translation based on section6Progress
+                    const columnProgress = Math.max(0, Math.min(1, section6Progress - index));
+                    const translateY = (1 - columnProgress) * 600; // Slide up from 600px below
+
+                    return (
+                      <motion.div
+                        key={index}
+                        className={`group py-8 px-2.5 flex flex-col justify-between bg-white h-[34rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
+                        style={{
+                          transform: `translateY(${translateY}px)`,
+                          opacity: 1,
+                        }}
+                        transition={{ type: 'spring', stiffness: 100, damping: 20 }}
                       >
-                        Learn More <span className="ml-2">→</span>
-                      </a>
-                    </motion.div>
-                  ))}
+                        <div>
+                          <h4 className="text-3xl font-normal text-[#332771] mb-6 text-left font-poppins">
+                            {card.title}
+                          </h4>
+                          <p className="text-base text-[#D84326] mb-6 text-left leading-relaxed font-poppins">
+                            {card.text}
+                          </p>
+                        </div>
+                        <a
+                          href={card.link}
+                          className="w-fit flex items-center text-left text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
+                          onMouseEnter={(e) =>
+                            e.currentTarget
+                              .closest(".group")
+                              .classList.add("hovered")
+                          }
+                          onMouseLeave={(e) =>
+                            e.currentTarget
+                              .closest(".group")
+                              .classList.remove("hovered")
+                          }
+                        >
+                          Learn More <span className="ml-2">→</span>
+                        </a>
+                      </motion.div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
