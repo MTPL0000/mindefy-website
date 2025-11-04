@@ -500,7 +500,7 @@ export default function ImprovedCopyPage() {
       {/* Case Study 2 - ML Driven Recommendations */}
       <div
         id="section-5"
-        className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#B9FFFF] to-white px-6 sm:px-8 lg:px-16 py-10"
+        className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-6 sm:px-8 lg:px-16 py-10"
       >
         <section className="w-full min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-16 py-10">
           <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-8">
