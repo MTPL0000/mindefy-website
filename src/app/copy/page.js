@@ -544,13 +544,13 @@ export default function ImprovedCopyPage() {
           }}
         >
           <motion.div
-            className="flex flex-col px-6 md:px-10 lg:px-16 pt-16 pb-5 h-full overflow-hidden"
+            className="flex flex-col px-6 md:px-10 lg:px-16 pt-8 pb-5 h-full overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.8 } }}
           >
             {/* Heading */}
             <motion.div
-              className="text-center font-poppins mb-12 md:mb-16"
+              className="text-center font-poppins mb-8 md:mb-10"
               initial={{ opacity: 0, y: -20 }}
               animate={{
                 opacity: 1,
