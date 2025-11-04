@@ -105,16 +105,17 @@ const GenAIChatbot = () => {
     <div className="min-h-screen">
       <div className="max-w-screen mx-auto flex flex-col lg:flex-row">
         <div
-          className="absolute top-22 left-0 w-full -z-10"
+          className="absolute left-0 w-full -z-10"
           style={{
             height: `${introductionHeight}px`,
+            top: `${headerHeight}px`,
             background: "linear-gradient(to bottom, #FFFFFF, #A2E3FB, #FEFEFE)",
           }}
         ></div>
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
         <div className="hidden lg:block w-80 flex-shrink-0 mr-0 mb-6 lg:mb-0 relative">
-          <div className="sticky top-22">
-            <div className="py-8 bg-white shadow-lg h-full">
+          <div className="sticky" style={{ top: `${headerHeight}px` }}>
+            <div className="py-8 bg-white shadow-[2px_2px_12px_0px_rgba(0,0,0,0.2)] h-full">
               <nav className="space-y-1.5">
                 {navigationItems.map((item) => (
                   <button
@@ -140,20 +141,20 @@ const GenAIChatbot = () => {
           <section
             ref={introductionRef}
             id="introduction"
-            className="flex items-center mt-18"
+            className="flex items-center mt-10 sm:mt-12 md:mt-14 lg:mt-18"
           >
             <div className="mx-auto p-4 sm:px-6 lg:px-8 w-full">
               <div className="flex flex-col gap-6  md:gap-8 lg:gap-18 justify-center items-center lg:flex-row lg:justify-center lg:items-start">
                 {/* Left Content */}
                 <div className="space-y-0 w-full max-w-[21.56rem] ml-6">
                   <div className="text-[#000000] mb-6">
-                    <p className="font-bold text-sm mb-4">CASE STUDY</p>
-                    <h1 className="text-[1.86rem] font-semibold ">
+                    <p className="font-bold text-sm mb-4 text-center lg:text-left">CASE STUDY</p>
+                    <h1 className="text-[1.86rem] font-semibold text-center lg:text-left">
                       Gen AI-Chatbot
                     </h1>
                   </div>
                   {/* <div className="mr-0"> */}
-                  <p className="text-[#000000] font-normal text-sm leading-relaxed tracking-normal">
+                  <p className="text-[#000000] font-normal text-sm leading-relaxed tracking-normal text-center lg:text-left">
                     YourHour was originally designed to monitor and reduce daily
                     screen time with alerts. Facing rising demand for mental
                     health support, the team enhanced the app by integrating a
@@ -172,7 +173,7 @@ const GenAIChatbot = () => {
                   <div className="relative overflow-hidden h-[23rem] sm:h-[30rem] lg:h-[52.48rem] aspect-[1/1.63]">
                     <Image
                       src="/images/YH-MN.gif"
-                      alt="Animation"
+                      alt="YourHour App with AI Chatbot"
                       fill
                       className="object-contain"
                     />
@@ -183,22 +184,22 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Challenges Section */}
-          <section id="challenges" className="mb-24 p-4 sm:px-6 md:px-8">
+          <section id="challenges" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
-              <div className="text-center mb-16">
-                <h2 className="text-2xl font-semibold text-[#21ABE1] ">
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold text-[#21ABE1]">
                   CHALLENGES
                 </h2>
               </div>
 
               {/* Challenge Cards Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-                {/* Card 1 */}
+                {/* Card 1: Mental Health Risks from Screen Overuse */}
                 <div className="text-center w-full max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[55/63]">
                     <Image
-                      src="/images/YH-CB1.png"
-                      alt="Limited Browsing Time"
+                      src="/images/YH-CB1.svg"
+                      alt="Mental Health Risks from Screen Overuse"
                       fill
                     />
                   </div>
@@ -212,12 +213,12 @@ const GenAIChatbot = () => {
                   </p>
                 </div>
 
-                {/* Card 2 */}
+                {/* Card 2: Demand for Interactive Support */}
                 <div className="text-center w-full max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.875rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[16618/12600]">
                     <Image
-                      src="/images/YH-CB2.png"
-                      alt="Lower Cart Value"
+                      src="/images/YH-CB2.svg"
+                      alt="Demand for Interactive Support"
                       fill
                     />
                   </div>
@@ -231,12 +232,12 @@ const GenAIChatbot = () => {
                   </p>
                 </div>
 
-                {/* Card 3 */}
+                {/* Card 3: Building a Trustworthy Knowledge Base */}
                 <div className="text-center w-full max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.87rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[6209/6300]">
                     <Image
                       src="/images/YH-CB3.png"
-                      alt="Need for Smart Suggestions"
+                      alt="Building a Trustworthy Knowledge Base"
                       fill
                     />
                   </div>
@@ -254,10 +255,10 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Solutions Section */}
-          <section id="solutions" className="mb-24 p-4 sm:px-6 md:px-8">
+          <section id="solutions" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
-              <div className="text-center mb-10">
-                <h2 className="text-2xl font-semibold uppercase text-[#21ABE1]">
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-4">
                   Solutions
                 </h2>
                 <h1 className="text-[1.25rem] font-normal leading-12 text-[#333333] max-w-[45.25rem] mx-auto">
@@ -269,12 +270,12 @@ const GenAIChatbot = () => {
 
               {/* Solution Cards Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                {/* Content-Based Filtering */}
-                <div className="text-center max-w-[20rem] ml-10 mx-auto">
-                  <div className="relative mx-auto mb-4 w-[9.25rem] h-[7.87rem]">
+                {/* Knowledge-Augmented Q&A */}
+                <div className="text-center max-w-[20rem] mx-auto">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[2477/2100]">
                     <Image
-                      src="/images/YH-CB4.png"
-                      alt="Content-Based Filtering"
+                      src="/images/YH-CB4.svg"
+                      alt="Knowledge-Augmented Q&A"
                       fill
                     />
                   </div>
@@ -289,12 +290,12 @@ const GenAIChatbot = () => {
                   </p>
                 </div>
 
-                {/* Nutritional Relevance */}
+                {/* Companionship & Personalized Advice */}
                 <div className="text-center max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[4063/3150]">
                     <Image
-                      src="/images/YH-CB5.png"
-                      alt="Nutritional Relevance"
+                      src="/images/YH-CB5.svg"
+                      alt="Companionship & Personalized Advice"
                       fill
                     />
                   </div>
@@ -307,12 +308,12 @@ const GenAIChatbot = () => {
                   </p>
                 </div>
 
-                {/* Real-Time Integration */}
+                {/* Holistic Well-being Focus */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.87rem] h-[7.87rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[12671/12600]">
                     <Image
-                      src="/images/YH-CB6.png"
-                      alt="Real-Time Integration"
+                      src="/images/YH-CB6.svg"
+                      alt="Holistic Well-being Focus"
                       fill
                     />
                   </div>
@@ -332,12 +333,12 @@ const GenAIChatbot = () => {
           {/* Technical Implementation Section */}
           <section
             id="technical-implementation"
-            className="mb-24 p-4 sm:px-6 md:px-8"
+            className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8"
           >
             <div className="max-w-6xl mx-auto w-full">
-              <div className="text-center mb-10">
-                <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-6">
-                  Implementation
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-4">
+                  TECHNICAL IMPLEMENTATION
                 </h2>
                 <h1 className="text-[1.25rem] font-normal leading-9 text-[#333333]">
                   The project was completed in 2 weeks following an agile,
@@ -353,7 +354,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I1.svg"
-                        alt="Data Collection"
+                        alt="Research and data collection"
                         fill
                       />
                     </div>
@@ -372,7 +373,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I2.svg"
-                        alt="Feature Engineering"
+                        alt="Data curation and Preprocessing"
                         fill
                       />
                     </div>
@@ -391,7 +392,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I3.svg"
-                        alt="Similarity Computation"
+                        alt="Model selection and fine-tuning"
                         fill
                       />
                     </div>
@@ -410,7 +411,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I4.svg"
-                        alt="Recommendation Logic"
+                        alt="LangChain RAG pipeline integration"
                         fill
                       />
                     </div>
@@ -429,7 +430,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I5.svg"
-                        alt="Real-Time Service"
+                        alt="Vector store deployment"
                         fill
                       />
                     </div>
@@ -448,7 +449,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I6.svg"
-                        alt="Monitoring & Retraining"
+                        alt="AWS deployment"
                         fill
                       />
                     </div>
@@ -466,7 +467,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I7.svg"
-                        alt="Monitoring & Retraining"
+                        alt="Secure chat flow"
                         fill
                       />
                     </div>
@@ -484,7 +485,7 @@ const GenAIChatbot = () => {
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
                         src="/images/YH-I8.svg"
-                        alt="Monitoring & Retraining"
+                        alt="Privacy and Compliance"
                         fill
                       />
                     </div>
@@ -501,9 +502,9 @@ const GenAIChatbot = () => {
           </section>
 
           {/* Technology Stack Section */}
-          <section id="technology-stack" className="mb-24 p-4 sm:px-6 md:px-8">
+          <section id="technology-stack" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto w-full">
-              <div className="text-center mb-8 sm:mb-12">
+              <div className="text-center mb-12 lg:mb-16">
                 <h2 className="text-xl sm:text-2xl font-semibold text-[#21ABE1]">
                   TECHNOLOGY STACK
                 </h2>
@@ -533,7 +534,7 @@ const GenAIChatbot = () => {
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
                         <Image
                           src="/images/YH_TS2.svg"
-                          alt="Python programming language"
+                          alt="LangChain"
                           fill
                         />
                       </div>
@@ -545,7 +546,7 @@ const GenAIChatbot = () => {
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
                         <Image
                           src="/images/YH_TS3.svg"
-                          alt="Jupyter notebook"
+                          alt="Streamlit"
                           fill
                         />
                       </div>
@@ -566,7 +567,7 @@ const GenAIChatbot = () => {
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
                         <Image
                           src="/images/YH_TS4.svg"
-                          alt="AWS SageMaker"
+                          alt="OpenAI"
                           fill
                         />
                       </div>
@@ -588,7 +589,7 @@ const GenAIChatbot = () => {
                   <div className="grid grid-cols-2 sm:flex sm:justify-center sm:gap-4 lg:gap-8 gap-4 sm:flex-wrap">
                     <div className="text-center">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                        <Image src="/images/YH_TS5.svg" alt="AWS Lambda" fill />
+                        <Image src="/images/YH_TS5.svg" alt="Meta" fill />
                       </div>
                       <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                         Meta
@@ -598,7 +599,7 @@ const GenAIChatbot = () => {
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
                         <Image
                           src="/images/YH_TS6.svg"
-                          alt="AWS Kinesis"
+                          alt="Chroma"
                           fill
                         />
                       </div>
@@ -617,7 +618,7 @@ const GenAIChatbot = () => {
                   <div className="flex justify-center gap-4 sm:gap-6 lg:gap-8">
                     <div className="text-center">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                        <Image src="/images/YH_TS7.svg" alt="JavaScript" fill />
+                        <Image src="/images/YH_TS7.svg" alt="Elastic Beanstalk" fill />
                       </div>
                       <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                         Elastic Beanstalk
@@ -625,7 +626,7 @@ const GenAIChatbot = () => {
                     </div>
                     <div className="text-center">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                        <Image src="/images/YH_TS8.svg" alt="JavaScript" fill />
+                        <Image src="/images/YH_TS8.svg" alt="Simple Storage Service" fill />
                       </div>
                       <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                         Simple Storage Service
@@ -633,7 +634,7 @@ const GenAIChatbot = () => {
                     </div>
                     <div className="text-center">
                       <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                        <Image src="/images/YH_TS9.svg" alt="HTML" fill />
+                        <Image src="/images/YH_TS9.svg" alt="CloudWatch" fill />
                       </div>
                       <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                         CloudWatch
