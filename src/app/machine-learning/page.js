@@ -58,27 +58,32 @@ export const mlInAction = {
     {
       icon: "/images/AI-ML/glob-icon.svg",
       title: "E-Commerce",
-      description: "Smart product recommendations that delight customers.",
+      description:
+        "Power personalized shopping with AI that understands every click - turning customer intent into unforgettable experiences.",
     },
     {
       icon: "/images/AI-ML/health-icon.svg",
       title: "Healthcare",
-      description: "Predictive models that help doctors save lives.",
+      description:
+        "Predict outcomes before they happen - empowering doctors with AI insights that save time, cost, and lives.",
     },
     {
       icon: "/images/AI-ML/retail-icon.svg",
       title: "Finance",
-      description: "Fraud detection systems that protect millions daily.",
+      description:
+        "Secure every transaction with intelligent fraud detection - protecting trust and revenue at enterprise scale.",
     },
     {
       icon: "/images/AI-ML/logistic-icon.svg",
       title: "Logistics",
-      description: "Dynamic routing to cut costs and deliver faster.",
+      description:
+        "Deliver smarter and faster - with machine learning that predicts demand, optimizes routes, and cuts delays.",
     },
     {
       icon: "/images/AI-ML/manufactur-icon.svg",
       title: "Manufacturing",
-      description: "Quality inspection that learns and improves over time.",
+      description:
+        "Build perfection into every product - with AI-driven quality systems that learn, adapt, and never miss a flaw.",
     },
   ],
 };
@@ -192,16 +197,23 @@ export const ourMLStack = {
       title: "Deployment at Scale",
       items: [
         {
-          title: "Real-time inference APIs",
-          description: "with single-digit latency",
+          title: "Real-time Inference APIs",
+          description:
+            "Deliver predictions instantly with single-digit latency.",
+        },
+        {
+          title: "Hybrid & Multi-Cloud ML",
+          description: "Run models flexibly across AWS, Azure, and GCP.",
+        },
+        {
+          title: "Vector Databases",
+          description:
+            "Enable fast, hybrid search powering AI + ML intelligence.",
         },
         {
           title: "Containerized ML",
-          description: "on Kubernetes for global reach",
-        },
-        {
-          title: "Edge & IoT ML",
-          description: "for real-world intelligence closer to the source",
+          description:
+            "oDeploy globally using Kubernetes for seamless scalability.",
         },
       ],
     },
@@ -223,28 +235,6 @@ export const ourMLStack = {
         },
       ],
     },
-    {
-      icon: "/images/AI-ML/home-icon.svg",
-      title: "Infrastructure Powerhouse",
-      items: [
-        {
-          title: "Distributed training",
-          description: "with GPUs/TPUs (TensorFlow, PyTorch, JAX)",
-        },
-        {
-          title: "High-performance serving",
-          description: "with ONNX & Triton Inference Server",
-        },
-        {
-          title: "Hybrid & Multi-Cloud ML",
-          description: "across AWS, Azure, GCP",
-        },
-        {
-          title: "Vector Databases",
-          description: "for AI + ML hybrid",
-        },
-      ],
-    },
   ],
 };
 
@@ -254,7 +244,7 @@ export const businessImpactData = {
       icon: "/images/AI-ML/ML-img_1.webp",
       title: "The Business Impact",
       subtitle:
-        "Our ML isn’t just models in production — it’s business outcomes delivered. We help organizations:",
+        "Our ML isn’t just models in production - it’s business outcomes delivered. We help organizations:",
       points: [
         {
           text: "Anticipate customer needs before they arise",
@@ -272,11 +262,10 @@ export const businessImpactData = {
     },
     {
       icon: "/images/AI-ML/ML-img_2.webp",
-      title: "Positioning Statement",
+      title: "Our ML Capabilities",
+      subtitle:
+        "We engineer intelligence - building ML systems that learn, adapt, and scale with your ambition",
       points: [
-        {
-          text: "We bring end-to-end ML engineering capability:",
-        },
         {
           text: "From model design → to deployment → to continuous optimization.",
         },
@@ -284,7 +273,10 @@ export const businessImpactData = {
           text: "Across industries, data modalities, and infrastructures.",
         },
         {
-          text: "If it can be modeled, we can build it, productionize it, and scale it.",
+          text: "Solutions built for real-world performance across industries and platforms.",
+        },
+        {
+          text: "If it can be modeled, we make it intelligent, production-ready, and scalable.",
         },
       ],
     },

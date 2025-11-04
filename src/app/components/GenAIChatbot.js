@@ -144,9 +144,9 @@ const GenAIChatbot = () => {
             className="flex items-center mt-10 sm:mt-12 md:mt-14 lg:mt-18"
           >
             <div className="mx-auto p-4 sm:px-6 lg:px-8 w-full">
-              <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-start">
+              <div className="flex flex-col gap-6  md:gap-8 lg:gap-18 justify-center items-center lg:flex-row lg:justify-center lg:items-start">
                 {/* Left Content */}
-                <div className="space-y-0 w-full lg:max-w-[37.14%]">
+                <div className="space-y-0 w-full max-w-[21.56rem] lg:ml-6">
                   <div className="text-[#000000] mb-6">
                     <p className="font-bold text-sm mb-4 text-center lg:text-left">CASE STUDY</p>
                     <h1 className="text-[1.86rem] font-semibold text-center lg:text-left">
@@ -170,7 +170,7 @@ const GenAIChatbot = () => {
 
                 {/* Right Content - Chat Interface Image */}
                 <div className="mt-0 lg:-mt-38 flex justify-center">
-                  <div className="relative overflow-hidden h-[23rem] sm:h-[30rem] lg:h-[52.48rem] aspect-[1/1.63]">
+                  <div className="relative overflow-hidden h-[23rem] sm:h-[30rem] lg:h-[50.48rem] aspect-[1/1.63]">
                     <Image
                       src="/images/YH-MN.gif"
                       alt="YourHour App with AI Chatbot"

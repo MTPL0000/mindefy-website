@@ -91,18 +91,20 @@ export const outcomesDelivered = {
     {
       icon: "/images/AI-ML/glob-icon.svg",
       title: "Retail",
-      description: "Saved $180K during Black Friday via autoscaling",
+      description:
+        "Scaled infrastructure dynamically during peak Black Friday traffic - saving $180K while maintaining zero downtime.",
     },
     {
       icon: "/images/AI-ML/health-icon.svg",
       title: "Healthcare",
-      description: "Zero downtime during migration of 200+ applications",
+      description:
+        "Executed migration of 200+ applications with zero downtime through phased deployment and compliance automation.",
     },
     {
       icon: "/images/AI-ML/retail-icon.svg",
       title: "FinTech",
       description:
-        "Reduced infrastructure costs by 40% while boosting performance",
+        "Optimized multi-cloud infrastructure to cut costs by 40% and boost transaction performance across regions.",
     },
   ],
 };
