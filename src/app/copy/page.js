@@ -73,6 +73,8 @@ export default function ImprovedCopyPage() {
   const [section5Progress, setSection5Progress] = useState(0);
   const [section6Progress, setSection6Progress] = useState(0);
   const [section3ScrollProgress, setSection3ScrollProgress] = useState(0);
+  const [section3AnimationStarted, setSection3AnimationStarted] = useState(false);
+  const [section3AnimationTime, setSection3AnimationTime] = useState(0);
   const headerHeight = useHeaderHeight('nav');
 
   // console.log(section6Progress)
@@ -135,24 +137,22 @@ export default function ImprovedCopyPage() {
         }
       }
 
-      // Calculate section 3 scroll progress (Cards section)
-      const section3WrapperElement = document.getElementById("section-3-wrapper");
-      if (section3WrapperElement) {
-        const wrapperRect = section3WrapperElement.getBoundingClientRect();
-        const wrapperTop = window.scrollY + wrapperRect.top;
-        const triggerPoint = wrapperTop; // When wrapper reaches header
+      // Calculate section 3 trigger - only when section reaches top (accounting for header)
+      const section3Element = document.getElementById("section-3");
+      if (section3Element) {
+        const rect = section3Element.getBoundingClientRect();
         
-        // Calculate progress based on scroll position
-        const scrollDistance = window.scrollY - triggerPoint + headerHeight;
-        const animationDuration = window.innerHeight * 1.5; // Longer animation window (1.5x viewport)
+        // Trigger animation when section 3 top reaches header area (accounting for sticky positioning)
+        if (rect.top <= headerHeight && !section3AnimationStarted) {
+          setSection3AnimationStarted(true);
+          setSection3AnimationTime(Date.now());
+        }
         
-        if (scrollDistance >= 0 && scrollDistance <= animationDuration) {
-          const progress = scrollDistance / animationDuration;
-          setSection3ScrollProgress(progress * 4); // Continuous progress 0-4 for smooth animation
-        } else if (scrollDistance > animationDuration) {
-          setSection3ScrollProgress(4); // Keep at max
-        } else {
-          setSection3ScrollProgress(0); // Reset before trigger
+        // Reset animation when section goes out of viewport (either direction)
+        if ((rect.top > window.innerHeight || rect.bottom < 0) && section3AnimationStarted) {
+          setSection3AnimationStarted(false);
+          setSection3AnimationTime(0);
+          setSection3ScrollProgress(0);
         }
       }
 
@@ -190,7 +190,39 @@ export default function ImprovedCopyPage() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [headerHeight, zoomControls, contentZoomControls, cardControls, section3ScrollProgress]);
+  }, [headerHeight, zoomControls, contentZoomControls, cardControls, section3AnimationStarted]);
+
+  // Time-based animation for section 3 after trigger
+  useEffect(() => {
+    if (section3AnimationStarted && section3AnimationTime > 0) {
+      const animationDuration = 4500; // 4.5 seconds total animation
+      const interval = setInterval(() => {
+        const elapsed = Date.now() - section3AnimationTime;
+        const progress = Math.min(1, elapsed / animationDuration);
+        setSection3ScrollProgress(progress * 4); // Scale to 0-4 for existing animation logic
+        
+        if (progress >= 1) {
+          clearInterval(interval);
+        }
+      }, 16); // ~60fps
+
+      return () => clearInterval(interval);
+    } else if (!section3AnimationStarted && section3ScrollProgress > 0) {
+      // Handle reverse animation when scrolling away
+      const reverseInterval = setInterval(() => {
+        setSection3ScrollProgress(prev => {
+          const newProgress = Math.max(0, prev - 0.1);
+          if (newProgress <= 0) {
+            clearInterval(reverseInterval);
+            return 0;
+          }
+          return newProgress;
+        });
+      }, 16);
+
+      return () => clearInterval(reverseInterval);
+    }
+  }, [section3AnimationStarted, section3AnimationTime]);
 
   // Animation variants for cleaner code
   const sectionVariants = {
@@ -279,7 +311,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-3-wrapper"
         style={{
-          minHeight: 'calc(100vh + 1500px)',
+          minHeight: 'calc(100vh + 200px)',
           position: 'relative'
         }}
         className="w-full bg-white"
