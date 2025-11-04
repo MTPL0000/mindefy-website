@@ -1,6 +1,8 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import { useRef, useEffect, useState, useCallback } from "react";
+import { scroller } from "react-scroll";
+import { useHeaderHeight } from "@/hooks/useHeaderHeight";
 
 const cardData = [
   {
@@ -66,322 +68,116 @@ const offersCards = [
 
 export default function ImprovedCopyPage() {
   const containerRef = useRef(null);
-  const [currentSection, setCurrentSection] = useState(0);
-  const [allAnimationsComplete, setAllAnimationsComplete] = useState(false);
-  const [canScrollBack, setCanScrollBack] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [section1Progress, setSection1Progress] = useState(0);
+  const [section3Progress, setSection3Progress] = useState(0);
+  const [section5Progress, setSection5Progress] = useState(0);
+  const [section6Progress, setSection6Progress] = useState(0);
+  const headerHeight = useHeaderHeight('nav');
 
-  // Simplified state management
-  const [sectionState, setSectionState] = useState({
-    hasInteracted: false,
-    zoomProgress: 0,
-    isTransitioning: false,
-    scrollDisabled: false,
-    section2AnimationStarted: false,
-    section3AnimationFinished: false,
-    section5ScrollProgress: 0,
-    section1ZoomedOut: false,
-    section3ScrollProgress: 0,
-    section3HasStarted: false,
-  });
+  // console.log(section6Progress)
 
   // Use Framer Motion's animation controls
   const zoomControls = useAnimation();
   const contentZoomControls = useAnimation();
   const cardControls = useAnimation();
 
-  // Improved scroll handling with useCallback
-  const handleSectionTransition = useCallback(
-    (direction, fromSection) => {
-      if (sectionState.isTransitioning) return;
-
-      // Special handling for section 5 scroll-based animation
-      if (fromSection === 5) {
-        if (direction === "down" && sectionState.section5ScrollProgress < 1) {
-          // Progress through section 5 animation
-          const newProgress = Math.min(
-            sectionState.section5ScrollProgress + 0.25,
-            1
-          );
-          setSectionState((prev) => ({
-            ...prev,
-            section5ScrollProgress: newProgress,
-          }));
-
-          // Check if we've completed all animations
-          if (newProgress >= 1) {
-            setTimeout(() => {
-              setAllAnimationsComplete(true);
-              setCanScrollBack(true);
-            }, 800); // Wait for animation to complete
-          }
-          return;
-        } else if (
-          direction === "up" &&
-          sectionState.section5ScrollProgress > 0
-        ) {
-          // Go backward in section 5 animation
-          setSectionState((prev) => ({
-            ...prev,
-            section5ScrollProgress: Math.max(
-              prev.section5ScrollProgress - 0.25,
-              0
-            ),
-          }));
-          setAllAnimationsComplete(false);
-          return;
-        }
-      }
-
-      // handling for Cards Section
-      // If we're in section 2, use internal progress steps first (0..3),
-      // and only when progress is already at max (3) allow transition to the next section.
-      if (fromSection === 2) {
-        if (direction === "down") {
-          if (sectionState.section3ScrollProgress < 6) {
-            // Increment internal staged animation progress (title -> subtitle -> description -> cards)
-            setSectionState((prev) => ({
-              ...prev,
-              section3ScrollProgress: prev.section3ScrollProgress + 1,
-              section3HasStarted: true,
-            }));
-            return; // stay in section 2
-          }
-        } else if (direction === "up") {
-          if (sectionState.section3ScrollProgress > 0) {
-            // Go back inside section 2
-            setSectionState((prev) => ({
-              ...prev,
-              section3ScrollProgress: prev.section3ScrollProgress - 1,
-            }));
-            return; // stay in section 2
-          }
-          // else: progress === 0 -> fall through to normal transitions (move to prev section)
-        }
-      }
-
-      // Normal transitions map (keeps your original flow)
-      const transitions = {
-        0: { down: 1 }, // Video → Image
-        1: { up: 0, down: 2 }, // Image ↔ Video/Cards
-        2: { up: 1, down: 3 }, // Cards ↔ Image/CaseStudy1
-        3: { up: 2, down: 4 }, // CaseStudy1 ↔ Cards/CaseStudy2
-        4: { up: 3, down: 5 }, // CaseStudy2 ↔ CaseStudy1/Offerings
-        5: { up: 4 }, // Offerings → CaseStudy2
-      };
-
-      const nextSection = transitions[fromSection]?.[direction];
-      if (nextSection !== undefined) {
-        setSectionState((prev) => ({ ...prev, isTransitioning: true }));
-
-        // Reset card-section progress when leaving section 2 (entering or leaving)
-        if (fromSection === 2 || nextSection === 2) {
-          setSectionState((prev) => ({
-            ...prev,
-            section3ScrollProgress:
-              nextSection === 2 ? 0 : prev.section3ScrollProgress,
-            section3HasStarted:
-              nextSection === 2 ? false : prev.section3HasStarted,
-          }));
-        }
-
-        setCurrentSection(nextSection);
-
-        // Existing special-case zoom-out handling when moving FROM 2 -> 1 (backwards),
-        // keep your previous 'zoomControls' logic. If you had other logic tied to specific
-        // transitions (like auto-starting section 5), keep them below as you already had.
-
-        // Your existing zoom-out on transition to section 1 (backward) kept here:
-        if (nextSection === 1 && direction === "up") {
-          setSectionState((prev) => ({ ...prev, scrollDisabled: true }));
-
-          // Zoom out animation (reverse of zoom in)
-          zoomControls.start({
-            scale: 1,
-            opacity: 1,
-            filter: "blur(0px)",
-            transition: { duration: 1.5, ease: "easeInOut" },
-          });
-
-          contentZoomControls.start({
-            scale: 1,
-            opacity: 1,
-            transition: { duration: 1.5, ease: "easeInOut" },
-          });
-
-          // Mark that zoom out is complete and re-enable scroll
-          setTimeout(() => {
-            setSectionState((prev) => ({
-              ...prev,
-              scrollDisabled: false,
-              section1ZoomedOut: true,
-            }));
-          }, 1500);
-        }
-
-        // Reset/start section5 state like before
-        if (fromSection === 5 || nextSection === 5) {
-          setSectionState((prev) => ({
-            ...prev,
-            section5ScrollProgress:
-              nextSection === 5 ? 0 : prev.section5ScrollProgress,
-          }));
-
-          // Auto-start section 5 animation when entering (only show first card)
-          if (nextSection === 5) {
-            setTimeout(() => {
-              setSectionState((prev) => ({
-                ...prev,
-              }));
-              // Only show AI Solutions card by default, others require scroll
-            }, 1200); // Increased delay to allow centered heading to fully disappear
-          }
-        }
-
-        // Finish transition lock after animation time
-        setTimeout(() => {
-          setSectionState((prev) => ({ ...prev, isTransitioning: false }));
-        }, 1000);
-      }
-    },
-    [
-      sectionState.isTransitioning,
-      sectionState.section5ScrollProgress,
-      sectionState.section3ScrollProgress,
-      zoomControls,
-      contentZoomControls,
-    ]
-  );
-
-  // Simplified zoom animation using Framer Motion
-  const triggerZoomAnimation = useCallback(async () => {
-    if (currentSection !== 1 || sectionState.hasInteracted) return;
-
-    setSectionState((prev) => ({
-      ...prev,
-      hasInteracted: true,
-      scrollDisabled: true,
-    }));
-
-    // Use Framer Motion for smooth zoom - animate both background and content together
-    const zoomPromise1 = zoomControls.start({
-      scale: 15,
-      opacity: 0.3,
-      filter: "blur(8px)",
-      transition: { duration: 2.5, ease: "easeOut" },
-    });
-
-    const zoomPromise2 = contentZoomControls.start({
-      scale: 15,
-      opacity: 0,
-      transition: { duration: 2.5, ease: "easeOut" },
-    });
-
-    // Wait for both animations to complete
-    await Promise.all([zoomPromise1, zoomPromise2]);
-
-    // Auto-transition to next section
-    setCurrentSection(2);
-
-    // Mark section 2 animation as started
-    setSectionState((prev) => ({ ...prev, section2AnimationStarted: true }));
-
-    // Trigger card animations
-    cardControls.start((i) => ({
-      y: 0,
-      opacity: 1,
-      transition: { delay: i * 0.1 + 0.5, duration: 0.5 },
-    }));
-
-    // Re-enable scroll after all card animations complete
-    setTimeout(() => {
-      setSectionState((prev) => ({
-        ...prev,
-        scrollDisabled: false,
-        section3AnimationFinished: true,
-      }));
-    }, 1100); // 6 cards * 100ms delay + 500ms duration + 100ms buffer
-  }, [
-    currentSection,
-    sectionState.hasInteracted,
-    zoomControls,
-    contentZoomControls,
-    cardControls,
-  ]);
-
-  // Improved scroll event handling
+  // Handle scroll-based animations
   useEffect(() => {
-    let scrollTimeout;
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
+      
+      setScrollProgress(scrollPercent);
 
-    const handleWheel = (e) => {
-      // If all animations are complete, allow native scroll
-      if (allAnimationsComplete) {
-        return; // Let browser handle scroll naturally
-      }
+      // Calculate section 1 progress (Image Zoom section) - scroll-based
+      const section1Element = document.getElementById("section-1");
+      if (section1Element) {
+        const rect = section1Element.getBoundingClientRect();
+        const section3Element = document.getElementById("section-3");
+        
+        if (section3Element) {
+          const section3Rect = section3Element.getBoundingClientRect();
+          
+          // Calculate progress from when section 1 top reaches header to when section 3 reaches top
+          const startPoint = headerHeight; // When section 1 reaches header
+          
+          // Progress: 0 when section 1 is below start point, 1 when section 3 reaches top
+          let progress = 0;
+          if (rect.top <= startPoint) {
+            // Section 1 has started scrolling up
+            progress = Math.min(1, (startPoint - rect.top) / (window.innerHeight * 0.8));
+          }
+          
+          setSection1Progress(progress);
+          
+          // Apply zoom animation based on scroll progress
+          zoomControls.set({
+            scale: 1 + progress * 14, // Scale from 1 to 15
+            opacity: 1 - progress * 0.7, // Opacity from 1 to 0.3
+            filter: `blur(${progress * 8}px)`, // Blur from 0 to 8px
+          });
 
-      e.preventDefault();
+          contentZoomControls.set({
+            scale: 1 + progress * 14, // Scale from 1 to 15
+            opacity: 1 - progress, // Opacity from 1 to 0
+          });
 
-      // Check if scroll is disabled
-      if (sectionState.scrollDisabled) {
-        return;
-      }
-
-      // Debounce scroll events
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        const direction = e.deltaY > 0 ? "down" : "up";
-
-        // Special handling for image section - forward scroll only
-        if (
-          currentSection === 1 &&
-          !sectionState.hasInteracted &&
-          direction === "down"
-        ) {
-          triggerZoomAnimation();
-          return;
+          // Animate cards based on progress
+          if (progress > 0.5) {
+            const cardProgress = (progress - 0.5) / 0.5; // 0 to 1 after 50% scroll
+            cardControls.set((i) => ({
+              y: 100 - cardProgress * 100,
+              opacity: cardProgress,
+            }));
+          }
         }
+      }
 
-        handleSectionTransition(direction, currentSection);
-      }, 50);
+      // Calculate section 3 progress (Cards section)
+      const section3Element = document.getElementById("section-3");
+      if (section3Element) {
+        const rect = section3Element.getBoundingClientRect();
+        const elementProgress = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
+        setSection3Progress(Math.floor(elementProgress * 6)); // 0-6 steps
+      }
+
+      // Calculate section 5 progress (Offerings section)
+      const section5Element = document.getElementById("section-5");
+      if (section5Element) {
+        const rect = section5Element.getBoundingClientRect();
+        const elementProgress = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
+        setSection5Progress(elementProgress);
+      }
+
+      // Calculate section 6 progress (Cards column animation)
+      // Use scroll position directly for smooth, jank-free animation
+      const section6WrapperElement = document.getElementById("section-6-wrapper");
+      if (section6WrapperElement) {
+        const wrapperRect = section6WrapperElement.getBoundingClientRect();
+        const wrapperTop = window.scrollY + wrapperRect.top;
+        const triggerPoint = wrapperTop; // When wrapper reaches header
+        
+        // Calculate progress based on scroll position
+        const scrollDistance = window.scrollY - triggerPoint + headerHeight;
+        const animationDuration = window.innerHeight * 2; // Longer animation window (2x viewport)
+        
+        if (scrollDistance >= 0 && scrollDistance <= animationDuration) {
+          console.log(scrollDistance, animationDuration, window.innerHeight)
+          const progress = scrollDistance / animationDuration;
+          setSection6Progress(progress * 4); // Continuous progress 0-4 for smooth animation
+        } else if (scrollDistance > animationDuration) {
+          setSection6Progress(4); // Keep at max
+        } else {
+          setSection6Progress(0); // Reset before trigger
+        }
+      }
     };
 
-    // Handle scroll back to animations when user scrolls up from normal scroll
-    const handleScrollBack = () => {
-      if (allAnimationsComplete && canScrollBack) {
-        const scrollPosition =
-          window.scrollY || containerRef.current?.scrollTop || 0;
-
-        // If user scrolls to the very top, reset to animation mode
-        if (scrollPosition === 0) {
-          setAllAnimationsComplete(false);
-          setCanScrollBack(false);
-          setCurrentSection(5); // Return to section 5
-          setSectionState((prev) => ({
-            ...prev,
-            section5ScrollProgress: 1,
-          }));
-        }
-      }
-    };
-
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener("wheel", handleWheel, { passive: false });
-      window.addEventListener("scroll", handleScrollBack, { passive: true });
-
-      return () => {
-        container.removeEventListener("wheel", handleWheel);
-        window.removeEventListener("scroll", handleScrollBack);
-        clearTimeout(scrollTimeout);
-      };
-    }
-  }, [
-    currentSection,
-    sectionState,
-    handleSectionTransition,
-    triggerZoomAnimation,
-    allAnimationsComplete,
-    canScrollBack,
-  ]);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [headerHeight, zoomControls, contentZoomControls, cardControls]);
 
   // Animation variants for cleaner code
   const sectionVariants = {
@@ -392,17 +188,13 @@ export default function ImprovedCopyPage() {
   return (
     <div
       ref={containerRef}
-      className={`relative w-screen ${
-        allAnimationsComplete ? "overflow-y-auto" : "h-screen overflow-hidden"
-      }`}
+      className="w-full"
     >
       {/* Video Section */}
-      <motion.div
-        className="absolute inset-0 h-screen"
-        variants={sectionVariants}
-        animate={currentSection === 0 ? "visible" : "hidden"}
-        transition={{ duration: 0.8 }}
-        style={{ display: allAnimationsComplete ? "none" : "block" }}
+      <div
+        id="section-0"
+        className="w-full flex items-center justify-center bg-black"
+        style={{ height: `calc(100vh - ${headerHeight}px)` }}
       >
         <video
           className="w-full h-full object-cover"
@@ -413,15 +205,13 @@ export default function ImprovedCopyPage() {
         >
           <source src="/images/hero_copy.mp4" type="video/mp4" />
         </video>
-      </motion.div>
+      </div>
 
       {/* Image Zoom Section */}
-      <motion.div
-        className="absolute inset-0 h-screen"
-        variants={sectionVariants}
-        animate={currentSection === 1 ? "visible" : "hidden"}
-        transition={{ duration: 0.8 }}
-        style={{ display: allAnimationsComplete ? "none" : "block" }}
+      <div
+        id="section-1"
+        className="w-full flex items-center justify-center relative overflow-hidden"
+        style={{ height: `calc(100vh - ${headerHeight}px)`}}
       >
         <motion.div
           className="absolute inset-0 bg-cover bg-center"
@@ -433,12 +223,7 @@ export default function ImprovedCopyPage() {
         <div className="relative z-10 flex items-center justify-center h-full px-4">
           <motion.div
             className="text-center max-w-4xl mx-auto"
-            initial={{ opacity: 0, scale: 0.8, y: 50 }}
-            animate={
-              currentSection === 1
-                ? { opacity: 1, scale: 1, y: 0 }
-                : { opacity: 0, scale: 0.8, y: 50 }
-            }
+            initial={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <motion.div
@@ -475,23 +260,21 @@ export default function ImprovedCopyPage() {
             </motion.div>
           </motion.div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Cards Section */}
-      <motion.div
-        className="absolute inset-0 bg-gray-100 h-screen"
-        variants={sectionVariants}
-        animate={currentSection === 2 ? "visible" : "hidden"}
-        transition={{ duration: 0.8 }}
-        style={{ display: allAnimationsComplete ? "none" : "block" }}
+      <div
+        id="section-3"
+        className="w-full min-h-screen bg-[#FFFFFF] flex items-center justify-center py-20 relative"
+        // style={{ zIndex: 20 }}
       >
-        <div className="w-full h-screen flex flex-col items-center justify-center px-16">
+        <div className="w-full flex flex-col items-center justify-center px-16">
           {/* Title */}
           <motion.h2
             className="font-poppins font-medium text-[1.5rem] tracking-[20%] text-[#FF5225] mb-4"
             animate={{
-              opacity: sectionState.section3ScrollProgress >= 0 ? 1 : 0,
-              y: sectionState.section3ScrollProgress >= 0 ? 0 : 50,
+              opacity: section3Progress >= 0 ? 1 : 0,
+              y: section3Progress >= 0 ? 0 : 50,
             }}
             transition={{ duration: 0.4 }}
           >
@@ -507,9 +290,9 @@ export default function ImprovedCopyPage() {
                 initial={{ opacity: 0, x: index === 0 ? -80 : 80 }}
                 animate={{
                   opacity:
-                    sectionState.section3ScrollProgress >= index + 1 ? 1 : 0,
+                    section3Progress >= index + 1 ? 1 : 0,
                   x:
-                    sectionState.section3ScrollProgress >= index + 1
+                    section3Progress >= index + 1
                       ? 0
                       : index === 0
                       ? -80
@@ -530,8 +313,8 @@ export default function ImprovedCopyPage() {
           <motion.p
             className="font-inter font-normal text-base text-center text-[#444444] mb-8 max-w-3xl mx-auto"
             animate={{
-              opacity: sectionState.section3ScrollProgress >= 4 ? 1 : 0,
-              y: sectionState.section3ScrollProgress >= 4 ? 0 : 50,
+              opacity: section3Progress >= 4 ? 1 : 0,
+              y: section3Progress >= 4 ? 0 : 50,
             }}
             transition={{ duration: 0.5 }}
           >
@@ -546,9 +329,10 @@ export default function ImprovedCopyPage() {
               <motion.div
                 key={index}
                 className="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center justify-center gap-6 text-center min-h-70"
+                initial={{ opacity: 0, y: 100 }}
                 animate={{
-                  opacity: sectionState.section3ScrollProgress >= 5 ? 1 : 0,
-                  y: sectionState.section3ScrollProgress >= 5 ? 0 : 100,
+                  opacity: section3Progress >= 5 ? 1 : 0,
+                  y: section3Progress >= 5 ? 0 : 100,
                 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
               >
@@ -565,20 +349,23 @@ export default function ImprovedCopyPage() {
             ))}
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Case Study 1 - Gen AI Chatbot */}
-      <motion.div
-        className="absolute inset-0 bg-white h-screen"
-        variants={sectionVariants}
-        animate={currentSection === 3 ? "visible" : "hidden"}
-        transition={{ duration: 0.8 }}
-        style={{ display: allAnimationsComplete ? "none" : "block" }}
+      <div
+        id="section-4"
+        className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-6 sm:px-8 lg:px-16 py-10"
       >
-        <section className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-6 sm:px-8 lg:px-16 py-10">
+        <section className="w-full min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-16 py-10">
           <div className="container mx-auto w-full max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
             {/* Left side - Phone mockup */}
-            <div className="flex-1 flex justify-center">
+            <motion.div
+              className="flex-1 flex justify-center"
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
               <div className="relative w-9/12 sm:w-7/12 md:w-6/12 lg:w-11/12 aspect-[0.6137/1]">
                 <img
                   src="/images/YH-MN.gif"
@@ -586,10 +373,16 @@ export default function ImprovedCopyPage() {
                   className="w-full h-full object-contain"
                 />
               </div>
-            </div>
+            </motion.div>
 
             {/* Right side - Content */}
-            <div className="flex-1 text-center lg:text-left">
+            <motion.div
+              className="flex-1 text-center lg:text-left"
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
               <h2 className="text-3xl font-poppins sm:text-4xl lg:text-5xl font-medium text-[#262626] mb-6">
                 Gen AI-Chatbot
               </h2>
@@ -609,23 +402,26 @@ export default function ImprovedCopyPage() {
               >
                 Case Study →
               </a>
-            </div>
+            </motion.div>
           </div>
         </section>
-      </motion.div>
+      </div>
 
       {/* Case Study 2 - ML Driven Recommendations */}
-      <motion.div
-        className="absolute inset-0 bg-white h-screen"
-        variants={sectionVariants}
-        animate={currentSection === 4 ? "visible" : "hidden"}
-        transition={{ duration: 0.8 }}
-        style={{ display: allAnimationsComplete ? "none" : "block" }}
+      <div
+        id="section-5"
+        className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#B9FFFF] to-white px-6 sm:px-8 lg:px-16 py-10"
       >
-        <section className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#B9FFFF] to-white px-6 sm:px-8 lg:px-16 py-10">
+        <section className="w-full min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-16 py-10">
           <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-8">
             {/* Left side - Content */}
-            <div className="flex-1 text-center lg:text-left">
+            <motion.div
+              className="flex-1 text-center lg:text-left"
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
               <h2 className="text-3xl font-poppins sm:text-4xl lg:text-5xl font-medium text-[#262626] mb-6">
                 ML Driven Recommendations
               </h2>
@@ -645,10 +441,16 @@ export default function ImprovedCopyPage() {
               >
                 Case Study →
               </a>
-            </div>
+            </motion.div>
 
             {/* Right side - Laptop mockup */}
-            <div className="flex-1 flex justify-center">
+            <motion.div
+              className="flex-1 flex justify-center"
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
               <div className="relative w-10/12 sm:w-8/12 md:w-7/12 lg:w-11/12 aspect-[11/7]">
                 <img
                   src="/images/ai/early-foods.png"
@@ -656,99 +458,109 @@ export default function ImprovedCopyPage() {
                   className="w-full h-full object-contain"
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
         </section>
-      </motion.div>
+      </div>
 
-      {/* Section 5 - Our Offering For Your Automation Needs */}
-      <motion.div
-        className={`${
-          allAnimationsComplete ? "relative" : "absolute inset-0"
-        } bg-white ${!allAnimationsComplete ? "h-screen" : ""}`}
-        variants={sectionVariants}
-        animate={
-          currentSection === 5 || allAnimationsComplete ? "visible" : "hidden"
-        }
-        transition={{ duration: 0.8 }}
+      {/* Section 6 - Our Offering For Your Automation Needs */}
+      <div
+        id="section-6-wrapper"
+        style={{
+          minHeight: '300vh',
+          position: 'relative'
+        }}
+        className="w-full bg-white"
       >
-        {/* Initial heading phase */}
-        <motion.div
-          className="flex flex-col px-6 md:px-10 lg:px-16 pt-16 pb-5"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 0.8 } }}
+        {/* Sticky container */}
+        <div
+          id="section-6"
+          style={{ 
+            position: 'sticky',
+            top: `${headerHeight}px`,
+            height: `calc(100vh - ${headerHeight}px)`,
+            zIndex: 10,
+            width: '100%',
+            backgroundColor: 'white',
+          }}
         >
-          {/* Heading */}
+          {/* Initial heading phase */}
           <motion.div
-            className="text-center font-poppins mb-12 md:mb-16"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 0.8, delay: 0.2 },
-            }}
+            className="flex flex-col px-6 md:px-10 lg:px-16 pt-16 pb-5 h-full overflow-hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.8 } }}
           >
-            <h2 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-normal text-[#3D3D3D] mb-2">
-              Our Offering For Your Automation Needs-
-            </h2>
-            <h3 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-medium text-[#3D3D3D]">
-              <span className="font-semibold font-poppins">
-                The Stack That Powers Your Future.
-              </span>
-            </h3>
-          </motion.div>
+            {/* Heading */}
+            <motion.div
+              className="text-center font-poppins mb-12 md:mb-16"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.8, delay: 0.2 },
+              }}
+            >
+              <h2 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-normal text-[#3D3D3D] mb-2">
+                Our Offering For Your Automation Needs-
+              </h2>
+              <h3 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-medium text-[#3D3D3D]">
+                <span className="font-semibold font-poppins">
+                  The Stack That Powers Your Future.
+                </span>
+              </h3>
+            </motion.div>
 
-          {/* Responsive 4-column cards */}
-          <div className="flex items-center justify-center">
-            <div className="w-full max-w-7xl mx-auto bg-white">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
-                {offersCards.map((card, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 100 }}
-                    animate={
-                      currentSection === 5 &&
-                      sectionState.section5ScrollProgress >= index * 0.25
-                        ? {
-                            opacity: 1,
-                            y: 0,
-                            transition: { duration: 0.8, ease: "easeOut" },
-                          }
-                        : { opacity: 0, y: 100 }
-                    }
-                    className={`group py-8 px-2.5 flex flex-col justify-between bg-white h-[34rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
-                  >
-                    <div>
-                      <h4 className="text-3xl font-normal text-[#332771] mb-6 text-left font-poppins">
-                        {card.title}
-                      </h4>
-                      <p className="text-base text-[#D84326] mb-6 text-left leading-relaxed font-poppins">
-                        {card.text}
-                      </p>
-                    </div>
-                    <a
-                      href={card.link}
-                      className="w-fit flex items-center text-left text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
-                      onMouseEnter={(e) =>
-                        e.currentTarget
-                          .closest(".group")
-                          .classList.add("hovered")
+            {/* Responsive 4-column cards */}
+            <div className="flex items-center justify-center flex-1">
+              <div className="w-full max-w-7xl mx-auto bg-white">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
+                  {offersCards.map((card, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: index === 0 ? 1 : 0, y: index === 0 ? 0 : 100 }}
+                      animate={
+                        section6Progress > index || index === 0
+                          ? {
+                              opacity: 1,
+                              y: 0,
+                              transition: { duration: 0.8, ease: "easeOut" },
+                            }
+                          : { opacity: 0, y: 100 }
                       }
-                      onMouseLeave={(e) =>
-                        e.currentTarget
-                          .closest(".group")
-                          .classList.remove("hovered")
-                      }
+                      className={`group py-8 px-2.5 flex flex-col justify-between bg-white h-[34rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
                     >
-                      Learn More <span className="ml-2">→</span>
-                    </a>
-                  </motion.div>
-                ))}
+                      <div>
+                        <h4 className="text-3xl font-normal text-[#332771] mb-6 text-left font-poppins">
+                          {card.title}
+                        </h4>
+                        <p className="text-base text-[#D84326] mb-6 text-left leading-relaxed font-poppins">
+                          {card.text}
+                        </p>
+                      </div>
+                      <a
+                        href={card.link}
+                        className="w-fit flex items-center text-left text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
+                        onMouseEnter={(e) =>
+                          e.currentTarget
+                            .closest(".group")
+                            .classList.add("hovered")
+                        }
+                        onMouseLeave={(e) =>
+                          e.currentTarget
+                            .closest(".group")
+                            .classList.remove("hovered")
+                        }
+                      >
+                        Learn More <span className="ml-2">→</span>
+                      </a>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        </motion.div>
-      </motion.div>
+          </motion.div>
+        </div>
+      </div>
     </div>
   );
 }
