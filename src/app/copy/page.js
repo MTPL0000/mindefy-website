@@ -291,7 +291,7 @@ export default function ImprovedCopyPage() {
           style={{ 
             position: 'sticky',
             top: `${headerHeight}px`,
-            height: `calc(100vh - ${headerHeight}px)`,
+            height: `100vh`,
             zIndex: 10,
             width: '100%',
             backgroundColor: 'white',
@@ -537,7 +537,7 @@ export default function ImprovedCopyPage() {
           style={{ 
             position: 'sticky',
             top: `${headerHeight}px`,
-            height: `calc(100vh - ${headerHeight}px)`,
+            height: `100vh`,
             zIndex: 10,
             width: '100%',
             backgroundColor: 'white',
