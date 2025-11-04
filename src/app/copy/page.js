@@ -298,7 +298,7 @@ export default function ImprovedCopyPage() {
           }}
         >
           <motion.div
-            className="flex flex-col items-center justify-center px-16 h-full overflow-hidden relative"
+            className="flex flex-col items-center justify-center px-16 pb-5 h-full overflow-hidden relative"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.8 } }}
           >
