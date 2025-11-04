@@ -606,7 +606,7 @@ export default function ImprovedCopyPage() {
                   {offersCards.map((card, index) => {
                     // Calculate column translation based on section6Progress
                     const columnProgress = Math.max(0, Math.min(1, section6Progress - index));
-                    const translateY = (1 - columnProgress) * 600; // Slide up from 600px below
+                    const translateY = (1 - columnProgress) * 800; // Slide up from 800px below
 
                     return (
                       <motion.div
