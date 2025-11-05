@@ -252,18 +252,28 @@ export default function ImprovedCopyPage() {
   };
 
   return (
-    <div
-      ref={containerRef}
-      className="w-full"
-    >
-      {/* Video Section */}
+    <div ref={containerRef} className="w-full">
+      {/* Video Section - Large screens only */}
       <div
         id="section-0"
-        className="w-full flex items-center justify-center bg-black"
-        style={{ height: '100vh' }}
+        className="hidden lg:block w-full items-center justify-center bg-black"
+        style={{ height: "100vh" }}
       >
         <video
           className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/images/hero_copy.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      {/* Mobile/Tablet Video Section - Responsive aspect ratio */}
+      <div className="lg:hidden w-full bg-black">
+        <video
+          className="w-full h-auto object-cover"
           autoPlay
           muted
           loop
@@ -277,54 +287,94 @@ export default function ImprovedCopyPage() {
       <div
         id="section-1"
         className="w-full flex items-center justify-center relative overflow-hidden"
-        style={{ height: '100vh' }}
+        style={{ height: "100vh" }}
       >
+        {/* Animated background for large screens only */}
         <motion.div
-          className="absolute inset-0 bg-cover bg-center"
+          className="hidden lg:block absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url(/images/bg-copy.png)" }}
           animate={zoomControls}
           initial={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
         />
 
+        {/* Static background for smaller screens */}
+        <div
+          className="lg:hidden absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url(/images/bg-copy.png)" }}
+        />
+
         <div className="relative z-10 flex items-center justify-center h-full px-4 lg:px-8 xl:px-12 2xl:px-16">
-          <motion.div
-            className="text-center max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
-            initial={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+          {/* Large screen animated content */}
+          <div className="hidden lg:block">
             <motion.div
-              animate={contentZoomControls}
-              initial={{ scale: 1, opacity: 1 }}
+              className="text-center max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+              initial={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h1 className="mb-6 font-poppins text-[2rem] lg:text-[2.5rem] xl:text-[3rem] 2xl:text-[3.5rem] font-normal text-[#3D3D3D]">
-                <div>Built With Data. Powered By AI.</div>
-                <div className="font-semibold mt-2">Delivered For Impact.</div>
-              </h1>
+              <motion.div
+                animate={contentZoomControls}
+                initial={{ scale: 1, opacity: 1 }}
+              >
+                <h1 className="mb-6 font-poppins text-[2rem] lg:text-[2.5rem] xl:text-[3rem] 2xl:text-[3.5rem] font-normal text-[#3D3D3D]">
+                  <div>Built With Data. Powered By AI.</div>
+                  <div className="font-semibold mt-2">
+                    Delivered For Impact.
+                  </div>
+                </h1>
 
-              <div className="space-y-4 text-base lg:text-lg xl:text-xl font-poppins text-gray-700 mb-8 max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
-                <p>
-                  AI turns data into action. We help businesses unlock that
-                  power — through tailored, scalable solutions.
-                </p>
-                <p>
-                  We architect intelligence from raw data. Precision-built.
-                  Algorithm-driven. Future-proof.
-                </p>
-                <p>
-                  What if your data could think? We don't just imagine it — we
-                  engineer it.
-                </p>
-                <p>
-                  Intelligence isn't just learned. It's designed — through data,
-                  algorithms, and intent.
-                </p>
-              </div>
+                <div className="space-y-4 text-base lg:text-lg xl:text-xl font-poppins text-gray-700 mb-8 max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
+                  <p>
+                    AI turns data into action. We help businesses unlock that
+                    power — through tailored, scalable solutions.
+                  </p>
+                  <p>
+                    We architect intelligence from raw data. Precision-built.
+                    Algorithm-driven. Future-proof.
+                  </p>
+                  <p>
+                    What if your data could think? We don't just imagine it — we
+                    engineer it.
+                  </p>
+                  <p>
+                    Intelligence isn't just learned. It's designed — through
+                    data, algorithms, and intent.
+                  </p>
+                </div>
 
-              <button className="bg-[#34333D] text-white font-poppins px-6 lg:px-8 xl:px-10 py-3 lg:py-4 rounded-full text-base lg:text-lg xl:text-xl font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer">
-                Learn More
-              </button>
+                <button className="bg-[#34333D] text-white font-poppins px-6 lg:px-8 xl:px-10 py-3 lg:py-4 rounded-full text-base lg:text-lg xl:text-xl font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer">
+                  Learn More
+                </button>
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </div>
+
+          {/* Mobile/Tablet static content */}
+          <div className="lg:hidden text-center max-w-lg mx-auto px-4">
+            <h1 className="mb-6 font-poppins text-xl md:text-2xl font-normal text-[#3D3D3D] leading-tight">
+              <div>Built With Data.</div>
+              <div className="font-semibold mt-1">Powered By AI.</div>
+              <div className="font-semibold mt-1">Delivered For Impact.</div>
+            </h1>
+
+            <div className="space-y-4 text-sm md:text-base font-poppins text-gray-700 mb-8 leading-relaxed">
+              <p>
+                AI turns data into action. We help businesses unlock that power
+                through tailored, scalable solutions.
+              </p>
+              <p>
+                We architect intelligence from raw data. Precision-built.
+                Algorithm-driven. Future-proof.
+              </p>
+              <p>
+                What if your data could think? We don't just imagine it — we
+                engineer it.
+              </p>
+            </div>
+
+            <button className="bg-[#34333D] text-white font-poppins px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer w-full md:w-auto">
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
 
@@ -332,20 +382,21 @@ export default function ImprovedCopyPage() {
       <div
         id="section-3-wrapper"
         style={{
-          minHeight: '100vh',
-          position: 'relative'
+          minHeight: "100vh",
+          position: "relative",
         }}
         className="w-full bg-white"
       >
-        {/* Sticky container */}
+        {/* Sticky container - Large screen animated version only */}
         <div
           id="section-3"
-          style={{ 
-            position: 'sticky',
-            top: '0px',
+          className="hidden lg:block"
+          style={{
+            position: "sticky",
+            top: "0px",
             zIndex: 10,
-            width: '100%',
-            backgroundColor: 'white',
+            width: "100%",
+            backgroundColor: "white",
           }}
         >
           <motion.div
@@ -365,10 +416,16 @@ export default function ImprovedCopyPage() {
               <motion.h2
                 className="font-poppins font-medium text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl tracking-[10%] lg:tracking-[20%] text-[#FF5225] align-middle"
                 style={{
-                  scale: section3ScrollProgress < 1 ? Math.max(0, section3ScrollProgress) : 1,
-                  opacity: section3ScrollProgress < 1 ? Math.max(0, section3ScrollProgress) : 1,
+                  scale:
+                    section3ScrollProgress < 1
+                      ? Math.max(0, section3ScrollProgress)
+                      : 1,
+                  opacity:
+                    section3ScrollProgress < 1
+                      ? Math.max(0, section3ScrollProgress)
+                      : 1,
                 }}
-                transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+                transition={{ type: "spring", stiffness: 100, damping: 20 }}
               >
                 What sets Us apart
               </motion.h2>
@@ -376,9 +433,17 @@ export default function ImprovedCopyPage() {
               {/* Subtitle - Smart slides from left, Scalable & Strategic staggered from right */}
               <div className="flex justify-center items-center space-x-1 lg:space-x-2 xl:space-x-3">
                 {["Smart.", "Scalable.", "Strategic."].map((word, index) => {
-                  const wordProgress = Math.max(0, Math.min(1, section3ScrollProgress - 1 - (index > 0 ? (index - 1) * 0.3 : 0)));
+                  const wordProgress = Math.max(
+                    0,
+                    Math.min(
+                      1,
+                      section3ScrollProgress -
+                        1 -
+                        (index > 0 ? (index - 1) * 0.3 : 0)
+                    )
+                  );
                   let translateX = 0;
-                  
+
                   if (index === 0) {
                     // Smart - slides from left
                     translateX = (1 - wordProgress) * -200;
@@ -395,7 +460,11 @@ export default function ImprovedCopyPage() {
                         x: translateX,
                         opacity: wordProgress,
                       }}
-                      transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 100,
+                        damping: 20,
+                      }}
                     >
                       {word}
                     </motion.span>
@@ -408,10 +477,14 @@ export default function ImprovedCopyPage() {
             <motion.div
               className="flex flex-col items-center justify-center w-full h-full px-4 lg:px-6 xl:px-8 pb-4 lg:pb-6"
               style={{
-                y: Math.max(0, (1 - Math.max(0, Math.min(1, section3ScrollProgress - 2.5))) * 100),
+                y: Math.max(
+                  0,
+                  (1 - Math.max(0, Math.min(1, section3ScrollProgress - 2.5))) *
+                    100
+                ),
                 opacity: Math.max(0, Math.min(1, section3ScrollProgress - 2.5)),
               }}
-              transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+              transition={{ type: "spring", stiffness: 100, damping: 20 }}
             >
               {/* Title at final position */}
               <h2 className="font-poppins font-medium text-base lg:text-lg xl:text-xl 2xl:text-2xl tracking-[10%] lg:tracking-[15%] text-[#FF5225] mb-2 lg:mb-3">
@@ -433,8 +506,8 @@ export default function ImprovedCopyPage() {
               {/* Description */}
               <p className="font-inter font-normal text-xs lg:text-sm xl:text-base text-center text-[#444444] mb-3 lg:mb-4 xl:mb-5 max-w-[60%] lg:max-w-[55%] xl:max-w-[50%] mx-auto">
                 We don't just deliver AI and data solutions — we engineer
-                enterprise-grade intelligence systems that align with your business
-                vision and drive measurable value.
+                enterprise-grade intelligence systems that align with your
+                business vision and drive measurable value.
               </p>
 
               {/* Cards */}
@@ -445,7 +518,11 @@ export default function ImprovedCopyPage() {
                     className="bg-white p-3 lg:p-4 xl:p-5 rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] flex flex-col items-center text-center min-h-[120px] lg:min-h-[140px] xl:min-h-[160px]"
                   >
                     <div className="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10 flex items-center justify-center mb-2 lg:mb-3">
-                      <img src={card.icon} alt={card.title} className="w-full h-full object-contain" />
+                      <img
+                        src={card.icon}
+                        alt={card.title}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <h3 className="text-sm lg:text-base xl:text-lg font-poppins font-semibold text-[#FF5225] mb-2 lg:mb-3 text-center leading-tight">
                       {card.title}
@@ -459,15 +536,69 @@ export default function ImprovedCopyPage() {
             </motion.div>
           </motion.div>
         </div>
+
+        {/* Mobile/Tablet static version */}
+        <div className="lg:hidden py-12 px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            {/* Title */}
+            <h2 className="font-poppins font-medium text-lg md:text-xl text-[#FF5225] text-center align-middle mb-1">
+              What sets Us apart
+            </h2>
+
+            {/* Subtitle */}
+            <div className="flex flex-row justify-center items-center space-x-1 mb-2">
+              {["Smart.", "Scalable.", "Strategic."].map((word) => (
+                <span
+                  key={word}
+                  className="font-poppins font-normal text-base md:text-lg text-[#3D3D3D] text-center"
+                >
+                  {word}
+                </span>
+              ))}
+            </div>
+
+            {/* Description */}
+            <p className="font-inter font-normal text-sm text-center text-[#444444] mb-10 max-w-lg mx-auto leading-relaxed">
+              We don't just deliver AI and data solutions — we engineer
+              enterprise-grade intelligence systems that align with your
+              business vision and drive measurable value.
+            </p>
+
+            {/* Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+              {cardData.map((card, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-5 md:p-6 rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] flex flex-col items-center text-center"
+                >
+                  <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mb-4">
+                    <img
+                      src={card.icon}
+                      alt={card.title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-sm md:text-base font-poppins font-semibold text-[#FF5225] mb-3 text-center leading-tight">
+                    {card.title}
+                  </h3>
+                  <p className="text-xs md:text-sm font-poppins text-gray-600 text-center leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Case Study 1 - Gen AI Chatbot */}
       <div
         id="section-4"
-        className="w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
-        style={{ height: '100vh' }}
+        className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
+        style={{ height: "100vh" }}
       >
-        <section className="w-full h-full flex items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[13.05%] lg:py-[13.05%] xl:py-[13.05%] 2xl:py-[13.05%]">
+        {/* Large screen animated version */}
+        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[13.05%] lg:py-[13.05%] xl:py-[13.05%] 2xl:py-[13.05%]">
           <div className="container mx-auto w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
             {/* Left side - Phone mockup */}
             <motion.div
@@ -477,7 +608,10 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12" style={{ aspectRatio: '1200/1600' }}>
+              <div
+                className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12"
+                style={{ aspectRatio: "1200/1600" }}
+              >
                 <img
                   src="/images/YH-MN.gif"
                   alt="Gen AI-Chatbot Interface"
@@ -518,13 +652,62 @@ export default function ImprovedCopyPage() {
         </section>
       </div>
 
+      {/*Case Study 1 - Gen AI Chatbot: Mobile/Tablet static version */}
+      <div
+        id="section-4"
+        className="lg:hidden w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
+        // style={{ height: "100vh" }}
+      >
+        <section className="w-full py-12 px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col items-center space-y-8 md:space-y-10">
+              {/* Phone mockup */}
+              <div
+                className="w-3/4 md:w-2/3 lg:w-1/2"
+                style={{ aspectRatio: "1200/1600" }}
+              >
+                <img
+                  src="/images/YH-MN.gif"
+                  alt="Gen AI-Chatbot Interface"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="text-center max-w-2xl mx-auto">
+                <h2 className="text-xl md:text-2xl font-poppins font-medium text-[#262626] mb-6">
+                  Gen AI-Chatbot
+                </h2>
+                <p className="text-sm md:text-base font-poppins font-normal text-[#000000] mb-8 leading-relaxed">
+                  YourHour was originally designed to monitor and reduce daily
+                  screen time with alerts. Facing rising demand for mental
+                  health support, the team enhanced the app by integrating a
+                  Retrieval-Augmented Generation (RAG) AI chatbot. This "AI
+                  companion" continued screen-time coaching while also answering
+                  mental health questions, providing personalized advice on
+                  anxiety or depression, and offering companionship—based on how
+                  screen time affects health and emotional well-being.
+                </p>
+                <a
+                  href="/gen-ai-chatbot"
+                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 w-full md:w-auto"
+                >
+                  Case Study →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
       {/* Case Study 2 - ML Driven Recommendations */}
       <div
         id="section-5"
-        className="w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
-        style={{ height: '100vh' }}
+        className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
+        style={{ height: "100vh" }}
       >
-        <section className="w-full h-full flex items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[13.05%] lg:py-[13.05%] xl:py-[13.05%] 2xl:py-[13.05%]">
+        {/* Large screen animated version */}
+        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[13.05%] lg:py-[13.05%] xl:py-[13.05%] 2xl:py-[13.05%]">
           <div className="container mx-auto max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
             {/* Left side - Content */}
             <motion.div
@@ -563,7 +746,10 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12" style={{ aspectRatio: '1200/1600' }}>
+              <div
+                className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12"
+                style={{ aspectRatio: "1200/1600" }}
+              >
                 <img
                   src="/images/ai/early-foods.png"
                   alt="ML Driven Recommendations Interface"
@@ -575,25 +761,69 @@ export default function ImprovedCopyPage() {
         </section>
       </div>
 
+      {/* Case Study 2 - ML Driven Recommendations: Mobile/Tablet static version */}
+      <div
+        id="section-5"
+        className="lg:hidden w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
+      >
+        <section className="w-full py-12 px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col items-center space-y-8 md:space-y-10">
+              {/* Laptop mockup */}
+              <div className="w-5/6 md:w-4/5 lg:w-3/4 aspect-[11/7]">
+                <img
+                  src="/images/ai/early-foods.png"
+                  alt="ML Driven Recommendations Interface"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="text-center max-w-2xl mx-auto">
+                <h2 className="text-xl md:text-2xl font-poppins font-medium text-[#262626] mb-6">
+                  ML Driven Recommendations
+                </h2>
+                <p className="text-sm md:text-base font-poppins font-normal text-[#000000] mb-8 leading-relaxed">
+                  EarlyFoods, an e-commerce platform offering millet-based
+                  products for new and expecting mothers, found customers
+                  missing relevant items—limiting cart value. To solve this, we
+                  recommended an AI-driven recommendation engine. They added it
+                  on product pages using a hybrid of collaborative and
+                  content-based filtering to deliver personalized suggestions.
+                  This has boosted average order value, enhanced product
+                  discovery, and strengthened customer trust.
+                </p>
+                <a
+                  href="/early-foods"
+                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 w-full md:w-auto"
+                >
+                  Case Study →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
       {/* Section 6 - Our Offering For Your Automation Needs */}
       <div
         id="section-6-wrapper"
         style={{
-          minHeight: 'calc(100vh + 1200px)',
-          position: 'relative'
+          minHeight: "calc(100vh + 1200px)",
+          position: "relative",
         }}
-        className="w-full bg-white"
+        className="w-full bg-white hidden lg:block"
       >
-        {/* Sticky container */}
+        {/* Sticky container - Large screen animated version only */}
         <div
           id="section-6"
-          style={{ 
-            position: 'sticky',
-            top: '0px',
-            height: '100vh',
+          style={{
+            position: "sticky",
+            top: "0px",
+            height: "100vh",
             zIndex: 10,
-            width: '100%',
-            backgroundColor: 'white',
+            width: "100%",
+            backgroundColor: "white",
           }}
         >
           <motion.div
@@ -628,8 +858,15 @@ export default function ImprovedCopyPage() {
                   {offersCards.map((card, index) => {
                     // Calculate column translation based on section6Progress
                     // First column (index 0) is fixed, others animate
-                    const columnProgress = index === 0 ? 1 : Math.max(0, Math.min(1, section6Progress - (index - 1)));
-                    const translateY = index === 0 ? 0 : (1 - columnProgress) * 600; // Increased animation distance for better timing
+                    const columnProgress =
+                      index === 0
+                        ? 1
+                        : Math.max(
+                            0,
+                            Math.min(1, section6Progress - (index - 1))
+                          );
+                    const translateY =
+                      index === 0 ? 0 : (1 - columnProgress) * 600; // Increased animation distance for better timing
 
                     return (
                       <motion.div
@@ -639,7 +876,11 @@ export default function ImprovedCopyPage() {
                           transform: `translateY(${translateY}px)`,
                           opacity: 1,
                         }}
-                        transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 100,
+                          damping: 20,
+                        }}
                       >
                         <div>
                           <h4 className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-normal text-[#332771] mb-3 lg:mb-4 xl:mb-5 2xl:mb-6 text-left font-poppins">
@@ -672,6 +913,50 @@ export default function ImprovedCopyPage() {
               </div>
             </div>
           </motion.div>
+        </div>
+      </div>
+
+      {/* Section 6 - Our Offering For Your Automation Needs: Mobile/Tablet static version */}
+      <div className="w-full bg-white lg:hidden">
+        <div className="py-12 px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            {/* Heading */}
+            <div className="text-center font-poppins mb-12">
+              <h2 className="text-lg md:text-xl font-normal text-[#3D3D3D] mb-3">
+                Our Offering For Your Automation Needs-
+              </h2>
+              <h3 className="text-lg md:text-xl font-medium text-[#3D3D3D]">
+                <span className="font-semibold font-poppins">
+                  The Stack That Powers Your Future.
+                </span>
+              </h3>
+            </div>
+
+            {/* Static cards grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              {offersCards.map((card, index) => (
+                <div
+                  key={index}
+                  className="group py-6 md:py-8 px-4 md:px-6 flex flex-col justify-between bg-white border border-[#000000] rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-lg"
+                >
+                  <div>
+                    <h4 className="text-base md:text-lg font-normal text-[#332771] mb-4 text-left font-poppins leading-tight">
+                      {card.title}
+                    </h4>
+                    <p className="text-sm md:text-base text-[#D84326] mb-6 text-left leading-relaxed font-poppins">
+                      {card.text}
+                    </p>
+                  </div>
+                  <a
+                    href={card.link}
+                    className="w-fit flex items-center text-left text-sm md:text-base font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
+                  >
+                    Learn More <span className="ml-2">→</span>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
