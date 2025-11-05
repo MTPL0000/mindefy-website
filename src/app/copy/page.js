@@ -107,7 +107,7 @@ export default function ImprovedCopyPage() {
           const section3Top = window.scrollY + section3Rect.top;
           
           // Calculate progress from when section 1 top reaches viewport top to when section 3 reaches top
-          const startPoint = section1Top - window.innerHeight + 200; // Very aggressive - start 200px earlier
+          const startPoint = section1Top; // When section 1 reaches top (header will be hidden)
           
           // Progress: 0 when section 1 is below start point, 1 when section 3 reaches top
           let progress = 0;
