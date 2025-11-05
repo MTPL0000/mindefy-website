@@ -595,7 +595,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-4"
         className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
-        style={{ height: "100vh" }}
+        // style={{ height: "100vh" }}
       >
         {/* Large screen animated version */}
         <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[13.05%] lg:py-[13.05%] xl:py-[13.05%] 2xl:py-[13.05%]">
@@ -704,7 +704,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-5"
         className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
-        style={{ height: "100vh" }}
+        // style={{ height: "100vh" }}
       >
         {/* Large screen animated version */}
         <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[13.05%] lg:py-[13.05%] xl:py-[13.05%] 2xl:py-[13.05%]">
