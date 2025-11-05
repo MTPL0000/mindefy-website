@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import useHeaderHeight from "@/hooks/useHeaderHeight";
 
 const CustomMLSolution = () => {
+  const headerHeight = useHeaderHeight();
   const [activeSection, setActiveSection] = useState("introduction");
   const [isMobile, setIsMobile] = useState(false);
 
@@ -67,32 +69,40 @@ const CustomMLSolution = () => {
     { id: "solutions", label: "Solutions" },
     { id: "technical-implementation", label: "Technical Implementation" },
     { id: "technology-stack", label: "Technology Stack" },
+    { id: "contact", label: "Lets Get In Touch" },
   ];
 
   const handleNavClick = (sectionId) => {
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
   return (
     <div className="min-h-screen bg-[#E9F6F6]">
-      <div className="max-w-[100rem] mx-auto flex flex-col lg:flex-row pt-10">
+      <div className="max-w-screen mx-auto flex flex-col lg:flex-row">
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
         <div className="hidden lg:block w-80 flex-shrink-0 mr-0 lg:mr-5 mb-6 lg:mb-0">
-          <div className="sticky top-10">
-            <div className="py-8 bg-white shadow-lg h-full">
+          <div className="sticky" style={{ top: `${headerHeight}px` }}>
+            <div className="py-8 bg-white shadow-[2px_2px_12px_0px_rgba(0,0,0,0.2)] h-full">
               <nav className="space-y-1.5">
                 {navigationItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer ${
+                    className={`w-full text-left p-5 hover:font-semibold transition-colors duration-200 cursor-pointer border-l-4 ${
                       activeSection === item.id
-                        ? "bg-[#FAFFFA] text-[#2B7575] font-semibold text-base border-l-4"
-                        : "text-[#52B7B7] bg-[#FAFFFA] font-medium text-base border-l-4"
+                        ? "bg-[#FAFFFA] text-[#2B7575] font-semibold text-base border-[#2B7575]"
+                        : "text-[#52B7B7] bg-[#FAFFFA] font-medium text-base border-[#52B7B7]"
                     }`}
                   >
                     {item.label}
@@ -104,11 +114,11 @@ const CustomMLSolution = () => {
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 min-w-0 pt-10">
           {/* Introduction Section */}
           <section
             id="introduction"
-            className="mb-16 sm:mb-20 lg:mb-24 px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 lg:mt-10"
+            className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 lg:mt-10"
           >
             <div className="max-w-4xl mx-auto">
               <div className="mb-8 sm:mb-10 lg:mb-12">
@@ -118,7 +128,7 @@ const CustomMLSolution = () => {
                 <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-8 sm:mb-10 lg:mb-12 text-[#000000] leading-tight">
                   ML Driven Recommendations
                 </p>
-                <p className="text-[#000000] mb-4 sm:mb-6 font-normal text-sm sm:text-base leading-relaxed text-left px-2 sm:px-0">
+                <p className="text-[#000000] mb-4 sm:mb-6 font-normal text-sm sm:text-base leading-relaxed text-center lg:text-left px-2 sm:px-0">
                   EarlyFoods, an e-commerce platform offering millet-based
                   products for new and expecting mothers, found customers
                   missing relevant items—limiting cart value. To solve this, we
@@ -143,9 +153,9 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Challenges Section */}
-          <section id="challenges" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="challenges" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
+              <div className="text-center mb-12 lg:mb-16">
                 <h2 className="text-2xl font-semibold text-[#2B7575] mb-4">
                   CHALLENGES
                 </h2>
@@ -158,9 +168,9 @@ const CustomMLSolution = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
                 {/* Limited Browsing Time */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[4183/4200]">
                     <Image
-                      src="/images/YH-CB1.webp"
+                      src="/images/cmls-CB1.svg"
                       alt="Limited Browsing Time"
                       fill
                     />
@@ -177,9 +187,9 @@ const CustomMLSolution = () => {
 
                 {/* Lower Cart Value */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[697/630]">
                     <Image
-                      src="/images/YH-CB2.webp"
+                      src="/images/cmls-CB2.svg"
                       alt="Lower Cart Value"
                       fill
                     />
@@ -198,7 +208,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
                     <Image
-                      src="/images/YH-CB3.webp"
+                      src="/images/cmls-CB3.svg"
                       alt="Need for Smart Suggestions"
                       fill
                     />
@@ -217,7 +227,7 @@ const CustomMLSolution = () => {
                 <div className="text-center max-w-md mx-auto">
                   <div className="relative mx-auto mb-4 w-[7.81rem] h-[7.81rem]">
                     <Image
-                      src="/images/YH-CB4.webp"
+                      src="/images/cmls-CB4.svg"
                       alt="Risk to Conversions and AOV"
                       fill
                     />
@@ -236,11 +246,10 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Solutions Section */}
-          {/* Solutions Section */}
-          <section id="solutions" className="mb-24 px-4 sm:px-6 md:px-8">
+          <section id="solutions" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-[3.75rem]">
-                <h2 className="text-2xl font-semibold uppercase text-[#2B7575]">
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold uppercase text-[#2B7575] mb-4">
                   Solutions
                 </h2>
                 <h1 className="text-[1.25rem] font-normal text-[#333333] max-w-[45.25rem] mx-auto">
@@ -254,9 +263,9 @@ const CustomMLSolution = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
                 {/* Collaborative Filtering */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.368/1]">
                     <Image
-                      src="/images/YH-CB5.webp"
+                      src="/images/cmls-CB5.svg"
                       alt="Collaborative Filtering"
                       fill
                     />
@@ -274,9 +283,9 @@ const CustomMLSolution = () => {
 
                 {/* Content-Based Filtering */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.543/1]">
                     <Image
-                      src="/images/YH-CB6.webp"
+                      src="/images/cmls-CB6.png"
                       alt="Content-Based Filtering"
                       fill
                     />
@@ -294,9 +303,9 @@ const CustomMLSolution = () => {
 
                 {/* Nutritional Relevance */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.715/1]">
                     <Image
-                      src="/images/YH-CB7.webp"
+                      src="/images/cmls-CB7.svg"
                       alt="Nutritional Relevance"
                       fill
                     />
@@ -313,9 +322,9 @@ const CustomMLSolution = () => {
 
                 {/* Real-Time Integration */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 w-[10.375rem] h-[7.81rem]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-[1.574/1]">
                     <Image
-                      src="/images/YH-CB8.webp"
+                      src="/images/cmls-CB8.svg"
                       alt="Real-Time Integration"
                       fill
                     />
@@ -335,10 +344,10 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Technical Implementation Section */}
-          <section id="technical-implementation" className="mb-24 ">
+          <section id="technical-implementation" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 md:px-8">
             <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-10">
-                <h2 className="text-2xl font-semibold text-[#2B7575] mb-6">
+              <div className="text-center mb-12 lg:mb-16">
+                <h2 className="text-2xl font-semibold text-[#2B7575] mb-4">
                   TECHNICAL IMPLEMENTATION
                 </h2>
                 <h1 className="text-[1.25rem] font-normal text-[#333333]">
@@ -350,7 +359,7 @@ const CustomMLSolution = () => {
               {/* Implementation Steps Grid */}
               <div className="flex flex-wrap justify-center gap-x-20 gap-y-8">
                 {/* Step 1 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -359,17 +368,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7.5  font-normal text-[#3894FF26]">
                       1
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 mb-[3.25rem] text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Data Collection
                   </h3>
                 </div>
 
                 {/* Step 2 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -378,17 +387,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7.5  font-normal text-[#3894FF26]">
                       2
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Feature Engineering
                   </h3>
                 </div>
 
                 {/* Step 3 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -397,17 +406,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7.5  font-normal text-[#3894FF26]">
                       3
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Similarity <br /> Computation
                   </h3>
                 </div>
 
                 {/* Step 4 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -416,17 +425,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7  font-normal text-[#3894FF26]">
                       4
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Recommendation <br /> Logic
                   </h3>
                 </div>
 
                 {/* Step 5 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -435,17 +444,17 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7 font-normal text-[#3894FF26]">
                       5
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 mb-[3.75rem] text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Real-Time Service
                   </h3>
                 </div>
 
                 {/* Step 6 */}
-                <div className="bg-[#F7FCFC] rounded-2xl border-2 border-[#3894FF40] w-[13.75rem] relative">
+                <div className="bg-[#FFFFFF] rounded-2xl border-2 border-[#3894FF40] w-[15.31rem] relative">
                   <div className="flex items-center justify-between">
                     <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
                       <Image
@@ -454,11 +463,11 @@ const CustomMLSolution = () => {
                         fill
                       />
                     </div>
-                    <div className="text-7xl ml-3.5 font-normal text-[#3894FF26]">
+                    <div className="text-7xl mr-7.5  font-normal text-[#3894FF26]">
                       6
                     </div>
                   </div>
-                  <h3 className="text-base font-medium mx-6 text-[#0D223A]">
+                  <h3 className="text-base font-medium mx-6 mb-7 text-[#0D223A]">
                     Monitoring & <br /> Retraining
                   </h3>
                 </div>
@@ -467,9 +476,9 @@ const CustomMLSolution = () => {
           </section>
 
           {/* Technology Stack Section */}
-          <section id="technology-stack" className="mb-20 px-4 sm:px-6 lg:px-8">
+          <section id="technology-stack" className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 p-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-8 sm:mb-12">
+              <div className="text-center mb-12 lg:mb-16">
                 <h2 className="text-xl sm:text-2xl font-semibold text-[#2B7575]">
                   TECHNOLOGY STACK
                 </h2>

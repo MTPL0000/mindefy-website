@@ -1,21 +1,42 @@
 export const servicesData = [
   //Custom AI
   {
-    id: "gen-ai-chatbot",
-    title: "Gen AI-Chatbot",
-    category: "Custom AI Solutions",
-    route: "/gen-ai-chatbot",
-    component: "GenAIChatbot",
-    description: "Custom AI Chatbot development services",
+    id: "custom-AI-solution",
+    title: "Custom AI Solutions",
+    category: "AI & Data Solutions",
+    route: "/custom-AI-solution",
+    component: "CustomAISolution",
+    description: "Custom AI solution development services",
     isActive: true, // Already created
   },
+
   {
-    id: "custom-ml-solution",
-    title: "Custom ML Solution",
-    category: "Custom AI Solutions",
-    route: "/custom-ml-solution",
-    component: "CustomMLSolution",
+    id: "machine-learning",
+    title: "Machine Learning",
+    category: "AI & Data Solutions",
+    route: "/machine-learning",
+    component: "Machine Learning Solution",
     description: "Custom ML solution development services",
+    isActive: true, // Already created
+  },
+
+  {
+    id: "data-engineering",
+    title: "Data Engineering & Analytics",
+    category: "AI & Data Solutions",
+    route: "/data-engineering",
+    component: "Data Engineering & Analytics",
+    description: "Data Engineering & Analytics development services",
+    isActive: true, // Already created
+  },
+
+  {
+    id: "cloud-engineering",
+    title: "Cloud Engineering",
+    category: "AI & Data Solutions",
+    route: "/cloud-engineering",
+    component: "Cloud Engineering —Powering AI, Data & Scale",
+    description: "Cloud Engineering —Powering AI, Data & Scale",
     isActive: true, // Already created
   },
 

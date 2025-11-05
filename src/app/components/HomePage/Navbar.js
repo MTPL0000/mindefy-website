@@ -188,13 +188,6 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-baseline space-x-2 md:space-x-3 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
-          <a
-            href="/about-us"
-            className="hover:text-[#2c2178] whitespace-nowrap"
-          >
-            About Us
-          </a>
-
           {/* Services with dropdown */}
           <div
             className="relative"
@@ -323,14 +316,6 @@ export default function Navbar() {
       >
         <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="flex flex-col gap-4 text-sm font-medium text-[#3B3C4A] p-4">
-            <a
-              href="/about-us"
-              onClick={handleMobileMenuItemClick}
-              className="hover:text-[#2c2178] py-2"
-            >
-              About Us
-            </a>
-
             {/* Mobile Services Dropdown */}
             <div>
               <button
@@ -351,7 +336,7 @@ export default function Navbar() {
 
               {mobileServicesOpen && (
                 <div className="pl-4 mt-2 space-y-2 text-xs">
-                  {/* Custom AI Solutions */}
+                  {/* AI & Data Solutions */}
                   <div>
                     <button
                       onClick={() => {
@@ -369,7 +354,7 @@ export default function Navbar() {
                       }}
                       className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
                     >
-                      Custom AI Solutions
+                      AI & Data Solutions
                       <Image
                         src="/images/dropdown-icon.png"
                         alt="Dropdown"
@@ -381,20 +366,37 @@ export default function Navbar() {
                       />
                     </button>
                     {mobileCustomAIOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
+                      <div className="pl-4 mt-1 space-y-1">                     
                         <Link
-                          href="/gen-ai-chatbot"
+                          href="/custom-AI-solution"
                           onClick={handleMobileMenuItemClick}
                           className="block hover:text-red-600"
                         >
-                          Gen AI-Chatbot
+                          Custom AI Solution
                         </Link>
+
                         <Link
-                          href="/custom-ml-solution"
+                          href="/machine-learning"
                           onClick={handleMobileMenuItemClick}
                           className="block hover:text-red-600"
                         >
-                          Custom ML Solution
+                          Machine Learning
+                        </Link>
+
+                        <Link
+                          href="/data-engineering"
+                          onClick={handleMobileMenuItemClick}
+                          className="block hover:text-red-600"
+                        >
+                          Data Engineering
+                        </Link>
+
+                        <Link
+                          href="/cloud-engineering"
+                          onClick={handleMobileMenuItemClick}
+                          className="block hover:text-red-600"
+                        >
+                          Cloud Engineering
                         </Link>
                       </div>
                     )}
