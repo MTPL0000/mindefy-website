@@ -1,7 +1,6 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import { useRef, useEffect, useState, useCallback } from "react";
-import { useHeaderVisibility } from "@/hooks/useHeaderVisibility";
 import useHeaderHeight from "@/hooks/useHeaderHeight";
 
 const cardData = [
@@ -77,8 +76,7 @@ export default function ImprovedCopyPage() {
   const [section3AnimationStarted, setSection3AnimationStarted] = useState(false);
   const [section3AnimationTime, setSection3AnimationTime] = useState(0);
   const headerHeight = useHeaderHeight();
-  const isHeaderVisible = useHeaderVisibility();
-
+  
   // console.log(section6Progress)
 
   // Use Framer Motion's animation controls
@@ -229,22 +227,7 @@ export default function ImprovedCopyPage() {
     }
   }, [section3AnimationStarted, section3AnimationTime]);
 
-  // Header visibility animation effect
-  useEffect(() => {
-    const header = document.querySelector('nav');
-    if (header) {
-      if (isHeaderVisible) {
-        // Show header with slide down animation
-        header.style.transform = 'translateY(0)';
-        header.style.transition = 'transform 0.3s ease-out';
-      } else {
-        // Hide header with slide up animation
-        header.style.transform = `translateY(-${headerHeight}px)`;
-        header.style.transition = 'transform 0.3s ease-in';
-      }
-    }
-  }, [isHeaderVisible, headerHeight]);
-
+  
   // Animation variants for cleaner code
   const sectionVariants = {
     visible: { opacity: 1, pointerEvents: "auto" },
