@@ -103,15 +103,19 @@ export default function ImprovedCopyPage() {
         
         if (section3Element) {
           const section3Rect = section3Element.getBoundingClientRect();
+          const section1Top = window.scrollY + rect.top;
+          const section3Top = window.scrollY + section3Rect.top;
           
-          // Calculate progress from when section 1 top reaches header to when section 3 reaches top
-          const startPoint = 0; // When section 1 reaches top (header will be hidden)
+          // Calculate progress from when section 1 top reaches viewport top to when section 3 reaches top
+          const startPoint = section1Top - window.innerHeight + 200; // Very aggressive - start 200px earlier
           
           // Progress: 0 when section 1 is below start point, 1 when section 3 reaches top
           let progress = 0;
-          if (rect.top <= startPoint) {
+          if (scrollTop >= startPoint) {
             // Section 1 has started scrolling up
-            progress = Math.min(1, (startPoint - rect.top) / (window.innerHeight * 0.8));
+            const totalDistance = section3Top - startPoint;
+            const currentDistance = scrollTop - startPoint;
+            progress = Math.min(1, Math.max(0, currentDistance / totalDistance));
           }
           
           setSection1Progress(progress);
@@ -144,8 +148,8 @@ export default function ImprovedCopyPage() {
       if (section3Element) {
         const rect = section3Element.getBoundingClientRect();
         
-        // Trigger animation when section 3 top reaches top of viewport
-        if (rect.top <= 0 && !section3AnimationStarted) {
+        // Very aggressive trigger - start animation when section is 100px from top
+        if (rect.top <= 100 && !section3AnimationStarted) {
           setSection3AnimationStarted(true);
           setSection3AnimationTime(Date.now());
         }
@@ -196,7 +200,7 @@ export default function ImprovedCopyPage() {
   // Time-based animation for section 3 after trigger
   useEffect(() => {
     if (section3AnimationStarted && section3AnimationTime > 0) {
-      const animationDuration = 4500; // 4.5 seconds total animation
+      const animationDuration = 2500; // 2.5 seconds total animation (faster)
       const interval = setInterval(() => {
         const elapsed = Date.now() - section3AnimationTime;
         const progress = Math.min(1, elapsed / animationDuration);
@@ -212,7 +216,7 @@ export default function ImprovedCopyPage() {
       // Handle reverse animation when scrolling away
       const reverseInterval = setInterval(() => {
         setSection3ScrollProgress(prev => {
-          const newProgress = Math.max(0, prev - 0.1);
+          const newProgress = Math.max(0, prev - 0.15); // Faster reverse animation
           if (newProgress <= 0) {
             clearInterval(reverseInterval);
             return 0;
