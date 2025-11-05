@@ -871,7 +871,7 @@ export default function ImprovedCopyPage() {
                     return (
                       <motion.div
                         key={index}
-                        className={`group py-4 lg:py-5 xl:py-6 2xl:py-7 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between bg-white h-[37.3rem] lg:h-[37.3rem] xl:h-[37.3rem] 2xl:h-[37.3rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
+                        className={`py-4 lg:py-5 xl:py-6 2xl:py-7 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between bg-white h-[37.3rem] lg:h-[37.3rem] xl:h-[37.3rem] 2xl:h-[37.3rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
                         style={{
                           transform: `translateY(${translateY}px)`,
                           opacity: 1,
@@ -893,16 +893,6 @@ export default function ImprovedCopyPage() {
                         <a
                           href={card.link}
                           className="w-fit flex items-center text-left text-sm lg:text-base xl:text-lg 2xl:text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
-                          onMouseEnter={(e) =>
-                            e.currentTarget
-                              .closest(".group")
-                              .classList.add("hovered")
-                          }
-                          onMouseLeave={(e) =>
-                            e.currentTarget
-                              .closest(".group")
-                              .classList.remove("hovered")
-                          }
                         >
                           Learn More <span className="ml-2">→</span>
                         </a>
@@ -937,7 +927,7 @@ export default function ImprovedCopyPage() {
               {offersCards.map((card, index) => (
                 <div
                   key={index}
-                  className="group py-6 md:py-8 px-4 md:px-6 flex flex-col justify-between bg-white border border-[#000000] rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-lg"
+                  className="group py-6 md:py-8 px-4 md:px-6 flex flex-col justify-between bg-white border border-[#000000] rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] transition-all duration-300"
                 >
                   <div>
                     <h4 className="text-base md:text-lg font-normal text-[#332771] mb-4 text-left font-poppins leading-tight">
