@@ -200,7 +200,7 @@ export default function ImprovedCopyPage() {
   // Time-based animation for section 3 after trigger
   useEffect(() => {
     if (section3AnimationStarted && section3AnimationTime > 0) {
-      const animationDuration = 2500; // 2.5 seconds total animation (faster)
+      const animationDuration = 6000; // 6 seconds total animation (slower)
       const interval = setInterval(() => {
         const elapsed = Date.now() - section3AnimationTime;
         const progress = Math.min(1, elapsed / animationDuration);
@@ -216,7 +216,7 @@ export default function ImprovedCopyPage() {
       // Handle reverse animation when scrolling away
       const reverseInterval = setInterval(() => {
         setSection3ScrollProgress(prev => {
-          const newProgress = Math.max(0, prev - 0.15); // Faster reverse animation
+          const newProgress = Math.max(0, prev - 0.08); // Slower reverse animation
           if (newProgress <= 0) {
             clearInterval(reverseInterval);
             return 0;
