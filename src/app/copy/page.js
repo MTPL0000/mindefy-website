@@ -579,7 +579,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-6-wrapper"
         style={{
-          minHeight: 'calc(100vh + 1800px)',
+          minHeight: 'calc(100vh + 1200px)',
           position: 'relative'
         }}
         className="w-full bg-white"
