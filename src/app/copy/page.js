@@ -464,11 +464,11 @@ export default function ImprovedCopyPage() {
       {/* Case Study 1 - Gen AI Chatbot */}
       <div
         id="section-4"
-        className="w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20"
+        className="w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
         style={{ height: '100vh' }}
       >
-        <section className="w-full h-full flex items-center justify-center px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20">
-          <div className="container mx-auto w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10">
+        <section className="w-full h-full flex items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[13.05%] lg:py-[13.05%] xl:py-[13.05%] 2xl:py-[13.05%]">
+          <div className="container mx-auto w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
             {/* Left side - Phone mockup */}
             <motion.div
               className="flex-1 flex justify-center"
@@ -477,7 +477,7 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-10/12 xl:w-11/12 aspect-[0.6137/1]">
+              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12" style={{ aspectRatio: '1200/1600' }}>
                 <img
                   src="/images/YH-MN.gif"
                   alt="Gen AI-Chatbot Interface"
@@ -494,10 +494,10 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <h2 className="text-2xl font-poppins sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-[#262626] mb-4 lg:mb-6">
+              <h2 className="text-2xl font-poppins sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-[#262626] mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
                 Gen AI-Chatbot
               </h2>
-              <p className="text-sm font-poppins sm:text-base lg:text-base xl:text-lg font-normal text-[#000000] mb-5 lg:mb-7 leading-relaxed max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto lg:mx-0">
+              <p className="text-sm font-poppins sm:text-base lg:text-base xl:text-lg 2xl:text-xl font-normal text-[#000000] mb-5 lg:mb-7 xl:mb-9 2xl:mb-11 leading-relaxed max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl mx-auto lg:mx-0">
                 YourHour was originally designed to monitor and reduce daily
                 screen time with alerts. Facing rising demand for mental health
                 support, the team enhanced the app by integrating a
@@ -509,7 +509,7 @@ export default function ImprovedCopyPage() {
               </p>
               <a
                 href="/gen-ai-chatbot"
-                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-xs text-base lg:text-base xl:text-xl font-semibold hover:bg-gray-800 transition-colors duration-300"
+                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 2xl:px-12 py-3 lg:py-4 xl:py-5 2xl:py-6 rounded-xs text-base lg:text-base xl:text-xl 2xl:text-2xl font-semibold hover:bg-gray-800 transition-colors duration-300"
               >
                 Case Study →
               </a>
@@ -521,11 +521,11 @@ export default function ImprovedCopyPage() {
       {/* Case Study 2 - ML Driven Recommendations */}
       <div
         id="section-5"
-        className="w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20"
+        className="w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white"
         style={{ height: '100vh' }}
       >
-        <section className="w-full h-full flex items-center justify-center px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20">
-          <div className="container mx-auto max-w-6xl lg:max-w-7xl xl:max-w-8xl flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10">
+        <section className="w-full h-full flex items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[13.05%] lg:py-[13.05%] xl:py-[13.05%] 2xl:py-[13.05%]">
+          <div className="container mx-auto max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
             {/* Left side - Content */}
             <motion.div
               className="flex-1 text-center lg:text-left"
@@ -534,10 +534,10 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <h2 className="text-2xl font-poppins sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-[#262626] mb-4 lg:mb-6">
+              <h2 className="text-2xl font-poppins sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-[#262626] mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
                 ML Driven Recommendations
               </h2>
-              <p className="text-sm font-poppins sm:text-base lg:text-base xl:text-lg font-normal text-[#000000] mb-5 lg:mb-7 leading-relaxed max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto lg:mx-0">
+              <p className="text-sm font-poppins sm:text-base lg:text-base xl:text-lg 2xl:text-xl font-normal text-[#000000] mb-5 lg:mb-7 xl:mb-9 2xl:mb-11 leading-relaxed max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl mx-auto lg:mx-0">
                 EarlyFoods, an e-commerce platform offering millet-based
                 products for new and expecting mothers, found customers missing
                 relevant items—limiting cart value. To solve this, we
@@ -549,7 +549,7 @@ export default function ImprovedCopyPage() {
               </p>
               <a
                 href="/early-foods"
-                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-xs text-base lg:text-base xl:text-xl font-semibold hover:bg-gray-800 transition-colors duration-300"
+                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 2xl:px-12 py-3 lg:py-4 xl:py-5 2xl:py-6 rounded-xs text-base lg:text-base xl:text-xl 2xl:text-2xl font-semibold hover:bg-gray-800 transition-colors duration-300"
               >
                 Case Study →
               </a>
@@ -563,7 +563,7 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-10/12 xl:w-11/12 aspect-[11/7]">
+              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12" style={{ aspectRatio: '1200/1600' }}>
                 <img
                   src="/images/ai/early-foods.png"
                   alt="ML Driven Recommendations Interface"
