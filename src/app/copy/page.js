@@ -2,6 +2,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useRef, useEffect, useState, useCallback } from "react";
 import { useHeaderHeight } from "@/hooks/useHeaderHeight";
+import { useHeaderVisibility } from "@/hooks/useHeaderVisibility";
 
 const cardData = [
   {
@@ -76,6 +77,7 @@ export default function ImprovedCopyPage() {
   const [section3AnimationStarted, setSection3AnimationStarted] = useState(false);
   const [section3AnimationTime, setSection3AnimationTime] = useState(0);
   const headerHeight = useHeaderHeight('nav');
+  const isHeaderVisible = useHeaderVisibility();
 
   // console.log(section6Progress)
 
@@ -103,7 +105,7 @@ export default function ImprovedCopyPage() {
           const section3Rect = section3Element.getBoundingClientRect();
           
           // Calculate progress from when section 1 top reaches header to when section 3 reaches top
-          const startPoint = headerHeight; // When section 1 reaches header
+          const startPoint = 0; // When section 1 reaches top (header will be hidden)
           
           // Progress: 0 when section 1 is below start point, 1 when section 3 reaches top
           let progress = 0;
@@ -137,13 +139,13 @@ export default function ImprovedCopyPage() {
         }
       }
 
-      // Calculate section 3 trigger - only when section reaches top (accounting for header)
+      // Calculate section 3 trigger - only when section reaches top
       const section3Element = document.getElementById("section-3");
       if (section3Element) {
         const rect = section3Element.getBoundingClientRect();
         
-        // Trigger animation when section 3 top reaches header area (accounting for sticky positioning)
-        if (rect.top <= headerHeight && !section3AnimationStarted) {
+        // Trigger animation when section 3 top reaches top of viewport
+        if (rect.top <= 0 && !section3AnimationStarted) {
           setSection3AnimationStarted(true);
           setSection3AnimationTime(Date.now());
         }
@@ -170,14 +172,13 @@ export default function ImprovedCopyPage() {
       if (section6WrapperElement) {
         const wrapperRect = section6WrapperElement.getBoundingClientRect();
         const wrapperTop = window.scrollY + wrapperRect.top;
-        const triggerPoint = wrapperTop; // When wrapper reaches header
+        const triggerPoint = wrapperTop; // When wrapper reaches top
         
         // Calculate progress based on scroll position
-        const scrollDistance = window.scrollY - triggerPoint + headerHeight;
-        const animationDuration = window.innerHeight * 1.5; // Longer animation window (2x viewport)
+        const scrollDistance = window.scrollY - triggerPoint;
+        const animationDuration = window.innerHeight * 1.5; // Longer animation window (1.5x viewport)
         
         if (scrollDistance >= 0 && scrollDistance <= animationDuration) {
-          console.log(scrollDistance, animationDuration, window.innerHeight)
           const progress = scrollDistance / animationDuration;
           setSection6Progress(progress * 4); // Continuous progress 0-4 for smooth animation
         } else if (scrollDistance > animationDuration) {
@@ -224,6 +225,22 @@ export default function ImprovedCopyPage() {
     }
   }, [section3AnimationStarted, section3AnimationTime]);
 
+  // Header visibility animation effect
+  useEffect(() => {
+    const header = document.querySelector('nav');
+    if (header) {
+      if (isHeaderVisible) {
+        // Show header with slide down animation
+        header.style.transform = 'translateY(0)';
+        header.style.transition = 'transform 0.3s ease-out';
+      } else {
+        // Hide header with slide up animation
+        header.style.transform = `translateY(-${headerHeight}px)`;
+        header.style.transition = 'transform 0.3s ease-in';
+      }
+    }
+  }, [isHeaderVisible, headerHeight]);
+
   // Animation variants for cleaner code
   const sectionVariants = {
     visible: { opacity: 1, pointerEvents: "auto" },
@@ -239,7 +256,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-0"
         className="w-full flex items-center justify-center bg-black"
-        style={{ height: `calc(100vh - ${headerHeight}px)` }}
+        style={{ height: '100vh' }}
       >
         <video
           className="w-full h-full object-cover"
@@ -256,7 +273,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-1"
         className="w-full flex items-center justify-center relative overflow-hidden"
-        style={{ height: `calc(100vh - ${headerHeight}px)`}}
+        style={{ height: '100vh' }}
       >
         <motion.div
           className="absolute inset-0 bg-cover bg-center"
@@ -265,9 +282,9 @@ export default function ImprovedCopyPage() {
           initial={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
         />
 
-        <div className="relative z-10 flex items-center justify-center h-full px-4">
+        <div className="relative z-10 flex items-center justify-center h-full px-4 lg:px-8 xl:px-12 2xl:px-16">
           <motion.div
-            className="text-center max-w-4xl mx-auto"
+            className="text-center max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
             initial={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
@@ -275,12 +292,12 @@ export default function ImprovedCopyPage() {
               animate={contentZoomControls}
               initial={{ scale: 1, opacity: 1 }}
             >
-              <h1 className="mb-6 font-poppins text-[2.5rem] font-normal text-[#3D3D3D]">
+              <h1 className="mb-6 font-poppins text-[2rem] lg:text-[2.5rem] xl:text-[3rem] 2xl:text-[3.5rem] font-normal text-[#3D3D3D]">
                 <div>Built With Data. Powered By AI.</div>
                 <div className="font-semibold mt-2">Delivered For Impact.</div>
               </h1>
 
-              <div className="space-y-4 text-lg font-poppins text-gray-700 mb-8">
+              <div className="space-y-4 text-base lg:text-lg xl:text-xl font-poppins text-gray-700 mb-8 max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
                 <p>
                   AI turns data into action. We help businesses unlock that
                   power — through tailored, scalable solutions.
@@ -299,7 +316,7 @@ export default function ImprovedCopyPage() {
                 </p>
               </div>
 
-              <button className="bg-[#34333D] text-white font-poppins px-8 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer">
+              <button className="bg-[#34333D] text-white font-poppins px-6 lg:px-8 xl:px-10 py-3 lg:py-4 rounded-full text-base lg:text-lg xl:text-xl font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer">
                 Learn More
               </button>
             </motion.div>
@@ -311,7 +328,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-3-wrapper"
         style={{
-          minHeight: 'calc(100vh + 200px)',
+          minHeight: '100vh',
           position: 'relative'
         }}
         className="w-full bg-white"
@@ -321,21 +338,20 @@ export default function ImprovedCopyPage() {
           id="section-3"
           style={{ 
             position: 'sticky',
-            top: `${headerHeight}px`,
-            height: `100vh`,
+            top: '0px',
             zIndex: 10,
             width: '100%',
             backgroundColor: 'white',
           }}
         >
           <motion.div
-            className="flex flex-col items-center justify-center px-16 pb-5 h-full overflow-hidden relative"
+            className="flex flex-col items-center justify-center lg:mt-[5%] xl:mt-[6%] px-[4.58%] h-full overflow-hidden relative"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.8 } }}
           >
             {/* Center Animation Layer - Title and subtitle animate in center */}
             <motion.div
-              className="absolute inset-0 flex flex-col items-center justify-center"
+              className="absolute inset-0 flex flex-col items-center justify-center px-4 lg:px-6 xl:px-8"
               style={{
                 opacity: section3ScrollProgress < 2.5 ? 1 : 0,
               }}
@@ -343,7 +359,7 @@ export default function ImprovedCopyPage() {
             >
               {/* Title - zoom in from center */}
               <motion.h2
-                className="font-poppins font-medium text-[1.5rem] tracking-[20%] text-[#FF5225] mb-4"
+                className="font-poppins font-medium text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl tracking-[10%] lg:tracking-[20%] text-[#FF5225] align-middle"
                 style={{
                   scale: section3ScrollProgress < 1 ? Math.max(0, section3ScrollProgress) : 1,
                   opacity: section3ScrollProgress < 1 ? Math.max(0, section3ScrollProgress) : 1,
@@ -354,7 +370,7 @@ export default function ImprovedCopyPage() {
               </motion.h2>
 
               {/* Subtitle - Smart slides from left, Scalable & Strategic staggered from right */}
-              <div className="flex justify-center items-center space-x-4 mb-6">
+              <div className="flex justify-center items-center space-x-1 lg:space-x-2 xl:space-x-3">
                 {["Smart.", "Scalable.", "Strategic."].map((word, index) => {
                   const wordProgress = Math.max(0, Math.min(1, section3ScrollProgress - 1 - (index > 0 ? (index - 1) * 0.3 : 0)));
                   let translateX = 0;
@@ -370,7 +386,7 @@ export default function ImprovedCopyPage() {
                   return (
                     <motion.span
                       key={word}
-                      className="font-poppins font-normal text-[2.5rem] text-[#3D3D3D]"
+                      className="font-poppins font-normal text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-[#3D3D3D] align-middle tracking-normal"
                       style={{
                         x: translateX,
                         opacity: wordProgress,
@@ -386,7 +402,7 @@ export default function ImprovedCopyPage() {
 
             {/* Final Position Layer - Slide up animation with all content */}
             <motion.div
-              className="flex flex-col items-center justify-center w-full py-5"
+              className="flex flex-col items-center justify-center w-full h-full px-4 lg:px-6 xl:px-8 pb-4 lg:pb-6"
               style={{
                 y: Math.max(0, (1 - Math.max(0, Math.min(1, section3ScrollProgress - 2.5))) * 100),
                 opacity: Math.max(0, Math.min(1, section3ScrollProgress - 2.5)),
@@ -394,16 +410,16 @@ export default function ImprovedCopyPage() {
               transition={{ type: 'spring', stiffness: 100, damping: 20 }}
             >
               {/* Title at final position */}
-              <h2 className="font-poppins font-medium text-[1.5rem] tracking-[20%] text-[#FF5225] mb-4">
+              <h2 className="font-poppins font-medium text-base lg:text-lg xl:text-xl 2xl:text-2xl tracking-[10%] lg:tracking-[15%] text-[#FF5225] mb-2 lg:mb-3">
                 What sets Us apart
               </h2>
 
               {/* Subtitle at final position */}
-              <div className="flex justify-center items-center space-x-4 mb-6">
+              <div className="flex justify-center items-center space-x-1 lg:space-x-2 xl:space-x-3 mb-3 lg:mb-4">
                 {["Smart.", "Scalable.", "Strategic."].map((word) => (
                   <span
                     key={word}
-                    className="font-poppins font-normal text-[2.5rem] text-[#3D3D3D]"
+                    className="font-poppins font-normal text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-[#3D3D3D]"
                   >
                     {word}
                   </span>
@@ -411,26 +427,26 @@ export default function ImprovedCopyPage() {
               </div>
 
               {/* Description */}
-              <p className="font-inter font-normal text-base text-center text-[#444444] mb-8 max-w-3xl mx-auto">
+              <p className="font-inter font-normal text-xs lg:text-sm xl:text-base text-center text-[#444444] mb-3 lg:mb-4 xl:mb-5 max-w-[60%] lg:max-w-[55%] xl:max-w-[50%] mx-auto">
                 We don't just deliver AI and data solutions — we engineer
                 enterprise-grade intelligence systems that align with your business
                 vision and drive measurable value.
               </p>
 
               {/* Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 xl:gap-6 w-full max-w-5xl lg:max-w-6xl">
                 {cardData.map((card, index) => (
                   <div
                     key={index}
-                    className="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center justify-center gap-6 text-center min-h-70"
+                    className="bg-white p-3 lg:p-4 xl:p-5 rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] flex flex-col items-center text-center min-h-[120px] lg:min-h-[140px] xl:min-h-[160px]"
                   >
-                    <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={card.icon} alt={card.title} className="w-full" />
+                    <div className="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10 flex items-center justify-center mb-2 lg:mb-3">
+                      <img src={card.icon} alt={card.title} className="w-full h-full object-contain" />
                     </div>
-                    <h3 className="text-xl font-poppins font-semibold text-[#FF5225]">
+                    <h3 className="text-sm lg:text-base xl:text-lg font-poppins font-semibold text-[#FF5225] mb-2 lg:mb-3 text-center leading-tight">
                       {card.title}
                     </h3>
-                    <p className="text-sm font-poppins text-gray-600">
+                    <p className="text-xs lg:text-xs xl:text-sm font-poppins text-gray-600 text-center leading-relaxed flex-1 flex items-center">
                       {card.description}
                     </p>
                   </div>
@@ -444,10 +460,11 @@ export default function ImprovedCopyPage() {
       {/* Case Study 1 - Gen AI Chatbot */}
       <div
         id="section-4"
-        className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-6 sm:px-8 lg:px-16 py-10"
+        className="w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20"
+        style={{ height: '100vh' }}
       >
-        <section className="w-full min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-16 py-10">
-          <div className="container mx-auto w-full max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
+        <section className="w-full h-full flex items-center justify-center px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20">
+          <div className="container mx-auto w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10">
             {/* Left side - Phone mockup */}
             <motion.div
               className="flex-1 flex justify-center"
@@ -456,7 +473,7 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <div className="relative w-9/12 sm:w-7/12 md:w-6/12 lg:w-11/12 aspect-[0.6137/1]">
+              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-10/12 xl:w-11/12 aspect-[0.6137/1]">
                 <img
                   src="/images/YH-MN.gif"
                   alt="Gen AI-Chatbot Interface"
@@ -473,10 +490,10 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <h2 className="text-3xl font-poppins sm:text-4xl lg:text-5xl font-medium text-[#262626] mb-6">
+              <h2 className="text-2xl font-poppins sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-[#262626] mb-4 lg:mb-6">
                 Gen AI-Chatbot
               </h2>
-              <p className="text-sm font-poppins sm:text-base font-normal text-[#000000] mb-7 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-sm font-poppins sm:text-base lg:text-base xl:text-lg font-normal text-[#000000] mb-5 lg:mb-7 leading-relaxed max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto lg:mx-0">
                 YourHour was originally designed to monitor and reduce daily
                 screen time with alerts. Facing rising demand for mental health
                 support, the team enhanced the app by integrating a
@@ -488,7 +505,7 @@ export default function ImprovedCopyPage() {
               </p>
               <a
                 href="/gen-ai-chatbot"
-                className="inline-block font-poppins bg-[#231F20] text-white px-8 py-4 rounded-xs sm:py-4 text-base sm:text-xl font-semibold hover:bg-gray-800 transition-colors duration-300"
+                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-xs text-base lg:text-base xl:text-xl font-semibold hover:bg-gray-800 transition-colors duration-300"
               >
                 Case Study →
               </a>
@@ -500,10 +517,11 @@ export default function ImprovedCopyPage() {
       {/* Case Study 2 - ML Driven Recommendations */}
       <div
         id="section-5"
-        className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-6 sm:px-8 lg:px-16 py-10"
+        className="w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB] to-white px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20"
+        style={{ height: '100vh' }}
       >
-        <section className="w-full min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-16 py-10">
-          <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        <section className="w-full h-full flex items-center justify-center px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20">
+          <div className="container mx-auto max-w-6xl lg:max-w-7xl xl:max-w-8xl flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10">
             {/* Left side - Content */}
             <motion.div
               className="flex-1 text-center lg:text-left"
@@ -512,10 +530,10 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <h2 className="text-3xl font-poppins sm:text-4xl lg:text-5xl font-medium text-[#262626] mb-6">
+              <h2 className="text-2xl font-poppins sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-[#262626] mb-4 lg:mb-6">
                 ML Driven Recommendations
               </h2>
-              <p className="text-sm font-poppins sm:text-base font-normal text-[#000000] mb-7 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-sm font-poppins sm:text-base lg:text-base xl:text-lg font-normal text-[#000000] mb-5 lg:mb-7 leading-relaxed max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto lg:mx-0">
                 EarlyFoods, an e-commerce platform offering millet-based
                 products for new and expecting mothers, found customers missing
                 relevant items—limiting cart value. To solve this, we
@@ -527,7 +545,7 @@ export default function ImprovedCopyPage() {
               </p>
               <a
                 href="/early-foods"
-                className="inline-block font-poppins bg-[#231F20] text-white px-8 py-4 rounded-xs sm:py-4 text-base sm:text-xl font-semibold hover:bg-gray-800 transition-colors duration-300"
+                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-xs text-base lg:text-base xl:text-xl font-semibold hover:bg-gray-800 transition-colors duration-300"
               >
                 Case Study →
               </a>
@@ -541,7 +559,7 @@ export default function ImprovedCopyPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <div className="relative w-10/12 sm:w-8/12 md:w-7/12 lg:w-11/12 aspect-[11/7]">
+              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-10/12 xl:w-11/12 aspect-[11/7]">
                 <img
                   src="/images/ai/early-foods.png"
                   alt="ML Driven Recommendations Interface"
@@ -567,21 +585,21 @@ export default function ImprovedCopyPage() {
           id="section-6"
           style={{ 
             position: 'sticky',
-            top: `${headerHeight}px`,
-            height: `100vh`,
+            top: '0px',
+            height: '100vh',
             zIndex: 10,
             width: '100%',
             backgroundColor: 'white',
           }}
         >
           <motion.div
-            className="flex flex-col px-6 md:px-10 lg:px-16 pt-8 pb-5 h-full overflow-hidden"
+            className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 pt-6 lg:pt-8 pb-5 h-full overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.8 } }}
           >
             {/* Heading */}
             <motion.div
-              className="text-center font-poppins mb-8 md:mb-10"
+              className="text-center font-poppins mb-6 md:mb-8 lg:mb-10 xl:mb-12"
               initial={{ opacity: 0, y: -20 }}
               animate={{
                 opacity: 1,
@@ -589,10 +607,10 @@ export default function ImprovedCopyPage() {
                 transition: { duration: 0.8, delay: 0.2 },
               }}
             >
-              <h2 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-normal text-[#3D3D3D] mb-2">
+              <h2 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal text-[#3D3D3D] mb-2">
                 Our Offering For Your Automation Needs-
               </h2>
-              <h3 className="text-2xl font-poppins md:text-3xl lg:text-4xl font-medium text-[#3D3D3D]">
+              <h3 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium text-[#3D3D3D]">
                 <span className="font-semibold font-poppins">
                   The Stack That Powers Your Future.
                 </span>
@@ -601,7 +619,7 @@ export default function ImprovedCopyPage() {
 
             {/* Responsive 4-column cards with staggered scroll animation */}
             <div className="flex items-center justify-center flex-1">
-              <div className="w-full max-w-7xl mx-auto bg-white">
+              <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl mx-auto bg-white">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
                   {offersCards.map((card, index) => {
                     // Calculate column translation based on section6Progress
@@ -612,7 +630,7 @@ export default function ImprovedCopyPage() {
                     return (
                       <motion.div
                         key={index}
-                        className={`group py-8 px-2.5 flex flex-col justify-between bg-white h-[34rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
+                        className={`group py-6 lg:py-8 xl:py-10 px-2 lg:px-2.5 xl:px-3 flex flex-col justify-between bg-white h-[30rem] lg:h-[34rem] xl:h-[38rem] 2xl:h-[42rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
                         style={{
                           transform: `translateY(${translateY}px)`,
                           opacity: 1,
@@ -620,16 +638,16 @@ export default function ImprovedCopyPage() {
                         transition={{ type: 'spring', stiffness: 100, damping: 20 }}
                       >
                         <div>
-                          <h4 className="text-3xl font-normal text-[#332771] mb-6 text-left font-poppins">
+                          <h4 className="text-2xl lg:text-3xl xl:text-4xl font-normal text-[#332771] mb-4 lg:mb-6 xl:mb-8 text-left font-poppins">
                             {card.title}
                           </h4>
-                          <p className="text-base text-[#D84326] mb-6 text-left leading-relaxed font-poppins">
+                          <p className="text-sm lg:text-base xl:text-lg text-[#D84326] mb-4 lg:mb-6 xl:mb-8 text-left leading-relaxed font-poppins">
                             {card.text}
                           </p>
                         </div>
                         <a
                           href={card.link}
-                          className="w-fit flex items-center text-left text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
+                          className="w-fit flex items-center text-left text-lg lg:text-xl xl:text-2xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
                           onMouseEnter={(e) =>
                             e.currentTarget
                               .closest(".group")
