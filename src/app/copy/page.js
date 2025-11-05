@@ -47,22 +47,22 @@ const offersCards = [
   {
     title: "AI Solutions",
     text: "Build Intelligent Systems That Learn, Adapt, And Automate Complex Decisions — From GenAI To NLP And Computer Vision.",
-    link: "/",
+    link: "/custom-AI-solution",
   },
   {
     title: "Machine Learning (ML)",
     text: "Design, Train, And Deploy Models That Predict, Classify, And Optimize — Using Structured And Unstructured Data.",
-    link: "/",
+    link: "/machine-learning",
   },
   {
     title: "Data Engineering & Analytics",
     text: "Transform Raw Data Into A Strategic Asset — We Build Reliable Pipelines, Scalable Data Lakes, And Intelligent Warehouses That Power Insightful Dashboards, Business Intelligence, And Advanced Analytics. From Data Collection To Decision-Making, We Engineer The Entire Journey.",
-    link: "/",
+    link: "/data-engineering",
   },
   {
     title: "Cloud Engineering Services",
     text: "Build And Scale With The Power Of The Cloud. We Design Secure, High-Performance Cloud Infrastructures That Support AI, Data, And Modern Applications—Ensuring Speed, Flexibility, And Resilience Across AWS, Azure, And GCP.",
-    link: "/",
+    link: "/cloud-engineering",
   },
 ];
 
@@ -579,7 +579,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-6-wrapper"
         style={{
-          minHeight: 'calc(100vh + 1000px)',
+          minHeight: 'calc(100vh + 1800px)',
           position: 'relative'
         }}
         className="w-full bg-white"
@@ -629,7 +629,7 @@ export default function ImprovedCopyPage() {
                     // Calculate column translation based on section6Progress
                     // First column (index 0) is fixed, others animate
                     const columnProgress = index === 0 ? 1 : Math.max(0, Math.min(1, section6Progress - (index - 1)));
-                    const translateY = index === 0 ? 0 : (1 - columnProgress) * 450; // Only animate columns 1, 2, 3
+                    const translateY = index === 0 ? 0 : (1 - columnProgress) * 600; // Increased animation distance for better timing
 
                     return (
                       <motion.div
