@@ -597,7 +597,7 @@ export default function ImprovedCopyPage() {
           }}
         >
           <motion.div
-            className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 pt-6 lg:pt-8 pb-5 h-full overflow-hidden"
+            className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 pt-6 lg:pt-8 h-full overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.8 } }}
           >
@@ -622,8 +622,8 @@ export default function ImprovedCopyPage() {
             </motion.div>
 
             {/* Responsive 4-column cards with staggered scroll animation */}
-            <div className="flex items-center justify-center flex-1">
-              <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl mx-auto bg-white">
+            <div className="flex items-end justify-center flex-1">
+              <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto bg-white">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
                   {offersCards.map((card, index) => {
                     // Calculate column translation based on section6Progress
@@ -634,7 +634,7 @@ export default function ImprovedCopyPage() {
                     return (
                       <motion.div
                         key={index}
-                        className={`group py-6 lg:py-8 xl:py-10 px-2 lg:px-2.5 xl:px-3 flex flex-col justify-between bg-white h-[30rem] lg:h-[34rem] xl:h-[38rem] 2xl:h-[42rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
+                        className={`group py-4 lg:py-5 xl:py-6 2xl:py-7 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between bg-white h-[37.3rem] lg:h-[37.3rem] xl:h-[37.3rem] 2xl:h-[37.3rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
                         style={{
                           transform: `translateY(${translateY}px)`,
                           opacity: 1,
@@ -642,16 +642,16 @@ export default function ImprovedCopyPage() {
                         transition={{ type: 'spring', stiffness: 100, damping: 20 }}
                       >
                         <div>
-                          <h4 className="text-2xl lg:text-3xl xl:text-4xl font-normal text-[#332771] mb-4 lg:mb-6 xl:mb-8 text-left font-poppins">
+                          <h4 className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-normal text-[#332771] mb-3 lg:mb-4 xl:mb-5 2xl:mb-6 text-left font-poppins">
                             {card.title}
                           </h4>
-                          <p className="text-sm lg:text-base xl:text-lg text-[#D84326] mb-4 lg:mb-6 xl:mb-8 text-left leading-relaxed font-poppins">
+                          <p className="text-xs lg:text-sm xl:text-base 2xl:text-lg text-[#D84326] mb-3 lg:mb-4 xl:mb-5 2xl:mb-6 text-left leading-relaxed font-poppins">
                             {card.text}
                           </p>
                         </div>
                         <a
                           href={card.link}
-                          className="w-fit flex items-center text-left text-lg lg:text-xl xl:text-2xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
+                          className="w-fit flex items-center text-left text-sm lg:text-base xl:text-lg 2xl:text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
                           onMouseEnter={(e) =>
                             e.currentTarget
                               .closest(".group")
