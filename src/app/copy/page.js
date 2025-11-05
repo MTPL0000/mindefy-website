@@ -643,7 +643,7 @@ export default function ImprovedCopyPage() {
               </p>
               <a
                 href="/gen-ai-chatbot"
-                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 2xl:px-12 py-3 lg:py-4 xl:py-5 2xl:py-6 rounded-xs text-base lg:text-base xl:text-xl 2xl:text-2xl font-semibold hover:bg-gray-800 transition-colors duration-300"
+                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 2xl:px-12 py-3 lg:py-4 xl:py-5 2xl:py-6 rounded-xs text-base lg:text-base xl:text-xl 2xl:text-2xl font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
               >
                 Case Study →
               </a>
@@ -690,7 +690,7 @@ export default function ImprovedCopyPage() {
                 </p>
                 <a
                   href="/gen-ai-chatbot"
-                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 w-full md:w-auto"
+                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 w-full md:w-auto hover:cursor-pointer"
                 >
                   Case Study →
                 </a>
@@ -731,8 +731,8 @@ export default function ImprovedCopyPage() {
                 strengthened customer trust.
               </p>
               <a
-                href="/early-foods"
-                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 2xl:px-12 py-3 lg:py-4 xl:py-5 2xl:py-6 rounded-xs text-base lg:text-base xl:text-xl 2xl:text-2xl font-semibold hover:bg-gray-800 transition-colors duration-300"
+                href="/custom-ml-solution"
+                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 2xl:px-12 py-3 lg:py-4 xl:py-5 2xl:py-6 rounded-xs text-base lg:text-base xl:text-xl 2xl:text-2xl font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
               >
                 Case Study →
               </a>
@@ -794,8 +794,8 @@ export default function ImprovedCopyPage() {
                   discovery, and strengthened customer trust.
                 </p>
                 <a
-                  href="/early-foods"
-                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 w-full md:w-auto"
+                  href="/custom-ml-solution"
+                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 w-full md:w-auto hover:cursor-pointer"
                 >
                   Case Study →
                 </a>
