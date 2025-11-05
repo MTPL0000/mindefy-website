@@ -1,8 +1,8 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import { useRef, useEffect, useState, useCallback } from "react";
-import { useHeaderHeight } from "@/hooks/useHeaderHeight";
 import { useHeaderVisibility } from "@/hooks/useHeaderVisibility";
+import useHeaderHeight from "@/hooks/useHeaderHeight";
 
 const cardData = [
   {
@@ -76,7 +76,7 @@ export default function ImprovedCopyPage() {
   const [section3ScrollProgress, setSection3ScrollProgress] = useState(0);
   const [section3AnimationStarted, setSection3AnimationStarted] = useState(false);
   const [section3AnimationTime, setSection3AnimationTime] = useState(0);
-  const headerHeight = useHeaderHeight('nav');
+  const headerHeight = useHeaderHeight();
   const isHeaderVisible = useHeaderVisibility();
 
   // console.log(section6Progress)
