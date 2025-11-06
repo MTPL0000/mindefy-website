@@ -146,8 +146,8 @@ export default function ImprovedCopyPage() {
       if (section3Element) {
         const rect = section3Element.getBoundingClientRect();
         
-        // Very aggressive trigger - start animation when section is 100px from top
-        if (rect.top <= 100 && !section3AnimationStarted) {
+        // Start animation when section reaches header area
+        if (rect.top <= headerHeight && !section3AnimationStarted) {
           setSection3AnimationStarted(true);
           setSection3AnimationTime(Date.now());
         }
@@ -240,7 +240,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-0"
         className="hidden lg:block w-full items-center justify-center bg-black"
-        style={{ height: "100vh" }}
+        style={{ height: `calc(100vh - ${headerHeight}px)` }}
       >
         <video
           className="w-full h-full object-cover"
@@ -270,7 +270,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-1"
         className="w-full flex items-center justify-center relative overflow-hidden"
-        style={{ height: "100vh" }}
+        style={{ height: `calc(100vh - ${headerHeight}px)` }}
       >
         {/* Animated background for large screens only */}
         <motion.div
@@ -376,7 +376,7 @@ export default function ImprovedCopyPage() {
           className="hidden lg:block"
           style={{
             position: "sticky",
-            top: "0px",
+            top: `${headerHeight}px`,
             zIndex: 10,
             width: "100%",
             backgroundColor: "white",
@@ -800,8 +800,8 @@ export default function ImprovedCopyPage() {
           id="section-6"
           style={{
             position: "sticky",
-            top: "0px",
-            height: "100vh",
+            top: `${headerHeight}px`,
+            height: `calc(100vh - ${headerHeight}px)`,
             zIndex: 10,
             width: "100%",
             backgroundColor: "white",
