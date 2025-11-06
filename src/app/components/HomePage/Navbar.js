@@ -56,7 +56,7 @@ export default function Navbar() {
       const viewportHeight = window.innerHeight;
 
       // Match the hero section threshold
-      if (heroBottom < viewportHeight * 0.93) {
+      if (heroBottom < viewportHeight * 0.97) {
         setShowAIInNavbar(true);
       } else {
         setShowAIInNavbar(false);
@@ -224,14 +224,14 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-baseline space-x-2 md:space-x-3 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
-          {/* AI Tab with animation - always visible on non-home pages, animated on home page only */}
+          {/* AI Tab with animation for large screen only - always visible on non-home pages, animated on home page only */}
           <div
             className="relative overflow-visible"
             style={{
               width: showAIInNavbar ? "auto" : "0px",
               opacity: showAIInNavbar ? 1 : 0,
               transition: "width 0.5s ease-out, opacity 0.5s ease-out",
-              marginRight: "24px",
+              marginRight: "1.25rem",
             }}
           >
             <Link

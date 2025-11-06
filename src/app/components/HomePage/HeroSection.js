@@ -84,7 +84,8 @@ export default function HeroSection() {
   // Check if device is desktop (lg breakpoint = 1024px)
   const checkIsDesktop = () => {
     if (typeof window === "undefined") return false;
-    return window.innerWidth >= 1024;
+    return window.innerWidth >= 768;
+    // return window.innerWidth >= 1024;
   };
 
   // Function to scroll to contact section
@@ -164,7 +165,7 @@ export default function HeroSection() {
       // Calculate scroll progress
       const scrollY = window.scrollY || window.pageYOffset;
       const scrollStart = 0;
-      const scrollEnd = viewportHeight * 0.3;
+      const scrollEnd = viewportHeight * 0.2;
 
       let progress = 0;
 
@@ -191,7 +192,7 @@ export default function HeroSection() {
   const duration = rowWidth ? rowWidth / 100 : 20;
 
   // Calculate transform values based on scroll progress (only for desktop)
-  const translateX = isDesktop ? -800 * scrollProgress : 0;
+  const translateX = isDesktop ? -750 * scrollProgress : 0;
   const translateY = isDesktop ? -200 * scrollProgress : 0;
   const scale = isDesktop ? 1 - 0.25 * scrollProgress : 1;
 
@@ -200,6 +201,10 @@ export default function HeroSection() {
   const fontSize = isDesktop
     ? baseFontSize - (baseFontSize - minFontSize) * scrollProgress
     : baseFontSize;
+
+  const disperseAmount = isDesktop
+    ? Math.sin(scrollProgress * Math.PI) * 15
+    : 0;
 
   return (
     <section
@@ -211,32 +216,48 @@ export default function HeroSection() {
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-poppins leading-tight mt-4">
           <span className="text-[#F6BC34] text-center">Your Partner For</span>
 
-          {/* AI text for large view only - with animation */}
+          {/* AI text for large view only - with animation and dispersion */}
           <span
             ref={aiRef}
-            className="hidden lg:inline-block text-black relative mx-5"
+            className="hidden md:inline-block text-black relative mx-5"
             style={{
               transform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
               fontSize: `${fontSize}rem`,
               transition: "transform 0.3s ease-out, font-size 0.3s ease-out",
               zIndex: scrollProgress > 0 ? 10 : 1,
               position: "relative",
+              filter: `blur(${disperseAmount * 0.3}px)`,
+              textShadow: `
+                ${disperseAmount * 0.5}px ${disperseAmount * 0.3}px ${
+                disperseAmount * 0.8
+              }px rgba(0, 0, 0, ${0.1 * (disperseAmount / 15)}),
+                ${-disperseAmount * 0.4}px ${disperseAmount * 0.5}px ${
+                disperseAmount * 0.6
+              }px rgba(0, 0, 0, ${0.08 * (disperseAmount / 15)}),
+                ${disperseAmount * 0.3}px ${-disperseAmount * 0.4}px ${
+                disperseAmount * 0.7
+              }px rgba(0, 0, 0, ${0.06 * (disperseAmount / 15)})
+              `,
+              letterSpacing: `${disperseAmount * 0.15}px`,
+              opacity: 1 - (disperseAmount / 15) * 0.3,
             }}
           >
             AI
           </span>
           {/* AI text for small view */}
-          <span className="lg:hidden text-black mx-3">AI</span>
+          <span className="md:hidden text-black mx-3">AI</span>
           {/* & text for large view only - with fade animation */}
           <span
-            className="hidden lg:inline-block text-black transition-all duration-300"
+            className="hidden md:inline-block text-black transition-all duration-300"
             style={{
               opacity: hideAmpersand ? 0 : 1,
-              display: hideAmpersand ? "none" : "inline-block",
+              // display: hideAmpersand ? "none" : "inline-block",
             }}
           >
             &
           </span>
+          {/* & text for small view */}
+          <span className="md:hidden text-black">&</span>
           <br />
           <span
             className="text-[#0BB1E9]"
