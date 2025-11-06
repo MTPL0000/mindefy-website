@@ -18,14 +18,15 @@ export default function LogZPage() {
         const rect = section2Ref.current.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
         
-        // Check if section has reached the top (accounting for header)
-        if (rect.top <= headerHeight && rect.bottom > 0) {
+        // Check if section is in viewport and has reached the trigger point
+        const isInViewport = rect.top <= headerHeight && rect.bottom > headerHeight + 100;
+        
+        if (isInViewport) {
           if (!hasReachedTop) {
             setHasReachedTop(true);
           }
-        } 
-        // Reset if section is completely out of viewport (scrolled past or above)
-        else if (rect.bottom < 0 || rect.top > viewportHeight) {
+        } else {
+          // Reset when section is out of the trigger zone
           if (hasReachedTop) {
             setHasReachedTop(false);
             setAnimationStage(0);
@@ -49,22 +50,22 @@ export default function LogZPage() {
     timers.push(
       setTimeout(() => {
         setAnimationStage(1);
-      }, 100)
+      }, 200)
     );
 
-    // Stage 2: Subtitle animation after title (0.1s + 0.5s title duration)
+    // Stage 2: Subtitle animation after title (0.2s + 1s title duration)
     timers.push(
       setTimeout(() => {
         setAnimationStage(2);
-      }, 600)
+      }, 1200)
     );
 
-    // Stage 3: Move to top after all subtitle words complete (0.6s + 2.1s subtitle duration)
+    // Stage 3: Move to top after all subtitle words complete (1.2s + 3s subtitle duration = 4.2s, trigger at 5s)
     timers.push(
       setTimeout(() => {
         setAnimationStage(3);
         setShowContent(true); // Show content when starting to move up
-      }, 2700)
+      }, 5000)
     );
 
     return () => {
@@ -172,7 +173,7 @@ export default function LogZPage() {
                     opacity: 1,
                   }}
                   transition={{
-                    duration: 0.5,
+                    duration: 1.0,
                     ease: "easeOut",
                   }}
                   style={{ 
@@ -201,7 +202,7 @@ export default function LogZPage() {
                       initial={{ x: -200, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
                       transition={{
-                        duration: 0.7,
+                        duration: 1.0,
                         ease: "easeOut",
                         delay: 0,
                       }}
@@ -213,9 +214,9 @@ export default function LogZPage() {
                       initial={{ x: 200, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
                       transition={{
-                        duration: 0.7,
+                        duration: 1.0,
                         ease: "easeOut",
-                        delay: 0.7,
+                        delay: 1.0,
                       }}
                     >
                       Scalable.
@@ -225,9 +226,9 @@ export default function LogZPage() {
                       initial={{ x: 200, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
                       transition={{
-                        duration: 0.7,
+                        duration: 1.0,
                         ease: "easeOut",
-                        delay: 1.4,
+                        delay: 2.0,
                       }}
                     >
                       Strategic.
