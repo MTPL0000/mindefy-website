@@ -791,7 +791,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-6-wrapper"
         style={{
-          minHeight: "calc(100vh + 1200px)",
+          minHeight: "calc(100vh + 1600px)",
           position: "relative",
         }}
         className="w-full bg-white hidden lg:block"
@@ -809,13 +809,13 @@ export default function ImprovedCopyPage() {
           }}
         >
           <motion.div
-            className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 pt-6 lg:pt-8 h-full overflow-hidden"
+            className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 pt-4 lg:pt-6 h-full overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.8 } }}
           >
             {/* Heading */}
             <motion.div
-              className="text-center font-poppins mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+              className="text-center font-poppins mb-5 md:mb-6 lg:mb-8 xl:mb-10"
               initial={{ opacity: 0, y: -20 }}
               animate={{
                 opacity: 1,
@@ -823,10 +823,10 @@ export default function ImprovedCopyPage() {
                 transition: { duration: 0.8, delay: 0.2 },
               }}
             >
-              <h2 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal text-[#3D3D3D] mb-2">
+              <h2 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal text-[#3D3D3D] content-center align-middle">
                 Our Offering For Your Automation Needs-
               </h2>
-              <h3 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium text-[#3D3D3D]">
+              <h3 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium text-[#3D3D3D] content-center align-middle">
                 <span className="font-semibold font-poppins">
                   The Stack That Powers Your Future.
                 </span>
@@ -835,8 +835,8 @@ export default function ImprovedCopyPage() {
 
             {/* Responsive 4-column cards with staggered scroll animation */}
             <div className="flex items-end justify-center flex-1">
-              <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto bg-white">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
+              <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto h-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 h-full">
                   {offersCards.map((card, index) => {
                     // Calculate column translation based on section6Progress
                     // First column (index 0) is fixed, others animate
@@ -848,12 +848,12 @@ export default function ImprovedCopyPage() {
                             Math.min(1, section6Progress - (index - 1))
                           );
                     const translateY =
-                      index === 0 ? 0 : (1 - columnProgress) * 600; // Increased animation distance for better timing
+                      index === 0 ? 0 : (1 - columnProgress) * 800; // Increased animation distance for better timing
 
                     return (
                       <motion.div
                         key={index}
-                        className={`py-4 lg:py-5 xl:py-6 2xl:py-7 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between bg-white h-[37.3rem] lg:h-[37.3rem] xl:h-[37.3rem] 2xl:h-[37.3rem] border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
+                        className={`py-4 lg:py-5 xl:py-6 2xl:py-7 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between h-full border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
                         style={{
                           transform: `translateY(${translateY}px)`,
                           opacity: 1,
