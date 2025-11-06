@@ -141,12 +141,12 @@ export default function ImprovedCopyPage() {
         }
       }
 
-      // Calculate section 3 trigger - only when section reaches top
+      // Calculate section 3 trigger - only when section reaches top (accounting for header)
       const section3Element = document.getElementById("section-3");
       if (section3Element) {
         const rect = section3Element.getBoundingClientRect();
         
-        // Start animation when section reaches header area
+        // Trigger animation when section 3 top reaches header area (accounting for sticky positioning)
         if (rect.top <= headerHeight && !section3AnimationStarted) {
           setSection3AnimationStarted(true);
           setSection3AnimationTime(Date.now());
@@ -365,7 +365,7 @@ export default function ImprovedCopyPage() {
       <div
         id="section-3-wrapper"
         style={{
-          minHeight: "100vh",
+          minHeight: `calc(100vh - ${headerHeight}px)`,
           position: "relative",
         }}
         className="w-full bg-white"
@@ -383,7 +383,7 @@ export default function ImprovedCopyPage() {
           }}
         >
           <motion.div
-            className="flex flex-col items-center justify-center lg:mt-[5%] xl:mt-[6%] px-[4.58%] h-full overflow-hidden relative"
+            className="flex flex-col items-center justify-center px-[4.58%] h-full overflow-hidden relative"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.8 } }}
           >
@@ -460,6 +460,7 @@ export default function ImprovedCopyPage() {
             <motion.div
               className="flex flex-col items-center justify-center w-full h-full px-4 lg:px-6 xl:px-8 pb-4 lg:pb-6"
               style={{
+                paddingTop: `${headerHeight}px`,
                 y: Math.max(
                   0,
                   (1 - Math.max(0, Math.min(1, section3ScrollProgress - 2.5))) *
