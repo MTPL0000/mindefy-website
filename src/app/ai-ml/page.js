@@ -75,6 +75,7 @@ export default function ImprovedCopyPage() {
   const [section3ScrollProgress, setSection3ScrollProgress] = useState(0);
   const [section3AnimationStarted, setSection3AnimationStarted] = useState(false);
   const [section3AnimationTime, setSection3AnimationTime] = useState(0);
+  const [columnHeight, setColumnHeight] = useState(0);
   const headerHeight = useHeaderHeight();
   
   // console.log(section6Progress)
@@ -226,6 +227,25 @@ export default function ImprovedCopyPage() {
       return () => clearInterval(reverseInterval);
     }
   }, [section3AnimationStarted, section3AnimationTime]);
+
+  // Measure column height dynamically for animation calculations
+  useEffect(() => {
+    const measureColumnHeight = () => {
+      const columnElement = document.querySelector("#section-6 .grid > div:first-child");
+      if (columnElement) {
+        const height = columnElement.offsetHeight;
+        setColumnHeight(height);
+      }
+    };
+
+    // Initial measurement
+    measureColumnHeight();
+    
+    // Re-measure on window resize
+    window.addEventListener("resize", measureColumnHeight);
+    
+    return () => window.removeEventListener("resize", measureColumnHeight);
+  }, [headerHeight]);
 
   
   // Animation variants for cleaner code
@@ -791,7 +811,8 @@ export default function ImprovedCopyPage() {
       <div
         id="section-6-wrapper"
         style={{
-          minHeight: "calc(100vh + 1600px)",
+          // minHeight: columnHeight > 0 ? `calc(100vh + ${columnHeight * 2}px)` : "calc(100vh + 1600px)",
+          minHeight: `calc(100vh + ${columnHeight * 2}px)`,
           position: "relative",
         }}
         className="w-full bg-white hidden lg:block"
@@ -815,7 +836,7 @@ export default function ImprovedCopyPage() {
           >
             {/* Heading */}
             <motion.div
-              className="text-center font-poppins mb-5 md:mb-6 lg:mb-8 xl:mb-10"
+              className="text-center font-poppins mb-5 md:mb-6 lg:mb-8 xl:mb-10 2xl:mb-12"
               initial={{ opacity: 0, y: -20 }}
               animate={{
                 opacity: 1,
@@ -848,7 +869,7 @@ export default function ImprovedCopyPage() {
                             Math.min(1, section6Progress - (index - 1))
                           );
                     const translateY =
-                      index === 0 ? 0 : (1 - columnProgress) * 800; // Increased animation distance for better timing
+                      index === 0 ? 0 : (1 - columnProgress) * (columnHeight); // Dynamic animation distance based on column height
 
                     return (
                       <motion.div
