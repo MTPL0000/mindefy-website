@@ -2,6 +2,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useRef, useEffect, useState, useCallback } from "react";
 import useHeaderHeight from "@/hooks/useHeaderHeight";
+import { ChevronDown } from "lucide-react";
 
 const cardData = [
   {
@@ -77,8 +78,23 @@ export default function ImprovedCopyPage() {
   const [section3AnimationTime, setSection3AnimationTime] = useState(0);
   const [columnHeight, setColumnHeight] = useState(0);
   const headerHeight = useHeaderHeight();
-  
-  // console.log(section6Progress)
+
+  // Function to scroll to a specific section
+  const scrollToSection = (sectionId) => {
+    // For section-3, scroll to the wrapper instead of the sticky element
+    const targetId = sectionId === "section-3" ? "section-3-wrapper" : sectionId;
+    const element = document.getElementById(targetId);
+    if (element) {
+      const offset = headerHeight; // Add some padding below header
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
 
   // Use Framer Motion's animation controls
   const zoomControls = useAnimation();
@@ -344,15 +360,18 @@ export default function ImprovedCopyPage() {
                   </p>
                 </div>
 
-                <button className="bg-[#34333D] text-white font-poppins px-6 lg:px-8 xl:px-10 py-3 lg:py-4 rounded-full text-base lg:text-lg xl:text-xl font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer">
-                  Learn More
+                <button 
+                  onClick={() => scrollToSection("section-3")}
+                  className="bg-[#34333D] text-white font-poppins px-6 lg:px-8 xl:px-10 py-3 lg:py-4 rounded-full text-base lg:text-lg xl:text-xl font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer"
+                >
+                  <ChevronDown className="w-7 h-7" />
                 </button>
               </motion.div>
             </motion.div>
           </div>
 
           {/* Mobile/Tablet static content */}
-          <div className="lg:hidden text-center max-w-lg mx-auto px-4">
+          <div id="section-3-mobile" className="lg:hidden text-center max-w-lg mx-auto px-4">
             <h1 className="mb-6 font-poppins text-xl md:text-2xl font-normal text-[#3D3D3D] leading-tight">
               <div>Built With Data.</div>
               <div className="font-semibold mt-1">Powered By AI.</div>
@@ -374,8 +393,10 @@ export default function ImprovedCopyPage() {
               </p>
             </div>
 
-            <button className="bg-[#34333D] text-white font-poppins px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer w-full md:w-auto">
-              Learn More
+            <button 
+            onClick={() => scrollToSection("section-3")} 
+            className="bg-[#34333D] text-white font-poppins px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer">
+              <ChevronDown className="w-7 h-7" />
             </button>
           </div>
         </div>
