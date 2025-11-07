@@ -457,9 +457,10 @@ export default function ALMLandingPage() {
                   }}
                   style={{ 
                     color: "#FF5225",
-                    fontSize: animationStage >= 3 ? '1.5rem' : '3.5rem',
-                    marginBottom: animationStage >= 3 ? '0.5rem' : '1.5rem',
+                    fontSize: animationStage >= 3 ? '1.5rem' : '3rem',
+                    // marginBottom: animationStage >= 3 ? '0.5rem' : '1.5rem',
                     transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96), margin-bottom 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
+                    verticalAlign: 'middle',
                   }}
                 >
                   What sets Us apart
@@ -470,8 +471,9 @@ export default function ALMLandingPage() {
               <div 
                 className="font-poppins font-normal text-gray-800 flex justify-center items-center gap-2 flex-wrap"
                 style={{
-                  fontSize: animationStage >= 3 ? '1.25rem' : '2rem',
+                  fontSize: animationStage >= 3 ? '2.5rem' : '5rem',
                   transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
+                  verticalAlign: "middle",
                 }}
               >
                 {animationStage >= 2 && (
@@ -519,7 +521,7 @@ export default function ALMLandingPage() {
             </motion.div>
 
             {/* Content Section - Flexible to fill remaining space */}
-            <div className="flex-1 overflow-hidden px-4 md:px-6 lg:px-8 py-4">
+            <div className="flex-1 overflow-hidden px-4 md:px-6 lg:px-8">
             {/* Description */}
             <motion.div
               className="max-w-4xl mx-auto text-center mb-4"
@@ -534,7 +536,7 @@ export default function ALMLandingPage() {
                 ease: [0.43, 0.13, 0.23, 0.96],
               }}
             >
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+              <p className="text-sm md:text-base text-[#444444] leading-relaxed">
                 We don't just deliver AI and data solutions — we engineer
                 enterprise-grade intelligence systems that align with your
                 business vision and drive measurable value.
