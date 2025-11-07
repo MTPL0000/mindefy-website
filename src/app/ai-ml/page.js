@@ -411,6 +411,7 @@ export default function ALMLandingPage() {
           className="sticky bg-white overflow-hidden"
           style={{ 
             top: `${headerHeight}px`,
+            paddingTop: `${headerHeight/4}px`,
             height: `calc(100vh)`,
             zIndex: 10,
           }}
@@ -540,7 +541,7 @@ export default function ALMLandingPage() {
               {cardData.map((card, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+                  className="bg-white rounded-xl px-4 py-2 xl:py-4 2xl:py-10 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
                   initial={{ opacity: 0, y: 60 }}
                   animate={{
                     opacity: showContent ? 1 : 0,
@@ -563,14 +564,14 @@ export default function ALMLandingPage() {
 
                   {/* Title */}
                   <h3
-                    className="text-base font-poppins font-semibold mb-2 text-center"
+                    className="text-base xl:text-lg 2xl:text-xl font-poppins font-semibold mb-2 text-center"
                     style={{ color: "#FF5225" }}
                   >
                     {card.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-xs font-poppins text-gray-600 text-center leading-relaxed">
+                  <p className="text-sm xl:text-base 2xl:text-lg font-poppins text-gray-600 text-center leading-relaxed">
                     {card.description}
                   </p>
                 </motion.div>
