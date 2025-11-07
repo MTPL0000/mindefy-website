@@ -70,20 +70,18 @@ export default function ImprovedCopyPage() {
   const containerRef = useRef(null);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [section1Progress, setSection1Progress] = useState(0);
-  const [section3Progress, setSection3Progress] = useState(0);
   const [section5Progress, setSection5Progress] = useState(0);
   const [section6Progress, setSection6Progress] = useState(0);
-  const [section3ScrollProgress, setSection3ScrollProgress] = useState(0);
-  const [section3AnimationStarted, setSection3AnimationStarted] = useState(false);
-  const [section3AnimationTime, setSection3AnimationTime] = useState(0);
+  const [animationStage, setAnimationStage] = useState(0);
+  const [showContent, setShowContent] = useState(false);
+  const [hasReachedTop, setHasReachedTop] = useState(false);
+  const section3Ref = useRef(null);
   const [columnHeight, setColumnHeight] = useState(0);
   const headerHeight = useHeaderHeight();
 
   // Function to scroll to a specific section
   const scrollToSection = (sectionId) => {
-    // For section-3, scroll to the wrapper instead of the sticky element
-    const targetId = sectionId === "section-3" ? "section-3-wrapper" : sectionId;
-    const element = document.getElementById(targetId);
+    const element = document.getElementById(sectionId);
     if (element) {
       const offset = headerHeight; // Add some padding below header
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
@@ -158,22 +156,24 @@ export default function ImprovedCopyPage() {
         }
       }
 
-      // Calculate section 3 trigger - only when section reaches top (accounting for header)
-      const section3Element = document.getElementById("section-3");
-      if (section3Element) {
-        const rect = section3Element.getBoundingClientRect();
+      // Calculate section 3 trigger - Log-Z animation pattern
+      if (section3Ref.current) {
+        const rect = section3Ref.current.getBoundingClientRect();
         
-        // Trigger animation when section 3 top reaches header area (accounting for sticky positioning)
-        if (rect.top <= headerHeight && !section3AnimationStarted) {
-          setSection3AnimationStarted(true);
-          setSection3AnimationTime(Date.now());
-        }
+        // Check if section is in viewport and has reached the trigger point
+        const isInViewport = rect.top <= headerHeight && rect.bottom > headerHeight + 100;
         
-        // Reset animation when section goes out of viewport (either direction)
-        if ((rect.top > window.innerHeight || rect.bottom < 0) && section3AnimationStarted) {
-          setSection3AnimationStarted(false);
-          setSection3AnimationTime(0);
-          setSection3ScrollProgress(0);
+        if (isInViewport) {
+          if (!hasReachedTop) {
+            setHasReachedTop(true);
+          }
+        } else {
+          // Reset when section is out of the trigger zone
+          if (hasReachedTop) {
+            setHasReachedTop(false);
+            setAnimationStage(0);
+            setShowContent(false);
+          }
         }
       }
 
@@ -210,39 +210,40 @@ export default function ImprovedCopyPage() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [headerHeight, zoomControls, contentZoomControls, cardControls, section3AnimationStarted]);
+  }, [headerHeight, zoomControls, contentZoomControls, cardControls, hasReachedTop]);
 
-  // Time-based animation for section 3 after trigger
+  // Animation sequence - triggers when section reaches top (Log-Z pattern)
   useEffect(() => {
-    if (section3AnimationStarted && section3AnimationTime > 0) {
-      const animationDuration = 6000; // 6 seconds total animation (slower)
-      const interval = setInterval(() => {
-        const elapsed = Date.now() - section3AnimationTime;
-        const progress = Math.min(1, elapsed / animationDuration);
-        setSection3ScrollProgress(progress * 4); // Scale to 0-4 for existing animation logic
-        
-        if (progress >= 1) {
-          clearInterval(interval);
-        }
-      }, 16); // ~60fps
+    if (!hasReachedTop) return;
 
-      return () => clearInterval(interval);
-    } else if (!section3AnimationStarted && section3ScrollProgress > 0) {
-      // Handle reverse animation when scrolling away
-      const reverseInterval = setInterval(() => {
-        setSection3ScrollProgress(prev => {
-          const newProgress = Math.max(0, prev - 0.08); // Slower reverse animation
-          if (newProgress <= 0) {
-            clearInterval(reverseInterval);
-            return 0;
-          }
-          return newProgress;
-        });
-      }, 16);
+    const timers = [];
 
-      return () => clearInterval(reverseInterval);
-    }
-  }, [section3AnimationStarted, section3AnimationTime]);
+    // Stage 1: Title zoom in (starts immediately when section reaches top)
+    timers.push(
+      setTimeout(() => {
+        setAnimationStage(1);
+      }, 200)
+    );
+
+    // Stage 2: Subtitle animation after title (0.2s + 1s title duration)
+    timers.push(
+      setTimeout(() => {
+        setAnimationStage(2);
+      }, 1200)
+    );
+
+    // Stage 3: Move to top after all subtitle words complete (1.2s + 3s subtitle duration = 4.2s, trigger at 5s)
+    timers.push(
+      setTimeout(() => {
+        setAnimationStage(3);
+        setShowContent(true); // Show content when starting to move up
+      }, 5000)
+    );
+
+    return () => {
+      timers.forEach((timer) => clearTimeout(timer));
+    };
+  }, [hasReachedTop]);
 
   // Measure column height dynamically for animation calculations
   useEffect(() => {
@@ -403,216 +404,238 @@ export default function ImprovedCopyPage() {
         </div>
       </div>
 
-      {/* Cards Section - Wrapper with scroll-based animation */}
-      <div
-        id="section-3-wrapper"
-        style={{
-          minHeight: `calc(100vh - ${headerHeight}px)`,
-          position: "relative",
+      {/* Section 3: Animation Section - Large screen only */}
+      <section
+        id="section-3"
+        ref={section3Ref}
+        className="hidden lg:block relative bg-white"
+        style={{ 
+          minHeight: '100vh',
+          zIndex: 2,
         }}
-        className="w-full bg-white"
       >
-        {/* Sticky container - Large screen animated version only */}
-        <div
-          id="section-3"
-          className="hidden lg:block"
-          style={{
-            position: "sticky",
+        {/* Sticky container for animations */}
+        <div 
+          className="sticky bg-white overflow-hidden"
+          style={{ 
             top: `${headerHeight}px`,
+            height: `calc(100vh)`,
             zIndex: 10,
-            width: "100%",
-            backgroundColor: "white",
           }}
         >
+          {/* Animated content wrapper */}
           <motion.div
-            className="flex flex-col items-center justify-center px-[4.58%] h-full overflow-hidden relative"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.8 } }}
+            className="relative h-full flex flex-col overflow-hidden"
+            initial={false}
           >
-            {/* Center Animation Layer - Title and subtitle animate in center */}
+            {/* Title and Subtitle Container */}
             <motion.div
-              className="absolute inset-0 flex flex-col items-center justify-center px-4 lg:px-6 xl:px-8"
-              style={{
-                opacity: section3ScrollProgress < 2.5 ? 1 : 0,
+              className="flex items-center justify-center"
+              animate={{
+                flex: animationStage >= 3 ? '0 0 auto' : '1 1 auto',
+                paddingTop: animationStage >= 3 ? '20px' : '0px',
+                paddingBottom: animationStage >= 3 ? '10px' : '0px',
               }}
-              transition={{ duration: 0.5 }}
+              transition={{
+                duration: 1,
+                ease: [0.43, 0.13, 0.23, 0.96],
+              }}
             >
-              {/* Title - zoom in from center */}
-              <motion.h2
-                className="font-poppins font-medium text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl tracking-[10%] lg:tracking-[20%] text-[#FF5225] align-middle"
+            <div className="text-center px-4">
+              {/* Title with zoom in animation */}
+              {animationStage >= 1 && (
+                <motion.h1
+                  className="font-poppins font-medium"
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ 
+                    scale: 1, 
+                    opacity: 1,
+                  }}
+                  transition={{
+                    duration: 1.0,
+                    ease: "easeOut",
+                  }}
+                  style={{ 
+                    color: "#FF5225",
+                    fontSize: animationStage >= 3 ? '1.5rem' : '3.5rem',
+                    marginBottom: animationStage >= 3 ? '0.5rem' : '1.5rem',
+                    transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96), margin-bottom 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
+                  }}
+                >
+                  What sets Us apart
+                </motion.h1>
+              )}
+
+              {/* Subtitle with sequential left-right animation */}
+              <div 
+                className="font-poppins font-normal text-gray-800 flex justify-center items-center gap-2 flex-wrap"
                 style={{
-                  scale:
-                    section3ScrollProgress < 1
-                      ? Math.max(0, section3ScrollProgress)
-                      : 1,
-                  opacity:
-                    section3ScrollProgress < 1
-                      ? Math.max(0, section3ScrollProgress)
-                      : 1,
+                  fontSize: animationStage >= 3 ? '1.25rem' : '2rem',
+                  transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
                 }}
-                transition={{ type: "spring", stiffness: 100, damping: 20 }}
               >
-                What sets Us apart
-              </motion.h2>
-
-              {/* Subtitle - Smart slides from left, Scalable & Strategic staggered from right */}
-              <div className="flex justify-center items-center space-x-1 lg:space-x-2 xl:space-x-3">
-                {["Smart.", "Scalable.", "Strategic."].map((word, index) => {
-                  const wordProgress = Math.max(
-                    0,
-                    Math.min(
-                      1,
-                      section3ScrollProgress -
-                        1 -
-                        (index > 0 ? (index - 1) * 0.3 : 0)
-                    )
-                  );
-                  let translateX = 0;
-
-                  if (index === 0) {
-                    // Smart - slides from left
-                    translateX = (1 - wordProgress) * -200;
-                  } else {
-                    // Scalable & Strategic - slide from right (staggered)
-                    translateX = (1 - wordProgress) * 200;
-                  }
-
-                  return (
+                {animationStage >= 2 && (
+                  <>
+                    {/* First word: Smart - from left */}
                     <motion.span
-                      key={word}
-                      className="font-poppins font-normal text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-[#3D3D3D] align-middle tracking-normal"
-                      style={{
-                        x: translateX,
-                        opacity: wordProgress,
-                      }}
+                      initial={{ x: -200, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
                       transition={{
-                        type: "spring",
-                        stiffness: 100,
-                        damping: 20,
+                        duration: 1.0,
+                        ease: "easeOut",
+                        delay: 0,
                       }}
                     >
-                      {word}
+                      Smart.
                     </motion.span>
-                  );
-                })}
+                    {/* Second word: Scalable - from right, starts after Smart completes */}
+                    <motion.span
+                      initial={{ x: 200, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{
+                        duration: 1.0,
+                        ease: "easeOut",
+                        delay: 1.0,
+                      }}
+                    >
+                      Scalable.
+                    </motion.span>
+                    {/* Third word: Strategic - from right, starts after Scalable completes */}
+                    <motion.span
+                      initial={{ x: 200, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{
+                        duration: 1.0,
+                        ease: "easeOut",
+                        delay: 2.0,
+                      }}
+                    >
+                      Strategic.
+                    </motion.span>
+                  </>
+                )}
               </div>
+            </div>
             </motion.div>
 
-            {/* Final Position Layer - Slide up animation with all content */}
+            {/* Content Section - Flexible to fill remaining space */}
+            <div className="flex-1 overflow-hidden px-4 md:px-6 lg:px-8 py-4">
+            {/* Description */}
             <motion.div
-              className="flex flex-col items-center justify-center w-full h-full px-4 lg:px-6 xl:px-8 pb-4 lg:pb-6"
-              style={{
-                paddingTop: `${headerHeight}px`,
-                y: Math.max(
-                  0,
-                  (1 - Math.max(0, Math.min(1, section3ScrollProgress - 2.5))) *
-                    100
-                ),
-                opacity: Math.max(0, Math.min(1, section3ScrollProgress - 2.5)),
+              className="max-w-4xl mx-auto text-center mb-4"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{
+                opacity: showContent ? 1 : 0,
+                y: showContent ? 0 : 50,
               }}
-              transition={{ type: "spring", stiffness: 100, damping: 20 }}
+              transition={{
+                duration: 1,
+                delay: 0,
+                ease: [0.43, 0.13, 0.23, 0.96],
+              }}
             >
-              {/* Title at final position */}
-              <h2 className="font-poppins font-medium text-base lg:text-lg xl:text-xl 2xl:text-2xl tracking-[10%] lg:tracking-[15%] text-[#FF5225] mb-2 lg:mb-3">
-                What sets Us apart
-              </h2>
-
-              {/* Subtitle at final position */}
-              <div className="flex justify-center items-center space-x-1 lg:space-x-2 xl:space-x-3 mb-3 lg:mb-4">
-                {["Smart.", "Scalable.", "Strategic."].map((word) => (
-                  <span
-                    key={word}
-                    className="font-poppins font-normal text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-[#3D3D3D]"
-                  >
-                    {word}
-                  </span>
-                ))}
-              </div>
-
-              {/* Description */}
-              <p className="font-inter font-normal text-xs lg:text-sm xl:text-base text-center text-[#444444] mb-3 lg:mb-4 xl:mb-5 max-w-[60%] lg:max-w-[55%] xl:max-w-[50%] mx-auto">
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                 We don't just deliver AI and data solutions — we engineer
                 enterprise-grade intelligence systems that align with your
                 business vision and drive measurable value.
               </p>
-
-              {/* Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 xl:gap-6 w-full max-w-5xl lg:max-w-6xl">
-                {cardData.map((card, index) => (
-                  <div
-                    key={index}
-                    className="bg-white p-3 lg:p-4 xl:p-5 rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] flex flex-col items-center text-center min-h-[120px] lg:min-h-[140px] xl:min-h-[160px]"
-                  >
-                    <div className="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10 flex items-center justify-center mb-2 lg:mb-3">
-                      <img
-                        src={card.icon}
-                        alt={card.title}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <h3 className="text-sm lg:text-base xl:text-lg font-poppins font-semibold text-[#FF5225] mb-2 lg:mb-3 text-center leading-tight">
-                      {card.title}
-                    </h3>
-                    <p className="text-xs lg:text-xs xl:text-sm font-poppins text-gray-600 text-center leading-relaxed flex-1 flex items-center">
-                      {card.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
             </motion.div>
-          </motion.div>
-        </div>
 
-        {/* Mobile/Tablet static version */}
-        <div className="lg:hidden py-12 px-4 md:px-6">
-          <div className="max-w-4xl mx-auto">
-            {/* Title */}
-            <h2 className="font-poppins font-medium text-lg md:text-xl text-[#FF5225] text-center align-middle mb-1">
-              What sets Us apart
-            </h2>
-
-            {/* Subtitle */}
-            <div className="flex flex-row justify-center items-center space-x-1 mb-2">
-              {["Smart.", "Scalable.", "Strategic."].map((word) => (
-                <span
-                  key={word}
-                  className="font-poppins font-normal text-base md:text-lg text-[#3D3D3D] text-center"
-                >
-                  {word}
-                </span>
-              ))}
-            </div>
-
-            {/* Description */}
-            <p className="font-inter font-normal text-sm text-center text-[#444444] mb-10 max-w-lg mx-auto leading-relaxed">
-              We don't just deliver AI and data solutions — we engineer
-              enterprise-grade intelligence systems that align with your
-              business vision and drive measurable value.
-            </p>
-
-            {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            {/* Cards Grid */}
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {cardData.map((card, index) => (
-                <div
+                <motion.div
                   key={index}
-                  className="bg-white p-5 md:p-6 rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] flex flex-col items-center text-center"
+                  className="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+                  initial={{ opacity: 0, y: 60 }}
+                  animate={{
+                    opacity: showContent ? 1 : 0,
+                    y: showContent ? 0 : 60,
+                  }}
+                  transition={{
+                    duration: 1,
+                    delay: 0.1 + index * 0.08,
+                    ease: [0.43, 0.13, 0.23, 0.96],
+                  }}
                 >
-                  <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mb-4">
+                  {/* Icon */}
+                  <div className="w-12 h-12 flex items-center justify-center mb-3 mx-auto">
                     <img
                       src={card.icon}
                       alt={card.title}
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="text-sm md:text-base font-poppins font-semibold text-[#FF5225] mb-3 text-center leading-tight">
+
+                  {/* Title */}
+                  <h3
+                    className="text-base font-poppins font-semibold mb-2 text-center"
+                    style={{ color: "#FF5225" }}
+                  >
                     {card.title}
                   </h3>
-                  <p className="text-xs md:text-sm font-poppins text-gray-600 text-center leading-relaxed">
+
+                  {/* Description */}
+                  <p className="text-xs font-poppins text-gray-600 text-center leading-relaxed">
                     {card.description}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Mobile/Tablet static version */}
+      <div className="lg:hidden py-12 px-4 md:px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          {/* Title */}
+          <h2 className="font-poppins font-medium text-lg md:text-xl text-[#FF5225] text-center align-middle mb-1">
+            What sets Us apart
+          </h2>
+
+          {/* Subtitle */}
+          <div className="flex flex-row justify-center items-center space-x-1 mb-2">
+            {["Smart.", "Scalable.", "Strategic."].map((word) => (
+              <span
+                key={word}
+                className="font-poppins font-normal text-base md:text-lg text-[#3D3D3D] text-center"
+              >
+                {word}
+              </span>
+            ))}
+          </div>
+
+          {/* Description */}
+          <p className="font-inter font-normal text-sm text-center text-[#444444] mb-10 max-w-lg mx-auto leading-relaxed">
+            We don't just deliver AI and data solutions — we engineer
+            enterprise-grade intelligence systems that align with your
+            business vision and drive measurable value.
+          </p>
+
+          {/* Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            {cardData.map((card, index) => (
+              <div
+                key={index}
+                className="bg-white p-5 md:p-6 rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] flex flex-col items-center text-center"
+              >
+                <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mb-4">
+                  <img
+                    src={card.icon}
+                    alt={card.title}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="text-sm md:text-base font-poppins font-semibold text-[#FF5225] mb-3 text-center leading-tight">
+                  {card.title}
+                </h3>
+                <p className="text-xs md:text-sm font-poppins text-gray-600 text-center leading-relaxed">
+                  {card.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
