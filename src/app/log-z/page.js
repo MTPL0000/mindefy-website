@@ -48,18 +48,30 @@ export default function LogZPage() {
         const isInViewport =
           rect.top <= headerHeight && rect.bottom > headerHeight + 100;
 
-        if (isInViewport) {
-          if (!hasReachedTop) {
-            setHasReachedTop(true);
-          }
-        } else {
-          // Reset when section is out of the trigger zone
-          if (hasReachedTop) {
-            setHasReachedTop(false);
-            setAnimationStage(0);
-            setShowContent(false);
-          }
+        if ((rect.top - headerHeight)<= 0 && !hasReachedTop) {
+          setHasReachedTop(true);
         }
+
+        console.log(rect.bottom)
+
+        if (((rect.top + headerHeight) > window.innerHeight || (rect.bottom -headerHeight)< 0) && hasReachedTop) {
+          setHasReachedTop(false);
+          setAnimationStage(0);
+          setShowContent(false);
+        }
+
+        // if (isInViewport) {
+        //   if (!hasReachedTop) {
+        //     setHasReachedTop(true);
+        //   }
+        // } else {
+        //   // Reset when section is out of the trigger zone
+        //   if (hasReachedTop) {
+        //     setHasReachedTop(false);
+        //     setAnimationStage(0);
+        //     setShowContent(false);
+        //   }
+        // }
       }
     };
 
