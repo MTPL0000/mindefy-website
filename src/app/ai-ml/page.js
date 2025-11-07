@@ -66,7 +66,7 @@ const offersCards = [
   },
 ];
 
-export default function ImprovedCopyPage() {
+export default function ALMLandingPage() {
   const containerRef = useRef(null);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [section1Progress, setSection1Progress] = useState(0);
