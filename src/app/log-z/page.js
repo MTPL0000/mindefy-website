@@ -410,13 +410,13 @@ export default function LogZPage() {
             backgroundColor: "white",
           }}
         >
-          <div className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 h-full overflow-hidden pb-4 md:pb-4 lg:pb-8">
+          <div className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 h-full pb-4 md:pb-6 lg:pb-8">
             {/* Heading */}
-            <div className="text-center font-poppins mb-3 md:mb-4 lg:mb-6 xl:mb-8">
-              <h2 className="text-lg font-poppins md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-normal text-[#3D3D3D] content-center align-middle">
+            <div className="text-center font-poppins mb-2 md:mb-3 lg:mb-4 xl:mb-6">
+              <h2 className="text-base font-poppins md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-[#3D3D3D] content-center align-middle">
                 Our Offering For Your Automation Needs-
               </h2>
-              <h3 className="text-lg font-poppins md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium text-[#3D3D3D] content-center align-middle">
+              <h3 className="text-base font-poppins md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium text-[#3D3D3D] content-center align-middle">
                 <span className="font-semibold font-poppins">
                   The Stack That Powers Your Future.
                 </span>
@@ -424,7 +424,7 @@ export default function LogZPage() {
             </div>
 
             {/* Responsive 4-column cards with staggered scroll animation */}
-            <div className="flex items-end justify-center flex-1">
+            <div className="flex items-stretch justify-center flex-1 overflow-hidden">
               <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto h-full">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 h-full">
                   {offersCards.map((card, index) => {
@@ -453,7 +453,7 @@ export default function LogZPage() {
                     return (
                       <div
                         key={index}
-                        className="relative py-4 lg:py-5 xl:py-6 2xl:py-7 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between h-full overflow-hidden"
+                        className="relative py-3 lg:py-4 xl:py-5 2xl:py-6 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between h-full overflow-hidden"
                       >
                         {/* Animated left border - slides up from bottom */}
                         <motion.div
@@ -481,6 +481,7 @@ export default function LogZPage() {
                         
                         {/* Content wrapper with slide-up animation */}
                         <motion.div
+                          className="flex-1"
                           animate={{
                             y: contentTranslateY,
                             opacity: contentOpacity,
@@ -490,10 +491,10 @@ export default function LogZPage() {
                             ease: [0.43, 0.13, 0.23, 0.96],
                           }}
                         >
-                          <h4 className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-normal text-[#332771] mb-3 lg:mb-4 xl:mb-5 2xl:mb-6 text-left font-poppins">
+                          <h4 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-normal text-[#332771] mb-2 lg:mb-3 xl:mb-4 2xl:mb-5 text-left font-poppins leading-tight">
                             {card.title}
                           </h4>
-                          <p className="text-xs lg:text-sm xl:text-base 2xl:text-lg text-[#D84326] mb-3 lg:mb-4 xl:mb-5 2xl:mb-6 text-left leading-relaxed font-poppins">
+                          <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#D84326] mb-1 lg:mb-2 xl:mb-3 2xl:mb-4 text-left leading-snug font-poppins">
                             {card.text}
                           </p>
                         </motion.div>
@@ -501,7 +502,7 @@ export default function LogZPage() {
                         {/* Learn More button with fade-in animation */}
                         <motion.a
                           href={card.link}
-                          className="w-fit flex items-center text-left text-sm lg:text-base xl:text-lg 2xl:text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
+                          className="w-fit flex items-center text-left text-xs lg:text-sm xl:text-base 2xl:text-lg font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300 mt-2 flex-shrink-0"
                           animate={{
                             opacity: buttonOpacity,
                           }}
