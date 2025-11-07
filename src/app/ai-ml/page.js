@@ -411,7 +411,7 @@ export default function ALMLandingPage() {
           className="sticky bg-white overflow-hidden"
           style={{ 
             top: `${headerHeight}px`,
-            paddingTop: `${headerHeight/4}px`,
+            // paddingTop: `${headerHeight/4}px`,
             height: `calc(100vh)`,
             zIndex: 10,
           }}
@@ -426,8 +426,8 @@ export default function ALMLandingPage() {
               className="flex items-center justify-center"
               animate={{
                 flex: animationStage >= 3 ? '0 0 auto' : '1 1 auto',
-                paddingTop: animationStage >= 3 ? '20px' : '0px',
-                paddingBottom: animationStage >= 3 ? '10px' : '0px',
+                paddingTop: animationStage >= 3 ? `${headerHeight}px` : '0px',
+                // paddingBottom: animationStage >= 3 ? '10px' : '0px',
               }}
               transition={{
                 duration: 1,
