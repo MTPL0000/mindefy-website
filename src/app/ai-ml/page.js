@@ -622,7 +622,7 @@ export default function ImprovedCopyPage() {
         className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
       >
         {/* Large screen animated version */}
-        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[5%] lg:py-[6%] xl:py-[8%] 2xl:py-[8%]">
+        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%]">
           <div className="container mx-auto w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
             {/* Left side - Phone mockup */}
             <motion.div
@@ -633,7 +633,7 @@ export default function ImprovedCopyPage() {
               viewport={{ once: false, amount: 0.3 }}
             >
               <div
-                className="relative h-[20rem] lg:h-[35rem] xl:h-[40rem] aspect-[3/4]"
+                className="relative h-[20rem] lg:h-[35rem] xl:h-[38rem] aspect-[3/4]"
               >
                 <img
                   src="/images/YH-MN.gif"
@@ -730,7 +730,7 @@ export default function ImprovedCopyPage() {
         // style={{ height: "100vh" }}
       >
         {/* Large screen animated version */}
-        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-[5%] lg:py-[6%] xl:py-[8%] 2xl:py-[8%]">
+        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%]">
           <div className="container flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
             {/* Left side - Content */}
             <motion.div
