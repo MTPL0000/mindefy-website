@@ -76,6 +76,7 @@ export default function ALMLandingPage() {
   const [showContent, setShowContent] = useState(false);
   const [hasReachedTop, setHasReachedTop] = useState(false);
   const section3Ref = useRef(null);
+  const section6WrapperRef = useRef(null);
   const [columnHeight, setColumnHeight] = useState(0);
   const headerHeight = useHeaderHeight();
 
@@ -185,25 +186,22 @@ export default function ALMLandingPage() {
         setSection5Progress(elementProgress);
       }
 
-      // Calculate section 6 progress (Cards column animation)
-      // Use scroll position directly for smooth, jank-free animation
-      const section6WrapperElement = document.getElementById("section-6-wrapper");
-      if (section6WrapperElement) {
-        const wrapperRect = section6WrapperElement.getBoundingClientRect();
-        const wrapperTop = window.scrollY + wrapperRect.top;
-        const triggerPoint = wrapperTop; // When wrapper reaches top
-        
-        // Calculate progress based on scroll position
-        const scrollDistance = window.scrollY - triggerPoint;
-        const animationDuration = window.innerHeight * 1.5; // Longer animation window (1.5x viewport)
-        
-        if (scrollDistance >= 0 && scrollDistance <= animationDuration) {
-          const progress = scrollDistance / animationDuration;
-          setSection6Progress(progress * 4); // Continuous progress 0-4 for smooth animation
-        } else if (scrollDistance > animationDuration) {
-          setSection6Progress(4); // Keep at max
-        } else {
-          setSection6Progress(0); // Reset before trigger
+      // Calculate section 6 progress (Cards column animation) - Log-Z pattern
+      if (section6WrapperRef.current) {
+        const rect = section6WrapperRef.current.getBoundingClientRect();
+        const startPoint = headerHeight + 20;
+        // Adjusted for 3 columns animation (column 1 is default visible)
+        const animationDuration = window.innerHeight * 1.2;
+
+        if (rect.top <= startPoint && rect.bottom > startPoint) {
+          const scrolled = startPoint - rect.top;
+          // Progress 0-3 for columns 2, 3, 4
+          const progress = Math.min(Math.max(scrolled / animationDuration, 0), 1) * 3;
+          setSection6Progress(progress);
+        } else if (rect.top > startPoint) {
+          setSection6Progress(0);
+        } else if (rect.bottom <= startPoint) {
+          setSection6Progress(3);
         }
       }
     };
@@ -854,105 +852,137 @@ export default function ALMLandingPage() {
         </section>
       </div>
 
-      {/* Section 6 - Our Offering For Your Automation Needs */}
+      {/* Section 6 - Our Offering For Your Automation Needs - Scroll-based animation (Large screens only) */}
       <div
-        id="section-6-wrapper"
+        ref={section6WrapperRef}
         style={{
-          // minHeight: columnHeight > 0 ? `calc(100vh + ${columnHeight * 2}px)` : "calc(100vh + 1600px)",
-          minHeight: `calc(100vh + ${columnHeight * 2}px)`,
+          minHeight: columnHeight > 0 ? `calc(100vh + ${columnHeight * 2}px)` : "calc(100vh + 1200px)",
           position: "relative",
         }}
         className="w-full bg-white hidden lg:block"
       >
-        {/* Sticky container - Large screen animated version only */}
+        {/* Sticky container for scroll-based animations */}
         <div
-          id="section-6"
           style={{
             position: "sticky",
             top: `${headerHeight}px`,
+            paddingTop: `${headerHeight/4}px`,
             height: `calc(100vh - ${headerHeight}px)`,
             zIndex: 10,
             width: "100%",
             backgroundColor: "white",
           }}
         >
-          <motion.div
-            className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 pt-4 lg:pt-6 h-full overflow-hidden"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.8 } }}
-          >
+          <div className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 h-full pb-4 md:pb-6 lg:pb-8">
             {/* Heading */}
-            <motion.div
-              className="text-center font-poppins mb-5 md:mb-6 lg:mb-8 xl:mb-10 2xl:mb-12"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.8, delay: 0.2 },
-              }}
-            >
-              <h2 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal text-[#3D3D3D] content-center align-middle">
+            <div className="text-center font-poppins mb-2 md:mb-3 lg:mb-4 xl:mb-6">
+              <h2 className="text-base font-poppins md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-[#3D3D3D] content-center align-middle">
                 Our Offering For Your Automation Needs-
               </h2>
-              <h3 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium text-[#3D3D3D] content-center align-middle">
+              <h3 className="text-base font-poppins md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium text-[#3D3D3D] content-center align-middle">
                 <span className="font-semibold font-poppins">
                   The Stack That Powers Your Future.
                 </span>
               </h3>
-            </motion.div>
+            </div>
 
             {/* Responsive 4-column cards with staggered scroll animation */}
-            <div className="flex items-end justify-center flex-1">
+            <div className="flex items-stretch justify-center flex-1 overflow-hidden">
               <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto h-full">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 h-full">
                   {offersCards.map((card, index) => {
-                    // Calculate column translation based on section6Progress
-                    // First column (index 0) is fixed, others animate
-                    const columnProgress =
-                      index === 0
-                        ? 1
-                        : Math.max(
-                            0,
-                            Math.min(1, section6Progress - (index - 1))
-                          );
-                    const translateY =
-                      index === 0 ? 0 : (1 - columnProgress) * (columnHeight); // Dynamic animation distance based on column height
+                    // Column 1 (index 0) appears by default, others animate on scroll
+                    // Calculate animation progress for each column
+                    const columnProgress = index === 0 
+                      ? 1 // Column 1 always fully visible
+                      : Math.max(0, Math.min(1, section6Progress - (index - 1)));
+                    
+                    // Title and text slide up from bottom
+                    const contentTranslateY = (1 - columnProgress) * 100;
+                    const contentOpacity = columnProgress;
+                    
+                    // Learn More button fades in after content
+                    const buttonProgress = index === 0
+                      ? 1 // Column 1 button always visible
+                      : Math.max(0, Math.min(1, (section6Progress - (index - 1) - 0.5) * 2));
+                    const buttonOpacity = buttonProgress;
+                    
+                    // Border animation - slides up from bottom (Learn More position)
+                    const borderProgress = index === 0
+                      ? 1 // Column 1 border always visible
+                      : Math.max(0, Math.min(1, (section6Progress - (index - 1) - 0.3) * 1.5));
+                    const borderHeight = borderProgress * 100;
 
                     return (
-                      <motion.div
+                      <div
                         key={index}
-                        className={`py-4 lg:py-5 xl:py-6 2xl:py-7 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between h-full border-b border-l border-t-none border-r-none border-[#000000] transition-colors duration-300`}
-                        style={{
-                          transform: `translateY(${translateY}px)`,
-                          opacity: 1,
-                        }}
-                        transition={{
-                          type: "spring",
-                          stiffness: 100,
-                          damping: 20,
-                        }}
+                        className="relative py-3 lg:py-4 xl:py-5 2xl:py-6 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between h-full overflow-hidden"
                       >
-                        <div>
-                          <h4 className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-normal text-[#332771] mb-3 lg:mb-4 xl:mb-5 2xl:mb-6 text-left font-poppins">
+                        {/* Animated left border - slides up from bottom */}
+                        <motion.div
+                          className="absolute left-0 bottom-0 w-[1px] bg-[#000000]"
+                          animate={{
+                            height: `${borderHeight}%`,
+                          }}
+                          transition={{
+                            duration: 0.8,
+                            ease: [0.43, 0.13, 0.23, 0.96],
+                          }}
+                        />
+                        
+                        {/* Animated bottom border - appears with left border */}
+                        <motion.div
+                          className="absolute bottom-0 left-0 right-0 h-[1px] bg-[#000000]"
+                          animate={{
+                            opacity: borderProgress,
+                          }}
+                          transition={{
+                            duration: 0.5,
+                            ease: "easeOut",
+                          }}
+                        />
+                        
+                        {/* Content wrapper with slide-up animation */}
+                        <motion.div
+                          className="flex-1"
+                          animate={{
+                            y: contentTranslateY,
+                            opacity: contentOpacity,
+                          }}
+                          transition={{
+                            duration: 0.6,
+                            ease: [0.43, 0.13, 0.23, 0.96],
+                          }}
+                        >
+                          <h4 className="text-lg lg:text-xl xl:text-2xl 2xl:text-2xl font-normal text-[#332771] mb-2 lg:mb-3 xl:mb-4 2xl:mb-5 text-left font-poppins leading-tight">
                             {card.title}
                           </h4>
-                          <p className="text-xs lg:text-sm xl:text-base 2xl:text-lg text-[#D84326] mb-3 lg:mb-4 xl:mb-5 2xl:mb-6 text-left leading-relaxed font-poppins">
+                          <p className="text-xs lg:text-sm xl:text-base 2xl:text-lg text-[#D84326] mb-1 lg:mb-2 xl:mb-3 2xl:mb-4 text-left leading-snug font-poppins">
                             {card.text}
                           </p>
-                        </div>
-                        <a
+                        </motion.div>
+                        
+                        {/* Learn More button with fade-in animation */}
+                        <motion.a
                           href={card.link}
-                          className="w-fit flex items-center text-left text-sm lg:text-base xl:text-lg 2xl:text-xl font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
+                          className="w-fit flex items-center text-left text-xs lg:text-sm xl:text-base 2xl:text-lg font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300 mt-2 flex-shrink-0"
+                          animate={{
+                            opacity: buttonOpacity,
+                          }}
+                          transition={{
+                            duration: 0.4,
+                            ease: "easeOut",
+                          }}
                         >
                           Learn More <span className="ml-2">→</span>
-                        </a>
-                      </motion.div>
+                        </motion.a>
+                      </div>
                     );
                   })}
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
