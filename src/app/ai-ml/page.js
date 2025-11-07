@@ -306,7 +306,8 @@ export default function ImprovedCopyPage() {
       <div
         id="section-1"
         className="w-full flex items-center justify-center relative overflow-hidden"
-        style={{ height: `calc(100vh - ${headerHeight}px)` }}
+        // style={{ height: `calc(100vh - ${headerHeight}px)` }}
+        style={{ height: "100vh" }}
       >
         {/* Animated background for large screens only */}
         <motion.div
