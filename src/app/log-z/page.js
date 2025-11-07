@@ -403,20 +403,20 @@ export default function LogZPage() {
           style={{
             position: "sticky",
             top: `${headerHeight}px`,
-            paddingTop: `${headerHeight/2}px`,
+            paddingTop: `${headerHeight/4}px`,
             height: `calc(100vh - ${headerHeight}px)`,
             zIndex: 10,
             width: "100%",
             backgroundColor: "white",
           }}
         >
-          <div className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 h-full overflow-hidden pb-8 md:pb-12 lg:pb-16">
+          <div className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 h-full overflow-hidden pb-4 md:pb-4 lg:pb-8">
             {/* Heading */}
             <div className="text-center font-poppins mb-3 md:mb-4 lg:mb-6 xl:mb-8">
-              <h2 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal text-[#3D3D3D] content-center align-middle">
+              <h2 className="text-lg font-poppins md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-normal text-[#3D3D3D] content-center align-middle">
                 Our Offering For Your Automation Needs-
               </h2>
-              <h3 className="text-xl font-poppins md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium text-[#3D3D3D] content-center align-middle">
+              <h3 className="text-lg font-poppins md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium text-[#3D3D3D] content-center align-middle">
                 <span className="font-semibold font-poppins">
                   The Stack That Powers Your Future.
                 </span>
