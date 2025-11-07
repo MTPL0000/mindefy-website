@@ -157,24 +157,18 @@ export default function ALMLandingPage() {
         }
       }
 
-      // Calculate section 3 trigger - Log-Z animation pattern
+      // Calculate section 3 trigger
       if (section3Ref.current) {
         const rect = section3Ref.current.getBoundingClientRect();
         
-        // Check if section is in viewport and has reached the trigger point
-        const isInViewport = rect.top <= headerHeight && rect.bottom > headerHeight + 100;
-        
-        if (isInViewport) {
-          if (!hasReachedTop) {
-            setHasReachedTop(true);
-          }
-        } else {
-          // Reset when section is out of the trigger zone
-          if (hasReachedTop) {
-            setHasReachedTop(false);
-            setAnimationStage(0);
-            setShowContent(false);
-          }
+        if ((rect.top - headerHeight)<= 0 && !hasReachedTop) {
+          setHasReachedTop(true);
+        }
+
+        if (((rect.top + headerHeight) > window.innerHeight || (rect.bottom -headerHeight)< 0) && hasReachedTop) {
+          setHasReachedTop(false);
+          setAnimationStage(0);
+          setShowContent(false);
         }
       }
 
@@ -467,7 +461,7 @@ export default function ALMLandingPage() {
 
               {/* Subtitle with sequential left-right animation */}
               <div 
-                className="font-poppins font-normal text-gray-800 flex justify-center items-center gap-2 flex-wrap"
+                className="font-poppins font-normal text-[#3D3D3D] flex justify-center items-center gap-2 flex-wrap"
                 style={{
                   fontSize: animationStage >= 3 ? '2.5rem' : '5rem',
                   transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
