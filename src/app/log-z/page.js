@@ -491,10 +491,10 @@ export default function LogZPage() {
                             ease: [0.43, 0.13, 0.23, 0.96],
                           }}
                         >
-                          <h4 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-normal text-[#332771] mb-2 lg:mb-3 xl:mb-4 2xl:mb-5 text-left font-poppins leading-tight">
+                          <h4 className="text-lg lg:text-xl xl:text-2xl 2xl:text-2xl font-normal text-[#332771] mb-2 lg:mb-3 xl:mb-4 2xl:mb-5 text-left font-poppins leading-tight">
                             {card.title}
                           </h4>
-                          <p className="text-xs lg:text-sm xl:text-sm 2xl:text-base text-[#D84326] mb-1 lg:mb-2 xl:mb-3 2xl:mb-4 text-left leading-snug font-poppins">
+                          <p className="text-xs lg:text-sm xl:text-base 2xl:text-lg text-[#D84326] mb-1 lg:mb-2 xl:mb-3 2xl:mb-4 text-left leading-snug font-poppins">
                             {card.text}
                           </p>
                         </motion.div>
