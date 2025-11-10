@@ -6,7 +6,7 @@ export default function FlashcardsCaseStudy() {
   return (
     <div className="min-h-screen bg-[#FFFFFF]">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 pb-16 pt-3">
+      <section className="container mx-auto px-4 pb-3 md:pb-16 pt-3">
         <div className="flex flex-col">
           {/* Top right dots image */}
           <div className="flex justify-end mb-6 md:mb-10">
@@ -21,9 +21,9 @@ export default function FlashcardsCaseStudy() {
           </div>
 
           {/* Main content area */}
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 lg:gap-24">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-6 md:gap-10 lg:gap-24">
             {/* Left image */}
-            <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+            <div className="relative overflow-hidden w-full sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
               <Image
                 src="/images/flashcard-img-1.webp"
                 alt="image"
@@ -96,7 +96,7 @@ export default function FlashcardsCaseStudy() {
                 </p>
               </div>
             </div>
-            <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+            <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
               <Image
                 src="/images/flashcard-img-2.webp"
                 alt="image"
@@ -112,7 +112,7 @@ export default function FlashcardsCaseStudy() {
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-18">
-            <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+            <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
               <Image
                 src="/images/flashcard-img-3.webp"
                 alt="image"
@@ -302,7 +302,7 @@ export default function FlashcardsCaseStudy() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
             {/* Left Color Blocks (logos) */}
-            <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+            <div className="relative overflow-hidden w-full sm:max-w-76 aspect-square">
               <Image
                 src="/images/flashcard-img-4.webp"
                 alt="image"
@@ -312,7 +312,7 @@ export default function FlashcardsCaseStudy() {
             </div>
 
             {/* Right Text */}
-            <div className="w-md flex flex-col gap-8">
+            <div className="w-full md:w-md flex flex-col gap-8">
               <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
                 Apps Logo Icon
                 <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
@@ -336,7 +336,7 @@ export default function FlashcardsCaseStudy() {
 
           {/* Logo Clear Space */}
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="w-2xl flex flex-col gap-8">
+            <div className="w-full md:w-2xl flex flex-col gap-8">
               <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
                 Logo Clear Space
                 <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
@@ -350,7 +350,7 @@ export default function FlashcardsCaseStudy() {
               </p>
             </div>
 
-            <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+            <div className="relative overflow-hidden w-full sm:max-w-75 aspect-square">
               <Image
                 src="/images/flashcard-img-5.webp"
                 alt="image"
@@ -375,7 +375,7 @@ export default function FlashcardsCaseStudy() {
           </h3>
 
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+            <div className="relative overflow-hidden w-full sm:max-w-88 aspect-square">
               <Image
                 src="/images/flashcard-img-6.webp"
                 alt="image"
@@ -524,15 +524,15 @@ export default function FlashcardsCaseStudy() {
       </section>
 
       {/* High Fidelity Screens Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-8 md:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
+          <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins mb-12">
             High Fidelity Screen
             <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
           </h2>
 
           {/* Notebook Screen */}
-          <div className="relative mb-32">
+          <div className="relative mb-20 lg:mb-32">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="flex items-center">
                 <div>
@@ -549,7 +549,7 @@ export default function FlashcardsCaseStudy() {
                 </div>
               </div>
               <div className="flex justify-center relative z-10">
-                <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+                <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
                   <Image
                     src="/images/flashcard-img-7.webp"
                     alt="image"
@@ -564,10 +564,10 @@ export default function FlashcardsCaseStudy() {
           </div>
 
           {/* Explore Screen */}
-          <div className="relative mb-32">
+          <div className="relative mb-20 lg:mb-32">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center relative z-10 order-2 md:order-1">
-                <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+                <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
                   <Image
                     src="/images/flashcard-img-3.webp"
                     alt="image"
@@ -600,7 +600,7 @@ export default function FlashcardsCaseStudy() {
           </div>
 
           {/* Subject Overview Screen */}
-          <div className="relative mb-32">
+          <div className="relative mb-20 lg:mb-32">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="flex items-center">
                 <div>
@@ -622,7 +622,7 @@ export default function FlashcardsCaseStudy() {
                 </div>
               </div>
               <div className="flex justify-center relative z-10">
-                <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+                <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
                   <Image
                     src="/images/flashcard-img-8.webp"
                     alt="image"
@@ -638,9 +638,9 @@ export default function FlashcardsCaseStudy() {
 
           {/* Flashcard Learning Screen */}
           <div className="relative">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
               <div className="flex justify-center relative z-10 order-2 md:order-1">
-                <div className="relative overflow-hidden w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+                <div className="relative overflow-hidden w-full sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
                   <Image
                     src="/images/flashcard-img-9.webp"
                     alt="image"
@@ -672,7 +672,7 @@ export default function FlashcardsCaseStudy() {
       </section>
 
       {/* Other Screens Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins mb-12 lg:mb-16">
             Other Screens
@@ -683,25 +683,25 @@ export default function FlashcardsCaseStudy() {
           <div className="flex flex-wrap justify-center items-start gap-10 md:gap-16 lg:gap-20">
             {/* Column 1 */}
             <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/OS-img-1.webp"
                   alt="Flashcard screen 1"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/OS-img-2.webp"
                   alt="Profile screen"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/OS-img-3.webp"
                   alt="Subject type screen"
                   fill
                   className="object-contain"
@@ -711,25 +711,25 @@ export default function FlashcardsCaseStudy() {
 
             {/* Column 2 */}
             <div className="flex flex-col gap-12 md:gap-16 lg:gap-20 w-full md:w-3xs lg:max-w-86 lg:mt-[20rem]">
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/OS-img-4.webp"
                   alt="Flashcard screen 2"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/OS-img-5.webp"
                   alt="Session list screen"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/OS-img-6.webp"
                   alt="Language setup screen"
                   fill
                   className="object-contain"
@@ -739,25 +739,25 @@ export default function FlashcardsCaseStudy() {
 
             {/* Column 3 */}
             <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/OS-img-7.webp"
                   alt="Flashcard screen 3"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/OS-img-8.webp"
                   alt="Results list screen"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/OS-img-9.webp"
                   alt="Subject type screen 2"
                   fill
                   className="object-contain"
@@ -769,7 +769,7 @@ export default function FlashcardsCaseStudy() {
       </section>
 
       {/* Wireframes Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins mb-12 lg:mb-16">
             Wireframes
@@ -780,17 +780,17 @@ export default function FlashcardsCaseStudy() {
           <div className="flex flex-wrap justify-center items-start gap-10 md:gap-16 lg:gap-20">
             {/* Column 1 */}
             <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/WF-img-1.webp"
                   alt="Wireframe 1"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/WF-img-2.webp"
                   alt="Wireframe 2"
                   fill
                   className="object-contain"
@@ -800,17 +800,17 @@ export default function FlashcardsCaseStudy() {
 
             {/* Column 2 */}
             <div className="flex flex-col gap-12 md:gap-16 lg:gap-20 w-full md:w-3xs lg:max-w-86 lg:mt-[20rem]">
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/WF-img-3.webp"
                   alt="Wireframe 3"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/WF-img-4.webp"
                   alt="Wireframe 4"
                   fill
                   className="object-contain"
@@ -820,17 +820,17 @@ export default function FlashcardsCaseStudy() {
 
             {/* Column 3 */}
             <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/WF-img-5.webp"
                   alt="Wireframe 5"
                   fill
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
                 <Image
-                  src="/images/flashcard-img-8.webp"
+                  src="/images/WF-img-6.webp"
                   alt="Wireframe 6"
                   fill
                   className="object-contain"
