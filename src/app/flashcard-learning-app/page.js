@@ -71,7 +71,7 @@ export default function FlashcardsCaseStudy() {
       </section>
 
       {/* Product Overview Section */}
-      <section className="py-16">
+      <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-18">
             <div className="w-full md:w-[45%] flex flex-col gap-6">
@@ -524,7 +524,7 @@ export default function FlashcardsCaseStudy() {
       </section>
 
       {/* High Fidelity Screens Section */}
-      <section className="py-16 overflow-hidden">
+      <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
             High Fidelity Screen
@@ -665,6 +665,176 @@ export default function FlashcardsCaseStudy() {
                     experience.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Other Screens Section */}
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins mb-12 lg:mb-16">
+            Other Screens
+            <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
+          </h2>
+
+          {/* Flex layout */}
+          <div className="flex flex-wrap justify-center items-start gap-10 md:gap-16 lg:gap-20">
+            {/* Column 1 */}
+            <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Flashcard screen 1"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Profile screen"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Subject type screen"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Column 2 */}
+            <div className="flex flex-col gap-12 md:gap-16 lg:gap-20 w-full md:w-3xs lg:max-w-86 lg:mt-[20rem]">
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Flashcard screen 2"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Session list screen"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Language setup screen"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Column 3 */}
+            <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Flashcard screen 3"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Results list screen"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Subject type screen 2"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Wireframes Section */}
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins mb-12 lg:mb-16">
+            Wireframes
+            <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
+          </h2>
+
+          {/* Flex layout */}
+          <div className="flex flex-wrap justify-center items-start gap-10 md:gap-16 lg:gap-20">
+            {/* Column 1 */}
+            <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Wireframe 1"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Wireframe 2"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Column 2 */}
+            <div className="flex flex-col gap-12 md:gap-16 lg:gap-20 w-full md:w-3xs lg:max-w-86 lg:mt-[20rem]">
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Wireframe 3"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Wireframe 4"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Column 3 */}
+            <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Wireframe 5"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-full aspect-[9/16] mx-auto">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="Wireframe 6"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>
