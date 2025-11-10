@@ -347,7 +347,7 @@ export default function ALMLandingPage() {
           </div>
 
           {/* Mobile/Tablet static content */}
-          <div id="section-3-mobile" className="lg:hidden text-center max-w-lg mx-auto px-4">
+          <div className="lg:hidden text-center max-w-lg mx-auto px-4">
             <h1 className="mb-6 font-poppins text-xl md:text-2xl font-normal text-[#3D3D3D] leading-tight">
               <div>Built With Data.</div>
               <div className="font-semibold mt-1">Powered By AI.</div>
@@ -370,7 +370,7 @@ export default function ALMLandingPage() {
             </div>
 
             <button 
-            onClick={() => scrollToSection("section-3")} 
+            onClick={() => scrollToSection("section-3-mobile")} 
             className="bg-[#34333D] text-white font-poppins px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer">
               <ChevronDown className="w-7 h-7" />
             </button>
@@ -581,7 +581,7 @@ export default function ALMLandingPage() {
       </section>
 
       {/* Mobile/Tablet static version */}
-      <div className="lg:hidden py-12 px-4 md:px-6 bg-white">
+      <div id="section-3-mobile" className="lg:hidden py-12 px-4 md:px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           {/* Title */}
           <h2 className="font-poppins font-medium text-lg md:text-xl text-[#FF5225] text-center align-middle mb-1">
