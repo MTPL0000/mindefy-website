@@ -111,7 +111,7 @@ export default function FlashcardsCaseStudy() {
       {/* Problem Statement & Research Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-45">
+          <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-45">
             <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
               <Image
                 src="/images/flashcard-img-3.webp"
@@ -178,8 +178,8 @@ export default function FlashcardsCaseStudy() {
       </section>
 
       {/* Brand Story Section */}
-      <section className="py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="py-16 md:py-20 md:px-6 lg:px-11">
+        <div className="container mx-auto px-4">
           {/* Heading */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div className="flex-1/3">
@@ -225,7 +225,7 @@ export default function FlashcardsCaseStudy() {
                 </div>
 
                 {/* 3 */}
-                <div>
+                <div className="max-w-57">
                   <h4 className="text-base md:text-lg font-medium font-poppins text-[#000000] mb-1">
                     Efficiency
                   </h4>
@@ -257,7 +257,7 @@ export default function FlashcardsCaseStudy() {
                 </div>
 
                 {/* 6 */}
-                <div>
+                <div className="max-w-57">
                   <h4 className="text-base md:text-lg font-medium font-poppins text-[#000000] mb-1">
                     Consistency
                   </h4>
@@ -299,9 +299,9 @@ export default function FlashcardsCaseStudy() {
 
       {/* Logo Section */}
       <section className="py-16 md:py-20">
-        <div className="container mx-auto px-4 flex flex-col gap-20">
+        <div className="container mx-auto px-4 flex flex-col gap-12 lg:gap-20">
           {/* Apps Logo Icon */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-28 mb-20">
+          <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-28 lg:mb-20">
             {/* Left Image */}
             <div className="relative overflow-hidden w-full sm:max-w-76 aspect-square flex-shrink-0">
               <Image
@@ -336,7 +336,7 @@ export default function FlashcardsCaseStudy() {
           </div>
 
           {/* Logo Clear Space */}
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-25">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-28">
             {/* Left Text */}
             <div className="w-full md:w-[38%] flex flex-col gap-8">
               <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
@@ -368,43 +368,47 @@ export default function FlashcardsCaseStudy() {
       </section>
 
       {/* Style Guide Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-16 md:py-20 md:px-6 lg:px-11">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins mb-12">
             Style Guide
             <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
           </h2>
 
-          <h3 className="text-xl lg:text-3xl font-semibold text-[#13151A] font-poppins mb-8">
-            Color Palette
-          </h3>
+          {/* Left Image */}
+          <div className="flex flex-col justify-center gap-4">
+            <h3 className="lg:ml-[10%] text-xl lg:text-3xl font-semibold text-[#13151A] font-poppins">
+              Color Palette
+            </h3>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-35 mb-16">
+              <div className="relative overflow-hidden w-full sm:max-w-88 aspect-square flex-shrink-0">
+                <Image
+                  src="/images/flashcard-img-6.webp"
+                  alt="image"
+                  fill
+                  className="object-contain"
+                />
+              </div>
 
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="relative overflow-hidden w-full sm:max-w-88 aspect-square">
-              <Image
-                src="/images/flashcard-img-6.webp"
-                alt="image"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div>
-              <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins mb-4">
-                In app design, color choice is crucial for establishing a
-                brand's identity. Colors evoke emotions and create a visual
-                language that users connect with, while consistent usage across
-                platforms fosters trust and loyalty.
-              </p>
-              <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
-                A well-defined color palette enhances user experience by making
-                interfaces intuitive and engaging. By maintaining a cohesive
-                color scheme, brands effectively communicate their values,
-                helping users identify and relate to the app.
-              </p>
+              {/* Right Text */}
+              <div className="w-full md:max-w-[45%] flex flex-col">
+                <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins mb-4">
+                  In app design, color choice is crucial for establishing a
+                  brand's identity. Colors evoke emotions and create a visual
+                  language that users connect with, while consistent usage
+                  across platforms fosters trust and loyalty.
+                </p>
+                <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
+                  A well-defined color palette enhances user experience by
+                  making interfaces intuitive and engaging. By maintaining a
+                  cohesive color scheme, brands effectively communicate their
+                  values, helping users identify and relate to the app.
+                </p>
+              </div>
             </div>
           </div>
 
-          <h3 className="text-xl md:text-4xl font-bold text-[#13151A] font-poppins mb-8">
+          <h3 className="text-xl md:text-4xl font-bold text-[#13151A] font-poppins mb-8 px-2">
             Typography
           </h3>
 
@@ -487,7 +491,10 @@ export default function FlashcardsCaseStudy() {
                     AaBbCcDdEeFfGg HhIiJjKkLlMmNnOo PpQqRrSsTtUuVv WwXxYyZz
                   </p>
                   <p className="text-sm font-normal text-[#4D4D4D] font-poppins">
-                    1234567893(@#$^*%)
+                    1234567893
+                  </p>
+                  <p className="text-sm font-normal text-[#4D4D4D] font-poppins">
+                    (@#$^*%)
                   </p>
                 </div>
 
@@ -503,7 +510,10 @@ export default function FlashcardsCaseStudy() {
                     AaBbCcDdEeFfGg HhIiJjKkLlMmNnOo PpQqRrSsTtUuVv WwXxYyZz
                   </p>
                   <p className="text-sm font-normal text-[#4D4D4D] font-poppins">
-                    1234567893(@#$^*%)
+                    1234567893
+                  </p>
+                  <p className="text-sm font-normal text-[#4D4D4D] font-poppins">
+                    (@#$^*%)
                   </p>
                 </div>
 
@@ -519,7 +529,10 @@ export default function FlashcardsCaseStudy() {
                     AaBbCcDdEeFfGg HhIiJjKkLlMmNnOo PpQqRrSsTtUuVv WwXxYyZz
                   </p>
                   <p className="text-sm font-normal text-[#4D4D4D] font-poppins">
-                    1234567893(@#$^*%)
+                    1234567893
+                  </p>
+                  <p className="text-sm font-normal text-[#4D4D4D] font-poppins">
+                    (@#$^*%)
                   </p>
                 </div>
               </div>
@@ -530,67 +543,70 @@ export default function FlashcardsCaseStudy() {
 
       {/* High Fidelity Screens Section */}
       <section className="py-8 md:py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-6 lg:px-11">
           <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins mb-12">
             High Fidelity Screen
             <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
           </h2>
-
+        </div>
+        <div className="w-full">
           {/* Notebook Screen */}
           <div className="relative mb-20 lg:mb-32">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="flex items-center">
-                <div>
-                  <p className="text-gray-700 leading-relaxed">
-                    The Notebook screen acts as the main launch point of
-                    Memolect, providing quick access to the user's chosen
-                    subjects. Up to five preferred subjects are displayed here
-                    for effortless navigation and focused learning. Each subject
-                    comes with a default learning mode, which can be customized
-                    according to the user's preference — ensuring a personalized
-                    and consistent study experience from the very first
-                    interaction.
-                  </p>
-                </div>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 lg:gap-30">
+              {/* Text */}
+              <div className="flex items-center w-full md:w-[30%] px-4">
+                <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
+                  The Notebook screen acts as the main launch point of Memolect,
+                  providing quick access to the user's chosen subjects. Up to
+                  five preferred subjects are displayed here for effortless
+                  navigation and focused learning. Each subject comes with a
+                  default learning mode, which can be customized according to
+                  the user's preference — ensuring a personalized and consistent
+                  study experience from the very first interaction.
+                </p>
               </div>
-              <div className="flex justify-center relative z-10">
-                <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
-                  <Image
-                    src="/images/flashcard-img-7.webp"
-                    alt="image"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+
+              {/* Image */}
+
+              <div className="relative z-10 overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
+                <Image
+                  src="/images/flashcard-img-7.webp"
+                  alt="image"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
-            {/* Blue accent block - positioned absolutely */}
-            <div className="w-[20%] absolute top-1/3 right-0 h-50 bg-[#004C99] -z-0 hidden md:block"></div>
+
+            {/* Blue Accent */}
+            <div className="w-[35%] absolute top-1/3 right-0 h-50 bg-[#004C99] z-0 hidden lg:block"></div>
           </div>
 
           {/* Explore Screen */}
           <div className="relative mb-20 lg:mb-32">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="flex justify-center relative z-10 order-2 md:order-1">
-                <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
-                  <Image
-                    src="/images/flashcard-img-3.webp"
-                    alt="image"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+            <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-12 md:gap-16 lg:gap-30">
+              {/* Image (Left on Desktop) */}
+
+              <div className="relative z-10 overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
+                <Image
+                  src="/images/flashcard-img-3.webp"
+                  alt="image"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <div className="flex items-center order-1 md:order-2">
+
+              {/* Text */}
+              <div className="flex items-center w-full md:w-[30%] px-4 order-1 lg:order-2">
                 <div>
-                  <p className="text-gray-700 leading-relaxed mb-6">
+                  <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins mb-6">
                     The Explore screen enables users to browse and discover new
                     learning content organized by categories such as subject
                     type, sections, or subscriptions. It offers a structured yet
                     flexible way to navigate through flashcards, making it easy
                     to find relevant material.
                   </p>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
                     A clean search bar and filter options simplify exploration,
                     while the categorized layout promotes quick decision-making.
                     The bright yellow accents guide user attention to
@@ -600,23 +616,25 @@ export default function FlashcardsCaseStudy() {
                 </div>
               </div>
             </div>
-            {/* Blue accent block - positioned absolutely */}
-            <div className="w-[20%] absolute top-1/2 left-0 h-50 bg-[#004C99] -z-0 hidden md:block"></div>
+
+            {/* Blue Accent */}
+            <div className="w-[35%] absolute top-1/3 left-0 h-50 bg-[#004C99] z-0 hidden lg:block"></div>
           </div>
 
           {/* Subject Overview Screen */}
           <div className="relative mb-20 lg:mb-32">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="flex items-center">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 lg:gap-30">
+              {/* Text */}
+              <div className="flex items-center w-full md:w-[30%] px-4">
                 <div>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
                     The Subject Overview screen provides an in-depth view of the
                     user's progress within a specific subject. It highlights
                     mastered flashcards through detailed analytics, helping
                     learners track their improvement across different learning
                     modes.
                   </p>
-                  <p className="text-gray-700 leading-relaxed mt-4">
+                  <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins mt-4">
                     Users can view available sections, mark favorites, and set a
                     preferred section as the default for streamlined access. The
                     interface maintains clarity through structured information
@@ -626,43 +644,45 @@ export default function FlashcardsCaseStudy() {
                   </p>
                 </div>
               </div>
-              <div className="flex justify-center relative z-10">
-                <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
-                  <Image
-                    src="/images/flashcard-img-8.webp"
-                    alt="image"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+
+              {/* Image */}
+              <div className="relative z-10  overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
+                <Image
+                  src="/images/flashcard-img-8.webp"
+                  alt="image"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
-            {/* Blue accent block - positioned absolutely */}
-            <div className="w-[20%] absolute top-1/2 right-0 h-50 bg-[#004C99] -z-0 hidden md:block"></div>
+
+            {/* Blue Accent */}
+            <div className="w-[35%] absolute top-1/3 right-0 h-50 bg-[#004C99] z-0 hidden lg:block"></div>
           </div>
 
           {/* Flashcard Learning Screen */}
           <div className="relative">
-            <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
-              <div className="flex justify-center relative z-10 order-2 md:order-1">
-                <div className="relative overflow-hidden w-full sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
-                  <Image
-                    src="/images/flashcard-img-9.webp"
-                    alt="image"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+            <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-12 md:gap-16 lg:gap-30">
+              {/* Image */}
+              <div className="relative z-10 overflow-hidden w-full sm:max-w-md md:max-w-lg lg:max-w-3xl aspect-square">
+                <Image
+                  src="/images/flashcard-img-9.webp"
+                  alt="image"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <div className="flex items-center order-1 md:order-2">
+
+              {/* Text */}
+              <div className="flex items-center px-4 w-full md:w-[30%] order-1 lg:order-2">
                 <div>
-                  <p className="text-gray-700 leading-relaxed mb-6">
+                  <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins mb-6">
                     The Flashcard Learning screen is the core interaction space
                     of Memolect, designed for focused and engaging study
                     sessions. Each flashcard is displayed individually to
                     enhance retention and recall through active interaction.
                   </p>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
                     Users can choose between two distinct modes — Surfing, for
                     casual browsing and quick review, and Training, for focused
                     practice and mastery. The clean, minimal layout with subtle
@@ -677,7 +697,7 @@ export default function FlashcardsCaseStudy() {
       </section>
 
       {/* Other Screens Section */}
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-20 md:px-6 lg:px-11">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins mb-12 lg:mb-16">
             Other Screens
@@ -774,7 +794,7 @@ export default function FlashcardsCaseStudy() {
       </section>
 
       {/* Wireframes Section */}
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-20 md:px-6 lg:px-11">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins mb-12 lg:mb-16">
             Wireframes

@@ -137,14 +137,14 @@ export default function MindfulUX() {
                 Memory Training | Productivity
               </h3>
             </div>
-            <a
+            {/*<a
               href="https://play.google.com/store/apps/details?id=com.memolect.flashcards"
               target="_blank"
               className="text-[#1E4494] text-base md:text-lg cursor-pointer font-semibold hover:underline"
               rel="noopener noreferrer"
             >
               {"{Link to Product}"}
-            </a>
+            </a>*/}
             <p className="text-[#000000] text-sm md:text-base font-normal">
               Memolect is a flashcard-based learning app designed to make
               knowledge retention easier through interactive and adaptive
