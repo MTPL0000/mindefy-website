@@ -644,7 +644,7 @@ export default function ALMLandingPage() {
         className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
       >
         {/* Large screen animated version */}
-        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%]">
+        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-12">
           <div className="container mx-auto w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
             {/* Left side - Phone mockup */}
             <motion.div
@@ -752,7 +752,7 @@ export default function ALMLandingPage() {
         // style={{ height: "100vh" }}
       >
         {/* Large screen animated version */}
-        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%]">
+        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-12 md:py-32">
           <div className="container flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
             {/* Left side - Content */}
             <motion.div
@@ -792,8 +792,8 @@ export default function ALMLandingPage() {
               viewport={{ once: false, amount: 0.3 }}
             >
               <div
-                className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12"
-                style={{ aspectRatio: "1200/1600" }}
+                className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12 aspect-[578 /400]"
+                
               >
                 <img
                   src="/images/ai/early-foods.png"
