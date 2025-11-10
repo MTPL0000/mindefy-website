@@ -160,8 +160,11 @@ export default function ALMLandingPage() {
       // Calculate section 3 trigger
       if (section3Ref.current) {
         const rect = section3Ref.current.getBoundingClientRect();
+
+        const halfViewPortHeight = window.innerHeight / 2;
         
-        if ((rect.top - headerHeight)<= 0 && !hasReachedTop) {
+        // if ((rect.top - (headerHeight * 6))<= 0 && !hasReachedTop) {
+        if ((rect.top - halfViewPortHeight)<= 0 && !hasReachedTop) {
           setHasReachedTop(true);
         }
 
