@@ -729,7 +729,7 @@ export default function ALMLandingPage() {
                 </p>
                 <a
                   href="/gen-ai-chatbot"
-                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 w-full md:w-auto hover:cursor-pointer"
+                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
                 >
                   Case Study →
                 </a>
@@ -832,7 +832,7 @@ export default function ALMLandingPage() {
                 </p>
                 <a
                   href="/custom-ml-solution"
-                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 w-full md:w-auto hover:cursor-pointer"
+                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
                 >
                   Case Study →
                 </a>
