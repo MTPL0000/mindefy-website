@@ -1,6 +1,6 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
-import { useRef, useEffect, useState, useCallback } from "react";
+import { useRef, useEffect, useState } from "react";
 import useHeaderHeight from "@/hooks/useHeaderHeight";
 import { ChevronDown } from "lucide-react";
 
@@ -67,10 +67,6 @@ const offersCards = [
 ];
 
 export default function ALMLandingPage() {
-  const containerRef = useRef(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [section1Progress, setSection1Progress] = useState(0);
-  const [section5Progress, setSection5Progress] = useState(0);
   const [section6Progress, setSection6Progress] = useState(0);
   const [animationStage, setAnimationStage] = useState(0);
   const [showContent, setShowContent] = useState(false);
@@ -104,10 +100,6 @@ export default function ALMLandingPage() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
-      
-      setScrollProgress(scrollPercent);
 
       // Calculate section 1 progress (Image Zoom section) - scroll-based
       const section1Element = document.getElementById("section-1");
@@ -131,8 +123,6 @@ export default function ALMLandingPage() {
             const currentDistance = scrollTop - startPoint;
             progress = Math.min(1, Math.max(0, currentDistance / totalDistance));
           }
-          
-          setSection1Progress(progress);
           
           // Apply zoom animation based on scroll progress
           zoomControls.set({
@@ -163,7 +153,6 @@ export default function ALMLandingPage() {
 
         const halfViewPortHeight = window.innerHeight / 2;
         
-        // if ((rect.top - (headerHeight * 6))<= 0 && !hasReachedTop) {
         if ((rect.top - halfViewPortHeight)<= 0 && !hasReachedTop) {
           setHasReachedTop(true);
         }
@@ -173,14 +162,6 @@ export default function ALMLandingPage() {
           setAnimationStage(0);
           setShowContent(false);
         }
-      }
-
-      // Calculate section 5 progress (Offerings section)
-      const section5Element = document.getElementById("section-5");
-      if (section5Element) {
-        const rect = section5Element.getBoundingClientRect();
-        const elementProgress = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
-        setSection5Progress(elementProgress);
       }
 
       // Calculate section 6 progress (Cards column animation) - Log-Z pattern
@@ -259,15 +240,8 @@ export default function ALMLandingPage() {
     return () => window.removeEventListener("resize", measureColumnHeight);
   }, [headerHeight]);
 
-  
-  // Animation variants for cleaner code
-  const sectionVariants = {
-    visible: { opacity: 1, pointerEvents: "auto" },
-    hidden: { opacity: 0, pointerEvents: "none" },
-  };
-
   return (
-    <div ref={containerRef} className="w-full">
+    <div className="w-full">
       {/* Video Section - Large screens only */}
       <div
         id="section-0"
@@ -302,7 +276,6 @@ export default function ALMLandingPage() {
       <div
         id="section-1"
         className="w-full flex items-center justify-center relative overflow-hidden"
-        // style={{ height: `calc(100vh - ${headerHeight}px)` }}
         style={{ height: "100vh" }}
       >
         {/* Animated background for large screens only */}
@@ -414,7 +387,6 @@ export default function ALMLandingPage() {
           className="sticky bg-white overflow-hidden"
           style={{ 
             top: `${headerHeight}px`,
-            // paddingTop: `${headerHeight/4}px`,
             height: `calc(100vh)`,
             zIndex: 10,
           }}
@@ -430,7 +402,6 @@ export default function ALMLandingPage() {
               animate={{
                 flex: animationStage >= 3 ? '0 0 auto' : '1 1 auto',
                 paddingTop: animationStage >= 3 ? `${headerHeight}px` : '0px',
-                // paddingBottom: animationStage >= 3 ? '10px' : '0px',
               }}
               transition={{
                 duration: 1,
@@ -454,8 +425,7 @@ export default function ALMLandingPage() {
                   style={{ 
                     color: "#FF5225",
                     fontSize: animationStage >= 3 ? '1.5rem' : '3rem',
-                    // marginBottom: animationStage >= 3 ? '0.5rem' : '1.5rem',
-                    transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96), margin-bottom 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
+                    transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
                     verticalAlign: 'middle',
                   }}
                 >
@@ -701,7 +671,6 @@ export default function ALMLandingPage() {
       <div
         id="section-4"
         className="lg:hidden w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
-        // style={{ height: "100vh" }}
       >
         <section className="w-full py-12 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
@@ -749,7 +718,6 @@ export default function ALMLandingPage() {
       <div
         id="section-5"
         className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
-        // style={{ height: "100vh" }}
       >
         {/* Large screen animated version */}
         <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-12 md:py-32">
@@ -792,8 +760,7 @@ export default function ALMLandingPage() {
               viewport={{ once: false, amount: 0.3 }}
             >
               <div
-                className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12 aspect-[578 /400]"
-                
+                className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12 aspect-[578 /400]"
               >
                 <img
                   src="/images/ai/early-foods.png"
