@@ -699,7 +699,14 @@ export default function ALMLandingPage() {
       >
         <section className="w-full py-12 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col items-center space-y-8 md:space-y-10">
+            <div className="flex flex-col items-center space-y-6 md:space-y-8">
+              {/* Title */}
+              <div className="text-center max-w-2xl mx-auto">
+                <h2 className="text-xl md:text-2xl font-poppins font-medium text-[#262626]">
+                  Gen AI-Chatbot
+                </h2>
+              </div>
+
               {/* Phone mockup */}
               <div
                 className="w-3/4 md:w-2/3 lg:w-1/2"
@@ -712,12 +719,9 @@ export default function ALMLandingPage() {
                 />
               </div>
 
-              {/* Content */}
+              {/* Description */}
               <div className="text-center max-w-2xl mx-auto">
-                <h2 className="text-xl md:text-2xl font-poppins font-medium text-[#262626] mb-6">
-                  Gen AI-Chatbot
-                </h2>
-                <p className="text-sm md:text-base font-poppins font-normal text-[#000000] mb-8 leading-relaxed">
+                <p className="text-sm md:text-base font-poppins font-normal text-[#000000] mb-6 leading-relaxed">
                   YourHour was originally designed to monitor and reduce daily
                   screen time with alerts. Facing rising demand for mental
                   health support, the team enhanced the app by integrating a
@@ -727,6 +731,10 @@ export default function ALMLandingPage() {
                   anxiety or depression, and offering companionship—based on how
                   screen time affects health and emotional well-being.
                 </p>
+              </div>
+
+              {/* Case Study Button */}
+              <div className="text-center max-w-2xl mx-auto">
                 <a
                   href="/gen-ai-chatbot"
                   className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
@@ -805,7 +813,14 @@ export default function ALMLandingPage() {
       >
         <section className="w-full py-12 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col items-center space-y-8 md:space-y-10">
+            <div className="flex flex-col items-center space-y-6 md:space-y-8">
+              {/* Title */}
+              <div className="text-center max-w-2xl mx-auto">
+                <h2 className="text-xl md:text-2xl font-poppins font-medium text-[#262626]">
+                  ML Driven Recommendations
+                </h2>
+              </div>
+
               {/* Laptop mockup */}
               <div className="w-5/6 md:w-4/5 lg:w-3/4 aspect-[11/7]">
                 <img
@@ -815,12 +830,9 @@ export default function ALMLandingPage() {
                 />
               </div>
 
-              {/* Content */}
+              {/* Description */}
               <div className="text-center max-w-2xl mx-auto">
-                <h2 className="text-xl md:text-2xl font-poppins font-medium text-[#262626] mb-6">
-                  ML Driven Recommendations
-                </h2>
-                <p className="text-sm md:text-base font-poppins font-normal text-[#000000] mb-8 leading-relaxed">
+                <p className="text-sm md:text-base font-poppins font-normal text-[#000000] mb-6 leading-relaxed">
                   EarlyFoods, an e-commerce platform offering millet-based
                   products for new and expecting mothers, found customers
                   missing relevant items—limiting cart value. To solve this, we
@@ -830,6 +842,10 @@ export default function ALMLandingPage() {
                   This has boosted average order value, enhanced product
                   discovery, and strengthened customer trust.
                 </p>
+              </div>
+
+              {/* Case Study Button */}
+              <div className="text-center max-w-2xl mx-auto">
                 <a
                   href="/custom-ml-solution"
                   className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
