@@ -73,8 +73,8 @@ export default function FlashcardsCaseStudy() {
       {/* Product Overview Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-18">
-            <div className="w-full md:w-[45%] flex flex-col gap-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-45">
+            <div className="w-full md:w-[40%] flex flex-col gap-6">
               <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
                 Product Overview
                 <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
@@ -111,7 +111,7 @@ export default function FlashcardsCaseStudy() {
       {/* Problem Statement & Research Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-18">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-45">
             <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
               <Image
                 src="/images/flashcard-img-3.webp"
@@ -120,7 +120,7 @@ export default function FlashcardsCaseStudy() {
                 className="object-contain"
               />
             </div>
-            <div className="w-full md:w-[45%] flex flex-col gap-10 md:gap-16 lg:gap-20">
+            <div className="w-full md:w-[40%] flex flex-col gap-10 md:gap-16 lg:gap-20">
               <div className="w-full flex flex-col gap-6">
                 <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
                   Problem Statement
@@ -179,7 +179,7 @@ export default function FlashcardsCaseStudy() {
 
       {/* Brand Story Section */}
       <section className="py-16 md:py-20">
-        <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           {/* Heading */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div className="flex-1/3">
@@ -280,7 +280,7 @@ export default function FlashcardsCaseStudy() {
             </div>
 
             {/* Right Logo Section */}
-            <div className="flex-1 flex flex-col items-center justify-start md:items-center mt-8 md:mt-0">
+            <div className="max-w-3xs flex flex-col items-center justify-start md:items-center mt-8 md:mt-0">
               <div className="w-40 h-40 md:w-48 md:h-48 p-5 rounded-xl overflow-hidden flex items-center justify-center bg-gray-800">
                 <div className="relative w-full h-full overflow-hidden">
                   <Image
@@ -299,20 +299,21 @@ export default function FlashcardsCaseStudy() {
 
       {/* Logo Section */}
       <section className="py-16 md:py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-            {/* Left Color Blocks (logos) */}
-            <div className="relative overflow-hidden w-full sm:max-w-76 aspect-square">
+        <div className="container mx-auto px-4 flex flex-col gap-20">
+          {/* Apps Logo Icon */}
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-28 mb-20">
+            {/* Left Image */}
+            <div className="relative overflow-hidden w-full sm:max-w-76 aspect-square flex-shrink-0">
               <Image
                 src="/images/flashcard-img-4.webp"
-                alt="image"
+                alt="Apps Logo Icon"
                 fill
                 className="object-contain"
               />
             </div>
 
             {/* Right Text */}
-            <div className="w-full md:w-md flex flex-col gap-8">
+            <div className="w-full md:w-[40%] flex flex-col gap-8">
               <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
                 Apps Logo Icon
                 <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
@@ -335,8 +336,9 @@ export default function FlashcardsCaseStudy() {
           </div>
 
           {/* Logo Clear Space */}
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="w-full md:w-2xl flex flex-col gap-8">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-25">
+            {/* Left Text */}
+            <div className="w-full md:w-[38%] flex flex-col gap-8">
               <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
                 Logo Clear Space
                 <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
@@ -346,14 +348,17 @@ export default function FlashcardsCaseStudy() {
                 guidelines that dictate the appropriate spacing and sizing for
                 both the emblem and the brand name. This ensures that your logo
                 is not only visually appealing but also maintains its integrity
-                across various applications.
+                across various applications. Proper spacing allows the emblem
+                and text to breathe, creating a harmonious balance that enhances
+                brand recognition.
               </p>
             </div>
 
-            <div className="relative overflow-hidden w-full sm:max-w-75 aspect-square">
+            {/* Right Image */}
+            <div className="relative overflow-hidden w-full sm:max-w-75 aspect-square flex-shrink-0">
               <Image
                 src="/images/flashcard-img-5.webp"
-                alt="image"
+                alt="Logo Clear Space"
                 fill
                 className="object-contain"
               />
