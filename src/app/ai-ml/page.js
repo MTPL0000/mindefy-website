@@ -212,8 +212,14 @@ export default function ALMLandingPage() {
     timers.push(
       setTimeout(() => {
         setAnimationStage(3);
-        setShowContent(true); // Show content when starting to move up
       }, 5000)
+    );
+
+    // Stage 4: Show content after move-to-top animation completes (5s + 1s animation = 6s)
+    timers.push(
+      setTimeout(() => {
+        setShowContent(true);
+      }, 6000)
     );
 
     return () => {
@@ -384,24 +390,34 @@ export default function ALMLandingPage() {
       >
         {/* Sticky container for animations */}
         <div 
-          className="sticky bg-white overflow-hidden"
+          className="sticky bg-white"
           style={{ 
             top: `${headerHeight}px`,
-            height: `calc(100vh)`,
+            minHeight: `calc(100vh - ${headerHeight}px)`,
             zIndex: 10,
+            overflow: animationStage >= 3 ? 'visible' : 'hidden',
           }}
         >
           {/* Animated content wrapper */}
           <motion.div
-            className="relative h-full flex flex-col overflow-hidden"
+            className="relative flex flex-col"
+            style={{
+              minHeight: `calc(100vh - ${headerHeight}px)`,
+              overflow: animationStage >= 3 ? 'visible' : 'hidden',
+            }}
             initial={false}
           >
             {/* Title and Subtitle Container */}
             <motion.div
               className="flex items-center justify-center"
+              style={{
+                position: 'absolute',
+                left: '50%',
+                width: '100%',
+              }}
               animate={{
-                flex: animationStage >= 3 ? '0 0 auto' : '1 1 auto',
-                paddingTop: animationStage >= 3 ? `${headerHeight}px` : '0px',
+                top: animationStage >= 3 ? `${headerHeight}px` : '50%',
+                transform: animationStage >= 3 ? 'translate(-50%, 0%)' : 'translate(-50%, -50%)',
               }}
               transition={{
                 duration: 1,
@@ -427,19 +443,21 @@ export default function ALMLandingPage() {
                     fontSize: animationStage >= 3 ? '1.5rem' : '3rem',
                     transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
                     verticalAlign: 'middle',
+                    // marginBottom: animationStage >= 3 ? '0.5rem' : '1rem',
                   }}
                 >
                   What sets Us apart
                 </motion.h1>
               )}
 
-              {/* Subtitle with sequential left-right animation */}
+              {/* Subtitle with sequential left-right animation - Always reserve space */}
               <div 
                 className="font-poppins font-normal text-[#3D3D3D] flex justify-center items-center gap-2 flex-wrap"
                 style={{
                   fontSize: animationStage >= 3 ? '2.5rem' : '5rem',
                   transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
                   verticalAlign: "middle",
+                  minHeight: animationStage >= 3 ? '3rem' : '6rem',
                 }}
               >
                 {animationStage >= 2 && (
@@ -486,8 +504,15 @@ export default function ALMLandingPage() {
             </div>
             </motion.div>
 
-            {/* Content Section - Flexible to fill remaining space */}
-            <div className="flex-1 overflow-hidden px-4 md:px-6 lg:px-8">
+            {/* Content Section - Appears after animation */}
+            <motion.div 
+              className="px-4 md:px-6 lg:px-8"
+              style={{
+                marginTop: animationStage >= 3 ? `${headerHeight + 120}px` : '0px',
+                opacity: showContent ? 1 : 0,
+                pointerEvents: showContent ? 'auto' : 'none',
+              }}
+            >
             {/* Description */}
             <motion.div
               className="max-w-4xl mx-auto text-center mb-4"
@@ -550,7 +575,7 @@ export default function ALMLandingPage() {
                 </motion.div>
               ))}
             </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
