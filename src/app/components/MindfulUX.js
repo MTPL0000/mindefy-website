@@ -168,7 +168,7 @@ export default function MindfulUX() {
             </a>
           </div>
 
-          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
+          <div className="relative aspect-[1/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
             <Image
               src="/images/memolect.webp"
               alt="image"
