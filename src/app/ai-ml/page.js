@@ -348,12 +348,25 @@ export default function ALMLandingPage() {
           initial={{ y: 0, opacity: 1 }}
         />
 
-        <motion.img
-          src="/images/ai/center.png"
-          className="hidden lg:block absolute top-[20%] left-1/2 -translate-x-1/2 h-[68.26%] aspect-auto"
-          animate={zoomControls}
-          initial={{ scale: 1, opacity: 1 }}
-        />
+        <motion.div className="absolute top-[15%] left-1/2 -translate-x-1/2 h-[70%] aspect-auto flex opacity-40 z-10">
+          {/* Left cloud - slides left */}
+          <motion.img
+            src="/images/ai/c-l.png"
+            className="hidden lg:block w-1/2 h-full object-cover"
+            animate={cloudLeftControls}
+            initial={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+          />
+
+          {/* Right cloud - slides right */}
+          <motion.img
+            src="/images/ai/c-r.png"
+            className="hidden lg:block w-1/2 h-full object-cover"
+            animate={cloudRightControls}
+            initial={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+          />
+        </motion.div>
 
         <motion.img
           src="/images/ai/cloud-right-1.png"
