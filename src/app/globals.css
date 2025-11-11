@@ -25,3 +25,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* added hover state color for the Offering on AI dashboard screen. */
+.group.hovered {
+  background-color: #00000015;
+}
