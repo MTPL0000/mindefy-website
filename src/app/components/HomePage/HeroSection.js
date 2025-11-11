@@ -158,14 +158,20 @@ export default function HeroSection() {
       if (!isDesktop) return;
 
       const heroSection = document.querySelector("[data-hero-section]");
-      if (!heroSection || !aiRef.current) return;
+      const aiTextElement = document.querySelector("[data-ai-text]");
 
+      if (!heroSection || !aiTextElement) return;
+
+      const navbarHeight = 64; // Approximate navbar height
       const viewportHeight = window.innerHeight;
 
-      // Calculate scroll progress
-      const scrollY = window.scrollY || window.pageYOffset;
+      // Calculate scroll progress based on AI text position relative to navbar
+      // Animation completes when AI text reaches just below the navbar
       const scrollStart = 0;
-      const scrollEnd = viewportHeight * 0.2;
+      const aiTextInitialTop = viewportHeight * 0.25; // Approximate initial position
+      const scrollEnd = aiTextInitialTop - navbarHeight;
+
+      const scrollY = window.scrollY || window.pageYOffset;
 
       let progress = 0;
 
@@ -219,6 +225,7 @@ export default function HeroSection() {
           {/* AI text for large view only - with animation and dispersion */}
           <span
             ref={aiRef}
+            data-ai-text
             className="hidden md:inline-block text-black relative mx-5"
             style={{
               transform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
@@ -284,7 +291,7 @@ export default function HeroSection() {
             Book a Call →
           </button>
           <Link
-            href="/mindful-ux"
+            href="/ai-ml"
             className="border border-[#2F2F2F] text-[#2F2F2F] px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-lg font-medium transition duration-300 hover:bg-[#2F2F2F] hover:text-white hover:-translate-y-1"
           >
             View Our Work

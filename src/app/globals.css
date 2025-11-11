@@ -62,3 +62,24 @@ html {
     box-shadow: 0 0 12px #1E99FE, 0 0 15px rgba(30, 153, 254, 0.3);
   }
 }
+
+/* Header AI BG animations */
+@keyframes rotate-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-counter-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
