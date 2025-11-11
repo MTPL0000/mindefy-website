@@ -179,7 +179,7 @@ export default function ALMLandingPage() {
           setHasReachedTop(true);
         }
 
-        if (((rect.top + headerHeight) > window.innerHeight || (rect.bottom -headerHeight)< 0) && hasReachedTop) {
+        if (rect.top + headerHeight > window.innerHeight && hasReachedTop) {
           setHasReachedTop(false);
           setAnimationStage(0);
           setShowContent(false);
@@ -208,7 +208,16 @@ export default function ALMLandingPage() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [headerHeight, zoomControls, contentZoomControls, cardControls, cloudLeftControls, cloudRightControls, cloudTopControls, hasReachedTop]);
+  }, [
+    headerHeight,
+    zoomControls,
+    contentZoomControls,
+    cardControls,
+    cloudLeftControls,
+    cloudRightControls,
+    cloudTopControls,
+    hasReachedTop,
+  ]);
 
   // Animation sequence - triggers when section reaches top (Log-Z pattern)
   useEffect(() => {
