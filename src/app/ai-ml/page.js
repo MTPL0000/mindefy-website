@@ -287,9 +287,49 @@ export default function ALMLandingPage() {
         {/* Animated background for large screens only */}
         <motion.div
           className="hidden lg:block absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url(/images/bg-copy.png)" }}
+          // style={{ backgroundImage: "url(/images/bg-copy.png)" }}
           animate={zoomControls}
           initial={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
+        />
+
+        <motion.img
+          src="/images/ai/cloud-left-1.png"
+          className="hidden lg:block absolute left-0 top-[-10%] 2xl:top-0 aspect-auto opacity-40"
+        />
+
+        <motion.img
+          src="/images/ai/cloud-left-2.png"
+          className="hidden lg:block absolute left-0 top-[10%] 2xl:top-[20%] aspect-auto"
+        />
+
+        <motion.img
+          src="/images/ai/cloud-left-3.png"
+          className="hidden lg:block w-[50%] absolute left-0 bottom-0 aspect-auto"
+        />
+
+        <motion.img
+          src="/images/ai/cloud-c-top.png"
+          className="hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 w-[50.5%]"
+        />
+
+        <motion.img
+          src="/images/ai/center.png"
+          className="hidden lg:block absolute top-[20%] left-1/2 -translate-x-1/2 h-[68.26%] aspect-auto"
+        />
+
+        <motion.img
+          src="/images/ai/cloud-right-1.png"
+          className="hidden lg:block absolute right-0 top-[0%] aspect-auto"
+        />
+
+        <motion.img
+          src="/images/ai/cloud-right-1.png"
+          className="hidden lg:block absolute right-0 top-[20%] aspect-auto"
+        />
+
+        <motion.img
+          src="/images/ai/cloud-right-2.png"
+          className="hidden lg:block w-[50%] absolute right-0 bottom-0 aspect-auto"
         />
 
         {/* Static background for smaller screens */}
@@ -336,7 +376,7 @@ export default function ALMLandingPage() {
                   </p>
                 </div>
 
-                <button 
+                <button
                   onClick={() => scrollToSection("section-3")}
                   className="bg-[#34333D] text-white font-poppins px-6 lg:px-8 xl:px-10 py-3 lg:py-4 rounded-full text-base lg:text-lg xl:text-xl font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer"
                 >
@@ -369,9 +409,10 @@ export default function ALMLandingPage() {
               </p>
             </div>
 
-            <button 
-            onClick={() => scrollToSection("section-3-mobile")} 
-            className="bg-[#34333D] text-white font-poppins px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer">
+            <button
+              onClick={() => scrollToSection("section-3-mobile")}
+              className="bg-[#34333D] text-white font-poppins px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer"
+            >
               <ChevronDown className="w-7 h-7" />
             </button>
           </div>
@@ -383,19 +424,19 @@ export default function ALMLandingPage() {
         id="section-3"
         ref={section3Ref}
         className="hidden lg:block relative bg-white"
-        style={{ 
-          minHeight: '100vh',
+        style={{
+          minHeight: "100vh",
           zIndex: 2,
         }}
       >
         {/* Sticky container for animations */}
-        <div 
+        <div
           className="sticky bg-white"
-          style={{ 
+          style={{
             top: `${headerHeight}px`,
             minHeight: `calc(100vh - ${headerHeight}px)`,
             zIndex: 10,
-            overflow: animationStage >= 3 ? 'visible' : 'hidden',
+            overflow: animationStage >= 3 ? "visible" : "hidden",
           }}
         >
           {/* Animated content wrapper */}
@@ -403,7 +444,7 @@ export default function ALMLandingPage() {
             className="relative flex flex-col"
             style={{
               minHeight: `calc(100vh - ${headerHeight}px)`,
-              overflow: animationStage >= 3 ? 'visible' : 'hidden',
+              overflow: animationStage >= 3 ? "visible" : "hidden",
             }}
             initial={false}
           >
@@ -411,177 +452,190 @@ export default function ALMLandingPage() {
             <motion.div
               className="flex items-center justify-center"
               style={{
-                position: 'absolute',
-                left: '50%',
-                width: '100%',
+                position: "absolute",
+                left: "50%",
+                width: "100%",
               }}
               animate={{
-                top: animationStage >= 3 ? `${headerHeight}px` : '50%',
-                transform: animationStage >= 3 ? 'translate(-50%, 0%)' : 'translate(-50%, -50%)',
+                top: animationStage >= 3 ? `${headerHeight}px` : "50%",
+                transform:
+                  animationStage >= 3
+                    ? "translate(-50%, 0%)"
+                    : "translate(-50%, -50%)",
               }}
               transition={{
                 duration: 1,
                 ease: [0.43, 0.13, 0.23, 0.96],
               }}
             >
-            <div className="text-center px-4">
-              {/* Title with zoom in animation */}
-              {animationStage >= 1 && (
-                <motion.h1
-                  className="font-poppins font-medium"
-                  initial={{ scale: 0, opacity: 0 }}
-                  animate={{ 
-                    scale: 1, 
-                    opacity: 1,
-                  }}
-                  transition={{
-                    duration: 1.0,
-                    ease: "easeOut",
-                  }}
-                  style={{ 
-                    color: "#FF5225",
-                    fontSize: animationStage >= 3 ? '1.5rem' : '3rem',
-                    transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
-                    verticalAlign: 'middle',
-                    // marginBottom: animationStage >= 3 ? '0.5rem' : '1rem',
+              <div className="text-center px-4">
+                {/* Title with zoom in animation */}
+                {animationStage >= 1 && (
+                  <motion.h1
+                    className="font-poppins font-medium"
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{
+                      scale: 1,
+                      opacity: 1,
+                    }}
+                    transition={{
+                      duration: 1.0,
+                      ease: "easeOut",
+                    }}
+                    style={{
+                      color: "#FF5225",
+                      fontSize: animationStage >= 3 ? "1.5rem" : "3rem",
+                      transition:
+                        animationStage >= 3
+                          ? "font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)"
+                          : "none",
+                      verticalAlign: "middle",
+                      // marginBottom: animationStage >= 3 ? '0.5rem' : '1rem',
+                    }}
+                  >
+                    What sets Us apart
+                  </motion.h1>
+                )}
+
+                {/* Subtitle with sequential left-right animation - Always reserve space */}
+                <div
+                  className="font-poppins font-normal text-[#3D3D3D] flex justify-center items-center gap-2 flex-wrap"
+                  style={{
+                    fontSize: animationStage >= 3 ? "2.5rem" : "5rem",
+                    transition:
+                      animationStage >= 3
+                        ? "font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)"
+                        : "none",
+                    verticalAlign: "middle",
+                    minHeight: animationStage >= 3 ? "3rem" : "6rem",
                   }}
                 >
-                  What sets Us apart
-                </motion.h1>
-              )}
-
-              {/* Subtitle with sequential left-right animation - Always reserve space */}
-              <div 
-                className="font-poppins font-normal text-[#3D3D3D] flex justify-center items-center gap-2 flex-wrap"
-                style={{
-                  fontSize: animationStage >= 3 ? '2.5rem' : '5rem',
-                  transition: animationStage >= 3 ? 'font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)' : 'none',
-                  verticalAlign: "middle",
-                  minHeight: animationStage >= 3 ? '3rem' : '6rem',
-                }}
-              >
-                {animationStage >= 2 && (
-                  <>
-                    {/* First word: Smart - from left */}
-                    <motion.span
-                      initial={{ x: -200, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{
-                        duration: 1.0,
-                        ease: "easeOut",
-                        delay: 0,
-                      }}
-                    >
-                      Smart.
-                    </motion.span>
-                    {/* Second word: Scalable - from right, starts after Smart completes */}
-                    <motion.span
-                      initial={{ x: 200, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{
-                        duration: 1.0,
-                        ease: "easeOut",
-                        delay: 1.0,
-                      }}
-                    >
-                      Scalable.
-                    </motion.span>
-                    {/* Third word: Strategic - from right, starts after Scalable completes */}
-                    <motion.span
-                      initial={{ x: 200, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{
-                        duration: 1.0,
-                        ease: "easeOut",
-                        delay: 2.0,
-                      }}
-                    >
-                      Strategic.
-                    </motion.span>
-                  </>
-                )}
+                  {animationStage >= 2 && (
+                    <>
+                      {/* First word: Smart - from left */}
+                      <motion.span
+                        initial={{ x: -200, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{
+                          duration: 1.0,
+                          ease: "easeOut",
+                          delay: 0,
+                        }}
+                      >
+                        Smart.
+                      </motion.span>
+                      {/* Second word: Scalable - from right, starts after Smart completes */}
+                      <motion.span
+                        initial={{ x: 200, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{
+                          duration: 1.0,
+                          ease: "easeOut",
+                          delay: 1.0,
+                        }}
+                      >
+                        Scalable.
+                      </motion.span>
+                      {/* Third word: Strategic - from right, starts after Scalable completes */}
+                      <motion.span
+                        initial={{ x: 200, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{
+                          duration: 1.0,
+                          ease: "easeOut",
+                          delay: 2.0,
+                        }}
+                      >
+                        Strategic.
+                      </motion.span>
+                    </>
+                  )}
+                </div>
               </div>
-            </div>
             </motion.div>
 
             {/* Content Section - Appears after animation */}
-            <motion.div 
+            <motion.div
               className="px-4 md:px-6 lg:px-8"
               style={{
-                marginTop: animationStage >= 3 ? `${headerHeight + 120}px` : '0px',
+                marginTop:
+                  animationStage >= 3 ? `${headerHeight + 120}px` : "0px",
                 opacity: showContent ? 1 : 0,
-                pointerEvents: showContent ? 'auto' : 'none',
+                pointerEvents: showContent ? "auto" : "none",
               }}
             >
-            {/* Description */}
-            <motion.div
-              className="max-w-4xl mx-auto text-center mb-4"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{
-                opacity: showContent ? 1 : 0,
-                y: showContent ? 0 : 50,
-              }}
-              transition={{
-                duration: 1,
-                delay: 0,
-                ease: [0.43, 0.13, 0.23, 0.96],
-              }}
-            >
-              <p className="text-sm md:text-base text-[#444444] leading-relaxed">
-                We don't just deliver AI and data solutions — we engineer
-                enterprise-grade intelligence systems that align with your
-                business vision and drive measurable value.
-              </p>
-            </motion.div>
+              {/* Description */}
+              <motion.div
+                className="max-w-4xl mx-auto text-center mb-4"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{
+                  opacity: showContent ? 1 : 0,
+                  y: showContent ? 0 : 50,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0,
+                  ease: [0.43, 0.13, 0.23, 0.96],
+                }}
+              >
+                <p className="text-sm md:text-base text-[#444444] leading-relaxed">
+                  We don't just deliver AI and data solutions — we engineer
+                  enterprise-grade intelligence systems that align with your
+                  business vision and drive measurable value.
+                </p>
+              </motion.div>
 
-            {/* Cards Grid */}
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {cardData.map((card, index) => (
-                <motion.div
-                  key={index}
-                  className="bg-white rounded-xl px-4 py-2 xl:py-4 2xl:py-10 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
-                  initial={{ opacity: 0, y: 60 }}
-                  animate={{
-                    opacity: showContent ? 1 : 0,
-                    y: showContent ? 0 : 60,
-                  }}
-                  transition={{
-                    duration: 1,
-                    delay: 0.1 + index * 0.08,
-                    ease: [0.43, 0.13, 0.23, 0.96],
-                  }}
-                >
-                  {/* Icon */}
-                  <div className="w-12 h-12 flex items-center justify-center mb-3 mx-auto">
-                    <img
-                      src={card.icon}
-                      alt={card.title}
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-
-                  {/* Title */}
-                  <h3
-                    className="text-base xl:text-lg 2xl:text-xl font-poppins font-semibold mb-2 text-center"
-                    style={{ color: "#FF5225" }}
+              {/* Cards Grid */}
+              <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {cardData.map((card, index) => (
+                  <motion.div
+                    key={index}
+                    className="bg-white rounded-xl px-4 py-2 xl:py-4 2xl:py-10 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+                    initial={{ opacity: 0, y: 60 }}
+                    animate={{
+                      opacity: showContent ? 1 : 0,
+                      y: showContent ? 0 : 60,
+                    }}
+                    transition={{
+                      duration: 1,
+                      delay: 0.1 + index * 0.08,
+                      ease: [0.43, 0.13, 0.23, 0.96],
+                    }}
                   >
-                    {card.title}
-                  </h3>
+                    {/* Icon */}
+                    <div className="w-12 h-12 flex items-center justify-center mb-3 mx-auto">
+                      <img
+                        src={card.icon}
+                        alt={card.title}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
 
-                  {/* Description */}
-                  <p className="text-sm xl:text-base 2xl:text-lg font-poppins text-gray-600 text-center leading-relaxed">
-                    {card.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
+                    {/* Title */}
+                    <h3
+                      className="text-base xl:text-lg 2xl:text-xl font-poppins font-semibold mb-2 text-center"
+                      style={{ color: "#FF5225" }}
+                    >
+                      {card.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-sm xl:text-base 2xl:text-lg font-poppins text-gray-600 text-center leading-relaxed">
+                      {card.description}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* Mobile/Tablet static version */}
-      <div id="section-3-mobile" className="lg:hidden py-12 px-4 md:px-6 bg-white">
+      <div
+        id="section-3-mobile"
+        className="lg:hidden py-12 px-4 md:px-6 bg-white"
+      >
         <div className="max-w-4xl mx-auto">
           {/* Title */}
           <h2 className="font-poppins font-medium text-lg md:text-xl text-[#FF5225] text-center align-middle mb-1">
@@ -603,8 +657,8 @@ export default function ALMLandingPage() {
           {/* Description */}
           <p className="font-inter font-normal text-sm text-center text-[#444444] mb-10 max-w-lg mx-auto leading-relaxed">
             We don't just deliver AI and data solutions — we engineer
-            enterprise-grade intelligence systems that align with your
-            business vision and drive measurable value.
+            enterprise-grade intelligence systems that align with your business
+            vision and drive measurable value.
           </p>
 
           {/* Cards */}
@@ -649,9 +703,7 @@ export default function ALMLandingPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <div
-                className="relative h-[20rem] lg:h-[35rem] xl:h-[38rem] aspect-[3/4]"
-              >
+              <div className="relative h-[20rem] lg:h-[35rem] xl:h-[38rem] aspect-[3/4]">
                 <img
                   src="/images/YH-MN.gif"
                   alt="Gen AI-Chatbot Interface"
@@ -792,9 +844,7 @@ export default function ALMLandingPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <div
-                className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12 aspect-[578 /400]"
-              >
+              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12 aspect-[578 /400]">
                 <img
                   src="/images/ai/early-foods.png"
                   alt="ML Driven Recommendations Interface"
@@ -862,7 +912,10 @@ export default function ALMLandingPage() {
       <div
         ref={section6WrapperRef}
         style={{
-          minHeight: columnHeight > 0 ? `calc(100vh + ${columnHeight * 2}px)` : "calc(100vh + 1200px)",
+          minHeight:
+            columnHeight > 0
+              ? `calc(100vh + ${columnHeight * 2}px)`
+              : "calc(100vh + 1200px)",
           position: "relative",
         }}
         className="w-full bg-white hidden lg:block"
@@ -872,7 +925,7 @@ export default function ALMLandingPage() {
           style={{
             position: "sticky",
             top: `${headerHeight}px`,
-            paddingTop: `${headerHeight/4}px`,
+            paddingTop: `${headerHeight / 4}px`,
             height: `calc(100vh - ${headerHeight}px)`,
             zIndex: 10,
             width: "100%",
@@ -899,24 +952,42 @@ export default function ALMLandingPage() {
                   {offersCards.map((card, index) => {
                     // Column 1 (index 0) appears by default, others animate on scroll
                     // Calculate animation progress for each column
-                    const columnProgress = index === 0 
-                      ? 1 // Column 1 always fully visible
-                      : Math.max(0, Math.min(1, section6Progress - (index - 1)));
-                    
+                    const columnProgress =
+                      index === 0
+                        ? 1 // Column 1 always fully visible
+                        : Math.max(
+                            0,
+                            Math.min(1, section6Progress - (index - 1))
+                          );
+
                     // Title and text slide up from bottom
                     const contentTranslateY = (1 - columnProgress) * 100;
                     const contentOpacity = columnProgress;
-                    
+
                     // Learn More button fades in after content
-                    const buttonProgress = index === 0
-                      ? 1 // Column 1 button always visible
-                      : Math.max(0, Math.min(1, (section6Progress - (index - 1) - 0.5) * 2));
+                    const buttonProgress =
+                      index === 0
+                        ? 1 // Column 1 button always visible
+                        : Math.max(
+                            0,
+                            Math.min(
+                              1,
+                              (section6Progress - (index - 1) - 0.5) * 2
+                            )
+                          );
                     const buttonOpacity = buttonProgress;
-                    
+
                     // Border animation - slides up from bottom (Learn More position)
-                    const borderProgress = index === 0
-                      ? 1 // Column 1 border always visible
-                      : Math.max(0, Math.min(1, (section6Progress - (index - 1) - 0.3) * 1.5));
+                    const borderProgress =
+                      index === 0
+                        ? 1 // Column 1 border always visible
+                        : Math.max(
+                            0,
+                            Math.min(
+                              1,
+                              (section6Progress - (index - 1) - 0.3) * 1.5
+                            )
+                          );
                     const borderHeight = borderProgress * 100;
 
                     return (
@@ -935,7 +1006,7 @@ export default function ALMLandingPage() {
                             ease: [0.43, 0.13, 0.23, 0.96],
                           }}
                         />
-                        
+
                         {/* Animated bottom border - appears with left border */}
                         <motion.div
                           className="absolute bottom-0 left-0 right-0 h-[1px] bg-[#000000]"
@@ -947,7 +1018,7 @@ export default function ALMLandingPage() {
                             ease: "easeOut",
                           }}
                         />
-                        
+
                         {/* Content wrapper with slide-up animation */}
                         <motion.div
                           className="flex-1"
@@ -967,7 +1038,7 @@ export default function ALMLandingPage() {
                             {card.text}
                           </p>
                         </motion.div>
-                        
+
                         {/* Learn More button with fade-in animation */}
                         <motion.a
                           href={card.link}
