@@ -121,18 +121,19 @@ export default function FlashcardsCaseStudy() {
               />
             </div>
             <div className="w-full md:w-[40%] flex flex-col gap-10 md:gap-16 lg:gap-20">
+              {/* Problem Statement */}
               <div className="w-full flex flex-col gap-6">
                 <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
                   Problem Statement
                   <div className="w-28 h-1 bg-[#004C99] mt-2 rounded-md"></div>
                 </h2>
                 <div>
-                  <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
-                    Learning apps often fall into two extremes: overly
-                    simplistic or too complex. Most flashcard tools don't
-                    provide:
-                  </p>
-                  <ul className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
+                  <ul className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins list-disc pl-6">
+                    <li>
+                      Learning apps often fall into two extremes: overly
+                      simplistic or too complex. Most flashcard tools don’t
+                      provide:
+                    </li>
                     <li>
                       Flexible control over memory modes (short-term vs
                       long-term)
@@ -140,21 +141,22 @@ export default function FlashcardsCaseStudy() {
                     <li>Directional training (forward/backward)</li>
                     <li>Audio contribution and community engagement</li>
                     <li>Personalization at the flashcard level</li>
+                    <li>
+                      Memolect aims to bridge this gap by offering a smart,
+                      modular flashcard ecosystem with rich content interaction
+                      and robust configurability.
+                    </li>
                   </ul>
-                  <p className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
-                    Memolect aims to bridge this gap by offering a smart,
-                    modular flashcard ecosystem with rich content interaction
-                    and robust configurability.
-                  </p>
                 </div>
               </div>
 
+              {/* Research Objective */}
               <div className="w-full flex flex-col gap-6">
                 <h2 className="text-2xl lg:text-4xl font-semibold text-[#13151A] font-poppins">
                   Research Objective
                   <div className="w-12 h-1 bg-[#004C99] mt-2 rounded-md"></div>
                 </h2>
-                <ul className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins">
+                <ul className="text-[#263649] font-normal text-lg md:text-xl leading-relaxed font-poppins list-disc pl-6">
                   <li>
                     Understand user needs and challenges in digital flashcard
                     learning

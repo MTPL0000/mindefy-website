@@ -9,31 +9,31 @@ const cardData = [
     icon: "/images/ai/icons.png",
     title: "Advanced AI Engineering",
     description:
-      "Expertise across NLP, generative AI, computer vision, reinforcement learning — engineered to scale, secure, and perform",
+      "Expertise across NLP, generative AI, computer vision, reinforcement learning - engineered to scale, secure, and perform",
   },
   {
     icon: "/images/ai/icons-2.png",
     title: "Custom, Not Off-the-Shelf",
     description:
-      "Solutions tailored to your data, ecosystem, and KPIs — no cookie-cutter models",
+      "Solutions tailored to your data, ecosystem, and KPIs - no cookie-cutter models",
   },
   {
     icon: "/images/ai/icons-3.png",
     title: "Cloud- and Edge-Ready",
     description:
-      "Deploy AI where it matters — on cloud, edge, or hybrid environments — seamlessly integrated into your infrastructure",
+      "Deploy AI where it matters - on cloud, edge, or hybrid environments - seamlessly integrated into your infrastructure",
   },
   {
     icon: "/images/ai/icons-4.png",
     title: "Business-Driven Outcomes",
     description:
-      "We align every AI solution with real-world metrics — operational efficiency, cost savings, predictive insights",
+      "We align every AI solution with real-world metrics - operational efficiency, cost savings, predictive insights",
   },
   {
     icon: "/images/ai/icons-5.png",
     title: "Robust MLOps & Governance",
     description:
-      "Continuous monitoring, compliance, and governability built in — designed for sustainable ROI",
+      "Continuous monitoring, compliance, and governability built in - designed for sustainable ROI",
   },
   {
     icon: "/images/ai/icons-6.png",
@@ -46,17 +46,17 @@ const cardData = [
 const offersCards = [
   {
     title: "AI Solutions",
-    text: "Build Intelligent Systems That Learn, Adapt, And Automate Complex Decisions — From GenAI To NLP And Computer Vision.",
+    text: "Build Intelligent Systems That Learn, Adapt, And Automate Complex Decisions - From GenAI To NLP And Computer Vision.",
     link: "/custom-AI-solution",
   },
   {
     title: "Machine Learning (ML)",
-    text: "Design, Train, And Deploy Models That Predict, Classify, And Optimize — Using Structured And Unstructured Data.",
+    text: "Design, Train, And Deploy Models That Predict, Classify, And Optimize - Using Structured And Unstructured Data.",
     link: "/machine-learning",
   },
   {
     title: "Data Engineering & Analytics",
-    text: "Transform Raw Data Into A Strategic Asset — We Build Reliable Pipelines, Scalable Data Lakes, And Intelligent Warehouses That Power Insightful Dashboards, Business Intelligence, And Advanced Analytics. From Data Collection To Decision-Making, We Engineer The Entire Journey.",
+    text: "Transform Raw Data Into A Strategic Asset - We Build Reliable Pipelines, Scalable Data Lakes, And Intelligent Warehouses That Power Insightful Dashboards, Business Intelligence, And Advanced Analytics. From Data Collection To Decision-Making, We Engineer The Entire Journey.",
     link: "/data-engineering",
   },
   {
@@ -396,18 +396,18 @@ export default function ALMLandingPage() {
                 <div className="space-y-4 text-base lg:text-lg xl:text-xl font-poppins text-gray-700 mb-8 max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
                   <p>
                     AI turns data into action. We help businesses unlock that
-                    power — through tailored, scalable solutions.
+                    power - through tailored, scalable solutions.
                   </p>
                   <p>
                     We architect intelligence from raw data. Precision-built.
                     Algorithm-driven. Future-proof.
                   </p>
                   <p>
-                    What if your data could think? We don't just imagine it — we
+                    What if your data could think? We don't just imagine it - we
                     engineer it.
                   </p>
                   <p>
-                    Intelligence isn't just learned. It's designed — through
+                    Intelligence isn't just learned. It's designed - through
                     data, algorithms, and intent.
                   </p>
                 </div>
@@ -440,7 +440,7 @@ export default function ALMLandingPage() {
                 Algorithm-driven. Future-proof.
               </p>
               <p>
-                What if your data could think? We don't just imagine it — we
+                What if your data could think? We don't just imagine it - we
                 engineer it.
               </p>
             </div>
@@ -692,7 +692,7 @@ export default function ALMLandingPage() {
 
           {/* Description */}
           <p className="font-inter font-normal text-sm text-center text-[#444444] mb-10 max-w-lg mx-auto leading-relaxed">
-            We don't just deliver AI and data solutions — we engineer
+            We don't just deliver AI and data solutions - we engineer
             enterprise-grade intelligence systems that align with your business
             vision and drive measurable value.
           </p>
