@@ -423,9 +423,9 @@ export default function ALMLandingPage() {
 
                 <button
                   onClick={() => scrollToSection("section-3")}
-                  className="bg-[#34333D] text-white font-poppins px-6 lg:px-8 xl:px-10 py-3 lg:py-4 rounded-full text-base lg:text-lg xl:text-xl font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer"
+                  className="bg-[#34333D] text-white font-poppins h-10 px-7 py-3 rounded-full text-base lg:text-lg xl:text-xl font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer"
                 >
-                  <ChevronDown className="w-7 h-7" />
+                  <ChevronDown className="w-7 h-7 animate-bounce" />
                 </button>
               </motion.div>
             </motion.div>
@@ -456,9 +456,9 @@ export default function ALMLandingPage() {
 
             <button
               onClick={() => scrollToSection("section-3-mobile")}
-              className="bg-[#34333D] text-white font-poppins px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer"
+              className="bg-[#34333D] text-white font-poppins h-10 px-7 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer"
             >
-              <ChevronDown className="w-7 h-7" />
+              <ChevronDown className="w-7 h-7 animate-bounce" />
             </button>
           </div>
         </div>
