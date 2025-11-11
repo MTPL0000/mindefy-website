@@ -351,7 +351,7 @@ export default function ALMLandingPage() {
         <motion.img
           src="/images/ai/center.png"
           className="hidden lg:block absolute top-[20%] left-1/2 -translate-x-1/2 h-[68.26%] aspect-auto"
-          animate={centerImageControls}
+          animate={zoomControls}
           initial={{ scale: 1, opacity: 1 }}
         />
 
