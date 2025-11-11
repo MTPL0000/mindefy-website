@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f9ff" />
+  
+  <!-- ML Driven Recommendations Text -->
+  <text x="150" y="100" font-family="Arial" font-size="24" font-weight="bold" fill="#0f172a">ML Driven</text>
+  <text x="150" y="130" font-family="Arial" font-size="24" font-weight="bold" fill="#0f172a">Recommendations</text>
+  
+  <text x="150" y="160" font-family="Arial" font-size="14" fill="#64748b" width="300">Smart recommendation engine that analyzes</text>
+  <text x="150" y="180" font-family="Arial" font-size="14" fill="#64748b" width="300">user behavior to provide personalized product</text>
+  <text x="150" y="200" font-family="Arial" font-size="14" fill="#64748b" width="300">suggestions and enhance shopping experience</text>
+  
+  <!-- Case Study Button -->
+  <rect x="150" y="230" width="100" height="40" rx="5" fill="#0f172a" />
+  <text x="200" y="255" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Case Study</text>
+  <path d="M220,255 L230,255 M225,250 L230,255 L225,260" stroke="white" stroke-width="1" />
+  
+  <!-- Laptop Mockup -->
+  <g transform="translate(450, 100)">
+    <!-- Laptop Base -->
+    <rect x="0" y="150" width="250" height="10" rx="2" fill="#64748b" />
+    
+    <!-- Laptop Screen -->
+    <rect x="20" y="0" width="210" height="150" rx="5" fill="#0f172a" />
+    <rect x="25" y="5" width="200" height="140" rx="3" fill="white" />
+    
+    <!-- Website UI Elements -->
+    <rect x="35" y="15" width="180" height="20" rx="3" fill="#e2e8f0" />
+    
+    <!-- Product Grid -->
+    <rect x="35" y="45" width="55" height="55" rx="3" fill="#f472b6" />
+    <rect x="95" y="45" width="55" height="55" rx="3" fill="#a855f7" />
+    <rect x="155" y="45" width="55" height="55" rx="3" fill="#3b82f6" />
+    
+    <rect x="35" y="105" width="55" height="30" rx="3" fill="#e2e8f0" />
+    <rect x="95" y="105" width="55" height="30" rx="3" fill="#e2e8f0" />
+    <rect x="155" y="105" width="55" height="30" rx="3" fill="#e2e8f0" />
+  </g>
+</svg>

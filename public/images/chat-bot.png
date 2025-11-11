@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f9ff" />
+  <g transform="translate(100, 100)">
+    <!-- Chat UI Box -->
+    <rect x="0" y="0" width="200" height="200" rx="10" fill="white" stroke="#0ea5e9" stroke-width="2" />
+    <rect x="0" y="0" width="200" height="30" rx="10" fill="#0ea5e9" />
+    <text x="100" y="20" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Chat</text>
+    
+    <!-- Chat Messages -->
+    <rect x="10" y="40" width="120" height="30" rx="15" fill="#e2e8f0" />
+    <rect x="70" y="80" width="120" height="30" rx="15" fill="#0ea5e9" />
+    <rect x="10" y="120" width="120" height="30" rx="15" fill="#e2e8f0" />
+    
+    <!-- Input Box -->
+    <rect x="10" y="160" width="150" height="30" rx="15" fill="white" stroke="#e2e8f0" stroke-width="1" />
+    <circle cx="180" y="175" r="15" fill="#0ea5e9" />
+    <path d="M175,175 L185,175 M180,170 L180,180" stroke="white" stroke-width="2" />
+  </g>
+  
+  <!-- AI Chatbot Text -->
+  <text x="400" y="100" font-family="Arial" font-size="24" font-weight="bold" fill="#0f172a" text-anchor="middle">Gen AI-Chatbot</text>
+  <text x="400" y="140" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle" width="300">Intelligent conversational AI designed to provide</text>
+  <text x="400" y="160" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle" width="300">personalized support and enhance user experience</text>
+  
+  <!-- Case Study Button -->
+  <rect x="350" y="240" width="100" height="40" rx="5" fill="#0f172a" />
+  <text x="400" y="265" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Case Study</text>
+  <path d="M420,265 L430,265 M425,260 L430,265 L425,270" stroke="white" stroke-width="1" />
+</svg>

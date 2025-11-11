@@ -137,31 +137,6 @@ export const aiOfferingsData = {
       ],
     },
     {
-      icon: "/images/AI-ML/natural-icon.svg",
-      title: "Natural Language AI",
-      subtitle: "Language is complex. We make AI speak human.",
-      items: [
-        {
-          title: "Multilingual Chatbots",
-          description: "Global customer engagement across 100+ languages.",
-        },
-        {
-          title: "Document Summarization",
-          description:
-            "Turn 300-page legal or financial reports into digestible insights.",
-        },
-        {
-          title: "Intent Detection",
-          description:
-            "Power customer journeys with precise, contextual understanding.",
-        },
-        {
-          title: "Voice AI",
-          description: "Real-time speech understanding for contact centers.",
-        },
-      ],
-    },
-    {
       icon: "/images/AI-ML/vision-icon.svg",
       title: "Computer Vision",
       subtitle:
@@ -214,19 +189,21 @@ export const aiOfferingsData = {
       icon: "/images/AI-ML/chatbot-icon.svg",
       title: "Conversational AI",
       subtitle:
-        "Your customers expect answers. We make them instant, human-like, and available everywhere.",
+        "AI that listens, understands, and speaks human - delivering intelligent, natural interactions across every channel.",
       items: [
         {
-          title: "Omnichannel AI Assistants",
-          description: "From web to WhatsApp to voice.",
+          title: "Language Intelligence (NLP + NLU)",
+          description: "Understand context, emotion, and intent.",
         },
         {
-          title: "Enterprise Knowledge Copilots ",
-          description: "Tap into organizational know-how with natural queries.",
+          title: "Knowledge & Document AI",
+          description:
+            "Summarize, retrieve, and interact with complex data instantly.",
         },
         {
-          title: "Voice-First Commerce",
-          description: "Shop and transact by speaking, not typing.",
+          title: "Voice Intelligence",
+          description:
+            "Power assistants and call centers with real-time speech understanding.",
         },
       ],
     },

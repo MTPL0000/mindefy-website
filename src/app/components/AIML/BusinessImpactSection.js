@@ -32,13 +32,13 @@ export default function BusinessImpactSection({ data }) {
               <ul className="space-y-2 text-left w-full max-w-md">
                 {/* Subtitle */}
                 {card.subtitle && (
-                  <p className="text-left text-base sm:text-xl font-semibold font-poppins text-[#444444] max-w-md">
+                  <p className="text-left text-base sm:text-xl font-medium font-poppins text-[#444444] max-w-md">
                     {card.subtitle}
                   </p>
                 )}
                 {card.points.map((point, pointIndex) => (
                   <li key={pointIndex} className="flex items-start gap-2">
-                    <span className="text-black-600 font-normal text-base sm:text-lg font-poppins flex-shrink-0 mt-0.5">
+                    <span className="text-black-600 font-normal text-base sm:text-xl font-poppins flex-shrink-0 mt-0.5">
                       •
                     </span>
                     <span className="text-base sm:text-xl font-normal text-[#444444] font-poppins leading-relaxed">

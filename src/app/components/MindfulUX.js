@@ -131,6 +131,68 @@ export default function MindfulUX() {
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
+                Flashcard Learning
+              </h2>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium text-[#262626]">
+                Memory Training | Productivity
+              </h3>
+            </div>
+            {/*<a
+              href="https://play.google.com/store/apps/details?id=com.memolect.flashcards"
+              target="_blank"
+              className="text-[#1E4494] text-base md:text-lg cursor-pointer font-semibold hover:underline"
+              rel="noopener noreferrer"
+            >
+              {"{Link to Product}"}
+            </a>*/}
+            <p className="text-[#000000] text-sm md:text-base font-normal">
+              Memolect is a flashcard-based learning app designed to make
+              knowledge retention easier through interactive and adaptive
+              learning modes. It allows users to create personalized flashcards,
+              explore chosen subjects, and enhance recall with engaging study
+              experiences.
+            </p>
+            <a
+              href="/flashcard-learning-app"
+              className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
+            >
+              Case Study
+              <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+                <Image
+                  src="/images/arrow-icon.svg"
+                  alt="image"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div className="relative aspect-[1/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
+            <Image
+              src="/images/memolect.webp"
+              alt="image"
+              fill
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* 3rd Case Study */}
+      <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
+        <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
+          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-1">
+            <Image
+              src="/images/mfux-2.webp"
+              alt="image"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-2">
+            <div className="flex flex-col items-center lg:items-start justify-center gap-3">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
                 AI Asset Management
               </h2>
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium text-[#262626]">
@@ -166,30 +228,12 @@ export default function MindfulUX() {
               </div>
             </a>
           </div>
-
-          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
-            <Image
-              src="/images/mfux-2.webp"
-              alt="image"
-              fill
-              className="object-contain"
-            />
-          </div>
         </div>
       </section>
 
-      {/* 3rd Case Study */}
+      {/* 4th Case Study */}
       <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
-            <Image
-              src="/images/mfux-3.webp"
-              alt="image"
-              fill
-              className="object-contain"
-            />
-          </div>
-
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
@@ -227,13 +271,29 @@ export default function MindfulUX() {
               </div>
             </a>
           </div>
+          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
+            <Image
+              src="/images/mfux-3.webp"
+              alt="image"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
       </section>
 
-      {/* 4th Case Study */}
+      {/* 5th Case Study */}
       <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-1">
+          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-1">
+            <Image
+              src="/images/mfux-4.webp"
+              alt="image"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-2">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
                 E-Commerce
@@ -271,30 +331,12 @@ export default function MindfulUX() {
               </div>
             </a>
           </div>
-
-          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
-            <Image
-              src="/images/mfux-4.webp"
-              alt="image"
-              fill
-              className="object-contain"
-            />
-          </div>
         </div>
       </section>
 
-      {/* 5th Case Study */}
+      {/* 6th Case Study */}
       <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
-            <Image
-              src="/images/mfux-5.webp"
-              alt="image"
-              fill
-              className="object-contain"
-            />
-          </div>
-
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
@@ -326,13 +368,29 @@ export default function MindfulUX() {
               </div>
             </a>
           </div>
+          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
+            <Image
+              src="/images/mfux-5.webp"
+              alt="image"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
       </section>
 
-      {/* 6th Case Study */}
+      {/* 7th Case Study */}
       <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-1">
+          <div className="relative aspect-[2/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-1">
+            <Image
+              src="/images/mfux-6.webp"
+              alt="image"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-2">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
                 Business Suite
@@ -363,30 +421,12 @@ export default function MindfulUX() {
               </div>
             </a>
           </div>
-
-          <div className="relative aspect-[2/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
-            <Image
-              src="/images/mfux-6.webp"
-              alt="image"
-              fill
-              className="object-contain"
-            />
-          </div>
         </div>
       </section>
 
-      {/* 7th Case Study */}
+      {/* 8th Case Study */}
       <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
-            <Image
-              src="/images/mfux-7.webp"
-              alt="image"
-              fill
-              className="object-contain"
-            />
-          </div>
-
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
@@ -417,6 +457,14 @@ export default function MindfulUX() {
                 />
               </div>
             </a>
+          </div>
+          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
+            <Image
+              src="/images/mfux-7.webp"
+              alt="image"
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
       </section>
