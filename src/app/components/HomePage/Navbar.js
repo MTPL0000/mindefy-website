@@ -1,13 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ServicesDrop from "./ServicesDrop";
 import Link from "next/link";
 import ProductsDropdown from "./ProductsDropdown";
 import { ProjectDropdown } from "./ProjectDropdown";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showProductsDropdown, setShowProductsDropdown] = useState(false);
   const [showProjectsDropdown, setShowProjectsDropdown] = useState(false);
@@ -32,6 +36,58 @@ export default function Navbar() {
   const [servicesTransitioning, setServicesTransitioning] = useState(false);
   const [productsTransitioning, setProductsTransitioning] = useState(false);
   const [projectsTransitioning, setProjectsTransitioning] = useState(false);
+
+  // State for AI text animation - only on home page during scroll
+  const [showAIInNavbar, setShowAIInNavbar] = useState(!isHomePage);
+
+  // Scroll handler for AI animation - only active on home page
+  useEffect(() => {
+    if (!isHomePage) {
+      setShowAIInNavbar(true);
+      return;
+    }
+
+    const handleScroll = () => {
+      const heroSection = document.querySelector("[data-hero-section]");
+      const aiTextElement = document.querySelector("[data-ai-text]");
+
+      if (!heroSection || !aiTextElement) return;
+
+      const navbarHeight = 64; // Approximate navbar height
+      const aiTextRect = aiTextElement.getBoundingClientRect();
+
+      // Show navbar AI tab only when the hero AI text is completely hidden below navbar
+      if (aiTextRect.bottom < navbarHeight) {
+        setShowAIInNavbar(true);
+      } else {
+        setShowAIInNavbar(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHomePage]);
+
+  // Close all dropdowns on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        showServicesDropdown ||
+        showProductsDropdown ||
+        showProjectsDropdown
+      ) {
+        setShowServicesDropdown(false);
+        setShowProductsDropdown(false);
+        setShowProjectsDropdown(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [showServicesDropdown, showProductsDropdown, showProjectsDropdown]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -188,13 +244,218 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-baseline space-x-2 md:space-x-3 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
+          {/* AI Tab with animation for large screen only - always visible on non-home pages, animated on home page only */}
+          <div
+            className="relative overflow-visible"
+            style={{
+              width: showAIInNavbar ? "auto" : "0px",
+              opacity: showAIInNavbar ? 1 : 0,
+              transition: "width 0.5s ease-out, opacity 0.5s ease-out",
+              marginRight: "1.25rem",
+            }}
+          >
+            <Link
+              href="/ai-ml"
+              className="relative block cursor-pointer pb-1.5 text-center whitespace-nowrap transition-all duration-500"
+              style={{
+                width: "60px",
+                transform: isHomePage
+                  ? showAIInNavbar
+                    ? "translateX(0)"
+                    : "translateX(100%)"
+                  : "translateX(0)",
+                transition: "transform 0.5s ease-out",
+              }}
+            >
+              {/* Background Loader Animation */}
+              <div
+                className="absolute top-1/2 left-1/2 z-0"
+                style={{
+                  width: "60px",
+                  transform: "translate(-50%, -50%)",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  position: "relative",
+                }}
+              >
+                {/* Ring 1 - Outermost ring segmented */}
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "57px",
+                    height: "57px",
+                    borderRadius: "50%",
+                    border: "0",
+                    background: `conic-gradient(
+                      from 0deg,
+                      transparent 0deg,
+                      transparent 10deg,
+                      #D84326 10deg,
+                      #D84326 50deg,
+                      transparent 50deg,
+                      transparent 70deg,
+                      #D84326 70deg,
+                      #D84326 110deg,
+                      transparent 110deg,
+                      transparent 140deg,
+                      #D84326 140deg,
+                      #D84326 180deg,
+                      transparent 180deg,
+                      transparent 200deg,
+                      #D84326 200deg,
+                      #D84326 260deg,
+                      transparent 260deg,
+                      transparent 280deg,
+                      #D84326 280deg,
+                      #D84326 330deg,
+                      transparent 330deg
+                    )`,
+                    mask: "radial-gradient(transparent 24.75px, black 24.75px, black 28.5px, transparent 28.5px)",
+                    WebkitMask:
+                      "radial-gradient(transparent 24.75px, black 24.75px, black 28.5px, transparent 28.5px)",
+                    animation: "rotate-clockwise 8s linear infinite",
+                  }}
+                />
+
+                {/* Ring 2 - Second ring segmented */}
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "51px",
+                    height: "51px",
+                    borderRadius: "50%",
+                    border: "0",
+                    background: `conic-gradient(
+                      from 0deg,
+                      transparent 0deg,
+                      transparent 5deg,
+                      #342871 5deg,
+                      #342871 15deg,
+                      transparent 15deg,
+                      transparent 20deg,
+                      #342871 20deg,
+                      #342871 30deg,
+                      transparent 30deg,
+                      transparent 35deg,
+                      #342871 35deg,
+                      #342871 45deg,
+                      transparent 45deg,
+                      transparent 180deg,
+                      #342871 180deg,
+                      #342871 280deg,
+                      transparent 280deg
+                    )`,
+                    mask: "radial-gradient(transparent 23.25px, black 23.25px, black 25.5px, transparent 25.5px)",
+                    WebkitMask:
+                      "radial-gradient(transparent 23.25px, black 23.25px, black 25.5px, transparent 25.5px)",
+                    animation: "rotate-counter-clockwise 6s linear infinite",
+                  }}
+                />
+
+                {/* Ring 3 - Dotted circle */}
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "45px",
+                    height: "45px",
+                    borderRadius: "50%",
+                    border: "0.5px dotted #D84326",
+                    animation: "rotate-clockwise 10s linear infinite",
+                  }}
+                />
+
+                {/* Ring 4 - Dashed circle */}
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "39px",
+                    height: "39px",
+                    borderRadius: "50%",
+                    border: "0.5px dashed #342871",
+                    animation: "rotate-counter-clockwise 7s linear infinite",
+                  }}
+                />
+
+                {/* Ring 5 - Small ticks */}
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "50%",
+                    border: "0",
+                    background: `repeating-conic-gradient(
+                      from 0deg, 
+                      transparent 0deg,
+                      transparent 8deg,
+                      #D84326 8deg,
+                      #D84326 10deg
+                    )`,
+                    mask: "radial-gradient(transparent 16.5px, black 16.5px, black 18px, transparent 18px)",
+                    WebkitMask:
+                      "radial-gradient(transparent 16.5px, black 16.5px, black 18px, transparent 18px)",
+                    animation: "rotate-clockwise 5s linear infinite",
+                  }}
+                />
+
+                {/* Ring 6 - Innermost ring */}
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "33px",
+                    height: "33px",
+                    borderRadius: "50%",
+                    border: "0.5px solid #342871",
+                    animation: "rotate-counter-clockwise 9s linear infinite",
+                  }}
+                />
+
+                {/* Center circle */}
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "27px",
+                    height: "27px",
+                    background:
+                      "radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(240,240,240,0.8) 100%)",
+                    borderRadius: "50%",
+                    zIndex: 10,
+                  }}
+                />
+              </div>
+
+              {/* Foreground text - Centered inside animation */}
+              <span
+                className="font-semibold text-black"
+                style={{
+                  position: "absolute",
+                  top: "30%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  zIndex: 10,
+                }}
+              >
+                AI
+              </span>
+            </Link>
+          </div>
+
           {/* Services with dropdown */}
           <div
             className="relative"
             onMouseEnter={() => setShowServicesDropdown(true)}
             onMouseLeave={() => setShowServicesDropdown(false)}
           >
-            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
+            <p
+              className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap"
+              style={{
+                transform: showAIInNavbar
+                  ? "translateX(0)"
+                  : "translateX(-30px)",
+                transition: "transform 0.5s ease-out",
+              }}
+            >
               Services
               <Image
                 src="/images/dropdown-icon.png"
@@ -232,6 +493,10 @@ export default function Navbar() {
             className="relative"
             onMouseEnter={() => setShowProductsDropdown(true)}
             onMouseLeave={() => setShowProductsDropdown(false)}
+            style={{
+              transform: showAIInNavbar ? "translateX(0)" : "translateX(-30px)",
+              transition: "transform 0.5s ease-out",
+            }}
           >
             <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
               Products
@@ -263,6 +528,10 @@ export default function Navbar() {
             className="relative"
             onMouseEnter={() => setShowProjectsDropdown(true)}
             onMouseLeave={() => setShowProjectsDropdown(false)}
+            style={{
+              transform: showAIInNavbar ? "translateX(0)" : "translateX(-30px)",
+              transition: "transform 0.5s ease-out",
+            }}
           >
             <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
               Projects
@@ -290,6 +559,10 @@ export default function Navbar() {
           <a
             href="/mindful-ux"
             className="hover:text-[#2c2178] cursor-pointer whitespace-nowrap hidden md:block"
+            style={{
+              transform: showAIInNavbar ? "translateX(0)" : "translateX(-30px)",
+              transition: "transform 0.5s ease-out",
+            }}
           >
             Mindful UX "Design Studio"
           </a>
@@ -316,6 +589,15 @@ export default function Navbar() {
       >
         <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="flex flex-col gap-4 text-sm font-medium text-[#3B3C4A] p-4">
+            {/* AI Tab in mobile menu - always visible on all pages */}
+            <Link
+              href="/ai-ml"
+              onClick={handleMobileMenuItemClick}
+              className="hover:text-[#2c2178] py-2 animate-slideIn"
+            >
+              AI
+            </Link>
+
             {/* Mobile Services Dropdown */}
             <div>
               <button
@@ -366,7 +648,7 @@ export default function Navbar() {
                       />
                     </button>
                     {mobileCustomAIOpen && (
-                      <div className="pl-4 mt-1 space-y-1">                     
+                      <div className="pl-4 mt-1 space-y-1">
                         <Link
                           href="/custom-AI-solution"
                           onClick={handleMobileMenuItemClick}

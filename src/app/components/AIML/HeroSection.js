@@ -54,7 +54,7 @@ export function HeroSection({ data }) {
 
           <button
             onClick={handleScroll}
-            className=" mt-5 md:mt-8 font-poppins cursor-pointer inline-block bg-[#332771] text-white h-10 text-center px-7 py-3 rounded-full font-normal text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105"
+            className="mt-5 md:mt-8 font-poppins cursor-pointer inline-block bg-[#332771] text-white h-10 text-center px-7 py-3 rounded-full font-normal text-sm md:text-base hover:shadow-lg transition-all duration-300 hover:scale-105"
           >
             <ChevronDown className="w-7 h-7 animate-bounce" />
           </button>

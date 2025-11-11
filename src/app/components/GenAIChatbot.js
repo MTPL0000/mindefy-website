@@ -169,8 +169,8 @@ const GenAIChatbot = () => {
                 </div>
 
                 {/* Right Content - Chat Interface Image */}
-                <div className="mt-0 lg:-mt-38 flex justify-center">
-                  <div className="relative overflow-hidden h-[23rem] sm:h-[30rem] lg:h-[50.48rem] aspect-[1/1.63]">
+                <div className="mt-0 lg:-mt-8 flex justify-center">
+                  <div className="relative overflow-hidden h-[20rem] lg:h-[35rem] xl:h-[40rem] aspect-[3/4]">
                     <Image
                       src="/images/YH-MN.gif"
                       alt="YourHour App with AI Chatbot"
