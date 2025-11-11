@@ -6,37 +6,37 @@ import { ChevronDown } from "lucide-react";
 
 const cardData = [
   {
-    icon: "/images/ai/icons.png",
+    icon: "/images/ai/Icons.png",
     title: "Advanced AI Engineering",
     description:
       "Expertise across NLP, generative AI, computer vision, reinforcement learning - engineered to scale, secure, and perform",
   },
   {
-    icon: "/images/ai/icons-2.png",
+    icon: "/images/ai/Icons-2.png",
     title: "Custom, Not Off-the-Shelf",
     description:
       "Solutions tailored to your data, ecosystem, and KPIs - no cookie-cutter models",
   },
   {
-    icon: "/images/ai/icons-3.png",
+    icon: "/images/ai/Icons-3.png",
     title: "Cloud- and Edge-Ready",
     description:
       "Deploy AI where it matters - on cloud, edge, or hybrid environments - seamlessly integrated into your infrastructure",
   },
   {
-    icon: "/images/ai/icons-4.png",
+    icon: "/images/ai/Icons-4.png",
     title: "Business-Driven Outcomes",
     description:
       "We align every AI solution with real-world metrics - operational efficiency, cost savings, predictive insights",
   },
   {
-    icon: "/images/ai/icons-5.png",
+    icon: "/images/ai/Icons-5.png",
     title: "Robust MLOps & Governance",
     description:
       "Continuous monitoring, compliance, and governability built in - designed for sustainable ROI",
   },
   {
-    icon: "/images/ai/icons-6.png",
+    icon: "/images/ai/Icons-6.png",
     title: "Cross-Functional Expertise",
     description:
       "Teams that combine data engineering, AI, cloud and domain knowledge to drive full-stack execution",
