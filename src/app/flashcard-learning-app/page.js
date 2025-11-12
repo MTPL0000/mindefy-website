@@ -59,7 +59,7 @@ export default function FlashcardsCaseStudy() {
               {/* UX Case Study image (with underline) */}
               <div className="relative w-64 sm:w-72 md:w-80 h-32 sm:h-36 md:h-40">
                 <Image
-                  src="/images/underline-icon.png"
+                  src="/images/underline-icon.svg"
                   alt="UX Case Study"
                   fill
                   className="object-contain object-left lg:object-left"

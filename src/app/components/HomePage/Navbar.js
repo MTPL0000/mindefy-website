@@ -417,8 +417,7 @@ export default function Navbar() {
                     position: "absolute",
                     width: "27px",
                     height: "27px",
-                    background:
-                      "radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(240,240,240,0.8) 100%)",
+                    background: "#FFFFFF",
                     borderRadius: "50%",
                     zIndex: 10,
                   }}
@@ -427,11 +426,9 @@ export default function Navbar() {
 
               {/* Foreground text - Centered inside animation */}
               <span
-                className="font-semibold text-black"
+                className="font-semibold text-black text-center"
                 style={{
                   position: "absolute",
-                  top: "30%",
-                  left: "50%",
                   transform: "translate(-50%, -50%)",
                   zIndex: 10,
                 }}
