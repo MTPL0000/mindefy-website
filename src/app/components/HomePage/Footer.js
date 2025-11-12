@@ -12,10 +12,10 @@ export default function Footer() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 xl:px-[8.83rem] h-full flex flex-col justify-between pt-8 sm:pt-12 lg:pt-[3.94rem]">
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 sm:gap-12 lg:gap-[6rem] flex-1">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 sm:gap-12 lg:gap-[6rem] flex-1 pb-5">
           {/* Logo Section */}
           <div className="flex-shrink-0 w-full lg:w-auto">
-            <div className="flex flex-col gap-3 sm:gap-4 items-center lg:items-start">
+            <div className="flex flex-col gap-4 sm:gap-5 items-start">
               {/* Main Mindefy Logo */}
               <div className="relative w-40 sm:w-48 lg:w-[15.63rem] h-10 sm:h-12 lg:h-[4.02rem]">
                 <Image
@@ -27,15 +27,43 @@ export default function Footer() {
               </div>
 
               {/* Additional Logos */}
-              <div className="flex items-center gap-4 sm:gap-6">
-                <div className="relative w-32 sm:w-40 lg:w-[13.12rem] h-12 sm:h-16 lg:h-[4.92rem]">
+              <div className="relative lg:left-[-5%] w-32 sm:w-40 lg:w-[13.12rem] h-12 sm:h-16 lg:h-[4.92rem]">
+                <Image
+                  src="/images/Footer.webp"
+                  alt="Digital India Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              {/* Social Media Icons */}
+              <div className="flex justify-center items-center gap-3">
+                <a
+                  className="bg-[#edbaad] bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all"
+                  href="https://www.linkedin.com/company/mindefytechnologies/?viewAsMember=true"
+                  target="_blank"
+                >
                   <Image
-                    src="/images/Footer.webp"
-                    alt="Digital India Logo"
-                    fill
+                    src="/images/linkden.svg"
+                    alt="LinkedIn"
+                    width={28}
+                    height={28}
                     className="object-contain"
                   />
-                </div>
+                </a>
+                <a
+                  className="bg-[#edbaad] bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all"
+                  href="https://www.instagram.com/mindefy_technologies?igsh=MThpZGRkeWNxdHhnaA=="
+                  target="_blank"
+                >
+                  <Image
+                    src="/images/ig.svg"
+                    alt="Instagram"
+                    width={28}
+                    height={28}
+                    className="object-contain"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -52,8 +80,8 @@ export default function Footer() {
                   <p>201, Atulya IT Park,</p>
                   <p>Khandwa Road, Indore-452001</p>
                   <p>(M.P.) India</p>
-                  <a 
-                    href="mailto:rahul@mindefy.tech" 
+                  <a
+                    href="mailto:rahul@mindefy.tech"
                     className="mt-2 sm:mt-3 block hover:opacity-100 cursor-pointer transition-opacity"
                   >
                     Email Us
@@ -175,55 +203,6 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Social Media Icons */}
-        <div className="flex justify-center items-center gap-3 sm:gap-4 my-6 sm:my-8">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <Image
-              src="/images/facebook.svg"
-              alt="Facebook"
-              width={24}
-              height={24}
-              className="object-contain"
-            />
-          </div>
-          <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <Image
-              src="/images/twitter.svg"
-              alt="Twitter"
-              width={24}
-              height={24}
-              className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[1.5rem] lg:h-[1.5rem] object-contain"
-            />
-          </div>
-          <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <Image
-              src="/images/ig.svg"
-              alt="Instagram"
-              width={24}
-              height={24}
-              className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[1.5rem] lg:h-[1.5rem] object-contain"
-            />
-          </div>
-          <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <Image
-              src="/images/linkden.svg"
-              alt="LinkedIn"
-              width={24}
-              height={24}
-              className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[1.5rem] lg:h-[1.5rem] object-contain"
-            />
-          </div>
-          <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[2.05rem] lg:h-[2.05rem] bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all">
-            <Image
-              src="/images/yt.svg"
-              alt="YouTube"
-              width={24}
-              height={24}
-              className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[1.5rem] lg:h-[1.5rem] object-contain"
-            />
           </div>
         </div>
 
