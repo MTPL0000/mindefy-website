@@ -128,7 +128,7 @@ export default function MindfulUX() {
       {/* Second Case Study */}
       <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 lg:order-1">
+          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
                 Flashcard Learning
@@ -234,7 +234,7 @@ export default function MindfulUX() {
       {/* 4th Case Study */}
       <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0">
+          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
                 OTT/Video Streaming
@@ -271,7 +271,7 @@ export default function MindfulUX() {
               </div>
             </a>
           </div>
-          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
+          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
             <Image
               src="/images/mfux-3.webp"
               alt="image"
@@ -337,7 +337,7 @@ export default function MindfulUX() {
       {/* 6th Case Study */}
       <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0">
+          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
                 Paperless Billing
@@ -368,7 +368,7 @@ export default function MindfulUX() {
               </div>
             </a>
           </div>
-          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
+          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
             <Image
               src="/images/mfux-5.webp"
               alt="image"
@@ -427,7 +427,7 @@ export default function MindfulUX() {
       {/* 8th Case Study */}
       <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0">
+          <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#262626]">
                 Delivery Suite
@@ -458,7 +458,7 @@ export default function MindfulUX() {
               </div>
             </a>
           </div>
-          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
+          <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
             <Image
               src="/images/mfux-7.webp"
               alt="image"
