@@ -82,32 +82,71 @@
       "purpose": "any maskable"
     }
   ],
-  "shortcuts": [
-    {
-      "name": "About Us",
-      "short_name": "About",
-      "description": "Learn about Mindefy Technologies",
-      "url": "/about-us",
-      "icons": [
-        {
-          "src": "/images/logo/mindefy-logo.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
-      "name": "Services",
-      "short_name": "Services",
-      "description": "Our software development services",
-      "url": "/#services",
-      "icons": [
-        {
-          "src": "/images/logo/mindefy-logo.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ]
-    }
-  ]
+"shortcuts": [
+  {
+    "name": "Custom AI Solutions",
+    "short_name": "AI Solutions",
+    "description": "Custom AI Development, enterprise AI solutions, generative AI, RAG system, AI workflow automation",
+    "url": "/custom-AI-solution",
+    "icons": [
+      {
+        "src": "/images/logo/mindefy-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "name": "Data Engineering & Analytics",
+    "short_name": "Data Engineering",
+    "description": "Data Engineering Services, data pipelines, data governance, analytics platform, cloud data architecture",
+    "url": "/data-engineering",
+    "icons": [
+      {
+        "src": "/images/logo/mindefy-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "name": "Hybrid App Development",
+    "short_name": "App Development",
+    "description": "As a leading hybrid app development company, we pride ourselves on delivering top-notch solutions that redefine industry standards.",
+    "url": "/hybrid-app-development",
+    "icons": [
+      {
+        "src": "/images/logo/mindefy-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "name": "Mindful UX - Design Studio",
+    "short_name": "Design Studio",
+    "description": "Our team specializes in providing end-to-end design solutions, ensuring a seamless and cohesive design journey from start to finish.",
+    "url": "/mindful-ux",
+    "icons": [
+      {
+        "src": "/images/logo/mindefy-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "name": "Startup Support and Consulting",
+    "short_name": "Support and Consulting",
+    "description": "Our expertise will help your startup succeed from concept to MVP. Our team of experts combines prowess, platform knowledge, and business acumen to guide startups on their journey.",
+    "url": "/startup-support",
+    "icons": [
+      {
+        "src": "/images/logo/mindefy-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+]
 } 

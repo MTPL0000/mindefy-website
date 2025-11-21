@@ -21,9 +21,10 @@ const nextConfig = {
     optimizeCss: true,
     optimizePackageImports: ['react', 'react-dom'],
   },
-  
-  // Note: headers() and redirects() don't work with static export
-  // These would need to be configured at the hosting level (Vercel, Netlify, etc.)
+
+  webpack: (config) => {
+    return config;
+  },
 };
 
 const config = withPWA({
