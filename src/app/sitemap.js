@@ -11,7 +11,31 @@ export default function sitemap() {
       priority: 1,
     },
     {
+      url: `${baseUrl}/custom-AI-solution`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/data-engineering`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/mindful-ux`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/about-us`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ai-ml`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -38,7 +62,7 @@ export default function sitemap() {
       url: `${baseUrl}/hybrid-app-development`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/mean-mern-stack-development`,
@@ -137,25 +161,31 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/mindful-ux`,
+      url: `${baseUrl}/custom-ml-solution`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/custom-ml-solution`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/gen-ai-chatbot`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/cloud-devops`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/machine-learning`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/cloud-engineering`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -216,6 +246,12 @@ export default function sitemap() {
     },
     {
       url: `${baseUrl}/your-hour`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/flashcard-learning-app`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
