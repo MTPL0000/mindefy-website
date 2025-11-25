@@ -228,7 +228,7 @@ export default function YourHour() {
               </div>
             </div>
             <Link
-              href="/your-hour"
+              href="/yourhour-screentime-app"
               className=" ml-2 inline-flex items-center text-lg font-medium text-[#6A53E1] hover:underline group transition-all duration-300"
             >
               VIEW CASE STUDY

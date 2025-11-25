@@ -245,10 +245,10 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/your-hour`,
+      url: `${baseUrl}/yourhour-screentime-app`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/flashcard-learning-app`,

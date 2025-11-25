@@ -1111,7 +1111,7 @@ export default function Navbar() {
               {mobileProductsOpen && (
                 <div className="pl-4 mt-2">
                   <Link
-                    href="/your-hour"
+                    href="/yourhour-screentime-app"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
@@ -1140,6 +1140,13 @@ export default function Navbar() {
               </button>
               {mobileProjectsOpen && (
                 <div className="pl-4 mt-2 space-y-1">
+                  <Link
+                    href="/flashcard-learning-app"
+                    onClick={handleMobileMenuItemClick}
+                    className="block hover:text-red-600 text-xs"
+                  >
+                    Memolect
+                  </Link>
                   <Link
                     href="/early-foods"
                     onClick={handleMobileMenuItemClick}

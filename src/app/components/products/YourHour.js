@@ -62,7 +62,7 @@ export default function YourHourProduct() {
                 Maximize Your Success With Key Features and Advantages
               </p>
               <span className="w-full xl:w-[790px] text-lg md:text-xl xl:text-[2.13rem] font-semibold text-[#000000] text-center px-4 xl:px-0">
-                Your Hour Offers A Range Of Key Features And Benefits To Its
+                YourHour Offers A Range Of Key Features And Benefits To Its
                 Users, Including
               </span>
             </div>
@@ -104,7 +104,7 @@ export default function YourHourProduct() {
               App Usage Analysis
             </h3>
             <p className="text-sm md:text-base xl:text-lg font-medium text-[#444444] leading-relaxed text-center lg:text-left">
-              Your Hour provides a detailed breakdown of app usage, allowing
+              YourHour provides a detailed breakdown of app usage, allowing
               users to understand which apps consume the most time and make
               informed decisions about app usage management.
             </p>{" "}

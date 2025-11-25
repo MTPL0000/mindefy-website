@@ -9,7 +9,7 @@ export default function ProductsDropdown({ onItemClick }) {
         <ul className="space-y-1 sm:space-y-1.5 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem]">
           <li>
             <Link
-              href="/your-hour"
+              href="/yourhour-screentime-app"
               onClick={onItemClick}
               className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap"
             >

@@ -123,6 +123,14 @@ export default function Footer() {
                 >
                   Testimonials
                 </a>
+
+                <a
+                  href="https://www.yourhourapp.com/blogs"
+                  target="_blank"
+                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  YourHour Blogs
+                </a>
               </div>
             </div>
 
@@ -133,7 +141,7 @@ export default function Footer() {
               </h3>
               <div className="space-y-4 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
                 <a
-                  href="/your-hour"
+                  href="/yourhour-screentime-app"
                   className="block  hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   YourHour

@@ -9,6 +9,15 @@ export const ProjectDropdown = ({ onItemClick }) => {
         <ul className="space-y-1 sm:space-y-1.5 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem]">
           <li>
             <Link
+              href="/flashcard-learning-app"
+              onClick={onItemClick}
+              className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap cursor-pointer"
+            >
+              Memolect
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/early-foods"
               onClick={onItemClick}
               className="hover:text-red-600 hover:font-semibold block py-0.5 whitespace-nowrap cursor-pointer"

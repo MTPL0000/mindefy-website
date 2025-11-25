@@ -108,7 +108,7 @@ export default function MindfulUX() {
               digital wellness.
             </p>
             <a
-              href="/your-hour"
+              href="/yourhour-screentime-app"
               className="bg-[#231F20] text-[#FFFFFF] px-4 md:px-6 py-3 md:py-4 rounded-sm text-xl md:text-2xl lg:text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
             >
               Case Study
