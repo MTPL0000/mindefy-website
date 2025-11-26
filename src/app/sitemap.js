@@ -227,7 +227,7 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/digi-bill`,
+      url: `${baseUrl}/green-bill`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
@@ -251,7 +251,7 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/flashcard-learning-app`,
+      url: `${baseUrl}/memolect`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,

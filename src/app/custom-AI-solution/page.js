@@ -5,6 +5,24 @@ import { ImpactDeliveredSection } from "../components/AIML/ImpactDeliveredSectio
 import { WhyAISection } from "../components/AIML/WhyAISection";
 import { WhyChooseSection } from "../components/AIML/WhyChooseSection";
 
+export const metadata = {
+  title: "Custom AI Solutions - Mindefy Technologies",
+  description:
+    "Design and deploy enterprise-ready AI solutions: Generative AI, RAG, agents, and decision intelligence.",
+  alternates: { canonical: "https://mindefy.tech/custom-AI-solution" },
+  openGraph: {
+    title: "Custom AI Solutions - Mindefy Technologies",
+    description:
+      "Design and deploy enterprise-ready AI solutions: Generative AI, RAG, agents, and decision intelligence.",
+    url: "https://mindefy.tech/custom-AI-solution",
+  },
+  twitter: {
+    title: "Custom AI Solutions - Mindefy Technologies",
+    description:
+      "Design and deploy enterprise-ready AI solutions: Generative AI, RAG, agents, and decision intelligence.",
+  },
+};
+
 export const heroData = {
   title: "Custom AI Solutions",
   subtitle: "Beyond Buzzwords: AI That Works In Production",

@@ -13,6 +13,24 @@ export const heroData = {
   backgroundImage: "/images/CLD-BG.webp",
 };
 
+export const metadata = {
+  title: "Cloud Engineering Services - Mindefy Technologies",
+  description:
+    "Cloud strategy, migration, cloud-native engineering, AI/ML infra, security, and DevOps/FinOps.",
+  alternates: { canonical: "https://mindefy.tech/cloud-engineering" },
+  openGraph: {
+    title: "Cloud Engineering Services - Mindefy Technologies",
+    description:
+      "Cloud strategy, migration, cloud-native engineering, AI/ML infra, security, and DevOps/FinOps.",
+    url: "https://mindefy.tech/cloud-engineering",
+  },
+  twitter: {
+    title: "Cloud Engineering Services - Mindefy Technologies",
+    description:
+      "Cloud strategy, migration, cloud-native engineering, AI/ML infra, security, and DevOps/FinOps.",
+  },
+};
+
 export const ourCloudServices = {
   title: "Our Cloud Services",
   cards: [

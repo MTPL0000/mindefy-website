@@ -12,6 +12,24 @@ import StructuredData, {
   websiteData,
 } from "./components/StructuredData";
 
+export const metadata = {
+  title: "Mindefy Technologies - AI, Apps & Web, and Digital Transformation",
+  description:
+    "We build AI solutions, mobile apps, and modern web platforms that drive outcomes.",
+  alternates: { canonical: "https://mindefy.tech" },
+  openGraph: {
+    title: "Mindefy Technologies - AI, Apps & Web, and Digital Transformation",
+    description:
+      "We build AI solutions, mobile apps, and modern web platforms that drive outcomes.",
+    url: "https://mindefy.tech",
+  },
+  twitter: {
+    title: "Mindefy Technologies - AI, Apps & Web, and Digital Transformation",
+    description:
+      "We build AI solutions, mobile apps, and modern web platforms that drive outcomes.",
+  },
+};
+
 export default function HomePage() {
   return (
     <>
