@@ -81,12 +81,13 @@ export default function ALMLandingPage() {
     const element = document.getElementById(sectionId);
     if (element) {
       const offset = headerHeight; // Add some padding below header
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = elementPosition - offset;
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   };
@@ -109,24 +110,27 @@ export default function ALMLandingPage() {
       if (section1Element) {
         const rect = section1Element.getBoundingClientRect();
         const section3Element = document.getElementById("section-3");
-        
+
         if (section3Element) {
           const section3Rect = section3Element.getBoundingClientRect();
           const section1Top = window.scrollY + rect.top;
           const section3Top = window.scrollY + section3Rect.top;
-          
+
           // Calculate progress from when section 1 top reaches viewport top to when section 3 reaches top
           const startPoint = section1Top; // When section 1 reaches top (header will be hidden)
-          
+
           // Progress: 0 when section 1 is below start point, 1 when section 3 reaches top
           let progress = 0;
           if (scrollTop >= startPoint) {
             // Section 1 has started scrolling up
             const totalDistance = section3Top - startPoint;
             const currentDistance = scrollTop - startPoint;
-            progress = Math.min(1, Math.max(0, currentDistance / totalDistance));
+            progress = Math.min(
+              1,
+              Math.max(0, currentDistance / totalDistance)
+            );
           }
-          
+
           // Apply zoom animation based on scroll progress
           zoomControls.set({
             scale: 1 + progress * 14, // Scale from 1 to 15
@@ -174,8 +178,8 @@ export default function ALMLandingPage() {
         const rect = section3Ref.current.getBoundingClientRect();
 
         const halfViewPortHeight = window.innerHeight / 2;
-        
-        if ((rect.top - halfViewPortHeight)<= 0 && !hasReachedTop) {
+
+        if (rect.top - halfViewPortHeight <= 0 && !hasReachedTop) {
           setHasReachedTop(true);
         }
 
@@ -196,7 +200,8 @@ export default function ALMLandingPage() {
         if (rect.top <= startPoint && rect.bottom > startPoint) {
           const scrolled = startPoint - rect.top;
           // Progress 0-3 for columns 2, 3, 4
-          const progress = Math.min(Math.max(scrolled / animationDuration, 0), 1) * 3;
+          const progress =
+            Math.min(Math.max(scrolled / animationDuration, 0), 1) * 3;
           setSection6Progress(progress);
         } else if (rect.top > startPoint) {
           setSection6Progress(0);
@@ -261,7 +266,9 @@ export default function ALMLandingPage() {
   // Measure column height dynamically for animation calculations
   useEffect(() => {
     const measureColumnHeight = () => {
-      const columnElement = document.querySelector("#section-6 .grid > div:first-child");
+      const columnElement = document.querySelector(
+        "#section-6 .grid > div:first-child"
+      );
       if (columnElement) {
         const height = columnElement.offsetHeight;
         setColumnHeight(height);
@@ -270,10 +277,10 @@ export default function ALMLandingPage() {
 
     // Initial measurement
     measureColumnHeight();
-    
+
     // Re-measure on window resize
     window.addEventListener("resize", measureColumnHeight);
-    
+
     return () => window.removeEventListener("resize", measureColumnHeight);
   }, [headerHeight]);
 

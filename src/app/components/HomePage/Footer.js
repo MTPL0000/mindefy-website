@@ -82,7 +82,7 @@ export default function Footer() {
                   <p>(M.P.) India</p>
                   <a
                     href="mailto:rahul@mindefy.tech"
-                    className="mt-2 sm:mt-3 block hover:opacity-100 cursor-pointer transition-opacity"
+                    className="mt-2 sm:mt-3 w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                   >
                     Email Us
                   </a>
@@ -112,14 +112,14 @@ export default function Footer() {
               <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
                 <a
                   href="/about-us"
-                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   About
                 </a>
 
                 <a
                   href="/testimonials"
-                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Testimonials
                 </a>
@@ -127,7 +127,7 @@ export default function Footer() {
                 <a
                   href="https://www.yourhourapp.com/blogs"
                   target="_blank"
-                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   YourHour Blogs
                 </a>
@@ -142,31 +142,31 @@ export default function Footer() {
               <div className="space-y-4 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
                 <a
                   href="/yourhour-screentime-app"
-                  className="block  hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block  hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   YourHour
                 </a>
                 <a
                   href="/spector"
-                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Spector
                 </a>
                 <a
                   href="/early-foods"
-                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Early Foods
                 </a>
                 <a
                   href="/jego"
-                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   JEGO
                 </a>
                 <a
-                  href="/digi-bill"
-                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                  href="/green-bill"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   GreenBill
                 </a>
@@ -181,33 +181,39 @@ export default function Footer() {
               <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
                 <a
                   href="/hybrid-app-development"
-                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Hybrid App Development
                 </a>
                 <a
                   href="/startup-support"
-                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Startup Support & Consulting
                 </a>
                 <a
                   href="/digital-transformation"
-                  className=" block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Digital Transformation
                 </a>
                 <a
                   href="/mvp-development"
-                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   MVP Dev. & PMF Test
                 </a>
                 <a
                   href="/staff-services"
-                  className="block hover:opacity-100 cursor-pointer transition-opacity"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Staff Augmenation Services
+                </a>
+                <a
+                  href="/site-map"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  Sitemap
                 </a>
               </div>
             </div>
@@ -221,7 +227,7 @@ export default function Footer() {
             <span className="font-bold">
               Mindefy Technologies Private Limited
             </span>
-            ™, {getYear}. All rights reserved.
+            ™, 2015-{getYear}. All rights reserved.
           </p>
         </div>
       </div>

@@ -4,6 +4,24 @@ import { ImpactDeliveredSection } from "../components/AIML/ImpactDeliveredSectio
 import { WhyAISection } from "../components/AIML/WhyAISection";
 import { WhyChooseSection } from "../components/AIML/WhyChooseSection";
 
+export const metadata = {
+  title: "Data Engineering & Analytics - Mindefy Technologies",
+  description:
+    "Enterprise-grade data platforms, pipelines, governance, and analytics to power AI and decisions.",
+  alternates: { canonical: "https://mindefy.tech/data-engineering" },
+  openGraph: {
+    title: "Data Engineering & Analytics - Mindefy Technologies",
+    description:
+      "Enterprise-grade data platforms, pipelines, governance, and analytics to power AI and decisions.",
+    url: "https://mindefy.tech/data-engineering",
+  },
+  twitter: {
+    title: "Data Engineering & Analytics - Mindefy Technologies",
+    description:
+      "Enterprise-grade data platforms, pipelines, governance, and analytics to power AI and decisions.",
+  },
+};
+
 export const heroData = {
   title: "Data Engineering & Analytics",
   subtitle: "The Backbone of Every Intelligent Enterprise",

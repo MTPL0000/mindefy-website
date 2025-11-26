@@ -1141,7 +1141,7 @@ export default function Navbar() {
               {mobileProjectsOpen && (
                 <div className="pl-4 mt-2 space-y-1">
                   <Link
-                    href="/flashcard-learning-app"
+                    href="/memolect"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
@@ -1169,7 +1169,7 @@ export default function Navbar() {
                     SoliStack
                   </Link>
                   <Link
-                    href="/digi-bill"
+                    href="/green-bill"
                     onClick={handleMobileMenuItemClick}
                     className="block hover:text-red-600 text-xs"
                   >
