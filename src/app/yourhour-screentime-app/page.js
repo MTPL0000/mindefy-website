@@ -1,5 +1,7 @@
 import { LazyYourHour } from "../utils/lazyLoadService";
-import StructuredData, { createBreadcrumbData } from "../components/StructuredData";
+import StructuredData, {
+  createBreadcrumbData,
+} from "@/components/StructuredData";
 
 export const metadata = {
   title: "YourHour – Screen Time & Digital Wellbeing App by Mindefy",
@@ -26,13 +28,13 @@ export const metadata = {
   openGraph: {
     title: "YourHour – Screen Time & Digital Wellbeing App by Mindefy",
     description:
-      "Track screen time, manage digital habits, and improve productivity with YourHour — a leading digital wellbeing app by Mindefy Technologies.",
+      "YourHour is a powerful screen time and mobile addiction tracker app created by Mindefy Technologies. Take control of your digital habits, improve focus, and boost productivity with smart insights.",
     url: "https://mindefy.tech/yourhour-screentime-app",
   },
   twitter: {
     title: "YourHour – Screen Time & Digital Wellbeing App by Mindefy",
     description:
-      "YourHour helps you manage screen time, break phone addiction, and boost productivity. Built by Mindefy Technologies.",
+      "YourHour is a powerful screen time and mobile addiction tracker app created by Mindefy Technologies. Take control of your digital habits, improve focus, and boost productivity with smart insights.",
   },
   alternates: {
     canonical: "https://mindefy.tech/yourhour-screentime-app",

@@ -1,0 +1,1163 @@
+"use client";
+import { motion, useAnimation } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
+import useHeaderHeight from "@/hooks/useHeaderHeight";
+import { ChevronDown } from "lucide-react";
+
+const cardData = [
+  {
+    icon: "/images/ai/Icons.png",
+    title: "Advanced AI Engineering",
+    description:
+      "Expertise across NLP, generative AI, computer vision, reinforcement learning - engineered to scale, secure, and perform",
+  },
+  {
+    icon: "/images/ai/Icons-2.png",
+    title: "Custom, Not Off-the-Shelf",
+    description:
+      "Solutions tailored to your data, ecosystem, and KPIs - no cookie-cutter models",
+  },
+  {
+    icon: "/images/ai/Icons-3.png",
+    title: "Cloud- and Edge-Ready",
+    description:
+      "Deploy AI where it matters - on cloud, edge, or hybrid environments - seamlessly integrated into your infrastructure",
+  },
+  {
+    icon: "/images/ai/Icons-4.png",
+    title: "Business-Driven Outcomes",
+    description:
+      "We align every AI solution with real-world metrics - operational efficiency, cost savings, predictive insights",
+  },
+  {
+    icon: "/images/ai/Icons-5.png",
+    title: "Robust MLOps & Governance",
+    description:
+      "Continuous monitoring, compliance, and governability built in - designed for sustainable ROI",
+  },
+  {
+    icon: "/images/ai/Icons-6.png",
+    title: "Cross-Functional Expertise",
+    description:
+      "Teams that combine data engineering, AI, cloud and domain knowledge to drive full-stack execution",
+  },
+];
+
+const offersCards = [
+  {
+    title: "AI Solutions",
+    text: "Build Intelligent Systems That Learn, Adapt, And Automate Complex Decisions - From GenAI To NLP And Computer Vision.",
+    link: "/custom-ai-solutions-enterprises",
+  },
+  {
+    title: "Machine Learning (ML)",
+    text: "Design, Train, And Deploy Models That Predict, Classify, And Optimize - Using Structured And Unstructured Data.",
+    link: "/machine-learning-services",
+  },
+  {
+    title: "Data Engineering & Analytics",
+    text: "Transform Raw Data Into A Strategic Asset - We Build Reliable Pipelines, Scalable Data Lakes, And Intelligent Warehouses That Power Insightful Dashboards, Business Intelligence, And Advanced Analytics. From Data Collection To Decision-Making, We Engineer The Entire Journey.",
+    link: "/advanced-data-engineering-services",
+  },
+  {
+    title: "Cloud Engineering Services",
+    text: "Build And Scale With The Power Of The Cloud. We Design Secure, High-Performance Cloud Infrastructures That Support AI, Data, And Modern Applications—Ensuring Speed, Flexibility, And Resilience Across AWS, Azure, And GCP.",
+    link: "/cloud-engineering-services",
+  },
+];
+
+export default function ALMLandingPage() {
+  const [section6Progress, setSection6Progress] = useState(0);
+  const [animationStage, setAnimationStage] = useState(0);
+  const [showContent, setShowContent] = useState(false);
+  const [hasReachedTop, setHasReachedTop] = useState(false);
+  const section3Ref = useRef(null);
+  const section6WrapperRef = useRef(null);
+  const [columnHeight, setColumnHeight] = useState(0);
+  const headerHeight = useHeaderHeight();
+
+  // Function to scroll to a specific section
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = headerHeight; // Add some padding below header
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // Use Framer Motion's animation controls
+  const zoomControls = useAnimation();
+  const contentZoomControls = useAnimation();
+  const cardControls = useAnimation();
+  const cloudLeftControls = useAnimation();
+  const cloudRightControls = useAnimation();
+  const cloudTopControls = useAnimation();
+
+  // Handle scroll-based animations
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+
+      // Calculate section 1 progress (Image Zoom section) - scroll-based
+      const section1Element = document.getElementById("section-1");
+      if (section1Element) {
+        const rect = section1Element.getBoundingClientRect();
+        const section3Element = document.getElementById("section-3");
+
+        if (section3Element) {
+          const section3Rect = section3Element.getBoundingClientRect();
+          const section1Top = window.scrollY + rect.top;
+          const section3Top = window.scrollY + section3Rect.top;
+
+          // Calculate progress from when section 1 top reaches viewport top to when section 3 reaches top
+          const startPoint = section1Top; // When section 1 reaches top (header will be hidden)
+
+          // Progress: 0 when section 1 is below start point, 1 when section 3 reaches top
+          let progress = 0;
+          if (scrollTop >= startPoint) {
+            // Section 1 has started scrolling up
+            const totalDistance = section3Top - startPoint;
+            const currentDistance = scrollTop - startPoint;
+            progress = Math.min(
+              1,
+              Math.max(0, currentDistance / totalDistance)
+            );
+          }
+
+          // Apply zoom animation based on scroll progress
+          zoomControls.set({
+            scale: 1 + progress * 14, // Scale from 1 to 15
+            opacity: 1 - progress * 0.7, // Opacity from 1 to 0.3
+            filter: `blur(${progress * 8}px)`, // Blur from 0 to 8px
+          });
+
+          contentZoomControls.set({
+            scale: 1 + progress * 14, // Scale from 1 to 15
+            opacity: 1 - progress, // Opacity from 1 to 0
+          });
+
+          // Animate cloud images based on scroll progress
+          // Cloud left images slide out to the left
+          cloudLeftControls.set({
+            x: -progress * 600, // Slide left 600px (faster)
+            opacity: 1 - progress * 0.8, // Fade out
+          });
+
+          // Cloud right images slide out to the right
+          cloudRightControls.set({
+            x: progress * 600, // Slide right 600px (faster)
+            opacity: 1 - progress * 0.8, // Fade out
+          });
+
+          // Cloud top slides out to the top
+          cloudTopControls.set({
+            y: -progress * 400, // Slide up 400px (faster)
+            opacity: 1 - progress * 0.8, // Fade out
+          });
+
+          // Animate cards based on progress
+          if (progress > 0.5) {
+            const cardProgress = (progress - 0.5) / 0.5; // 0 to 1 after 50% scroll
+            cardControls.set((i) => ({
+              y: 100 - cardProgress * 100,
+              opacity: cardProgress,
+            }));
+          }
+        }
+      }
+
+      // Calculate section 3 trigger
+      if (section3Ref.current) {
+        const rect = section3Ref.current.getBoundingClientRect();
+
+        const halfViewPortHeight = window.innerHeight / 2;
+
+        if (rect.top - halfViewPortHeight <= 0 && !hasReachedTop) {
+          setHasReachedTop(true);
+        }
+
+        if (rect.top + headerHeight > window.innerHeight && hasReachedTop) {
+          setHasReachedTop(false);
+          setAnimationStage(0);
+          setShowContent(false);
+        }
+      }
+
+      // Calculate section 6 progress (Cards column animation) - Log-Z pattern
+      if (section6WrapperRef.current) {
+        const rect = section6WrapperRef.current.getBoundingClientRect();
+        const startPoint = headerHeight + 20;
+        // Adjusted for 3 columns animation (column 1 is default visible)
+        const animationDuration = window.innerHeight * 1.2;
+
+        if (rect.top <= startPoint && rect.bottom > startPoint) {
+          const scrolled = startPoint - rect.top;
+          // Progress 0-3 for columns 2, 3, 4
+          const progress =
+            Math.min(Math.max(scrolled / animationDuration, 0), 1) * 3;
+          setSection6Progress(progress);
+        } else if (rect.top > startPoint) {
+          setSection6Progress(0);
+        } else if (rect.bottom <= startPoint) {
+          setSection6Progress(3);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [
+    headerHeight,
+    zoomControls,
+    contentZoomControls,
+    cardControls,
+    cloudLeftControls,
+    cloudRightControls,
+    cloudTopControls,
+    hasReachedTop,
+  ]);
+
+  // Animation sequence - triggers when section reaches top (Log-Z pattern)
+  useEffect(() => {
+    if (!hasReachedTop) return;
+
+    const timers = [];
+
+    // Stage 1: Title zoom in (starts immediately when section reaches top)
+    timers.push(
+      setTimeout(() => {
+        setAnimationStage(1);
+      }, 200)
+    );
+
+    // Stage 2: Subtitle animation after title (0.2s + 1s title duration)
+    timers.push(
+      setTimeout(() => {
+        setAnimationStage(2);
+      }, 1200)
+    );
+
+    // Stage 3: Move to top after all subtitle words complete (1.2s + 3s subtitle duration = 4.2s, trigger at 5s)
+    timers.push(
+      setTimeout(() => {
+        setAnimationStage(3);
+      }, 5000)
+    );
+
+    // Stage 4: Show content after move-to-top animation completes (5s + 1s animation = 6s)
+    timers.push(
+      setTimeout(() => {
+        setShowContent(true);
+      }, 6000)
+    );
+
+    return () => {
+      timers.forEach((timer) => clearTimeout(timer));
+    };
+  }, [hasReachedTop]);
+
+  // Measure column height dynamically for animation calculations
+  useEffect(() => {
+    const measureColumnHeight = () => {
+      const columnElement = document.querySelector(
+        "#section-6 .grid > div:first-child"
+      );
+      if (columnElement) {
+        const height = columnElement.offsetHeight;
+        setColumnHeight(height);
+      }
+    };
+
+    // Initial measurement
+    measureColumnHeight();
+
+    // Re-measure on window resize
+    window.addEventListener("resize", measureColumnHeight);
+
+    return () => window.removeEventListener("resize", measureColumnHeight);
+  }, [headerHeight]);
+
+  return (
+    <div className="w-full">
+      {/* Video Section - Large screens only */}
+      <div
+        id="section-0"
+        className="hidden lg:block w-full items-center justify-center bg-black"
+        style={{ height: `calc(100vh - ${headerHeight}px)` }}
+      >
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/images/hero_copy.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      {/* Mobile/Tablet Video Section - Responsive aspect ratio */}
+      <div className="lg:hidden w-full bg-black">
+        <video
+          className="w-full h-auto object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/images/hero_copy.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      {/* Image Zoom Section */}
+      <div
+        id="section-1"
+        className="w-full flex items-center justify-center relative overflow-hidden"
+        style={{ height: "100vh" }}
+      >
+        {/* Animated background for large screens only */}
+        <motion.div
+          className="hidden lg:block absolute inset-0 bg-cover bg-center"
+          animate={zoomControls}
+          initial={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
+        />
+
+        <motion.img
+          src="/images/ai/cloud-left-1.png"
+          className="hidden lg:block absolute left-0 top-[-10%] 2xl:top-0 aspect-auto opacity-40 -z-10"
+          animate={cloudLeftControls}
+          initial={{ x: 0, opacity: 1 }}
+        />
+
+        <motion.img
+          src="/images/ai/cloud-left-2.png"
+          className="hidden lg:block absolute left-0 top-[10%] 2xl:top-[20%] aspect-auto -z-10"
+          animate={cloudLeftControls}
+          initial={{ x: 0, opacity: 1 }}
+        />
+
+        <motion.img
+          src="/images/ai/cloud-left-3.png"
+          className="hidden lg:block w-[50%] absolute left-0 bottom-0 aspect-auto -z-10"
+          animate={cloudLeftControls}
+          initial={{ x: 0, opacity: 1 }}
+        />
+
+        <motion.img
+          src="/images/ai/cloud-c-top.png"
+          className="hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 w-[50.5%] -z-10"
+          animate={cloudTopControls}
+          initial={{ y: 0, opacity: 1 }}
+        />
+
+        <motion.img
+          src="/images/ai/center.png"
+          className="hidden lg:block absolute top-[13%] left-1/2 -translate-x-1/2 h-[80%] aspect-aut z-0"
+          animate={zoomControls}
+        />
+
+        <motion.img
+          src="/images/ai/cloud-right-1.png"
+          className="hidden lg:block absolute right-0 top-[0%] aspect-auto -z-10"
+          animate={cloudRightControls}
+          initial={{ x: 0, opacity: 1 }}
+        />
+
+        <motion.img
+          src="/images/ai/cloud-right-1.png"
+          className="hidden lg:block absolute right-0 top-[20%] aspect-auto -z-10"
+          animate={cloudRightControls}
+          initial={{ x: 0, opacity: 1 }}
+        />
+
+        <motion.img
+          src="/images/ai/cloud-right-2.png"
+          className="hidden lg:block w-[50%] absolute right-0 bottom-0 aspect-auto -z-10"
+          animate={cloudRightControls}
+          initial={{ x: 0, opacity: 1 }}
+        />
+
+        {/* Static background for smaller screens */}
+        <div
+          className="lg:hidden absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url(/images/bg-copy.png)" }}
+        />
+
+        <div className="relative z-10 flex items-center justify-center h-full px-4 lg:px-8 xl:px-12 2xl:px-16">
+          {/* Large screen animated content */}
+          <div className="hidden lg:block">
+            <motion.div
+              className="text-center max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+              initial={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <motion.div
+                animate={contentZoomControls}
+                initial={{ scale: 1, opacity: 1 }}
+              >
+                <h1 className="mb-6 font-poppins text-[2rem] lg:text-[2.5rem] xl:text-[3rem] 2xl:text-[3.5rem] font-normal text-[#3D3D3D]">
+                  <div>Built With Data. Powered By AI.</div>
+                  <div className="font-semibold mt-2">
+                    Delivered For Impact.
+                  </div>
+                </h1>
+
+                <div className="space-y-4 text-base lg:text-lg xl:text-xl font-poppins text-gray-700 mb-8 max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
+                  <p>
+                    AI turns data into action. We help businesses unlock that
+                    power - through tailored, scalable solutions.
+                  </p>
+                  <p>
+                    We architect intelligence from raw data. Precision-built.
+                    Algorithm-driven. Future-proof.
+                  </p>
+                  <p>
+                    What if your data could think? We don't just imagine it - we
+                    engineer it.
+                  </p>
+                  <p>
+                    Intelligence isn't just learned. It's designed - through
+                    data, algorithms, and intent.
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => scrollToSection("section-3")}
+                  className="bg-[#34333D] text-white font-poppins h-10 px-7 py-3 rounded-full text-base lg:text-lg xl:text-xl font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer"
+                >
+                  <ChevronDown className="w-7 h-7 animate-bounce" />
+                </button>
+              </motion.div>
+            </motion.div>
+          </div>
+
+          {/* Mobile/Tablet static content */}
+          <div className="lg:hidden text-center max-w-lg mx-auto px-4">
+            <h1 className="mb-6 font-poppins text-xl md:text-2xl font-normal text-[#3D3D3D] leading-tight">
+              <div>Built With Data.</div>
+              <div className="font-semibold mt-1">Powered By AI.</div>
+              <div className="font-semibold mt-1">Delivered For Impact.</div>
+            </h1>
+
+            <div className="space-y-4 text-sm md:text-base font-poppins text-gray-700 mb-8 leading-relaxed">
+              <p>
+                AI turns data into action. We help businesses unlock that power
+                through tailored, scalable solutions.
+              </p>
+              <p>
+                We architect intelligence from raw data. Precision-built.
+                Algorithm-driven. Future-proof.
+              </p>
+              <p>
+                What if your data could think? We don't just imagine it - we
+                engineer it.
+              </p>
+            </div>
+
+            <button
+              onClick={() => scrollToSection("section-3-mobile")}
+              className="bg-[#34333D] text-white font-poppins h-10 px-7 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-300 cursor-pointer"
+            >
+              <ChevronDown className="w-7 h-7 animate-bounce" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 3: Animation Section - Large screen only */}
+      <section
+        id="section-3"
+        ref={section3Ref}
+        className="hidden lg:block relative bg-white"
+        style={{
+          minHeight: "100vh",
+          zIndex: 2,
+        }}
+      >
+        {/* Sticky container for animations */}
+        <div
+          className="sticky bg-white"
+          style={{
+            top: `${headerHeight}px`,
+            minHeight: `calc(100vh - ${headerHeight}px)`,
+            zIndex: 10,
+            overflow: animationStage >= 3 ? "visible" : "hidden",
+          }}
+        >
+          {/* Animated content wrapper */}
+          <motion.div
+            className="relative flex flex-col"
+            style={{
+              minHeight: `calc(100vh - ${headerHeight}px)`,
+              overflow: animationStage >= 3 ? "visible" : "hidden",
+            }}
+            initial={false}
+          >
+            {/* Title and Subtitle Container */}
+            <motion.div
+              className="flex items-center justify-center"
+              style={{
+                position: "absolute",
+                left: "50%",
+                width: "100%",
+              }}
+              animate={{
+                top: animationStage >= 3 ? `${headerHeight}px` : "50%",
+                transform:
+                  animationStage >= 3
+                    ? "translate(-50%, 0%)"
+                    : "translate(-50%, -50%)",
+              }}
+              transition={{
+                duration: 1,
+                ease: [0.43, 0.13, 0.23, 0.96],
+              }}
+            >
+              <div className="text-center px-4">
+                {/* Title with zoom in animation */}
+                {animationStage >= 1 && (
+                  <motion.h1
+                    className="font-poppins font-medium"
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{
+                      scale: 1,
+                      opacity: 1,
+                    }}
+                    transition={{
+                      duration: 1.0,
+                      ease: "easeOut",
+                    }}
+                    style={{
+                      color: "#FF5225",
+                      fontSize: animationStage >= 3 ? "1.5rem" : "3rem",
+                      transition:
+                        animationStage >= 3
+                          ? "font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)"
+                          : "none",
+                      verticalAlign: "middle",
+                      // marginBottom: animationStage >= 3 ? '0.5rem' : '1rem',
+                    }}
+                  >
+                    What sets Us apart
+                  </motion.h1>
+                )}
+
+                {/* Subtitle with sequential left-right animation - Always reserve space */}
+                <div
+                  className="font-poppins font-normal text-[#3D3D3D] flex justify-center items-center gap-2 flex-wrap"
+                  style={{
+                    fontSize: animationStage >= 3 ? "2.5rem" : "5rem",
+                    transition:
+                      animationStage >= 3
+                        ? "font-size 1s cubic-bezier(0.43, 0.13, 0.23, 0.96)"
+                        : "none",
+                    verticalAlign: "middle",
+                    minHeight: animationStage >= 3 ? "3rem" : "6rem",
+                  }}
+                >
+                  {animationStage >= 2 && (
+                    <>
+                      {/* First word: Smart - from left */}
+                      <motion.span
+                        initial={{ x: -200, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{
+                          duration: 1.0,
+                          ease: "easeOut",
+                          delay: 0,
+                        }}
+                      >
+                        Smart.
+                      </motion.span>
+                      {/* Second word: Scalable - from right, starts after Smart completes */}
+                      <motion.span
+                        initial={{ x: 200, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{
+                          duration: 1.0,
+                          ease: "easeOut",
+                          delay: 1.0,
+                        }}
+                      >
+                        Scalable.
+                      </motion.span>
+                      {/* Third word: Strategic - from right, starts after Scalable completes */}
+                      <motion.span
+                        initial={{ x: 200, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{
+                          duration: 1.0,
+                          ease: "easeOut",
+                          delay: 2.0,
+                        }}
+                      >
+                        Strategic.
+                      </motion.span>
+                    </>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Content Section - Appears after animation */}
+            <motion.div
+              className="px-4 md:px-6 lg:px-8"
+              style={{
+                marginTop:
+                  animationStage >= 3 ? `${headerHeight + 120}px` : "0px",
+                opacity: showContent ? 1 : 0,
+                pointerEvents: showContent ? "auto" : "none",
+              }}
+            >
+              {/* Description */}
+              <motion.div
+                className="max-w-4xl mx-auto text-center mb-4"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{
+                  opacity: showContent ? 1 : 0,
+                  y: showContent ? 0 : 50,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0,
+                  ease: [0.43, 0.13, 0.23, 0.96],
+                }}
+              >
+                <p className="text-sm md:text-base text-[#444444] leading-relaxed">
+                  We don't just deliver AI and data solutions — we engineer
+                  enterprise-grade intelligence systems that align with your
+                  business vision and drive measurable value.
+                </p>
+              </motion.div>
+
+              {/* Cards Grid */}
+              <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {cardData.map((card, index) => (
+                  <motion.div
+                    key={index}
+                    className="bg-white rounded-xl px-4 py-2 xl:py-4 2xl:py-10 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+                    initial={{ opacity: 0, y: 60 }}
+                    animate={{
+                      opacity: showContent ? 1 : 0,
+                      y: showContent ? 0 : 60,
+                    }}
+                    transition={{
+                      duration: 1,
+                      delay: 0.1 + index * 0.08,
+                      ease: [0.43, 0.13, 0.23, 0.96],
+                    }}
+                  >
+                    {/* Icon */}
+                    <div className="w-12 h-12 flex items-center justify-center mb-3 mx-auto">
+                      <img
+                        src={card.icon}
+                        alt={card.title}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+
+                    {/* Title */}
+                    <h3
+                      className="text-base xl:text-lg 2xl:text-xl font-poppins font-semibold mb-2 text-center"
+                      style={{ color: "#FF5225" }}
+                    >
+                      {card.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-sm xl:text-base 2xl:text-lg font-poppins text-gray-600 text-center leading-relaxed">
+                      {card.description}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Mobile/Tablet static version */}
+      <div
+        id="section-3-mobile"
+        className="lg:hidden py-12 px-4 md:px-6 bg-white"
+      >
+        <div className="max-w-4xl mx-auto">
+          {/* Title */}
+          <h2 className="font-poppins font-medium text-lg md:text-xl text-[#FF5225] text-center align-middle mb-1">
+            What sets Us apart
+          </h2>
+
+          {/* Subtitle */}
+          <div className="flex flex-row justify-center items-center space-x-1 mb-2">
+            {["Smart.", "Scalable.", "Strategic."].map((word) => (
+              <span
+                key={word}
+                className="font-poppins font-normal text-base md:text-lg text-[#3D3D3D] text-center"
+              >
+                {word}
+              </span>
+            ))}
+          </div>
+
+          {/* Description */}
+          <p className="font-inter font-normal text-sm text-center text-[#444444] mb-10 max-w-lg mx-auto leading-relaxed">
+            We don't just deliver AI and data solutions - we engineer
+            enterprise-grade intelligence systems that align with your business
+            vision and drive measurable value.
+          </p>
+
+          {/* Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            {cardData.map((card, index) => (
+              <div
+                key={index}
+                className="bg-white p-5 md:p-6 rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] flex flex-col items-center text-center"
+              >
+                <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mb-4">
+                  <img
+                    src={card.icon}
+                    alt={card.title}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="text-sm md:text-base font-poppins font-semibold text-[#FF5225] mb-3 text-center leading-tight">
+                  {card.title}
+                </h3>
+                <p className="text-xs md:text-sm font-poppins text-gray-600 text-center leading-relaxed">
+                  {card.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Case Study 1 - Gen AI Chatbot */}
+      <div
+        id="section-4"
+        className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
+      >
+        {/* Large screen animated version */}
+        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-12 md:py-28">
+          <div className="container mx-auto w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
+            {/* Left side - Phone mockup */}
+            <motion.div
+              className="flex-1 flex justify-center"
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <div className="relative h-[20rem] lg:h-[35rem] xl:h-[38rem] aspect-[3/4]">
+                <img
+                  src="/images/YH-MN.gif"
+                  alt="Gen AI-Chatbot Interface"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </motion.div>
+
+            {/* Right side - Content */}
+            <motion.div
+              className="flex-1 text-center lg:text-left"
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <h2 className="text-2xl font-poppins sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-[#262626] mb-3 lg:mb-5 xl:mb-7 2xl:mb-9">
+                Gen AI-Chatbot
+              </h2>
+              <p className="text-xs font-poppins sm:text-xs lg:text-sm xl:text-base 2xl:text-lg font-normal text-[#000000] mb-5 lg:mb-7 xl:mb-9 2xl:mb-11 leading-relaxed max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl mx-auto lg:mx-0">
+                YourHour was originally designed to monitor and reduce daily
+                screen time with alerts. Facing rising demand for mental health
+                support, the team enhanced the app by integrating a
+                Retrieval-Augmented Generation (RAG) AI chatbot. This "AI
+                companion" continued screen-time coaching while also answering
+                mental health questions, providing personalized advice on
+                anxiety or depression, and offering companionship—based on how
+                screen time affects health and emotional well-being.
+              </p>
+              <a
+                href="/generative-ai-chatbot-development"
+                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 2xl:px-12 py-3 lg:py-4 xl:py-5 2xl:py-6 rounded-xs text-base lg:text-base xl:text-xl 2xl:text-2xl font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
+              >
+                Case Study →
+              </a>
+            </motion.div>
+          </div>
+        </section>
+      </div>
+
+      {/*Case Study 1 - Gen AI Chatbot: Mobile/Tablet static version */}
+      <div
+        id="section-4"
+        className="lg:hidden w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
+      >
+        <section className="w-full py-12 px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col items-center space-y-6 md:space-y-8">
+              {/* Title */}
+              <div className="text-center max-w-2xl mx-auto">
+                <h2 className="text-xl md:text-2xl font-poppins font-medium text-[#262626]">
+                  Gen AI-Chatbot
+                </h2>
+              </div>
+
+              {/* Phone mockup */}
+              <div
+                className="w-3/4 md:w-2/3 lg:w-1/2"
+                style={{ aspectRatio: "1200/1600" }}
+              >
+                <img
+                  src="/images/YH-MN.gif"
+                  alt="Gen AI-Chatbot Interface"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+
+              {/* Description */}
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-sm md:text-base font-poppins font-normal text-[#000000] mb-6 leading-relaxed">
+                  YourHour was originally designed to monitor and reduce daily
+                  screen time with alerts. Facing rising demand for mental
+                  health support, the team enhanced the app by integrating a
+                  Retrieval-Augmented Generation (RAG) AI chatbot. This "AI
+                  companion" continued screen-time coaching while also answering
+                  mental health questions, providing personalized advice on
+                  anxiety or depression, and offering companionship—based on how
+                  screen time affects health and emotional well-being.
+                </p>
+              </div>
+
+              {/* Case Study Button */}
+              <div className="text-center max-w-2xl mx-auto">
+                <a
+                  href="/generative-ai-chatbot-development"
+                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
+                >
+                  Case Study →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Case Study 2 - ML Driven Recommendations */}
+      <div
+        id="section-5"
+        className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
+      >
+        {/* Large screen animated version */}
+        <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-12 md:py-32">
+          <div className="container flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
+            {/* Left side - Content */}
+            <motion.div
+              className="flex-1 text-center lg:text-left"
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <h2 className="text-2xl font-poppins sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-[#262626] mb-3 lg:mb-5 xl:mb-7 2xl:mb-9">
+                ML Driven Recommendations
+              </h2>
+              <p className="text-xs font-poppins sm:text-xs lg:text-sm xl:text-base 2xl:text-lg font-normal text-[#000000] mb-5 lg:mb-7 xl:mb-9 2xl:mb-11 leading-relaxed max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl mx-auto lg:mx-0">
+                EarlyFoods, an e-commerce platform offering millet-based
+                products for new and expecting mothers, found customers missing
+                relevant items—limiting cart value. To solve this, we
+                recommended an AI-driven recommendation engine. They added it on
+                product pages using a hybrid of collaborative and content-based
+                filtering to deliver personalized suggestions. This has boosted
+                average order value, enhanced product discovery, and
+                strengthened customer trust.
+              </p>
+              <a
+                href="/custom-machine-learning-solutions"
+                className="inline-block font-poppins bg-[#231F20] text-white px-6 lg:px-8 xl:px-10 2xl:px-12 py-3 lg:py-4 xl:py-5 2xl:py-6 rounded-xs text-base lg:text-base xl:text-xl 2xl:text-2xl font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
+              >
+                Case Study →
+              </a>
+            </motion.div>
+
+            {/* Right side - Laptop mockup */}
+            <motion.div
+              className="flex-1 flex justify-center"
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <div className="relative w-8/12 sm:w-7/12 md:w-6/12 lg:w-9/12 xl:w-10/12 2xl:w-11/12 aspect-[578 /400]">
+                <img
+                  src="/images/ai/early-foods.png"
+                  alt="ML Driven Recommendations Interface"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      </div>
+
+      {/* Case Study 2 - ML Driven Recommendations: Mobile/Tablet static version */}
+      <div
+        id="section-5"
+        className="lg:hidden w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
+      >
+        <section className="w-full py-12 px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col items-center space-y-6 md:space-y-8">
+              {/* Title */}
+              <div className="text-center max-w-2xl mx-auto">
+                <h2 className="text-xl md:text-2xl font-poppins font-medium text-[#262626]">
+                  ML Driven Recommendations
+                </h2>
+              </div>
+
+              {/* Laptop mockup */}
+              <div className="w-5/6 md:w-4/5 lg:w-3/4 aspect-[11/7]">
+                <img
+                  src="/images/ai/early-foods.png"
+                  alt="ML Driven Recommendations Interface"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+
+              {/* Description */}
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-sm md:text-base font-poppins font-normal text-[#000000] mb-6 leading-relaxed">
+                  EarlyFoods, an e-commerce platform offering millet-based
+                  products for new and expecting mothers, found customers
+                  missing relevant items—limiting cart value. To solve this, we
+                  recommended an AI-driven recommendation engine. They added it
+                  on product pages using a hybrid of collaborative and
+                  content-based filtering to deliver personalized suggestions.
+                  This has boosted average order value, enhanced product
+                  discovery, and strengthened customer trust.
+                </p>
+              </div>
+
+              {/* Case Study Button */}
+              <div className="text-center max-w-2xl mx-auto">
+                <a
+                  href="/custom-machine-learning-solutions"
+                  className="inline-block font-poppins bg-[#231F20] text-white px-8 py-3 rounded-xs text-sm font-semibold hover:bg-gray-800 transition-colors duration-300 hover:cursor-pointer"
+                >
+                  Case Study →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Section 6 - Our Offering For Your Automation Needs - Scroll-based animation (Large screens only) */}
+      <div
+        ref={section6WrapperRef}
+        style={{
+          minHeight:
+            columnHeight > 0
+              ? `calc(100vh + ${columnHeight * 2}px)`
+              : "calc(100vh + 1200px)",
+          position: "relative",
+        }}
+        className="w-full bg-white hidden lg:block"
+      >
+        {/* Sticky container for scroll-based animations */}
+        <div
+          style={{
+            position: "sticky",
+            top: `${headerHeight}px`,
+            paddingTop: `${headerHeight / 4}px`,
+            height: `calc(100vh - ${headerHeight}px)`,
+            zIndex: 10,
+            width: "100%",
+            backgroundColor: "white",
+          }}
+        >
+          <div className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 h-full pb-4 md:pb-6 lg:pb-8">
+            {/* Heading */}
+            <div className="text-center font-poppins mb-2 md:mb-3 lg:mb-4 xl:mb-6">
+              <h2 className="text-base font-poppins md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-[#3D3D3D] content-center align-middle">
+                Our Offering For Your Automation Needs-
+              </h2>
+              <h3 className="text-base font-poppins md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium text-[#3D3D3D] content-center align-middle">
+                <span className="font-semibold font-poppins">
+                  The Stack That Powers Your Future.
+                </span>
+              </h3>
+            </div>
+
+            {/* Responsive 4-column cards with staggered scroll animation */}
+            <div className="flex items-stretch justify-center flex-1 overflow-hidden">
+              <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto h-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 h-full">
+                  {offersCards.map((card, index) => {
+                    // Column 1 (index 0) appears by default, others animate on scroll
+                    // Calculate animation progress for each column
+                    const columnProgress =
+                      index === 0
+                        ? 1 // Column 1 always fully visible
+                        : Math.max(
+                            0,
+                            Math.min(1, section6Progress - (index - 1))
+                          );
+
+                    // Title and text slide up from bottom
+                    const contentTranslateY = (1 - columnProgress) * 100;
+                    const contentOpacity = columnProgress;
+
+                    // Learn More button fades in after content
+                    const buttonProgress =
+                      index === 0
+                        ? 1 // Column 1 button always visible
+                        : Math.max(
+                            0,
+                            Math.min(
+                              1,
+                              (section6Progress - (index - 1) - 0.5) * 2
+                            )
+                          );
+                    const buttonOpacity = buttonProgress;
+
+                    // Border animation - slides up from bottom (Learn More position)
+                    const borderProgress =
+                      index === 0
+                        ? 1 // Column 1 border always visible
+                        : Math.max(
+                            0,
+                            Math.min(
+                              1,
+                              (section6Progress - (index - 1) - 0.3) * 1.5
+                            )
+                          );
+                    const borderHeight = borderProgress * 100;
+
+                    return (
+                      <div
+                        key={index}
+                        className="relative py-3 lg:py-4 xl:py-5 2xl:py-6 px-2 lg:px-2.5 xl:px-3 2xl:px-4 flex flex-col justify-between h-full overflow-hidden"
+                      >
+                        {/* Animated left border - slides up from bottom */}
+                        <motion.div
+                          className="absolute left-0 bottom-0 w-[1px] bg-[#000000]"
+                          animate={{
+                            height: `${borderHeight}%`,
+                          }}
+                          transition={{
+                            duration: 0.8,
+                            ease: [0.43, 0.13, 0.23, 0.96],
+                          }}
+                        />
+
+                        {/* Animated bottom border - appears with left border */}
+                        <motion.div
+                          className="absolute bottom-0 left-0 right-0 h-[1px] bg-[#000000]"
+                          animate={{
+                            opacity: borderProgress,
+                          }}
+                          transition={{
+                            duration: 0.5,
+                            ease: "easeOut",
+                          }}
+                        />
+
+                        {/* Content wrapper with slide-up animation */}
+                        <motion.div
+                          className="flex-1"
+                          animate={{
+                            y: contentTranslateY,
+                            opacity: contentOpacity,
+                          }}
+                          transition={{
+                            duration: 0.6,
+                            ease: [0.43, 0.13, 0.23, 0.96],
+                          }}
+                        >
+                          <h4 className="text-lg lg:text-xl xl:text-2xl 2xl:text-2xl font-normal text-[#332771] mb-2 lg:mb-3 xl:mb-4 2xl:mb-5 text-left font-poppins leading-tight">
+                            {card.title}
+                          </h4>
+                          <p className="text-xs lg:text-sm xl:text-base 2xl:text-lg text-[#D84326] mb-1 lg:mb-2 xl:mb-3 2xl:mb-4 text-left leading-snug font-poppins">
+                            {card.text}
+                          </p>
+                        </motion.div>
+
+                        {/* Learn More button with fade-in animation */}
+                        <motion.a
+                          href={card.link}
+                          className="w-fit flex items-center text-left text-xs lg:text-sm xl:text-base 2xl:text-lg font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300 mt-2 flex-shrink-0"
+                          animate={{
+                            opacity: buttonOpacity,
+                          }}
+                          transition={{
+                            duration: 0.4,
+                            ease: "easeOut",
+                          }}
+                        >
+                          Learn More <span className="ml-2">→</span>
+                        </motion.a>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 6 - Our Offering For Your Automation Needs: Mobile/Tablet static version */}
+      <div className="w-full bg-white lg:hidden">
+        <div className="py-12 px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            {/* Heading */}
+            <div className="text-center font-poppins mb-12">
+              <h2 className="text-lg md:text-xl font-normal text-[#3D3D3D] mb-3">
+                Our Offering For Your Automation Needs-
+              </h2>
+              <h3 className="text-lg md:text-xl font-medium text-[#3D3D3D]">
+                <span className="font-semibold font-poppins">
+                  The Stack That Powers Your Future.
+                </span>
+              </h3>
+            </div>
+
+            {/* Static cards grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              {offersCards.map((card, index) => (
+                <div
+                  key={index}
+                  className="group py-6 md:py-8 px-4 md:px-6 flex flex-col justify-between bg-white border border-[#000000] rounded-xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)] transition-all duration-300"
+                >
+                  <div>
+                    <h4 className="text-base md:text-lg font-normal text-[#332771] mb-4 text-left font-poppins leading-tight">
+                      {card.title}
+                    </h4>
+                    <p className="text-sm md:text-base text-[#D84326] mb-6 text-left leading-relaxed font-poppins">
+                      {card.text}
+                    </p>
+                  </div>
+                  <a
+                    href={card.link}
+                    className="w-fit flex items-center text-left text-sm md:text-base font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300"
+                  >
+                    Learn More <span className="ml-2">→</span>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

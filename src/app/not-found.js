@@ -1,26 +1,30 @@
 "use client";
+
 import Link from "next/link";
 
-const NotFound = () => {
+export default function NotFound() {
   return (
-    <div className="mx-auto flex flex-col items-center gap-6 justify-center min-h-screen text-center px-4">
-      <h1 className="text-3xl font-normal text-gray-700">
-        This page isn’t available
+    <div className="min-h-screen flex flex-col justify-center gap-4 items-center px-6 bg-gradient-to-b from-gray-50 to-gray-100">
+      {/* Heading */}
+      <h1 className="text-4xl md:text-5xl font-semibold text-gray-800">
+        Page Not Found
       </h1>
-      <p className="text-2xl mt-4 font-normal text-gray-700">
-        Let us help you return to our
+
+      {/* Subtitle */}
+      <p className="text-base text-center md:text-lg text-gray-800 mt-6 max-w-2xl">
+        The page you're trying to access doesn't exist or may have been moved.
+        Let’s help you get back on track.
+      </p>
+
+      {/* Button */}
+      <div className="mt-8">
         <Link
           href="/"
-          passHref
-          className="font-bold text-[#332771] cursor-pointer"
+          className="px-6 py-3 rounded-full bg-[#332771] text-white font-medium shadow-lg hover:opacity-90 hover:scale-105 transition-all duration-300"
         >
-          {" "}
-          HomePage{" "}
+          Go to Home
         </Link>
-        and find what you're looking for.
-      </p>
+      </div>
     </div>
   );
-};
-
-export default NotFound;
+}

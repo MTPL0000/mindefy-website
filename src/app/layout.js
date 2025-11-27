@@ -3,10 +3,9 @@ import { Poppins } from "next/font/google";
 import { Noto_Sans } from "next/font/google";
 import { Fredoka } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/HomePage/Navbar";
-import ContactUs from "./components/HomePage/ContactUs";
-import Footer from "./components/HomePage/Footer";
-import PWAInstallPrompt from "./components/PWAInstallPrompt";
+import Navbar from "@/components/HomePage/Navbar";
+import ContactUs from "@/components/HomePage/ContactUs";
+import Footer from "@/components/HomePage/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import Image from "next/image";
 
@@ -32,10 +31,10 @@ export const metadata = {
   title: {
     template: "%s | Mindefy Technologies",
     default:
-      "Mindefy Technologies - Innovative Software Solutions & Development",
+      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
   },
   description:
-    "Leading software development company providing innovative solutions for enterprises and startups. Expert in mobile app development, web applications, AI, and digital transformation.",
+    "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
   keywords: [
     "software development",
     "mobile app development",
@@ -64,9 +63,10 @@ export const metadata = {
     locale: "en_US",
     url: "https://mindefy.tech",
     siteName: "Mindefy Technologies",
-    title: "Mindefy Technologies - Innovative Software Solutions & Development",
+    title:
+      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
     description:
-      "Leading software development company providing innovative solutions for enterprises and startups. Expert in mobile app development, web applications, AI, and digital transformation.",
+      "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
     images: [
       {
         url: "/images/logo/mindefy-logo.png",
@@ -78,9 +78,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mindefy Technologies - Innovative Software Solutions & Development",
+    title:
+      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
     description:
-      "Leading software development company providing innovative solutions for enterprises and startups.",
+      "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
     images: ["/images/logo/mindefy-logo.png"],
   },
   verification: {
