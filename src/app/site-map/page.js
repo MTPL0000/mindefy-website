@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Sitemap - Mindefy Technologies",
+  title: "Sitemap",
   description:
     "Browse the complete sitemap of Mindefy Technologies. Access all service pages, product pages, case studies, and business solutions in one organized index.",
   alternates: { canonical: "https://mindefy.tech/sitemap" },
@@ -14,6 +14,7 @@ const routes = [
   // Dashboard/Home
   {
     url: baseUrl,
+    label: "Home",
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 1,
@@ -23,25 +24,29 @@ const routes = [
    AI & DATA SOLUTIONS
   ------------------------------ */
   {
-    url: `${baseUrl}/custom-AI-solution`,
+    url: `${baseUrl}/custom-ai-solutions-enterprises`,
+    label: "Custom AI Solutions",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
   },
   {
-    url: `${baseUrl}/machine-learning`,
+    url: `${baseUrl}/machine-learning-services`,
+    label: "Machine Learning",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
   },
   {
-    url: `${baseUrl}/data-engineering`,
+    url: `${baseUrl}/advanced-data-engineering-services`,
+    label: "Data Engineering & Analytics",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
   },
   {
-    url: `${baseUrl}/cloud-engineering`,
+    url: `${baseUrl}/cloud-engineering-services`,
+    label: "Cloud Engineering",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
@@ -51,37 +56,43 @@ const routes = [
    MODERN APPLICATION DEVELOPMENT
   ------------------------------ */
   {
-    url: `${baseUrl}/android-app-development`,
+    url: `${baseUrl}/android-app-development-experts`,
+    label: "Android App Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
   },
   {
-    url: `${baseUrl}/ios-app-development`,
+    url: `${baseUrl}/ios-app-development-services`,
+    label: "iOS App Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
   },
   {
-    url: `${baseUrl}/hybrid-app-development`,
+    url: `${baseUrl}/hybrid-app-development-services`,
+    label: "Hybrid App Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
   },
   {
     url: `${baseUrl}/mean-mern-stack-development`,
+    label: "MEAN & MERN Stack Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
   },
   {
-    url: `${baseUrl}/web-application-development`,
+    url: `${baseUrl}/web-application-development-solutions`,
+    label: "Web Application Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
   },
   {
-    url: `${baseUrl}/agile-rapid-development`,
+    url: `${baseUrl}/agile-rapid-development-practices`,
+    label: "Agile & Rapid Application Development Model",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
@@ -91,13 +102,15 @@ const routes = [
     IT & STAFF AUGMENTATION
   ------------------------------ */
   {
-    url: `${baseUrl}/staff-services`,
+    url: `${baseUrl}/staff-augmentation-services`,
+    label: "Staff Augmentation Services",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
   },
   {
-    url: `${baseUrl}/it-consulting`,
+    url: `${baseUrl}/it-consulting-strategy`,
+    label: "IT Consulting Services",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
@@ -107,25 +120,29 @@ const routes = [
     DIGITAL TRANSFORMATION
   ------------------------------ */
   {
-    url: `${baseUrl}/digital-transformation`,
+    url: `${baseUrl}/digital-transformation-consulting`,
+    label: "Digital Transformation Services",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
   },
   {
-    url: `${baseUrl}/microservices-architecture`,
+    url: `${baseUrl}/microservices-architecture-consulting`,
+    label: "Building Micro-services Architecture",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/low-code-development`,
+    url: `${baseUrl}/low-code-app-development-services`,
+    label: "Low Code Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/test-automation-qa`,
+    url: `${baseUrl}/test-automation-qa-services`,
+    label: "Application Test Automation and QA Services",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
@@ -135,7 +152,8 @@ const routes = [
     CLOUD & DEVOPS
   ------------------------------ */
   {
-    url: `${baseUrl}/cloud-devops`,
+    url: `${baseUrl}/cloud-devops-engineering`,
+    label: "Cloud & DevOps",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
@@ -145,19 +163,22 @@ const routes = [
     GAME DEVELOPMENT
   ------------------------------ */
   {
-    url: `${baseUrl}/game-animation`,
+    url: `${baseUrl}/game-animation-graphics`,
+    label: "2D & 3D Game Animation",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/unity-unreal`,
+    url: `${baseUrl}/unity-unreal-engine-development`,
+    label: "Unity and Unreal Game Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
     url: `${baseUrl}/ar-vr-game-development`,
+    label: "AR VR Game Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
@@ -167,25 +188,29 @@ const routes = [
     STARTUP SUPPORT & CONSULTING
   ------------------------------ */
   {
-    url: `${baseUrl}/startup-support`,
+    url: `${baseUrl}/startup-support-consulting`,
+    label: "Startup Support and Consulting",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/mvp-development`,
+    url: `${baseUrl}/mvp-development-startup-support`,
+    label: "MVP Development & PMF Test",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/white-label-solutions`,
+    url: `${baseUrl}/white-label-software-solutions`,
+    label: "White Label App Solutions",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/startup-incubation-consulting`,
+    url: `${baseUrl}/startup-incubation-consulting-services`,
+    label: "Startup Incubation Services",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
@@ -195,25 +220,29 @@ const routes = [
     ENTERPRISE BUSINESS SOLUTIONS
   ------------------------------ */
   {
-    url: `${baseUrl}/enterprise-solutions`,
+    url: `${baseUrl}/enterprise-software-solutions`,
+    label: "Enterprise Business Solutions",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/crm-solutions`,
+    url: `${baseUrl}/crm-software-solutions`,
+    label: "CRM Solutions",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/business-process-management`,
+    url: `${baseUrl}/business-process-management-solutions`,
+    label: "Business Process Management",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/ecommerce-marketplace`,
+    url: `${baseUrl}/ecommerce-marketplace-development`,
+    label: "E-commerce and Marketplace",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
@@ -224,6 +253,7 @@ const routes = [
   ------------------------------ */
   {
     url: `${baseUrl}/yourhour-screentime-app`,
+    label: "YourHour",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
@@ -233,78 +263,79 @@ const routes = [
     CLIENT PROJECTS
   ------------------------------ */
   {
-    url: `${baseUrl}/memolect`,
+    url: `${baseUrl}/memolect-learning-app`,
+    label: "Memolect",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
   },
   {
-    url: `${baseUrl}/early-foods`,
+    url: `${baseUrl}/early-foods-e-commerce`,
+    label: "EarlyFoods",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
   },
   {
-    url: `${baseUrl}/jego`,
+    url: `${baseUrl}/jego-ott-platform`,
+    label: "JEGO",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
   },
   {
-    url: `${baseUrl}/soli-stack`,
+    url: `${baseUrl}/soli-stack-integration-solutions`,
+    label: "SoliStack",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
   },
   {
-    url: `${baseUrl}/green-bill`,
+    url: `${baseUrl}/greenbill-paperless-billing-software`,
+    label: "GreenBill",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
   },
   {
-    url: `${baseUrl}/mach-one`,
+    url: `${baseUrl}/mach-one-platform-services`,
+    label: "MachOne",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
   },
 
   /* -----------------------------
+    MINDFUL UX DESIGN Mindful UX "Design Studio"
+  ------------------------------ */
+  {
+    url: `${baseUrl}/mindful-ux-design-user-experience`,
+    label: "Mindful UX Design Studio",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+
+  /* -----------------------------
     OTHER PAGES
   ------------------------------ */
   {
-    url: `${baseUrl}/testimonials`,
+    url: `${baseUrl}/customer-testimonials-reviews`,
+    label: "Testimonials",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.6,
   },
 ];
 
-// Improved label extraction (AI, VR, AR, QA stay uppercase)
-
-function extractLabel(pathname) {
-  if (!pathname || pathname === "/") return "Home";
-
-  const slug = pathname.replace(/^\//, "");
-
-  return slug
-    .split("-")
-    .map((w) =>
-      ["ai", "qa", "ar", "vr"].includes(w.toLowerCase())
-        ? w.toUpperCase()
-        : w.charAt(0).toUpperCase() + w.slice(1)
-    )
-    .join(" ");
-}
-
 export default function SitemapPage() {
-  // KEEP EXACT ORDER from sitemap.ts
+  // Extract pathname and use custom label
   const items = routes.map((r) => {
     try {
       const u = new URL(r.url);
-      return { url: u.pathname, label: extractLabel(u.pathname) };
+      return { url: u.pathname, label: r.label };
     } catch {
-      return { url: r.url, label: extractLabel(r.url) };
+      return { url: r.url, label: r.label };
     }
   });
 
@@ -320,7 +351,8 @@ export default function SitemapPage() {
     { title: "Enterprise Business Solutions", items: items.slice(25, 29) },
     { title: "Product", items: items.slice(29, 30) },
     { title: "Projects", items: items.slice(30, 36) },
-    { title: "Other Pages", items: items.slice(36, 37) },
+    { title: "Mindful UX Design Studio", items: items.slice(36, 37) },
+    { title: "Other Pages", items: items.slice(37, 38) },
   ];
 
   return (
