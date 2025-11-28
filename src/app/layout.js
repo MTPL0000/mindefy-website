@@ -29,7 +29,6 @@ const fredoka = Fredoka({
 export const metadata = {
   metadataBase: new URL("https://mindefy.tech"),
   title: {
-    template: "%s | Mindefy Technologies",
     default:
       "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
   },
@@ -146,6 +145,23 @@ export default function RootLayout({ children }) {
     >
       <head>
         <link rel="canonical" href="https://mindefy.tech" />
+        {/* New Links */}
+        <link
+          rel="preconnect"
+          href="https://www.googletagmanager.com"
+          crossOrigin=""
+        />
+        <link
+          rel="preconnect"
+          href="https://connect.facebook.net"
+          crossOrigin=""
+        />
+        <link rel="preconnect" href="https://www.facebook.com" crossOrigin="" />
+        <link
+          rel="preconnect"
+          href="https://www.google-analytics.com"
+          crossOrigin=""
+        />
 
         {/* Google Tag Manager */}
         <script

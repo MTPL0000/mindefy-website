@@ -11,7 +11,7 @@ export default function AboutSection() {
             About Mindefy
           </p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-gray-800 leading-tight">
-            We are A{" "}
+            We are A
             <span className="font-bold">Top-Notch IT Service Provider</span> And
             <br className="hidden sm:block" />
             <span className="font-bold">Product Development company</span>

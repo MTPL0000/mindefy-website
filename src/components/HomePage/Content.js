@@ -6,9 +6,9 @@ export default function Content() {
       {/* Mission Section */}
       <section className="mb-12 sm:mb-16 lg:mb-20">
         <div className="mb-6 sm:mb-8">
-          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center md:text-left lg:ml-3">
+          <h3 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center md:text-left lg:ml-3">
             Who We Are
-          </h4>
+          </h3>
         </div>
         <div className="flex flex-col sm:flex-row lg:flex-row items-center lg:items-start gap-4 lg:gap-6">
           {/* Step Number */}
@@ -65,9 +65,9 @@ export default function Content() {
       {/* Vision Section */}
       <section className="mb-12 sm:mb-16 lg:mb-20">
         <div className="mb-6 sm:mb-8">
-          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center md:text-left lg:ml-3">
+          <h3 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center md:text-left lg:ml-3">
             What We Strive For
-          </h4>
+          </h3>
         </div>
         <div className="flex flex-col sm:flex-row lg:flex-row items-center lg:items-start gap-4 lg:gap-6">
           {/* Step Number */}
@@ -121,9 +121,9 @@ export default function Content() {
       {/* Values Section */}
       <section className="mb-12 sm:mb-16 lg:mb-20">
         <div className="mb-6 sm:mb-8">
-          <h4 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center md:text-left lg:ml-3">
+          <h3 className="text-sm sm:text-base text-[#FF5225] font-bold uppercase text-center md:text-left lg:ml-3">
             Guiding Principles
-          </h4>
+          </h3>
         </div>
 
         <div className="flex flex-col sm:flex-row lg:flex-row items-center lg:items-start gap-4 lg:gap-6 ">
