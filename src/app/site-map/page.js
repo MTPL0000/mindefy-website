@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Sitemap",
+  title: "Sitemap | Mindefy Technologies",
   description:
     "Browse the complete sitemap of Mindefy Technologies. Access all service pages, product pages, case studies, and business solutions in one organized index.",
   alternates: { canonical: "https://mindefy.tech/sitemap" },
@@ -358,7 +358,7 @@ export default function SitemapPage() {
   return (
     <div className="min-h-screen bg-white">
       <section className="container mx-auto px-4 sm:px-6 lg:px-16 py-12">
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#000] mb-4">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#332771] mb-4">
           Website Sitemap
         </h1>
 

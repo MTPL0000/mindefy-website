@@ -258,7 +258,6 @@ export default function HeroSection() {
             className="hidden md:inline-block text-black transition-all duration-300"
             style={{
               opacity: hideAmpersand ? 0 : 1,
-              // display: hideAmpersand ? "none" : "inline-block",
             }}
           >
             &
@@ -350,6 +349,8 @@ export default function HeroSection() {
                     src={logo.src}
                     alt={logo.alt}
                     fill
+                    sizes="(max-width: 640px) 80px, (max-width: 1024px) 120px, 160px"
+                    loading="lazy"
                     className="object-contain"
                   />
                 </div>
@@ -375,6 +376,8 @@ export default function HeroSection() {
                     src={logo.src}
                     alt={logo.alt}
                     fill
+                    sizes="(max-width: 640px) 80px, (max-width: 1024px) 120px, 160px"
+                    loading="lazy"
                     className="object-contain"
                   />
                 </div>

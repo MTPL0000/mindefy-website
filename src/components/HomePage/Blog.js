@@ -23,6 +23,7 @@ export default function Blog() {
           <Link
             href="https://www.yourhourapp.com/blog/yourhour-screentime-app-screen-time-tracker-mobile-addiction-show-behind-11"
             target="_blank"
+            aria-label="Read: MOBILE ADDICTION — The Show Behind!"
             className="bg-white rounded-3xl overflow-hidden hover:shadow-lg hover:scale-105 transition-all cursor-pointer duration-300"
           >
             <div className="relative h-64 w-full overflow-hidden">
@@ -42,13 +43,9 @@ export default function Blog() {
                 change, situations change and people change. It spares no
                 one....
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
-                <Link
-                  href="https://www.yourhourapp.com/blog/yourhour-screentime-app-screen-time-tracker-mobile-addiction-show-behind-11"
-                  target="_blank"
-                  className="flex items-center"
-                >
-                  Read More
+              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium hover:underline transition-colors">
+                <span className="flex items-center">
+                  Read more "MOBILE ADDICTION"
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
@@ -63,7 +60,7 @@ export default function Blog() {
                       d="M14 5l7 7m0 0l-7 7m7-7H3"
                     />
                   </svg>
-                </Link>
+                </span>
               </div>
             </div>
           </Link>
@@ -72,6 +69,7 @@ export default function Blog() {
           <Link
             href="https://www.yourhourapp.com/blog/screen-time-parental-control-screen-time-helper-young-vs-old-smart-phones-seperating-generations-10"
             target="_blank"
+            aria-label="Read: Smart Phones Separating Generations"
             className="bg-white rounded-3xl overflow-hidden hover:shadow-lg hover:scale-105 transition-all cursor-pointer duration-300"
           >
             <div className="relative h-64 w-full overflow-hidden">
@@ -90,13 +88,9 @@ export default function Blog() {
                 Addiction is injurious to health! And while most narcotics
                 damage a person’s Biological wellbeing, Smart Phones attack....
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
-                <Link
-                  href="https://www.yourhourapp.com/blog/screen-time-parental-control-screen-time-helper-young-vs-old-smart-phones-seperating-generations-10"
-                  target="_blank"
-                  className="flex items-center"
-                >
-                  Read More
+              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium hover:underline transition-colors">
+                <span className="flex items-center">
+                  Read more: "Smart Phones Separating"
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
@@ -111,7 +105,7 @@ export default function Blog() {
                       d="M14 5l7 7m0 0l-7 7m7-7H3"
                     />
                   </svg>
-                </Link>
+                </span>
               </div>
             </div>
           </Link>
@@ -120,6 +114,7 @@ export default function Blog() {
           <Link
             href="https://www.yourhourapp.com/blog/phone-addiction-controller-screen-time-app-usage-tracker-mindfulness-productivity-4"
             target="_blank"
+            aria-label="Read: Mindfulness and Productivity"
             className="bg-white rounded-3xl overflow-hidden hover:shadow-lg hover:scale-105 transition-all cursor-pointer duration-300 md:col-span-2 lg:col-span-1"
           >
             <div className="relative h-64 w-full overflow-hidden">
@@ -138,13 +133,9 @@ export default function Blog() {
                 The esteemed poet, Robert Frost, once wrote, “two roads divulged
                 in a yellow wood…” he was talking, centuries ago....
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium cursor-pointer hover:underline transition-colors">
-                <Link
-                  href="https://www.yourhourapp.com/blog/phone-addiction-controller-screen-time-app-usage-tracker-mindfulness-productivity-4"
-                  target="_blank"
-                  className="flex items-center"
-                >
-                  Read More
+              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium hover:underline transition-colors">
+                <span className="flex items-center">
+                  Read more: "Mindfulness and Productivity"
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
@@ -159,7 +150,7 @@ export default function Blog() {
                       d="M14 5l7 7m0 0l-7 7m7-7H3"
                     />
                   </svg>
-                </Link>
+                </span>
               </div>
             </div>
           </Link>
