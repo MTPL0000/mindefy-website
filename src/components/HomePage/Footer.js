@@ -207,7 +207,7 @@ export default function Footer() {
                   href="/mvp-development-startup-support"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
-                  MVP Dev. & PMF Test
+                  MVP Development
                 </a>
                 <a
                   href="/staff-augmentation-services"

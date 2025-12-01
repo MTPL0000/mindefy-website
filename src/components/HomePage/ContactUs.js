@@ -230,11 +230,11 @@ export default function ContactUs() {
   return (
     <section id="contact" className="w-full py-5 lg:py-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.12rem] font-semibold text-center mb-8 lg:mb-12">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.12rem] font-semibold text-center mb-6 lg:mb-12">
           Let's Get In Touch
         </h1>
 
-        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center lg:items-start">
+        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center lg:items-start pt-3">
           {/* Left Column - Image */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
             <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl aspect-[33.75/29.31] opacity-90">
