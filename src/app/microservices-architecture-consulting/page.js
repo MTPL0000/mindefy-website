@@ -1,4 +1,4 @@
-import { LazyMicroservices } from "../utils/lazyLoadService";
+import { LazyMicroservices } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

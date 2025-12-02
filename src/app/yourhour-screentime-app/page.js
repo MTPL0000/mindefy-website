@@ -1,4 +1,4 @@
-import { LazyYourHour } from "../utils/lazyLoadService";
+import { LazyYourHour } from "../../utils/lazyLoadService";
 import StructuredData, {
   createBreadcrumbData,
 } from "@/components/StructuredData";

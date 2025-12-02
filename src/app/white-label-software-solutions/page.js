@@ -1,4 +1,4 @@
-import { LazyWhiteLabel } from "../utils/lazyLoadService";
+import { LazyWhiteLabel } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

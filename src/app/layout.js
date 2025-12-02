@@ -1,5 +1,5 @@
 // src/app/layout.js
-import { Poppins } from "next/font/google";
+import { Lobster_Two, Poppins } from "next/font/google";
 import { Noto_Sans } from "next/font/google";
 import { Fredoka } from "next/font/google";
 import "./globals.css";
@@ -24,6 +24,12 @@ const fredoka = Fredoka({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-fredoka",
+});
+
+const lobster = Lobster_Two({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-lobster",
 });
 
 export const metadata = {
@@ -141,7 +147,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${notoSans.variable} ${fredoka.variable}`}
+      className={`${poppins.variable} ${notoSans.variable} ${fredoka.variable} ${lobster.variable}`}
     >
       <head>
         <link rel="canonical" href="https://mindefy.tech" />

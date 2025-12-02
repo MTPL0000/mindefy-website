@@ -1,4 +1,4 @@
-import { LazyDigitalTransformation } from "../utils/lazyLoadService";
+import { LazyDigitalTransformation } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

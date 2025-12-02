@@ -1,6 +1,6 @@
 "use client";
 
-import { groupedServices } from "@/app/config/servicesConfig";
+import { groupedServices } from "@/config/servicesConfig";
 import Link from "next/link";
 
 export default function ServicesDrop({ onItemClick }) {

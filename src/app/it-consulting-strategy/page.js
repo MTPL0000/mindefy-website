@@ -1,4 +1,4 @@
-import { LazyITC } from "../utils/lazyLoadService";
+import { LazyITC } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

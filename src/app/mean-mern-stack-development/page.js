@@ -1,4 +1,4 @@
-import { LazyMeanMern } from "../utils/lazyLoadService";
+import { LazyMeanMern } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

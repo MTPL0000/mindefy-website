@@ -1,4 +1,4 @@
-import { LazyIOS } from "../utils/lazyLoadService";
+import { LazyIOS } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

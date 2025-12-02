@@ -1,4 +1,4 @@
-import { LazySolistack } from "../utils/lazyLoadService";
+import { LazySolistack } from "../../utils/lazyLoadService";
 import StructuredData, {
   createBreadcrumbData,
 } from "@/components/StructuredData";

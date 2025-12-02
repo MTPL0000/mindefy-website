@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import preloader from "../../../public/images/preloader.gif";
+import preloader from "../../public/images/preloader.gif";
 
 // Utility function to create lazy-loaded service components
 export function createLazyServiceComponent(componentPath, options = {}) {

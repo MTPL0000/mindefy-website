@@ -1,4 +1,4 @@
-import { LazyEnterpriseSolutions } from "../utils/lazyLoadService";
+import { LazyEnterpriseSolutions } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
