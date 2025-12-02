@@ -1,4 +1,4 @@
-import { LazyBPM } from "../utils/lazyLoadService";
+import { LazyBPM } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

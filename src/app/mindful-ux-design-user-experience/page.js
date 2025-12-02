@@ -1,4 +1,4 @@
-import { LazyMindfulUX } from "../utils/lazyLoadService";
+import { LazyMindfulUX } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

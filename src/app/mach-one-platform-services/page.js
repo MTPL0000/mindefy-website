@@ -1,4 +1,4 @@
-import { LazyMachONE } from "../utils/lazyLoadService";
+import { LazyMachONE } from "../../utils/lazyLoadService";
 import StructuredData, {
   createBreadcrumbData,
 } from "@/components/StructuredData";

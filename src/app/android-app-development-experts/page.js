@@ -1,4 +1,4 @@
-import { LazyAAD } from "../utils/lazyLoadService";
+import { LazyAAD } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

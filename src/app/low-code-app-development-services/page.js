@@ -1,4 +1,4 @@
-import { LazyLowCode } from "../utils/lazyLoadService";
+import { LazyLowCode } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

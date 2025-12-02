@@ -1,4 +1,4 @@
-import { LazySAS } from "../utils/lazyLoadService";
+import { LazySAS } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

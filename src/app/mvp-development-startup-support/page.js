@@ -1,4 +1,4 @@
-import { LazyMVPDevelopment } from "../utils/lazyLoadService";
+import { LazyMVPDevelopment } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

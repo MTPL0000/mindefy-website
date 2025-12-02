@@ -1,4 +1,4 @@
-import { LazyAgileRapid } from "../utils/lazyLoadService";
+import { LazyAgileRapid } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

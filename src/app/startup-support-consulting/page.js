@@ -1,4 +1,4 @@
-import { LazyStartupConsulting } from "../utils/lazyLoadService";
+import { LazyStartupConsulting } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

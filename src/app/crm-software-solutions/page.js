@@ -1,4 +1,4 @@
-import { LazyCRMSolutions } from "../utils/lazyLoadService";
+import { LazyCRMSolutions } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

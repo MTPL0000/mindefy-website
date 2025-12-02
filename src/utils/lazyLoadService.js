@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import preloader from "../../../public/images/preloader.gif";
+import preloader from "../../public/images/preloader.gif";
 
 // Utility function to create lazy-loaded service components
 export function createLazyServiceComponent(componentPath, options = {}) {
@@ -76,7 +76,7 @@ export const LazyCDS = createLazyServiceComponent("CDS");
 export const LazyBPM = createLazyServiceComponent("BPM");
 export const LazyAboutUs = createLazyServiceComponent("AboutUs");
 export const LazySolistack = createLazyServiceComponent("projects/Solistack");
-export const LazyYourHour = createLazyServiceComponent("products/YourHourTest");
+export const LazyYourHour = createLazyServiceComponent("products/YourHour");
 export const LazyGreenBill = createLazyServiceComponent("projects/GreenBill");
 export const LazyMachONE = createLazyServiceComponent("projects/MachONE");
 export const LazyTestimonialsMore =

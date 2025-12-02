@@ -1,4 +1,4 @@
-import { LazyAboutUs } from "../utils/lazyLoadService";
+import { LazyAboutUs } from "../../utils/lazyLoadService";
 
 export const metadata = {
   title:

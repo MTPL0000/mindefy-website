@@ -1,4 +1,4 @@
-import { LazyEcommerce } from "../utils/lazyLoadService";
+import { LazyEcommerce } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

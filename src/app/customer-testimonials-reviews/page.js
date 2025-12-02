@@ -1,4 +1,4 @@
-import { LazyTestimonialsMore } from "../utils/lazyLoadService";
+import { LazyTestimonialsMore } from "../../utils/lazyLoadService";
 import StructuredData, {
   createBreadcrumbData,
 } from "@/components/StructuredData";

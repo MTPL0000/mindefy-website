@@ -1,4 +1,4 @@
-import { LazyTestAutomation } from "../utils/lazyLoadService";
+import { LazyTestAutomation } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

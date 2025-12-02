@@ -1,4 +1,4 @@
-import { LazyWebApp } from "../utils/lazyLoadService";
+import { LazyWebApp } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

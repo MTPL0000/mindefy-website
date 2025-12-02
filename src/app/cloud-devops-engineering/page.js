@@ -1,4 +1,4 @@
-import { LazyCDS } from "../utils/lazyLoadService";
+import { LazyCDS } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,

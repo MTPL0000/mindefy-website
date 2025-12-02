@@ -1,4 +1,4 @@
-import { LazyGreenBill } from "../utils/lazyLoadService";
+import { LazyGreenBill } from "../../utils/lazyLoadService";
 import StructuredData, {
   createBreadcrumbData,
 } from "@/components/StructuredData";
