@@ -37,7 +37,7 @@ export default function YourHourProduct() {
           className="absolute top-0 right-0 w-1/2 h-full"
           style={{
             background:
-              "linear-gradient(180deg, rgba(18, 18, 18, 0) 30%, rgba(34, 171, 223, 0.45) 68%, rgba(18, 18, 18, 0) 95%)",
+              "linear-gradient(180deg, rgba(18, 18, 18, 0) 30%, rgba(34, 171, 223, 0.5) 68%, rgba(18, 18, 18, 0) 95%)",
             filter: "blur(50px)",
           }}
         ></div>
@@ -126,11 +126,13 @@ export default function YourHourProduct() {
       <div className="flex items-center justify-center px-4 py-4 mx-auto">
         <div className="flex flex-col items-center justify-center gap-8 md:gap-12 xl:gap-24 mt-6">
           <div className="flex flex-col items-center justify-center gap-5 mb-8">
-            <p className="text-[#FF5225] text-base font-bold tracking-wider uppercase text-center px-4 xl:px-0">
+            <p className="text-[#FF5225] tracking-[0.2em] text-sm md:text-base font-bold uppercase text-center px-4 xl:px-0">
               Maximize Your Success With Key Features and Advantages
             </p>
-            <span className="w-full xl:w-3xl text-lg md:text-xl xl:text-4xl font-semibold text-[#000000] text-center px-4 xl:px-0 leading-snug">
-              YourHour Offers A Range Of Key Features And Benefits To Its Users,
+            <span className="w-full xl:w-3xl text-lg md:text-xl xl:text-4xl font-medium text-[#000000] text-center px-4 xl:px-0 leading-snug">
+              YourHour{" "}
+              <span className="font-bold">Offers A Range Of Key Features</span>{" "}
+              And <span className="font-bold">Benefits To Its Users,</span>{" "}
               Including
             </span>
           </div>
@@ -264,7 +266,7 @@ export default function YourHourProduct() {
       <div className="px-4 py-4 mx-auto">
         <div className="max-w-5xl flex flex-col gap-7 items-center justify-center mx-auto px-4">
           {/* Top Tag */}
-          <p className="text-[#FF5225] font-poppins text-sm md:text-base font-bold uppercase">
+          <p className="text-[#FF5225] tracking-[0.2em] font-poppins text-sm md:text-base font-bold uppercase">
             NEW FEATURES INTRODUCED
           </p>
 
@@ -402,6 +404,293 @@ export default function YourHourProduct() {
                 functionality, implemented strong encryption protocols, and
                 maintained transparent data handling practices, earning user
                 trust in an era of increasing data privacy concerns.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* What Went Right For This Product */}
+      <div className="max-w-7xl px-4 py-12 mx-auto">
+        {/* Heading */}
+        <h2 className="text-2xl md:text-3xl font-poppins font-normal text-[#1A1A1A] text-center mb-8 lg:mb-16 leading-snug">
+          What <span className="font-bold">Went Right</span> For{" "}
+          <span className="font-bold">This Product</span>
+        </h2>
+
+        {/* Contents */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-12 lg:gap-20">
+          {/* LEFT SIDE – CHART CARD */}
+          <div
+            className="flex flex-col justify-center rounded-2xl p-9 h-fit"
+            style={{ boxShadow: "0px 0px 16px 0px #00000026" }}
+          >
+            <h3 className="text-xl md:text-2xl font-semibold font-poppins text-[#000000] mb-4">
+              Year-Wise User Growth
+              <span className="block text-sm text-[#6A7282] font-poppins font-medium">
+                2018 – 2025 Journey
+              </span>
+            </h3>
+
+            {/* Chart Image */}
+            <div className="relative w-full aspect-[4/2.5] mb-6">
+              <img
+                src="/images/your-hour/growth-graph.png"
+                alt="User Growth Chart"
+                className="w-full h-full object-contain"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Stats */}
+            <div className="flex flex-wrap gap-4">
+              <div className="w-38 bg-[#A6D6FF] p-4 rounded-2xl text-center">
+                <p className="text-xl text-[#20448F] font-poppins font-semibold mb-1">
+                  68.5M
+                </p>
+                <p className="text-xs text-[#20448F] font-medium font-poppins">
+                  Total Users
+                </p>
+              </div>
+              <div className="w-38 bg-[#A6D6FF] p-4 rounded-2xl text-center">
+                <p className="text-xl text-[#20448F] font-poppins font-semibold mb-1">
+                  +137x
+                </p>
+                <p className="text-xs text-[#20448F] font-medium font-poppins">
+                  Growth
+                </p>
+              </div>
+              <div className="w-38 bg-[#A6D6FF] p-4 rounded-2xl text-center">
+                <p className="text-xl text-[#20448F] font-poppins font-semibold mb-1">
+                  7 yrs
+                </p>
+                <p className="text-xs text-[#20448F] font-medium font-poppins">
+                  Journey
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT SIDE – TEXT CONTENT */}
+          <div className="space-y-12 text-sm md:text-base lg:text-lg font-medium font-poppins text-[#101010] leading-relaxed">
+            <p>
+              Your Hour entered the market at a time when concerns about
+              smartphone addiction and digital wellness were on the rise. The
+              product tapped into a growing need, positioning itself as a
+              solution for individuals seeking to regain control over their
+              screen time.
+            </p>
+
+            <p>
+              Your Hour's success can be attributed to its user-centric design
+              and features. The developers conducted extensive research to
+              understand user pain points and preferences, leading to the
+              creation of a comprehensive suite of tools and features that
+              addressed users' needs.
+            </p>
+
+            <p>
+              Your Hour prioritized delivering a seamless user experience. The
+              app's intuitive interface, smooth navigation, and straightforward
+              setup process allowed users to easily monitor their screen time,
+              set limits, and track progress without feeling overwhelmed or
+              confused.
+            </p>
+
+            <p>
+              The developers consistently listened to user feedback and
+              incorporated valuable suggestions into the app's updates. This
+              approach helped in enhancing the functionality, performance, and
+              overall user experience of Your Hour, contributing to user
+              retention and positive reviews.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Marketing and Distribution Section */}
+      <div className="px-4 py-8 md:py-16 mx-auto bg-white">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <p className="text-[#FF5225] tracking-[0.2em] font-poppins text-sm md:text-base font-bold uppercase mb-4">
+              MARKETING AND DISTRIBUTION
+            </p>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-poppins font-normal text-[#000000] leading-snug">
+              YourHour Employed{" "}
+              <span className="font-bold">Various Marketing</span> And{" "}
+              <span className="font-bold">Distribution Strategies</span> To
+              <br className="hidden md:block" />
+              Reach And Engage Its{" "}
+              <span className="font-bold">Target Audience</span>
+            </h2>
+          </div>
+
+          {/* Content Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 items-center">
+            {/* Left Column - Text Content */}
+            <div className="space-y-18 mt-[5rem]">
+              {/* Digital Marketing Campaigns */}
+              <div className="space-y-3">
+                <h3 className="w-full text-base md:text-lg font-poppins font-semibold text-[#000000] border-b border-[#000000] pb-2 inline-block">
+                  Digital Marketing Campaigns
+                </h3>
+                <p className="max-w-88 text-xs font-poppins text-[#000000] leading-relaxed text-justify">
+                  The Team Executed Targeted Digital Marketing Campaigns Using
+                  Social Media Platforms, Search Engine Optimization, And Online
+                  Advertisements To Raise Awareness About YourHour's Benefits
+                  And Drive App Downloads.
+                </p>
+              </div>
+
+              {/* Organic Virality */}
+              <div className="space-y-3">
+                <h3 className="w-full text-base md:text-lg font-poppins font-semibold text-[#000000] border-b border-[#000000] pb-2 inline-block">
+                  Organic Virality
+                </h3>
+                <p className="max-w-88 text-xs font-poppins text-[#000000] leading-relaxed text-justify">
+                  With A Mission To Tackle The Growing Concern Of Excessive
+                  Screen Time, YourHour Has Witnessed Unparalleled Organic
+                  Growth Since Its Launch. Satisfied Users Enthusiastically
+                  Share Their Positive Experiences With Friends And Family,
+                  Triggering A Powerful Effect Of Organic Growth For The App.
+                </p>
+              </div>
+
+              {/* Partnership with Educational Institutions */}
+              <div className="space-y-3 mt-[-1rem]">
+                <h3 className="w-full text-base md:text-lg font-poppins font-semibold text-[#000000] border-b border-[#000000] pb-2 inline-block">
+                  Partnership with Educational Institutions
+                </h3>
+                <p className="max-w-88 text-xs font-poppins text-[#000000] leading-relaxed text-justify">
+                  YourHour Has Established Partnerships With Educational
+                  Institutions To Promote Digital Wellness Among Students. This
+                  Involved Conducting Workshops, Providing Resources, And
+                  Offering Special Incentives For Student Engagement.
+                </p>
+              </div>
+            </div>
+
+            {/* marketingImg Illustration */}
+            <div className="relative w-[420px] h-[732px] mx-auto">
+              <Image
+                src="/images/your-hour/marketingImg.webp"
+                alt="Marketing and Distribution Strategies"
+                fill
+                className="object-contain"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Right Column - Illustration and More Text */}
+            <div className="space-y-16">
+              {/* App Store Optimization */}
+              <div className="space-y-3 text-right mt-[5rem]">
+                <h3 className="w-full text-base md:text-lg font-poppins font-semibold text-[#000000] border-b border-[#000000] pb-2 inline-block">
+                  App Store Optimization
+                </h3>
+                <p className="max-w-88 text-xs font-poppins text-[#000000] leading-relaxed ml-auto">
+                  The App's Visibility And Discoverability Were Enhanced Through
+                  Effective App Store Optimization Techniques, Including
+                  Optimizing Keywords, App Descriptions, And Screenshots.
+                </p>
+              </div>
+
+              {/* Influencer Collaborations */}
+              <div className="space-y-3 text-right mt-[6rem]">
+                <h3 className="w-full text-base md:text-lg font-poppins font-semibold text-[#000000] border-b border-[#000000] pb-2 inline-block">
+                  Influencer Collaborations
+                </h3>
+                <p className="max-w-88 text-xs font-poppins text-[#000000] leading-relaxed ml-auto">
+                  YourHour Collaborated With Social Media Influencers And
+                  Digital Wellness Advocates Who Shared Their Experiences Using
+                  The App, Expanding Its Reach And Credibility Among Their
+                  Followers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Customer Response and Impact */}
+      <div className="max-w-7xl px-4 py-4 md:py-16 mx-auto">
+        <p className="text-[#FF5225] tracking-[0.2em] font-poppins text-sm md:text-base font-bold uppercase text-center mb-10">
+          CUSTOMER RESPONSE AND IMPACT
+        </p>
+
+        <h2 className="max-w-3xl text-2xl md:text-3xl font-poppins font-normal text-[#1A1A1A] text-center mb-8 lg:mb-16 leading-snug mx-auto">
+          The <span className="font-bold">Response From Customers</span> And{" "}
+          <span className="font-bold">The Impact Of YourHour</span> Have Been{" "}
+          <span className="font-bold">Significant</span>
+        </h2>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Phone + Reviews */}
+          <div className="flex justify-center">
+            <div className="relative w-full aspect-square">
+              <Image
+                src="/images/your-hour/customer-response.webp"
+                alt="YourHour Reviews Phone"
+                fill
+                className="object-contain"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Text Content */}
+          <div className="space-y-10">
+            <div>
+              <h4 className="text-xl font-semibold text-[#212353] mb-2">
+                Positive User Reviews
+              </h4>
+              <p className="text-[#545671] leading-relaxed">
+                Users Have Praised YourHour For Its User-Friendly Interface,
+                Accurate Tracking, And Effective Tools For Managing Screen Time.
+                Many Have Reported Improvements In Productivity, Reduced Digital
+                Distractions, And A Healthier Balance Between Screen Time And
+                Real-Life Activities.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold text-[#212353] mb-2">
+                Behavioral Shifts
+              </h4>
+              <p className="text-[#545671] leading-relaxed">
+                YourHour&apos;s Impact Extends Beyond Individual Users. By
+                Helping Millions Of People Manage Their Screen Time, The App Has
+                Contributed To A Broader Behavioral Shift Towards Healthier
+                Digital Habits, Fostering Better Mental Health, Improved Focus,
+                And Increased Productivity.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold text-[#212353] mb-2">
+                Digital Wellbeing Advocacy
+              </h4>
+              <p className="text-[#545671] leading-relaxed">
+                YourHour&apos;s Success Has Positioned The App As A Key Player
+                In The Digital Wellbeing Space. It Has Become An Advocate For
+                Responsible Technology Usage And Has Inspired Conversations
+                About The Importance Of Digital Balance, Leading To Increased
+                Awareness And Discussions Around Digital Wellness.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold text-[#212353] mb-2">
+                User Retention and Engagement
+              </h4>
+              <p className="text-[#545671] leading-relaxed">
+                YourHour Has Achieved High User Retention Rates Due To Its
+                Valuable Features, Regular Updates, And Strong Customer Support.
+                The App&apos;s Active User Community And Engagement Through
+                Forums And Social Media Platforms Have Created A Sense Of
+                Belonging And Motivated Users To Continue Their Digital
+                Wellbeing Journey.
               </p>
             </div>
           </div>
