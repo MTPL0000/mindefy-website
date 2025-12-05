@@ -22,7 +22,7 @@ export default function YourHourProduct() {
         <div className="flex flex-col items-center justify-center">
           <div className="relative aspect-[1.36/1] w-full overflow-hidden">
             <Image
-              src="/images/your-hour/yh-1.webp"
+              src="/images/yourhour/yh-1.webp"
               alt="All Screens"
               fill
               className="object-contain"
@@ -79,7 +79,7 @@ export default function YourHourProduct() {
               </div>
               <div className="relative aspect-[1.36/1] w-full overflow-hidden">
                 <Image
-                  src="/images/your-hour/yh-2.webp"
+                  src="/images/yourhour/yh-2.webp"
                   alt="YourHour image"
                   fill
                   className="object-cover"
@@ -93,7 +93,7 @@ export default function YourHourProduct() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0">
           <div className="relative aspect-[1.36/1] w-full overflow-hidden">
             <Image
-              src="/images/your-hour/yh-3.webp"
+              src="/images/yourhour/yh-3.webp"
               alt="YourHour image"
               fill
               className="object-contain"
@@ -126,7 +126,7 @@ export default function YourHourProduct() {
           </div>
           <div className="relative aspect-[1.36/1] w-full overflow-hidden">
             <Image
-              src="/images/your-hour/yh-4.webp"
+              src="/images/yourhour/yh-4.webp"
               alt="YourHour image"
               fill
               className="object-contain"
@@ -138,7 +138,7 @@ export default function YourHourProduct() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0">
           <div className="relative aspect-[1.36/1] w-full overflow-hidden">
             <Image
-              src="/images/your-hour/yh-5.webp"
+              src="/images/yourhour/yh-5.webp"
               alt="YourHour image"
               fill
               className="object-contain"
@@ -173,7 +173,7 @@ export default function YourHourProduct() {
           </div>
           <div className="relative aspect-[1.36/1] w-full overflow-hidden">
             <Image
-              src="/images/your-hour/yh-6.webp"
+              src="/images/yourhour/yh-6.webp"
               alt="YourHour image"
               fill
               className="object-contain"
@@ -197,7 +197,7 @@ export default function YourHourProduct() {
             <div className="flex flex-col items-center justify-center">
               <div className="relative aspect-[1.8/1] w-full overflow-hidden">
                 <Image
-                  src="/images/your-hour/md.webp"
+                  src="/images/yourhour/md.webp"
                   alt="YourHour image"
                   fill
                   className="object-contain"
@@ -271,7 +271,7 @@ export default function YourHourProduct() {
             <div className="flex flex-col items-center justify-center">
               <div className="relative aspect-[1.36/1] w-full overflow-hidden">
                 <Image
-                  src="/images/your-hour/CR.webp"
+                  src="/images/yourhour/CR.webp"
                   alt="YourHour image"
                   fill
                   className="object-contain"
@@ -336,7 +336,7 @@ export default function YourHourProduct() {
             <div className="flex flex-col items-center justify-center">
               <div className="relative aspect-[1.36/1] w-full overflow-hidden">
                 <Image
-                  src="/images/your-hour/TP.webp"
+                  src="/images/yourhour/TP.webp"
                   alt="YourHour image"
                   fill
                   className="object-contain"
@@ -394,7 +394,7 @@ export default function YourHourProduct() {
             <div className="flex flex-col items-center justify-center">
               <div className="relative aspect-[1.36/1] w-full overflow-hidden">
                 <Image
-                  src="/images/your-hour/LSU.webp"
+                  src="/images/yourhour/LSU.webp"
                   alt="YourHour image"
                   fill
                   className="object-contain"
@@ -404,7 +404,7 @@ export default function YourHourProduct() {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-7 mb-9">
                   <div className="relative aspect-[1/1] w-[50px] md:w-[22%] overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/your-hour/cap-icon.png"
+                      src="/images/yourhour/cap-icon.png"
                       alt="YourHour image"
                       fill
                       className="object-cover"
@@ -427,7 +427,7 @@ export default function YourHourProduct() {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-7 mb-9">
                   <div className="relative aspect-[1/1] w-[50px] md:w-[22%] overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/your-hour/hand-icon.png"
+                      src="/images/yourhour/hand-icon.png"
                       alt="YourHour image"
                       fill
                       className="object-contain"
@@ -450,7 +450,7 @@ export default function YourHourProduct() {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-7 mb-9">
                   <div className="relative aspect-[1/1] w-[50px] md:w-[22%] overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/your-hour/innovation-icon.png"
+                      src="/images/yourhour/innovation-icon.png"
                       alt="YourHour image"
                       fill
                       className="object-contain"
@@ -472,7 +472,7 @@ export default function YourHourProduct() {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-7 mb-9">
                   <div className="relative aspect-[1/1] w-[50px] md:w-[22%] overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/your-hour/book-icon.png"
+                      src="/images/yourhour/book-icon.png"
                       alt="YourHour image"
                       fill
                       className="object-contain"
@@ -494,7 +494,7 @@ export default function YourHourProduct() {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-7 mb-9">
                   <div className="relative aspect-[1/1] w-[50px] md:w-[22%] overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/your-hour/lock-icon.png"
+                      src="/images/yourhour/lock-icon.png"
                       alt="YourHour image"
                       fill
                       className="object-contain"
@@ -532,7 +532,7 @@ export default function YourHourProduct() {
             <div className="flex flex-col items-center justify-center gap-[2rem]">
               <div className="relative aspect-[1.36/1] w-full overflow-hidden">
                 <Image
-                  src="/images/your-hour/MRA.webp"
+                  src="/images/yourhour/MRA.webp"
                   alt="YourHour image"
                   fill
                   className="object-contain"
