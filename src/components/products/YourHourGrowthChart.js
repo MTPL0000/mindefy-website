@@ -297,7 +297,7 @@ export default function YourHourGrowthChart() {
           }`}
         >
           <p className="text-xl text-[#20448F] font-poppins font-semibold mb-1">
-            5M
+            5 Million
           </p>
           <p className="text-xs text-[#20448F] font-medium font-poppins">
             Total Users

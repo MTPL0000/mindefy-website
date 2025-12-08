@@ -124,7 +124,7 @@ export default function YourHourProduct() {
       </div>
 
       {/* Screen Time Monitoring */}
-      <div className="flex items-center justify-center px-4 py-4 mx-auto">
+      <div className="flex items-center justify-center px-4 py-8 md:py-12 mx-auto">
         <div className="flex flex-col items-center justify-center gap-8 md:gap-12 xl:gap-24 mt-6">
           <div className="flex flex-col items-center justify-center gap-5 mb-8">
             <p className="text-[#FF5225] tracking-[0.2em] text-sm md:text-base font-bold font-poppins uppercase text-center px-4 xl:px-0">
@@ -137,23 +137,22 @@ export default function YourHourProduct() {
               Including
             </span>
           </div>
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
-            <div className="max-w-lg">
-              <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
-                Screen Time Monitoring
-              </h3>
-              <p className="text-sm md:text-base xl:text-lg font-poppins font-normal text-[#444444] leading-relaxed text-center lg:text-left">
-                Users can track their daily and weekly screen time usage across
-                various apps and categories, gaining insights into their digital
-                habits and identifying areas for improvement.
-              </p>{" "}
-            </div>
-            <div className="relative aspect-[1/1] w-full md:w-xl overflow-hidden">
-              <Image
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="w-full max-w-[33.15rem]">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
+                  Screen Time Monitoring
+                </h3>
+                <p className="text-sm md:text-base xl:text-lg font-poppins font-normal text-[#444444] leading-relaxed text-center lg:text-left">
+                  Users can track their daily and weekly screen time usage
+                  across various apps and categories, gaining insights into
+                  their digital habits and identifying areas for improvement.
+                </p>
+              </div>
+              <img
                 src="/images/yourhour/dashboard.webp"
                 alt="YourHour image"
-                fill
-                className="object-contain"
+                className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
                 loading="lazy"
               />
             </div>
@@ -162,18 +161,17 @@ export default function YourHourProduct() {
       </div>
 
       {/* App Usage Analysis */}
-      <div className="flex items-center justify-center px-4 py-4 mx-auto">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:gap-16">
-          <div className="relative aspect-[1/1] w-full md:w-xl overflow-hidden">
-            <Image
+      <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="order-2 md:order-1">
+            <img
               src="/images/yourhour/analysis.webp"
               alt="YourHour image"
-              fill
-              className="object-contain"
+              className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
               loading="lazy"
             />
           </div>
-          <div className="max-w-lg">
+          <div className="order-1 md:order-2">
             <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
               App Usage Analysis
             </h3>
@@ -187,9 +185,9 @@ export default function YourHourProduct() {
       </div>
 
       {/* Customizable Reminders And Alerts */}
-      <div className="flex items-center justify-center px-4 py-4 mx-auto">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
-          <div className="max-w-lg">
+      <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
             <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
               Customizable Reminders And Alerts
             </h3>
@@ -199,31 +197,28 @@ export default function YourHourProduct() {
               healthier usage patterns.
             </p>
           </div>
-          <div className="relative aspect-[1/1] w-full md:w-xl overflow-hidden">
-            <Image
-              src="/images/yourhour/alerts.webp"
-              alt="YourHour image"
-              fill
-              className="object-contain"
-              loading="lazy"
-            />
-          </div>
+          <img
+            src="/images/yourhour/alerts.webp"
+            alt="YourHour image"
+            className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
+            loading="lazy"
+          />
         </div>
       </div>
 
       {/* Curated & Scheduled Challenges */}
-      <div className="flex items-center justify-center px-4 py-4 mx-auto">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:gap-16">
-          <div className="relative aspect-[1/1] w-full md:w-xl overflow-hidden">
-            <Image
+      <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="order-2 md:order-1">
+            <img
               src="/images/yourhour/challenges.webp"
               alt="YourHour image"
-              fill
-              className="object-contain"
+              className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
               loading="lazy"
             />
           </div>
-          <div className="max-w-lg">
+
+          <div className="order-1 md:order-2">
             <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
               Curated & Scheduled Challenges
             </h3>
@@ -238,9 +233,9 @@ export default function YourHourProduct() {
       </div>
 
       {/* Personalized Detailed Reports */}
-      <div className="flex items-center justify-center px-4 py-4 mx-auto">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
-          <div className="max-w-lg">
+      <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
             <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
               Personalized Detailed Reports
             </h3>
@@ -251,28 +246,25 @@ export default function YourHourProduct() {
               notification to the user at the end of each day.
             </p>
           </div>
-          <div className="relative aspect-[1/1] w-full md:w-xl overflow-hidden">
-            <Image
-              src="/images/yourhour/reports.webp"
-              alt="YourHour image"
-              fill
-              className="object-contain"
-              loading="lazy"
-            />
-          </div>
+          <img
+            src="/images/yourhour/reports.webp"
+            alt="YourHour image"
+            className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
+            loading="lazy"
+          />
         </div>
       </div>
 
       {/* NEW FEATURES Mindful Pause */}
-      <div className="px-4 py-4 mx-auto">
-        <div className="max-w-5xl flex flex-col gap-7 items-center justify-center mx-auto px-4">
+      <div className="px-4 py-8 mx-auto">
+        <div className="max-w-5xl flex flex-col gap-7 items-center justify-center mx-auto">
           {/* Top Tag */}
-          <p className="text-[#FF5225] tracking-[0.2em] text-sm md:text-base font-bold font-poppins uppercase text-center px-4 xl:px-0">
+          <p className="text-[#FF5225] tracking-[0.2em] text-sm md:text-base font-bold font-poppins uppercase text-center ">
             NEW FEATURES INTRODUCED
           </p>
 
           {/* Heading */}
-          <span className="w-full max-w-3xl text-lg md:text-4xl font-semibold font-poppins text-[#000000] text-center px-4 xl:px-0 leading-snug">
+          <span className="w-full max-w-3xl text-lg md:text-4xl font-semibold font-poppins text-[#000000] text-center leading-snug">
             Mindful Pause | Usage Pattern
           </span>
 
@@ -299,22 +291,22 @@ export default function YourHourProduct() {
         </div>
 
         {/* Image */}
-        <div className="relative aspect-[1/0.7] w-full md:w-[46rem] lg:w-[50.65rem] mx-auto overflow-hidden">
+        <div className="relative aspect-[1/0.7] w-full max-w-5xl mx-auto">
           <Image
             src="/images/yourhour/mindful-pause.webp"
             alt="YourHour image"
             fill
-            className="object-contain"
+            className="object-contain scale-105"
             loading="lazy"
           />
         </div>
       </div>
 
       {/* What We Learned Section */}
-      <div className="px-4 py-4 mx-auto">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
+      <div className="px-4 py-6 mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Heading */}
-          <h2 className="hidden md:visible md:flex items-center flex-wrap justify-center gap-3 text-lg md:text-4xl font-normal font-poppins text-[#000000] text-center px-4 leading-snug">
+          <h2 className="hidden md:visible md:flex items-center flex-wrap justify-center gap-3 text-lg md:text-4xl font-normal font-poppins text-[#000000] text-center leading-snug">
             What <span className="font-bold">We Have Learned</span> Serving
             <span className="font-bold text-8xl">5</span>
             <span className="font-bold">Million</span> Users
@@ -326,7 +318,7 @@ export default function YourHourProduct() {
           </h2>
 
           {/* Illustration */}
-          <div className="relative w-full aspect-[1/0.9] md:w-[45rem] mx-auto">
+          <div className="relative w-full aspect-[1/0.9] md:w-180 mx-auto">
             <Image
               src="/images/yourhour/learn-serving.webp"
               alt="Learned Illustration"
@@ -467,7 +459,7 @@ export default function YourHourProduct() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <p className="text-[#FF5225] tracking-[0.2em] text-sm md:text-base font-bold font-poppins uppercase text-center px-4 xl:px-0 mb-8 lg:mb-16">
+            <p className="text-[#FF5225] tracking-[0.2em] text-sm md:text-base font-bold font-poppins uppercase text-center mb-8 lg:mb-16">
               MARKETING AND DISTRIBUTION
             </p>
             <h2 className="text-lg md:text-4xl font-normal font-poppins text-[#000000] text-center leading-snug">
@@ -483,7 +475,7 @@ export default function YourHourProduct() {
           {/* Content Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-3 items-center">
             {/* Left Column - Text Content */}
-            <div className="space-y-18 mt-[5rem]">
+            <div className="space-y-18 mt-20">
               {/* Digital Marketing Campaigns */}
               <div className="space-y-3">
                 <h3 className="w-full text-base md:text-lg font-poppins font-semibold text-[#000000] border-b border-[#000000] pb-2 inline-block">
@@ -512,7 +504,7 @@ export default function YourHourProduct() {
               </div>
 
               {/* Partnership with Educational Institutions */}
-              <div className="space-y-3 mt-[-1rem]">
+              <div className="space-y-3 -mt-4">
                 <h3 className="w-full text-base md:text-lg font-poppins font-semibold text-[#000000] border-b border-[#000000] pb-2 inline-block">
                   Partnership with Educational Institutions
                 </h3>
@@ -539,7 +531,7 @@ export default function YourHourProduct() {
             {/* Right Column - Illustration and More Text */}
             <div className="space-y-16">
               {/* App Store Optimization */}
-              <div className="space-y-3 text-right mt-[5rem]">
+              <div className="space-y-3 text-right mt-20">
                 <h3 className="w-full text-base md:text-lg font-poppins font-semibold text-[#000000] border-b border-[#000000] pb-2 inline-block">
                   App Store Optimization
                 </h3>
@@ -551,7 +543,7 @@ export default function YourHourProduct() {
               </div>
 
               {/* Influencer Collaborations */}
-              <div className="space-y-3 text-right mt-[6rem]">
+              <div className="space-y-3 text-right mt-24">
                 <h3 className="w-full text-base md:text-lg font-poppins font-semibold text-[#000000] border-b border-[#000000] pb-2 inline-block">
                   Influencer Collaborations
                 </h3>
@@ -568,8 +560,8 @@ export default function YourHourProduct() {
       </div>
 
       {/* Customer Response and Impact */}
-      <div className="max-w-7xl px-4 py-4 md:py-16 mx-auto">
-        <p className="text-[#FF5225] tracking-[0.2em] text-sm md:text-base font-bold font-poppins uppercase text-center px-4 xl:px-0 mb-8 lg:mb-16">
+      <div className="max-w-7xl px-4 py-6 md:py-16 mx-auto">
+        <p className="text-[#FF5225] tracking-[0.2em] text-sm md:text-base font-bold font-poppins uppercase text-center mb-8 lg:mb-16">
           CUSTOMER RESPONSE AND IMPACT
         </p>
 
@@ -652,17 +644,17 @@ export default function YourHourProduct() {
       </div>
 
       {/* How We Managed Release */}
-      <div className="px-4 py-4 md:py-16 mx-auto">
+      <div className="px-4 py-6 md:py-16 mx-auto">
         <div className="flex items-center justify-center">
           <div className="flex flex-col items-center justify-center gap-10 md:gap-15">
             <div className="flex flex-col items-center justify-center gap-5">
-              <h2 className="w-full xl:w-5xl text-lg md:text-4xl font-normal font-poppins text-[#000000] text-center px-4 xl:px-0 leading-snug">
+              <h2 className="w-full xl:w-5xl text-lg md:text-4xl font-normal font-poppins text-[#000000] text-center leading-snug">
                 How <strong>We Managed</strong> To{" "}
                 <strong>Release Over 350 App</strong> Updates
                 <br /> With <strong>A Team Of 2 Developers</strong>
               </h2>
             </div>
-            <div className="flex flex-col items-center px-4">
+            <div className="flex flex-col items-center">
               {/* Top Row */}
               <div className="flex flex-col xl:flex-row gap-5 mb-14">
                 {/* Card 1 */}
@@ -706,7 +698,7 @@ export default function YourHourProduct() {
 
               {/* Bottom Centered Card */}
               <div
-                className="bg-[#FFFFFF] rounded-2xl p-6 xl:p-8 w-full xl:w-[35.65rem] h-auto xl:h-[18rem] text-center"
+                className="bg-[#FFFFFF] rounded-2xl p-6 xl:p-8 w-full xl:w-[35.65rem] h-auto xl:h-72 text-center"
                 style={{ boxShadow: "4px 4px 17px rgba(54, 47, 115, 0.5)" }}
               >
                 <h3 className="text-xl xl:text-2xl font-semibold mb-4 xl:mb-7">
