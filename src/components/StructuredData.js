@@ -13,7 +13,7 @@ export const organizationData = {
   "@type": "Organization",
   name: "Mindefy Technologies",
   description:
-    "Leading software development company providing innovative solutions for enterprises and startups.",
+    "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
   url: "https://mindefy.tech",
   logo: "https://mindefy.tech/images/logo/mindefy-logo.png",
   contactPoint: {
@@ -52,7 +52,7 @@ export const websiteData = {
   name: "Mindefy Technologies",
   url: "https://mindefy.tech",
   description:
-    "Leading software development company providing innovative solutions for enterprises and startups.",
+    "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
   publisher: {
     "@type": "Organization",
     name: "Mindefy Technologies",
@@ -83,8 +83,6 @@ export const createServiceData = (service) => ({
   availableChannel: {
     "@type": "ServiceChannel",
     serviceUrl: service.url,
-    serviceSmsNumber: "+1-XXX-XXX-XXXX",
-    servicePhone: "+1-XXX-XXX-XXXX",
   },
 });
 

@@ -67,8 +67,6 @@ export default function ARVRGameDevelopmentPage() {
     availableChannel: {
       "@type": "ServiceChannel",
       serviceUrl: "https://mindefy.tech/ar-vr-game-development",
-      servicePhone: "+1-234-567-8900",
-      serviceSmsNumber: "+1-234-567-8900",
     },
   });
 
@@ -91,15 +89,6 @@ export default function ARVRGameDevelopmentPage() {
     brand: {
       "@type": "Brand",
       name: "Mindefy Technologies",
-    },
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      priceCurrency: "USD",
-      seller: {
-        "@type": "Organization",
-        name: "Mindefy Technologies",
-      },
     },
     category: "Software Development",
     applicationCategory: "AR/VR Development",

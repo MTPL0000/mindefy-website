@@ -8,19 +8,7 @@ export function createLazyServiceComponent(componentPath, options = {}) {
     () => {
       // Add artificial delay in development to see the loader
       const importPromise = import(`@/components/${componentPath}`);
-      // if (process.env.NODE_ENV === 'development') {
-      //   return new Promise(resolve => {
-      //     setTimeout(() => {
-      //       importPromise.then(resolve);
-      //     }, 500); // 0.5 second delay in development
-      //   });
-      // }
-      // return importPromise;
-      // return new Promise(resolve => {
-      //   setTimeout(() => {
-      //     importPromise.then(resolve);
-      //   }, 500); // 0.5 second delay in development
-      // });
+
       return importPromise;
     },
     {
