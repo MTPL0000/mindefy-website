@@ -7,6 +7,7 @@ import ProductsDropdown from "./ProductsDropdown";
 import { ProjectDropdown } from "./ProjectDropdown";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { servicesData } from "@/config/servicesConfig";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -20,17 +21,8 @@ export default function Navbar() {
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
 
-  // New states for nested service categories
-  const [mobileCustomAIOpen, setMobileCustomAIOpen] = useState(false);
-  const [mobileModernAppOpen, setMobileModernAppOpen] = useState(false);
-  const [mobileDigitalTransformOpen, setMobileDigitalTransformOpen] =
-    useState(false);
-  const [mobileCloudDevOpsOpen, setMobileCloudDevOpsOpen] = useState(false);
-  const [mobileGameDevOpen, setMobileGameDevOpen] = useState(false);
-  const [mobileStartupSupportOpen, setMobileStartupSupportOpen] =
-    useState(false);
-  const [mobileEnterpriseOpen, setMobileEnterpriseOpen] = useState(false);
-  const [mobileITStaffOpen, setMobileITStaffOpen] = useState(false);
+  // Dynamic state for categories - using object to track open/closed state
+  const [openCategories, setOpenCategories] = useState({});
 
   // States for transition effects
   const [servicesTransitioning, setServicesTransitioning] = useState(false);
@@ -39,6 +31,15 @@ export default function Navbar() {
 
   // State for AI text animation - only on home page during scroll
   const [showAIInNavbar, setShowAIInNavbar] = useState(!isHomePage);
+
+  // Group services by category
+  const servicesByCategory = servicesData.reduce((acc, service) => {
+    if (!acc[service.category]) {
+      acc[service.category] = [];
+    }
+    acc[service.category].push(service);
+    return acc;
+  }, {});
 
   // Scroll handler for AI animation - only active on home page
   useEffect(() => {
@@ -96,15 +97,7 @@ export default function Navbar() {
       setMobileServicesOpen(false);
       setMobileProductsOpen(false);
       setMobileProjectsOpen(false);
-      // Close all nested service categories
-      setMobileCustomAIOpen(false);
-      setMobileModernAppOpen(false);
-      setMobileDigitalTransformOpen(false);
-      setMobileCloudDevOpsOpen(false);
-      setMobileGameDevOpen(false);
-      setMobileStartupSupportOpen(false);
-      setMobileEnterpriseOpen(false);
-      setMobileITStaffOpen(false);
+      setOpenCategories({});
     }
   };
 
@@ -115,15 +108,15 @@ export default function Navbar() {
 
     // If closing Services dropdown, reset all nested states
     if (!newServicesState) {
-      setMobileCustomAIOpen(false);
-      setMobileModernAppOpen(false);
-      setMobileDigitalTransformOpen(false);
-      setMobileCloudDevOpsOpen(false);
-      setMobileGameDevOpen(false);
-      setMobileStartupSupportOpen(false);
-      setMobileEnterpriseOpen(false);
-      setMobileITStaffOpen(false);
+      setOpenCategories({});
     }
+  };
+
+  const toggleCategory = (categoryName) => {
+    setOpenCategories((prev) => {
+      // Close all categories and open only the clicked one
+      return { [categoryName]: !prev[categoryName] };
+    });
   };
 
   // Close mobile menu when any option is clicked
@@ -132,15 +125,7 @@ export default function Navbar() {
     setMobileServicesOpen(false);
     setMobileProductsOpen(false);
     setMobileProjectsOpen(false);
-    // Close all nested service categories
-    setMobileCustomAIOpen(false);
-    setMobileModernAppOpen(false);
-    setMobileDigitalTransformOpen(false);
-    setMobileCloudDevOpsOpen(false);
-    setMobileGameDevOpen(false);
-    setMobileStartupSupportOpen(false);
-    setMobileEnterpriseOpen(false);
-    setMobileITStaffOpen(false);
+    setOpenCategories({});
   };
 
   // Close all desktop dropdowns when any dropdown item is clicked
@@ -459,7 +444,9 @@ export default function Navbar() {
                 alt="Dropdown"
                 width={10}
                 height={10}
-                className="object-contain"
+                className={`object-contain transition-transform ${
+                  showServicesDropdown ? "rotate-180" : ""
+                }`}
               />
             </p>
 
@@ -467,11 +454,11 @@ export default function Navbar() {
             {showServicesDropdown && (
               <>
                 {/* Invisible hover bridge */}
-                <div className="fixed left-0 top-[4rem] w-full h-[5rem] z-30"></div>
+                <div className="fixed left-0 top-16  w-full h-20 z-30"></div>
 
                 {/* Actual dropdown positioned to take full width */}
                 <div
-                  className={`fixed left-0 top-[4.5rem] w-full flex justify-center z-40 transition-opacity duration-200 ease-in-out ${
+                  className={`fixed left-0 top-18 w-full flex justify-center z-40 transition-opacity duration-200 ease-in-out ${
                     servicesTransitioning ? "opacity-0" : "opacity-100"
                   }`}
                 >
@@ -502,14 +489,16 @@ export default function Navbar() {
                 alt="Dropdown"
                 width={10}
                 height={10}
-                className="object-contain"
+                className={`object-contain transition-transform ${
+                  showProductsDropdown ? "rotate-180" : ""
+                }`}
               />
             </p>
 
             {/* Products Dropdown */}
             {showProductsDropdown && (
               <div
-                className={`absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40 transition-opacity duration-200 ease-in-out ${
+                className={`absolute left-1/2 transform -translate-x-1/2 top-12 z-40 transition-opacity duration-200 ease-in-out ${
                   productsTransitioning ? "opacity-0" : "opacity-100"
                 }`}
               >
@@ -537,14 +526,16 @@ export default function Navbar() {
                 alt="Dropdown"
                 width={10}
                 height={10}
-                className="object-contain"
+                className={`object-contain transition-transform ${
+                  showProjectsDropdown ? "rotate-180" : ""
+                }`}
               />
             </p>
 
             {/* Projects Dropdown */}
             {showProjectsDropdown && (
               <div
-                className={`absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40 transition-opacity duration-200 ease-in-out ${
+                className={`absolute left-1/2 transform -translate-x-1/2 top-12 z-40 transition-opacity duration-200 ease-in-out ${
                   projectsTransitioning ? "opacity-0" : "opacity-100"
                 }`}
               >
@@ -585,21 +576,21 @@ export default function Navbar() {
         }`}
       >
         <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
-          <div className="flex flex-col gap-4 text-sm font-medium text-[#3B3C4A] p-4">
+          <div className="flex flex-col gap-2 text-sm font-medium text-[#3B3C4A] px-3 py-4">
             {/* AI Tab in mobile menu - always visible on all pages */}
             <Link
               href="/ai-ml-services"
               onClick={handleMobileMenuItemClick}
-              className="hover:text-[#2c2178] py-2 animate-slideIn"
+              className="hover:text-[#2c2178] py-1 animate-slideIn"
             >
               AI
             </Link>
 
-            {/* Mobile Services Dropdown */}
+            {/* Mobile Services Dynamic Dropdown */}
             <div>
               <button
                 onClick={toggleMobileServices}
-                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-1 text-left cursor-pointer"
               >
                 Services
                 <Image
@@ -615,478 +606,41 @@ export default function Navbar() {
 
               {mobileServicesOpen && (
                 <div className="pl-4 mt-2 space-y-2 text-xs">
-                  {/* AI & Data Solutions */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileCustomAIOpen(!mobileCustomAIOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      AI & Data Solutions
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileCustomAIOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileCustomAIOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/custom-ai-solutions-enterprises"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
+                  {Object.entries(servicesByCategory).map(
+                    ([category, services]) => (
+                      <div key={category}>
+                        <button
+                          onClick={() => toggleCategory(category)}
+                          className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
                         >
-                          Custom AI Solution
-                        </Link>
-
-                        <Link
-                          href="/machine-learning-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Machine Learning
-                        </Link>
-
-                        <Link
-                          href="/advanced-data-engineering-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Data Engineering
-                        </Link>
-
-                        <Link
-                          href="/cloud-engineering-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Cloud Engineering
-                        </Link>
+                          {category}
+                          <Image
+                            src="/images/dropdown-icon.png"
+                            alt="Dropdown"
+                            width={8}
+                            height={8}
+                            className={`object-contain transition-transform ${
+                              openCategories[category] ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+                        {openCategories[category] && (
+                          <div className="pl-4 mt-1 space-y-1">
+                            {services.map((service) => (
+                              <Link
+                                key={service.id}
+                                href={service.route}
+                                onClick={handleMobileMenuItemClick}
+                                className="block hover:text-red-600"
+                              >
+                                {service.title}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-
-                  {/* Modern Application Development */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileModernAppOpen(!mobileModernAppOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Modern Application Development
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileModernAppOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileModernAppOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/web-application-development-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Web Application Development
-                        </Link>
-                        <Link
-                          href="/android-app-development-experts"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Android App Development
-                        </Link>
-                        <Link
-                          href="/ios-app-development-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          iOS App Development
-                        </Link>
-                        <Link
-                          href="/hybrid-app-development-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Hybrid App Development
-                        </Link>
-                        <Link
-                          href="/mean-mern-stack-development"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          MEAN & MERN Stack Development
-                        </Link>
-                        <Link
-                          href="/agile-rapid-development-practices"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Agile & Rapid Application Development Model
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Digital Transformation Services */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileDigitalTransformOpen(
-                          !mobileDigitalTransformOpen
-                        );
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Digital Transformation Services
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileDigitalTransformOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileDigitalTransformOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/digital-transformation-consulting"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Digital Transformation Services
-                        </Link>
-                        <Link
-                          href="/microservices-architecture-consulting"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Building Micro-services Architecture
-                        </Link>
-                        <Link
-                          href="/low-code-app-development-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Low Code Development
-                        </Link>
-                        <Link
-                          href="/test-automation-qa-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Application Test Automation and QA Services
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Cloud & DevOps */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileCloudDevOpsOpen(!mobileCloudDevOpsOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Cloud & DevOps
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileCloudDevOpsOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileCloudDevOpsOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/cloud-devops-engineering"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Cloud & DevOps
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Game Development */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileGameDevOpen(!mobileGameDevOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Game Development
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileGameDevOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileGameDevOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/game-animation-graphics"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          2D & 3D Game Animation
-                        </Link>
-                        <Link
-                          href="/unity-unreal-engine-development"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Unity 3D & Unreal Engine Development
-                        </Link>
-                        <Link
-                          href="/ar-vr-game-development"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          AR/VR Game Development
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Startup Support & Consulting */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileStartupSupportOpen(!mobileStartupSupportOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Startup Support & Consulting
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileStartupSupportOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileStartupSupportOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/startup-support-consulting"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Startup Support and Consulting
-                        </Link>
-                        <Link
-                          href="/mvp-development-startup-support"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          MVP Development & PMF Test
-                        </Link>
-                        <Link
-                          href="/white-label-software-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          White Label App Solutions
-                        </Link>
-                        <Link
-                          href="/startup-incubation-consulting-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Startup Incubation Services
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Enterprise Business Solutions */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileEnterpriseOpen(!mobileEnterpriseOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Enterprise Business Solutions
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileEnterpriseOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileEnterpriseOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/enterprise-software-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Enterprise Business Solutions
-                        </Link>
-                        <Link
-                          href="/crm-software-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          CRM Solutions
-                        </Link>
-                        <Link
-                          href="/business-process-management-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Business Process Management
-                        </Link>
-                        <Link
-                          href="/ecommerce-marketplace-development"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          E-commerce and Marketplace
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* IT/Staff Augmentation */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        // Then toggle this one
-                        setMobileITStaffOpen(!mobileITStaffOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      IT/Staff Augmentation
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileITStaffOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileITStaffOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/staff-augmentation-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Staff Augmentation Services
-                        </Link>
-                        <Link
-                          href="/it-consulting-strategy"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          IT Consulting Services
-                        </Link>
-                      </div>
-                    )}
-                  </div>
+                    )
+                  )}
                 </div>
               )}
             </div>
@@ -1095,7 +649,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
-                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-1 text-left cursor-pointer"
               >
                 Products
                 <Image
@@ -1125,7 +679,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
-                className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
+                className="flex items-center justify-between w-full hover:text-[#2c2178] py-1 text-left cursor-pointer"
               >
                 Projects
                 <Image
@@ -1189,7 +743,7 @@ export default function Navbar() {
             <a
               href="/mindful-ux-design-user-experience"
               onClick={handleMobileMenuItemClick}
-              className="hover:text-[#2c2178] cursor-pointer py-2"
+              className="hover:text-[#2c2178] cursor-pointer py-1"
             >
               Mindful UX "Design Studio"
             </a>

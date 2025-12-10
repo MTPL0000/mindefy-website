@@ -6,27 +6,27 @@ import { WhyAISection } from "@/components/AIML/WhyAISection";
 import { WhyChooseSection } from "@/components/AIML/WhyChooseSection";
 
 export const metadata = {
-  title: "Custom AI Solutions for Enterprises | Mindefy Technologies",
+  title: "Custom AI Development for Enterprises | Mindefy Technologies",
   description:
     "Delivers custom enterprise AI solutions including Generative AI, RAG, AI agents, and decision intelligence to design and deploy scalable, enterprise-ready AI systems for real business impact.",
   alternates: {
     canonical: "https://mindefy.tech/custom-ai-solutions-enterprises",
   },
   openGraph: {
-    title: "Custom AI Solutions for Enterprises | Mindefy Technologies",
+    title: "Custom AI Development for Enterprises | Mindefy Technologies",
     description:
       "Delivers custom enterprise AI solutions including Generative AI, RAG, AI agents, and decision intelligence to design and deploy scalable, enterprise-ready AI systems for real business impact.",
     url: "https://mindefy.tech/custom-ai-solutions-enterprises",
   },
   twitter: {
-    title: "Custom AI Solutions for Enterprises | Mindefy Technologies",
+    title: "Custom AI Development for Enterprises | Mindefy Technologies",
     description:
       "Delivers custom enterprise AI solutions including Generative AI, RAG, AI agents, and decision intelligence to design and deploy scalable, enterprise-ready AI systems for real business impact.",
   },
 };
 
 export const heroData = {
-  title: "Custom AI Solutions",
+  title: "Custom AI Development",
   subtitle: "Beyond Buzzwords: AI That Works In Production",
   description:
     "Artificial Intelligence is powerful, but only if it’s applied the right way. We help organizations design and deploy AI solutions that are explainable, secure, and production-ready - not just proofs of concept.",

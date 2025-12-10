@@ -69,7 +69,7 @@ export default function Services() {
 
 const services = [
   {
-    title: "Modern Application Development",
+    title: "Product Development",
     description:
       "Our team of experts combines technology, platform proficiency, and business acumen to empower startups",
     points: [
@@ -137,9 +137,9 @@ const services = [
     points: ["YouHour – An App with 5M+ Users", "Digital Wellbeing Solutions"],
   },
   {
-    title: "Cloud & Cloud",
+    title: "Cloud & DevOps",
     description:
       "Our team of experts combines technology, platform proficiency, and business acumen to empower startups",
-    points: ["Cloud & Cloud"],
+    points: ["Cloud & DevOps"],
   },
 ];

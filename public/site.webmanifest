@@ -88,8 +88,8 @@
   ],
   "shortcuts": [
     {
-      "name": "Custom AI Solutions",
-      "short_name": "AI Solutions",
+      "name": "Custom AI Development",
+      "short_name": "AI Development",
       "description": "Custom AI Development, enterprise AI solutions, generative AI, RAG system, AI workflow automation",
       "url": "/custom-ai-solutions-enterprises",
       "icons": [

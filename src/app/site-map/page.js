@@ -21,18 +21,25 @@ const routes = [
   },
 
   /* -----------------------------
-   AI & DATA SOLUTIONS
+   AI Development & Data Services 
   ------------------------------ */
   {
     url: `${baseUrl}/custom-ai-solutions-enterprises`,
-    label: "Custom AI Solutions",
+    label: "Custom AI Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
   },
   {
     url: `${baseUrl}/machine-learning-services`,
-    label: "Machine Learning",
+    label: "Machine Learning Development",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.9,
+  },
+  {
+    url: `${baseUrl}/generative-ai-chatbot-development`,
+    label: "Generative AI & Chatbot",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
@@ -44,16 +51,9 @@ const routes = [
     changeFrequency: "monthly",
     priority: 0.9,
   },
-  {
-    url: `${baseUrl}/cloud-engineering-services`,
-    label: "Cloud Engineering",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.9,
-  },
 
   /* -----------------------------
-   MODERN APPLICATION DEVELOPMENT
+   Product Development
   ------------------------------ */
   {
     url: `${baseUrl}/android-app-development-experts`,
@@ -74,13 +74,6 @@ const routes = [
     label: "Hybrid App Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: 0.9,
-  },
-  {
-    url: `${baseUrl}/mean-mern-stack-development`,
-    label: "MEAN & MERN Stack Development",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
     priority: 0.8,
   },
   {
@@ -91,40 +84,50 @@ const routes = [
     priority: 0.8,
   },
   {
-    url: `${baseUrl}/agile-rapid-development-practices`,
-    label: "Agile & Rapid Application Development Model",
+    url: `${baseUrl}/mvp-development-startup-support`,
+    label: "MVP Development & PMF Test",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${baseUrl}/mindful-ux-design-user-experience`,
+    label: "Design & UX",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
   },
 
   /* -----------------------------
-    IT & STAFF AUGMENTATION
+   Cloud & Platform Engineering
   ------------------------------ */
   {
-    url: `${baseUrl}/staff-augmentation-services`,
-    label: "Staff Augmentation Services",
+    url: `${baseUrl}/cloud-engineering-services`,
+    label: "Cloud Migration",
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: 0.8,
+    priority: 0.85,
   },
   {
-    url: `${baseUrl}/it-consulting-strategy`,
-    label: "IT Consulting Services",
+    url: `${baseUrl}/cloud-devops-engineering`,
+    label: "DevOps Automation",
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: 0.8,
+    priority: 0.85,
   },
-
-  /* -----------------------------
-    DIGITAL TRANSFORMATION
-  ------------------------------ */
   {
     url: `${baseUrl}/digital-transformation-consulting`,
     label: "Digital Transformation Services",
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: 0.9,
+    priority: 0.85,
+  },
+  {
+    url: `${baseUrl}/test-automation-qa-services`,
+    label: "QA & Test Automation",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.85,
   },
   {
     url: `${baseUrl}/microservices-architecture-consulting`,
@@ -133,34 +136,55 @@ const routes = [
     changeFrequency: "monthly",
     priority: 0.85,
   },
-  {
-    url: `${baseUrl}/low-code-app-development-services`,
-    label: "Low Code Development",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.85,
-  },
-  {
-    url: `${baseUrl}/test-automation-qa-services`,
-    label: "Application Test Automation and QA Services",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.85,
-  },
 
   /* -----------------------------
-    CLOUD & DEVOPS
+   Business IT Solutions
   ------------------------------ */
   {
-    url: `${baseUrl}/cloud-devops-engineering`,
-    label: "Cloud & DevOps",
+    url: `${baseUrl}/it-consulting-strategy`,
+    label: "IT Consulting Services",
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: 0.85,
+    priority: 0.8,
+  },
+  {
+    url: `${baseUrl}/enterprise-software-solutions`,
+    label: "Enterprise Solutions",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${baseUrl}/staff-augmentation-services`,
+    label: "Team Augmentation",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${baseUrl}/startup-support-consulting`,
+    label: "Startup Support and Consulting",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${baseUrl}/startup-incubation-consulting-services`,
+    label: "Startup Incubation Services",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${baseUrl}/white-label-software-solutions`,
+    label: "White Label App Solutions",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
   },
 
   /* -----------------------------
-    GAME DEVELOPMENT
+   Game Development
   ------------------------------ */
   {
     url: `${baseUrl}/game-animation-graphics`,
@@ -171,7 +195,7 @@ const routes = [
   },
   {
     url: `${baseUrl}/unity-unreal-engine-development`,
-    label: "Unity and Unreal Game Development",
+    label: "Unity and unreal Game Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
@@ -185,43 +209,11 @@ const routes = [
   },
 
   /* -----------------------------
-    STARTUP SUPPORT & CONSULTING
+   E-commerce and Marketplace
   ------------------------------ */
   {
-    url: `${baseUrl}/startup-support-consulting`,
-    label: "Startup Support and Consulting",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.85,
-  },
-  {
-    url: `${baseUrl}/mvp-development-startup-support`,
-    label: "MVP Development & PMF Test",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.85,
-  },
-  {
-    url: `${baseUrl}/white-label-software-solutions`,
-    label: "White Label App Solutions",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.85,
-  },
-  {
-    url: `${baseUrl}/startup-incubation-consulting-services`,
-    label: "Startup Incubation Services",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.85,
-  },
-
-  /* -----------------------------
-    ENTERPRISE BUSINESS SOLUTIONS
-  ------------------------------ */
-  {
-    url: `${baseUrl}/enterprise-software-solutions`,
-    label: "Enterprise Business Solutions",
+    url: `${baseUrl}/ecommerce-marketplace-development`,
+    label: "E-commerce and Marketplace",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
@@ -241,8 +233,8 @@ const routes = [
     priority: 0.85,
   },
   {
-    url: `${baseUrl}/ecommerce-marketplace-development`,
-    label: "E-commerce and Marketplace",
+    url: `${baseUrl}/low-code-app-development-services`,
+    label: "Low Code Development",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.85,
@@ -306,25 +298,28 @@ const routes = [
   },
 
   /* -----------------------------
-    MINDFUL UX DESIGN Mindful UX "Design Studio"
-  ------------------------------ */
-  {
-    url: `${baseUrl}/mindful-ux-design-user-experience`,
-    label: "Mindful UX Design Studio",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.8,
-  },
-
-  /* -----------------------------
     OTHER PAGES
   ------------------------------ */
+  {
+    url: `${baseUrl}/about-us-technology-innovators`,
+    label: "About Us",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
   {
     url: `${baseUrl}/customer-testimonials-reviews`,
     label: "Testimonials",
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.6,
+  },
+  {
+    url: `${baseUrl}/agile-rapid-development-practices`,
+    label: "Agile & Rapid Application Development Model",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
   },
 ];
 
@@ -341,18 +336,15 @@ export default function SitemapPage() {
 
   const groups = [
     { title: "Home", items: items.slice(0, 1) },
-    { title: "AI & Data Solutions", items: items.slice(1, 5) },
-    { title: "Modern Application Development", items: items.slice(5, 11) },
-    { title: "IT & Staff Augmentation", items: items.slice(11, 13) },
-    { title: "Digital Transformation", items: items.slice(13, 17) },
-    { title: "Cloud & DevOps", items: items.slice(17, 18) },
-    { title: "Game Development", items: items.slice(18, 21) },
-    { title: "Startup Support & Consulting", items: items.slice(21, 25) },
-    { title: "Enterprise Business Solutions", items: items.slice(25, 29) },
+    { title: "AI Development & Data Services", items: items.slice(1, 5) },
+    { title: "Product Development", items: items.slice(5, 11) },
+    { title: "Cloud & Platform Engineering", items: items.slice(11, 16) },
+    { title: "Business IT Solutions", items: items.slice(16, 22) },
+    { title: "Game Development", items: items.slice(22, 25) },
+    { title: "E-commerce and Marketplace", items: items.slice(25, 29) },
     { title: "Product", items: items.slice(29, 30) },
     { title: "Projects", items: items.slice(30, 36) },
-    { title: "Mindful UX Design Studio", items: items.slice(36, 37) },
-    { title: "Other Pages", items: items.slice(37, 38) },
+    { title: "Other Pages", items: items.slice(36, 39) },
   ];
 
   return (

@@ -5,7 +5,7 @@ import { ImpactDeliveredSection } from "@/components/AIML/ImpactDeliveredSection
 import { WhyAISection } from "@/components/AIML/WhyAISection";
 
 export const metadata = {
-  title: "AI & Machine Learning Services | Mindefy Technologies",
+  title: "AI & Machine Learning Development Services | Mindefy Technologies",
   description:
     "Delivers custom ML solutions and AI solutions through expert machine learning development, AI recommendation engines, predictive modeling, and data science services for intelligent business applications.",
   keywords: [
@@ -23,13 +23,13 @@ export const metadata = {
     "machine learning consulting",
   ],
   openGraph: {
-    title: "AI & Machine Learning Services | Mindefy Technologies",
+    title: "AI & Machine Learning Development Services | Mindefy Technologies",
     description:
       "Delivers custom ML solutions and AI solutions through expert machine learning development, AI recommendation engines, predictive modeling, and data science services for intelligent business applications.",
     url: "https://mindefy.tech/machine-learning-services",
   },
   twitter: {
-    title: "AI & Machine Learning Services | Mindefy Technologies",
+    title: "AI & Machine Learning Development Services | Mindefy Technologies",
     description:
       "Delivers custom ML solutions and AI solutions through expert machine learning development, AI recommendation engines, predictive modeling, and data science services for intelligent business applications.",
   },
