@@ -264,7 +264,7 @@ export default function Navbar() {
       {/* Blur overlay backdrop */}
       {isAnyOverlayOpen && (
         <div
-          className="fixed inset-0 bg-black/50 backdrop-blur-xs z-10"
+          className="fixed inset-0 bg-black/50 backdrop-blur-xs z-15"
           onClick={() => {
             setShowServicesDropdown(false);
             setShowProductsDropdown(false);
