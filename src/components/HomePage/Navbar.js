@@ -7,6 +7,11 @@ import ProductsDropdown from "./ProductsDropdown";
 import { ProjectDropdown } from "./ProjectDropdown";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import {
+  servicesData,
+  productsData,
+  projectsData,
+} from "@/config/servicesConfig";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -19,18 +24,14 @@ export default function Navbar() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
+  const [isTabletDrawerOpen, setIsTabletDrawerOpen] = useState(false);
+  const [tabletServicesOpen, setTabletServicesOpen] = useState(false);
+  const [tabletProductsOpen, setTabletProductsOpen] = useState(false);
+  const [tabletProjectsOpen, setTabletProjectsOpen] = useState(false);
 
-  // New states for nested service categories
-  const [mobileCustomAIOpen, setMobileCustomAIOpen] = useState(false);
-  const [mobileModernAppOpen, setMobileModernAppOpen] = useState(false);
-  const [mobileDigitalTransformOpen, setMobileDigitalTransformOpen] =
-    useState(false);
-  const [mobileCloudDevOpsOpen, setMobileCloudDevOpsOpen] = useState(false);
-  const [mobileGameDevOpen, setMobileGameDevOpen] = useState(false);
-  const [mobileStartupSupportOpen, setMobileStartupSupportOpen] =
-    useState(false);
-  const [mobileEnterpriseOpen, setMobileEnterpriseOpen] = useState(false);
-  const [mobileITStaffOpen, setMobileITStaffOpen] = useState(false);
+  // Dynamic state for categories - using object to track open/closed state
+  const [openCategories, setOpenCategories] = useState({});
+  const [tabletOpenCategories, setTabletOpenCategories] = useState({});
 
   // States for transition effects
   const [servicesTransitioning, setServicesTransitioning] = useState(false);
@@ -39,6 +40,23 @@ export default function Navbar() {
 
   // State for AI text animation - only on home page during scroll
   const [showAIInNavbar, setShowAIInNavbar] = useState(!isHomePage);
+
+  // Check if any overlay is open (for blur effect)
+  const isAnyOverlayOpen =
+    showServicesDropdown ||
+    showProductsDropdown ||
+    showProjectsDropdown ||
+    isMobileMenuOpen ||
+    isTabletDrawerOpen;
+
+  // Group services by category
+  const servicesByCategory = servicesData.reduce((acc, service) => {
+    if (!acc[service.category]) {
+      acc[service.category] = [];
+    }
+    acc[service.category].push(service);
+    return acc;
+  }, {});
 
   // Scroll handler for AI animation - only active on home page
   useEffect(() => {
@@ -96,15 +114,18 @@ export default function Navbar() {
       setMobileServicesOpen(false);
       setMobileProductsOpen(false);
       setMobileProjectsOpen(false);
-      // Close all nested service categories
-      setMobileCustomAIOpen(false);
-      setMobileModernAppOpen(false);
-      setMobileDigitalTransformOpen(false);
-      setMobileCloudDevOpsOpen(false);
-      setMobileGameDevOpen(false);
-      setMobileStartupSupportOpen(false);
-      setMobileEnterpriseOpen(false);
-      setMobileITStaffOpen(false);
+      setOpenCategories({});
+    }
+  };
+
+  const toggleTabletDrawer = () => {
+    setIsTabletDrawerOpen(!isTabletDrawerOpen);
+    // Close all tablet dropdowns when drawer closes
+    if (isTabletDrawerOpen) {
+      setTabletServicesOpen(false);
+      setTabletProductsOpen(false);
+      setTabletProjectsOpen(false);
+      setTabletOpenCategories({});
     }
   };
 
@@ -115,15 +136,32 @@ export default function Navbar() {
 
     // If closing Services dropdown, reset all nested states
     if (!newServicesState) {
-      setMobileCustomAIOpen(false);
-      setMobileModernAppOpen(false);
-      setMobileDigitalTransformOpen(false);
-      setMobileCloudDevOpsOpen(false);
-      setMobileGameDevOpen(false);
-      setMobileStartupSupportOpen(false);
-      setMobileEnterpriseOpen(false);
-      setMobileITStaffOpen(false);
+      setOpenCategories({});
     }
+  };
+
+  const toggleTabletServices = () => {
+    const newServicesState = !tabletServicesOpen;
+    setTabletServicesOpen(newServicesState);
+
+    // If closing Services dropdown, reset all nested states
+    if (!newServicesState) {
+      setTabletOpenCategories({});
+    }
+  };
+
+  const toggleCategory = (categoryName) => {
+    setOpenCategories((prev) => {
+      // Close all categories and open only the clicked one
+      return { [categoryName]: !prev[categoryName] };
+    });
+  };
+
+  const toggleTabletCategory = (categoryName) => {
+    setTabletOpenCategories((prev) => {
+      // Close all categories and open only the clicked one
+      return { [categoryName]: !prev[categoryName] };
+    });
   };
 
   // Close mobile menu when any option is clicked
@@ -132,15 +170,16 @@ export default function Navbar() {
     setMobileServicesOpen(false);
     setMobileProductsOpen(false);
     setMobileProjectsOpen(false);
-    // Close all nested service categories
-    setMobileCustomAIOpen(false);
-    setMobileModernAppOpen(false);
-    setMobileDigitalTransformOpen(false);
-    setMobileCloudDevOpsOpen(false);
-    setMobileGameDevOpen(false);
-    setMobileStartupSupportOpen(false);
-    setMobileEnterpriseOpen(false);
-    setMobileITStaffOpen(false);
+    setOpenCategories({});
+  };
+
+  // Close tablet drawer when any option is clicked
+  const handleTabletDrawerItemClick = () => {
+    setIsTabletDrawerOpen(false);
+    setTabletServicesOpen(false);
+    setTabletProductsOpen(false);
+    setTabletProjectsOpen(false);
+    setTabletOpenCategories({});
   };
 
   // Close all desktop dropdowns when any dropdown item is clicked
@@ -169,6 +208,8 @@ export default function Navbar() {
   const scrollToContact = () => {
     // Close mobile menu first
     handleMobileMenuItemClick();
+    // Close tablet drawer
+    handleTabletDrawerItemClick();
 
     // Function to calculate and scroll to contact section with retry logic
     const performScroll = (attempt = 1) => {
@@ -219,233 +260,303 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-2 sm:px-4 lg:px-8 py-4 sticky top-0 z-20 shadow">
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
-        {/* Logo */}
-        <Link href="/">
-          <div className="relative w-28 sm:w-36 lg:w-44 aspect-[3.88/1] cursor-pointer">
-            <Image
-              src="/images/nav-logo.svg"
-              alt="Mindefy Logo"
-              fill
-              className="w-full h-full object-contain"
-            />
-          </div>
-        </Link>
+    <>
+      {/* Blur overlay backdrop */}
+      {isAnyOverlayOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 backdrop-blur-xs z-15"
+          onClick={() => {
+            setShowServicesDropdown(false);
+            setShowProductsDropdown(false);
+            setShowProjectsDropdown(false);
+            handleMobileMenuItemClick();
+            handleTabletDrawerItemClick();
+          }}
+        ></div>
+      )}
 
-        {/* Hamburger menu toggle */}
-        <button
-          onClick={toggleMobileMenu}
-          className="md:hidden text-2xl font-bold cursor-pointer z-30"
-          aria-label="Toggle mobile menu"
-        >
-          {isMobileMenuOpen ? "✕" : "☰"}
-        </button>
+      <nav className="bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] px-2 sm:px-4 lg:px-8 py-4 sticky top-0 z-20 shadow">
+        <div className="flex items-center justify-between max-w-7xl mx-auto">
+          {/* Logo */}
+          <Link href="/">
+            <div className="relative w-28 sm:w-36 lg:w-44 aspect-[3.88/1] cursor-pointer">
+              <Image
+                src="/images/nav-logo.svg"
+                alt="Mindefy Logo"
+                fill
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </Link>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-baseline space-x-2 md:space-x-3 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
-          {/* AI Tab with animation for large screen only - always visible on non-home pages, animated on home page only */}
-          <div
-            className="relative overflow-visible"
-            style={{
-              width: showAIInNavbar ? "auto" : "0px",
-              opacity: showAIInNavbar ? 1 : 0,
-              transition: "width 0.5s ease-out, opacity 0.5s ease-out",
-              marginRight: "1.25rem",
-            }}
+          {/* Hamburger menu toggle - Mobile only */}
+          <button
+            onClick={toggleMobileMenu}
+            className="md:hidden text-2xl font-bold cursor-pointer z-30"
+            aria-label="Toggle mobile menu"
           >
-            <Link
-              href="/ai-ml-services"
-              className="relative block cursor-pointer pb-1.5 text-center whitespace-nowrap transition-all duration-500"
+            {isMobileMenuOpen ? "✕" : "☰"}
+          </button>
+
+          {/* Tablet drawer toggle - Tablet only */}
+          <button
+            onClick={toggleTabletDrawer}
+            className="hidden md:block lg:hidden text-2xl font-bold cursor-pointer z-30"
+            aria-label="Toggle tablet drawer"
+          >
+            {isTabletDrawerOpen ? "✕" : "☰"}
+          </button>
+
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-baseline space-x-2 md:space-x-3 lg:space-x-6 font-semibold text-sm lg:text-base text-[#3B3C4A]">
+            {/* AI Tab with animation for large screen only - always visible on non-home pages, animated on home page only */}
+            <div
+              className="relative overflow-visible"
               style={{
-                width: "60px",
-                transform: isHomePage
-                  ? showAIInNavbar
-                    ? "translateX(0)"
-                    : "translateX(100%)"
-                  : "translateX(0)",
-                transition: "transform 0.5s ease-out",
+                width: showAIInNavbar ? "auto" : "0px",
+                opacity: showAIInNavbar ? 1 : 0,
+                transition: "width 0.5s ease-out, opacity 0.5s ease-out",
+                marginRight: "1.25rem",
               }}
             >
-              {/* Background Loader Animation */}
-              <div
-                className="absolute top-1/2 left-1/2 z-0"
+              <Link
+                href="/ai-ml-services"
+                className="relative block cursor-pointer pb-1.5 text-center whitespace-nowrap transition-all duration-500"
                 style={{
                   width: "60px",
-                  transform: "translate(-50%, -50%)",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  position: "relative",
+                  transform: isHomePage
+                    ? showAIInNavbar
+                      ? "translateX(0)"
+                      : "translateX(100%)"
+                    : "translateX(0)",
+                  transition: "transform 0.5s ease-out",
                 }}
               >
-                {/* Ring 1 - Outermost ring segmented */}
+                {/* Background Loader Animation */}
                 <div
+                  className="absolute top-1/2 left-1/2 z-0"
                   style={{
-                    position: "absolute",
-                    width: "57px",
-                    height: "57px",
-                    borderRadius: "50%",
-                    border: "0",
-                    background: `conic-gradient(
-                      from 0deg,
-                      transparent 0deg,
-                      transparent 10deg,
-                      #D84326 10deg,
-                      #D84326 50deg,
-                      transparent 50deg,
-                      transparent 70deg,
-                      #D84326 70deg,
-                      #D84326 110deg,
-                      transparent 110deg,
-                      transparent 140deg,
-                      #D84326 140deg,
-                      #D84326 180deg,
-                      transparent 180deg,
-                      transparent 200deg,
-                      #D84326 200deg,
-                      #D84326 260deg,
-                      transparent 260deg,
-                      transparent 280deg,
-                      #D84326 280deg,
-                      #D84326 330deg,
-                      transparent 330deg
-                    )`,
-                    mask: "radial-gradient(transparent 24.75px, black 24.75px, black 28.5px, transparent 28.5px)",
-                    WebkitMask:
-                      "radial-gradient(transparent 24.75px, black 24.75px, black 28.5px, transparent 28.5px)",
-                    animation: "rotate-clockwise 8s linear infinite",
+                    width: "60px",
+                    transform: "translate(-50%, -50%)",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    position: "relative",
                   }}
-                />
+                >
+                  {/* Ring 1 - Outermost ring segmented */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      width: "57px",
+                      height: "57px",
+                      borderRadius: "50%",
+                      border: "0",
+                      background: `conic-gradient(
+                        from 0deg,
+                        transparent 0deg,
+                        transparent 10deg,
+                        #D84326 10deg,
+                        #D84326 50deg,
+                        transparent 50deg,
+                        transparent 70deg,
+                        #D84326 70deg,
+                        #D84326 110deg,
+                        transparent 110deg,
+                        transparent 140deg,
+                        #D84326 140deg,
+                        #D84326 180deg,
+                        transparent 180deg,
+                        transparent 200deg,
+                        #D84326 200deg,
+                        #D84326 260deg,
+                        transparent 260deg,
+                        transparent 280deg,
+                        #D84326 280deg,
+                        #D84326 330deg,
+                        transparent 330deg
+                      )`,
+                      mask: "radial-gradient(transparent 24.75px, black 24.75px, black 28.5px, transparent 28.5px)",
+                      WebkitMask:
+                        "radial-gradient(transparent 24.75px, black 24.75px, black 28.5px, transparent 28.5px)",
+                      animation: "rotate-clockwise 8s linear infinite",
+                    }}
+                  />
 
-                {/* Ring 2 - Second ring segmented */}
-                <div
+                  {/* Ring 2 - Second ring segmented */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      width: "51px",
+                      height: "51px",
+                      borderRadius: "50%",
+                      border: "0",
+                      background: `conic-gradient(
+                        from 0deg,
+                        transparent 0deg,
+                        transparent 5deg,
+                        #342871 5deg,
+                        #342871 15deg,
+                        transparent 15deg,
+                        transparent 20deg,
+                        #342871 20deg,
+                        #342871 30deg,
+                        transparent 30deg,
+                        transparent 35deg,
+                        #342871 35deg,
+                        #342871 45deg,
+                        transparent 45deg,
+                        transparent 180deg,
+                        #342871 180deg,
+                        #342871 280deg,
+                        transparent 280deg
+                      )`,
+                      mask: "radial-gradient(transparent 23.25px, black 23.25px, black 25.5px, transparent 25.5px)",
+                      WebkitMask:
+                        "radial-gradient(transparent 23.25px, black 23.25px, black 25.5px, transparent 25.5px)",
+                      animation: "rotate-counter-clockwise 6s linear infinite",
+                    }}
+                  />
+
+                  {/* Ring 3 - Dotted circle */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      width: "45px",
+                      height: "45px",
+                      borderRadius: "50%",
+                      border: "0.5px dotted #D84326",
+                      animation: "rotate-clockwise 10s linear infinite",
+                    }}
+                  />
+
+                  {/* Ring 4 - Dashed circle */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      width: "39px",
+                      height: "39px",
+                      borderRadius: "50%",
+                      border: "0.5px dashed #342871",
+                      animation: "rotate-counter-clockwise 7s linear infinite",
+                    }}
+                  />
+
+                  {/* Ring 5 - Small ticks */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      width: "36px",
+                      height: "36px",
+                      borderRadius: "50%",
+                      border: "0",
+                      background: `repeating-conic-gradient(
+                        from 0deg, 
+                        transparent 0deg,
+                        transparent 8deg,
+                        #D84326 8deg,
+                        #D84326 10deg
+                      )`,
+                      mask: "radial-gradient(transparent 16.5px, black 16.5px, black 18px, transparent 18px)",
+                      WebkitMask:
+                        "radial-gradient(transparent 16.5px, black 16.5px, black 18px, transparent 18px)",
+                      animation: "rotate-clockwise 5s linear infinite",
+                    }}
+                  />
+
+                  {/* Ring 6 - Innermost ring */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      width: "33px",
+                      height: "33px",
+                      borderRadius: "50%",
+                      border: "0.5px solid #342871",
+                      animation: "rotate-counter-clockwise 9s linear infinite",
+                    }}
+                  />
+
+                  {/* Center circle */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      width: "27px",
+                      height: "27px",
+                      background: "#FFFFFF",
+                      borderRadius: "50%",
+                      zIndex: 10,
+                    }}
+                  />
+                </div>
+
+                {/* Foreground text - Centered inside animation */}
+                <span
+                  className="font-semibold text-black text-center"
                   style={{
                     position: "absolute",
-                    width: "51px",
-                    height: "51px",
-                    borderRadius: "50%",
-                    border: "0",
-                    background: `conic-gradient(
-                      from 0deg,
-                      transparent 0deg,
-                      transparent 5deg,
-                      #342871 5deg,
-                      #342871 15deg,
-                      transparent 15deg,
-                      transparent 20deg,
-                      #342871 20deg,
-                      #342871 30deg,
-                      transparent 30deg,
-                      transparent 35deg,
-                      #342871 35deg,
-                      #342871 45deg,
-                      transparent 45deg,
-                      transparent 180deg,
-                      #342871 180deg,
-                      #342871 280deg,
-                      transparent 280deg
-                    )`,
-                    mask: "radial-gradient(transparent 23.25px, black 23.25px, black 25.5px, transparent 25.5px)",
-                    WebkitMask:
-                      "radial-gradient(transparent 23.25px, black 23.25px, black 25.5px, transparent 25.5px)",
-                    animation: "rotate-counter-clockwise 6s linear infinite",
-                  }}
-                />
-
-                {/* Ring 3 - Dotted circle */}
-                <div
-                  style={{
-                    position: "absolute",
-                    width: "45px",
-                    height: "45px",
-                    borderRadius: "50%",
-                    border: "0.5px dotted #D84326",
-                    animation: "rotate-clockwise 10s linear infinite",
-                  }}
-                />
-
-                {/* Ring 4 - Dashed circle */}
-                <div
-                  style={{
-                    position: "absolute",
-                    width: "39px",
-                    height: "39px",
-                    borderRadius: "50%",
-                    border: "0.5px dashed #342871",
-                    animation: "rotate-counter-clockwise 7s linear infinite",
-                  }}
-                />
-
-                {/* Ring 5 - Small ticks */}
-                <div
-                  style={{
-                    position: "absolute",
-                    width: "36px",
-                    height: "36px",
-                    borderRadius: "50%",
-                    border: "0",
-                    background: `repeating-conic-gradient(
-                      from 0deg, 
-                      transparent 0deg,
-                      transparent 8deg,
-                      #D84326 8deg,
-                      #D84326 10deg
-                    )`,
-                    mask: "radial-gradient(transparent 16.5px, black 16.5px, black 18px, transparent 18px)",
-                    WebkitMask:
-                      "radial-gradient(transparent 16.5px, black 16.5px, black 18px, transparent 18px)",
-                    animation: "rotate-clockwise 5s linear infinite",
-                  }}
-                />
-
-                {/* Ring 6 - Innermost ring */}
-                <div
-                  style={{
-                    position: "absolute",
-                    width: "33px",
-                    height: "33px",
-                    borderRadius: "50%",
-                    border: "0.5px solid #342871",
-                    animation: "rotate-counter-clockwise 9s linear infinite",
-                  }}
-                />
-
-                {/* Center circle */}
-                <div
-                  style={{
-                    position: "absolute",
-                    width: "27px",
-                    height: "27px",
-                    background: "#FFFFFF",
-                    borderRadius: "50%",
+                    transform: "translate(-50%, -50%)",
                     zIndex: 10,
                   }}
-                />
-              </div>
+                >
+                  AI
+                </span>
+              </Link>
+            </div>
 
-              {/* Foreground text - Centered inside animation */}
-              <span
-                className="font-semibold text-black text-center"
+            {/* Services with dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setShowServicesDropdown(true)}
+              onMouseLeave={() => setShowServicesDropdown(false)}
+            >
+              <p
+                className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap"
                 style={{
-                  position: "absolute",
-                  transform: "translate(-50%, -50%)",
-                  zIndex: 10,
+                  transform: showAIInNavbar
+                    ? "translateX(0)"
+                    : "translateX(-30px)",
+                  transition: "transform 0.5s ease-out",
                 }}
               >
-                AI
-              </span>
-            </Link>
-          </div>
+                Services
+                <Image
+                  src="/images/dropdown-icon.png"
+                  alt="Dropdown"
+                  width={10}
+                  height={10}
+                  className={`object-contain transition-transform ${
+                    showServicesDropdown ? "rotate-180" : ""
+                  }`}
+                />
+              </p>
 
-          {/* Services with dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setShowServicesDropdown(true)}
-            onMouseLeave={() => setShowServicesDropdown(false)}
-          >
-            <p
-              className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap"
+              {/* Services Dropdown with hover bridge */}
+              {showServicesDropdown && (
+                <>
+                  {/* Invisible hover bridge */}
+                  <div className="fixed left-0 top-16  w-full h-20 z-30"></div>
+
+                  {/* Actual dropdown positioned to take full width */}
+                  <div
+                    className={`fixed left-0 top-18 w-full flex justify-center z-40 transition-opacity duration-200 ease-in-out ${
+                      servicesTransitioning ? "opacity-0" : "opacity-100"
+                    }`}
+                  >
+                    <div className="w-full max-w-none">
+                      <ServicesDrop
+                        onItemClick={handleDesktopDropdownItemClick}
+                      />
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+
+            {/* Products with dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setShowProductsDropdown(true)}
+              onMouseLeave={() => setShowProductsDropdown(false)}
               style={{
                 transform: showAIInNavbar
                   ? "translateX(0)"
@@ -453,152 +564,279 @@ export default function Navbar() {
                 transition: "transform 0.5s ease-out",
               }}
             >
-              Services
-              <Image
-                src="/images/dropdown-icon.png"
-                alt="Dropdown"
-                width={10}
-                height={10}
-                className="object-contain"
-              />
-            </p>
+              <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
+                Products
+                <Image
+                  src="/images/dropdown-icon.png"
+                  alt="Dropdown"
+                  width={10}
+                  height={10}
+                  className={`object-contain transition-transform ${
+                    showProductsDropdown ? "rotate-180" : ""
+                  }`}
+                />
+              </p>
 
-            {/* Services Dropdown with hover bridge */}
-            {showServicesDropdown && (
-              <>
-                {/* Invisible hover bridge */}
-                <div className="fixed left-0 top-[4rem] w-full h-[5rem] z-30"></div>
-
-                {/* Actual dropdown positioned to take full width */}
+              {/* Products Dropdown */}
+              {showProductsDropdown && (
                 <div
-                  className={`fixed left-0 top-[4.5rem] w-full flex justify-center z-40 transition-opacity duration-200 ease-in-out ${
-                    servicesTransitioning ? "opacity-0" : "opacity-100"
+                  className={`absolute left-1/2 transform -translate-x-1/2 top-12 z-40 transition-opacity duration-200 ease-in-out ${
+                    productsTransitioning ? "opacity-0" : "opacity-100"
                   }`}
                 >
-                  <div className="w-full max-w-none">
-                    <ServicesDrop
-                      onItemClick={handleDesktopDropdownItemClick}
-                    />
-                  </div>
+                  <ProductsDropdown
+                    onItemClick={handleDesktopDropdownItemClick}
+                  />
                 </div>
-              </>
-            )}
-          </div>
+              )}
+            </div>
 
-          {/* Products with dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setShowProductsDropdown(true)}
-            onMouseLeave={() => setShowProductsDropdown(false)}
-            style={{
-              transform: showAIInNavbar ? "translateX(0)" : "translateX(-30px)",
-              transition: "transform 0.5s ease-out",
-            }}
-          >
-            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
-              Products
-              <Image
-                src="/images/dropdown-icon.png"
-                alt="Dropdown"
-                width={10}
-                height={10}
-                className="object-contain"
-              />
-            </p>
-
-            {/* Products Dropdown */}
-            {showProductsDropdown && (
-              <div
-                className={`absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40 transition-opacity duration-200 ease-in-out ${
-                  productsTransitioning ? "opacity-0" : "opacity-100"
-                }`}
-              >
-                <ProductsDropdown
-                  onItemClick={handleDesktopDropdownItemClick}
+            {/* Projects with dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setShowProjectsDropdown(true)}
+              onMouseLeave={() => setShowProjectsDropdown(false)}
+              style={{
+                transform: showAIInNavbar
+                  ? "translateX(0)"
+                  : "translateX(-30px)",
+                transition: "transform 0.5s ease-out",
+              }}
+            >
+              <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
+                Projects
+                <Image
+                  src="/images/dropdown-icon.png"
+                  alt="Dropdown"
+                  width={10}
+                  height={10}
+                  className={`object-contain transition-transform ${
+                    showProjectsDropdown ? "rotate-180" : ""
+                  }`}
                 />
-              </div>
-            )}
+              </p>
+
+              {/* Projects Dropdown */}
+              {showProjectsDropdown && (
+                <div
+                  className={`absolute left-1/2 transform -translate-x-1/2 top-12 z-40 transition-opacity duration-200 ease-in-out ${
+                    projectsTransitioning ? "opacity-0" : "opacity-100"
+                  }`}
+                >
+                  <ProjectDropdown
+                    onItemClick={handleDesktopDropdownItemClick}
+                  />
+                </div>
+              )}
+            </div>
+
+            <a
+              href="/mindful-ux-design-user-experience"
+              className="hover:text-[#2c2178] cursor-pointer whitespace-nowrap hidden lg:block"
+              style={{
+                transform: showAIInNavbar
+                  ? "translateX(0)"
+                  : "translateX(-30px)",
+                transition: "transform 0.5s ease-out",
+              }}
+            >
+              Mindful UX "Design Studio"
+            </a>
           </div>
 
-          {/* Projects with dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setShowProjectsDropdown(true)}
-            onMouseLeave={() => setShowProjectsDropdown(false)}
-            style={{
-              transform: showAIInNavbar ? "translateX(0)" : "translateX(-30px)",
-              transition: "transform 0.5s ease-out",
-            }}
-          >
-            <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
-              Projects
-              <Image
-                src="/images/dropdown-icon.png"
-                alt="Dropdown"
-                width={10}
-                height={10}
-                className="object-contain"
-              />
-            </p>
+          {/* Desktop CTA */}
+          <div className="hidden lg:block">
+            <button
+              onClick={scrollToContact}
+              className="px-3 lg:px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white text-sm lg:text-base whitespace-nowrap cursor-pointer"
+            >
+              Let's Talk
+            </button>
+          </div>
+        </div>
 
-            {/* Projects Dropdown */}
-            {showProjectsDropdown && (
-              <div
-                className={`absolute left-1/2 transform -translate-x-1/2 top-[3rem] z-40 transition-opacity duration-200 ease-in-out ${
-                  projectsTransitioning ? "opacity-0" : "opacity-100"
-                }`}
+        {/* Mobile Dropdown Menu */}
+        <div
+          className={`md:hidden transition-all duration-300 ease-in-out ${
+            isMobileMenuOpen
+              ? "max-h-screen opacity-100 visible"
+              : "max-h-0 opacity-0 invisible overflow-hidden"
+          }`}
+        >
+          <div className="mt-2 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
+            <div className="flex flex-col gap-2 text-sm font-medium text-[#3B3C4A] px-3 py-4">
+              {/* AI Tab in mobile menu - always visible on all pages */}
+              <Link
+                href="/ai-ml-services"
+                onClick={handleMobileMenuItemClick}
+                className="hover:text-[#2c2178] py-1 animate-slideIn"
               >
-                <ProjectDropdown onItemClick={handleDesktopDropdownItemClick} />
+                AI
+              </Link>
+
+              {/* Mobile Services Dynamic Dropdown */}
+              <div>
+                <button
+                  onClick={toggleMobileServices}
+                  className="flex items-center justify-between w-full hover:text-[#2c2178] py-1 text-left cursor-pointer"
+                >
+                  Services
+                  <Image
+                    src="/images/dropdown-icon.png"
+                    alt="Dropdown"
+                    width={10}
+                    height={10}
+                    className={`object-contain transition-transform ${
+                      mobileServicesOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                {mobileServicesOpen && (
+                  <div className="pl-4 mt-2 space-y-3 text-sm">
+                    {Object.entries(servicesByCategory).map(
+                      ([category, services]) => (
+                        <div key={category}>
+                          <button
+                            onClick={() => toggleCategory(category)}
+                            className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm cursor-pointer"
+                          >
+                            {category}
+                            <Image
+                              src="/images/dropdown-icon.png"
+                              alt="Dropdown"
+                              width={8}
+                              height={8}
+                              className={`object-contain transition-transform ${
+                                openCategories[category] ? "rotate-180" : ""
+                              }`}
+                            />
+                          </button>
+                          {openCategories[category] && (
+                            <div className="pl-3 mt-2 space-y-2.5">
+                              {services.map((service) => (
+                                <Link
+                                  key={service.id}
+                                  href={service.route}
+                                  onClick={handleMobileMenuItemClick}
+                                  className="w-fit block hover:text-red-600"
+                                >
+                                  {service.title}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )
+                    )}
+                  </div>
+                )}
               </div>
-            )}
+
+              {/* Mobile Products Dynamic Dropdown */}
+              <div>
+                <button
+                  onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                  className="flex items-center justify-between w-full hover:text-[#2c2178] py-1 text-left cursor-pointer"
+                >
+                  Products
+                  <Image
+                    src="/images/dropdown-icon.png"
+                    alt="Dropdown"
+                    width={10}
+                    height={10}
+                    className={`object-contain transition-transform ${
+                      mobileProductsOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {mobileProductsOpen && (
+                  <div className="pl-3 mt-2 space-y-2.5">
+                    {productsData.map((product) => (
+                      <Link
+                        key={product.id}
+                        href={product.route}
+                        onClick={handleMobileMenuItemClick}
+                        className="w-fit block hover:text-red-600 text-sm"
+                      >
+                        {product.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Mobile Projects Dynamic Dropdown */}
+              <div>
+                <button
+                  onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
+                  className="flex items-center justify-between w-full hover:text-[#2c2178] py-1 text-left cursor-pointer"
+                >
+                  Projects
+                  <Image
+                    src="/images/dropdown-icon.png"
+                    alt="Dropdown"
+                    width={10}
+                    height={10}
+                    className={`object-contain transition-transform ${
+                      mobileProjectsOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {mobileProjectsOpen && (
+                  <div className="pl-3 mt-2 space-y-2.5">
+                    {projectsData.map((project) => (
+                      <Link
+                        key={project.id}
+                        href={project.route}
+                        onClick={handleMobileMenuItemClick}
+                        className="w-fit block hover:text-red-600 text-sm"
+                      >
+                        {project.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <a
+                href="/mindful-ux-design-user-experience"
+                onClick={handleMobileMenuItemClick}
+                className="hover:text-[#2c2178] cursor-pointer py-1"
+              >
+                Mindful UX "Design Studio"
+              </a>
+
+              <button
+                onClick={scrollToContact}
+                className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white cursor-pointer"
+              >
+                Let's Talk
+              </button>
+            </div>
           </div>
-
-          <a
-            href="/mindful-ux-design-user-experience"
-            className="hover:text-[#2c2178] cursor-pointer whitespace-nowrap hidden md:block"
-            style={{
-              transform: showAIInNavbar ? "translateX(0)" : "translateX(-30px)",
-              transition: "transform 0.5s ease-out",
-            }}
-          >
-            Mindful UX "Design Studio"
-          </a>
         </div>
 
-        {/* Desktop CTA */}
-        <div className="hidden md:block">
-          <button
-            onClick={scrollToContact}
-            className="px-3 lg:px-5 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white text-sm lg:text-base whitespace-nowrap cursor-pointer"
-          >
-            Let's Talk
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Dropdown Menu */}
-      <div
-        className={`md:hidden transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen
-            ? "max-h-screen opacity-100 visible"
-            : "max-h-0 opacity-0 invisible overflow-hidden"
-        }`}
-      >
-        <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
-          <div className="flex flex-col gap-4 text-sm font-medium text-[#3B3C4A] p-4">
-            {/* AI Tab in mobile menu - always visible on all pages */}
+        {/* Tablet Right-side Drawer */}
+        <div
+          className={`hidden md:block lg:hidden fixed right-0 top-16 h-[calc(100vh-4rem)] w-sm bg-white shadow-lg z-40 transform transition-transform duration-300 ease-in-out ${
+            isTabletDrawerOpen ? "translate-x-0" : "translate-x-full"
+          } overflow-y-auto`}
+        >
+          <div className="flex flex-col gap-2 text-sm font-medium text-[#3B3C4A] px-4 py-4">
+            {/* AI Tab in tablet drawer - always visible on all pages */}
             <Link
               href="/ai-ml-services"
-              onClick={handleMobileMenuItemClick}
-              className="hover:text-[#2c2178] py-2 animate-slideIn"
+              onClick={handleTabletDrawerItemClick}
+              className="hover:text-[#2c2178] py-2"
             >
               AI
             </Link>
 
-            {/* Mobile Services Dropdown */}
+            {/* Tablet Services Dynamic Dropdown */}
             <div>
               <button
-                onClick={toggleMobileServices}
+                onClick={toggleTabletServices}
                 className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Services
@@ -608,493 +846,56 @@ export default function Navbar() {
                   width={10}
                   height={10}
                   className={`object-contain transition-transform ${
-                    mobileServicesOpen ? "rotate-180" : ""
+                    tabletServicesOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
 
-              {mobileServicesOpen && (
-                <div className="pl-4 mt-2 space-y-2 text-xs">
-                  {/* AI & Data Solutions */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileCustomAIOpen(!mobileCustomAIOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      AI & Data Solutions
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileCustomAIOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileCustomAIOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/custom-ai-solutions-enterprises"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
+              {tabletServicesOpen && (
+                <div className="pl-4 mt-2 space-y-3 text-sm">
+                  {Object.entries(servicesByCategory).map(
+                    ([category, services]) => (
+                      <div key={category}>
+                        <button
+                          onClick={() => toggleTabletCategory(category)}
+                          className="flex items-center justify-between text-left w-full font-semibold text-[#332771] text-sm cursor-pointer"
                         >
-                          Custom AI Solution
-                        </Link>
-
-                        <Link
-                          href="/machine-learning-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Machine Learning
-                        </Link>
-
-                        <Link
-                          href="/advanced-data-engineering-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Data Engineering
-                        </Link>
-
-                        <Link
-                          href="/cloud-engineering-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Cloud Engineering
-                        </Link>
+                          {category}
+                          <Image
+                            src="/images/dropdown-icon.png"
+                            alt="Dropdown"
+                            width={8}
+                            height={8}
+                            className={`object-contain transition-transform ${
+                              tabletOpenCategories[category] ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+                        {tabletOpenCategories[category] && (
+                          <div className="pl-3 mt-2 space-y-2.5">
+                            {services.map((service) => (
+                              <Link
+                                key={service.id}
+                                href={service.route}
+                                onClick={handleTabletDrawerItemClick}
+                                className="w-fit block hover:text-red-600"
+                              >
+                                {service.title}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-
-                  {/* Modern Application Development */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileModernAppOpen(!mobileModernAppOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Modern Application Development
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileModernAppOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileModernAppOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/web-application-development-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Web Application Development
-                        </Link>
-                        <Link
-                          href="/android-app-development-experts"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Android App Development
-                        </Link>
-                        <Link
-                          href="/ios-app-development-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          iOS App Development
-                        </Link>
-                        <Link
-                          href="/hybrid-app-development-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Hybrid App Development
-                        </Link>
-                        <Link
-                          href="/mean-mern-stack-development"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          MEAN & MERN Stack Development
-                        </Link>
-                        <Link
-                          href="/agile-rapid-development-practices"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Agile & Rapid Application Development Model
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Digital Transformation Services */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileDigitalTransformOpen(
-                          !mobileDigitalTransformOpen
-                        );
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Digital Transformation Services
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileDigitalTransformOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileDigitalTransformOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/digital-transformation-consulting"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Digital Transformation Services
-                        </Link>
-                        <Link
-                          href="/microservices-architecture-consulting"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Building Micro-services Architecture
-                        </Link>
-                        <Link
-                          href="/low-code-app-development-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Low Code Development
-                        </Link>
-                        <Link
-                          href="/test-automation-qa-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Application Test Automation and QA Services
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Cloud & DevOps */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileCloudDevOpsOpen(!mobileCloudDevOpsOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Cloud & DevOps
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileCloudDevOpsOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileCloudDevOpsOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/cloud-devops-engineering"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Cloud & DevOps
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Game Development */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileGameDevOpen(!mobileGameDevOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Game Development
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileGameDevOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileGameDevOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/game-animation-graphics"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          2D & 3D Game Animation
-                        </Link>
-                        <Link
-                          href="/unity-unreal-engine-development"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Unity 3D & Unreal Engine Development
-                        </Link>
-                        <Link
-                          href="/ar-vr-game-development"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          AR/VR Game Development
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Startup Support & Consulting */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileStartupSupportOpen(!mobileStartupSupportOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Startup Support & Consulting
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileStartupSupportOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileStartupSupportOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/startup-support-consulting"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Startup Support and Consulting
-                        </Link>
-                        <Link
-                          href="/mvp-development-startup-support"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          MVP Development & PMF Test
-                        </Link>
-                        <Link
-                          href="/white-label-software-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          White Label App Solutions
-                        </Link>
-                        <Link
-                          href="/startup-incubation-consulting-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Startup Incubation Services
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Enterprise Business Solutions */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileCustomAIOpen(false);
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileITStaffOpen(false);
-                        // Then toggle this one
-                        setMobileEnterpriseOpen(!mobileEnterpriseOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      Enterprise Business Solutions
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileEnterpriseOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileEnterpriseOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/enterprise-software-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Enterprise Business Solutions
-                        </Link>
-                        <Link
-                          href="/crm-software-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          CRM Solutions
-                        </Link>
-                        <Link
-                          href="/business-process-management-solutions"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Business Process Management
-                        </Link>
-                        <Link
-                          href="/ecommerce-marketplace-development"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          E-commerce and Marketplace
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* IT/Staff Augmentation */}
-                  <div>
-                    <button
-                      onClick={() => {
-                        // Close all other subcategories first
-                        setMobileModernAppOpen(false);
-                        setMobileDigitalTransformOpen(false);
-                        setMobileCloudDevOpsOpen(false);
-                        setMobileGameDevOpen(false);
-                        setMobileStartupSupportOpen(false);
-                        setMobileEnterpriseOpen(false);
-                        // Then toggle this one
-                        setMobileITStaffOpen(!mobileITStaffOpen);
-                      }}
-                      className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
-                    >
-                      IT/Staff Augmentation
-                      <Image
-                        src="/images/dropdown-icon.png"
-                        alt="Dropdown"
-                        width={8}
-                        height={8}
-                        className={`object-contain transition-transform ${
-                          mobileITStaffOpen ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {mobileITStaffOpen && (
-                      <div className="pl-4 mt-1 space-y-1">
-                        <Link
-                          href="/staff-augmentation-services"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          Staff Augmentation Services
-                        </Link>
-                        <Link
-                          href="/it-consulting-strategy"
-                          onClick={handleMobileMenuItemClick}
-                          className="block hover:text-red-600"
-                        >
-                          IT Consulting Services
-                        </Link>
-                      </div>
-                    )}
-                  </div>
+                    )
+                  )}
                 </div>
               )}
             </div>
 
-            {/* Mobile Products Dropdown */}
+            {/* Tablet Products Dynamic Dropdown */}
             <div>
               <button
-                onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                onClick={() => setTabletProductsOpen(!tabletProductsOpen)}
                 className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Products
@@ -1104,27 +905,30 @@ export default function Navbar() {
                   width={10}
                   height={10}
                   className={`object-contain transition-transform ${
-                    mobileProductsOpen ? "rotate-180" : ""
+                    tabletProductsOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
-              {mobileProductsOpen && (
-                <div className="pl-4 mt-2">
-                  <Link
-                    href="/yourhour-screentime-app"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    YourHour
-                  </Link>
+              {tabletProductsOpen && (
+                <div className="pl-3 mt-2 space-y-2.5">
+                  {productsData.map((product) => (
+                    <Link
+                      key={product.id}
+                      href={product.route}
+                      onClick={handleTabletDrawerItemClick}
+                      className="w-fit block hover:text-red-600 text-sm"
+                    >
+                      {product.title}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
 
-            {/* Mobile Projects Dropdown */}
+            {/* Tablet Projects Dynamic Dropdown */}
             <div>
               <button
-                onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
+                onClick={() => setTabletProjectsOpen(!tabletProjectsOpen)}
                 className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Projects
@@ -1134,61 +938,29 @@ export default function Navbar() {
                   width={10}
                   height={10}
                   className={`object-contain transition-transform ${
-                    mobileProjectsOpen ? "rotate-180" : ""
+                    tabletProjectsOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
-              {mobileProjectsOpen && (
-                <div className="pl-4 mt-2 space-y-1">
-                  <Link
-                    href="/memolect-learning-app"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    Memolect
-                  </Link>
-                  <Link
-                    href="/early-foods-e-commerce"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    EarlyFoods
-                  </Link>
-                  <Link
-                    href="/jego-ott-platform"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    JEGO
-                  </Link>
-                  <Link
-                    href="/soli-stack-integration-solutions"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    SoliStack
-                  </Link>
-                  <Link
-                    href="/greenbill-paperless-billing-software"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    GreenBill
-                  </Link>
-                  <Link
-                    href="/mach-one-platform-services"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    MachOne
-                  </Link>
+              {tabletProjectsOpen && (
+                <div className="pl-3 mt-2 space-y-2.5">
+                  {projectsData.map((project) => (
+                    <Link
+                      key={project.id}
+                      href={project.route}
+                      onClick={handleTabletDrawerItemClick}
+                      className="w-fit block hover:text-red-600 text-sm"
+                    >
+                      {project.title}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
 
             <a
               href="/mindful-ux-design-user-experience"
-              onClick={handleMobileMenuItemClick}
+              onClick={handleTabletDrawerItemClick}
               className="hover:text-[#2c2178] cursor-pointer py-2"
             >
               Mindful UX "Design Studio"
@@ -1196,13 +968,13 @@ export default function Navbar() {
 
             <button
               onClick={scrollToContact}
-              className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white cursor-pointer"
+              className="mt-2 px-4 py-2 rounded-full border border-black text-black font-semibold transition hover:bg-black hover:text-white cursor-pointer w-full"
             >
               Let's Talk
             </button>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
