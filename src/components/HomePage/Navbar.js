@@ -7,7 +7,11 @@ import ProductsDropdown from "./ProductsDropdown";
 import { ProjectDropdown } from "./ProjectDropdown";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { servicesData } from "@/config/servicesConfig";
+import {
+  servicesData,
+  productsData,
+  projectsData,
+} from "@/config/servicesConfig";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -575,7 +579,7 @@ export default function Navbar() {
             : "max-h-0 opacity-0 invisible overflow-hidden"
         }`}
       >
-        <div className="mt-4 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
+        <div className="mt-2 bg-white rounded-lg shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="flex flex-col gap-2 text-sm font-medium text-[#3B3C4A] px-3 py-4">
             {/* AI Tab in mobile menu - always visible on all pages */}
             <Link
@@ -605,13 +609,13 @@ export default function Navbar() {
               </button>
 
               {mobileServicesOpen && (
-                <div className="pl-4 mt-2 space-y-2 text-xs">
+                <div className="pl-4 mt-2 space-y-3 text-sm">
                   {Object.entries(servicesByCategory).map(
                     ([category, services]) => (
                       <div key={category}>
                         <button
                           onClick={() => toggleCategory(category)}
-                          className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm py-1 cursor-pointer"
+                          className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm cursor-pointer"
                         >
                           {category}
                           <Image
@@ -625,13 +629,13 @@ export default function Navbar() {
                           />
                         </button>
                         {openCategories[category] && (
-                          <div className="pl-4 mt-1 space-y-1">
+                          <div className="pl-3 mt-2 space-y-2.5">
                             {services.map((service) => (
                               <Link
                                 key={service.id}
                                 href={service.route}
                                 onClick={handleMobileMenuItemClick}
-                                className="block hover:text-red-600"
+                                className="w-fit block hover:text-red-600"
                               >
                                 {service.title}
                               </Link>
@@ -645,7 +649,7 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Mobile Products Dropdown */}
+            {/* Mobile Products Dynamic Dropdown */}
             <div>
               <button
                 onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
@@ -663,19 +667,22 @@ export default function Navbar() {
                 />
               </button>
               {mobileProductsOpen && (
-                <div className="pl-4 mt-2">
-                  <Link
-                    href="/yourhour-screentime-app"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    YourHour
-                  </Link>
+                <div className="pl-3 mt-2 space-y-2.5">
+                  {productsData.map((product) => (
+                    <Link
+                      key={product.id}
+                      href={product.route}
+                      onClick={handleMobileMenuItemClick}
+                      className="w-fit block hover:text-red-600 text-sm"
+                    >
+                      {product.title}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
 
-            {/* Mobile Projects Dropdown */}
+            {/* Mobile Projects Dynamic Dropdown */}
             <div>
               <button
                 onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
@@ -693,49 +700,17 @@ export default function Navbar() {
                 />
               </button>
               {mobileProjectsOpen && (
-                <div className="pl-4 mt-2 space-y-1">
-                  <Link
-                    href="/memolect-learning-app"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    Memolect
-                  </Link>
-                  <Link
-                    href="/early-foods-e-commerce"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    EarlyFoods
-                  </Link>
-                  <Link
-                    href="/jego-ott-platform"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    JEGO
-                  </Link>
-                  <Link
-                    href="/soli-stack-integration-solutions"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    SoliStack
-                  </Link>
-                  <Link
-                    href="/greenbill-paperless-billing-software"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    GreenBill
-                  </Link>
-                  <Link
-                    href="/mach-one-platform-services"
-                    onClick={handleMobileMenuItemClick}
-                    className="block hover:text-red-600 text-xs"
-                  >
-                    MachOne
-                  </Link>
+                <div className="pl-3 mt-2 space-y-2.5">
+                  {projectsData.map((project) => (
+                    <Link
+                      key={project.id}
+                      href={project.route}
+                      onClick={handleMobileMenuItemClick}
+                      className="w-fit block hover:text-red-600 text-sm"
+                    >
+                      {project.title}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
