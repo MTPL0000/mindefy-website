@@ -226,7 +226,7 @@ export default function HeroSection() {
           <span
             ref={aiRef}
             data-ai-text
-            className="hidden md:inline-block text-black relative mx-5"
+            className="hidden lg:inline-block text-black relative mx-5"
             style={{
               transform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
               fontSize: `${fontSize}rem`,
@@ -252,10 +252,10 @@ export default function HeroSection() {
             AI
           </span>
           {/* AI text for small view */}
-          <span className="md:hidden text-black mx-3">AI</span>
+          <span className="lg:hidden text-black mx-3">AI</span>
           {/* & text for large view only - with fade animation */}
           <span
-            className="hidden md:inline-block text-black transition-all duration-300"
+            className="hidden lg:inline-block text-black transition-all duration-300"
             style={{
               opacity: hideAmpersand ? 0 : 1,
             }}
@@ -263,7 +263,7 @@ export default function HeroSection() {
             &
           </span>
           {/* & text for small view */}
-          <span className="md:hidden text-black">&</span>
+          <span className="lg:hidden text-black">&</span>
           <br />
           <span
             className="text-[#0BB1E9]"
