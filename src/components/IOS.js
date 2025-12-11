@@ -34,7 +34,7 @@ export default function IOS() {
           </div>
 
           {/* Hero Image - Responsive */}
-          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[30rem] mx-auto mb-8 sm:mb-12 lg:mb-16 xl:mb-18">
+          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-120 mx-auto mb-8 sm:mb-12 lg:mb-16 xl:mb-18">
             <Image
               src="/images/IOS.webp"
               alt="iOS App Development - Developer working with mobile app design"
@@ -75,7 +75,7 @@ export default function IOS() {
                   for your iOS app.
                 </p>
               </div>
-              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-[20.625rem] xl:h-[13.25rem] flex-shrink-0">
+              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-82.5 xl:h-53 shrink-0">
                 <Image
                   src="/images/IOS1.webp"
                   alt="Brain-Mapping Requirements"
@@ -86,7 +86,7 @@ export default function IOS() {
             </div>
 
             {/* Connector Line 1 */}
-            <div className="hidden lg:block relative lg:w-[25rem] lg:h-20 xl:w-[43.625rem] xl:h-[7rem] mx-auto">
+            <div className="hidden lg:block relative lg:w-100 lg:h-20 xl:w-174.5 xl:h-28 mx-auto">
               <Image
                 src="/images/IOSLine1.svg"
                 alt="Process Flow Line"
@@ -108,7 +108,7 @@ export default function IOS() {
                   experience.
                 </p>
               </div>
-              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-[20.625rem] xl:h-[13.25rem] flex-shrink-0">
+              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-82.5 xl:h-53 shrink-0">
                 <Image
                   src="/images/AAD2.webp"
                   alt="UI/UX Design Process"
@@ -119,7 +119,7 @@ export default function IOS() {
             </div>
 
             {/* Connector Line 2 */}
-            <div className="hidden lg:block relative lg:w-[25rem] lg:h-20 xl:w-[43.625rem] xl:h-[7rem] mx-auto">
+            <div className="hidden lg:block relative lg:w-100 lg:h-20 xl:w-174.5 xl:h-28 mx-auto">
               <Image
                 src="/images/IOSLine2.svg"
                 alt="Process Flow Line"
@@ -141,7 +141,7 @@ export default function IOS() {
                   incorporate user feedback and deliver a great user experience
                 </p>
               </div>
-              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-[20.625rem] xl:h-[13.25rem] flex-shrink-0">
+              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-82.5 xl:h-53 shrink-0">
                 <Image
                   src="/images/AAD4.webp"
                   alt="Agile Development Process"
@@ -152,7 +152,7 @@ export default function IOS() {
             </div>
 
             {/* Connector Line 3 */}
-            <div className="hidden lg:block relative lg:w-[25rem] lg:h-20 xl:w-[43.625rem] xl:h-[7rem] mx-auto">
+            <div className="hidden lg:block relative lg:w-100 lg:h-20 xl:w-174.5 xl:h-28 mx-auto">
               <Image
                 src="/images/IOSLine1.svg"
                 alt="Process Flow Line"
@@ -174,7 +174,7 @@ export default function IOS() {
                   versions, thereby increasing user satisfaction.
                 </p>
               </div>
-              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-[20.625rem] xl:h-[13.25rem] flex-shrink-0">
+              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-82.5 xl:h-53 shrink-0">
                 <Image
                   src="/images/AAD6.webp"
                   alt="QA Testing Process"
@@ -185,7 +185,7 @@ export default function IOS() {
             </div>
 
             {/* Connector Line 4 */}
-            <div className="hidden lg:block relative lg:w-[25rem] lg:h-20 xl:w-[43.625rem] xl:h-[7rem] mx-auto">
+            <div className="hidden lg:block relative lg:w-100 lg:h-20 xl:w-174.5 xl:h-28 mx-auto">
               <Image
                 src="/images/IOSLine2.svg"
                 alt="Process Flow Line"
@@ -206,7 +206,7 @@ export default function IOS() {
                   user feedback to keep your apps running.
                 </p>
               </div>
-              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-[20.625rem] xl:h-[13.25rem] flex-shrink-0">
+              <div className="relative w-64 h-40 sm:w-80 sm:h-48 lg:w-96 lg:h-52 xl:w-82.5 xl:h-53 shrink-0">
                 <Image
                   src="/images/AAD8.webp"
                   alt="Maintenance and Support"

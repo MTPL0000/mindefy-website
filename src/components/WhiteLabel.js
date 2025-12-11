@@ -9,18 +9,18 @@ export default function WhiteLabel() {
       <section className="mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-5">
             White Label App Solution
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[80%] lg:max-w-[50rem] mx-auto px-4 sm:px-0">
+          <p className="text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[80%] lg:max-w-200 mx-auto px-4 sm:px-0">
             White Label App Solutions <br className="hidden sm:block" /> for
             Various Industries
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-[90%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-[60.25rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.5rem] px-4 sm:px-0">
+          <div className="w-[90%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-241 font-normal mx-auto mb-9 text-justify space-y-6 px-4 sm:px-0">
             <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed">
               At Mindefy, we strive to provide superior white label app
               solutions you can trust. With our extensive knowledge and
@@ -40,7 +40,7 @@ export default function WhiteLabel() {
           </div>
 
           {/* Hero Image - Responsive */}
-          <div className="relative w-[90%] sm:w-[85%] md:w-[80%] lg:w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] xl:h-[30.125rem] mx-auto mb-[3rem] sm:mb-[4rem] lg:mb-[5rem]">
+          <div className="relative w-[90%] sm:w-[85%] md:w-[80%] lg:w-full h-80 sm:h-100 lg:h-120.5 xl:h-120.5 mx-auto mb-12 sm:mb-16 lg:mb-20">
             <Image
               src="/images/WL.webp"
               alt="WHITE LABEL"
@@ -60,13 +60,13 @@ export default function WhiteLabel() {
         </div>
 
         <div
-          className="w-[90%] sm:w-[85%] md:w-[70%] lg:w-[60%] xl:w-[42.75rem] mx-auto mb-[3.75rem] rounded-[0.75rem] bg-[#FFFFFF] p-4 sm:p-5 shadow-lg"
+          className="w-[90%] sm:w-[85%] md:w-[70%] lg:w-[60%] xl:w-171 mx-auto mb-15 rounded-xl bg-[#FFFFFF] p-4 sm:p-5 shadow-lg"
           style={{
             boxShadow: `
                      1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)`,
           }}
         >
-          <p className="w-full xl:w-[40.25rem] text-center font-medium text-[1.25rem] sm:text-[1.5rem] lg:text-2xl tracking-normal text-[#2F2175] px-2 sm:px-0">
+          <p className="w-full xl:w-161 text-center font-medium text-[1.25rem] sm:text-[1.5rem] lg:text-2xl tracking-normal text-[#2F2175] px-2 sm:px-0">
             Partner with us and experience the transformative Power of Our
             Cutting-Edge Technology
           </p>
@@ -75,7 +75,7 @@ export default function WhiteLabel() {
 
       {/* Agile Benefits Section - Responsive Grid */}
       <section className="px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[90%] sm:max-w-[85%] lg:max-w-[72.5rem] mx-auto">
+        <div className="max-w-[90%] sm:max-w-[85%] lg:max-w-290 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center">
             {[
               {
@@ -121,13 +121,13 @@ export default function WhiteLabel() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[1.25rem] px-4 sm:px-6 py-5 w-full max-w-[90%] sm:max-w-[85%] lg:max-w-[35rem] xl:w-[35rem] flex flex-col"
+                className="bg-white rounded-[1.25rem] px-4 sm:px-6 py-5 w-full max-w-[90%] sm:max-w-[85%] lg:max-w-140 xl:w-140 flex flex-col"
                 style={{
                   boxShadow:
                     "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
                 }}
               >
-                <div className="relative w-full lg:w-[31.25rem] xl:w-[31.25rem] mb-[1.125rem] h-[18rem] sm:h-[20rem] lg:h-[22.187rem] xl:h-[22.187rem] mx-auto">
+                <div className="relative w-full lg:w-125 xl:w-125 mb-4.5 h-72 sm:h-80 lg:h-[22.187rem] xl:h-[22.187rem] mx-auto">
                   <Image
                     src={item.img || "/placeholder.svg"}
                     alt={item.title}

@@ -742,7 +742,7 @@ export default function ALMLandingPage() {
       {/* Case Study 1 - Gen AI Chatbot */}
       <div
         id="section-4"
-        className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
+        className="hidden w-full lg:flex items-center justify-center bg-linear-to-b from-white via-[#A2E3FB99] to-white"
       >
         {/* Large screen animated version */}
         <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-12 md:py-28">
@@ -755,7 +755,7 @@ export default function ALMLandingPage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              <div className="relative h-[20rem] lg:h-[35rem] xl:h-[38rem] aspect-[3/4]">
+              <div className="relative h-80 lg:h-140 xl:h-152 aspect-3/4">
                 <img
                   src="/images/YH-MN.gif"
                   alt="Gen AI-Chatbot Interface"
@@ -799,7 +799,7 @@ export default function ALMLandingPage() {
       {/*Case Study 1 - Gen AI Chatbot: Mobile/Tablet static version */}
       <div
         id="section-4"
-        className="lg:hidden w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
+        className="lg:hidden w-full flex items-center justify-center bg-linear-to-b from-white via-[#A2E3FB99] to-white"
       >
         <section className="w-full py-12 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
@@ -854,7 +854,7 @@ export default function ALMLandingPage() {
       {/* Case Study 2 - ML Driven Recommendations */}
       <div
         id="section-5"
-        className="hidden w-full lg:flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
+        className="hidden w-full lg:flex items-center justify-center bg-linear-to-b from-white via-[#A2E3FB99] to-white"
       >
         {/* Large screen animated version */}
         <section className="w-full h-full items-center justify-center px-[8.33%] lg:px-[8.33%] xl:px-[8.33%] 2xl:px-[8.33%] py-12 md:py-32">
@@ -911,7 +911,7 @@ export default function ALMLandingPage() {
       {/* Case Study 2 - ML Driven Recommendations: Mobile/Tablet static version */}
       <div
         id="section-5"
-        className="lg:hidden w-full flex items-center justify-center bg-gradient-to-b from-white via-[#A2E3FB99] to-white"
+        className="lg:hidden w-full flex items-center justify-center bg-linear-to-b from-white via-[#A2E3FB99] to-white"
       >
         <section className="w-full py-12 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
@@ -924,7 +924,7 @@ export default function ALMLandingPage() {
               </div>
 
               {/* Laptop mockup */}
-              <div className="w-5/6 md:w-4/5 lg:w-3/4 aspect-[11/7]">
+              <div className="w-5/6 md:w-4/5 lg:w-3/4 aspect-11/7">
                 <img
                   src="/images/ai/early-foods.png"
                   alt="ML Driven Recommendations Interface"
@@ -1049,7 +1049,7 @@ export default function ALMLandingPage() {
                       >
                         {/* Animated left border - slides up from bottom */}
                         <motion.div
-                          className="absolute left-0 bottom-0 w-[1px] bg-[#000000]"
+                          className="absolute left-0 bottom-0 w-px bg-[#000000]"
                           animate={{
                             height: `${borderHeight}%`,
                           }}
@@ -1061,7 +1061,7 @@ export default function ALMLandingPage() {
 
                         {/* Animated bottom border - appears with left border */}
                         <motion.div
-                          className="absolute bottom-0 left-0 right-0 h-[1px] bg-[#000000]"
+                          className="absolute bottom-0 left-0 right-0 h-px bg-[#000000]"
                           animate={{
                             opacity: borderProgress,
                           }}
@@ -1094,7 +1094,7 @@ export default function ALMLandingPage() {
                         {/* Learn More button with fade-in animation */}
                         <motion.a
                           href={card.link}
-                          className="w-fit flex items-center text-left text-xs lg:text-sm xl:text-base 2xl:text-lg font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300 mt-2 flex-shrink-0"
+                          className="w-fit flex items-center text-left text-xs lg:text-sm xl:text-base 2xl:text-lg font-poppins font-medium text-[#000000] hover:text-[#D84326] hover:scale-105 transition-all duration-300 mt-2 shrink-0"
                           animate={{
                             opacity: buttonOpacity,
                           }}

@@ -9,12 +9,12 @@ export default function SAS() {
       <section className="mt-20 md:mt-28 mx-auto px-4 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] md:text-[1rem] font-bold tracking-widest uppercase mb-[1rem] md:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] md:text-[1rem] font-bold tracking-widest uppercase mb-4 md:mb-5">
             it/staff Augmentation
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] md:text-[2rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-7 leading-tight max-w-[90%] md:max-w-[45rem] lg:max-w-[50rem] mx-auto px-2 md:px-0">
+          <p className="text-[1.5rem] md:text-[2rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-7 leading-tight max-w-[90%] md:max-w-180 lg:max-w-200 mx-auto px-2 md:px-0">
             <span className="font-normal">Reliable</span> IT Staff Augmentation
             Services
             <span className="font-normal"> for </span> Flexible{" "}
@@ -23,7 +23,7 @@ export default function SAS() {
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-[95%] md:w-[85%] lg:w-[60.25rem] font-normal mx-auto mb-[1.5rem] md:mb-[2.25rem] text-justify space-y-[1rem] md:space-y-[1.75rem] px-2 md:px-0">
+          <div className="w-[95%] md:w-[85%] lg:w-241 font-normal mx-auto mb-6 md:mb-9 text-justify space-y-4 md:space-y-7 px-2 md:px-0">
             <p className="text-[0.875rem] md:text-[1rem] text-[#444444] leading-relaxed">
               Mindеfy, your trustеd partner for IT staffing sеrvicеs. We
               specialize in strengthening IT teams by providing highly skilled
@@ -44,7 +44,7 @@ export default function SAS() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-[20rem] md:h-[25rem] lg:h-[30.125rem] mx-auto mb-[3rem] md:mb-[5rem]">
+          <div className="relative w-full h-80 md:h-100 lg:h-120.5 mx-auto mb-12 md:mb-20">
             <Image
               src="/images/MMS.webp"
               alt="Hybrid App Development - Developer working with mobile app design"
@@ -58,9 +58,9 @@ export default function SAS() {
 
       {/* Agile Benefits Section using Flex */}
       <section className="px-4 lg:px-0">
-        <div className="max-w-[90%] md:max-w-[77.625rem] mx-auto">
+        <div className="max-w-[90%] md:max-w-310.5 mx-auto">
           <div className="text-center">
-            <p className="text-[#FF5225] mx-auto text-[1.25rem] md:text-[1.75rem] lg:text-[2rem] font-bold tracking-widest uppercase mb-[1rem] md:mb-[1.5rem]">
+            <p className="text-[#FF5225] mx-auto text-[1.25rem] md:text-[1.75rem] lg:text-[2rem] font-bold tracking-widest uppercase mb-4 md:mb-6">
               Resourcing Models at Mindefy
             </p>
             <h2 className="text-center text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-6 md:mb-8 lg:mb-11 px-2 md:px-0">
@@ -98,18 +98,18 @@ export default function SAS() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[0.75rem] p-4 md:p-6 w-full md:w-[20rem] lg:w-[24.875rem] flex flex-col items-center text-center"
+                className="bg-white rounded-xl p-4 md:p-6 w-full md:w-[20rem] lg:w-99.5 flex flex-col items-center text-center"
                 style={{
                   boxShadow:
                     "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
                 }}
               >
-                <div className="w-full md:w-[18rem] lg:w-[21.875rem] h-[3rem] md:h-[4rem] lg:h-[4.5rem] mb-[0.75rem] md:mb-[1.125rem]">
+                <div className="w-full md:w-[18rem] lg:w-87.5 h-12 md:h-16 lg:h-18 mb-3 md:mb-4.5">
                   <h3 className="font-semibold text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem]">
                     {item.title}
                   </h3>
                 </div>
-                <div className="relative w-[10rem] md:w-[12rem] lg:w-[13.875rem] h-[9rem] md:h-[11rem] lg:h-[12.375rem] mb-[0.75rem] md:mb-[1.125rem]">
+                <div className="relative w-40 md:w-48 lg:w-55.5 h-36 md:h-44 lg:h-49.5 mb-3 md:mb-4.5">
                   <Image
                     src={item.img}
                     alt={item.title}
@@ -118,7 +118,7 @@ export default function SAS() {
                   />
                 </div>
 
-                <p className="text-[0.75rem] md:text-sm font-normal pb-4 md:pb-7 w-full md:w-[18rem] lg:w-[21.875rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.75rem] md:text-sm font-normal pb-4 md:pb-7 w-full md:w-[18rem] lg:w-87.5 text-[#444444] leading-relaxed text-justify">
                   {item.desc}
                 </p>
               </div>

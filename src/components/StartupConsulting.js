@@ -9,12 +9,12 @@ export default function StartupConsulting() {
       <section className="mt-20 sm:mt-24 md:mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1rem] sm:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-4 sm:mb-5">
             Startup Support and Consulting
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-5 sm:mb-6 md:mb-7 leading-tight max-w-[90%] sm:max-w-[80%] md:max-w-[70%] xl:max-w-[50rem] mx-auto">
+          <p className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-5 sm:mb-6 md:mb-7 leading-tight max-w-[90%] sm:max-w-[80%] md:max-w-[70%] xl:max-w-200 mx-auto">
             <span className="font-normal">Your </span>Startup's Success{" "}
             <span className="font-normal"> from </span>
             <br className="hidden sm:block" /> Ideation{" "}
@@ -23,7 +23,7 @@ export default function StartupConsulting() {
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60rem] xl:w-[60.25rem] font-normal mx-auto mb-[1.5rem] text-justify space-y-[1rem] sm:space-y-[1.25rem]">
+          <div className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-240 xl:w-241 font-normal mx-auto mb-6 text-justify space-y-4 sm:space-y-5">
             <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed">
               Our expertise will help your startup succeed from concept to MVP.
               Our team of experts combines prowess, platform knowledge, and
@@ -32,7 +32,7 @@ export default function StartupConsulting() {
               range of support that accelerates your startup's growth.
             </p>
           </div>
-          <div className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60rem] xl:w-[60.25rem] font-normal mx-auto mb-[1.5rem] text-center sm:text-justify space-y-[1rem] sm:space-y-[1.25rem]">
+          <div className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-240 xl:w-241 font-normal mx-auto mb-6 text-center sm:text-justify space-y-4 sm:space-y-5">
             <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed">
               We believe that guiding startups goes beyond simply telling them
               <span className="font-semibold">"what to do"</span> We also focus
@@ -45,7 +45,7 @@ export default function StartupConsulting() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[28rem] xl:h-[31.125rem] mx-auto mb-[2rem] sm:mb-[3rem] md:mb-[4.5rem]">
+          <div className="relative w-full h-60 sm:h-80 md:h-100 lg:h-112 xl:h-124.5 mx-auto mb-8 sm:mb-12 md:mb-18">
             <Image
               src="/images/DT.webp"
               alt="digital transformation"
@@ -57,8 +57,8 @@ export default function StartupConsulting() {
         </div>
       </section>
 
-      <div className="w-full max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[75rem] xl:w-[72.5rem] mb-12 sm:mb-16 md:mb-20 mx-auto flex flex-col lg:flex-row items-center px-4 sm:px-6 lg:px-8 xl:px-0">
-        <div className="w-full lg:w-[47.875rem] mb-6 lg:mb-0">
+      <div className="w-full max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-300 xl:w-290 mb-12 sm:mb-16 md:mb-20 mx-auto flex flex-col lg:flex-row items-center px-4 sm:px-6 lg:px-8 xl:px-0">
+        <div className="w-full lg:w-191.5 mb-6 lg:mb-0">
           <div className="font-semibold text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] text-[#000000] mb-4 sm:mb-5 text-center lg:text-left">
             <p>Gaining User-Centric Insights into the Product</p>
           </div>
@@ -84,7 +84,7 @@ export default function StartupConsulting() {
             </p>
           </div>
         </div>
-        <div className="relative w-[15rem] sm:w-[18rem] md:w-[20rem] lg:w-[23.25rem] lg:ml-5 my-3.5 h-[15rem] sm:h-[18rem] md:h-[20rem] lg:h-[23.375rem] mx-auto">
+        <div className="relative w-60 sm:w-[18rem] md:w-[20rem] lg:w-93 lg:ml-5 my-3.5 h-60 sm:h-72 md:h-80 lg:h-93.5 mx-auto">
           <Image
             src="/images/SC.svg"
             alt="digital transformation"
@@ -96,9 +96,9 @@ export default function StartupConsulting() {
       </div>
 
       {/* Why Choose Mindefy Section */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-opacity-1 bg-gradient-to-br from-[#f6d6ce] via-[#e6e2fc] to-[#dee6ff]">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-opacity-1 bg-linear-to-br from-[#f6d6ce] via-[#e6e2fc] to-[#dee6ff]">
         {/* Foreground Content */}
-        <div className="relative z-10 max-w-[90rem] mx-auto">
+        <div className="relative z-10 max-w-360 mx-auto">
           {/* Section Header */}
           <div className="text-center mb-2">
             <h2 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] xl:text-[2.25rem] font-semibold text-[#000000]">
@@ -106,7 +106,7 @@ export default function StartupConsulting() {
             </h2>
           </div>
 
-          <div className="mb-[2rem] sm:mb-[3rem] md:mb-[3.75rem]">
+          <div className="mb-8 sm:mb-12 md:mb-15">
             <p className="font-medium text-[0.875rem] sm:text-[1rem] w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[43.81rem] text-center mx-auto">
               At Mindefy, we offer comprehensive support and guidance services
               specifically tailored to meet the unique needs of startups. Our
@@ -115,7 +115,7 @@ export default function StartupConsulting() {
           </div>
 
           {/* Features */}
-          <div className="flex flex-wrap gap-3 max-w-[72.5rem] mx-auto">
+          <div className="flex flex-wrap gap-3 max-w-290 mx-auto">
             {/* Card 1 */}
             <div className="bg-[#FFFFFF] rounded-2xl px-4 sm:px-5.5 pt-6 sm:pt-8 md:pt-10 flex-1 w-full sm:w-[calc(50%-0.5rem)] lg:w-[32.86rem] basis-full sm:basis-[calc(50%-1rem)]">
               <h3 className="text-[1.25rem] sm:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4">
@@ -246,23 +246,23 @@ export default function StartupConsulting() {
 
       {/* MEAN and MERN Advantages Section */}
       <section className="mt-12 sm:mt-16 md:mt-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[62.5rem] mx-auto">
+        <div className="max-w-250 mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[2rem] sm:mb-[3rem] md:mb-[3.75rem]">
+          <div className="text-center mb-8 sm:mb-12 md:mb-15">
             <h2 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] xl:text-[2.25rem] font-semibold text-[#1E1E1E]">
               Our Comprehensive IT partnership includes:
             </h2>
           </div>
 
           {/* Advantages Content */}
-          <div className="flex flex-col gap-[2rem] sm:gap-[3rem] md:gap-[3.75rem] max-w-[60.375rem] mx-auto">
+          <div className="flex flex-col gap-8 sm:gap-12 md:gap-15 max-w-241.5 mx-auto">
             {/* Full JavaScript Stack */}
             <div className="flex flex-col lg:flex-row rounded-2xl">
-              <div className="flex-1 w-full lg:w-[41.25rem] mb-4 lg:mb-0">
+              <div className="flex-1 w-full lg:w-165 mb-4 lg:mb-0">
                 <p className="text-[1.25rem] sm:text-[1.5rem] font-semibold text-[#000000] mb-2 sm:mb-2.5 text-center lg:text-left">
                   Ideation Stage Support
                 </p>
-                <p className="text-[0.875rem] sm:text-[1rem] w-full lg:w-[41.25rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] sm:text-[1rem] w-full lg:w-165 text-[#444444] leading-relaxed text-justify">
                   From the very beginning, Mindefy collaborates closely with
                   startups during the initial ideation stage. Our team of
                   experts helps you refine your ideas, analyze market trends,
@@ -271,9 +271,9 @@ export default function StartupConsulting() {
                   lay a solid foundation for your startup's success.
                 </p>
               </div>
-              <div className="flex-shrink-0 flex justify-center lg:justify-end">
+              <div className="shrink-0 flex justify-center lg:justify-end">
                 <div className="flex items-center justify-center">
-                  <div className="w-[12rem] sm:w-[14rem] md:w-[16rem] lg:w-[17rem] lg:ml-8 h-[10rem] sm:h-[12rem] md:h-[14rem] lg:h-[15.26rem] relative">
+                  <div className="w-48 sm:w-56 md:w-[16rem] lg:w-68 lg:ml-8 h-40 sm:h-48 md:h-56 lg:h-[15.26rem] relative">
                     <Image
                       src="/images/SC1.svg"
                       alt="JavaScript Stack"
@@ -287,9 +287,9 @@ export default function StartupConsulting() {
 
             {/* Scalability and Performance */}
             <div className="flex flex-col lg:flex-row">
-              <div className="flex-shrink-0 order-2 lg:order-1 flex justify-center lg:justify-start">
+              <div className="shrink-0 order-2 lg:order-1 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[12rem] sm:w-[14rem] md:w-[16rem] lg:w-[17rem] lg:mr-8 h-[10rem] sm:h-[12rem] md:h-[14rem] lg:h-[15.26rem] relative">
+                  <div className="w-48 sm:w-56 md:w-[16rem] lg:w-68 lg:mr-8 h-40 sm:h-48 md:h-56 lg:h-[15.26rem] relative">
                     <Image
                       src="/images/SC2.svg"
                       alt="Performance"
@@ -299,7 +299,7 @@ export default function StartupConsulting() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[41.25rem] my-4 lg:my-7 order-1 lg:order-2 mb-4 lg:mb-0">
+              <div className="flex-1 w-full lg:w-165 my-4 lg:my-7 order-1 lg:order-2 mb-4 lg:mb-0">
                 <h3 className="text-[1.25rem] sm:text-[1.5rem] font-semibold text-[#000000] mb-2 sm:mb-2.5 text-center lg:text-left">
                   Technology Expertise
                 </h3>
@@ -317,7 +317,7 @@ export default function StartupConsulting() {
 
             {/* Rapid Development */}
             <div className="flex flex-col lg:flex-row rounded-2xl">
-              <div className="flex-1 w-full lg:w-[41.25rem] my-2 lg:my-4 mb-4 lg:mb-0">
+              <div className="flex-1 w-full lg:w-165 my-2 lg:my-4 mb-4 lg:mb-0">
                 <h3 className="text-[1.25rem] sm:text-[1.5rem] font-semibold text-[#000000] mb-2 sm:mb-2.5 text-center lg:text-left">
                   MVP Development and Launch
                 </h3>
@@ -331,9 +331,9 @@ export default function StartupConsulting() {
                   sets a strong foundation for future iterations
                 </p>
               </div>
-              <div className="flex-shrink-0 flex justify-center lg:justify-end">
+              <div className="shrink-0 flex justify-center lg:justify-end">
                 <div className="flex items-center justify-center">
-                  <div className="w-[12rem] sm:w-[14rem] md:w-[16rem] lg:w-[17rem] lg:ml-8 h-[10rem] sm:h-[12rem] md:h-[14rem] lg:h-[15.26rem] relative">
+                  <div className="w-48 sm:w-56 md:w-[16rem] lg:w-68 lg:ml-8 h-40 sm:h-48 md:h-56 lg:h-[15.26rem] relative">
                     <Image
                       src="/images/SC3.svg"
                       alt="Rapid Development"
@@ -347,9 +347,9 @@ export default function StartupConsulting() {
 
             {/* Code Reusability */}
             <div className="flex flex-col lg:flex-row">
-              <div className="flex-shrink-0 order-2 lg:order-1 flex justify-center lg:justify-start">
+              <div className="shrink-0 order-2 lg:order-1 flex justify-center lg:justify-start">
                 <div className="flex items-center">
-                  <div className="w-[12rem] sm:w-[14rem] md:w-[16rem] lg:w-[17rem] lg:mr-8 h-[10rem] sm:h-[12rem] md:h-[14rem] lg:h-[15.26rem] relative">
+                  <div className="w-48 sm:w-56 md:w-[16rem] lg:w-68 lg:mr-8 h-40 sm:h-48 md:h-56 lg:h-[15.26rem] relative">
                     <Image
                       src="/images/SC4.svg"
                       alt="Code Reusability"
@@ -359,7 +359,7 @@ export default function StartupConsulting() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[41.25rem] my-4 lg:my-7 order-1 lg:order-2 mb-4 lg:mb-0">
+              <div className="flex-1 w-full lg:w-165 my-4 lg:my-7 order-1 lg:order-2 mb-4 lg:mb-0">
                 <h3 className="text-[1.25rem] sm:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4 text-center lg:text-left">
                   Continuous Support and Scalability
                 </h3>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex flex-col justify-center gap-4 items-center px-6 bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="min-h-screen flex flex-col justify-center gap-4 items-center px-6 bg-linear-to-b from-gray-50 to-gray-100">
       {/* Heading */}
       <h1 className="text-4xl md:text-5xl font-semibold text-gray-800">
         Page Not Found

@@ -152,7 +152,7 @@ export default function YourHourProduct() {
               <img
                 src="/images/yourhour/dashboard.webp"
                 alt="YourHour image"
-                className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
+                className="aspect-square w-full md:w-4xl object-contain mx-auto"
                 loading="lazy"
               />
             </div>
@@ -167,7 +167,7 @@ export default function YourHourProduct() {
             <img
               src="/images/yourhour/analysis.webp"
               alt="YourHour image"
-              className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
+              className="aspect-square w-full md:w-4xl object-contain mx-auto"
               loading="lazy"
             />
           </div>
@@ -200,7 +200,7 @@ export default function YourHourProduct() {
           <img
             src="/images/yourhour/alerts.webp"
             alt="YourHour image"
-            className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
+            className="aspect-square w-full md:w-4xl object-contain mx-auto"
             loading="lazy"
           />
         </div>
@@ -213,7 +213,7 @@ export default function YourHourProduct() {
             <img
               src="/images/yourhour/challenges.webp"
               alt="YourHour image"
-              className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
+              className="aspect-square w-full md:w-4xl object-contain mx-auto"
               loading="lazy"
             />
           </div>
@@ -249,7 +249,7 @@ export default function YourHourProduct() {
           <img
             src="/images/yourhour/reports.webp"
             alt="YourHour image"
-            className="aspect-[1/1] w-full md:w-4xl object-contain mx-auto"
+            className="aspect-square w-full md:w-4xl object-contain mx-auto"
             loading="lazy"
           />
         </div>

@@ -35,7 +35,7 @@ export default function WebApp() {
           </div>
 
           {/* Hero Image - Responsive */}
-          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[30rem] mx-auto mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
+          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-120 mx-auto mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
             <Image
               src="/images/WAD.webp"
               alt="Web Application Development - Developer working with web applications"
@@ -46,6 +46,7 @@ export default function WebApp() {
           </div>
         </div>
       </section>
+
       {/* Enterprise Java Section */}
       <section className="px-4 sm:px-6 lg:px-8 xl:px-16 mb-12 sm:mb-16 lg:mb-24">
         <div className="container mx-auto max-w-4xl">
@@ -70,16 +71,17 @@ export default function WebApp() {
           </div>
         </div>
       </section>
+
       {/* MERN and MEAN Sections */}
       <section className="mt-20 lg:mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className=" mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-5">
             Mean and Mern Stack Development
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2.25rem]  font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto px-4 sm:px-0">
+          <p className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2.25rem]  font-semibold text-[#000000] mb-7 leading-tight max-w-200 mx-auto px-4 sm:px-0">
             MEAN and MERN Stack Dеvеlopmеnt{" "}
             <span className="font-normal">Empowеring Businеssеs with </span>
             Scalablе <span className="font-normal">and </span>Agilе Wеb
@@ -87,7 +89,7 @@ export default function WebApp() {
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-[60.25rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.25rem] px-4 sm:px-6 lg:px-0">
+          <div className="w-full max-w-241 font-normal mx-auto mb-9 text-justify space-y-5 px-4 sm:px-6 lg:px-0">
             <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed">
               Maximizе thе potеntial of your wеb applications with our еxpеrtisе
               in MEAN and MERN stack dеvеlopmеnt. Mindеfy combinеs tеchnical
@@ -100,7 +102,7 @@ export default function WebApp() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] mx-auto mb-[4rem] sm:mb-[5.5rem] lg:mb-[7.25rem] px-4 sm:px-6 lg:px-0">
+          <div className="relative w-full h-80 sm:h-100 lg:h-120.5 mx-auto mb-16 sm:mb-22 lg:mb-29 px-4 sm:px-6 lg:px-0">
             <Image
               src="/images/MMS.webp"
               alt="MEAN MERN Stack Development - Developer working with web applications"
@@ -109,7 +111,7 @@ export default function WebApp() {
               priority
             />
           </div>
-          <div className="mx-auto max-w-[60.25rem] text-[#444444] mb-16 sm:mb-20 lg:mb-28 px-4 sm:px-6 lg:px-0">
+          <div className="mx-auto max-w-241 text-[#444444] mb-16 sm:mb-20 lg:mb-28 px-4 sm:px-6 lg:px-0">
             <p className="text-[0.875rem] sm:text-[1rem] font-medium ">
               Lеt our еxpеriеncеd tеam providе your organization with scalablе,
               еfficiеnt and advancеd wеb applications that lеavе a lasting
@@ -118,16 +120,17 @@ export default function WebApp() {
           </div>
         </div>
       </section>
+
       {/* MEAN Stack Technologies Section */}
-      <section className="mt-[4.5rem] mb-16 sm:mb-20 lg:mb-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[72.5rem] mx-auto">
+      <section className="mt-18 mb-16 sm:mb-20 lg:mb-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-290 mx-auto">
           {/* Section Header */}
-          <div className="text-center mx-auto max-w-[61.5rem] mb-12 sm:mb-16 lg:mb-24 px-4 sm:px-6 lg:px-0">
+          <div className="text-center mx-auto max-w-246 mb-12 sm:mb-16 lg:mb-24 px-4 sm:px-6 lg:px-0">
             <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] max-w-[52.06rem] mx-auto font-semibold text-[#000000] mb-6 sm:mb-8 lg:mb-10">
               MEAN-ingful Web Applications <br></br>Empowering End-to-End
               Development with MEAN Stack
             </h2>
-            <p className="text-[0.875rem] sm:text-[1rem] font-normal text-[#444444] leading-relaxed max-w-[60.25rem] mx-auto text-justify">
+            <p className="text-[0.875rem] sm:text-[1rem] font-normal text-[#444444] leading-relaxed max-w-241 mx-auto text-justify">
               Take advantage of MEAN's stacking capabilities to easily build
               end-to-end web applications. Our expert development team
               specializes in leveraging all components of the MEAN stack,
@@ -136,12 +139,12 @@ export default function WebApp() {
           </div>
 
           {/* Technology Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-[3.5rem] max-w-[72.5rem] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-14 max-w-290 mx-auto">
             {/* MongoDB */}
-            <div className="bg-[#DFF9FB] rounded-2xl h-[20rem] sm:h-[21rem] lg:h-[22.06rem] text-center mx-auto w-full max-w-[15.5rem]">
+            <div className="bg-[#DFF9FB] rounded-2xl h-80 sm:h-84 lg:h-[22.06rem] text-center mx-auto w-full max-w-62">
               <div className="mt-12 sm:mt-14">
                 <div className="mx-auto mb-3 rounded-full flex items-center justify-center">
-                  <div className="w-[6rem] h-[6rem] sm:w-[7rem] sm:h-[7rem] lg:w-[8.12rem] lg:h-[8.125rem] relative">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[8.12rem] lg:h-32.5 relative">
                     <Image
                       src="/images/mongodb.svg"
                       alt="MongoDB Icon"
@@ -161,10 +164,10 @@ export default function WebApp() {
             </div>
 
             {/* Express JS */}
-            <div className="bg-[#FFDCDE] rounded-2xl h-[20rem] sm:h-[21rem] lg:h-[22.06rem] text-center mx-auto w-full max-w-[15.5rem]">
+            <div className="bg-[#FFDCDE] rounded-2xl h-80 sm:h-84 lg:h-[22.06rem] text-center mx-auto w-full max-w-62">
               <div className="mt-12 sm:mt-14">
                 <div className="mx-auto mb-3 rounded-full flex items-center justify-center">
-                  <div className="w-[6rem] h-[6rem] sm:w-[7rem] sm:h-[7rem] lg:w-[8.12rem] lg:h-[8.125rem] relative">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[8.12rem] lg:h-32.5 relative">
                     <Image
                       src="/images/expressjs.svg"
                       alt="Express JS Icon"
@@ -184,10 +187,10 @@ export default function WebApp() {
             </div>
 
             {/* Angular JS */}
-            <div className="bg-[#D8E5F7] rounded-2xl h-[20rem] sm:h-[21rem] lg:h-[22.06rem] text-center mx-auto w-full max-w-[15.5rem]">
+            <div className="bg-[#D8E5F7] rounded-2xl h-80 sm:h-84 lg:h-[22.06rem] text-center mx-auto w-full max-w-62">
               <div className="mt-12 sm:mt-14">
                 <div className="mx-auto mb-3 rounded-full flex items-center justify-center">
-                  <div className="w-[6rem] h-[6rem] sm:w-[7rem] sm:h-[7rem] lg:w-[8.12rem] lg:h-[8.125rem] relative">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[8.12rem] lg:h-32.5 relative">
                     <Image
                       src="/images/angular.svg"
                       alt="Angular JS Icon"
@@ -207,10 +210,10 @@ export default function WebApp() {
             </div>
 
             {/* Node JS */}
-            <div className="bg-[#F8EEC9] rounded-2xl h-[20rem] sm:h-[21rem] lg:h-[22.06rem] text-center mx-auto w-full max-w-[15.5rem]">
+            <div className="bg-[#F8EEC9] rounded-2xl h-80 sm:h-84 lg:h-[22.06rem] text-center mx-auto w-full max-w-62">
               <div className="mt-12 sm:mt-14">
                 <div className="mx-auto mb-3 rounded-full flex items-center justify-center">
-                  <div className="w-[6rem] h-[6rem] sm:w-[7rem] sm:h-[7rem] lg:w-[8.12rem] lg:h-[8.125rem] relative">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[8.12rem] lg:h-32.5 relative">
                     <Image
                       src="/images/node.svg"
                       alt="Node JS Icon"
@@ -231,6 +234,7 @@ export default function WebApp() {
           </div>
         </div>
       </section>
+
       {/* Detailed Technology Descriptions */}
       <section className="px-4 sm:px-6 lg:px-8">
         <div className="max-w-[62.81rem] mx-auto">
@@ -243,9 +247,9 @@ export default function WebApp() {
                   "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto">
-                <div className="w-full lg:w-[16.18rem] h-[10rem] sm:h-[12rem] lg:h-[13.875rem] flex items-center justify-center">
-                  <div className="w-[4rem] h-[4rem] sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] relative">
+              <div className="shrink-0 w-full lg:w-auto">
+                <div className="w-full lg:w-[16.18rem] h-40 sm:h-48 lg:h-55.5 flex items-center justify-center">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-21 lg:h-21 relative">
                     <Image
                       src="/images/mongodb1.svg"
                       alt="MongoDB Icon"
@@ -276,9 +280,9 @@ export default function WebApp() {
                   "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto">
-                <div className="w-full lg:w-[16.18rem] h-[10rem] sm:h-[12rem] lg:h-[13.875rem] flex items-center justify-center">
-                  <div className="w-[4rem] h-[4rem] sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] relative">
+              <div className="shrink-0 w-full lg:w-auto">
+                <div className="w-full lg:w-[16.18rem] h-40 sm:h-48 lg:h-55.5 flex items-center justify-center">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-21 lg:h-21 relative">
                     <Image
                       src="/images/expressjs1.svg"
                       alt="Express JS Icon"
@@ -310,9 +314,9 @@ export default function WebApp() {
                   "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto">
-                <div className="w-full lg:w-[16.18rem] h-[10rem] sm:h-[12rem] lg:h-[13.875rem] flex items-center justify-center">
-                  <div className="w-[4rem] h-[4rem] sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] relative">
+              <div className="shrink-0 w-full lg:w-auto">
+                <div className="w-full lg:w-[16.18rem]h-40 sm:h-48 lg:h-55.5 flex items-center justify-center">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-21 lg:h-21 relative">
                     <Image
                       src="/images/angular1.svg"
                       alt="Angular JS Icon"
@@ -344,9 +348,9 @@ export default function WebApp() {
                   "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto">
-                <div className="w-full lg:w-[16.18rem] h-[10rem] sm:h-[12rem] lg:h-[13.875rem] flex items-center justify-center">
-                  <div className="w-[4rem] h-[4rem] sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] relative">
+              <div className="shrink-0 w-full lg:w-auto">
+                <div className="w-full lg:w-[16.18rem]h-40 sm:h-48 lg:h-55.5 flex items-center justify-center">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-21 lg:h-21 relative">
                     <Image
                       src="/images/node1.svg"
                       alt="Node JS Icon"
@@ -373,15 +377,15 @@ export default function WebApp() {
         </div>
       </section>
       {/* MERN Stack Technologies Section */}
-      <section className="mt-[4.5rem] mb-16 sm:mb-20 lg:mb-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[72.5rem] mx-auto">
+      <section className="mt-18 mb-16 sm:mb-20 lg:mb-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-290 mx-auto">
           {/* Section Header */}
-          <div className="text-center mx-auto max-w-[61.5rem] mb-12 sm:mb-16 lg:mb-24 px-4 sm:px-6 lg:px-0">
+          <div className="text-center mx-auto max-w-246 mb-12 sm:mb-16 lg:mb-24 px-4 sm:px-6 lg:px-0">
             <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] max-w-[52.06rem] mx-auto font-semibold text-[#000000] mb-6 sm:mb-8 lg:mb-10">
               Achiеvе Dynamic and Rеsponsivе Excеllеncе with<br></br> MERN Stack
               Dеvеlopmеnt
             </h2>
-            <p className="text-[0.875rem] sm:text-[1rem] font-normal text-[#444444] leading-relaxed max-w-[60.25rem] mx-auto text-justify">
+            <p className="text-[0.875rem] sm:text-[1rem] font-normal text-[#444444] leading-relaxed max-w-241 mx-auto text-justify">
               Enjoy thе bеnеfits of thе MERN stack for dеvеloping dynamic and
               rеsponsivе wеb applications. Our skillеd dеvеlopеrs lеvеragе thе
               capabilitiеs of еach componеnt to dеlivеr fеaturе-rich, visually
@@ -390,12 +394,12 @@ export default function WebApp() {
           </div>
 
           {/* Technology Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-[3.5rem] max-w-[72.5rem] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-14 max-w-290 mx-auto">
             {/* MongoDB */}
-            <div className="bg-[#DFF9FB] rounded-2xl h-[20rem] sm:h-[21rem] lg:h-[22.06rem] text-center mx-auto w-full max-w-[15.5rem]">
+            <div className="bg-[#DFF9FB] rounded-2xl h-80 sm:h-84 lg:h-[22.06rem] text-center mx-auto w-full max-w-62">
               <div className="mt-12 sm:mt-14">
                 <div className="mx-auto mb-3 rounded-full flex items-center justify-center">
-                  <div className="w-[6rem] h-[6rem] sm:w-[7rem] sm:h-[7rem] lg:w-[8.12rem] lg:h-[8.125rem] relative">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[8.12rem] lg:h-32.5 relative">
                     <Image
                       src="/images/mongodb.svg"
                       alt="MongoDB Icon"
@@ -415,10 +419,10 @@ export default function WebApp() {
             </div>
 
             {/* Express JS */}
-            <div className="bg-[#FFDCDE] rounded-2xl h-[20rem] sm:h-[21rem] lg:h-[22.06rem] text-center mx-auto w-full max-w-[15.5rem]">
+            <div className="bg-[#FFDCDE] rounded-2xl h-80 sm:h-84 lg:h-[22.06rem] text-center mx-auto w-full max-w-62">
               <div className="mt-12 sm:mt-14">
                 <div className="mx-auto mb-3 rounded-full flex items-center justify-center">
-                  <div className="w-[6rem] h-[6rem] sm:w-[7rem] sm:h-[7rem] lg:w-[8.12rem] lg:h-[8.125rem] relative">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[8.12rem] lg:h-32.5 relative">
                     <Image
                       src="/images/expressjs.svg"
                       alt="Express JS Icon"
@@ -438,10 +442,10 @@ export default function WebApp() {
             </div>
 
             {/* React*/}
-            <div className="bg-[#D8E5F7] rounded-2xl h-[20rem] sm:h-[21rem] lg:h-[22.06rem] text-center mx-auto w-full max-w-[15.5rem]">
+            <div className="bg-[#D8E5F7] rounded-2xl h-80 sm:h-84 lg:h-[22.06rem] text-center mx-auto w-full max-w-62">
               <div className="mt-12 sm:mt-14">
                 <div className="mx-auto mb-3 rounded-full flex items-center justify-center">
-                  <div className="w-[6rem] h-[6rem] sm:w-[7rem] sm:h-[7rem] lg:w-[8.12rem] lg:h-[8.125rem] relative">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[8.12rem] lg:h-32.5 relative">
                     <Image
                       src="/images/react.svg"
                       alt="Angular JS Icon"
@@ -461,10 +465,10 @@ export default function WebApp() {
             </div>
 
             {/* Node JS */}
-            <div className="bg-[#F8EEC9] rounded-2xl h-[20rem] sm:h-[21rem] lg:h-[22.06rem] text-center mx-auto w-full max-w-[15.5rem]">
+            <div className="bg-[#F8EEC9] rounded-2xl h-80 sm:h-84 lg:h-[22.06rem] text-center mx-auto w-full max-w-62">
               <div className="mt-12 sm:mt-14">
                 <div className="mx-auto mb-3 rounded-full flex items-center justify-center">
-                  <div className="w-[6rem] h-[6rem] sm:w-[7rem] sm:h-[7rem] lg:w-[8.12rem] lg:h-[8.125rem] relative">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[8.12rem] lg:h-32.5 relative">
                     <Image
                       src="/images/node.svg"
                       alt="Node JS Icon"
@@ -485,6 +489,7 @@ export default function WebApp() {
           </div>
         </div>
       </section>
+
       {/* Detailed Technology Descriptions */}
       <section className="px-4 sm:px-6 lg:px-8">
         <div className="max-w-[62.81rem] mx-auto">
@@ -497,9 +502,9 @@ export default function WebApp() {
                   "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto">
-                <div className="w-full lg:w-[16.18rem] h-[10rem] sm:h-[12rem] lg:h-[13.875rem] flex items-center justify-center">
-                  <div className="w-[4rem] h-[4rem] sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] relative">
+              <div className="shrink-0 w-full lg:w-auto">
+                <div className="w-full lg:w-[16.18rem]h-40 sm:h-48 lg:h-55.5 flex items-center justify-center">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-21 lg:h-21 relative">
                     <Image
                       src="/images/mongodb1.svg"
                       alt="MongoDB Icon"
@@ -530,9 +535,9 @@ export default function WebApp() {
                   "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto">
-                <div className="w-full lg:w-[16.18rem] h-[10rem] sm:h-[12rem] lg:h-[13.875rem] flex items-center justify-center">
-                  <div className="w-[4rem] h-[4rem] sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] relative">
+              <div className="shrink-0 w-full lg:w-auto">
+                <div className="w-full lg:w-[16.18rem]h-40 sm:h-48 lg:h-55.5 flex items-center justify-center">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-21 lg:h-21 relative">
                     <Image
                       src="/images/expressjs1.svg"
                       alt="Express JS Icon"
@@ -564,9 +569,9 @@ export default function WebApp() {
                   "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto">
-                <div className="w-full lg:w-[16.18rem] h-[10rem] sm:h-[12rem] lg:h-[13.875rem] flex items-center justify-center">
-                  <div className="w-[4rem] h-[4rem] sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] relative">
+              <div className="shrink-0 w-full lg:w-auto">
+                <div className="w-full lg:w-[16.18rem]h-40 sm:h-48 lg:h-55.5 flex items-center justify-center">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-21 lg:h-21 relative">
                     <Image
                       src="/images/react1.svg"
                       alt="React Icon"
@@ -598,9 +603,9 @@ export default function WebApp() {
                   "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto">
-                <div className="w-full lg:w-[16.18rem] h-[10rem] sm:h-[12rem] lg:h-[13.875rem] flex items-center justify-center">
-                  <div className="w-[4rem] h-[4rem] sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] relative">
+              <div className="shrink-0 w-full lg:w-auto">
+                <div className="w-full lg:w-[16.18rem]h-40 sm:h-48 lg:h-55.5 flex items-center justify-center">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-21 lg:h-21 relative">
                     <Image
                       src="/images/node1.svg"
                       alt="Node JS Icon"
@@ -626,11 +631,12 @@ export default function WebApp() {
           </div>
         </div>
       </section>
+
       {/* MEAN and MERN Advantages Section */}
       <section className="mt-16 sm:mt-20 lg:mt-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[60.375rem] mx-auto">
+        <div className="max-w-241.5 mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[2rem] sm:mb-[2.5rem]">
+          <div className="text-center mb-8 sm:mb-10">
             <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-4">
               MEAN and MERN Stacks: The Winning Formula for<br></br> Modern Web
               Development
@@ -638,7 +644,7 @@ export default function WebApp() {
           </div>
 
           {/* Advantages Content */}
-          <div className="flex flex-col gap-[1.5rem] sm:gap-[2rem] lg:gap-[2.5rem] max-w-[60.375rem] mx-auto">
+          <div className="flex flex-col gap-6 sm:gap-8 lg:gap-10 max-w-241.5 mx-auto">
             {/* Full JavaScript Stack */}
             <div className="flex flex-col lg:flex-row bg-[#F9E9FF] rounded-2xl p-4 lg:p-0">
               <div className="flex-1 lg:w-[36.06rem] my-4 lg:my-[2.93rem] lg:ml-2.5">
@@ -653,9 +659,9 @@ export default function WebApp() {
                   codе rеusе.
                 </p>
               </div>
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] sm:w-[20rem] sm:h-[14rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 sm:w-[20rem] sm:h-56 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/MMS1.svg"
                       alt="JavaScript Stack"
@@ -669,9 +675,9 @@ export default function WebApp() {
 
             {/* Scalability and Performance */}
             <div className="flex flex-col-reverse lg:flex-row p-4 lg:p-0">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] sm:w-[20rem] sm:h-[14rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 sm:w-[20rem] sm:h-56 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/WAD3.svg"
                       alt="Performance"
@@ -709,9 +715,9 @@ export default function WebApp() {
                   interactive applications more efficiently.
                 </p>
               </div>
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] sm:w-[20rem] sm:h-[14rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 sm:w-[20rem] sm:h-56 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/WAD1.svg"
                       alt="Rapid Development"
@@ -725,9 +731,9 @@ export default function WebApp() {
 
             {/* Code Reusability */}
             <div className="flex flex-col-reverse lg:flex-row p-4 lg:p-0">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] sm:w-[20rem] sm:h-[14rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 sm:w-[20rem] sm:h-56 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/WAD2.svg"
                       alt="Code Reusability"
@@ -765,9 +771,9 @@ export default function WebApp() {
                   advantage of the vast JavaScript ecosystem.
                 </p>
               </div>
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] sm:w-[20rem] sm:h-[14rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 sm:w-[20rem] sm:h-56 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/MMS5.svg"
                       alt="Flexibility"
@@ -781,10 +787,11 @@ export default function WebApp() {
           </div>
         </div>
       </section>
+
       <section className="mt-16 sm:mt-20 lg:mt-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[72.5rem] mx-auto">
+        <div className="max-w-290 mx-auto">
           {/* Section Header */}
-          <div className="text-center mx-auto max-w-[38.18rem] mb-[2rem] sm:mb-[2.5rem] lg:mb-[3rem]">
+          <div className="text-center mx-auto max-w-[38.18rem] mb-8 sm:mb-10 lg:mb-12">
             <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000]">
               From Concept to Deployment: Strategies for Effective Project
               Management
@@ -792,16 +799,16 @@ export default function WebApp() {
           </div>
 
           {/* Timeline Container */}
-          <div className="relative max-w-[64rem] mx-auto">
+          <div className="relative max-w-5xl mx-auto">
             {/* Central Vertical Line - Hidden on mobile */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-9 bg-gray-800 rounded-xl h-full hidden lg:block"></div>
 
             {/* Timeline Items */}
-            <div className="space-y-6 lg:space-y-[-2rem]">
+            <div className="space-y-6 lg:-space-y-8">
               {/* Strategy and Roadmap - Right Side */}
               <div className="flex flex-col lg:flex-row lg:items-center">
                 <div className="hidden lg:block lg:w-1/2 lg:pr-8"></div>
-                <div className="relative z-10 hidden lg:flex lg:items-start lg:mr-[-4.5rem] lg:justify-center">
+                <div className="relative z-10 hidden lg:flex lg:items-start lg:-mr-18 lg:justify-center">
                   <div className="w-24 h-14 relative">
                     <Image
                       src="/images/arrowleft.png"
@@ -842,7 +849,7 @@ export default function WebApp() {
                     </p>
                   </div>
                 </div>
-                <div className="relative z-10 hidden lg:flex lg:items-start lg:ml-[-4.5rem] lg:justify-center">
+                <div className="relative z-10 hidden lg:flex lg:items-start lg:-ml-18 lg:justify-center">
                   <div className="w-24 h-14 relative">
                     <Image
                       src="/images/arrowright.png"
@@ -858,7 +865,7 @@ export default function WebApp() {
               {/* Customer Experience Enhancement - Right Side */}
               <div className="flex flex-col lg:flex-row lg:items-center">
                 <div className="hidden lg:block lg:w-1/2 lg:pr-8"></div>
-                <div className="relative z-10 hidden lg:flex lg:items-start lg:mr-[-4.5rem] lg:justify-center">
+                <div className="relative z-10 hidden lg:flex lg:items-start lg:-mr-18 lg:justify-center">
                   <div className="w-24 h-14 relative">
                     <Image
                       src="/images/arrowleft.png"
@@ -900,7 +907,7 @@ export default function WebApp() {
                     </p>
                   </div>
                 </div>
-                <div className="relative z-10 hidden lg:flex lg:items-start lg:ml-[-4.5rem] lg:justify-center">
+                <div className="relative z-10 hidden lg:flex lg:items-start lg:-ml-18 lg:justify-center">
                   <div className="w-24 h-14 relative">
                     <Image
                       src="/images/arrowright.png"
@@ -916,7 +923,7 @@ export default function WebApp() {
               {/* Data-driven Insights and Analytics - Right Side */}
               <div className="flex flex-col lg:flex-row lg:items-center">
                 <div className="hidden lg:block lg:w-1/2 lg:pr-8"></div>
-                <div className="relative z-10 hidden lg:flex lg:items-start lg:mr-[-4.5rem] lg:justify-center">
+                <div className="relative z-10 hidden lg:flex lg:items-start lg:-mr-18 lg:justify-center">
                   <div className="w-24 h-14 relative">
                     <Image
                       src="/images/arrowleft.png"
@@ -960,7 +967,7 @@ export default function WebApp() {
                     </p>
                   </div>
                 </div>
-                <div className="relative z-10 hidden lg:flex lg:items-start lg:ml-[-4.5rem] lg:justify-center">
+                <div className="relative z-10 hidden lg:flex lg:items-start lg:-ml-18 lg:justify-center">
                   <div className="w-24 h-14 relative">
                     <Image
                       src="/images/arrowright.png"
@@ -976,6 +983,7 @@ export default function WebApp() {
           </div>
         </div>
       </section>
+
       {/* Advantages Section */}
       <section className="mt-12 sm:mt-16 lg:mt-24 px-4 sm:px-6 lg:px-8 xl:px-16">
         <div className="container mx-auto max-w-6xl">
@@ -991,7 +999,7 @@ export default function WebApp() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 mb-6">
             {/* Enhanced User Experience */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 lg:gap-8">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 xl:w-44 xl:h-44 relative">
                   <Image
                     src="/images/WAD1.svg"
@@ -1015,7 +1023,7 @@ export default function WebApp() {
 
             {/* Code Reusability */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 lg:gap-8">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 xl:w-44 xl:h-44 relative">
                   <Image
                     src="/images/WAD2.svg"
@@ -1040,7 +1048,7 @@ export default function WebApp() {
 
             {/* Scalability and Performance */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 lg:gap-8">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 xl:w-44 xl:h-44 relative">
                   <Image
                     src="/images/WAD3.svg"
@@ -1064,7 +1072,7 @@ export default function WebApp() {
 
             {/* SEO-Friendly */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 lg:gap-8">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 xl:w-44 xl:h-44 relative">
                   <Image
                     src="/images/WAD4.svg"

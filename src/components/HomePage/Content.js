@@ -12,7 +12,7 @@ export default function Content() {
         </div>
         <div className="flex flex-col sm:flex-row lg:flex-row items-center lg:items-start gap-4 lg:gap-6">
           {/* Step Number */}
-          <div className="flex-shrink-0 order-1 lg:order-1">
+          <div className="shrink-0 order-1 lg:order-1">
             <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[4.56rem] lg:h-[5.68rem] relative">
               <Image
                 src="/images/1.svg"
@@ -49,7 +49,7 @@ export default function Content() {
           </div>
 
           {/* Mission Icon */}
-          <div className="flex-shrink-0 order-2 lg:order-3">
+          <div className="shrink-0 order-2 lg:order-3">
             <div className="relative w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.37rem] lg:h-[13.28rem]">
               <Image
                 src="/images/Switch.webp"
@@ -71,7 +71,7 @@ export default function Content() {
         </div>
         <div className="flex flex-col sm:flex-row lg:flex-row items-center lg:items-start gap-4 lg:gap-6">
           {/* Step Number */}
-          <div className="flex-shrink-0 order-1 lg:order-1">
+          <div className="shrink-0 order-1 lg:order-1">
             <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[4.56rem] lg:h-[5.68rem] relative">
               <Image
                 src="/images/2.svg"
@@ -105,7 +105,7 @@ export default function Content() {
           </div>
 
           {/* Mission Icon */}
-          <div className="flex-shrink-0 order-2 lg:order-3">
+          <div className="shrink-0 order-2 lg:order-3">
             <div className="relative w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.37rem] lg:h-[13.28rem]">
               <Image
                 src="/images/binoculours.webp"
@@ -128,7 +128,7 @@ export default function Content() {
 
         <div className="flex flex-col sm:flex-row lg:flex-row items-center lg:items-start gap-4 lg:gap-6 ">
           {/* Step Number */}
-          <div className="flex-shrink-0 order-1 lg:order-1">
+          <div className="shrink-0 order-1 lg:order-1">
             <div className="w-12 h-20 sm:w-16 sm:h-24 lg:w-[4.56rem] lg:h-[5.68rem] relative">
               <Image
                 src="/images/3.svg"
@@ -162,8 +162,8 @@ export default function Content() {
           </div>
 
           {/* Values Icon */}
-          <div className="flex-shrink-0 order-2 lg:order-3">
-            <div className="w-40 h-36 sm:w-48 sm:h-44 lg:w-[14.375rem] lg:h-[13.28rem] relative">
+          <div className="shrink-0 order-2 lg:order-3">
+            <div className="w-40 h-36 sm:w-48 sm:h-44 lg:w-57.5 lg:h-[13.28rem] relative">
               <Image
                 src="/images/diamond.webp"
                 alt="Values Icon"
@@ -177,7 +177,7 @@ export default function Content() {
       {/* Values Icons Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
         <div className="text-center">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
+          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-20 lg:h-20 mx-auto mb-2 sm:mb-3">
             <Image
               src="/images/bulb.svg"
               alt="Innovation"
@@ -188,7 +188,7 @@ export default function Content() {
           <p className="text-sm md:text-base font-semibold">Innovation</p>
         </div>
         <div className="text-center">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
+          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-20 lg:h-20 mx-auto mb-2 sm:mb-3">
             <Image
               src="/images/growth.svg"
               alt="Growth"
@@ -199,7 +199,7 @@ export default function Content() {
           <p className="text-sm md:text-base font-semibold">Growth</p>
         </div>
         <div className="text-center">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
+          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-20 lg:h-20 mx-auto mb-2 sm:mb-3">
             <Image
               src="/images/teamwork.svg"
               alt="Teamwork"
@@ -210,7 +210,7 @@ export default function Content() {
           <p className="text-sm md:text-base font-semibold">Teamwork</p>
         </div>
         <div className="text-center">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
+          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-20 lg:h-20 mx-auto mb-2 sm:mb-3">
             <Image
               src="/images/commitment.svg"
               alt="Commitment"
@@ -221,7 +221,7 @@ export default function Content() {
           <p className="text-sm md:text-base font-semibold">Commitment</p>
         </div>
         <div className="text-center col-span-2 sm:col-span-1">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[5rem] lg:h-[5rem] mx-auto mb-2 sm:mb-3">
+          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-20 lg:h-20 mx-auto mb-2 sm:mb-3">
             <Image
               src="/images/positivity.svg"
               alt="Positivity"

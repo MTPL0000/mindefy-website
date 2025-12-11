@@ -9,17 +9,17 @@ export default function Ecommerce() {
       <section className="mt-28 mx-auto px-4 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-5">
             Ecommerce and Market Place
           </h1>
 
           {/* Main Title */}
-          <p className="text-xl md:text-2xl xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto px-4 xl:px-0">
+          <p className="text-xl md:text-2xl xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-200 mx-auto px-4 xl:px-0">
             Mindefy: Your Ecommerce & Marketplace Transformation Partner
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-2xl xl:w-[60.25rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.75rem] px-4 xl:px-0">
+          <div className="w-full max-w-2xl xl:w-241 font-normal mx-auto mb-9 text-justify space-y-7 px-4 xl:px-0">
             <p className="text-[1rem] text-[#444444] leading-relaxed">
               In the fast-paced realm of eCommerce and online marketplaces, your
               ability to adapt and thrive depends on two crucial elements:
@@ -33,7 +33,7 @@ export default function Ecommerce() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative w-full h-48 md:h-64 lg:h-80 xl:h-[30.125rem] mx-auto mb-[5rem]">
+          <div className="relative w-full h-48 md:h-64 lg:h-80 xl:h-120.5 mx-auto mb-20">
             <Image
               src="/images/MMS.webp"
               alt="Hybrid App Development - Developer working with mobile app design"
@@ -58,7 +58,7 @@ export default function Ecommerce() {
           </p>
         </div>
         <div
-          className="w-full max-w-2xl xl:w-[41.25rem] mx-auto rounded-xl p-5 bg-[#FFFFFF]"
+          className="w-full max-w-2xl xl:w-165 mx-auto rounded-xl p-5 bg-[#FFFFFF]"
           style={{
             boxShadow:
               "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
@@ -73,16 +73,16 @@ export default function Ecommerce() {
 
       {/* Shopify Section */}
       <section className="mt-28 mx-auto px-4 xl:px-0">
-        <div className="max-w-6xl xl:max-w-[72.5rem] mx-auto">
+        <div className="max-w-6xl xl:max-w-290 mx-auto">
           <div className="flex flex-col lg:flex-row bg-[#F3FFF4] rounded-xl py-10 px-4 xl:px-2.5">
-            <div className="flex-1 w-full xl:w-[35.25rem] ml-0 xl:ml-2.5 mb-6 lg:mb-0">
+            <div className="flex-1 w-full xl:w-141 ml-0 xl:ml-2.5 mb-6 lg:mb-0">
               <p className="text-xl xl:text-[1.75rem] font-semibold uppercase text-[#033505]">
                 Shopify
               </p>
               <p className="text-xl xl:text-[1.75rem] mb-3 font-normal text-[#033505]">
                 Seamless Commerce at Your Fingertips
               </p>
-              <p className="text-[1rem] w-full xl:w-[35.25rem] font-normal text-[#033505] leading-relaxed text-justify">
+              <p className="text-[1rem] w-full xl:w-141 font-normal text-[#033505] leading-relaxed text-justify">
                 Shopify is synonymous with its simplicity and versatility.
                 Whether you're an emerging startup or an established brand
                 looking to broaden your digital footprint, Mindefy's Shopify
@@ -90,9 +90,9 @@ export default function Ecommerce() {
                 needs.
               </p>
             </div>
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <div className="flex items-center justify-center">
-                <div className="w-full max-w-sm xl:w-[35.06rem] h-32 md:h-48 xl:h-[14.125rem] relative">
+                <div className="w-full max-w-sm xl:w-[35.06rem] h-32 md:h-48 xl:h-56.5 relative">
                   <Image
                     src="/images/shopify.webp"
                     alt="JavaScript Stack"
@@ -105,7 +105,7 @@ export default function Ecommerce() {
           </div>
 
           {/* Services Sections */}
-          <div className="mt-[3.75rem] w-full max-w-3xl xl:w-[46.375rem] mx-auto space-y-[3.75rem]">
+          <div className="mt-15 w-full max-w-3xl xl:w-185.5 mx-auto space-y-15">
             {/* Shopify Store Setup */}
             <h3 className="text-lg xl:text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
               Shopify Store Setup
@@ -171,25 +171,25 @@ export default function Ecommerce() {
 
       {/* Magento Section */}
       <section className="mt-28 mx-auto px-4 xl:px-0">
-        <div className="max-w-6xl xl:max-w-[72.5rem] mx-auto">
+        <div className="max-w-6xl xl:max-w-290 mx-auto">
           <div className="flex flex-col lg:flex-row bg-[#F4E5FF] rounded-xl py-10 px-4 xl:px-2.5">
-            <div className="flex-1 w-full xl:w-[34rem] ml-0 xl:ml-2.5 mb-6 lg:mb-0">
+            <div className="flex-1 w-full xl:w-136 ml-0 xl:ml-2.5 mb-6 lg:mb-0">
               <p className="text-xl xl:text-[1.75rem] font-semibold uppercase text-[#2D0150]">
                 Magento
               </p>
               <p className="text-xl xl:text-[1.75rem] mb-3 font-normal text-[#2D0150]">
                 Scaling Your Ecommerce Heights
               </p>
-              <p className="text-[1rem] w-full xl:w-[34rem] tracking-wide font-normal text-[#444444] leading-relaxed text-justify">
+              <p className="text-[1rem] w-full xl:w-136 tracking-wide font-normal text-[#444444] leading-relaxed text-justify">
                 For businesses with grand ambitions and complex needs, Magento
                 is the platform of choice. Our Magento experts harness the full
                 power of this platform to revolutionize your eCommerce
                 experience.
               </p>
             </div>
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <div className="flex items-center justify-center">
-                <div className="w-full max-w-sm xl:w-[35.06rem] h-32 md:h-48 xl:h-[14.125rem] relative">
+                <div className="w-full max-w-sm xl:w-[35.06rem] h-32 md:h-48 xl:h-56.5 relative">
                   <Image
                     src="/images/magneto.webp"
                     alt="JavaScript Stack"
@@ -202,7 +202,7 @@ export default function Ecommerce() {
           </div>
 
           {/* Services Sections */}
-          <div className="mt-[3.75rem] w-full max-w-3xl xl:w-[46.375rem] mx-auto space-y-[3.75rem]">
+          <div className="mt-15 w-full max-w-3xl xl:w-185.5 mx-auto space-y-15">
             {/* Magento Development */}
             <h3 className="text-lg xl:text-[1.25rem] font-semibold text-[#000000] text-center mb-9">
               Magento Development

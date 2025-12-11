@@ -95,7 +95,7 @@ export default function MemolectFlashcardsCaseStudy() {
                 </p>
               </div>
             </div>
-            <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
+            <div className="relative overflow-hidden w-full sm:max-w-86 aspect-9/16">
               <Image
                 src="/images/flashcard-img-2.webp"
                 alt="image"
@@ -111,7 +111,7 @@ export default function MemolectFlashcardsCaseStudy() {
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-45">
-            <div className="relative overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
+            <div className="relative overflow-hidden w-full sm:max-w-86 aspect-9/16">
               <Image
                 src="/images/flashcard-img-3.webp"
                 alt="image"
@@ -304,7 +304,7 @@ export default function MemolectFlashcardsCaseStudy() {
           {/* Apps Logo Icon */}
           <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-28 lg:mb-20">
             {/* Left Image */}
-            <div className="relative overflow-hidden w-full sm:max-w-76 aspect-square flex-shrink-0">
+            <div className="relative overflow-hidden w-full sm:max-w-76 aspect-square shrink-0">
               <Image
                 src="/images/flashcard-img-4.webp"
                 alt="Apps Logo Icon"
@@ -356,7 +356,7 @@ export default function MemolectFlashcardsCaseStudy() {
             </div>
 
             {/* Right Image */}
-            <div className="relative overflow-hidden w-full sm:max-w-75 aspect-square flex-shrink-0">
+            <div className="relative overflow-hidden w-full sm:max-w-75 aspect-square shrink-0">
               <Image
                 src="/images/flashcard-img-5.webp"
                 alt="Logo Clear Space"
@@ -382,7 +382,7 @@ export default function MemolectFlashcardsCaseStudy() {
               Color Palette
             </h3>
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-35 mb-16">
-              <div className="relative overflow-hidden w-full sm:max-w-88 aspect-square flex-shrink-0">
+              <div className="relative overflow-hidden w-full sm:max-w-88 aspect-square shrink-0">
                 <Image
                   src="/images/flashcard-img-6.webp"
                   alt="image"
@@ -429,7 +429,7 @@ export default function MemolectFlashcardsCaseStudy() {
               </div>
 
               {/* Vertical AaBbCc */}
-              <div className="relative overflow-hidden w-30 h-[20rem]">
+              <div className="relative overflow-hidden w-30 h-80">
                 <Image
                   src="/images/font-img.svg"
                   alt="image"
@@ -569,7 +569,7 @@ export default function MemolectFlashcardsCaseStudy() {
 
               {/* Image */}
 
-              <div className="relative z-10 overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
+              <div className="relative z-10 overflow-hidden w-full sm:max-w-86 aspect-9/16">
                 <Image
                   src="/images/flashcard-img-7.webp"
                   alt="image"
@@ -588,7 +588,7 @@ export default function MemolectFlashcardsCaseStudy() {
             <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-12 md:gap-16 lg:gap-30">
               {/* Image (Left on Desktop) */}
 
-              <div className="relative z-10 overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
+              <div className="relative z-10 overflow-hidden w-full sm:max-w-86 aspect-9/16">
                 <Image
                   src="/images/flashcard-img-3.webp"
                   alt="image"
@@ -647,7 +647,7 @@ export default function MemolectFlashcardsCaseStudy() {
               </div>
 
               {/* Image */}
-              <div className="relative z-10  overflow-hidden w-full sm:max-w-86 aspect-[9/16]">
+              <div className="relative z-10  overflow-hidden w-full sm:max-w-86 aspect-9/16">
                 <Image
                   src="/images/flashcard-img-8.webp"
                   alt="image"
@@ -709,7 +709,7 @@ export default function MemolectFlashcardsCaseStudy() {
           <div className="flex flex-wrap justify-center items-start gap-10 md:gap-16 lg:gap-20">
             {/* Column 1 */}
             <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/OS-img-1.webp"
                   alt="Flashcard screen 1"
@@ -717,7 +717,7 @@ export default function MemolectFlashcardsCaseStudy() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/OS-img-2.webp"
                   alt="Profile screen"
@@ -725,7 +725,7 @@ export default function MemolectFlashcardsCaseStudy() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/OS-img-3.webp"
                   alt="Subject type screen"
@@ -736,8 +736,8 @@ export default function MemolectFlashcardsCaseStudy() {
             </div>
 
             {/* Column 2 */}
-            <div className="flex flex-col gap-12 md:gap-16 lg:gap-20 w-full md:w-3xs lg:max-w-86 lg:mt-[20rem]">
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+            <div className="flex flex-col gap-12 md:gap-16 lg:gap-20 w-full md:w-3xs lg:max-w-86 lg:mt-80">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/OS-img-4.webp"
                   alt="Flashcard screen 2"
@@ -745,7 +745,7 @@ export default function MemolectFlashcardsCaseStudy() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/OS-img-5.webp"
                   alt="Session list screen"
@@ -753,7 +753,7 @@ export default function MemolectFlashcardsCaseStudy() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/OS-img-6.webp"
                   alt="Language setup screen"
@@ -765,7 +765,7 @@ export default function MemolectFlashcardsCaseStudy() {
 
             {/* Column 3 */}
             <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/OS-img-7.webp"
                   alt="Flashcard screen 3"
@@ -773,7 +773,7 @@ export default function MemolectFlashcardsCaseStudy() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/OS-img-8.webp"
                   alt="Results list screen"
@@ -781,7 +781,7 @@ export default function MemolectFlashcardsCaseStudy() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/OS-img-9.webp"
                   alt="Subject type screen 2"
@@ -806,7 +806,7 @@ export default function MemolectFlashcardsCaseStudy() {
           <div className="flex flex-wrap justify-center items-start gap-10 md:gap-16 lg:gap-20">
             {/* Column 1 */}
             <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/WF-img-1.webp"
                   alt="Wireframe 1"
@@ -814,7 +814,7 @@ export default function MemolectFlashcardsCaseStudy() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/WF-img-2.webp"
                   alt="Wireframe 2"
@@ -825,8 +825,8 @@ export default function MemolectFlashcardsCaseStudy() {
             </div>
 
             {/* Column 2 */}
-            <div className="flex flex-col gap-12 md:gap-16 lg:gap-20 w-full md:w-3xs lg:max-w-86 lg:mt-[20rem]">
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+            <div className="flex flex-col gap-12 md:gap-16 lg:gap-20 w-full md:w-3xs lg:max-w-86 lg:mt-80">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/WF-img-3.webp"
                   alt="Wireframe 3"
@@ -834,7 +834,7 @@ export default function MemolectFlashcardsCaseStudy() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/WF-img-4.webp"
                   alt="Wireframe 4"
@@ -846,7 +846,7 @@ export default function MemolectFlashcardsCaseStudy() {
 
             {/* Column 3 */}
             <div className="flex flex-col gap-12 md:gap-18 lg:gap-25 w-full md:w-3xs lg:max-w-86">
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/WF-img-5.webp"
                   alt="Wireframe 5"
@@ -854,7 +854,7 @@ export default function MemolectFlashcardsCaseStudy() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-full sm:max-w-86 aspect-[9/16] mx-auto">
+              <div className="relative w-full sm:max-w-86 aspect-9/16 mx-auto">
                 <Image
                   src="/images/WF-img-6.webp"
                   alt="Wireframe 6"

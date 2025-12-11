@@ -432,35 +432,35 @@ export default function JEGO() {
       </section>
       {/* Market Research Grid Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center">
-        <div className="w-full max-w-6xl flex flex-col px-2 sm:px-4 md:px-[3.125rem] gap-6 md:gap-8">
+        <div className="w-full max-w-6xl flex flex-col px-2 sm:px-4 md:px-12.5 gap-6 md:gap-8">
           {/* Row 1 */}
           <div className="flex flex-col sm:flex-row flex-wrap">
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 LinkedIn Learning
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[3.14rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[3.14rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Khan Academy
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 68% Experienced Learners
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 42% Budget Constraints
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 32 Average age of Online Learning
               </span>
             </div>
-            <div className="bg-[#3E8D9E] w-full sm:w-[9.375rem] md:mb-4 h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] w-full sm:w-37.5 md:mb-4 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Lack of time 61%
               </span>
@@ -469,22 +469,22 @@ export default function JEGO() {
 
           {/* Row 2 */}
           <div className="flex flex-col sm:flex-row flex-wrap">
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Udemy
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[3.14rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[3.14rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Skillshare
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.125rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 sm:mr-4.5 md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Online Education will be worth $374 Billion by year 2026
               </span>
             </div>
-            <div className="bg-[#3E8D9E] w-full md:mr-4 md:mb-4 sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] w-full md:mr-4 md:mb-4 sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 More learning due to social distancing each of the 2020 pandemic
               </span>
@@ -493,12 +493,12 @@ export default function JEGO() {
 
           {/* Row 3 */}
           <div className="flex flex-col sm:flex-row flex-wrap">
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Domestika
               </span>
             </div>
-            <div className="bg-[#3E8D9E] w-full sm:w-[9.375rem] md:mr-4 md:mb-4 h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] w-full sm:w-37.5 md:mr-4 md:mb-4 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Coursera
               </span>
@@ -507,7 +507,7 @@ export default function JEGO() {
 
           {/* Row 4 */}
           <div className="flex flex-col sm:flex-row flex-wrap">
-            <div className="bg-[#3E8D9E] w-full  sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] w-full  sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 MasterClass
               </span>
@@ -516,33 +516,33 @@ export default function JEGO() {
 
           {/* Demographics Row */}
           <div className="flex flex-col sm:flex-row flex-wrap mt-8">
-            <div className="bg-[#F7DE66] mr-0 md:mr-4 md:mb-4 sm:mr-[3.81rem] mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#F7DE66] mr-0 md:mr-4 md:mb-4 sm:mr-[3.81rem] mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#483E0F] w-full text-base font-medium font-inter text-center">
                 16-22 <br />
                 Gen Z
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Bored Learners
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Stuck at Home Learners
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Expanding Skillset Learners
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 lg:mr-[1.166rem] md:mr-4 md:mb-4 mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Business Offered Learners
               </span>
             </div>
-            <div className="bg-[#3E8D9E] w-full sm:w-[9.375rem] md:mr-4 md:mb-4 h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] w-full sm:w-37.5 md:mr-4 md:mb-4 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Advancing Skills Learners
               </span>
@@ -553,27 +553,27 @@ export default function JEGO() {
 
           {/* Millennials Row */}
           <div className="flex flex-col sm:flex-row flex-wrap">
-            <div className="bg-[#F7DE66] mr-0 md:mr-4 md:mb-4 sm:mr-[3.81rem] mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#F7DE66] mr-0 md:mr-4 md:mb-4 sm:mr-[3.81rem] mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#483E0F] w-full text-base font-medium font-inter text-center">
                 25-38 Millennials
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.166rem] mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.166rem] mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Influencer generation
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.166rem] mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.166rem] mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Spends 3 hours on average per day
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.166rem] mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.166rem] mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 The Smallest earning potential
               </span>
             </div>
-            <div className="bg-[#3E8D9E] w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 On track to be the best educated generation
               </span>
@@ -584,22 +584,22 @@ export default function JEGO() {
 
           {/* Boomers Row */}
           <div className="flex flex-col sm:flex-row flex-wrap">
-            <div className="bg-[#F7DE66] mr-0 md:mr-4 md:mb-4 sm:mr-[3.81rem] mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#F7DE66] mr-0 md:mr-4 md:mb-4 sm:mr-[3.81rem] mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#483E0F] w-full text-base font-medium font-inter text-center">
                 56-74 Boomers
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.125rem] mb-2 sm:mb-0 w-full sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 sm:mr-4.5 mb-2 sm:mb-0 w-full sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Slowest down in social media use
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.125rem] mb-2 sm:mb-0 w-full sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 sm:mr-4.5 mb-2 sm:mb-0 w-full sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 19% College Degree
               </span>
             </div>
-            <div className="bg-[#3E8D9E] w-full sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] w-full sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Less Money than other generation
               </span>
@@ -608,22 +608,22 @@ export default function JEGO() {
 
           {/* Gen X Row */}
           <div className="flex flex-col sm:flex-row flex-wrap">
-            <div className="bg-[#F7DE66] mr-0 md:mr-4 md:mb-4 sm:mr-[3.81rem] mb-2 sm:mb-0 w-full sm:w-[9.375rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#F7DE66] mr-0 md:mr-4 md:mb-4 sm:mr-[3.81rem] mb-2 sm:mb-0 w-full sm:w-37.5 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#483E0F] w-full text-base font-medium font-inter text-center">
                 39-55 Gen X
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.125rem] mb-2 sm:mb-0 w-full sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 sm:mr-4.5 mb-2 sm:mb-0 w-full sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 The Smallest Generation
               </span>
             </div>
-            <div className="bg-[#3E8D9E] mr-0 sm:mr-[1.125rem] mb-2 sm:mb-0 w-full sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] mr-0 sm:mr-4.5 mb-2 sm:mb-0 w-full sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Best Earning Years
               </span>
             </div>
-            <div className="bg-[#3E8D9E] w-full sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] w-full sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 29% College Degree
               </span>
@@ -632,12 +632,12 @@ export default function JEGO() {
 
           {/* Final Row */}
           <div className="flex flex-col sm:flex-row flex-wrap">
-            <div className="bg-[#3E8D9E] ml-0 lg:ml-[13.18rem] mr-0 sm:mr-[1.125rem] mb-2 sm:mb-0 w-full sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] ml-0 lg:ml-[13.18rem] mr-0 sm:mr-4.5 mb-2 sm:mb-0 w-full sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 Great increase in social media
               </span>
             </div>
-            <div className="bg-[#3E8D9E] w-full sm:w-[16.25rem] h-[6rem] sm:h-[9.375rem] pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
+            <div className="bg-[#3E8D9E] w-full sm:w-65 h-24 sm:h-37.5 pt-[0.780rem] pl-[0.780rem] pr-[.719rem] flex items-center justify-center">
               <span className="text-[#C9F5FF] w-full text-base font-medium font-inter text-center">
                 The Fastest growing smartphone owners
               </span>
@@ -647,7 +647,7 @@ export default function JEGO() {
       </section>
       {/* User Behavior Mapping Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center">
-        <div className="w-full flex flex-col gap-8 md:gap-[4.5rem]">
+        <div className="w-full flex flex-col gap-8 md:gap-18">
           <h2 className="text-[#F5FDFF] font-bold text-2xl md:text-[2rem] text-left">
             User Behavior Mapping
           </h2>
@@ -801,7 +801,7 @@ export default function JEGO() {
       </section>
       {/* Empathy Map Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center">
-        <div className="w-full max-w-6xl flex flex-col gap-8 md:gap-[4.5rem]">
+        <div className="w-full max-w-6xl flex flex-col gap-8 md:gap-18">
           <h2 className="text-[#F5FDFF] font-bold text-2xl md:text-[2rem] text-left">
             Empathy Map
           </h2>
@@ -810,37 +810,37 @@ export default function JEGO() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 mb-10">
             {/* Says Section */}
             <div>
-              <div className="flex flex-col w-full md:w-[32.35rem] mb-8 gap-4 md:gap-[1.125rem]">
+              <div className="flex flex-col w-full md:w-[32.35rem] mb-8 gap-4 md:gap-4.5">
                 <h3 className="text-[#F7DE66] font-semibold text-xl md:text-2xl">
                   Says
                 </h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                  <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                  <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                     <span className="text-[#C9F5FF] text-base font-medium text-center">
                       Talks Passionately about the subject
                     </span>
                   </div>
-                  <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                  <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                     <span className="text-[#C9F5FF] text-base font-medium text-center">
                       Discuss dreams
                     </span>
                   </div>
-                  <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                  <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                     <span className="text-[#C9F5FF] text-base font-medium text-center">
                       They like hands on learning
                     </span>
                   </div>
-                  <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                  <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                     <span className="text-[#C9F5FF] text-base font-medium text-center">
                       Open minded
                     </span>
                   </div>
-                  <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                  <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                     <span className="text-[#C9F5FF] text-base font-medium text-center">
                       Visual learners
                     </span>
                   </div>
-                  <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                  <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                     <span className="text-[#C9F5FF] text-base font-medium text-center">
                       Knowledge is power
                     </span>
@@ -850,47 +850,47 @@ export default function JEGO() {
             </div>
 
             {/* Does Section */}
-            <div className="flex flex-col w-full md:w-[32.35rem] gap-4 md:gap-[1.125rem]">
+            <div className="flex flex-col w-full md:w-[32.35rem] gap-4 md:gap-4.5">
               <h3 className="text-[#F7DE66] font-semibold text-xl md:text-2xl">
                 Does
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Job
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Travel
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Adventures
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Watch YouTube reels and Instagram
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Hangout with loved one
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Working from Home
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Loves learning new things
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Netflix
                   </span>
@@ -899,42 +899,42 @@ export default function JEGO() {
             </div>
 
             {/* Thinks Section */}
-            <div className="flex flex-col w-full md:w-[32.35rem] gap-4 md:gap-[1.125rem]">
+            <div className="flex flex-col w-full md:w-[32.35rem] gap-4 md:gap-4.5">
               <h3 className="text-[#F7DE66] font-semibold text-xl md:text-2xl">
                 Thinks
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Advance in career
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Achieve Dreams
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Underestimates self
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Options
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Business is better
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Understand things don't memorize
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Chaos is bad
                   </span>
@@ -943,42 +943,42 @@ export default function JEGO() {
             </div>
 
             {/* Feels Section */}
-            <div className="flex flex-col w-full md:w-[32.35rem] mb-8 gap-4 md:gap-[1.125rem]">
+            <div className="flex flex-col w-full md:w-[32.35rem] mb-8 gap-4 md:gap-4.5">
               <h3 className="text-[#F7DE66] font-semibold text-xl md:text-2xl">
                 Feels
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Frustrated
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Got Late
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     How classmates have grown that fast
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Urge of becoming a better person
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Visualize achievements
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Career is Slow or not going anywhere
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Passionate towards learning
                   </span>
@@ -987,47 +987,47 @@ export default function JEGO() {
             </div>
 
             {/* Pains Section */}
-            <div className="flex flex-col w-full md:w-[32.35rem] gap-4 md:gap-[1.125rem]">
+            <div className="flex flex-col w-full md:w-[32.35rem] gap-4 md:gap-4.5">
               <h3 className="text-[#F7DE66] font-semibold text-xl md:text-2xl">
                 Pains
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Money
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     No Patience
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Procrastination
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Won't be worth the money
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Get discouraged by learning
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Lots of distractions
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Lack of focus
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Short attention spans
                   </span>
@@ -1036,37 +1036,37 @@ export default function JEGO() {
             </div>
 
             {/* Gains Section */}
-            <div className="flex flex-col w-full md:w-[32.35rem] gap-4 md:gap-[1.125rem]">
+            <div className="flex flex-col w-full md:w-[32.35rem] gap-4 md:gap-4.5">
               <h3 className="text-[#F7DE66] font-semibold text-xl md:text-2xl">
                 Gains
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Advance knowledge
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Advance career
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Find self-worth in learning
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Connection with like-minded people
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Getting confidence of owning a business
                   </span>
                 </div>
-                <div className="bg-[#3E8D9E] w-full h-[6rem] md:w-[10rem] md:h-[10rem] pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
+                <div className="bg-[#3E8D9E] w-full h-24 md:w-40 md:h-40 pt-2 md:pt-[0.833rem] pl-2 md:pl-[0.833rem] pr-2 md:pr-[0.791rem] flex items-center justify-center">
                   <span className="text-[#C9F5FF] text-base font-medium text-center">
                     Learn about new life dimensions
                   </span>
@@ -1078,7 +1078,7 @@ export default function JEGO() {
       </section>
       {/* User Persona Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center">
-        <div className="w-full max-w-6xl flex flex-col items-start gap-8 md:gap-[4.5rem]">
+        <div className="w-full max-w-6xl flex flex-col items-start gap-8 md:gap-18">
           <h2 className="text-[#FFFFFF] font-bold text-2xl md:text-[2rem] text-left">
             User Persona
           </h2>
@@ -1096,7 +1096,7 @@ export default function JEGO() {
               </div>
 
               {/* Basic Information */}
-              <div className="flex flex-col gap-6 md:gap-[1.875rem] w-full text-[#FFFFFF]">
+              <div className="flex flex-col gap-6 md:gap-7.5 w-full text-[#FFFFFF]">
                 <div className="text-lg md:text-xl text-[#C9F5FF]">
                   <span className="block font-normal">Age:</span>
                   <span className="font-medium">29 Years</span>
@@ -1239,12 +1239,12 @@ export default function JEGO() {
       </section>
       {/* Storyboard Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-        <div className="mb-8 md:mb-[4.5rem]">
+        <div className="mb-8 md:mb-18">
           <p className="font-semibold text-xl md:text-[2rem] text-[#FFFFFF]">
             Storyboard
           </p>
         </div>
-        <div className="relative w-full aspect-[2/1] md:aspect-[1140/648]">
+        <div className="relative w-full aspect-2/1 md:aspect-1140/648">
           <Image
             src="/images/JEGO-SB.webp"
             alt="Profile Picture"
@@ -1269,11 +1269,11 @@ export default function JEGO() {
                     className="flex flex-col items-left h-full"
                   >
                     {/* Yellow header sticky note */}
-                    <div className="flex flex-col items-center justify-between bg-[#F7DE66] w-[10rem] h-[10rem] mb-4">
-                      <h3 className="text-[#483E0F] w-[7.875rem]  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
+                    <div className="flex flex-col items-center justify-between bg-[#F7DE66] w-40 h-40 mb-4">
+                      <h3 className="text-[#483E0F] w-31.5  text-base font-medium  ml-[0.83rem] mt-[0.83rem] mr-[0.793rem]">
                         {group.title}
                       </h3>
-                      <span className="text-[#483E0F] w-[7.875rem] text-sm font-medium  ml-[0.83rem] mb-[0.83rem] mr-[0.793rem]">
+                      <span className="text-[#483E0F] w-31.5 text-sm font-medium  ml-[0.83rem] mb-[0.83rem] mr-[0.793rem]">
                         Artist Banda
                       </span>
                     </div>
@@ -1282,7 +1282,7 @@ export default function JEGO() {
                       {group.notes.map((note, nidx) => (
                         <div
                           key={nidx}
-                          className="bg-[#3E8D9E] w-full h-[12rem] lg:h-[10rem] md:h-[10rem] aspect-square flex flex-col justify-between items-start px-2 py-2 shadow-md"
+                          className="bg-[#3E8D9E] w-full h-48 lg:h-40 md:h-40 aspect-square flex flex-col justify-between items-start px-2 py-2 shadow-md"
                         >
                           <h4 className="text-[#C9F5FF] text-sm font-semibold text-left w-full mb-2">
                             {note}
@@ -1303,7 +1303,7 @@ export default function JEGO() {
 
       {/* Backlogs Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-        <p className="text-white text-[2rem] font-bold mb-[4.5rem]">Backlogs</p>
+        <p className="text-white text-[2rem] font-bold mb-18">Backlogs</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-0.5">
           {backlogItems.map((item, index) => (
             <div
@@ -1322,7 +1322,7 @@ export default function JEGO() {
         <p className="text-[#FFFFFF] font-bold text-2xl md:text-3xl mb-8 md:mb-20">
           Paper Wireframe Mobile
         </p>
-        <div className="relative aspect-[3/4] md:aspect-[1140/1494] overflow-hidden">
+        <div className="relative aspect-3/4 md:aspect-1140/1494 overflow-hidden">
           <Image
             src="/images/JEGO-PWM.webp"
             alt="Profile Picture"
@@ -1336,7 +1336,7 @@ export default function JEGO() {
           Web Wireframe
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
-          <div className="relative aspect-[371/264] overflow-hidden">
+          <div className="relative aspect-371/264 overflow-hidden">
             <Image
               src="/images/JEGO-WF1.png"
               alt="Profile Picture"
@@ -1344,7 +1344,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/264] overflow-hidden">
+          <div className="relative aspect-371/264 overflow-hidden">
             <Image
               src="/images/JEGO-WF2.png"
               alt="Profile Picture"
@@ -1352,7 +1352,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/264] overflow-hidden">
+          <div className="relative aspect-371/264 overflow-hidden">
             <Image
               src="/images/JEGO-WF3.png"
               alt="Profile Picture"
@@ -1360,7 +1360,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/264] overflow-hidden">
+          <div className="relative aspect-371/264 overflow-hidden">
             <Image
               src="/images/JEGO-WF4.png"
               alt="Profile Picture"
@@ -1368,7 +1368,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/264] overflow-hidden">
+          <div className="relative aspect-371/264 overflow-hidden">
             <Image
               src="/images/JEGO-WF5.png"
               alt="Profile Picture"
@@ -1376,7 +1376,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/264] overflow-hidden">
+          <div className="relative aspect-371/264 overflow-hidden">
             <Image
               src="/images/JEGO-WF6.png"
               alt="Profile Picture"
@@ -1384,7 +1384,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/354] overflow-hidden">
+          <div className="relative aspect-371/354 overflow-hidden">
             <Image
               src="/images/JEGO-WF7.png"
               alt="Profile Picture"
@@ -1392,7 +1392,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/365] overflow-hidden">
+          <div className="relative aspect-371/365 overflow-hidden">
             <Image
               src="/images/JEGO-WF8.png"
               alt="Profile Picture"
@@ -1400,7 +1400,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/365] overflow-hidden">
+          <div className="relative aspect-371/365 overflow-hidden">
             <Image
               src="/images/JEGO-WF9.png"
               alt="Profile Picture"
@@ -1408,7 +1408,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/584] overflow-hidden">
+          <div className="relative aspect-371/584 overflow-hidden">
             <Image
               src="/images/JEGO-WF10.png"
               alt="Profile Picture"
@@ -1416,7 +1416,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/345] overflow-hidden">
+          <div className="relative aspect-371/345 overflow-hidden">
             <Image
               src="/images/JEGO-WF11.png"
               alt="Profile Picture"
@@ -1424,7 +1424,7 @@ export default function JEGO() {
               className="object-contain"
             />
           </div>
-          <div className="relative aspect-[371/338] overflow-hidden">
+          <div className="relative aspect-371/338 overflow-hidden">
             <Image
               src="/images/JEGO-WF12.png"
               alt="Profile Picture"
@@ -1433,7 +1433,7 @@ export default function JEGO() {
             />
           </div>
           <div></div>
-          <div className="lg:mt-[-15rem] md:mt-0 sm:mt-0 relative aspect-[371/296] overflow-hidden">
+          <div className="lg:-mt-60 md:mt-0 sm:mt-0 relative aspect-371/296 overflow-hidden">
             <Image
               src="/images/JEGO-WF13.png"
               alt="Profile Picture"
@@ -1474,7 +1474,7 @@ export default function JEGO() {
                   </p>
                 </div>
               </div>
-              <div className="text-lg md:text-[2rem] text-justify font-fredoka font-semibold text-[#C9F5FF] w-full md:w-[25rem] tracking-widest leading-relaxed mb-6 md:mb-12">
+              <div className="text-lg md:text-[2rem] text-justify font-fredoka font-semibold text-[#C9F5FF] w-full md:w-100 tracking-widest leading-relaxed mb-6 md:mb-12">
                 a b c d e f g h i j <br />k l m n o p q r s<br /> t u v w x y z
               </div>
             </div>
@@ -1493,7 +1493,7 @@ export default function JEGO() {
                   </p>
                 </div>
               </div>
-              <div className="text-lg md:text-[2rem] font-noto font-semibold text-[#C9F5FF] lg:w-full md:w-[25rem] tracking-widest leading-relaxed mb-6 md:mb-12">
+              <div className="text-lg md:text-[2rem] font-noto font-semibold text-[#C9F5FF] lg:w-full md:w-100 tracking-widest leading-relaxed mb-6 md:mb-12">
                 a b c d e f g h i j <br />k l m n o p q r s<br /> t u v w x y z
               </div>
             </div>
@@ -1510,14 +1510,14 @@ export default function JEGO() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
             {/* Primary Colors */}
-            <div className="border border-[#286D7C] rounded-xl text-center lg:w-full md:w-[27.75rem] shadow-xl">
+            <div className="border border-[#286D7C] rounded-xl text-center lg:w-full md:w-111 shadow-xl">
               <h3 className="text-[#F5FDFF] text-3xl md:text-5xl font-semibold mb-4 md:mb-7 mt-6 md:mt-14">
                 #164E5A
               </h3>
               <p className="text-[#3E8D9E] font-normal text-lg md:text-2xl mb-4 md:mb-7">
                 Primary
               </p>
-              <div className="flex gap-1 md:gap-2 lg:w-full md:w-[26.5rem] mx-auto mb-6 md:mb-14 justify-center lg:px-2">
+              <div className="flex gap-1 md:gap-2 lg:w-full md:w-106 mx-auto mb-6 md:mb-14 justify-center lg:px-2">
                 {primaryColors.map((color, index) => (
                   <div
                     key={index}
@@ -1529,14 +1529,14 @@ export default function JEGO() {
             </div>
 
             {/* Secondary Colors */}
-            <div className="border border-[#F7DE66] bg-[#F7DE66] rounded-xl text-center lg:w-full md:w-[27.75rem] shadow-xl">
+            <div className="border border-[#F7DE66] bg-[#F7DE66] rounded-xl text-center lg:w-full md:w-111 shadow-xl">
               <h3 className="text-[#483E0F] text-3xl md:text-5xl font-semibold mb-4 md:mb-7 mt-6 md:mt-14">
                 #F7DE66
               </h3>
               <p className="text-[#A08D32] font-normal text-lg md:text-2xl mb-4 md:mb-7">
                 Primary
               </p>
-              <div className="flex gap-1 md:gap-2 lg:w-full md:w-[26.5rem] mx-auto mb-6 md:mb-14 justify-center lg:px-2">
+              <div className="flex gap-1 md:gap-2 lg:w-full md:w-106 mx-auto mb-6 md:mb-14 justify-center lg:px-2">
                 {secondaryColors.map((color, index) => (
                   <div
                     key={index}
@@ -1555,7 +1555,7 @@ export default function JEGO() {
             App Icon
           </h2>
           {/* Logo Design */}
-          <div className="relative aspect-[2/1] lg:w-[1440px] md:w-[990px] overflow-hidden">
+          <div className="relative aspect-2/1 lg:w-[1440px] md:w-[990px] overflow-hidden">
             <Image
               src="/images/projects/JG-4.webp"
               alt="JEGO Logo"
@@ -1567,9 +1567,9 @@ export default function JEGO() {
       </div>
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-10 px-2 sm:px-4">
         {/* ────────────── Block 1 ────────────── */}
-        <div className="flex flex-col lg:flex-row md:flex-row lg:gap-[3.875rem] md:gap-0 gap-8 items-center">
+        <div className="flex flex-col-reverse lg:flex-row lg:gap-15.5 md:gap-0 gap-8 items-center">
           {/* phone mock‑up */}
-          <div className="flex-shrink-0 w-full max-w-[620px] mx-auto">
+          <div className="shrink-0 w-full max-w-[620px] mx-auto">
             <Image
               src="/images/JEGO-Iphone.webp"
               width={620}
@@ -1588,7 +1588,7 @@ export default function JEGO() {
           </div>
         </div>
         {/* ────────────── Block 2 (reversed on md+) ────────────── */}
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-[3.875rem]">
+        <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-15.5">
           <div className="w-full max-w-xl mt-6 md:mt-0 md:ml-8 lg:ml-[8.437rem] px-5">
             <h3 className="text-[#F7DE66] text-3xl font-bold mb-7">
               Jego Home
@@ -1599,7 +1599,7 @@ export default function JEGO() {
             </p>
           </div>
           {/* phone mock‑up */}
-          <div className="flex-shrink-0 w-full max-w-[344px] mx-auto">
+          <div className="shrink-0 w-full max-w-[344px] mx-auto">
             <Image
               src="/images/JEGO-Iphone1.webp"
               width={344}
@@ -1611,7 +1611,7 @@ export default function JEGO() {
         </div>
       </div>
       <div className="mt-[3.35rem] w-full px-2 sm:px-4">
-        <div className="relative w-full max-w-[1440px] h-auto aspect-[2/1] mx-auto overflow-hidden">
+        <div className="relative w-full max-w-[1440px] h-auto aspect-2/1 mx-auto overflow-hidden">
           <Image
             src="/images/JEGO-GO1.webp"
             alt="Profile Picture"
@@ -1624,7 +1624,7 @@ export default function JEGO() {
         <div className="flex flex-col md:flex-row lg:flex-row items-center justify-between gap-10">
           {/* Left Content */}
           <div className="flex flex-col items-center justify-between gap-16 w-full max-w-lg mx-auto">
-            <div className="lg:mt-20 flex-shrink-0 w-full h-auto mt-10 px-5 md:w-[25rem]">
+            <div className="lg:mt-20 shrink-0 w-full h-auto mt-10 px-5 md:w-100">
               <h3 className="text-3xl font-bold text-[#F7DE66] mb-4">
                 Onboarding
               </h3>
@@ -1703,7 +1703,7 @@ export default function JEGO() {
       </section>
       <section className="w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-0">
         {/* Text Section */}
-        <div className="relative lg:top-[10rem] md:top-5 w-full flex flex-col items-start gap-6 mt-10 md:mt-16 lg:mt-40">
+        <div className="relative lg:top-40 md:top-5 w-full flex flex-col items-start gap-6 mt-10 md:mt-16 lg:mt-40">
           <h3 className="text-3xl font-bold text-[#F7DE66]">Courses</h3>
           <p className="text-xl leading-relaxed text-[#C9F5FF] font-normal">
             Equiped with powerful search and filters <br />
@@ -1712,7 +1712,7 @@ export default function JEGO() {
         </div>
 
         {/* Image Section */}
-        <div className="relative w-full aspect-[2/1] md:aspect-[2.5/1] lg:aspect-[1/1] mt-8">
+        <div className="relative w-full aspect-2/1 md:aspect-[2.5/1] lg:aspect-square mt-8">
           <Image
             src="/images/projects/JG-10.webp"
             alt="image"
@@ -1774,8 +1774,8 @@ export default function JEGO() {
           </div>
 
           {/* Home and Mastery */}
-          <div className="relative mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center md:gap-8 lg:gap-16 lg:w-[67rem] w-full">
-            <div className="flex-shrink-0 w-full max-w-[344px] mx-auto">
+          <div className="relative mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center md:gap-8 lg:gap-16 lg:w-268 w-full">
+            <div className="shrink-0 w-full max-w-[344px] mx-auto">
               <Image
                 src="/images/projects/JG-13.webp"
                 width={344}
@@ -1796,7 +1796,7 @@ export default function JEGO() {
           </div>
 
           {/* About Mentors */}
-          <div className="relative mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center md:gap-5 lg:gap-10 mt-16 lg:w-[67rem] w-full">
+          <div className="relative mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center md:gap-5 lg:gap-10 mt-16 lg:w-268 w-full">
             {/* Left */}
             <div className="flex flex-col items-center justify-between gap-16">
               <div className="w-full lg:mt-25 lg:mb-30 max-w-xl px-5 lg:pl-8 mt-0">
@@ -1834,7 +1834,7 @@ export default function JEGO() {
           </div>
 
           {/* Lessons and Player */}
-          <div className="relative mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center md:gap-5 lg:gap-10 mt-16 lg:w-[67rem] w-full">
+          <div className="relative mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center md:gap-5 lg:gap-10 mt-16 lg:w-268 w-full">
             {/* Left */}
             <div className="flex flex-col items-center justify-between gap-16">
               <div className="w-full max-w-xl lg:mt-25 lg:mb-30 px-5 lg:pl-8 mt-6">
@@ -2068,7 +2068,7 @@ export default function JEGO() {
             The Grid
           </h2>
           <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col items-center justify-center md:items-start md:gap-10 gap-5 w-full">
-            <div className="relative w-full max-w-[864px] md:w-[700px] aspect-[1/1] mx-auto">
+            <div className="relative w-full max-w-[864px] md:w-[700px] aspect-square mx-auto">
               <Image
                 src="/images/projects/JG-38.webp"
                 alt="Component"

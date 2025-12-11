@@ -35,7 +35,7 @@ const Solistack = () => {
 
       {/* Main Image - Full Width */}
       <div className="w-full bg-[linear-gradient(180deg,rgba(255,255,255,0.6)_0%,rgba(234,177,33,0.57)_52.4%,rgba(254,254,254,0.6)_100%)]">
-        <div className="relative aspect-[2/1] w-full overflow-hidden">
+        <div className="relative aspect-2/1 w-full overflow-hidden">
           <Image
             src="/images/projects/ST-1.webp"
             alt="soli-stack Dashboard"

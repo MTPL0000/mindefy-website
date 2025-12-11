@@ -33,7 +33,7 @@ export default function JEGO() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-14">
           {/* Left Content - Device Mockups */}
           <div className="flex-1 relative">
-            <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto aspect-[5/4]">
+            <div className="relative max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto aspect-5/4">
               <Image
                 src="/images/jegolaptop.webp"
                 alt="JEGO application shown on laptop and mobile devices"
@@ -78,7 +78,7 @@ export default function JEGO() {
                         Personal Transformation
                       </span>
                       <svg
-                        className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow flex-shrink-0"
+                        className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ export default function JEGO() {
                         Global Accessibility
                       </span>
                       <svg
-                        className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow flex-shrink-0"
+                        className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -154,7 +154,7 @@ export default function JEGO() {
                         Community Building
                       </span>
                       <svg
-                        className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow flex-shrink-0"
+                        className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -189,7 +189,7 @@ export default function JEGO() {
                         Positive Social Impact
                       </span>
                       <svg
-                        className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow flex-shrink-0"
+                        className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

@@ -369,7 +369,7 @@ export default function SitemapPage() {
                 {group.title}
               </h2>
 
-              {/* Grid (design unchanged) */}
+              {/* Grid layout */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {group.items.map((item, i) => (
                   <Link
@@ -377,7 +377,7 @@ export default function SitemapPage() {
                     href={item.url}
                     className="block border border-[#e5e7eb] bg-white rounded-lg p-4 hover:shadow-lg hover:border-[#d1d5db] hover:-translate-y-1 transition-all duration-200"
                   >
-                    <span className="flex items-center justify-between text-[#000] font-medium">
+                    <span className="flex items-center justify-between text-[#333] font-medium">
                       {item.label}
                     </span>
                   </Link>

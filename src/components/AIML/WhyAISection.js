@@ -48,11 +48,11 @@ export function WhyAISection({ data }) {
           {data.cards.slice(0, 5).map((card, index) => (
             <div key={index} className="flex justify-center">
               <div
-                className={`w-full max-w-[17.5rem] ${
-                  data.cards.length == 4 ? "min-w-[15rem]" : "min-w-[11.875rem]"
+                className={`w-full max-w-70 ${
+                  data.cards.length == 4 ? "min-w-60" : "min-w-47.5"
                 } h-full bg-[#FFFFFF1A] border border-[#FFFFFF33] rounded-2xl p-6 hover:bg-opacity-15 transition-all duration-300 hover:transform hover:scale-105`}
               >
-                <div className="bg-[#05DF72] w-3 h-3 rounded-full relative top-[-8px] left-[98%]"></div>
+                <div className="bg-[#05DF72] w-3 h-3 rounded-full relative -top-2 left-[98%]"></div>
                 <div className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 mb-4 relative">
                     <Image

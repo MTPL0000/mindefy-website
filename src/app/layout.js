@@ -1,4 +1,3 @@
-// src/app/layout.js
 import { Lobster_Two, Poppins } from "next/font/google";
 import { Noto_Sans } from "next/font/google";
 import { Fredoka } from "next/font/google";

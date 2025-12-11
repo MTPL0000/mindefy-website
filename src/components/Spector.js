@@ -11,7 +11,7 @@ export default function Spector() {
             <p className="text-[#333333] text-2xl md:text-3xl lg:text-4xl font-normal">
               Case Study
             </p>
-            <div className="m-auto relative aspect-[3/1] w-[16rem] sm:w-[18rem] md:w-[20rem] overflow-hidden">
+            <div className="m-auto relative aspect-3/1 w-[16rem] sm:w-[18rem] md:w-[20rem] overflow-hidden">
               <Image
                 src="/images/sp-logo.png"
                 alt="Spector Dashboard"
@@ -22,8 +22,8 @@ export default function Spector() {
           </div>
 
           {/* Main Image */}
-          <div className="w-full bg-[linear-gradient(180deg,_rgba(255,255,255,0.6)_0%,_rgba(255,87,34,0.60)_52.4%,_rgba(254,254,254,0.6)_100%)]">
-            <div className="relative aspect-[4/3] sm:aspect-[3/2] md:aspect-[2/1] w-full overflow-hidden">
+          <div className="w-full bg-[linear-gradient(180deg,rgba(255,255,255,0.6)_0%,rgba(255,87,34,0.60)_52.4%,rgba(254,254,254,0.6)_100%)]">
+            <div className="relative aspect-4/3 sm:aspect-3/2 md:aspect-2/1 w-full overflow-hidden">
               <Image
                 src="/images/sp-1.webp"
                 alt="spector Dashboard"
@@ -35,7 +35,7 @@ export default function Spector() {
         </div>
 
         <div className="flex flex-col items-center gap-12 md:gap-20 justify-center px-4">
-          <div className="flex flex-col items-center justify-center gap-3 w-full max-w-[43.5rem] mx-auto">
+          <div className="flex flex-col items-center justify-center gap-3 w-full max-w-174 mx-auto">
             <p className="text-[#FF5225] text-sm lg:text-base font-bold tracking-wider uppercase">
               Introduction
             </p>
@@ -51,7 +51,7 @@ export default function Spector() {
           </div>
 
           <div className="flex flex-col xl:flex-row items-center justify-between gap-8 xl:gap-20">
-            <div className="w-full xl:w-[71.5rem] flex flex-col items-start justify-center gap-5">
+            <div className="w-full xl:w-286 flex flex-col items-start justify-center gap-5">
               <p className="text-[#FF5722] text-xl md:text-2xl font-medium uppercase">
                 Overview
               </p>
@@ -78,7 +78,7 @@ export default function Spector() {
               </span>
             </div>
 
-            <div className="relative aspect-[1/1] w-full max-w-[20rem] md:max-w-[25rem] xl:max-w-none overflow-hidden">
+            <div className="relative aspect-square w-full max-w-[20rem] md:max-w-100 xl:max-w-none overflow-hidden">
               <Image
                 src="/images/sp-2.webp"
                 alt="image"
@@ -101,9 +101,9 @@ export default function Spector() {
 
             <div className="flex flex-col items-center justify-center gap-12 md:gap-15">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 max-w-4xl">
-                <div className="w-full max-w-[30rem] flex flex-col items-center justify-center gap-5">
-                  <div className="flex items-center justify-center bg-[#DDEFFD] aspect-[1/1] w-[5rem] md:w-[6rem] lg:w-[7rem] border-4 md:border-6 lg:border-8 border-[#F0F8FE] rounded-[1.25rem] md:rounded-[1.5rem] lg:rounded-[1.75rem]">
-                    <div className="relative aspect-[2/1] w-full overflow-hidden">
+                <div className="w-full max-w-120 flex flex-col items-center justify-center gap-5">
+                  <div className="flex items-center justify-center bg-[#DDEFFD] aspect-square w-20 md:w-24 lg:w-28 border-4 md:border-6 lg:border-8 border-[#F0F8FE] rounded-[1.25rem] md:rounded-3xl lg:rounded-[1.75rem]">
+                    <div className="relative aspect-2/1 w-full overflow-hidden">
                       <Image
                         src="/images/sp-icon-1.svg"
                         alt="image"
@@ -123,9 +123,9 @@ export default function Spector() {
                     </p>
                   </div>
                 </div>
-                <div className="w-full max-w-[30rem] flex flex-col items-center justify-center gap-5">
-                  <div className="flex items-center justify-center bg-[#DDEFFD] aspect-[1/1] w-[5rem] md:w-[6rem] lg:w-[7rem] border-4 md:border-6 lg:border-8 border-[#F0F8FE] rounded-[1.25rem] md:rounded-[1.5rem] lg:rounded-[1.75rem]">
-                    <div className="relative aspect-[2/1] w-full overflow-hidden">
+                <div className="w-full max-w-120 flex flex-col items-center justify-center gap-5">
+                  <div className="flex items-center justify-center bg-[#DDEFFD] aspect-square w-20 md:w-24 lg:w-28 border-4 md:border-6 lg:border-8 border-[#F0F8FE] rounded-[1.25rem] md:rounded-3xl lg:rounded-[1.75rem]">
+                    <div className="relative aspect-2/1 w-full overflow-hidden">
                       <Image
                         src="/images/sp-icon-2.svg"
                         alt="image"
@@ -147,9 +147,9 @@ export default function Spector() {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 max-w-4xl">
-                <div className="w-full max-w-[30rem] flex flex-col items-center justify-center gap-5">
-                  <div className="flex items-center justify-center bg-[#DDEFFD] aspect-[1/1] w-[5rem] md:w-[6rem] lg:w-[7rem] border-4 md:border-6 lg:border-8 border-[#F0F8FE] rounded-[1.25rem] md:rounded-[1.5rem] lg:rounded-[1.75rem]">
-                    <div className="relative aspect-[2/1] w-full overflow-hidden">
+                <div className="w-full max-w-120 flex flex-col items-center justify-center gap-5">
+                  <div className="flex items-center justify-center bg-[#DDEFFD] aspect-square w-20 md:w-24 lg:w-28 border-4 md:border-6 lg:border-8 border-[#F0F8FE] rounded-[1.25rem] md:rounded-3xl lg:rounded-[1.75rem]">
+                    <div className="relative aspect-2/1 w-full overflow-hidden">
                       <Image
                         src="/images/sp-icon-4.svg"
                         alt="image"
@@ -170,9 +170,9 @@ export default function Spector() {
                     </p>
                   </div>
                 </div>
-                <div className="w-full max-w-[30rem] flex flex-col items-center justify-center gap-5">
-                  <div className="flex items-center justify-center bg-[#DDEFFD] aspect-[1/1] w-[5rem] md:w-[6rem] lg:w-[7rem] border-4 md:border-6 lg:border-8 border-[#F0F8FE] rounded-[1.25rem] md:rounded-[1.5rem] lg:rounded-[1.75rem]">
-                    <div className="relative aspect-[2/1] w-full overflow-hidden">
+                <div className="w-full max-w-120 flex flex-col items-center justify-center gap-5">
+                  <div className="flex items-center justify-center bg-[#DDEFFD] aspect-square w-20 md:w-24 lg:w-28 border-4 md:border-6 lg:border-8 border-[#F0F8FE] rounded-[1.25rem] md:rounded-3xl lg:rounded-[1.75rem]">
+                    <div className="relative aspect-2/1 w-full overflow-hidden">
                       <Image
                         src="/images/sp-icon-3.svg"
                         alt="image"
@@ -208,7 +208,7 @@ export default function Spector() {
                 DESIGN PROCESS
               </h2>
             </div>
-            <div className="relative aspect-[2/1] sm:aspect-[2/1] w-full overflow-hidden">
+            <div className="relative aspect-2/1 sm:aspect-2/1 w-full overflow-hidden">
               <Image
                 src="/images/sp-3.webp"
                 alt="image"
@@ -220,8 +220,8 @@ export default function Spector() {
 
           {/* Desktop Version - Text on image */}
           <div className="hidden xl:block">
-            <div className="relative aspect-[2/1] w-full overflow-hidden">
-              <div className="absolute top-[6rem] left-[10rem] w-fit flex flex-col items-start justify-center gap-5 z-10">
+            <div className="relative aspect-2/1 w-full overflow-hidden">
+              <div className="absolute top-24 left-40 w-fit flex flex-col items-start justify-center gap-5 z-10">
                 <p className="text-[#FF5722] text-2xl font-medium uppercase tracking-wide">
                   PREPARATION
                 </p>
@@ -245,7 +245,7 @@ export default function Spector() {
               ICONS
             </p>
 
-            <div className="relative aspect-[3/1] w-full overflow-hidden">
+            <div className="relative aspect-3/1 w-full overflow-hidden">
               <Image
                 src="/images/sp-4.webp"
                 alt="image"
@@ -259,8 +259,8 @@ export default function Spector() {
               PRODUCT ILLUSTRATIONS
             </p>
 
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-[11.5rem] justify-items-center max-w-6xl mx-auto">
-              <div className="relative aspect-[1/1] w-[10rem] sm:w-[12rem] lg:w-[12.5rem] overflow-hidden">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-46 justify-items-center max-w-6xl mx-auto">
+              <div className="relative aspect-square w-40 sm:w-48 lg:w-50 overflow-hidden">
                 <Image
                   src="/images/PI-1.png"
                   alt="image"
@@ -268,7 +268,7 @@ export default function Spector() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative aspect-[1/1] w-[10rem] sm:w-[12rem] lg:w-[12.5rem] overflow-hidden">
+              <div className="relative aspect-square w-40 sm:w-48 lg:w-50 overflow-hidden">
                 <Image
                   src="/images/PI-2.png"
                   alt="image"
@@ -276,7 +276,7 @@ export default function Spector() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative aspect-[1/1] w-[10rem] sm:w-[12rem] lg:w-[12.5rem] overflow-hidden sm:col-span-2 lg:col-span-1">
+              <div className="relative aspect-square w-40 sm:w-48 lg:w-50 overflow-hidden sm:col-span-2 lg:col-span-1">
                 <Image
                   src="/images/PI-3.png"
                   alt="image"
@@ -292,7 +292,7 @@ export default function Spector() {
             </p>
 
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-[2.4rem] justify-items-center max-w-7xl mx-auto">
-              <div className="relative aspect-[1/1] w-[12rem] sm:w-[13rem] lg:w-[14.7rem] overflow-hidden">
+              <div className="relative aspect-square w-48 sm:w-52 lg:w-[14.7rem] overflow-hidden">
                 <Image
                   src="/images/PI-4.png"
                   alt="image"
@@ -300,7 +300,7 @@ export default function Spector() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative aspect-[1/1] w-[12rem] sm:w-[13rem] lg:w-[14.7rem] overflow-hidden">
+              <div className="relative aspect-square w-48 sm:w-52 lg:w-[14.7rem] overflow-hidden">
                 <Image
                   src="/images/PI-5.png"
                   alt="image"
@@ -308,7 +308,7 @@ export default function Spector() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative aspect-[1/1] w-[12rem] sm:w-[13rem] lg:w-[14.7rem] overflow-hidden">
+              <div className="relative aspect-square w-48 sm:w-52 lg:w-[14.7rem] overflow-hidden">
                 <Image
                   src="/images/PI-6.png"
                   alt="image"
@@ -316,7 +316,7 @@ export default function Spector() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative aspect-[1/1] w-[12rem] sm:w-[13rem] lg:w-[14.7rem] overflow-hidden">
+              <div className="relative aspect-square w-48 sm:w-52 lg:w-[14.7rem] overflow-hidden">
                 <Image
                   src="/images/PI-7.png"
                   alt="image"
@@ -331,8 +331,8 @@ export default function Spector() {
               APPLICATION INTERFACE
             </p>
 
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-[5rem] justify-items-center max-w-6xl mx-auto">
-              <div className="relative aspect-[1/1] w-[12rem] sm:w-[14rem] lg:w-[15rem] overflow-hidden">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-20 justify-items-center max-w-6xl mx-auto">
+              <div className="relative aspect-square w-48 sm:w-56 lg:w-60 overflow-hidden">
                 <Image
                   src="/images/AI-1.png"
                   alt="image"
@@ -340,7 +340,7 @@ export default function Spector() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative aspect-[1/1] w-[12rem] sm:w-[14rem] lg:w-[15rem] overflow-hidden">
+              <div className="relative aspect-square w-48 sm:w-56 lg:w-60 overflow-hidden">
                 <Image
                   src="/images/AI-2.png"
                   alt="image"
@@ -348,7 +348,7 @@ export default function Spector() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative aspect-[1/1] w-[12rem] sm:w-[14rem] lg:w-[15rem] overflow-hidden sm:col-span-2 lg:col-span-1">
+              <div className="relative aspect-square w-48 sm:w-56 lg:w-60 overflow-hidden sm:col-span-2 lg:col-span-1">
                 <Image
                   src="/images/AI-3.png"
                   alt="image"
@@ -364,7 +364,7 @@ export default function Spector() {
             </p>
 
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-[4.3rem] justify-items-center max-w-6xl mx-auto">
-              <div className="relative aspect-[1/1] w-[14rem] sm:w-[16rem] lg:w-[17rem] overflow-hidden">
+              <div className="relative aspect-square w-56 sm:w-[16rem] lg:w-68 overflow-hidden">
                 <Image
                   src="/images/DV-1.png"
                   alt="image"
@@ -372,7 +372,7 @@ export default function Spector() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative aspect-[1/1] w-[14rem] sm:w-[16rem] lg:w-[17rem] overflow-hidden">
+              <div className="relative aspect-square w-56 sm:w-[16rem] lg:w-68 overflow-hidden">
                 <Image
                   src="/images/DV-2.png"
                   alt="image"
@@ -380,7 +380,7 @@ export default function Spector() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative aspect-[1/1] w-[14rem] sm:w-[16rem] lg:w-[17rem] overflow-hidden sm:col-span-2 lg:col-span-1">
+              <div className="relative aspect-square w-56 sm:w-[16rem] lg:w-68 overflow-hidden sm:col-span-2 lg:col-span-1">
                 <Image
                   src="/images/DV-3.png"
                   alt="image"
@@ -392,12 +392,12 @@ export default function Spector() {
           </div>
         </div>
 
-        <div className="w-full pt-8 md:pt-[5rem] pb-8 md:pb-[5rem] flex flex-col items-center justify-center gap-8 md:gap-12 bg-[#EDF0FE] px-4">
+        <div className="w-full pt-8 md:pt-20 pb-8 md:pb-20 flex flex-col items-center justify-center gap-8 md:gap-12 bg-[#EDF0FE] px-4">
           <p className="text-[#FF5722] text-2xl md:text-3xl lg:text-4xl font-medium uppercase">
             WEBSITE DESIGN
           </p>
 
-          <div className="w-full max-w-[90rem] flex flex-col items-center justify-center gap-8 md:gap-10">
+          <div className="w-full max-w-360 flex flex-col items-center justify-center gap-8 md:gap-10">
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 justify-items-center">
               <div className="flex flex-col items-center justify-center gap-5 md:gap-7">
                 <span className="text-[#333333] text-xl md:text-2xl font-normal">

@@ -9,18 +9,18 @@ export default function BPM() {
       <section className="mt-20 md:mt-24 lg:mt-28 mx-auto px-4 md:px-6 lg:px-8 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-sm md:text-base lg:text-[1rem] font-bold tracking-widest uppercase mb-4 md:mb-5 lg:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm md:text-base lg:text-[1rem] font-bold tracking-widest uppercase mb-4 md:mb-5 lg:mb-5">
             Buisness Process Management
           </h1>
 
           {/* Main Title */}
-          <p className="text-xl md:text-2xl lg:text-3xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-6 lg:mb-7 leading-tight max-w-[95%] md:max-w-[40rem] lg:max-w-[45rem] xl:max-w-[50rem] mx-auto px-2 md:px-0">
+          <p className="text-xl md:text-2xl lg:text-3xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-6 lg:mb-7 leading-tight max-w-[95%] md:max-w-160 lg:max-w-180 xl:max-w-200 mx-auto px-2 md:px-0">
             Revolutionize Your Business with <br className="hidden md:block" />
             Mindefy's Business Process Management
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-[95%] md:max-w-[45rem] lg:max-w-[55rem] xl:w-[60.25rem] font-normal mx-auto mb-6 md:mb-8 lg:mb-[2.25rem] text-justify space-y-4 md:space-y-5 lg:space-y-[1.75rem] px-2 md:px-4 lg:px-6 xl:px-0">
+          <div className="w-full max-w-[95%] md:max-w-180 lg:max-w-220 xl:w-241 font-normal mx-auto mb-6 md:mb-8 lg:mb-9 text-justify space-y-4 md:space-y-5 lg:space-y-7 px-2 md:px-4 lg:px-6 xl:px-0">
             <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed">
               To thrive, your business needs to be at the forefront of
               innovation, and Mindefy's BPM solutions are the key to this
@@ -34,7 +34,7 @@ export default function BPM() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-48 md:h-64 lg:h-80 xl:h-[30.125rem] mx-auto mb-8 md:mb-12 lg:mb-16 xl:mb-[5rem]">
+          <div className="relative w-full h-48 md:h-64 lg:h-80 xl:h-120.5 mx-auto mb-8 md:mb-12 lg:mb-16 xl:mb-20">
             <Image
               src="/images/WAD.webp"
               alt="Hybrid App Development - Developer working with mobile app design"
@@ -46,8 +46,8 @@ export default function BPM() {
         </div>
       </section>
 
-      <div className="w-full max-w-[95%] md:max-w-[55rem] lg:max-w-[65rem] xl:w-[68.375rem] mx-auto mb-12 md:mb-16 lg:mb-20 flex flex-col lg:flex-row xl:flex-row justify-between gap-6 lg:gap-8 xl:gap-0 px-4 md:px-6 lg:px-8 xl:px-0">
-        <div className="w-full lg:w-[60%] xl:w-[37.375rem] my-4 md:my-6 lg:my-8 xl:my-9">
+      <div className="w-full max-w-[95%] md:max-w-220 lg:max-w-260 xl:w-273.5 mx-auto mb-12 md:mb-16 lg:mb-20 flex flex-col lg:flex-row xl:flex-row justify-between gap-6 lg:gap-8 xl:gap-0 px-4 md:px-6 lg:px-8 xl:px-0">
+        <div className="w-full lg:w-[60%] xl:w-149.5 my-4 md:my-6 lg:my-8 xl:my-9">
           <div className="mx-2 md:mx-3 lg:mx-4 xl:mx-2.5 mt-2 md:mt-2.5 mb-4 md:mb-5">
             <p className="font-semibold text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#000000]">
               What is Business Process Management (BPM)?
@@ -66,7 +66,7 @@ export default function BPM() {
             </p>
           </div>
         </div>
-        <div className="w-full max-w-sm md:max-w-md lg:max-w-lg lg:w-[35%] xl:w-[23.25rem] h-48 md:h-56 lg:h-64 xl:h-[23.25rem] relative mx-auto lg:mx-0 xl:mx-0">
+        <div className="w-full max-w-sm md:max-w-md lg:max-w-lg lg:w-[35%] xl:w-93 h-48 md:h-56 lg:h-64 xl:h-93 relative mx-auto lg:mx-0 xl:mx-0">
           <Image
             src="/images/SIS11.webp"
             alt="Code Reusability"
@@ -78,7 +78,7 @@ export default function BPM() {
 
       {/* Agile Benefits Section using Flex */}
       <section className="px-4 md:px-6 lg:px-8 xl:px-0">
-        <div className="max-w-[95%] md:max-w-[55rem] lg:max-w-[65rem] xl:max-w-[72.375rem] mx-auto">
+        <div className="max-w-[95%] md:max-w-220 lg:max-w-260 xl:max-w-289.5 mx-auto">
           <div className="text-center">
             <h2 className="text-center text-lg md:text-xl lg:text-2xl xl:text-[1.75rem] font-semibold text-[#000000] mb-8 md:mb-10 lg:mb-11 px-2">
               The Upsides of Opting for Mindefy's BPM Solutions
@@ -114,21 +114,21 @@ export default function BPM() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[0.75rem] p-4 md:p-5 lg:p-6 xl:px-6 xl:py-5 w-full h-auto min-h-[400px] md:min-h-[450px] lg:min-h-[500px] xl:w-[23.12rem] xl:h-auto flex flex-col items-center text-center justify-start overflow-hidden"
+                className="bg-white rounded-xl p-4 md:p-5 lg:p-6 xl:px-6 xl:py-5 w-full h-auto min-h-[400px] md:min-h-[450px] lg:min-h-[500px] xl:w-[23.12rem] xl:h-auto flex flex-col items-center text-center justify-start overflow-hidden"
                 style={{
                   boxShadow:
                     "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
                 }}
               >
                 {/* Title Container with Fixed Height */}
-                <div className="w-full h-auto mb-4 xl:mb-[1.125rem] flex items-center justify-center">
-                  <h3 className="font-semibold text-base md:text-lg lg:text-xl xl:text-[1.5rem] leading-tight text-center px-2 py-2 break-words hyphens-auto">
+                <div className="w-full h-auto mb-4 xl:mb-4.5 flex items-center justify-center">
+                  <h3 className="font-semibold text-base md:text-lg lg:text-xl xl:text-[1.5rem] leading-tight text-center px-2 py-2 wrap-break-word hyphens-auto">
                     {item.title}
                   </h3>
                 </div>
 
                 {/* Image Container */}
-                <div className="relative w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-[13.875rem] xl:h-[12.375rem] mb-4 xl:mb-[1.125rem] flex-shrink-0">
+                <div className="relative w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-55.5 xl:h-49.5 mb-4 xl:mb-4.5 shrink-0">
                   <Image
                     src={item.img}
                     alt={item.title}
@@ -139,7 +139,7 @@ export default function BPM() {
 
                 {/* Description Container - Flex Grow */}
                 <div className="flex-1 w-full flex items-start">
-                  <p className="text-xs md:text-sm lg:text-sm xl:text-sm font-normal w-full text-[#444444] leading-relaxed text-justify px-1 break-words hyphens-auto">
+                  <p className="text-xs md:text-sm lg:text-sm xl:text-sm font-normal w-full text-[#444444] leading-relaxed text-justify px-1 wrap-break-word hyphens-auto">
                     {item.desc}
                   </p>
                 </div>
@@ -150,9 +150,9 @@ export default function BPM() {
       </section>
 
       <section className="mt-16 md:mt-18 lg:mt-20 xl:mt-24 px-3 md:px-6 lg:px-8 xl:px-0">
-        <div className="w-full max-w-[98%] md:max-w-[55rem] lg:max-w-[60rem] xl:max-w-[63rem] mx-auto">
+        <div className="w-full max-w-[98%] md:max-w-220 lg:max-w-240 xl:max-w-252 mx-auto">
           {/* Section Header */}
-          <div className="w-full max-w-[98%] md:max-w-[45rem] lg:max-w-[50rem] xl:w-[58.875rem] mx-auto text-center mb-8 md:mb-9 lg:mb-10 xl:mb-10">
+          <div className="w-full max-w-[98%] md:max-w-180 lg:max-w-200 xl:w-235.5 mx-auto text-center mb-8 md:mb-9 lg:mb-10 xl:mb-10">
             <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[1.75rem] font-semibold text-[#000000] mb-4 md:mb-6 lg:mb-7 px-3">
               The Upsides of Opting for Mindefy's BPM Solutions
             </h2>
@@ -163,20 +163,20 @@ export default function BPM() {
           </div>
 
           {/* Advantages Content */}
-          <div className="flex flex-col gap-6 md:gap-7 lg:gap-8 xl:gap-[2.875rem] w-full max-w-[98%] md:max-w-[50rem] lg:max-w-[55rem] xl:max-w-[56.25rem] mx-auto">
+          <div className="flex flex-col gap-6 md:gap-7 lg:gap-8 xl:gap-11.5 w-full max-w-[98%] md:max-w-200 lg:max-w-220 xl:max-w-225 mx-auto">
             {/* Process Discovery */}
             <div className="flex flex-col lg:flex-row xl:flex-row bg-[#E6E6E7] rounded-xl overflow-hidden">
-              <div className="flex-1 w-full lg:w-auto xl:w-[30.875rem] p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 break-words">
+              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5">
+                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
                   Process Discovery
                 </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify break-words hyphens-auto">
+                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   We work closely with your team to identify existing processes,
                   pinpoint pain points, and identify opportunities for
                   improvement. This phase sets the stage for transformation.
                 </p>
               </div>
-              <div className="flex-shrink-0 p-4 lg:p-0">
+              <div className="shrink-0 p-4 lg:p-0">
                 <div className="flex items-center justify-center">
                   <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:mr-2.5 xl:h-[16.56rem] relative">
                     <Image
@@ -192,7 +192,7 @@ export default function BPM() {
 
             {/* Process Design */}
             <div className="flex flex-col lg:flex-row xl:flex-row">
-              <div className="flex-shrink-0 order-2 lg:order-1 xl:order-1 p-4 lg:p-0">
+              <div className="shrink-0 order-2 lg:order-1 xl:order-1 p-4 lg:p-0">
                 <div className="flex items-center justify-center">
                   <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:ml-2.5 xl:h-[16.56rem] relative">
                     <Image
@@ -204,11 +204,11 @@ export default function BPM() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-auto xl:w-[30.875rem] p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5 order-1 lg:order-2 xl:order-2">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 break-words">
+              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5 order-1 lg:order-2 xl:order-2">
+                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
                   Process Design
                 </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify break-words hyphens-auto">
+                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   Leveraging industry best practices, we design optimized
                   processes that align with your business objectives. Our
                   designs are not just improvements; they are tailored to
@@ -219,11 +219,11 @@ export default function BPM() {
 
             {/* Process Automation */}
             <div className="flex flex-col lg:flex-row xl:flex-row bg-[#E6E6E7] rounded-xl overflow-hidden">
-              <div className="flex-1 w-full lg:w-auto xl:w-[30.875rem] p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 break-words">
+              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5">
+                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
                   Process Automation
                 </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify break-words hyphens-auto">
+                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   Automation is the cornerstone of efficiency. Mindefy leverages
                   automation to reduce manual tasks, minimize errors, and
                   elevate the overall efficiency of your processes. Automation
@@ -231,7 +231,7 @@ export default function BPM() {
                   operations are handled seamlessly.
                 </p>
               </div>
-              <div className="flex-shrink-0 p-4 lg:p-0">
+              <div className="shrink-0 p-4 lg:p-0">
                 <div className="flex items-center justify-center">
                   <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:mr-2.5 xl:h-[16.56rem] relative">
                     <Image
@@ -247,7 +247,7 @@ export default function BPM() {
 
             {/* Monitoring and Analytics */}
             <div className="flex flex-col lg:flex-row xl:flex-row">
-              <div className="flex-shrink-0 order-2 lg:order-1 xl:order-1 p-4 lg:p-0">
+              <div className="shrink-0 order-2 lg:order-1 xl:order-1 p-4 lg:p-0">
                 <div className="flex items-center justify-center">
                   <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:ml-2.5 xl:h-[16.56rem] relative">
                     <Image
@@ -259,11 +259,11 @@ export default function BPM() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-auto xl:w-[30.875rem] p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5 order-1 lg:order-2 xl:order-2">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 break-words">
+              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5 order-1 lg:order-2 xl:order-2">
+                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
                   Monitoring and Analytics
                 </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify break-words hyphens-auto">
+                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   Real-time monitoring and data analytics provide you with
                   insights into process performance. This transparency empowers
                   you to make data-driven decisions, pivot as needed, and
@@ -274,18 +274,18 @@ export default function BPM() {
 
             {/* Continuous Improvement */}
             <div className="flex flex-col lg:flex-row xl:flex-row bg-[#E6E6E7] rounded-xl overflow-hidden">
-              <div className="flex-1 w-full lg:w-auto xl:w-[30.875rem] p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 break-words">
+              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5">
+                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
                   Continuous Improvement
                 </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify break-words hyphens-auto">
+                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   We embrace the philosophy of continuous improvement. Our team
                   collaborates closely with you to refine processes as your
                   business evolves, ensuring that they remain aligned with your
                   dynamic business goals.
                 </p>
               </div>
-              <div className="flex-shrink-0 p-4 lg:p-0">
+              <div className="shrink-0 p-4 lg:p-0">
                 <div className="flex items-center justify-center">
                   <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:mr-2.5 xl:h-[16.56rem] relative">
                     <Image
@@ -304,18 +304,18 @@ export default function BPM() {
 
       {/* Why Mindefy is the Ideal Partner Section */}
       <section className="mt-16 md:mt-18 lg:mt-20 px-3 md:px-6 lg:px-8 xl:px-0">
-        <div className="w-full max-w-[98%] md:max-w-[55rem] lg:max-w-[60rem] xl:max-w-[62.75rem] mx-auto">
+        <div className="w-full max-w-[98%] md:max-w-220 lg:max-w-240 xl:max-w-251 mx-auto">
           {/* Section Header */}
-          <div className="text-center w-full max-w-[98%] md:max-w-[28rem] lg:max-w-[30rem] xl:w-[33.5rem] mx-auto mb-8 md:mb-10 lg:mb-12 xl:mb-[3rem]">
+          <div className="text-center w-full max-w-[98%] md:max-w-md lg:max-w-120 xl:w-134 mx-auto mb-8 md:mb-10 lg:mb-12 xl:mb-12">
             <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[1.75rem] font-semibold text-[#000000] px-3">
               Why Mindefy Excels in BPM ?
             </h2>
           </div>
 
           {/* 2x2 Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:flex xl:flex-wrap w-full max-w-[98%] md:max-w-full lg:max-w-full xl:max-w-[62.75rem] mx-auto gap-4 md:gap-0 lg:gap-0 xl:gap-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:flex xl:flex-wrap w-full max-w-[98%] md:max-w-full lg:max-w-full xl:max-w-251 mx-auto gap-4 md:gap-0 lg:gap-0 xl:gap-0">
             {/* Expertise and Experience */}
-            <div className="bg-white flex-1 w-full md:w-auto lg:w-auto xl:max-w-[31.375rem] border-2 md:border lg:border xl:border border-[#000000] md:border-r md:border-b md:border-l-0 md:border-t-0 lg:border-r lg:border-b lg:border-l-0 lg:border-t-0 xl:border-r xl:border-b xl:border-l-0 xl:border-t-0 rounded-lg md:rounded-none lg:rounded-none xl:rounded-none p-4 md:p-5 lg:p-6 xl:p-6 xl:basis-[calc(50%-1rem)]">
+            <div className="bg-white flex-1 w-full md:w-auto lg:w-auto xl:max-w-125.5 border-2 md:border lg:border xl:border border-[#000000] md:border-r md:border-b md:border-l-0 md:border-t-0 lg:border-r lg:border-b lg:border-l-0 lg:border-t-0 xl:border-r xl:border-b xl:border-l-0 xl:border-t-0 rounded-lg md:rounded-none lg:rounded-none xl:rounded-none p-4 md:p-5 lg:p-6 xl:p-6 xl:basis-[calc(50%-1rem)]">
               <div className="flex items-center justify-center md:justify-center lg:justify-end xl:justify-end mb-4 md:mb-5 lg:mb-6 xl:mb-6">
                 <div className="relative w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-14 xl:h-14 mr-0 md:mr-0 lg:mr-5 xl:mr-5 mt-2 md:mt-3 lg:mt-4 xl:mt-4">
                   <Image
@@ -327,11 +327,11 @@ export default function BPM() {
                 </div>
               </div>
               <div className="px-2 md:px-4 lg:px-6 xl:px-6 mb-4 md:mb-5 lg:mb-6 xl:mb-6 w-full">
-                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] break-words">
+                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] wrap-break-word">
                   Expertise
                 </h3>
 
-                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify break-words hyphens-auto">
+                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   Mindefy's team of seasoned BPM professionals brings a proven
                   track record of delivering results to businesses across a
                   diverse range of industries. Our collective expertise ensures
@@ -342,7 +342,7 @@ export default function BPM() {
             </div>
 
             {/* Advanced Tools and Technologies */}
-            <div className="bg-white flex-1 w-full md:w-auto lg:w-auto xl:max-w-[31.375rem] border-2 md:border lg:border xl:border border-[#000000] md:border-l md:border-b md:border-r-0 md:border-t-0 lg:border-l lg:border-b lg:border-r-0 lg:border-t-0 xl:border-l xl:border-b xl:border-r-0 xl:border-t-0 rounded-lg md:rounded-none lg:rounded-none xl:rounded-none p-4 md:p-5 lg:p-6 xl:p-6 xl:basis-[calc(50%-1rem)]">
+            <div className="bg-white flex-1 w-full md:w-auto lg:w-auto xl:max-w-125.5 border-2 md:border lg:border xl:border border-[#000000] md:border-l md:border-b md:border-r-0 md:border-t-0 lg:border-l lg:border-b lg:border-r-0 lg:border-t-0 xl:border-l xl:border-b xl:border-r-0 xl:border-t-0 rounded-lg md:rounded-none lg:rounded-none xl:rounded-none p-4 md:p-5 lg:p-6 xl:p-6 xl:basis-[calc(50%-1rem)]">
               <div className="flex items-center justify-center md:justify-center lg:justify-start xl:justify-start mb-4 md:mb-5 lg:mb-6 xl:mb-6">
                 <div className="relative w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-14 xl:h-14 ml-0 md:ml-0 lg:ml-5 xl:ml-5 mt-2 md:mt-3 lg:mt-4 xl:mt-4">
                   <Image
@@ -354,11 +354,11 @@ export default function BPM() {
                 </div>
               </div>
               <div className="px-2 md:px-4 lg:px-6 xl:px-6 mb-4 md:mb-5 lg:mb-6 xl:mb-6 w-full">
-                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] break-words">
+                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] wrap-break-word">
                   Tailored Solutions
                 </h3>
 
-                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify break-words hyphens-auto">
+                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   We firmly believe in the principle that there is no
                   one-size-fits-all solution in BPM. As such, our BPM offerings
                   are never off-the-shelf; they are always customized to meet
@@ -369,7 +369,7 @@ export default function BPM() {
             </div>
 
             {/* Agile Testing Methodologies */}
-            <div className="bg-white flex-1 w-full md:w-auto lg:w-auto xl:max-w-[31.375rem] border-2 md:border lg:border xl:border border-[#000000] md:border-r md:border-t md:border-l-0 md:border-b-0 lg:border-r lg:border-t lg:border-l-0 lg:border-b-0 xl:border-r xl:border-t xl:border-l-0 xl:border-b-0 rounded-lg md:rounded-none lg:rounded-none xl:rounded-none p-4 md:p-5 lg:p-6 xl:p-6 xl:basis-[calc(50%-1rem)]">
+            <div className="bg-white flex-1 w-full md:w-auto lg:w-auto xl:max-w-125.5 border-2 md:border lg:border xl:border border-[#000000] md:border-r md:border-t md:border-l-0 md:border-b-0 lg:border-r lg:border-t lg:border-l-0 lg:border-b-0 xl:border-r xl:border-t xl:border-l-0 xl:border-b-0 rounded-lg md:rounded-none lg:rounded-none xl:rounded-none p-4 md:p-5 lg:p-6 xl:p-6 xl:basis-[calc(50%-1rem)]">
               <div className="flex items-center justify-center md:justify-center lg:justify-end xl:justify-end mb-4 md:mb-5 lg:mb-6 xl:mb-6">
                 <div className="relative w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-14 xl:h-14 mr-0 md:mr-0 lg:mr-5 xl:mr-5 mt-2 md:mt-3 lg:mt-4 xl:mt-4">
                   <Image
@@ -381,11 +381,11 @@ export default function BPM() {
                 </div>
               </div>
               <div className="px-2 md:px-4 lg:px-6 xl:px-6 mb-2 md:mb-3 lg:mb-2.5 xl:mb-2.5 w-full">
-                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] break-words">
+                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] wrap-break-word">
                   Cutting-Edge Technology
                 </h3>
 
-                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify break-words hyphens-auto">
+                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   Mindefy consistently leverages the latest BPM tools and
                   technologies to keep your business ahead of the competition.
                   With the rapid pace of technological change, our commitment to
@@ -396,7 +396,7 @@ export default function BPM() {
             </div>
 
             {/* Customer Satisfaction */}
-            <div className="bg-white flex-1 w-full md:w-auto lg:w-auto xl:max-w-[31.375rem] border-2 md:border lg:border xl:border border-[#000000] md:border-l md:border-t md:border-r-0 md:border-b-0 lg:border-l lg:border-t lg:border-r-0 lg:border-b-0 xl:border-l xl:border-t xl:border-r-0 xl:border-b-0 rounded-lg md:rounded-none lg:rounded-none xl:rounded-none p-4 md:p-5 lg:p-6 xl:p-6 xl:basis-[calc(50%-1rem)]">
+            <div className="bg-white flex-1 w-full md:w-auto lg:w-auto xl:max-w-125.5 border-2 md:border lg:border xl:border border-[#000000] md:border-l md:border-t md:border-r-0 md:border-b-0 lg:border-l lg:border-t lg:border-r-0 lg:border-b-0 xl:border-l xl:border-t xl:border-r-0 xl:border-b-0 rounded-lg md:rounded-none lg:rounded-none xl:rounded-none p-4 md:p-5 lg:p-6 xl:p-6 xl:basis-[calc(50%-1rem)]">
               <div className="flex items-center justify-center md:justify-center lg:justify-start xl:justify-start mb-4 md:mb-5 lg:mb-6 xl:mb-6">
                 <div className="relative w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-14 xl:h-14 ml-0 md:ml-0 lg:ml-5 xl:ml-5 mt-2 md:mt-3 lg:mt-4 xl:mt-4">
                   <Image
@@ -408,11 +408,11 @@ export default function BPM() {
                 </div>
               </div>
               <div className="px-2 md:px-4 lg:px-6 xl:px-6 mb-2 md:mb-3 lg:mb-2.5 xl:mb-2.5 w-full">
-                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] break-words">
+                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] wrap-break-word">
                   Client-Centric Approach
                 </h3>
 
-                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify break-words hyphens-auto">
+                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   Your success is our success. We work closely with you to
                   achieve your goals and drive business growth. Our commitment
                   to your success is unwavering, and we consider ourselves not
