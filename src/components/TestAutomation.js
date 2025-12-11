@@ -9,18 +9,18 @@ export default function TestAutomation() {
       <section className="mt-28 mx-auto px-4 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-5">
             Application test Automation
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[55.25rem] mx-auto px-4 xl:px-0">
+          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-221 mx-auto px-4 xl:px-0">
             Application Test Automation and QA Services Ensuring Seamless
             Software Performance
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-[61.375rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.25rem] px-4 xl:px-0">
+          <div className="w-full max-w-245.5 font-normal mx-auto mb-9 text-justify space-y-5 px-4 xl:px-0">
             <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed">
               At Mindefy, we understand the importance of rigorous testing in
               delivering high-performing applications. Our Application Test
@@ -33,7 +33,7 @@ export default function TestAutomation() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] mx-auto mb-6">
+          <div className="relative w-full h-80 sm:h-100 lg:h-120.5 mx-auto mb-6">
             <Image
               src="/images/WAD.webp"
               alt="Web Application Development - Developer working with web applications"
@@ -47,16 +47,16 @@ export default function TestAutomation() {
 
       {/* MEAN and MERN Advantages Section */}
       <section className="mt-24 px-4 xl:px-0">
-        <div className="max-w-[68.375rem] mx-auto">
+        <div className="max-w-273.5 mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[3.75rem]">
+          <div className="text-center mb-15">
             <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-4 px-4 xl:px-0">
               Explore Mindefy's Reliable Testing Services
             </h2>
           </div>
 
           {/* Advantages Content */}
-          <div className="flex flex-col gap-[1.75rem] max-w-[60.625rem] mx-auto">
+          <div className="flex flex-col gap-7 max-w-242.5 mx-auto">
             {/* Test Automation using Selenium */}
             <div className="flex flex-col lg:flex-row bg-[#EDF3FF] rounded-2xl overflow-hidden">
               <div className="flex-1 p-6 lg:py-[1.15rem] lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
@@ -74,8 +74,8 @@ export default function TestAutomation() {
                   platforms, and devices.
                 </p>
               </div>
-              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
-                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-2.5 lg:mr-2.5">
+              <div className="shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-48 sm:h-52 lg:h-[16.56rem] relative lg:my-2.5 lg:mr-2.5">
                   <Image
                     src="/images/TA1.svg"
                     alt="JavaScript Stack"
@@ -88,8 +88,8 @@ export default function TestAutomation() {
 
             {/* Behavior-Driven Development (BDD) and Cucumber */}
             <div className="flex flex-col-reverse lg:flex-row overflow-hidden">
-              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
-                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-9 lg:ml-2.5">
+              <div className="shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-48 sm:h-52 lg:h-[16.56rem] relative lg:my-9 lg:ml-2.5">
                   <Image
                     src="/images/TA2.svg"
                     alt="Performance"
@@ -132,8 +132,8 @@ export default function TestAutomation() {
                   security testing, delivering comprehensive test coverage.
                 </p>
               </div>
-              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
-                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-2.5 lg:mr-2.5">
+              <div className="shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-48 sm:h-52 lg:h-[16.56rem] relative lg:my-2.5 lg:mr-2.5">
                   <Image
                     src="/images/TA3.svg"
                     alt="Rapid Development"
@@ -146,8 +146,8 @@ export default function TestAutomation() {
 
             {/* Test Framework Development */}
             <div className="flex flex-col-reverse lg:flex-row overflow-hidden">
-              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
-                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-2.5 lg:ml-2.5">
+              <div className="shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-48 sm:h-52 lg:h-[16.56rem] relative lg:my-2.5 lg:ml-2.5">
                   <Image
                     src="/images/TA4.svg"
                     alt="Code Reusability"
@@ -189,8 +189,8 @@ export default function TestAutomation() {
                   to application quality assurance.
                 </p>
               </div>
-              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
-                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-2.5 lg:mr-2.5">
+              <div className="shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-48 sm:h-52 lg:h-[16.56rem] relative lg:my-2.5 lg:mr-2.5">
                   <Image
                     src="/images/TA5.svg"
                     alt="Flexibility"
@@ -203,8 +203,8 @@ export default function TestAutomation() {
 
             {/* Test Execution and Reporting */}
             <div className="flex flex-col-reverse lg:flex-row overflow-hidden">
-              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
-                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-2.5 lg:ml-2.5">
+              <div className="shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-48 sm:h-52 lg:h-[16.56rem] relative lg:my-2.5 lg:ml-2.5">
                   <Image
                     src="/images/TA6.svg"
                     alt="Code Reusability"
@@ -244,8 +244,8 @@ export default function TestAutomation() {
                   functionality of their applications.
                 </p>
               </div>
-              <div className="flex-shrink-0 flex items-center justify-center p-6 lg:p-0">
-                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-[12rem] sm:h-[13rem] lg:h-[16.56rem] relative lg:my-2.5 lg:mr-2.5">
+              <div className="shrink-0 flex items-center justify-center p-6 lg:p-0">
+                <div className="w-[16rem] sm:w-[18rem] lg:w-[23.18rem] h-48 sm:h-52 lg:h-[16.56rem] relative lg:my-2.5 lg:mr-2.5">
                   <Image
                     src="/images/TA7.svg"
                     alt="Flexibility"
@@ -261,9 +261,9 @@ export default function TestAutomation() {
 
       {/* Why Mindefy is the Ideal Partner Section */}
       <section className="mt-20 px-4 xl:px-0">
-        <div className="max-w-[62.75rem] mx-auto">
+        <div className="max-w-251 mx-auto">
           {/* Section Header */}
-          <div className="text-center w-full max-w-[33.5rem] mx-auto mb-[3rem]">
+          <div className="text-center w-full max-w-134 mx-auto mb-12">
             <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000]">
               Why Mindefy is the Ideal Partner for Application Test Automation
               and QA
@@ -271,10 +271,10 @@ export default function TestAutomation() {
           </div>
 
           {/* 2x2 Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:flex xl:flex-wrap w-full max-w-[62.75rem] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:flex xl:flex-wrap w-full max-w-251 mx-auto">
             {/* Expertise and Experience */}
-            <div className="bg-white border border-[#332771] md:border-r md:border-b md:border-l-0 md:border-t-0 xl:flex-1 xl:max-w-[31.375rem] xl:border-r xl:border-b xl:border-l-0 xl:border-t-0 xl:basis-[calc(50%-1rem)]">
-              <div className="flex items-center justify-center xl:justify-end xl:ml-[26.375rem] mb-4">
+            <div className="bg-white border border-[#332771] md:border-r md:border-b md:border-l-0 md:border-t-0 xl:flex-1 xl:max-w-125.5 xl:border-r xl:border-b xl:border-l-0 xl:border-t-0 xl:basis-[calc(50%-1rem)]">
+              <div className="flex items-center justify-center xl:justify-end xl:ml-105.5 mb-4">
                 <div className="relative w-15 h-15 mt-5">
                   <Image
                     src="/images/TA8.svg"
@@ -284,8 +284,8 @@ export default function TestAutomation() {
                   />
                 </div>
               </div>
-              <div className="mx-5 mb-5 xl:w-[28.875rem]">
-                <h3 className="text-center xl:ml-[9.875rem] xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
+              <div className="mx-5 mb-5 xl:w-115.5">
+                <h3 className="text-center xl:ml-39.5 xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
                   Expertise and Experience
                 </h3>
 
@@ -302,7 +302,7 @@ export default function TestAutomation() {
             </div>
 
             {/* Advanced Tools and Technologies */}
-            <div className="bg-white border border-[#332771] md:border-l md:border-b md:border-r-0 md:border-t-0 xl:flex-1 xl:max-w-[31.375rem] xl:border-l xl:border-b xl:border-r-0 xl:border-t-0 xl:basis-[calc(50%-1rem)]">
+            <div className="bg-white border border-[#332771] md:border-l md:border-b md:border-r-0 md:border-t-0 xl:flex-1 xl:max-w-125.5 xl:border-l xl:border-b xl:border-r-0 xl:border-t-0 xl:basis-[calc(50%-1rem)]">
               <div className="flex items-center justify-center xl:justify-start mb-4">
                 <div className="relative w-15 h-15 xl:ml-5 mt-5">
                   <Image
@@ -313,7 +313,7 @@ export default function TestAutomation() {
                   />
                 </div>
               </div>
-              <div className="mx-5 mb-5 xl:w-[28.875rem]">
+              <div className="mx-5 mb-5 xl:w-115.5">
                 <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
                   Advanced Tools and Technologies
                 </h3>
@@ -329,8 +329,8 @@ export default function TestAutomation() {
             </div>
 
             {/* Agile Testing Methodologies */}
-            <div className="bg-white border border-[#332771] md:border-r md:border-t md:border-l-0 md:border-b-0 xl:flex-1 xl:max-w-[31.375rem] xl:border-r xl:border-t xl:border-l-0 xl:border-b-0 xl:basis-[calc(50%-1rem)]">
-              <div className="flex items-center justify-center xl:justify-end xl:ml-[26.375rem] mb-4">
+            <div className="bg-white border border-[#332771] md:border-r md:border-t md:border-l-0 md:border-b-0 xl:flex-1 xl:max-w-125.5 xl:border-r xl:border-t xl:border-l-0 xl:border-b-0 xl:basis-[calc(50%-1rem)]">
+              <div className="flex items-center justify-center xl:justify-end xl:ml-105.5 mb-4">
                 <div className="relative w-15 h-15 mt-5">
                   <Image
                     src="/images/TA10.svg"
@@ -340,7 +340,7 @@ export default function TestAutomation() {
                   />
                 </div>
               </div>
-              <div className="mx-5 mb-5 xl:w-[28.875rem]">
+              <div className="mx-5 mb-5 xl:w-115.5">
                 <h3 className="text-center xl:ml-[7.31rem] xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
                   Agile Testing Methodologies
                 </h3>
@@ -358,7 +358,7 @@ export default function TestAutomation() {
             </div>
 
             {/* Customer Satisfaction */}
-            <div className="bg-white border border-[#332771] md:border-l md:border-t md:border-r-0 md:border-b-0 xl:flex-1 xl:max-w-[31.375rem] xl:border-l xl:border-t xl:border-r-0 xl:border-b-0 xl:basis-[calc(50%-1rem)]">
+            <div className="bg-white border border-[#332771] md:border-l md:border-t md:border-r-0 md:border-b-0 xl:flex-1 xl:max-w-125.5 xl:border-l xl:border-t xl:border-r-0 xl:border-b-0 xl:basis-[calc(50%-1rem)]">
               <div className="flex items-center justify-center xl:justify-start mb-4">
                 <div className="relative w-15 h-15 xl:ml-5 mt-5">
                   <Image
@@ -369,7 +369,7 @@ export default function TestAutomation() {
                   />
                 </div>
               </div>
-              <div className="mx-5 mb-5 xl:w-[28.875rem]">
+              <div className="mx-5 mb-5 xl:w-115.5">
                 <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
                   Customer Satisfaction
                 </h3>

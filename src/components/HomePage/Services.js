@@ -30,7 +30,7 @@ export default function Services() {
             >
               {/* Service Header */}
               <div className="flex items-start gap-4 mb-4 sm:mb-6">
-                <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-[4.125rem] lg:h-[4.125rem] flex-shrink-0">
+                <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-16.5 lg:h-16.5 shrink-0">
                   <Image
                     src="/images/rocket.webp"
                     alt="Rocket Icon"
@@ -52,7 +52,7 @@ export default function Services() {
               <ul className="list-none space-y-3 sm:space-y-4 lg:space-y-6 text-[#000000] font-medium text-xs sm:text-sm lg:text-[0.875rem] uppercase">
                 {service.points.map((point, i) => (
                   <li key={i} className="flex justify-start items-center gap-2">
-                    <span className="text-blue-500 text-base sm:text-lg flex-shrink-0 mt-0.5">
+                    <span className="text-blue-500 text-base sm:text-lg shrink-0 mt-0.5">
                       ➔
                     </span>
                     <span className="leading-relaxed">{point}</span>

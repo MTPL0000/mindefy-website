@@ -9,17 +9,17 @@ export default function ITC() {
       <section className="mt-20 sm:mt-24 lg:mt-28 mx-auto px-4 sm:px-6 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-sm sm:text-[1rem] font-bold tracking-widest uppercase mb-4 lg:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm sm:text-[1rem] font-bold tracking-widest uppercase mb-4 lg:mb-5">
             IT Consulting
           </h1>
 
           {/* Main Title */}
-          <p className="text-xl sm:text-2xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 lg:mb-7 leading-tight max-w-sm sm:max-w-2xl lg:max-w-[50rem] mx-auto px-2 sm:px-0">
+          <p className="text-xl sm:text-2xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 lg:mb-7 leading-tight max-w-sm sm:max-w-2xl lg:max-w-200 mx-auto px-2 sm:px-0">
             Cultivating Innovation with Mindefy's IT Consulting Services
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-xs sm:max-w-2xl lg:w-[61.375rem] font-normal mx-auto mb-6 lg:mb-[2.25rem] text-justify space-y-4 lg:space-y-[1.25rem] px-4 sm:px-6 lg:px-0">
+          <div className="w-full max-w-xs sm:max-w-2xl lg:w-245.5 font-normal mx-auto mb-6 lg:mb-9 text-justify space-y-4 lg:space-y-5 px-4 sm:px-6 lg:px-0">
             <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed">
               Transform your IT landscape, refine your startup concepts, and
               streamline your operations with Mindefy's IT Consulting
@@ -31,7 +31,7 @@ export default function ITC() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-48 sm:h-64 lg:h-[30.125rem] mx-auto mb-12 lg:mb-20 px-4 sm:px-6 lg:px-0">
+          <div className="relative w-full h-48 sm:h-64 lg:h-120.5 mx-auto mb-12 lg:mb-20 px-4 sm:px-6 lg:px-0">
             <Image
               src="/images/WAD.webp"
               alt="Web Application Development - Developer working with web applications"
@@ -43,8 +43,8 @@ export default function ITC() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-xs sm:max-w-2xl lg:max-w-[62.75rem] mb-8 lg:mb-[3.75rem] px-4 sm:px-6 lg:px-0">
-        <div className="text-[#2E0473] w-full lg:w-[60.25rem] mx-0 lg:mx-5 text-lg sm:text-xl lg:text-[2rem] font-medium mb-2 lg:mb-2.5">
+      <div className="mx-auto max-w-xs sm:max-w-2xl lg:max-w-251 mb-8 lg:mb-15 px-4 sm:px-6 lg:px-0">
+        <div className="text-[#2E0473] w-full lg:w-241 mx-0 lg:mx-5 text-lg sm:text-xl lg:text-[2rem] font-medium mb-2 lg:mb-2.5">
           <p>What sets us apart</p>
         </div>
         <div className="font-normal mx-0 lg:mx-5 text-sm sm:text-base lg:text-[1rem] text-justify text-[#000000]">
@@ -58,13 +58,13 @@ export default function ITC() {
 
       {/* React and Angular Detailed Section */}
       <section className="bg-white">
-        <div className="max-w-full sm:max-w-4xl lg:max-w-[72.5rem] mx-auto px-4 sm:px-6 lg:px-0">
+        <div className="max-w-full sm:max-w-4xl lg:max-w-290 mx-auto px-4 sm:px-6 lg:px-0">
           {/* Header Illustration */}
-          <div className="mb-8 lg:mb-[3.75rem]">
-            <div className="mb-8 lg:mb-[3.75rem] h-auto lg:h-[5.25rem] mx-auto text-center w-full sm:max-w-lg lg:w-[32.81rem] font-semibold text-lg sm:text-xl lg:text-[1.75rem] px-4 sm:px-0">
+          <div className="mb-8 lg:mb-15">
+            <div className="mb-8 lg:mb-15 h-auto lg:h-21 mx-auto text-center w-full sm:max-w-lg lg:w-[32.81rem] font-semibold text-lg sm:text-xl lg:text-[1.75rem] px-4 sm:px-0">
               <p>Our IT Consulting Approach</p>
             </div>
-            <div className="relative w-full h-48 sm:h-64 lg:h-[30.125rem] mx-auto mb-12 lg:mb-[7.25rem]">
+            <div className="relative w-full h-48 sm:h-64 lg:h-120.5 mx-auto mb-12 lg:mb-29">
               <Image
                 src="/images/ARD.webp"
                 alt="MEAN MERN Stack Development - Developer working with web applications"
@@ -78,12 +78,12 @@ export default function ITC() {
       </section>
 
       <section>
-        <div className="w-full max-w-xs sm:max-w-4xl lg:w-[62.375rem] mx-auto flex flex-col mb-8 lg:mb-[3.75rem] gap-8 lg:gap-12 px-4 sm:px-6 lg:px-0">
+        <div className="w-full max-w-xs sm:max-w-4xl lg:w-249.5 mx-auto flex flex-col mb-8 lg:mb-15 gap-8 lg:gap-12 px-4 sm:px-6 lg:px-0">
           {/* Row 1 */}
           <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-12">
             {/* Box 1 */}
             <div className="flex gap-3 lg:gap-4 w-full lg:w-[29.68rem] flex-1">
-              <div className="relative w-8 sm:w-10 lg:w-[2.93rem] h-16 sm:h-20 lg:h-[5.625rem] flex-shrink-0">
+              <div className="relative w-8 sm:w-10 lg:w-[2.93rem] h-16 sm:h-20 lg:h-22.5 shrink-0">
                 <Image
                   src="/images/1.svg"
                   alt="1"
@@ -108,7 +108,7 @@ export default function ITC() {
 
             {/* Box 2 */}
             <div className="flex gap-3 lg:gap-4 w-full lg:w-[29.68rem] flex-1">
-              <div className="relative w-10 sm:w-12 lg:w-[4.625rem] h-16 sm:h-20 lg:h-[5.625rem] flex-shrink-0">
+              <div className="relative w-10 sm:w-12 lg:w-18.5 h-16 sm:h-20 lg:h-22.5 shrink-0">
                 <Image
                   src="/images/2.svg"
                   alt="2"
@@ -121,7 +121,7 @@ export default function ITC() {
                   <p>Functional </p>
                   <p> Consulting</p>
                 </h3>
-                <p className="text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed ml-0 lg:ml-[-5.25rem] text-justify mt-2 lg:mt-0">
+                <p className="text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed ml-0 lg:-ml-21 text-justify mt-2 lg:mt-0">
                   Optimizing business processes is crucial for sustained growth.
                   Our functional consulting services analyze your current
                   operations and help you identify areas for improvement. We
@@ -137,7 +137,7 @@ export default function ITC() {
           <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-12">
             {/* Box 3 */}
             <div className="flex gap-3 lg:gap-4 w-full lg:w-[29.68rem] flex-1">
-              <div className="relative w-10 sm:w-12 lg:w-[4.812rem] h-16 sm:h-20 lg:h-[5.625rem] flex-shrink-0">
+              <div className="relative w-10 sm:w-12 lg:w-[4.812rem] h-16 sm:h-20 lg:h-22.5 shrink-0">
                 <Image
                   src="/images/3.svg"
                   alt="3"
@@ -150,7 +150,7 @@ export default function ITC() {
                   <p>Comprehensive</p>
                   <p> Technical Insights</p>
                 </h3>
-                <p className="text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed ml-0 lg:ml-[-5.25rem] text-justify mt-2 lg:mt-0">
+                <p className="text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed ml-0 lg:-ml-21 text-justify mt-2 lg:mt-0">
                   Mindefy's team comprises experts well-versed in the latest
                   industry trends and technological advancements. This means
                   you'll receive detailed, up-to-date technical insights that
@@ -163,7 +163,7 @@ export default function ITC() {
 
             {/* Box 4 */}
             <div className="flex gap-3 lg:gap-4 w-full lg:w-[29.68rem] flex-1">
-              <div className="relative w-12 sm:w-14 lg:w-[5.3125rem] h-16 sm:h-20 lg:h-[5.625rem] flex-shrink-0">
+              <div className="relative w-12 sm:w-14 lg:w-21.25 h-16 sm:h-20 lg:h-22.5 shrink-0">
                 <Image
                   src="/images/4.svg"
                   alt="4"
@@ -172,7 +172,7 @@ export default function ITC() {
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-lg sm:text-xl lg:text-2xl space-y-1 lg:space-y-1.5 mt-0 lg:mt-[-.5rem]">
+                <h3 className="font-semibold text-lg sm:text-xl lg:text-2xl space-y-1 lg:space-y-1.5 mt-0 lg:-mt-2">
                   <p> User </p>
                   <p> Experience</p>
                   <p> Consulting</p>
@@ -199,7 +199,7 @@ export default function ITC() {
             <div className="flex-1 space-y-4 lg:space-y-6">
               {/* Logo */}
               <div className="flex items-center mb-6 lg:mb-7.5 justify-center lg:justify-start">
-                <div className="relative w-32 sm:w-36 lg:w-[10.125rem] h-16 sm:h-20 lg:h-[6.25rem] flex-shrink-0">
+                <div className="relative w-32 sm:w-36 lg:w-40.5 h-16 sm:h-20 lg:h-25 shrink-0">
                   <Image
                     src="/images/soliroute-logo.svg"
                     alt="logo"
@@ -231,16 +231,16 @@ export default function ITC() {
               </div>
 
               {/* Read Less Link */}
-              <button className="text-[#6A53E1] text-base lg:text-lg cursor-pointer font-medium transition-colors">
+              {/* <button className="text-[#6A53E1] text-base lg:text-lg cursor-pointer font-medium transition-colors">
                 READ LESS
-              </button>
+              </button> */}
 
               {/* CTA Button */}
-              <div className="flex justify-center lg:justify-start">
-                <button className="bg-[#FCDD3F] hover:bg-yellow-500 text-[#172044] font-medium w-48 sm:w-56 lg:w-[15.25rem] h-14 lg:h-[4.125rem] rounded-full space-x-2 transition-colors">
+              {/* <div className="flex justify-center lg:justify-start">
+                <button className="bg-[#FCDD3F] hover:bg-yellow-500 text-[#172044] font-medium w-48 sm:w-56 lg:w-61 h-14 lg:h-16.5 rounded-full space-x-2 transition-colors">
                   <div className="flex flex-row justify-center gap-3 lg:gap-4 items-center">
                     <p className="text-sm sm:text-base">SOLIROUTE</p>
-                    <div className="relative w-6 lg:w-8 h-6 lg:h-8 flex-shrink-0">
+                    <div className="relative w-6 lg:w-8 h-6 lg:h-8 shrink-0">
                       <Image
                         src="/images/soliroute2.svg"
                         alt="logo"
@@ -250,7 +250,7 @@ export default function ITC() {
                     </div>
                   </div>
                 </button>
-              </div>
+              </div> */}
             </div>
 
             {/* Right Content - Application Mockups */}
@@ -267,7 +267,7 @@ export default function ITC() {
         </div>
       </section>
 
-      <div className="w-full max-w-xs sm:max-w-3xl lg:w-[58.875rem] mx-auto mt-8 lg:mt-[3.75rem] rounded-2xl bg-[#F9F9F9] px-4 sm:px-6 lg:px-0">
+      <div className="w-full max-w-xs sm:max-w-3xl lg:w-235.5 mx-auto mt-8 lg:mt-15 rounded-2xl bg-[#F9F9F9] px-4 sm:px-6 lg:px-0">
         <p className="p-4 lg:p-5 font-semibold text-base lg:text-lg text-[#444444]">
           At Mindefy, we understand the importance of a positive user
           experience, and we're committed to delivering designs that make a
@@ -277,8 +277,8 @@ export default function ITC() {
         </p>
       </div>
 
-      <section className="mt-8 lg:mt-[3.75rem]">
-        <div className="max-w-full sm:max-w-4xl lg:max-w-[60.375rem] mx-auto px-4 sm:px-6 lg:px-0">
+      <section className="mt-8 lg:mt-15">
+        <div className="max-w-full sm:max-w-4xl lg:max-w-241.5 mx-auto px-4 sm:px-6 lg:px-0">
           {/* Header */}
           <div className="mb-8 lg:mb-10">
             <h2 className="p-2 lg:p-2.5 text-xl sm:text-2xl lg:text-[1.75rem] font-semibold text-[#000000] mb-4 lg:mb-6 text-center lg:text-left">
@@ -286,7 +286,7 @@ export default function ITC() {
               <br className="hidden lg:block" />
               Mindefy's IT Consulting Services
             </h2>
-            <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] font-normal leading-relaxed max-w-full lg:max-w-[59.125rem] mx-auto text-justify">
+            <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] font-normal leading-relaxed max-w-full lg:max-w-236.5 mx-auto text-justify">
               Mindefy's IT consulting services offer a holistic approach to cost
               and time savings, expert guidance, tailored solutions, a dedicated
               focus on innovation, and a commitment to collaborative long-term
@@ -410,15 +410,15 @@ export default function ITC() {
       </section>
 
       {/* Tailored Solutions, Innovation Focus, and Collaborative Partnership Section */}
-      <section className="mt-8 lg:mt-[3.75rem]">
-        <div className="max-w-full sm:max-w-5xl lg:max-w-[72.5rem] mx-auto px-4 sm:px-6 lg:px-0">
+      <section className="mt-8 lg:mt-15">
+        <div className="max-w-full sm:max-w-5xl lg:max-w-290 mx-auto px-4 sm:px-6 lg:px-0">
           {/* Tailored Solutions */}
-          <div className="p-2 lg:p-2.5 mb-8 lg:mb-[3.75rem]">
+          <div className="p-2 lg:p-2.5 mb-8 lg:mb-15">
             <div className="text-center mb-8 lg:mb-11">
               <h2 className="text-xl sm:text-2xl lg:text-[1.75rem] font-semibold text-[#000000] mb-3 lg:mb-4">
                 Tailored Solutions
               </h2>
-              <p className="text-lg sm:text-xl lg:text-[1.5rem] font-medium text-[#000000] leading-relaxed max-w-full sm:max-w-2xl lg:max-w-[53.625rem] mx-auto px-2 sm:px-0">
+              <p className="text-lg sm:text-xl lg:text-[1.5rem] font-medium text-[#000000] leading-relaxed max-w-full sm:max-w-2xl lg:max-w-214.5 mx-auto px-2 sm:px-0">
                 Our commitment to customization ensures that you receive
                 solutions designed precisely for your unique needs
               </p>
@@ -428,7 +428,7 @@ export default function ITC() {
               {/* Holistic Problem Solving */}
               <div className="flex-1 border-[#E9E9E9] border-[0.06625rem] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] bg-[#FFFFFF] rounded-[1.25rem]">
                 <div className="flex pl-3 lg:pl-2.5 pt-3 lg:pt-2.5 pb-2">
-                  <div className="relative w-12 lg:w-[3.75rem] h-12 lg:h-[3.75rem] flex-shrink-0">
+                  <div className="relative w-12 lg:w-15 h-12 lg:h-15 shrink-0">
                     <Image
                       src="/images/ITC5.png"
                       alt="Holistic Problem Solving Icon"
@@ -458,7 +458,7 @@ export default function ITC() {
               {/* Scalability and Adaptability */}
               <div className="flex-1 border-[#E9E9E9] border-[0.06625rem] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] bg-[#FFFFFF] rounded-[1.25rem]">
                 <div className="flex pl-3 lg:pl-2.5 pt-3 lg:pt-2.5 pb-2">
-                  <div className="relative w-12 lg:w-[3.75rem] h-12 lg:h-[3.75rem] flex-shrink-0">
+                  <div className="relative w-12 lg:w-15 h-12 lg:h-15 shrink-0">
                     <Image
                       src="/images/ITC6.png"
                       alt="Scalability and Adaptability Icon"
@@ -487,13 +487,13 @@ export default function ITC() {
         </div>
 
         {/* Innovation Focus */}
-        <div className="max-w-full sm:max-w-5xl lg:max-w-[72.5rem] mx-auto px-4 sm:px-6 lg:px-0">
-          <div className="p-2 lg:p-2.5 mb-8 lg:mb-[3.75rem]">
+        <div className="max-w-full sm:max-w-5xl lg:max-w-290 mx-auto px-4 sm:px-6 lg:px-0">
+          <div className="p-2 lg:p-2.5 mb-8 lg:mb-15">
             <div className="text-center mb-8 lg:mb-11">
               <h2 className="text-xl sm:text-2xl lg:text-[1.75rem] font-semibold text-[#000000] mb-3 lg:mb-4">
                 Innovation Focus
               </h2>
-              <p className="text-lg sm:text-xl lg:text-[1.5rem] font-medium text-[#000000] leading-relaxed max-w-full sm:max-w-2xl lg:max-w-[53.625rem] mx-auto px-2 sm:px-0">
+              <p className="text-lg sm:text-xl lg:text-[1.5rem] font-medium text-[#000000] leading-relaxed max-w-full sm:max-w-2xl lg:max-w-214.5 mx-auto px-2 sm:px-0">
                 Mindefy's dedication to fostering innovation has a significant
                 impact, particularly for startups and businesses looking to stay
                 competitive
@@ -504,7 +504,7 @@ export default function ITC() {
               {/* Competitive Advantage */}
               <div className="flex-1 border-[#E9E9E9] border-[0.06625rem] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] bg-[#FFFFFF] rounded-[1.25rem]">
                 <div className="flex pl-3 lg:pl-2.5 pt-3 lg:pt-2.5 pb-2">
-                  <div className="relative w-12 lg:w-[3.75rem] h-12 lg:h-[3.75rem] flex-shrink-0">
+                  <div className="relative w-12 lg:w-15 h-12 lg:h-15 shrink-0">
                     <Image
                       src="/images/ITC7.png"
                       alt="Competitive Advantage Icon"
@@ -532,7 +532,7 @@ export default function ITC() {
               {/* Risk Mitigation */}
               <div className="flex-1 border-[#E9E9E9] border-[0.06625rem] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] bg-[#FFFFFF] rounded-[1.25rem]">
                 <div className="flex pl-3 lg:pl-2.5 pt-3 lg:pt-2.5 pb-2">
-                  <div className="relative w-12 lg:w-[3.75rem] h-12 lg:h-[3.75rem] flex-shrink-0">
+                  <div className="relative w-12 lg:w-15 h-12 lg:h-15 shrink-0">
                     <Image
                       src="/images/ITC8.png"
                       alt="Risk Mitigation Icon"
@@ -561,13 +561,13 @@ export default function ITC() {
         </div>
 
         {/* Collaborative Partnership */}
-        <div className="max-w-full sm:max-w-5xl lg:max-w-[72.5rem] mx-auto px-4 sm:px-6 lg:px-0">
-          <div className="p-2 lg:p-2.5 mb-8 lg:mb-[3.75rem]">
+        <div className="max-w-full sm:max-w-5xl lg:max-w-290 mx-auto px-4 sm:px-6 lg:px-0">
+          <div className="p-2 lg:p-2.5 mb-8 lg:mb-15">
             <div className="text-center mb-8 lg:mb-11">
               <h2 className="text-xl sm:text-2xl lg:text-[1.75rem] font-semibold text-[#000000] mb-3 lg:mb-4">
                 Collaborative Partnership
               </h2>
-              <p className="text-lg sm:text-xl lg:text-[1.5rem] font-medium text-[#000000] leading-relaxed max-w-full sm:max-w-2xl lg:max-w-[53.625rem] mx-auto px-2 sm:px-0">
+              <p className="text-lg sm:text-xl lg:text-[1.5rem] font-medium text-[#000000] leading-relaxed max-w-full sm:max-w-2xl lg:max-w-214.5 mx-auto px-2 sm:px-0">
                 Mindefy's commitment to building long-lasting relationships
                 ensures that you have a dedicated partner on your IT journey
               </p>
@@ -577,7 +577,7 @@ export default function ITC() {
               {/* Ongoing Support */}
               <div className="flex-1 border-[#E9E9E9] border-[0.06625rem] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] bg-[#FFFFFF] rounded-[1.25rem]">
                 <div className="flex pl-3 lg:pl-2.5 pt-3 lg:pt-2.5 pb-2">
-                  <div className="relative w-12 lg:w-[3.75rem] h-12 lg:h-[3.75rem] flex-shrink-0">
+                  <div className="relative w-12 lg:w-15 h-12 lg:h-15 shrink-0">
                     <Image
                       src="/images/ITC9.png"
                       alt="Ongoing Support Icon"
@@ -606,7 +606,7 @@ export default function ITC() {
               {/* Knowledge Sharing */}
               <div className="flex-1 border-[#E9E9E9] border-[0.06625rem] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] bg-[#FFFFFF] rounded-[1.25rem]">
                 <div className="flex pl-3 lg:pl-2.5 pt-3 lg:pt-2.5 pb-2">
-                  <div className="relative w-12 lg:w-[3.75rem] h-12 lg:h-[3.75rem] flex-shrink-0">
+                  <div className="relative w-12 lg:w-15 h-12 lg:h-15 shrink-0">
                     <Image
                       src="/images/ITC10.png"
                       alt="Knowledge Sharing Icon"

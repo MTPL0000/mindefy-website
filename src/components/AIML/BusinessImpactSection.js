@@ -13,7 +13,7 @@ export default function BusinessImpactSection({ data }) {
             >
               {/* Title */}
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold">
-                <span className="bg-gradient-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent">
                   {card.title}
                 </span>
               </h2>
@@ -38,7 +38,7 @@ export default function BusinessImpactSection({ data }) {
                 )}
                 {card.points.map((point, pointIndex) => (
                   <li key={pointIndex} className="flex items-start gap-2">
-                    <span className="text-black-600 font-normal text-base sm:text-xl font-poppins flex-shrink-0 mt-0.5">
+                    <span className="text-black-600 font-normal text-base sm:text-xl font-poppins shrink-0 mt-0.5">
                       •
                     </span>
                     <span className="text-base sm:text-xl font-normal text-[#444444] font-poppins leading-relaxed">

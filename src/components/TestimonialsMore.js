@@ -59,20 +59,20 @@ export default function TestimonialsMore() {
   return (
     <div className="min-h-screen bg-white">
       {/* Main Content */}
-      <main className="py-8 px-4 md:py-12 md:px-6 xl:py-16 xl:px-[1rem]">
-        <div className="max-w-[81.875rem] mx-auto">
+      <main className="py-8 px-4 md:py-12 md:px-6 xl:py-16 xl:px-4">
+        <div className="max-w-327.5 mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-8 md:mb-12 xl:mb-[5.75rem]">
-            <h1 className="text-[#FF5225] text-sm md:text-base xl:text-[1rem] font-bold mb-2 xl:mb-[0.5rem] tracking-wider">
+          <div className="text-center mb-8 md:mb-12 xl:mb-23">
+            <h1 className="text-[#FF5225] text-sm md:text-base xl:text-[1rem] font-bold mb-2 xl:mb-2 tracking-wider">
               TESTIMONIALS
             </h1>
-            <p className="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-900 mb-4 md:mb-6 xl:mb-[2rem] px-4">
+            <p className="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-900 mb-4 md:mb-6 xl:mb-8 px-4">
               WHAT OUR CLIENTS ARE SAYING ABOUT US
             </p>
           </div>
 
           {/* Testimonials Grid */}
-          <div className="flex flex-col gap-6 md:flex-row md:flex-wrap md:gap-4 lg:gap-6 xl:flex xl:flex-wrap xl:gap-[1rem] xl:justify-start">
+          <div className="flex flex-col gap-6 md:flex-row md:flex-wrap md:gap-4 lg:gap-6 xl:flex xl:flex-wrap xl:gap-4 xl:justify-start">
             {testimonials.map((testimonial) => {
               // Set unique height/width based on ID for xl screens (1440px+)
               let cardSpacing = "";
@@ -107,22 +107,22 @@ export default function TestimonialsMore() {
               return (
                 <div
                   key={testimonial.id}
-                  className={`${responsiveClasses} ${cardSpacing} border border-gray-200 rounded-lg xl:rounded-[1.25rem] p-4 md:p-6 xl:p-[1.5rem] shadow-sm hover:shadow-md transition-shadow`}
+                  className={`${responsiveClasses} ${cardSpacing} border border-gray-200 rounded-lg xl:rounded-[1.25rem] p-4 md:p-6 xl:p-6 shadow-sm hover:shadow-md transition-shadow`}
                 >
                   {/* Testimonial Title */}
-                  <h3 className="text-lg md:text-xl xl:text-[1.375rem] font-semibold text-[#02000D] mb-4 md:mb-6 xl:mb-[1.5rem] leading-tight">
+                  <h3 className="text-lg md:text-xl xl:text-[1.375rem] font-semibold text-[#02000D] mb-4 md:mb-6 xl:mb-6 leading-tight">
                     {testimonial.title}
                   </h3>
 
                   {/* Testimonial Content */}
-                  <p className="text-sm md:text-base xl:text-[1rem] font-normal text-[#000000] mb-4 md:mb-6 xl:mb-[1.5rem] leading-relaxed">
+                  <p className="text-sm md:text-base xl:text-[1rem] font-normal text-[#000000] mb-4 md:mb-6 xl:mb-6 leading-relaxed">
                     {testimonial.content}
                   </p>
 
                   {/* Company Logo and Client Info */}
                   <div className="flex flex-row items-center xl:justify-items-center">
                     <div className="flex items-center">
-                      <div className="relative w-12 h-12 md:w-14 md:h-14 xl:w-[3.75rem] xl:h-[3.75rem]">
+                      <div className="relative w-12 h-12 md:w-14 md:h-14 xl:w-15 xl:h-15">
                         <Image
                           src={testimonial.companyLogo || "mst-icon.svg"}
                           alt={`${testimonial.companyName} mst`}
@@ -132,7 +132,7 @@ export default function TestimonialsMore() {
                       </div>
                     </div>
 
-                    <div className="p-3 md:p-4 xl:p-[1rem]">
+                    <div className="p-3 md:p-4 xl:p-4">
                       <p className="text-sm md:text-base xl:text-[0.875rem] font-medium text-[#000000]">
                         {testimonial.clientName}
                       </p>

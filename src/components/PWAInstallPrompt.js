@@ -73,7 +73,7 @@ export default function PWAInstallPrompt() {
   return (
     <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50">
       <div className="flex items-start">
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <Image
             src="/images/logo/mindefy-logo.png"
             alt="Mindefy Logo"
@@ -108,7 +108,7 @@ export default function PWAInstallPrompt() {
             </button>
           </div>
         </div>
-        <div className="ml-4 flex-shrink-0">
+        <div className="ml-4 shrink-0">
           <button
             onClick={handleDismiss}
             className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D84426]"

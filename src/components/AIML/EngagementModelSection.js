@@ -6,7 +6,7 @@ export function EngagementModelSection({ data }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 xl:px-[8.83rem]">
         <div className="text-center mb-8 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-            <span className="bg-gradient-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent">
               {data.title}
             </span>
           </h2>

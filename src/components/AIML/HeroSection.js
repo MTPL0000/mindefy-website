@@ -33,7 +33,7 @@ export function HeroSection({ data }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 xl:px-[8.83rem] relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold mb-5 md:mb-8">
-            <span className="bg-gradient-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent leading-normal">
+            <span className="bg-linear-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent leading-normal">
               {data.title}
             </span>
           </h1>

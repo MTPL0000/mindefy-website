@@ -288,12 +288,12 @@ export default function EarlyFoods() {
   return (
     <div className="bg-[#E9F6F6]">
       <section className="w-full flex flex-col items-center justify-center gap-6 sm:gap-8 lg:gap-12">
-        <div className="relative max-w-[90rem] mx-auto overflow-hidden pt-12 sm:pt-16 lg:pt-24">
-          <div className="m-auto max-w-[58rem] flex flex-col items-center justify-center gap-3 sm:gap-4 relative z-10 px-4 text-center">
+        <div className="relative max-w-360 mx-auto overflow-hidden pt-12 sm:pt-16 lg:pt-24">
+          <div className="m-auto max-w-232 flex flex-col items-center justify-center gap-3 sm:gap-4 relative z-10 px-4 text-center">
             <h3 className="text-[#FC6B81] text-xl sm:text-2xl lg:text-3xl font-medium">
               CASE STUDY
             </h3>
-            <div className="relative aspect-[2/1] w-[10rem] sm:w-[11rem] lg:w-[13.25rem]">
+            <div className="relative aspect-2/1 w-40 sm:w-44 lg:w-53">
               <Image
                 src="/images/projects/EF-logo.png"
                 alt="logo"
@@ -323,7 +323,7 @@ export default function EarlyFoods() {
             height={866}
             className="object-contain absolute top-0 left-0 hidden lg:block"
           />
-          <div className="relative w-full max-w-[90rem] mx-auto mt-6 sm:mt-8 lg:mt-10 px-4 z-10">
+          <div className="relative w-full max-w-360 mx-auto mt-6 sm:mt-8 lg:mt-10 px-4 z-10">
             <Image
               src="/images/projects/EF-1.png"
               alt="device preview"
@@ -333,7 +333,7 @@ export default function EarlyFoods() {
             />
           </div>
         </div>
-        <div className="m-auto w-full max-w-[43.75rem] px-4 sm:px-6 flex flex-col items-center justify-center gap-2">
+        <div className="m-auto w-full max-w-175 px-4 sm:px-6 flex flex-col items-center justify-center gap-2">
           <h3 className="text-[#FC6B81] text-lg sm:text-xl lg:text-2xl font-normal uppercase">
             INTRODUCTION
           </h3>
@@ -346,7 +346,7 @@ export default function EarlyFoods() {
             children.
           </p>
         </div>
-        <div className="max-w-[71.5rem] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-15">
+        <div className="max-w-286 mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-15">
           <div className="w-full lg:w-[60%] flex flex-col items-start justify-center gap-4 lg:gap-5">
             <h3 className="text-[#FC6B81] text-lg sm:text-xl lg:text-2xl font-normal uppercase tracking-wide">
               Get Started
@@ -372,7 +372,7 @@ export default function EarlyFoods() {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="relative aspect-[1.2/1] w-[1.2rem] sm:w-[1.5rem] overflow-hidden">
+              <div className="relative aspect-[1.2/1] w-[1.2rem] sm:w-6 overflow-hidden">
                 <Image
                   src="/images/globe-icon.svg"
                   alt="image"
@@ -394,7 +394,7 @@ export default function EarlyFoods() {
             />
           </div>
         </div>
-        <div className="max-w-[71.5rem] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-15 mt-5">
+        <div className="max-w-286 mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-15 mt-5">
           <div className="w-full lg:w-[60%] flex flex-col items-start justify-center gap-4 lg:gap-5">
             <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-[2.65rem] font-semibold leading-tight uppercase">
               The STORY
@@ -424,7 +424,7 @@ export default function EarlyFoods() {
             />
           </div>
         </div>
-        <div className="w-full max-w-[71.5rem] mx-auto py-8 sm:py-12 lg:py-16 px-4 sm:px-6">
+        <div className="w-full max-w-286 mx-auto py-8 sm:py-12 lg:py-16 px-4 sm:px-6">
           <div className="flex flex-col lg:flex-row justify-between items-start mb-8 lg:mb-12 gap-6 lg:gap-0">
             <div className="w-full lg:w-auto">
               <h3 className="text-[#F690A1] text-lg sm:text-xl lg:text-[2rem] font-normal flex items-center gap-2">
@@ -454,7 +454,7 @@ export default function EarlyFoods() {
                 <div className="flex flex-col items-center relative">
                   <span className="w-6 h-6 bg-[#FA798D] rounded-full mb-2"></span>
                   {i !== 3 && (
-                    <div className="h-[1px] w-full border-dashed border-t-2 border-[#FC6B81] absolute top-2 left-[50%] translate-x-[12px] z-[-1] w-[150%] sm:w-[120%] hidden lg:block"></div>
+                    <div className="h-px w-full border-dashed border-t-2 border-[#FC6B81] absolute top-2 left-[50%] translate-x-3 z-[-1] sm:w-[120%] hidden lg:block"></div>
                   )}
                 </div>
                 <h4 className="text-[#F8889A] text-lg sm:text-xl font-semibold mt-3">
@@ -467,7 +467,7 @@ export default function EarlyFoods() {
             ))}
           </div>
         </div>
-        <div className="w-full max-w-[71.5rem] mx-auto px-4 sm:px-6">
+        <div className="w-full max-w-286 mx-auto px-4 sm:px-6">
           <div className="flex flex-col gap-3 items-start">
             <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold mt-2">
               Design Timeline
@@ -475,7 +475,7 @@ export default function EarlyFoods() {
             <span className="text-[#2B7575] text-base sm:text-lg font-normal">
               Our achievement in the journey depicted in numbers
             </span>
-            <div className="relative aspect-[2/1] w-full overflow-hidden">
+            <div className="relative aspect-2/1 w-full overflow-hidden">
               <Image
                 src="/images/projects/EF-4.png"
                 alt="image"
@@ -485,7 +485,7 @@ export default function EarlyFoods() {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[71.5rem] mx-auto px-4 sm:px-6">
+        <div className="w-full max-w-286 mx-auto px-4 sm:px-6">
           <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {dataList.map((section, index) => (
               <div key={index}>
@@ -502,12 +502,12 @@ export default function EarlyFoods() {
           </div>
         </div>
         <div className="w-full mx-auto px-4 sm:px-6 mt-4">
-          <div className="relative aspect-[3/1] w-full overflow-hidden">
+          <div className="relative md:aspect-3/1 w-full overflow-hidden">
             <div className="relative z-10 flex flex-col gap-2 items-center">
               <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold mt-2 mb-4">
                 My Role
               </h2>
-              <span className="w-full max-w-[47rem] px-4 text-[#377D7D] text-sm sm:text-base font-normal text-center">
+              <span className="w-full max-w-188 px-4 text-[#377D7D] text-sm sm:text-base font-normal text-center">
                 This process provided me with clear visibility to move the
                 project forward, including creating backlogs, wireframes,
                 branding, and ultimately designing the interface.
@@ -520,13 +520,13 @@ export default function EarlyFoods() {
               className="object-contain"
             />
           </div>
-          <div className="w-full mt-4 max-w-[80rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-15 text-center px-4 sm:px-6">
+          <div className="w-full mt-4 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-15 text-center px-4 sm:px-6">
             {roleList.map((item, index) => (
               <div
                 key={index}
-                className="w-full max-w-[25rem] mx-auto flex flex-col items-center gap-3"
+                className="w-full max-w-100 mx-auto flex flex-col items-center gap-3"
               >
-                <div className="relative aspect-[1/1] w-[2rem] overflow-hidden">
+                <div className="relative aspect-square w-8 overflow-hidden">
                   <Image
                     src={item.icon || "/placeholder.svg"}
                     alt={item.title}
@@ -544,7 +544,7 @@ export default function EarlyFoods() {
             ))}
           </div>
         </div>
-        <div className="w-full max-w-[71.5rem] mx-auto px-4 sm:px-6">
+        <div className="w-full max-w-286 mx-auto px-4 sm:px-6">
           <div className="flex flex-col lg:flex-row justify-between items-start mb-6 sm:mb-8 gap-6 lg:gap-0">
             <div>
               <h3 className="text-[#FC6B81] text-lg sm:text-xl lg:text-[2rem] font-normal flex items-center gap-2">
@@ -594,7 +594,7 @@ export default function EarlyFoods() {
               {notes.map((text, i) => (
                 <div
                   key={i}
-                  className="bg-[#FFD966] w-full aspect-square max-w-[12rem] mx-auto text-[#222222] text-xs sm:text-sm lg:text-base font-normal rounded-sm p-2 sm:p-3 shadow-md flex items-center justify-center"
+                  className="bg-[#FFD966] w-full aspect-square max-w-48 mx-auto text-[#222222] text-xs sm:text-sm lg:text-base font-normal rounded-sm p-2 sm:p-3 shadow-md flex items-center justify-center"
                 >
                   {text}
                 </div>
@@ -602,7 +602,7 @@ export default function EarlyFoods() {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[71.5rem] mx-auto px-4 sm:px-6 mt-8 sm:mt-12">
+        <div className="w-full max-w-286 mx-auto px-4 sm:px-6 mt-8 sm:mt-12">
           <div className="mx-auto flex flex-col gap-8 sm:gap-10 lg:gap-15">
             <div className="flex flex-col justify-between items-start gap-6">
               <div className="w-full flex flex-col lg:flex-row justify-between gap-6 lg:gap-0">
@@ -648,7 +648,7 @@ export default function EarlyFoods() {
                 <div className="bg-[#F88598] w-2 sm:w-2.5 h-8 sm:h-11"></div>
                 SURVEY
               </h3>
-              <p className="w-full max-w-[61.5rem] text-[#2B7575] text-base sm:text-lg lg:text-xl font-normal leading-relaxed">
+              <p className="w-full max-w-246 text-[#2B7575] text-base sm:text-lg lg:text-xl font-normal leading-relaxed">
                 I did survey with{" "}
                 <strong className="font-bold text-[#2B7575]">
                   394 potential users
@@ -705,14 +705,14 @@ export default function EarlyFoods() {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[71.5rem] mx-auto px-4 sm:px-6 mt-5">
+        <div className="w-full max-w-286 mx-auto px-4 sm:px-6 mt-5">
           <div className="mx-auto flex flex-col gap-8 sm:gap-12">
             <div>
               <h3 className="flex items-center justify-start gap-2.5 text-[#F88598] text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
                 <div className="bg-[#F88598] w-2 sm:w-2.5 h-8 sm:h-11 uppercase"></div>
                 INTERVIEW
               </h3>
-              <p className="w-full max-w-[61.5rem] text-[#2B7575] text-base sm:text-lg lg:text-xl font-normal leading-relaxed">
+              <p className="w-full max-w-246 text-[#2B7575] text-base sm:text-lg lg:text-xl font-normal leading-relaxed">
                 From the survey that I have done, I did filtering, and got 2
                 people for direct interview. I did online interviews using Zoom
                 and invited them at different times.
@@ -722,7 +722,7 @@ export default function EarlyFoods() {
               {interviewCards.map((item, idx) => (
                 <div
                   key={idx}
-                  className="relative bg-[#CBEBEB] px-6 sm:px-8 lg:px-10 py-8 sm:py-10 lg:py-14 w-full max-w-[35.5rem] mx-auto h-auto min-h-[18rem] sm:min-h-[20rem] lg:h-[23rem] flex flex-col justify-end"
+                  className="relative bg-[#CBEBEB] px-6 sm:px-8 lg:px-10 py-8 sm:py-10 lg:py-14 w-full max-w-142 mx-auto h-auto min-h-72 sm:min-h-80 lg:h-92 flex flex-col justify-end"
                 >
                   <div className="absolute top-4 sm:top-6 right-6 sm:right-9 text-[#E9F6F6] text-[6rem] sm:text-[8rem] lg:text-[12rem] leading-none font-serif select-none">
                     &rdquo;
@@ -760,7 +760,7 @@ export default function EarlyFoods() {
               <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold">
                 User Persona
               </h2>
-              <p className="text-[#377D7D] text-sm sm:text-base font-normal text-center w-full max-w-[47rem] px-4">
+              <p className="text-[#377D7D] text-sm sm:text-base font-normal text-center w-full max-w-188 px-4">
                 It embodies the characteristics, goals, motivations, and
                 behaviors of real users, serving as a reference point for design
                 and decision-making processes in UX/UI development
@@ -768,10 +768,10 @@ export default function EarlyFoods() {
             </div>
           </div>
 
-          <div className="max-w-[75rem] mx-auto mt-6 sm:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-start px-4 sm:px-6">
+          <div className="max-w-300 mx-auto mt-6 sm:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-start px-4 sm:px-6">
             <div className="mt-6 sm:mt-12">
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-                <div className="relative mx-auto sm:mx-0 flex-shrink-0">
+                <div className="relative mx-auto sm:mx-0 shrink-0">
                   <Image
                     src="/images/projects/EF-8.png"
                     alt="image"
@@ -799,7 +799,7 @@ export default function EarlyFoods() {
               <h4 className="text-[#F88598] font-bold text-base sm:text-lg">
                 Bio
               </h4>
-              <p className="w-full max-w-[42rem] text-[#377D7D] font-normal text-justify text-sm sm:text-base lg:text-lg mt-2 leading-relaxed">
+              <p className="w-full max-w-2xl text-[#377D7D] font-normal text-justify text-sm sm:text-base lg:text-lg mt-2 leading-relaxed">
                 Hi I am Rachana. I am from Neemuch but I live in Bangalore. My
                 family was neither too open but mother has been always
                 supportive and because of her I have achieved a lot of things in
@@ -823,7 +823,7 @@ export default function EarlyFoods() {
               />
             </div>
           </div>
-          <div className="max-w-[75rem] mx-auto mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left px-4 sm:px-6">
+          <div className="max-w-300 mx-auto mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left px-4 sm:px-6">
             {personaCards.map((card, i) => (
               <div
                 key={i}
@@ -843,11 +843,11 @@ export default function EarlyFoods() {
         </div>
         <div className="w-full mx-auto">
           <div className="relative overflow-hidden">
-            <div className="relative top-[6rem] sm:top-[8rem] lg:top-[10rem] flex flex-col gap-2 items-center px-4 sm:px-6">
+            <div className="relative top-24 sm:top-32 lg:top-40 flex flex-col gap-2 items-center px-4 sm:px-6">
               <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold mb-4">
                 Empathy Map
               </h2>
-              <span className="w-full max-w-[47rem] text-[#377D7D] text-sm sm:text-base font-normal text-center">
+              <span className="w-full max-w-188 text-[#377D7D] text-sm sm:text-base font-normal text-center">
                 An empathy map is a collaborative visualization used to
                 articulate what we know about a particular type of user. It
                 helps to synthesize research data to bit assist to understand
@@ -862,9 +862,9 @@ export default function EarlyFoods() {
               className="object-contain w-full"
             />
           </div>
-          <div className="w-full max-w-[72rem] mx-auto mt-8 px-4 sm:px-6">
+          <div className="w-full max-w-6xl mx-auto mt-8 px-4 sm:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-[#CBEBEB] flex flex-col justify-center w-full max-w-[36rem] mx-auto h-auto min-h-[20rem] sm:min-h-[22rem] lg:h-[25rem] p-6 sm:p-8 lg:p-10 relative">
+              <div className="bg-[#CBEBEB] flex flex-col justify-center w-full max-w-xl mx-auto h-auto min-h-80 sm:min-h-88 lg:h-100 p-6 sm:p-8 lg:p-10 relative">
                 <div className="absolute top-2 right-6 sm:right-9 text-[#377D7D] text-[6rem] sm:text-[8rem] lg:text-[12rem] leading-none font-serif select-none">
                   &rdquo;
                 </div>
@@ -894,7 +894,7 @@ export default function EarlyFoods() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-[#CBEBEB] flex flex-col justify-center w-full max-w-[36rem] mx-auto h-auto min-h-[20rem] sm:min-h-[22rem] lg:h-[25rem] p-6 sm:p-8 lg:p-10 relative">
+              <div className="bg-[#CBEBEB] flex flex-col justify-center w-full max-w-xl mx-auto h-auto min-h-80 sm:min-h-88 lg:h-100 p-6 sm:p-8 lg:p-10 relative">
                 <div className="absolute top-2 right-6 sm:right-9 text-[#377D7D] text-[6rem] sm:text-[8rem] lg:text-[12rem] leading-none font-serif select-none">
                   &rdquo;
                 </div>
@@ -930,7 +930,7 @@ export default function EarlyFoods() {
 
         {/* User Journey Map Section */}
         <div className="w-full mx-auto mt-12 sm:mt-16 px-4 sm:px-6">
-          <div className="max-w-[75rem] mx-auto">
+          <div className="max-w-300 mx-auto">
             {/* Header Section */}
             <div className="flex flex-col lg:flex-row justify-between items-start mb-8 sm:mb-12 lg:mb-[3.185rem] gap-6 lg:gap-0">
               <div>
@@ -980,7 +980,7 @@ export default function EarlyFoods() {
                 />
               </div>
               {/* Summary Section Image */}
-              <div className="relative w-full mt-[3.1rem] mb-[2.875rem]">
+              <div className="relative w-full mt-[3.1rem] mb-11.5">
                 <Image
                   src="/images/earlyfoods2.webp"
                   alt="User Journey Map Summary - Satisfaction metrics and total respondent data"
@@ -1029,7 +1029,7 @@ export default function EarlyFoods() {
             </div>
 
             {/* Introduction Section */}
-            <div className="mb-6 sm:mb-8 w-full max-w-[71.5rem] mx-auto">
+            <div className="mb-6 sm:mb-8 w-full max-w-286 mx-auto">
               <h3 className="text-[#52B7B7] text-xl sm:text-2xl lg:text-[2rem] font-bold mb-4">
                 Introduction
               </h3>
@@ -1094,19 +1094,19 @@ export default function EarlyFoods() {
               </h3>
             </div>
             <div className="hidden lg:block">
-              <div className="w-[60.5rem] mx-auto  flex flex-row justify-between">
-                <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
+              <div className="w-242 mx-auto  flex flex-row justify-between">
+                <div className="w-35 h-16.5 bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
                   <span className="text-[#52B7B7] text-2xl font-bold">S</span>
                 </div>
-                <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
+                <div className="w-35 h-16.5 bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
                   <span className="text-[#52B7B7] text-2xl font-bold">O</span>
                 </div>
-                <div className="w-[8.75rem] h-[4.125rem] bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
+                <div className="w-35 h-16.5 bg-[#CBEBEB] rounded-3xl flex items-center justify-center mb-11 mx-auto">
                   <span className="text-[#52B7B7] text-2xl font-bold">R</span>
                 </div>
               </div>
               {/* S-O-R Model Diagram */}
-              <div className=" w-[60.5rem] mx-auto  mb-8">
+              <div className="w-242 mx-auto  mb-8">
                 <div className="flex justify-center items-center ">
                   {/* S Section */}
                   <div className="space-y-5">
@@ -1192,7 +1192,7 @@ export default function EarlyFoods() {
             <div className="space-y-8 sm:space-y-10 lg:space-y-12 px-4 sm:px-6 lg:px-0">
               {/* E-store Design */}
               <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-9">
-                <h4 className="text-[#2B7575] w-full lg:w-[13.75rem] text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 flex-shrink-0">
+                <h4 className="text-[#2B7575] w-full lg:w-55 text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 shrink-0">
                   E-store Design:
                 </h4>
                 <p className="text-[#2B7575] text-justify w-full lg:w-[55.43rem] font-medium text-sm sm:text-base leading-relaxed">
@@ -1206,7 +1206,7 @@ export default function EarlyFoods() {
 
               {/* Order Fulfillment */}
               <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-9">
-                <h4 className="text-[#2B7575] w-full lg:w-[13.75rem] text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 flex-shrink-0">
+                <h4 className="text-[#2B7575] w-full lg:w-55 text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 shrink-0">
                   Order Fulfillment:
                 </h4>
                 <p className="text-[#2B7575] text-justify w-full lg:w-[55.43rem] font-medium text-sm sm:text-base leading-relaxed">
@@ -1219,7 +1219,7 @@ export default function EarlyFoods() {
 
               {/* Communication Service */}
               <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-9">
-                <h4 className="text-[#2B7575] w-full lg:w-[13.75rem] text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 flex-shrink-0">
+                <h4 className="text-[#2B7575] w-full lg:w-55 text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 shrink-0">
                   Communication Service:
                 </h4>
                 <p className="text-[#2B7575] text-justify w-full lg:w-[55.43rem] font-medium text-sm sm:text-base leading-relaxed">
@@ -1233,7 +1233,7 @@ export default function EarlyFoods() {
 
               {/* Security */}
               <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-9">
-                <h4 className="text-[#2B7575] w-full lg:w-[13.75rem] text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 flex-shrink-0">
+                <h4 className="text-[#2B7575] w-full lg:w-55 text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 shrink-0">
                   Security:
                 </h4>
                 <p className="text-[#2B7575] text-justify w-full lg:w-[55.43rem] font-medium text-sm sm:text-base leading-relaxed">
@@ -1301,7 +1301,7 @@ export default function EarlyFoods() {
                 <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center">
                   Competitor Analysis
                 </h2>
-                <p className="text-[#377D7D] leading-relaxed text-sm sm:text-base font-normal text-center w-full max-w-[47rem] px-4">
+                <p className="text-[#377D7D] leading-relaxed text-sm sm:text-base font-normal text-center w-full max-w-188 px-4">
                   To evaluate the features, usability, and user experience of
                   competitors' products or services. This analysis helps
                   identify strengths, weaknesses, opportunities, and threats in
@@ -1316,7 +1316,7 @@ export default function EarlyFoods() {
               {/* Manna Foods */}
               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0">
                 {/* Logo Section */}
-                <div className="flex-shrink-0 order-1 sm:order-1">
+                <div className="shrink-0 order-1 sm:order-1">
                   <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square mr-0 sm:mr-7 mx-auto">
                     <Image
                       src="/images/EF(manna).svg"
@@ -1413,7 +1413,7 @@ export default function EarlyFoods() {
                 </div>
 
                 {/* Logo Section */}
-                <div className="flex-shrink-0 order-1 sm:order-2">
+                <div className="shrink-0 order-1 sm:order-2">
                   <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square ml-0 sm:ml-7 mx-auto">
                     <Image
                       src="/images/EF2.png"
@@ -1429,7 +1429,7 @@ export default function EarlyFoods() {
               {/* TOTS AND MOMS */}
               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0">
                 {/* Logo Section */}
-                <div className="flex-shrink-0 order-1 sm:order-1">
+                <div className="shrink-0 order-1 sm:order-1">
                   <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square mr-0 sm:mr-7 mx-auto">
                     <Image
                       src="/images/EF3.png"
@@ -1525,7 +1525,7 @@ export default function EarlyFoods() {
                 </div>
 
                 {/* Logo Section */}
-                <div className="flex-shrink-0 order-1 sm:order-2">
+                <div className="shrink-0 order-1 sm:order-2">
                   <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square ml-0 sm:ml-7 mx-auto">
                     <Image
                       src="/images/EF4.png"
@@ -1542,7 +1542,7 @@ export default function EarlyFoods() {
 
               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0">
                 {/* Logo Section */}
-                <div className="flex-shrink-0 order-1 sm:order-1">
+                <div className="shrink-0 order-1 sm:order-1">
                   <div className="relative w-16 sm:w-20 lg:w-3xs aspect-square mr-0 sm:mr-7 mx-auto">
                     <Image
                       src="/images/EF5.png"
@@ -1618,7 +1618,7 @@ export default function EarlyFoods() {
                 <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                   Market Research
                 </h2>
-                <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-[47rem]">
+                <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-188">
                   Market research involves gathering, analyzing, and
                   interpreting information about a market, including a product's
                   or service's nature, characteristics, and potential customer
@@ -1634,7 +1634,7 @@ export default function EarlyFoods() {
                     {col.map((text, j) => (
                       <div
                         key={j}
-                        className="bg-[#FFD966] w-[15rem] p-5 text-base font-normal rounded-sm shadow-md"
+                        className="bg-[#FFD966] w-60 p-5 text-base font-normal rounded-sm shadow-md"
                       >
                         {text}
                       </div>
@@ -1645,7 +1645,7 @@ export default function EarlyFoods() {
             </div>
 
             {/* Summary Section */}
-            <div className="w-full lg:w-[60.5rem] mx-auto mb-[3.75rem]">
+            <div className="w-full lg:w-242 mx-auto mb-15">
               <p className="text-[#2B7575] text-[1.25rem] font-medium leading-relaxed text-justify">
                 These findings indicate that there is a strong market for
                 organic and healthier pre-prepared and ready-to-eat meals and
@@ -1657,7 +1657,7 @@ export default function EarlyFoods() {
             </div>
           </div>
         </div>
-        <div className="w-full mx-auto mt- mb-[7.5rem] px-6 bg-[#E9F6F6] relative overflow-hidden">
+        <div className="w-full mx-auto mb-30 px-6 bg-[#E9F6F6] relative overflow-hidden">
           {/* Header */}
           <div
             style={{
@@ -1674,7 +1674,7 @@ export default function EarlyFoods() {
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                 The Problems
               </h2>
-              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-[47rem]">
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-188">
                 After the extensive research, surveys, and interviews I was able
                 to find out these problems in the current user experience and
                 visual elements, below mentioned are only the high priority
@@ -1688,7 +1688,7 @@ export default function EarlyFoods() {
             {fullRows.map((item, i) => (
               <div
                 key={i}
-                className="bg-[#FFD4DA] max-w-[22.375rem] p-4.5 rounded-lg font-bold text-xl text-[#5F5456] shadow"
+                className="bg-[#FFD4DA] max-w-89.5 p-4.5 rounded-lg font-bold text-xl text-[#5F5456] shadow"
               >
                 {item}
               </div>
@@ -1701,7 +1701,7 @@ export default function EarlyFoods() {
               {lastRow.map((item, i) => (
                 <div
                   key={i}
-                  className="bg-[#FFD4DA] max-w-[22.375rem] p-4.5 rounded-lg font-bold text-xl text-[#5F5456] shadow"
+                  className="bg-[#FFD4DA] max-w-89.5 p-4.5 rounded-lg font-bold text-xl text-[#5F5456] shadow"
                 >
                   {item}
                 </div>
@@ -1709,7 +1709,7 @@ export default function EarlyFoods() {
             </div>
           )}
         </div>
-        <div className="w-full mx-auto  mb-[7.5rem] px-6 bg-[#E9F6F6] relative overflow-hidden">
+        <div className="w-full mx-auto  mb-30 px-6 bg-[#E9F6F6] relative overflow-hidden">
           {/* Header */}
           <div
             style={{
@@ -1726,7 +1726,7 @@ export default function EarlyFoods() {
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                 The Solutions
               </h2>
-              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-[47rem]">
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-188">
                 Based on the problems we found out below are the solutions that
                 we proposed client in order to enhance the overall User
                 experience and enhance the joy of shopping from the Early Foods.
@@ -1739,7 +1739,7 @@ export default function EarlyFoods() {
             {solutions.map((item, i) => (
               <div
                 key={i}
-                className="bg-[#CBEBEB] max-w-[22.375rem] p-4.5 rounded-lg font-bold text-xl text-[#2B7575] shadow"
+                className="bg-[#CBEBEB] max-w-89.5 p-4.5 rounded-lg font-bold text-xl text-[#2B7575] shadow"
               >
                 {item}
               </div>
@@ -1748,7 +1748,7 @@ export default function EarlyFoods() {
         </div>
         <div className="bg-[#eaf6f6] w-full mx-auto px-4">
           {/* Header Section */}
-          <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:w-[71.75rem] mx-auto">
+          <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:w-287 mx-auto">
             <div className="flex flex-col flex-wrap w-full">
               <h3 className="text-[#F690A1] text-[2rem] font-normal flex items-center gap-2 mb-2">
                 <span className="w-8" role="img" aria-label="pin">
@@ -1760,7 +1760,7 @@ export default function EarlyFoods() {
                 Visual Design
               </h2>
             </div>
-            <div className="w-[22.31rem] pl-0 lg:pl-[10rem] mt-8">
+            <div className="w-[22.31rem] pl-0 lg:pl-40 mt-8">
               <h4 className="text-[#F690A1] text-left text-base font-bold mb-2">
                 Point take away
               </h4>
@@ -1772,9 +1772,9 @@ export default function EarlyFoods() {
             </div>
           </div>
           {/* Top laptop screen with annotations */}
-          <div className="flex justify-center my-[4.5rem] ">
+          <div className="flex justify-center my-18 ">
             <Image
-              src="/images/EF-Laptop1.webp" // Replace with actual path
+              src="/images/EF-Laptop1.webp"
               alt="Main UI with annotations"
               width={1147}
               height={506}
@@ -1783,7 +1783,7 @@ export default function EarlyFoods() {
           </div>
 
           {/* Middle row: 2 laptop images */}
-          <div className="grid grid-cols-1 md:grid-cols-2  gap-6 justify-items-center max-w-6xl mx-auto mb-[4.5rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2  gap-6 justify-items-center max-w-6xl mx-auto mb-18">
             <Image
               src="/images/EF-Laptop2.webp"
               alt="Product detail UI"
@@ -1825,11 +1825,15 @@ export default function EarlyFoods() {
 
         <div className="bg-[#eaf6f6] py-12 px-4 ">
           {/* Header */}
-          <div className="mb-10  relative">
-            <p className="text-[#F690A1] font-normal text-[2rem]">
-              📍 UI Design
-            </p>
-            <p className="text-[4rem] font-bold text-[#52B7B7]">Style Guide</p>
+          <div className="mb-10 relative">
+            <div>
+              <p className="text-[#F690A1] font-normal text-[2rem]">
+                📍 UI Design
+              </p>
+              <p className="text-[4rem] font-bold text-[#52B7B7]">
+                Style Guide
+              </p>
+            </div>
             <p className="absolute right-0 top-0 font-normal text-[#2B7575] text-sm text-left mt-7">
               <span className="text-[#F88598] font-bold text-base">
                 Point take away
@@ -1840,8 +1844,8 @@ export default function EarlyFoods() {
 
           <div className="flex flex-row">
             {/* Side Label */}
-            <div className="bg-[#F88CA2] w-10 h-86 mt-2.5 mr-12  flex items-center justify-center">
-              <p className="text-white font-bold text-2xl px-2 py-[3.75rem] rotate-180 writing-vertical-lr">
+            <div className="bg-[#F88CA2] w-10 h-86 mt-2.5 mr-12 flex items-center justify-center">
+              <p className="text-white font-bold text-2xl px-2 py-15 rotate-180 writing-vertical-lr">
                 COLOR STYLE GUIDE
               </p>
             </div>
@@ -1971,7 +1975,7 @@ export default function EarlyFoods() {
                     </p>
                   </div>
                 </div>
-                <div className="text-lg sm:text-xl lg:text-[2rem] text-justify font-fredoka font-semibold text-[#377D7D] w-full max-w-[25rem] mx-auto px-6 sm:px-[5.375rem] tracking-widest leading-relaxed mb-8 sm:mb-12">
+                <div className="text-lg sm:text-xl lg:text-[2rem] text-justify font-fredoka font-semibold text-[#377D7D] w-full max-w-100 mx-auto px-6 sm:px-21.5 tracking-widest leading-relaxed mb-8 sm:mb-12">
                   a b c d e f g h i j <br></br>k l m n o p q r s<br></br> t u v
                   w x y z
                 </div>
@@ -1991,7 +1995,7 @@ export default function EarlyFoods() {
                     </p>
                   </div>
                 </div>
-                <div className="text-lg sm:text-xl lg:text-[2rem] font-noto font-semibold text-[#377D7D] w-full max-w-[25rem] mx-auto px-6 sm:px-[5.375rem] tracking-widest leading-relaxed mb-8 sm:mb-12">
+                <div className="text-lg sm:text-xl lg:text-[2rem] font-noto font-semibold text-[#377D7D] w-full max-w-100 mx-auto px-6 sm:px-21.5 tracking-widest leading-relaxed mb-8 sm:mb-12">
                   a b c d e f g h i j <br></br>k l m n o p q r s<br></br> t u v
                   w x y z
                 </div>
@@ -2007,7 +2011,7 @@ export default function EarlyFoods() {
             {/* First Row - 10 Icons */}
             <div className="flex justify-center">
               <Image
-                src="/images/Icons.webp" // Replace with actual path
+                src="/images/Icons.webp"
                 alt="Main UI with annotations"
                 width={1168}
                 height={220}
@@ -2032,7 +2036,7 @@ export default function EarlyFoods() {
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                 Information Architecture
               </h2>
-              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-[46.875rem]">
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-187.5">
                 People often use the word “Information Architecture” to mean the
                 menus on website or apps, but thats not really correct. while
                 menus are a part of IA. they’re really only one part of it.
@@ -2043,9 +2047,9 @@ export default function EarlyFoods() {
               </p>
             </div>
           </div>
-          <div className="flex justify-center mt-[6rem] ">
+          <div className="flex justify-center mt-24">
             <Image
-              src="/images/EF-INFO.webp" // Replace with actual path
+              src="/images/EF-INFO.webp"
               alt="Main UI with annotations"
               width={1147}
               height={1600}
@@ -2066,11 +2070,11 @@ export default function EarlyFoods() {
             }}
             className="relative w-full overflow-hidden bg-[#E9F6F6] "
           >
-            <div className="relative flex flex-col gap-2 items-center pb-16 sm:pb-24">
+            <div className="relative z-12 flex flex-col gap-2 items-center pb-16 sm:pb-24">
               <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold">
                 UI Design
               </h2>
-              <p className="text-[#377D7D] leading-relaxed text-sm sm:text-base font-normal text-center w-full max-w-[47rem] px-4">
+              <p className="text-[#377D7D] leading-relaxed text-sm sm:text-base font-normal text-center w-full max-w-188 px-4">
                 Every components layout structures, and color combinations are
                 backed by strong human psychology of perceiving experiences
                 quoted by sir Don Norman in the book - The design of everyday
@@ -2080,7 +2084,7 @@ export default function EarlyFoods() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/images/UIDesgin.webp" // Replace with actual path
+              src="/images/UIDesgin.webp"
               alt="Main UI with annotations"
               width={1440}
               height={2000}

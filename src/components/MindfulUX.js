@@ -10,7 +10,7 @@ export default function MindfulUX() {
         }}
         className="flex flex-col items-center justify-center gap-8 md:gap-12 px-4 py-20 md:py-56"
       >
-        <div className="relative aspect-[1/1] w-20 md:w-36 overflow-hidden">
+        <div className="relative aspect-square w-20 md:w-36 overflow-hidden">
           <Image
             src="/images/logo/mindefy-logo.svg"
             alt="logo"
@@ -72,7 +72,7 @@ export default function MindfulUX() {
       </div>
 
       {/* First Case Study */}
-      <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
+      <section className="m-auto w-full bg-linear-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="relative aspect-[1.5/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden">
             <Image
@@ -126,7 +126,7 @@ export default function MindfulUX() {
       </section>
 
       {/* Second Case Study */}
-      <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
+      <section className="m-auto bg-linear-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
@@ -157,7 +157,7 @@ export default function MindfulUX() {
               className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
             >
               Case Study
-              <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+              <div className="relative aspect-[1.5/1] w-8 overflow-hidden">
                 <Image
                   src="/images/arrow-icon.svg"
                   alt="image"
@@ -168,7 +168,7 @@ export default function MindfulUX() {
             </a>
           </div>
 
-          <div className="relative aspect-[1/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
+          <div className="relative aspect-square w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-2">
             <Image
               src="/images/memolect.webp"
               alt="image"
@@ -180,7 +180,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 3rd Case Study */}
-      <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
+      <section className="m-auto bg-linear-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-1">
             <Image
@@ -218,7 +218,7 @@ export default function MindfulUX() {
               className="bg-[#231F20] text-[#FFFFFF] px-6 py-4 rounded-sm text-3xl cursor-pointer font-semibold flex items-center gap-4 hover:bg-gray-800 transition-colors duration-300 mx-auto lg:mx-0"
             >
               Case Study
-              <div className="relative aspect-[1.5/1] w-[2rem] overflow-hidden">
+              <div className="relative aspect-[1.5/1] w-8 overflow-hidden">
                 <Image
                   src="/images/arrow-icon.svg"
                   alt="image"
@@ -232,7 +232,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 4th Case Study */}
-      <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
+      <section className="m-auto w-full bg-linear-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
@@ -283,7 +283,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 5th Case Study */}
-      <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
+      <section className="m-auto bg-linear-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="relative aspect-[1.8/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-1">
             <Image
@@ -335,7 +335,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 6th Case Study */}
-      <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
+      <section className="m-auto w-full bg-linear-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">
@@ -380,9 +380,9 @@ export default function MindfulUX() {
       </section>
 
       {/* 7th Case Study */}
-      <section className="m-auto bg-gradient-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
+      <section className="m-auto bg-linear-to-br from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
-          <div className="relative aspect-[2/1] w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-1">
+          <div className="relative aspect-2/1 w-full max-w-lg lg:max-w-2xl mx-auto lg:mx-0 overflow-hidden lg:order-1">
             <Image
               src="/images/mfux-6.webp"
               alt="image"
@@ -425,7 +425,7 @@ export default function MindfulUX() {
       </section>
 
       {/* 8th Case Study */}
-      <section className="m-auto w-full bg-gradient-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
+      <section className="m-auto w-full bg-linear-to-bl from-gray-50 via-purple-50 to-pink-100 px-4 md:px-16 py-12 md:py-32">
         <div className="m-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-center">
           <div className="w-full max-w-lg lg:max-w-xl flex flex-col items-start justify-center gap-6 md:gap-8 text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-start justify-center gap-3">

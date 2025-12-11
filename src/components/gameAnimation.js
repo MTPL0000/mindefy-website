@@ -8,18 +8,18 @@ export default function GameAnimation() {
       <section className="mt-28 mx-auto px-4 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-5">
             2D & 3D Game Animation
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[55.25rem] mx-auto px-4 xl:px-0">
+          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-221 mx-auto px-4 xl:px-0">
             Immersive Game Animation That Brings
             <br className="hidden sm:block"></br> Worlds to Life
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-[61.375rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.25rem] px-4 xl:px-0">
+          <div className="w-full max-w-245.5 font-normal mx-auto mb-9 text-justify space-y-5 px-4 xl:px-0">
             <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed">
               Our in-house animation team brings every frame to life with
               creativity, precision, and storytelling finesse. Whether it's
@@ -36,7 +36,7 @@ export default function GameAnimation() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] mx-auto mb-12 lg:mb-20">
+          <div className="relative w-full h-80 sm:h-100 lg:h-120.5 mx-auto mb-12 lg:mb-20">
             <Image
               src="/images/GA1.svg"
               alt="Game Animation - Immersive 2D and 3D game animation services"
@@ -51,10 +51,10 @@ export default function GameAnimation() {
       {/* 2D Game Art & Development Section */}
       <section className="bg-white px-4 xl:px-0">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[3.75rem] items-center">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-15 items-center">
             {/* Left Image */}
             <div className="flex-1 w-full flex justify-center lg:justify-start">
-              <div className="relative w-[20rem] sm:w-[22rem] lg:w-[25rem] xl:w-[25rem] h-[20rem] sm:h-[22rem] lg:h-[25rem] xl:h-[25rem] lg:ml-2.5">
+              <div className="relative w-[20rem] sm:w-88 lg:w-100 xl:w-100 h-80 sm:h-88 lg:h-100 xl:h-100 lg:ml-2.5">
                 <Image
                   src="/images/GA2.webp"
                   alt="2D Game Art & Development"
@@ -112,7 +112,7 @@ export default function GameAnimation() {
       {/* 3D Game Art & Development Section */}
       <section className="bg-white mb-12 lg:mb-20 px-4 xl:px-0 mt-12 lg:mt-0">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[3.75rem] items-center">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-15 items-center">
             {/* Left Content */}
             <div className="flex-1 w-full order-2 lg:order-1">
               <h2 className="text-xl sm:text-2xl font-semibold text-[#232323] mb-6 lg:mb-8">
@@ -150,7 +150,7 @@ export default function GameAnimation() {
 
             {/* Right Image */}
             <div className="flex-1 w-full flex justify-center lg:justify-end order-1 lg:order-2">
-              <div className="relative w-[20rem] sm:w-[22rem] lg:w-[25rem] xl:w-[25rem] h-[20rem] sm:h-[22rem] lg:h-[25rem] xl:h-[25rem] lg:mr-2.5">
+              <div className="relative w-[20rem] sm:w-88 lg:w-100 xl:w-100 h-80 sm:h-88 lg:h-100 xl:h-100 lg:mr-2.5">
                 <Image
                   src="/images/GA3.svg"
                   alt="3D Game Art & Development"
@@ -176,7 +176,7 @@ export default function GameAnimation() {
               <h3 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] text-center mb-4 lg:mb-3">
                 3D Game
               </h3>
-              <div className="relative w-full max-w-[28.375rem] mx-auto h-[15rem] sm:h-[18rem] lg:h-[20.125rem]">
+              <div className="relative w-full max-w-113.5 mx-auto h-60 sm:h-72 lg:h-80.5">
                 <Image
                   src="/images/GA4.webp"
                   alt="3D Game Development - Mindefy Technologies"
@@ -191,7 +191,7 @@ export default function GameAnimation() {
               <h3 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] text-center mb-4 lg:mb-3">
                 2D Game
               </h3>
-              <div className="relative w-full max-w-[39.25rem] mx-auto h-[15rem] sm:h-[18rem] lg:h-[20.687rem]">
+              <div className="relative w-full max-w-157 mx-auto h-60 sm:h-72 lg:h-[20.687rem]">
                 <Image
                   src="/images/GA5.webp"
                   alt="2D Game Development - Mindefy Technologies"

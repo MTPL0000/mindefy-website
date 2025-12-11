@@ -97,7 +97,7 @@ const CustomMLSolution = () => {
     <div className="min-h-screen bg-[#E9F6F6]">
       <div className="max-w-screen mx-auto flex flex-col lg:flex-row">
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
-        <div className="hidden lg:block w-80 flex-shrink-0 mr-0 lg:mr-5 mb-6 lg:mb-0">
+        <div className="hidden lg:block w-80 shrink-0 mr-0 lg:mr-5 mb-6 lg:mb-0">
           <div className="sticky" style={{ top: `${headerHeight}px` }}>
             <div className="py-8 bg-white shadow-[2px_2px_12px_0px_rgba(0,0,0,0.2)] h-full">
               <nav className="space-y-1.5">
@@ -146,7 +146,7 @@ const CustomMLSolution = () => {
                 </p>
               </div>
 
-              <div className="relative aspect-[1002/552] w-full overflow-hidden ">
+              <div className="relative aspect-1002/552 w-full overflow-hidden ">
                 <Image
                   src="/images/YH-CB.webp"
                   alt="EarlyFoods AI recommendation system interface showing product suggestions"
@@ -177,7 +177,7 @@ const CustomMLSolution = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
                 {/* Limited Browsing Time */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 h-32 aspect-[4183/4200]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-4183/4200">
                     <Image
                       src="/images/cmls-CB1.svg"
                       alt="Limited Browsing Time"
@@ -196,7 +196,7 @@ const CustomMLSolution = () => {
 
                 {/* Lower Cart Value */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 h-32 aspect-[697/630]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-697/630">
                     <Image
                       src="/images/cmls-CB2.svg"
                       alt="Lower Cart Value"
@@ -264,7 +264,7 @@ const CustomMLSolution = () => {
                 <h2 className="text-2xl font-semibold uppercase text-[#2B7575] mb-4">
                   Solutions
                 </h2>
-                <h1 className="text-[1.25rem] font-normal text-[#333333] max-w-[45.25rem] mx-auto">
+                <h1 className="text-[1.25rem] font-normal text-[#333333] max-w-181 mx-auto">
                   We added an AI-powered “You may also like” section that shows
                   smart product suggestions based on your browsing and
                   preferences.

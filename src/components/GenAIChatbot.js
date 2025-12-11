@@ -113,7 +113,7 @@ const GenAIChatbot = () => {
           }}
         ></div>
         {/* Left Navigation Sidebar - Hidden on mobile/tablet */}
-        <div className="hidden lg:block w-80 flex-shrink-0 mr-0 mb-6 lg:mb-0 relative">
+        <div className="hidden lg:block w-80 shrink-0 mr-0 mb-6 lg:mb-0 relative">
           <div className="sticky" style={{ top: `${headerHeight}px` }}>
             <div className="py-8 bg-white shadow-[2px_2px_12px_0px_rgba(0,0,0,0.2)] h-full">
               <nav className="space-y-1.5">
@@ -172,7 +172,7 @@ const GenAIChatbot = () => {
 
                 {/* Right Content - Chat Interface Image */}
                 <div className="mt-0 lg:-mt-8 flex justify-center">
-                  <div className="relative overflow-hidden h-[20rem] lg:h-[35rem] xl:h-[40rem] aspect-[3/4]">
+                  <div className="relative overflow-hidden h-80 lg:h-140 xl:h-160 aspect-3/4">
                     <Image
                       src="/images/YH-MN.gif"
                       alt="YourHour App with AI Chatbot"
@@ -201,7 +201,7 @@ const GenAIChatbot = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
                 {/* Card 1: Mental Health Risks from Screen Overuse */}
                 <div className="text-center w-full max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 h-32 aspect-[55/63]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-55/63">
                     <Image
                       src="/images/YH-CB1.svg"
                       alt="Mental Health Risks from Screen Overuse"
@@ -220,7 +220,7 @@ const GenAIChatbot = () => {
 
                 {/* Card 2: Demand for Interactive Support */}
                 <div className="text-center w-full max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 h-32 aspect-[16618/12600]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-16618/12600">
                     <Image
                       src="/images/YH-CB2.svg"
                       alt="Demand for Interactive Support"
@@ -239,7 +239,7 @@ const GenAIChatbot = () => {
 
                 {/* Card 3: Building a Trustworthy Knowledge Base */}
                 <div className="text-center w-full max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 h-32 aspect-[6209/6300]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-6209/6300">
                     <Image
                       src="/images/YH-CB3.png"
                       alt="Building a Trustworthy Knowledge Base"
@@ -269,7 +269,7 @@ const GenAIChatbot = () => {
                 <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-4">
                   Solutions
                 </h2>
-                <h1 className="text-[1.25rem] font-normal leading-12 text-[#333333] max-w-[45.25rem] mx-auto">
+                <h1 className="text-[1.25rem] font-normal leading-12 text-[#333333] max-w-181 mx-auto">
                   We built a RAG-based AI chatbot integrated into YourHour to
                   serve
                   <br /> as a digital wellness buddy. Key features:
@@ -280,7 +280,7 @@ const GenAIChatbot = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                 {/* Knowledge-Augmented Q&A */}
                 <div className="text-center max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 h-32 aspect-[2477/2100]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-2477/2100">
                     <Image
                       src="/images/YH-CB4.svg"
                       alt="Knowledge-Augmented Q&A"
@@ -300,7 +300,7 @@ const GenAIChatbot = () => {
 
                 {/* Companionship & Personalized Advice */}
                 <div className="text-center max-w-[20rem] mx-auto">
-                  <div className="relative mx-auto mb-4 h-32 aspect-[4063/3150]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-4063/3150">
                     <Image
                       src="/images/YH-CB5.svg"
                       alt="Companionship & Personalized Advice"
@@ -318,7 +318,7 @@ const GenAIChatbot = () => {
 
                 {/* Holistic Well-being Focus */}
                 <div className="text-center max-w-md mx-auto">
-                  <div className="relative mx-auto mb-4 h-32 aspect-[12671/12600]">
+                  <div className="relative mx-auto mb-4 h-32 aspect-12671/12600">
                     <Image
                       src="/images/YH-CB6.svg"
                       alt="Holistic Well-being Focus"

@@ -9,12 +9,12 @@ export default function HAD() {
       <section className="mt-16 sm:mt-20 lg:mt-28 mx-auto px-4 sm:px-6 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-5">
             Hybrid Application Development
           </h1>
 
           {/* Main Title */}
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-6 lg:mb-7 leading-tight max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-[50rem] mx-auto px-2 sm:px-0">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-6 lg:mb-7 leading-tight max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-200 mx-auto px-2 sm:px-0">
             <span className="font-normal">Elevate </span>Your Mobile App
             Experience <span className="font-normal">with </span>
             <span className="font-medium">Hybrid App Development </span>
@@ -22,7 +22,7 @@ export default function HAD() {
           </p>
 
           {/* Description Paragraphs */}
-          <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:w-[60.25rem] font-normal mx-auto mb-6 sm:mb-8 lg:mb-[2.25rem] text-center sm:text-justify lg:text-justify space-y-3 sm:space-y-4 lg:space-y-[1.25rem] px-2 sm:px-0">
+          <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:w-241 font-normal mx-auto mb-6 sm:mb-8 lg:mb-9 text-center sm:text-justify lg:text-justify space-y-3 sm:space-y-4 lg:space-y-5 px-2 sm:px-0">
             <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed">
               As a leading hybrid app development company, we pride ourselves on
               delivering top-notch solutions that redefine industry standards.
@@ -36,7 +36,7 @@ export default function HAD() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-[30.125rem] mx-auto mb-8 sm:mb-12 lg:mb-[4.5rem]">
+          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-120.5 mx-auto mb-8 sm:mb-12 lg:mb-18">
             <Image
               src="/images/HAD.webp"
               alt="Hybrid App Development - Developer working with mobile app design"
@@ -49,17 +49,17 @@ export default function HAD() {
       </section>
 
       {/* Benefits of Choosing Hybrid Apps Section */}
-      <section className="py-8 sm:py-12 lg:py-[4.5rem] px-4 sm:px-6 lg:px-0">
-        <div className="max-w-sm sm:max-w-lg md:max-w-4xl lg:max-w-[75rem] mx-auto lg:px-6">
+      <section className="py-8 sm:py-12 lg:py-18 px-4 sm:px-6 lg:px-0">
+        <div className="max-w-sm sm:max-w-lg md:max-w-4xl lg:max-w-300 mx-auto lg:px-6">
           {/* Section Header */}
-          <div className="text-center mb-8 sm:mb-10 lg:mb-[2.5rem]">
-            <p className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-[1.25rem]">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-10">
+            <p className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-5">
               BENEFITS OF CHOOSING IN HYBRID APPS
             </p>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-6 sm:mb-8 lg:mb-[2.5rem]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-6 sm:mb-8 lg:mb-10">
               Seamless Cross-Platform Compatibility
             </h2>
-            <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] text-center sm:text-justify lg:text-justify leading-relaxed max-w-full lg:max-w-[60.25rem] mx-auto">
+            <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] text-center sm:text-justify lg:text-justify leading-relaxed max-w-full lg:max-w-241 mx-auto">
               Hybrid apps built using React Native, Flutter, and PWAs seamlessly
               work across various platforms, including iOS, Android, and the
               web. This unified approach eliminates the need for separate
@@ -69,11 +69,11 @@ export default function HAD() {
           </div>
 
           {/* Benefits Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-[3.44rem] lg:flex lg:flex-wrap lg:justify-center lg:max-w-[72.5rem] lg:mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-[3.44rem] lg:flex lg:flex-wrap lg:justify-center lg:max-w-290 lg:mx-auto">
             {/* Native-Like Performance */}
-            <div className="text-center lg:flex-1 lg:h-[35.75rem] lg:max-w-[21.875rem]">
+            <div className="text-center lg:flex-1 lg:h-143 lg:max-w-87.5">
               <div className="mb-4 sm:mb-6">
-                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-[13.875rem] lg:h-[13.875rem] mx-auto">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-55.5 lg:h-55.5 mx-auto">
                   <Image
                     src="/images/HAD1.webp"
                     alt="Native-Like Performance"
@@ -96,9 +96,9 @@ export default function HAD() {
             </div>
 
             {/* Faster Time-to-Market */}
-            <div className="text-center lg:flex-1 lg:h-[35.75rem] lg:max-w-[21.875rem]">
+            <div className="text-center lg:flex-1 lg:h-143 lg:max-w-87.5">
               <div className="mb-4 sm:mb-6">
-                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-[13.875rem] lg:h-[13.875rem] mx-auto">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-55.5 lg:h-55.5 mx-auto">
                   <Image
                     src="/images/HAD2.webp"
                     alt="Faster Time-to-Market"
@@ -121,9 +121,9 @@ export default function HAD() {
             </div>
 
             {/* Cost-Effective Solution */}
-            <div className="text-center md:col-span-2 lg:col-span-1 lg:flex-1 lg:h-[35.75rem] lg:max-w-[21.875rem]">
+            <div className="text-center md:col-span-2 lg:col-span-1 lg:flex-1 lg:h-143 lg:max-w-87.5">
               <div className="mb-4 sm:mb-6">
-                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-[13.875rem] lg:h-[13.875rem] mx-auto">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-55.5 lg:h-55.5 mx-auto">
                   <Image
                     src="/images/HAD3.webp"
                     alt="Cost-Effective Solution"
@@ -148,15 +148,15 @@ export default function HAD() {
         </div>
       </section>
 
-      <section className="py-8 sm:py-12 lg:py-[4.5rem] bg-white px-4 sm:px-6 lg:px-0">
-        <div className="max-w-sm sm:max-w-lg md:max-w-4xl lg:max-w-[72.5rem] mx-auto">
+      <section className="py-8 sm:py-12 lg:py-18 bg-white px-4 sm:px-6 lg:px-0">
+        <div className="max-w-sm sm:max-w-lg md:max-w-4xl lg:max-w-290 mx-auto">
           {/* Technologies Content */}
-          <div className="space-y-8 sm:space-y-10 lg:space-y-[3rem] lg:flex lg:flex-col lg:gap-[3rem] lg:max-w-[72.5rem] lg:mx-auto">
+          <div className="space-y-8 sm:space-y-10 lg:space-y-12 lg:flex lg:flex-col lg:gap-12 lg:max-w-290 lg:mx-auto">
             {/* Versatility with Progressive Web Apps (PWAs) */}
             <div className="flex flex-col lg:flex-row lg:items-start gap-6 sm:gap-8 lg:gap-7">
-              <div className="flex-shrink-0">
-                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-[13.875rem] lg:h-[13.875rem] mx-auto lg:mx-0 flex items-center justify-center lg:block">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-[4.875rem] lg:h-[4.875rem] relative">
+              <div className="shrink-0">
+                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-55.5 lg:h-55.5 mx-auto lg:mx-0 flex items-center justify-center lg:block">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-19.5 lg:h-19.5 relative">
                     <Image
                       src="/images/pwa1.webp"
                       alt="PWA Icon"
@@ -183,8 +183,8 @@ export default function HAD() {
 
             {/* React Native */}
             <div className="flex flex-col lg:flex-row lg:items-start gap-6 sm:gap-8 lg:gap-7">
-              <div className="flex-shrink-0">
-                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-[13.875rem] lg:h-[13.875rem] mx-auto lg:mx-0 flex items-center justify-center lg:block">
+              <div className="shrink-0">
+                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-55.5 lg:h-55.5 mx-auto lg:mx-0 flex items-center justify-center lg:block">
                   <div className="w-20 h-16 sm:w-24 sm:h-20 md:w-28 md:h-24 lg:w-[6.95rem] lg:h-[6.46rem] relative">
                     <Image
                       src="/images/react.webp"
@@ -225,9 +225,9 @@ export default function HAD() {
 
             {/* Flutter */}
             <div className="flex flex-col lg:flex-row lg:items-start gap-6 sm:gap-8 lg:gap-7">
-              <div className="flex-shrink-0">
-                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-[13.875rem] lg:h-[13.875rem] mx-auto lg:mx-0 flex items-center justify-center lg:block">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-[6.5rem] lg:h-[6.5rem] relative">
+              <div className="shrink-0">
+                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-55.5 lg:h-55.5 mx-auto lg:mx-0 flex items-center justify-center lg:block">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-26 lg:h-26 relative">
                     <Image
                       src="/images/flutter.webp"
                       alt="Flutter Icon"
@@ -278,9 +278,9 @@ export default function HAD() {
 
             {/* Progressive Web Apps (PWAs) */}
             <div className="flex flex-col lg:flex-row lg:items-start gap-6 sm:gap-8 lg:gap-7">
-              <div className="flex-shrink-0">
-                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-[13.875rem] lg:h-[13.875rem] mx-auto lg:mx-0 flex items-center justify-center lg:block">
-                  <div className="w-24 h-8 sm:w-32 sm:h-10 md:w-36 md:h-12 lg:w-[9.375rem] lg:h-[3.529rem] relative">
+              <div className="shrink-0">
+                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-55.5 lg:h-55.5 mx-auto lg:mx-0 flex items-center justify-center lg:block">
+                  <div className="w-24 h-8 sm:w-32 sm:h-10 md:w-36 md:h-12 lg:w-37.5 lg:h-[3.529rem] relative">
                     <Image
                       src="/images/pwa2.webp"
                       alt="PWA Logo"

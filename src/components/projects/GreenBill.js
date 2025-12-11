@@ -37,8 +37,8 @@ const GreenBill = () => {
         </div>
 
         {/* Main Image */}
-        <div className="w-full bg-[linear-gradient(180deg,_rgba(255,255,255,0.6)_0%,_rgba(26,204,64,0.57)_52.4%,_rgba(254,254,254,0.6)_100%)]">
-          <div className="m-auto relative aspect-[16/9] md:aspect-[2/1] w-full max-w-[70rem] overflow-hidden">
+        <div className="w-full bg-[linear-gradient(180deg,rgba(255,255,255,0.6)_0%,rgba(26,204,64,0.57)_52.4%,rgba(254,254,254,0.6)_100%)]">
+          <div className="m-auto relative aspect-video md:aspect-2/1 w-full max-w-280 overflow-hidden">
             <Image
               src="/images/projects/DB-1.webp"
               alt="GreenBill Dashboard"
@@ -49,7 +49,7 @@ const GreenBill = () => {
         </div>
 
         {/* Key Functionality Section */}
-        <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-[72.5rem] mx-auto gap-16 lg:gap-21 px-4 lg:px-8">
+        <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-290 mx-auto gap-16 lg:gap-21 px-4 lg:px-8">
           <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-6xl mx-auto gap-8 lg:gap-12">
             <div className="flex flex-col items-center justify-center gap-4 lg:gap-5">
               <p className="text-[#FF5225] text-sm lg:text-base font-bold tracking-wider uppercase">
@@ -95,9 +95,9 @@ const GreenBill = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-10 lg:gap-15">
-              <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-20">
                 <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
+                  <div className="relative aspect-square w-20 lg:w-25 overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-1.svg"
                       alt="GreenBill icon"
@@ -116,7 +116,7 @@ const GreenBill = () => {
                   </div>
                 </div>
                 <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
+                  <div className="relative aspect-square w-20 lg:w-25 overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-2.svg"
                       alt="GreenBill icon"
@@ -136,9 +136,9 @@ const GreenBill = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-15">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-15">
                 <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
+                  <div className="relative aspect-square w-20 lg:w-25 overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-3.svg"
                       alt="GreenBill icon"
@@ -157,7 +157,7 @@ const GreenBill = () => {
                   </div>
                 </div>
                 <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
+                  <div className="relative aspect-square w-20 lg:w-25 overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-4.svg"
                       alt="GreenBill icon"
@@ -176,7 +176,7 @@ const GreenBill = () => {
                   </div>
                 </div>
                 <div className="w-full max-w-[18.4rem] flex flex-col items-center justify-center gap-7">
-                  <div className="relative aspect-[1/1] w-[5rem] lg:w-[6.25rem] overflow-hidden">
+                  <div className="relative aspect-square w-20 lg:w-25 overflow-hidden">
                     <Image
                       src="/images/projects/DB-icon-5.svg"
                       alt="GreenBill icon"
@@ -225,7 +225,7 @@ const GreenBill = () => {
               </span>
             </div>
 
-            <div className="relative aspect-[16/9] md:aspect-[2/1] w-full overflow-hidden">
+            <div className="relative aspect-video md:aspect-2/1 w-full overflow-hidden">
               <Image
                 src="/images/projects/DB-2.webp"
                 alt="GreenBill Dashboard"
@@ -235,12 +235,12 @@ const GreenBill = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-10 lg:gap-15">
-              <div className="w-full max-w-[34rem] bg-gradient-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-4 lg:py-6 px-8 lg:px-15 rounded-[10px]">
+              <div className="w-full max-w-136 bg-linear-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-4 lg:py-6 px-8 lg:px-15 rounded-[10px]">
                 <span className="text-lg lg:text-[1.25rem] text-[#FFFFFF] font-semibold text-center block">
                   Key Features of Our Dynamic Admin App
                 </span>
               </div>
-              <div className="w-full max-w-[72.5rem] flex flex-col lg:flex-row justify-center items-center gap-8">
+              <div className="w-full max-w-290 flex flex-col lg:flex-row justify-center items-center gap-8">
                 <div className="flex flex-col justify-center gap-4 flex-1">
                   <h3 className="text-2xl lg:text-3xl font-semibold text-[#000000]">
                     Centralized dashboard
@@ -250,7 +250,7 @@ const GreenBill = () => {
                     intuitive interface.
                   </p>
                 </div>
-                <div className="relative aspect-[1/1] w-full max-w-[20rem] lg:max-w-none lg:flex-1 overflow-hidden">
+                <div className="relative aspect-square w-full max-w-[20rem] lg:max-w-none lg:flex-1 overflow-hidden">
                   <Image
                     src="/images/projects/DB-4.webp"
                     alt="GreenBill Dashboard"
@@ -298,7 +298,7 @@ const GreenBill = () => {
                 </span>
               </div>
               <div
-                className="relative aspect-[4/3] md:aspect-[1.8/1] w-full overflow-hidden rounded-3xl"
+                className="relative aspect-4/3 md:aspect-[1.8/1] w-full overflow-hidden rounded-3xl"
                 style={{
                   background:
                     "linear-gradient(180deg, #80DA48 0%, #8CEB58 25%, #63D646 50%, #63D646 75%, #1BCC40 90%, #1ACA3F 100%)",
@@ -314,15 +314,15 @@ const GreenBill = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-10 lg:gap-15">
-              <div className="w-full max-w-fit bg-gradient-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-4 lg:py-6 px-8 lg:px-15 rounded-[10px]">
+              <div className="w-full max-w-fit bg-linear-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-4 lg:py-6 px-8 lg:px-15 rounded-[10px]">
                 <span className="text-lg lg:text-[1.25rem] text-[#FFFFFF] font-semibold text-center block">
                   Key Features of Our Innovative Customer App
                 </span>
               </div>
               <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center gap-10">
                 <div className="flex flex-col items-center justify-center gap-10">
-                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
+                  <div className="w-full max-w-140 flex items-center justify-center gap-3">
+                    <div className="relative aspect-square w-16 lg:w-24 overflow-hidden shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-1.svg"
                         alt="GreenBill icon"
@@ -340,8 +340,8 @@ const GreenBill = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
+                  <div className="w-full max-w-140 flex items-center justify-center gap-3">
+                    <div className="relative aspect-square w-16 lg:w-24 overflow-hidden shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-2.svg"
                         alt="GreenBill icon"
@@ -359,8 +359,8 @@ const GreenBill = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
+                  <div className="w-full max-w-140 flex items-center justify-center gap-3">
+                    <div className="relative aspect-square w-16 lg:w-24 overflow-hidden shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-3.svg"
                         alt="GreenBill icon"
@@ -381,8 +381,8 @@ const GreenBill = () => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-10">
-                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
+                  <div className="w-full max-w-140 flex items-center justify-center gap-3">
+                    <div className="relative aspect-square w-16 lg:w-24 overflow-hidden shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-4.svg"
                         alt="GreenBill icon"
@@ -400,8 +400,8 @@ const GreenBill = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
+                  <div className="w-full max-w-140 flex items-center justify-center gap-3">
+                    <div className="relative aspect-square w-16 lg:w-24 overflow-hidden shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-5.svg"
                         alt="GreenBill icon"
@@ -419,8 +419,8 @@ const GreenBill = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="w-full max-w-[35rem] flex items-center justify-center gap-3">
-                    <div className="relative aspect-[1/1] w-[4rem] lg:w-[6rem] overflow-hidden flex-shrink-0">
+                  <div className="w-full max-w-140 flex items-center justify-center gap-3">
+                    <div className="relative aspect-square w-16 lg:w-24 overflow-hidden shrink-0">
                       <Image
                         src="/images/projects/DBA-icon-6.svg"
                         alt="GreenBill icon"
@@ -466,12 +466,12 @@ const GreenBill = () => {
                 </div>
               </div>
 
-              <div className="w-full max-w-4xl lg:max-w-[60rem] flex flex-col items-center justify-center gap-8 lg:gap-12">
+              <div className="w-full max-w-4xl lg:max-w-240 flex flex-col items-center justify-center gap-8 lg:gap-12">
                 <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
                     <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Environmental Sustainability
-                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
                   <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -486,7 +486,7 @@ const GreenBill = () => {
                   <div className="flex flex-col items-start gap-1">
                     <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Growth and Scalability
-                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
                   <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -505,7 +505,7 @@ const GreenBill = () => {
                   <div className="flex flex-col items-start gap-1">
                     <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Streamlined Operations
-                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
                   <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -523,7 +523,7 @@ const GreenBill = () => {
                   <div className="flex flex-col items-start gap-1">
                     <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Centralized Management
-                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
                   <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -543,7 +543,7 @@ const GreenBill = () => {
                   <div className="flex flex-col items-start gap-1">
                     <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Cost Savings
-                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
                   <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -562,7 +562,7 @@ const GreenBill = () => {
                   <div className="flex flex-col items-start gap-1">
                     <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Data Security and Accessibility
-                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
                   <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -580,7 +580,7 @@ const GreenBill = () => {
                   <div className="flex flex-col items-start gap-1">
                     <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
                       Enhanced Customer Experience
-                      <span className="absolute left-0 -bottom-1 h-[4px] lg:h-[6px] w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
+                      <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
                   </div>
                   <p className="text-sm lg:text-base font-normal font-poppins text-[#000000]">

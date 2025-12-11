@@ -9,12 +9,12 @@ export default function Microservices() {
       <section className="mt-28 mx-auto px-4 sm:px-6 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-5">
             Microservices Based Java Application Development
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[40rem] lg:max-w-[50rem] mx-auto px-4 lg:px-0">
+          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-160 lg:max-w-200 mx-auto px-4 lg:px-0">
             Building Scalable
             <span className="font-normal"> and </span> Resilient Java
             Applications
@@ -22,7 +22,7 @@ export default function Microservices() {
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-[90%] sm:max-w-[45rem] lg:w-[60.25rem] font-normal mx-auto mb-[1.5rem] text-justify space-y-[1.25rem] px-4 lg:px-0">
+          <div className="w-full max-w-[90%] sm:max-w-180 lg:w-241 font-normal mx-auto mb-6 text-justify space-y-5 px-4 lg:px-0">
             <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed">
               If you'rе looking to build scalablе and еfficiеnt softwarе
               solutions, you'vе comе to thе right placе. Mindеfy lеvеragеs thе
@@ -44,7 +44,7 @@ export default function Microservices() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full sm:w-[85%] md:w-[70%] lg:w-[60%] xl:w-[52.39%] aspect-[4/3] sm:aspect-[3/2] md:aspect-[16/10] lg:aspect-[16/9] mx-auto mb-6">
+          <div className="relative w-full sm:w-[85%] md:w-[70%] lg:w-[60%] xl:w-[52.39%] aspect-4/3 sm:aspect-3/2 md:aspect-16/10 lg:aspect-video mx-auto mb-6">
             <Image
               src="/images/MJA.webp"
               alt="Hybrid App Development - Developer working with mobile app design"
@@ -58,11 +58,11 @@ export default function Microservices() {
 
       {/* Agile Benefits Section using Flex */}
       <section className="px-4 sm:px-6 lg:px-0">
-        <div className="max-w-[72.5rem] mx-auto">
+        <div className="max-w-290 mx-auto">
           <h2 className="text-center text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-10 sm:mb-16 lg:mb-20 px-4 lg:px-0">
             Why Microsеrvicеs-Basеd Architеcturе is thе Kеy to Growth
           </h2>
-          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-[1.25rem]">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-5">
             {[
               {
                 title: "Flеxibility and Modularity",
@@ -87,13 +87,13 @@ export default function Microservices() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[1.25rem] p-4 sm:p-6 w-full sm:w-[calc(50%-0.625rem)] lg:w-[35.625rem] flex flex-col"
+                className="bg-white rounded-[1.25rem] p-4 sm:p-6 w-full sm:w-[calc(50%-0.625rem)] lg:w-142.5 flex flex-col"
                 style={{
                   boxShadow:
                     "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
                 }}
               >
-                <div className="relative w-[8rem] h-[7rem] sm:w-[10rem] sm:h-[9rem] lg:w-[13.875rem] lg:h-[12.375rem] mx-auto my-4 sm:my-8 lg:mx-[8.68rem] lg:my-[4.875rem]">
+                <div className="relative w-32 h-28 sm:w-40 sm:h-36 lg:w-55.5 lg:h-49.5 mx-auto my-4 sm:my-8 lg:mx-[8.68rem] lg:my-19.5">
                   <Image
                     src={item.img || "/placeholder.svg"}
                     alt={item.title}
@@ -115,10 +115,10 @@ export default function Microservices() {
       </section>
 
       {/* Java Microservices Approach Section */}
-      <section className="mt-[3.75rem] px-4 sm:px-6 lg:px-0">
-        <div className="max-w-[72.5rem] mx-auto">
+      <section className="mt-15 px-4 sm:px-6 lg:px-0">
+        <div className="max-w-290 mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[3rem] sm:mb-[4rem] lg:mb-[5rem]">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] px-4 lg:px-0">
               The Art of Java Microservices: How Our Approach Drives{" "}
               <span className="block sm:inline">Exceptional Development</span>
@@ -128,10 +128,10 @@ export default function Microservices() {
           {/* Timeline Container */}
           <div className="relative max-w-full lg:max-w-[54.81rem] mx-auto">
             {/* Left Vertical Line - Hidden until above 1024px */}
-            <div className="absolute left-[-5rem] rounded-xl top-0 w-3.5 bg-[#000000] h-full hidden xl:block"></div>
+            <div className="absolute -left-20 rounded-xl top-0 w-3.5 bg-[#000000] h-full hidden xl:block"></div>
 
             {/* Timeline Items */}
-            <div className="space-y-[2rem] sm:space-y-[2.5rem] lg:space-y-[3.125rem]">
+            <div className="space-y-8 sm:space-y-10 lg:space-y-12.5">
               {/* Architecture Design */}
               <div className="flex items-start">
                 <div className="flex-1">

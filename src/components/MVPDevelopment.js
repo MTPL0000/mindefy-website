@@ -9,7 +9,7 @@ export default function MVPDevelopment() {
       <section className="mt-16 sm:mt-20 md:mt-24 xl:mt-28 mx-auto px-4 sm:px-6 lg:px-8 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-sm sm:text-base xl:text-[1rem] font-bold tracking-widest uppercase mb-4 sm:mb-5 xl:mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-sm sm:text-base xl:text-[1rem] font-bold tracking-widest uppercase mb-4 sm:mb-5 xl:mb-5">
             product development
           </h1>
 
@@ -23,7 +23,7 @@ export default function MVPDevelopment() {
           </p>
 
           {/* Description Paragraphs */}
-          <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:w-[60.125rem] font-normal mx-auto mb-6 sm:mb-8 xl:mb-[2.25rem] text-justify space-y-4 sm:space-y-5 xl:space-y-[1.25rem] px-2 sm:px-4 xl:px-0">
+          <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:w-240.5 font-normal mx-auto mb-6 sm:mb-8 xl:mb-9 text-justify space-y-4 sm:space-y-5 xl:space-y-5 px-2 sm:px-4 xl:px-0">
             <p className="text-sm sm:text-base xl:text-[1rem] text-[#444444] leading-relaxed">
               Mindefy is your trusted partner for efficient and seamless product
               development solutions. We offer comprehensive services that cater
@@ -42,7 +42,7 @@ export default function MVPDevelopment() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[30.125rem] mx-auto mb-4 sm:mb-5 md:mb-6 xl:mb-7">
+          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-120.5 mx-auto mb-4 sm:mb-5 md:mb-6 xl:mb-7">
             <Image
               src="/images/MVP.webp"
               alt="Web Application Development - Developer working with web applications"
@@ -51,7 +51,7 @@ export default function MVPDevelopment() {
               priority
             />
           </div>
-          <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:w-[60.25rem] mx-auto mb-12 sm:mb-16 md:mb-20 xl:mb-20 tracking-wide leading-relaxed px-2 sm:px-4 xl:px-0">
+          <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:w-241 mx-auto mb-12 sm:mb-16 md:mb-20 xl:mb-20 tracking-wide leading-relaxed px-2 sm:px-4 xl:px-0">
             <p className="text-justify text-sm sm:text-base xl:text-[1rem] font-normal text-[#444444] mb-4 sm:mb-5 md:mb-6 xl:mb-7">
               Unleash the transformative potential of our comprehensive product
               development services. From Agile methodology-based prototyping to
@@ -76,22 +76,22 @@ export default function MVPDevelopment() {
       </section>
 
       {/* Services Header Section */}
-      <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:w-[63.875rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-0">
-        <div className="mx-auto max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:w-[53.25rem] mb-4 sm:mb-5 xl:mb-[1.125rem]">
+      <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:w-255.5 mx-auto px-4 sm:px-6 lg:px-8 xl:px-0">
+        <div className="mx-auto max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:w-213 mb-4 sm:mb-5 xl:mb-4.5">
           <div>
             <p className="text-center font-semibold text-xl sm:text-2xl md:text-3xl xl:text-3xl px-2 sm:px-4 xl:px-0">
               <span className="font-normal">Comprehensive </span>Product
               Development <span className="font-normal">Services</span>
             </p>
           </div>
-          <div className="max-w-full sm:max-w-lg md:max-w-xl xl:w-[36.25rem] mx-auto px-2 sm:px-4 xl:px-0">
+          <div className="max-w-full sm:max-w-lg md:max-w-xl xl:w-145 mx-auto px-2 sm:px-4 xl:px-0">
             <p className="font-normal text-center text-base sm:text-lg xl:text-lg text-[#444444]">
               Our team of experts is dedicated to delivering comprehensive
               solutions that cater to your unique requirements.
             </p>
           </div>
         </div>
-        <div className="max-w-full xl:w-[63.875rem] mx-auto px-2 sm:px-4 xl:px-0">
+        <div className="max-w-full xl:w-255.5 mx-auto px-2 sm:px-4 xl:px-0">
           <p className="text-center font-normal text-lg sm:text-xl md:text-2xl xl:text-2xl text-[#444444]">
             We offer a range of services which includes
           </p>
@@ -99,7 +99,7 @@ export default function MVPDevelopment() {
       </div>
 
       {/* Product Development Services Section */}
-      <section className="mt-8 sm:mt-12 md:mt-16 xl:mt-[3.75rem] mb-40 sm:mb-60 md:mb-80 xl:mb-80 px-4 sm:px-6 lg:px-8 xl:px-0">
+      <section className="mt-8 sm:mt-12 md:mt-16 xl:mt-15 mb-10 sm:mb-10 md:mb-20 xl:mb-80 px-4 sm:px-6 lg:px-8 xl:px-0">
         {/* Mobile and Tablet Layout */}
         <div className="xl:hidden">
           <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16">
@@ -232,9 +232,9 @@ export default function MVPDevelopment() {
 
         {/* Desktop Layout (1440px and above) - Original Design */}
         <div className="hidden xl:block">
-          <div className="max-w-[75rem] mx-auto relative">
+          <div className="max-w-300 mx-auto relative">
             {/* Central Rocket Image */}
-            <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-[95rem] h-[152.5rem] z-10">
+            <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-380 h-610 z-10">
               <Image
                 src="/images/MVProcket.webp"
                 alt="Rocket Development Process"
@@ -244,12 +244,12 @@ export default function MVPDevelopment() {
             </div>
 
             {/* Services Timeline Layout */}
-            <div className="relative z-10 space-y-[-11rem]">
+            <div className="relative z-10 -space-y-44">
               {/* Service 1: Agile Methodology - Left Side */}
               <div className="flex items-center">
                 <div className="w-1/2 pl-12">
                   <div className="">
-                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] shrink-0">
                       <Image
                         src="/images/MVP2.webp"
                         alt="Agile Methodology Prototyping"
@@ -257,7 +257,7 @@ export default function MVPDevelopment() {
                         className="object-contain"
                       />
                     </div>
-                    <div className="flex items-start w-[30.75rem] ">
+                    <div className="flex items-start w-123 ">
                       <div className="flex-1">
                         <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
                           Agile Methodology-based Prototyping
@@ -284,7 +284,7 @@ export default function MVPDevelopment() {
                 <div className="w-1/2"></div>
                 <div className="w-1/2 pl-15">
                   <div className="">
-                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] shrink-0">
                       <Image
                         src="/images/MVP3.webp"
                         alt="MVP Design and Development"
@@ -292,7 +292,7 @@ export default function MVPDevelopment() {
                         className="object-contain"
                       />
                     </div>
-                    <div className="flex items-start w-[30.75rem]">
+                    <div className="flex items-start w-123">
                       <div className="flex-1">
                         <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
                           MVP Design and Development
@@ -316,7 +316,7 @@ export default function MVPDevelopment() {
               <div className="flex items-center">
                 <div className="w-1/2 pl-12">
                   <div className="">
-                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] shrink-0">
                       <Image
                         src="/images/MVP4.webp"
                         alt="MVP Launch and Market Research"
@@ -324,7 +324,7 @@ export default function MVPDevelopment() {
                         className="object-contain"
                       />
                     </div>
-                    <div className="flex items-start w-[30.75rem]">
+                    <div className="flex items-start w-123">
                       <div className="flex-1">
                         <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
                           MVP Launch and Market Research
@@ -349,7 +349,7 @@ export default function MVPDevelopment() {
                 <div className="w-1/2"></div>
                 <div className="w-1/2 pl-15">
                   <div className="">
-                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] shrink-0">
                       <Image
                         src="/images/MVP5.webp"
                         alt="Product Development as-a-Service"
@@ -357,7 +357,7 @@ export default function MVPDevelopment() {
                         className="object-contain"
                       />
                     </div>
-                    <div className="flex items-start w-[30.75rem]">
+                    <div className="flex items-start w-123">
                       <div className="flex-1">
                         <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
                           Product Development as-a-Service
@@ -381,7 +381,7 @@ export default function MVPDevelopment() {
               <div className="flex items-center">
                 <div className="w-1/2 pl-12">
                   <div className="">
-                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <div className="relative w-[15.81rem] h-[15.31rem] mb-11 mx-[7.468rem] shrink-0">
                       <Image
                         src="/images/MVP6.webp"
                         alt="Innovation Lab"
@@ -389,7 +389,7 @@ export default function MVPDevelopment() {
                         className="object-contain"
                       />
                     </div>
-                    <div className="flex items-start w-[30.75rem]">
+                    <div className="flex items-start w-123">
                       <div className="flex-1">
                         <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
                           Innovation Lab
@@ -415,7 +415,7 @@ export default function MVPDevelopment() {
                 <div className="w-1/2"></div>
                 <div className="w-1/2 pl-12">
                   <div className="">
-                    <div className="relative w-[14.625rem] h-[20.75rem] mb-11 mx-[7.468rem] flex-shrink-0">
+                    <div className="relative w-58.5 h-83 mb-11 mx-[7.468rem] shrink-0">
                       <Image
                         src="/images/Astronout.webp"
                         alt="Product Development as-a-Service"

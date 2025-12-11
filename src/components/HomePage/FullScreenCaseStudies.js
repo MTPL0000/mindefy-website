@@ -5,7 +5,7 @@ export default function FullScreenCaseStudies() {
   return (
     <>
       {/* Gen AI-Chatbot Case Study - Full Screen */}
-      <section className="w-full h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-cyan-50 px-8 lg:px-16">
+      <section className="w-full h-screen flex items-center justify-center bg-linear-to-br from-blue-50 to-cyan-50 px-8 lg:px-16">
         <div className="container mx-auto max-w-7xl flex items-center justify-between">
           {/* Left side - Phone mockup */}
           <div className="flex-1 flex justify-center">
@@ -45,7 +45,7 @@ export default function FullScreenCaseStudies() {
       </section>
 
       {/* ML Driven Recommendations Case Study - Full Screen */}
-      <section className="w-full h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-cyan-50 px-8 lg:px-16">
+      <section className="w-full h-screen flex items-center justify-center bg-linear-to-br from-blue-50 to-cyan-50 px-8 lg:px-16">
         <div className="container mx-auto max-w-7xl flex items-center justify-between">
           {/* Left side - Content */}
           <div className="flex-1 pr-12">

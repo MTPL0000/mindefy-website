@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ServicesDrop({ onItemClick }) {
   return (
     <div className="w-full pt-4 sm:pt-6 lg:pt-8 bg-white shadow-lg z-20">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20 pb-4 sm:pb-6 lg:pb-8">
+      <div className="grid justify-items-center grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20 pb-4 sm:pb-6 lg:pb-8">
         {/* Column 1: AI Development & Data Services + Business IT Solutions  */}
         <div className="space-y-4 sm:space-y-6">
           <div>

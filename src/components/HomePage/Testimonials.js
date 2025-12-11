@@ -80,19 +80,19 @@ export default function Testimonials() {
               className="bg-white rounded-2xl p-6 sm:p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300 h-auto min-h-[300px] sm:min-h-[350px] lg:min-h-[400px] flex flex-col"
             >
               {/* Testimonial Title */}
-              <h3 className="text-lg sm:text-xl lg:text-[1.375rem] font-semibold text-[#2B2B2B] mb-3 sm:mb-4 lg:mb-6 leading-tight flex-shrink-0">
+              <h3 className="text-lg sm:text-xl lg:text-[1.375rem] font-semibold text-[#2B2B2B] mb-3 sm:mb-4 lg:mb-6 leading-tight shrink-0">
                 {testimonial.title}
               </h3>
 
               {/* Testimonial Content */}
-              <p className="text-sm sm:text-base lg:text-lg font-normal text-gray-600 leading-relaxed mb-6 sm:mb-8 lg:mb-10 flex-grow">
+              <p className="text-sm sm:text-base lg:text-lg font-normal text-gray-600 leading-relaxed mb-6 sm:mb-8 lg:mb-10 grow">
                 {testimonial.content}
               </p>
 
               {/* Author Section */}
-              <div className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+              <div className="flex items-center gap-3 sm:gap-4 shrink-0">
                 {/* Company Logo */}
-                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
                   <Image
                     src={testimonial.logo || "/placeholder.svg"}
                     alt={testimonial.logoAlt}

@@ -40,7 +40,7 @@ export default function AAD() {
           </div>
 
           {/* Hero Image - Responsive */}
-          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[30rem] mx-auto mb-8 sm:mb-12 lg:mb-18">
+          <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-120 mx-auto mb-8 sm:mb-12 lg:mb-18">
             <Image
               src="/images/AAD.webp"
               alt="Android App Development - Developer working with mobile app design"
@@ -73,7 +73,7 @@ export default function AAD() {
           <div className="space-y-8 sm:space-y-12 lg:space-y-16">
             {/* Step 1: Requirement Analysis and Brainstorming */}
             <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto">
                   <Image
                     src="/images/AAD1.webp"
@@ -100,7 +100,7 @@ export default function AAD() {
 
             {/* Step 2: User Story Development */}
             <div className="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto">
                   <Image
                     src="/images/AAD2.webp"
@@ -127,7 +127,7 @@ export default function AAD() {
 
             {/* Step 3: UI/UX Design */}
             <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto">
                   <Image
                     src="/images/AAD3.webp"
@@ -154,7 +154,7 @@ export default function AAD() {
 
             {/* Step 4: Agile Development */}
             <div className="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto">
                   <Image
                     src="/images/AAD4.webp"
@@ -182,7 +182,7 @@ export default function AAD() {
 
             {/* Step 5: Robust Development */}
             <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto">
                   <Image
                     src="/images/AAD5.webp"
@@ -209,7 +209,7 @@ export default function AAD() {
 
             {/* Step 6: Rigorous Testing */}
             <div className="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto">
                   <Image
                     src="/images/AAD6.webp"
@@ -237,7 +237,7 @@ export default function AAD() {
 
             {/* Step 7: Deployment and Launch */}
             <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto">
                   <Image
                     src="/images/AAD7.webp"
@@ -264,7 +264,7 @@ export default function AAD() {
 
             {/* Step 8: Maintenance and Support */}
             <div className="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto">
                   <Image
                     src="/images/AAD8.webp"

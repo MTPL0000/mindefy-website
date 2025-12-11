@@ -22,7 +22,7 @@ const MachONE = () => {
       </section>
 
       {/* Main Image - Full Width */}
-      <div className="relative aspect-[2/1] w-full overflow-hidden mt-8 lg:mt-16">
+      <div className="relative aspect-2/1 w-full overflow-hidden mt-8 lg:mt-16">
         <Image
           src="/images/projects/mach-1.webp"
           alt="mach Screens"
@@ -45,7 +45,7 @@ const MachONE = () => {
           </span>
         </div>
 
-        <div className="relative aspect-[2/1] w-full max-w-5xl overflow-hidden px-4 sm:px-6 lg:px-8">
+        <div className="relative aspect-2/1 w-full max-w-5xl overflow-hidden px-4 sm:px-6 lg:px-8">
           <Image
             src="/images/projects/mach-2.png"
             alt="mach Screens"

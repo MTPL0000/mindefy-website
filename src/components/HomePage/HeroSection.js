@@ -215,7 +215,7 @@ export default function HeroSection() {
   return (
     <section
       data-hero-section
-      className="relative w-full overflow-hidden bg-gradient-to-r from-[#f3f4ff] via-[#FFFFFF] to-[#fff3f0] flex flex-col items-center justify-center text-center pt-20 pb-10 lg:pt-0 lg:pb-0 lg:min-h-screen"
+      className="relative w-full overflow-hidden bg-linear-to-r from-[#f3f4ff] via-[#FFFFFF] to-[#fff3f0] flex flex-col items-center justify-center text-center pt-20 pb-10 lg:pt-0 lg:pb-0 lg:min-h-screen"
     >
       {/* Heading Section */}
       <div className="px-4 max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 md:gap-10 lg:gap-15">
@@ -307,8 +307,8 @@ export default function HeroSection() {
         {/* Ticker Container */}
         <div className="relative w-full overflow-hidden">
           {/* Gradient overlays for smooth fade effect */}
-          <div className="absolute left-0 top-0 w-8 sm:w-16 h-full bg-gradient-to-r from-[#f3f4ff] to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 w-8 sm:w-16 h-full bg-gradient-to-l from-[#fff3f0] to-transparent z-10"></div>
+          <div className="absolute left-0 top-0 w-8 sm:w-16 h-full bg-linear-to-r from-[#f3f4ff] to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 w-8 sm:w-16 h-full bg-linear-to-l from-[#fff3f0] to-transparent z-10"></div>
 
           {/* Animated ticker */}
           <motion.div
@@ -333,7 +333,7 @@ export default function HeroSection() {
             {clientLogos.map((logo, index) => (
               <div
                 key={`first-${index}`}
-                className={`flex-shrink-0 mx-4 sm:mx-6 lg:mx-8 ${
+                className={`shrink-0 mx-4 sm:mx-6 lg:mx-8 ${
                   logo.alt === "MST-Mindefy"
                     ? "w-12 sm:w-16 lg:w-20"
                     : logo.alt === "Jego-Mindefy"
@@ -360,7 +360,7 @@ export default function HeroSection() {
             {clientLogos.map((logo, index) => (
               <div
                 key={`second-${index}`}
-                className={`flex-shrink-0 mx-4 sm:mx-6 lg:mx-8 ${
+                className={`shrink-0 mx-4 sm:mx-6 lg:mx-8 ${
                   logo.alt === "MST-Mindefy"
                     ? "w-12 sm:w-16 lg:w-20"
                     : logo.alt === "Jego-Mindefy"

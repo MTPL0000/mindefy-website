@@ -9,19 +9,19 @@ export default function CRMSolutions() {
       <section className="mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-5">
             CRM Solutions
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[50rem] mx-auto px-4">
+          <p className="text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-200 mx-auto px-4">
             <span className="font-normal">Unleash the </span>Power of
             Connections
             <span className="font-normal"> with </span>Mindefy's CRM Mastery
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-[61.375rem] font-normal mx-auto mb-[2.25rem] px-4 lg:text-justify text-left space-y-[1.25rem]">
+          <div className="w-full max-w-245.5 font-normal mx-auto mb-9 px-4 lg:text-justify text-left space-y-5">
             <p className="text-[1rem] text-[#444444] leading-relaxed">
               Mindefy , your trusted partner in the art of forging meaningful
               relationships with your customers. In today's dynamic business
@@ -32,7 +32,7 @@ export default function CRMSolutions() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] mx-auto mb-6">
+          <div className="relative w-full h-80 sm:h-100 lg:h-120.5 mx-auto mb-6">
             <Image
               src="/images/CRM.webp"
               alt="Web Application Development - Developer working with web applications"
@@ -46,16 +46,16 @@ export default function CRMSolutions() {
 
       {/* Our Expertise in Low-Code Platform Development Section */}
       <section className="mt-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[62.5rem] mx-auto">
+        <div className="max-w-250 mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[3.75rem]">
+          <div className="text-center mb-15">
             <h2 className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-semibold text-[#000000] mb-4">
               Our CRM Solutions<br></br> Where Connections Lead to Triumph
             </h2>
           </div>
 
           {/* Platform Cards */}
-          <div className="flex flex-col gap-[1.625rem] max-w-[62.75rem] mx-auto mb-[3.75rem]">
+          <div className="flex flex-col gap-6.5 max-w-251 mx-auto mb-15">
             {/* OutSystems */}
             <div
               className="flex flex-col lg:flex-row items-start gap-4 lg:gap-6.25 bg-white p-4 lg:px-1.5 lg:py-0 rounded-lg"
@@ -64,8 +64,8 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
-                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
+              <div className="shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-48 sm:w-56 lg:w-[16.18rem] my-2.5 h-40 sm:h-48 lg:h-55.5 relative">
                   <Image
                     src="/images/CRM1.webp"
                     alt="Performance"
@@ -101,8 +101,8 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
-                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
+              <div className="shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-48 sm:w-56 lg:w-[16.18rem] my-2.5 h-40 sm:h-48 lg:h-55.5 relative">
                   <Image
                     src="/images/CRM2.webp"
                     alt="Performance"
@@ -136,8 +136,8 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
-                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
+              <div className="shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-48 sm:w-56 lg:w-[16.18rem] my-2.5 h-40 sm:h-48 lg:h-55.5 relative">
                   <Image
                     src="/images/CRM3.webp"
                     alt="Performance"
@@ -172,8 +172,8 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
-                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
+              <div className="shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-48 sm:w-56 lg:w-[16.18rem] my-2.5 h-40 sm:h-48 lg:h-55.5 relative">
                   <Image
                     src="/images/CRM4.webp"
                     alt="Performance"
@@ -207,8 +207,8 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
-                <div className="w-[12rem] sm:w-[14rem] lg:w-[16.18rem] my-2.5 h-[10rem] sm:h-[12rem] lg:h-[13.875rem] relative">
+              <div className="shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
+                <div className="w-48 sm:w-56 lg:w-[16.18rem] my-2.5 h-40 sm:h-48 lg:h-55.5 relative">
                   <Image
                     src="/images/CRM5.webp"
                     alt="Performance"
@@ -239,16 +239,16 @@ export default function CRMSolutions() {
 
       {/* MEAN and MERN Advantages Section */}
       <section className="mt-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[55rem] mx-auto">
+        <div className="max-w-220 mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[2.5rem]">
+          <div className="text-center mb-10">
             <h2 className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-semibold text-[#000000]">
               The Advantages of Opting for Mindefy's CRM Services
             </h2>
           </div>
 
           {/* Advantages Content */}
-          <div className="flex flex-col gap-[2.5rem] max-w-[55rem] mx-auto">
+          <div className="flex flex-col gap-10 max-w-220 mx-auto">
             {/* Full JavaScript Stack */}
             <div
               className="flex flex-col lg:flex-row bg-[#F0EDF8] rounded-2xl p-4 lg:p-0"
@@ -257,11 +257,11 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-1 w-full lg:w-[27.75rem] my-2.5 lg:ml-6 order-2 lg:order-1">
+              <div className="flex-1 w-full lg:w-111 my-2.5 lg:ml-6 order-2 lg:order-1">
                 <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Maestros at Your Service
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Mindefy's CRM services provide you with access to a team of
                   CRM virtuosos. These experts have honed their skills in the
                   art of customer relationship management across diverse
@@ -272,9 +272,9 @@ export default function CRMSolutions() {
                   and loyalty.
                 </p>
               </div>
-              <div className="flex-shrink-0 order-1 lg:order-2">
+              <div className="shrink-0 order-1 lg:order-2">
                 <div className="flex items-center justify-center">
-                  <div className="w-[16rem] sm:w-[18rem] lg:w-[21.25rem] my-4 lg:my-[4.198rem] lg:mr-6 h-[12rem] sm:h-[13rem] lg:h-[13.60rem] relative">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-85 my-4 lg:my-[4.198rem] lg:mr-6 h-48 sm:h-52 lg:h-[13.60rem] relative">
                     <Image
                       src="/images/CRM7.webp"
                       alt="JavaScript Stack"
@@ -294,9 +294,9 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 order-1">
+              <div className="shrink-0 order-1">
                 <div className="flex items-center justify-center">
-                  <div className="w-[16rem] sm:w-[18rem] lg:w-[18.75rem] my-4 lg:my-[3rem] lg:ml-6 lg:mr-12 h-[12rem] sm:h-[15rem] lg:h-[17.63rem] relative">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-75 my-4 lg:my-12 lg:ml-6 lg:mr-12 h-48 sm:h-60 lg:h-[17.63rem] relative">
                     <Image
                       src="/images/CRM8.webp"
                       alt="Performance"
@@ -306,11 +306,11 @@ export default function CRMSolutions() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[27.75rem] my-4 lg:my-14 lg:ml-6 order-2">
+              <div className="flex-1 w-full lg:w-111 my-4 lg:my-14 lg:ml-6 order-2">
                 <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Innovation Unleashed
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Stay ahead of the curve with Mindefy's groundbreaking CRM
                   solutions, infused with the latest technology and
                   industry-leading best practices. We're committed to keeping
@@ -330,11 +330,11 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-1 w-full lg:w-[27.75rem] my-4 lg:my-14 lg:ml-6 order-2 lg:order-1">
+              <div className="flex-1 w-full lg:w-111 my-4 lg:my-14 lg:ml-6 order-2 lg:order-1">
                 <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Scale the Summit
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Mindefy's CRM solutions are flexible and scalable, designed to
                   grow with your business. Whether you're a budding startup or
                   an established global enterprise, our CRM systems evolve to
@@ -344,9 +344,9 @@ export default function CRMSolutions() {
                   customer relationships and growth as your business expands.
                 </p>
               </div>
-              <div className="flex-shrink-0 order-1 lg:order-2">
+              <div className="shrink-0 order-1 lg:order-2">
                 <div className="flex items-center justify-center">
-                  <div className="w-[16rem] sm:w-[18rem] lg:w-[18.75rem] my-4 lg:my-[3rem] lg:ml-6 lg:mr-12 h-[12rem] sm:h-[15rem] lg:h-[17.63rem] relative">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-75 my-4 lg:my-12 lg:ml-6 lg:mr-12 h-48 sm:h-60 lg:h-[17.63rem] relative">
                     <Image
                       src="/images/CRM6.webp"
                       alt="Rapid Development"
@@ -366,9 +366,9 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-shrink-0 order-1">
+              <div className="shrink-0 order-1">
                 <div className="flex items-center">
-                  <div className="w-[16rem] sm:w-[18rem] lg:w-[18.75rem] my-4 lg:my-[3rem] lg:ml-6 lg:mr-12 h-[12rem] sm:h-[15rem] lg:h-[17.63rem] relative">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-75 my-4 lg:my-12 lg:ml-6 lg:mr-12 h-48 sm:h-60 lg:h-[17.63rem] relative">
                     <Image
                       src="/images/CRM10.webp"
                       alt="Code Reusability"
@@ -378,11 +378,11 @@ export default function CRMSolutions() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[27.75rem] my-4 lg:my-14 lg:ml-6 order-2">
+              <div className="flex-1 w-full lg:w-111 my-4 lg:my-14 lg:ml-6 order-2">
                 <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Ironclad Security
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Mindefy places a paramount emphasis on the security of your
                   data. We employ state-of-the-art security measures to protect
                   your sensitive information. Your data's safety is our utmost
@@ -402,11 +402,11 @@ export default function CRMSolutions() {
                   "1px 1px 4px rgba(0, 0, 0, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
-              <div className="flex-1 w-full lg:w-[27.75rem] my-4 lg:my-[4.125rem] lg:ml-6 order-2 lg:order-1">
+              <div className="flex-1 w-full lg:w-111 my-4 lg:my-16.5 lg:ml-6 order-2 lg:order-1">
                 <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Results That Shine
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-[26rem] text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Join the ranks of delighted clients who have experienced
                   tangible outcomes, from soaring customer satisfaction to
                   turbocharged sales, all thanks to Mindefy's CRM brilliance.
@@ -415,9 +415,9 @@ export default function CRMSolutions() {
                   competitive edge and quantifiable growth.
                 </p>
               </div>
-              <div className="flex-shrink-0 order-1 lg:order-2">
+              <div className="shrink-0 order-1 lg:order-2">
                 <div className="flex items-center justify-center">
-                  <div className="w-[16rem] sm:w-[18rem] lg:w-[21.75rem] my-4 lg:my-[3rem] lg:ml-6 lg:mr-12 h-[12rem] sm:h-[15rem] lg:h-[21.75rem] relative">
+                  <div className="w-[16rem] sm:w-[18rem] lg:w-87 my-4 lg:my-12 lg:ml-6 lg:mr-12 h-48 sm:h-60 lg:h-87 relative">
                     <Image
                       src="/images/CRM9.webp"
                       alt="Flexibility"

@@ -72,7 +72,7 @@ export function WhyChooseSection({ data }) {
           <div>
             {/* Title */}
             <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">
-              <span className="bg-gradient-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#434AE4] to-[#5441B7] to-[#E86343] font-poppins bg-clip-text text-transparent">
                 {data.title}
               </span>
             </h2>
@@ -87,7 +87,7 @@ export function WhyChooseSection({ data }) {
             <ul className="space-y-2">
               {data.points.map((point, index) => (
                 <li key={index} className="flex items-center gap-3">
-                  <span className="flex-shrink-0 w-2 h-2 bg-black rounded-full"></span>
+                  <span className="shrink-0 w-2 h-2 bg-black rounded-full"></span>
                   <p className="text-base md:text-lg text-[#444444] font-medium leading-relaxed font-poppins">
                     {point.text}
                   </p>

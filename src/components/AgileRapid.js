@@ -9,19 +9,19 @@ export default function AgileRapid() {
       <section className="mt-28 mx-auto px-4 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-[1.25rem]">
+          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-5">
             Agile and Rapid Application Development
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[45rem] lg:max-w-[50rem] mx-auto px-4 lg:px-0">
+          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-180 lg:max-w-200 mx-auto px-4 lg:px-0">
             <span className="font-normal">Unleashing </span> the Power of Agile
             <span className="font-normal"> and </span>
             <span className="font-medium">Rapid Application Development</span>
           </p>
 
           {/* Description Paragraphs */}
-          <div className="w-full max-w-[90%] sm:max-w-[45rem] lg:w-[60.25rem] font-normal mx-auto mb-[2.25rem] text-justify space-y-[1.25rem] px-4 lg:px-0">
+          <div className="w-full max-w-[90%] sm:max-w-180 lg:w-241 font-normal mx-auto mb-9 text-justify space-y-5 px-4 lg:px-0">
             <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed">
               You can rely on Mindefy's unique expertise in RAD Models and Agile
               Development to deliver Unmatched Results.
@@ -43,7 +43,7 @@ export default function AgileRapid() {
           </div>
 
           {/* Hero Image - Using placeholder until you add your image */}
-          <div className="relative w-full h-[20rem] sm:h-[25rem] lg:h-[30.125rem] mx-auto mb-[4.5rem] px-4 lg:px-0">
+          <div className="relative w-full h-80 sm:h-100 lg:h-120.5 mx-auto mb-18 px-4 lg:px-0">
             <Image
               src="/images/ARD.webp"
               alt="Hybrid App Development - Developer working with mobile app design"
@@ -55,14 +55,14 @@ export default function AgileRapid() {
         </div>
       </section>
 
-      <div className="w-full max-w-[90%] sm:max-w-[45rem] lg:w-[60.25rem] mx-auto px-4 lg:px-0">
+      <div className="w-full max-w-[90%] sm:max-w-180 lg:w-241 mx-auto px-4 lg:px-0">
         <div className="">
           <p className="font-semibold text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] mb-5">
             Agile Development <br className="hidden lg:block" />
             <span className="lg:hidden"> </span>Accelerating Innovation and
             Collaboration
           </p>
-          <p className="font-normal text-[0.875rem] sm:text-[1rem] mb-[3.75rem] text-[#444444] text-justify">
+          <p className="font-normal text-[0.875rem] sm:text-[1rem] mb-15 text-[#444444] text-justify">
             Our agile development methodology emphasizes iterative and
             collaborative project management to deliver high-quality software
             faster. We facilitate adaptability and responsiveness to changing
@@ -77,13 +77,13 @@ export default function AgileRapid() {
       </div>
 
       <section className="mb-20 px-4 lg:px-0">
-        <div className="max-w-[90%] sm:max-w-[50rem] lg:max-w-[61.75rem] mx-auto">
+        <div className="max-w-[90%] sm:max-w-200 lg:max-w-247 mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[2.5rem]">
+          <div className="text-center mb-10">
             <p className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-4">
               The Agile Development Journey at Mindefy
             </p>
-            <p className="text-[0.875rem] sm:text-[1rem] lg:text-[1.125rem] mx-auto text-justify w-full max-w-[90%] sm:max-w-[40rem] lg:w-[51rem] font-normal text-[#444444] mb-11">
+            <p className="text-[0.875rem] sm:text-[1rem] lg:text-[1.125rem] mx-auto text-justify w-full max-w-[90%] sm:max-w-160 lg:w-204 font-normal text-[#444444] mb-11">
               The Agile development process is a collaborative and iterative
               approach to software development that focuses on delivering value
               to customers through continuous improvement and adaptive planning.
@@ -91,17 +91,17 @@ export default function AgileRapid() {
           </div>
 
           {/* Advantages Content */}
-          <div className="flex flex-col gap-[2.75rem] max-w-full lg:max-w-[61.75rem] mx-auto">
+          <div className="flex flex-col gap-11 max-w-full lg:max-w-247 mx-auto">
             {/* Project Initiation */}
-            <div className="flex items-center w-full lg:w-[61.75rem] mx-auto h-[4rem] lg:h-[5.5rem] bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[11.43rem] lg:ml-[24.875rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+            <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
+              <p className="w-full lg:w-[11.43rem] lg:ml-99.5 text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
                 Project Initiation
               </p>
             </div>
             <div className="flex flex-col lg:flex-row bg-[#FFFFFF] gap-4 lg:gap-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD1.webp"
                       alt="JavaScript Stack"
@@ -121,7 +121,7 @@ export default function AgileRapid() {
             </div>
 
             {/* Agile Framework Selection */}
-            <div className="flex items-center w-full lg:w-[61.75rem] mx-auto h-[4rem] lg:h-[5.5rem] bg-[#D0DEF8] px-4 lg:px-0">
+            <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
               <p className="w-full lg:w-[19.68rem] lg:ml-[21.31rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
                 Agile Framework Selection
               </p>
@@ -135,9 +135,9 @@ export default function AgileRapid() {
                   and principles to guide the development process.
                 </p>
               </div>
-              <div className="flex-shrink-0 order-1 lg:order-2 flex justify-center lg:justify-start">
+              <div className="shrink-0 order-1 lg:order-2 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD4.webp"
                       alt="JavaScript Stack"
@@ -150,15 +150,15 @@ export default function AgileRapid() {
             </div>
 
             {/* Product Backlog Creation */}
-            <div className="flex items-center w-full lg:w-[61.75rem] mx-auto h-[4rem] lg:h-[5.5rem] bg-[#D0DEF8] px-4 lg:px-0">
+            <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
               <p className="w-full lg:w-[17.87rem] lg:ml-[22.18rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
                 Product Backlog Creation
               </p>
             </div>
             <div className="flex flex-col lg:flex-row bg-[#FFFFFF] gap-4 lg:gap-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD2.webp"
                       alt="JavaScript Stack"
@@ -179,7 +179,7 @@ export default function AgileRapid() {
             </div>
 
             {/* Sprint planning */}
-            <div className="flex items-center w-full lg:w-[61.75rem] mx-auto h-[4rem] lg:h-[5.5rem] bg-[#D0DEF8] px-4 lg:px-0">
+            <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
               <p className="w-full lg:w-[11.43rem] lg:ml-[25.81rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
                 Sprint planning
               </p>
@@ -194,9 +194,9 @@ export default function AgileRapid() {
                   each task.
                 </p>
               </div>
-              <div className="flex-shrink-0 order-1 lg:order-2 flex justify-center lg:justify-start">
+              <div className="shrink-0 order-1 lg:order-2 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/ARD1.webp"
                       alt="JavaScript Stack"
@@ -209,15 +209,15 @@ export default function AgileRapid() {
             </div>
 
             {/* Sprint Execution */}
-            <div className="flex items-center w-full lg:w-[61.75rem] mx-auto h-[4rem] lg:h-[5.5rem] bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[11.43rem] lg:ml-[24.875rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+            <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
+              <p className="w-full lg:w-[11.43rem] lg:ml-99.5 text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
                 Sprint Execution
               </p>
             </div>
             <div className="flex flex-col lg:flex-row bg-[#FFFFFF] gap-4 lg:gap-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD7.webp"
                       alt="JavaScript Stack"
@@ -238,8 +238,8 @@ export default function AgileRapid() {
             </div>
 
             {/* Continuous Testing and Integration */}
-            <div className="flex items-center w-full lg:w-[61.75rem] mx-auto h-[4rem] lg:h-[5.5rem] bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[26rem] lg:ml-[18.815rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+            <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
+              <p className="w-full lg:w-104 lg:ml-[18.815rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
                 Continuous Testing and Integration
               </p>
             </div>
@@ -253,9 +253,9 @@ export default function AgileRapid() {
                   integrated seamlessly.
                 </p>
               </div>
-              <div className="flex-shrink-0 order-1 lg:order-2 flex justify-center lg:justify-start">
+              <div className="shrink-0 order-1 lg:order-2 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD6.webp"
                       alt="JavaScript Stack"
@@ -268,15 +268,15 @@ export default function AgileRapid() {
             </div>
 
             {/* Sprint Review and Retrospective */}
-            <div className="flex items-center w-full lg:w-[61.75rem] mx-auto h-[4rem] lg:h-[5.5rem] bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[24.625rem] lg:ml-[19.5rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+            <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
+              <p className="w-full lg:w-98.5 lg:ml-78 text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
                 Sprint Review and Retrospective
               </p>
             </div>
             <div className="flex flex-col lg:flex-row bg-[#FFFFFF] gap-4 lg:gap-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/ARD2.webp"
                       alt="JavaScript Stack"
@@ -298,15 +298,15 @@ export default function AgileRapid() {
             </div>
 
             {/* Repeat and Iterate */}
-            <div className="flex items-center w-full lg:w-[61.75rem] mx-auto h-[4rem] lg:h-[5.5rem] bg-[#D0DEF8] px-4 lg:px-0">
+            <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
               <p className="w-full lg:w-[14.18rem] lg:ml-[24.685rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
                 Repeat and Iterate
               </p>
             </div>
             <div className="flex flex-col lg:flex-row bg-[#FFFFFF] gap-4 lg:gap-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD4.webp"
                       alt="JavaScript Stack"
@@ -332,7 +332,7 @@ export default function AgileRapid() {
 
       {/* Agile Benefits Section using Flex */}
       <section className="px-4 lg:px-0">
-        <div className="max-w-[90%] lg:max-w-[74.125rem] mx-auto">
+        <div className="max-w-[90%] lg:max-w-296.5 mx-auto">
           <h2 className="text-center text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-10">
             Maximize Agile Development Benefits at Mindefy
           </h2>
@@ -366,7 +366,7 @@ export default function AgileRapid() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[0.75rem] shadow p-6 w-full max-w-[20rem] lg:w-[23.875rem] flex flex-col items-center text-center"
+                className="bg-white rounded-xl shadow p-6 w-full max-w-[20rem] lg:w-95.5 flex flex-col items-center text-center"
                 style={{
                   boxShadow:
                     "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
@@ -375,7 +375,7 @@ export default function AgileRapid() {
                 <h3 className="font-semibold text-[1rem] lg:text-[1.25rem] mb-6">
                   {item.title}
                 </h3>
-                <div className="relative w-[10rem] h-[9rem] lg:w-[13.875rem] lg:h-[12.375rem] mb-4">
+                <div className="relative w-40 h-36 lg:w-55.5 lg:h-49.5 mb-4">
                   <Image
                     src={item.img}
                     alt={item.title}
@@ -394,10 +394,10 @@ export default function AgileRapid() {
       </section>
 
       <section className="my-20 px-4 lg:px-0">
-        <div className="max-w-[90%] lg:max-w-[62.75rem] mx-auto">
+        <div className="max-w-[90%] lg:max-w-251 mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-[3rem] mx-auto w-full lg:w-[60.25rem]">
-            <p className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] mx-auto lg:mx-[12.875rem] font-semibold text-[#000000] w-full lg:w-[34.5rem] mb-5">
+          <div className="text-center mb-12 mx-auto w-full lg:w-241">
+            <p className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] mx-auto lg:mx-51.5 font-semibold text-[#000000] w-full lg:w-138 mb-5">
               Rapid Application Development (RAD) Streamlining Software
               Development
             </p>
@@ -414,12 +414,12 @@ export default function AgileRapid() {
           </div>
 
           {/* Advantages Content */}
-          <div className="flex flex-col gap-2 max-w-full lg:max-w-[62.75rem] mx-auto">
+          <div className="flex flex-col gap-2 max-w-full lg:max-w-251 mx-auto">
             {/* Requirements Gathering */}
             <div className="flex flex-col lg:flex-row bg-[#FFF5F5] rounded-2xl gap-4 lg:gap-36 p-4 lg:p-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/RAD1.svg"
                       alt="JavaScript Stack"
@@ -429,11 +429,11 @@ export default function AgileRapid() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[24.75rem] lg:my-[2.75rem] lg:mr-[5.31rem]">
+              <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
                 <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Requirements Gathering
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-[23rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   We work closely with you to understand your business goals,
                   functional needs and target audience. By gathering
                   comprehensive requirements, we ensure you have a clear
@@ -444,9 +444,9 @@ export default function AgileRapid() {
 
             {/* Rapid Prototyping */}
             <div className="flex flex-col lg:flex-row rounded-2xl gap-4 lg:gap-36 p-4 lg:p-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD2.webp"
                       alt="JavaScript Stack"
@@ -456,11 +456,11 @@ export default function AgileRapid() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[24.75rem] lg:my-[2.75rem] lg:mr-[5.31rem]">
+              <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
                 <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Rapid Prototyping
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-[23rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   We rapidly develop functional prototypes based on the initial
                   requirements. These prototypes provide a visual representation
                   of the application's interface and functionality. Through
@@ -472,9 +472,9 @@ export default function AgileRapid() {
 
             {/* Iterative Development */}
             <div className="flex flex-col lg:flex-row bg-[#FFF5F5] rounded-2xl gap-4 lg:gap-36 p-4 lg:p-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/RAD2.svg"
                       alt="JavaScript Stack"
@@ -484,11 +484,11 @@ export default function AgileRapid() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[24.75rem] lg:my-[2.75rem] lg:mr-[5.31rem]">
+              <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
                 <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Iterative Development
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-[23rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   The RAD model process involves breaking down a project into
                   small iterations or steps. During each iteration, we develop
                   and test specific features. This iterative approach allows for
@@ -499,9 +499,9 @@ export default function AgileRapid() {
 
             {/* Continuous Feedback and Collaboration */}
             <div className="flex flex-col lg:flex-row rounded-2xl gap-4 lg:gap-36 p-4 lg:p-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center lg:mt-10 justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/RAD5.svg"
                       alt="JavaScript Stack"
@@ -511,11 +511,11 @@ export default function AgileRapid() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[24.75rem] lg:my-[2.75rem] lg:mr-[5.31rem]">
+              <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
                 <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Continuous Feedback and Collaboration
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-[23rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   Regular communication and collaboration is essential to the
                   RAD model process. We engage stakeholders and end users
                   throughout the development cycle, collect their feedback and
@@ -526,9 +526,9 @@ export default function AgileRapid() {
 
             {/* Rapid Testing and Quality Assurance */}
             <div className="flex flex-col lg:flex-row rounded-2xl gap-4 lg:gap-36 p-4 lg:p-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD6.webp"
                       alt="JavaScript Stack"
@@ -538,11 +538,11 @@ export default function AgileRapid() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[24.75rem] lg:my-[2.75rem] lg:mr-[5.31rem]">
+              <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
                 <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Rapid Testing and Quality Assurance
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-[23rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   We prioritize testing and quality assurance in all phases of
                   the RAD model process. Through constant testing and timely
                   problem solving, we ensure that the application is stable and
@@ -553,9 +553,9 @@ export default function AgileRapid() {
 
             {/* Iteration Review and Refinement */}
             <div className="flex flex-col lg:flex-row rounded-2xl gap-4 lg:gap-36 p-4 lg:p-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD4.webp"
                       alt="JavaScript Stack"
@@ -565,11 +565,11 @@ export default function AgileRapid() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[24.75rem] lg:my-[2.75rem] lg:mr-[5.31rem]">
+              <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
                 <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Iteration Review and Refinement
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-[23rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   At the end of each iteration, we review the features developed
                   with stakeholders and end users. This feedback helps us
                   improve and improve the application to ensure that it meets
@@ -580,9 +580,9 @@ export default function AgileRapid() {
 
             {/* Incremental Deployment */}
             <div className="flex flex-col lg:flex-row rounded-2xl gap-4 lg:gap-36 p-4 lg:p-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/AAD7.webp"
                       alt="JavaScript Stack"
@@ -592,11 +592,11 @@ export default function AgileRapid() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[24.75rem] lg:my-[2.75rem] lg:mr-[5.31rem]">
+              <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
                 <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Incremental Deployment
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-[23rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   As each iteration is completed and reviewed, we gradually
                   introduce features so that you can begin to realize the
                   benefits of your application as you continue to evolve.
@@ -606,9 +606,9 @@ export default function AgileRapid() {
 
             {/* Continuous Enhancement */}
             <div className="flex flex-col lg:flex-row rounded-2xl gap-4 lg:gap-36 p-4 lg:p-0">
-              <div className="flex-shrink-0 flex justify-center lg:justify-start">
+              <div className="shrink-0 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center">
-                  <div className="w-[18rem] h-[12rem] lg:w-[23.18rem] lg:h-[16.56rem] relative">
+                  <div className="w-[18rem] h-48 lg:w-[23.18rem] lg:h-[16.56rem] relative">
                     <Image
                       src="/images/IOS1.webp"
                       alt="JavaScript Stack"
@@ -618,11 +618,11 @@ export default function AgileRapid() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full lg:w-[24.75rem] lg:my-[2.75rem] lg:mr-[5.31rem]">
+              <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
                 <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Continuous Enhancement
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-[23rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   The RAD model process is a continuous cycle of development,
                   feedback and refinement. We are constantly iterating and
                   improving the application based on user feedback and evolving
@@ -636,7 +636,7 @@ export default function AgileRapid() {
 
       {/* RAD Benefits Section using Flex */}
       <section className="px-4 lg:px-0">
-        <div className="max-w-[90%] lg:max-w-[72.5rem] mx-auto">
+        <div className="max-w-[90%] lg:max-w-290 mx-auto">
           <h2 className="text-center text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-15">
             Exploring the Key Benefits of the
             <br className="hidden lg:block" />
@@ -667,7 +667,7 @@ export default function AgileRapid() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[0.75rem] p-6 w-full max-w-[20rem] lg:w-[23.125rem] flex flex-col items-center text-center"
+                className="bg-white rounded-xl p-6 w-full max-w-[20rem] lg:w-92.5 flex flex-col items-center text-center"
                 style={{
                   boxShadow:
                     "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
@@ -676,7 +676,7 @@ export default function AgileRapid() {
                 <h3 className="font-semibold text-[1rem] lg:text-[1.25rem] mb-6">
                   {item.title}
                 </h3>
-                <div className="relative w-[10rem] h-[9rem] lg:w-[13.875rem] lg:h-[12.375rem] mb-6">
+                <div className="relative w-40 h-36 lg:w-55.5 lg:h-49.5 mb-6">
                   <Image
                     src={item.img}
                     alt={item.title}

@@ -12,9 +12,9 @@ export default function Footer() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 xl:px-[8.83rem] h-full flex flex-col justify-between pt-8 sm:pt-12 lg:pt-[3.94rem]">
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 sm:gap-12 lg:gap-[6rem] flex-1 pb-5">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 sm:gap-12 lg:gap-24 flex-1 pb-5">
           {/* Logo Section */}
-          <div className="flex-shrink-0 w-full lg:w-auto">
+          <div className="shrink-0 w-full lg:w-auto">
             <div className="flex flex-col gap-4 sm:gap-5 items-start">
               {/* Main Mindefy Logo */}
               <div className="relative w-40 sm:w-48 lg:w-[15.63rem] h-10 sm:h-12 lg:h-[4.02rem]">

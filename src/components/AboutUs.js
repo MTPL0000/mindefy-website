@@ -71,7 +71,7 @@ export default function AboutUsPage() {
           </div>
 
           {/* Responsive image container */}
-          <div className="m-auto relative aspect-[2/1] w-full max-w-5xl overflow-hidden mt-6 sm:mt-8 lg:mt-10">
+          <div className="m-auto relative aspect-2/1 w-full max-w-5xl overflow-hidden mt-6 sm:mt-8 lg:mt-10">
             <Image
               src="/images/abt-1.png"
               alt="soli-stack"
@@ -119,8 +119,8 @@ export default function AboutUsPage() {
                     key={idx}
                     className="flex flex-col items-center gap-3 sm:gap-4 group"
                   >
-                    <div className="relative aspect-[1/1] w-[4rem] sm:w-[4.5rem] rounded-full border border-[#e2e2e2] flex items-center justify-center transition-all duration-300 group-hover:border-[#8ed1fc] group-hover:bg-[#8ed1fc] overflow-hidden">
-                      <div className="m-auto relative aspect-[1/1] w-[2rem] sm:w-[2.5rem]">
+                    <div className="relative aspect-square w-16 sm:w-18 rounded-full border border-[#e2e2e2] flex items-center justify-center transition-all duration-300 group-hover:border-[#8ed1fc] group-hover:bg-[#8ed1fc] overflow-hidden">
+                      <div className="m-auto relative aspect-square w-8 sm:w-10">
                         <Image
                           src={value.icon}
                           alt="icon"

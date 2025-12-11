@@ -254,7 +254,7 @@ export default function YourHour() {
 
         {/* Right Content - Device Mockups */}
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end order-1 lg:order-2">
-          <div className="relative max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full aspect-[15/16]">
+          <div className="relative max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full aspect-15/16">
             <Image
               src="/images/smartphone.webp"
               alt="YourHour application shown on mobile devices"
