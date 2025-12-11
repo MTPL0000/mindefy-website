@@ -1567,7 +1567,7 @@ export default function JEGO() {
       </div>
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-10 px-2 sm:px-4">
         {/* ────────────── Block 1 ────────────── */}
-        <div className="flex flex-col lg:flex-row md:flex-row lg:gap-15.5 md:gap-0 gap-8 items-center">
+        <div className="flex flex-col-reverse lg:flex-row lg:gap-15.5 md:gap-0 gap-8 items-center">
           {/* phone mock‑up */}
           <div className="shrink-0 w-full max-w-[620px] mx-auto">
             <Image
@@ -1588,7 +1588,7 @@ export default function JEGO() {
           </div>
         </div>
         {/* ────────────── Block 2 (reversed on md+) ────────────── */}
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-15.5">
+        <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-15.5">
           <div className="w-full max-w-xl mt-6 md:mt-0 md:ml-8 lg:ml-[8.437rem] px-5">
             <h3 className="text-[#F7DE66] text-3xl font-bold mb-7">
               Jego Home

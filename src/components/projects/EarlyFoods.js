@@ -745,22 +745,12 @@ export default function EarlyFoods() {
         </div>
 
         <div className="w-full mx-auto px-4 sm:px-6 mt-4">
-          <div
-            style={{
-              background: "#E9F6F6",
-              width: "100%",
-              height: "100%",
-              borderBottomLeftRadius: "50% 100%",
-              borderBottomRightRadius: "50% 100%",
-              boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
-            }}
-            className="relative w-full overflow-hidden bg-[#E9F6F7]"
-          >
+          <div className="relative w-full overflow-hidden mb-12 bg-[#E9F6F6] md:shadow-[0_35px_44px_0_rgba(30,66,66,0.05)] md:border-b md:border-[#E9F6F6] md:rounded-bl-[50%_100%] md:rounded-br-[50%_100%]">
             <div className="relative flex flex-col gap-2 items-center pt-12 sm:pt-16 pb-16 sm:pb-24">
               <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold">
                 User Persona
               </h2>
-              <p className="text-[#377D7D] text-sm sm:text-base font-normal text-center w-full max-w-188 px-4">
+              <p className="text-[#377D7D] text-sm sm:text-base font-normal text-center w-full md:w-150 lg:w-188 px-4">
                 It embodies the characteristics, goals, motivations, and
                 behaviors of real users, serving as a reference point for design
                 and decision-making processes in UX/UI development
@@ -1286,22 +1276,12 @@ export default function EarlyFoods() {
         <div className="w-full mx-auto mt-12 sm:mt-16 lg:mt-20 bg-[#E9F6F6]">
           <div className="mx-auto py-8 sm:py-10 lg:py-12">
             {/* Header Section */}
-            <div
-              style={{
-                background: "#E9F6F6",
-                width: "100%",
-                height: "100%",
-                borderBottomLeftRadius: "50% 100%",
-                borderBottomRightRadius: "50% 100%",
-                boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
-              }}
-              className="relative w-full overflow-hidden bg-[#E9F6F6] mb-8 sm:mb-10 lg:mb-12"
-            >
+            <div className="relative w-full overflow-hidden mb-12 bg-[#E9F6F6] md:shadow-[0_35px_44px_0_rgba(30,66,66,0.05)] md:border-b md:border-[#E9F6F6] md:rounded-bl-[50%_100%] md:rounded-br-[50%_100%]">
               <div className="relative flex flex-col gap-2 items-center pt-12 sm:pt-14 lg:pt-16 pb-16 sm:pb-20 lg:pb-24 px-4 sm:px-6">
                 <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center">
                   Competitor Analysis
                 </h2>
-                <p className="text-[#377D7D] leading-relaxed text-sm sm:text-base font-normal text-center w-full max-w-188 px-4">
+                <p className="text-[#377D7D] leading-relaxed text-sm sm:text-base font-normal text-center w-full md:w-150 lg:w-188 px-4">
                   To evaluate the features, usability, and user experience of
                   competitors' products or services. This analysis helps
                   identify strengths, weaknesses, opportunities, and threats in
@@ -1601,24 +1581,14 @@ export default function EarlyFoods() {
         </div>
         {/* Market Research Section */}
         <div className="w-full mx-auto px-6 bg-[#E9F6F6] relative overflow-hidden">
-          <div className=" mx-auto pt-16">
+          <div className="mx-auto pt-16">
             {/* Header Section */}
-            <div
-              style={{
-                background: "#E9F6F6",
-                width: "100%",
-                height: "100%",
-                borderBottomLeftRadius: "50% 100%",
-                borderBottomRightRadius: "50% 100%",
-                boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
-              }}
-              className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
-            >
-              <div className="relative flex flex-col gap-2 items-center pt- pb-24">
+            <div className="relative w-full overflow-hidden mb-12 bg-[#E9F6F6] md:shadow-[0_35px_44px_0_rgba(30,66,66,0.05)] md:border-b md:border-[#E9F6F6] md:rounded-bl-[50%_100%] md:rounded-br-[50%_100%]">
+              <div className="relative flex flex-col gap-2 items-center pb-24">
                 <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                   Market Research
                 </h2>
-                <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-188">
+                <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full md:w-150 lg:w-188">
                   Market research involves gathering, analyzing, and
                   interpreting information about a market, including a product's
                   or service's nature, characteristics, and potential customer
@@ -1659,22 +1629,12 @@ export default function EarlyFoods() {
         </div>
         <div className="w-full mx-auto mb-30 px-6 bg-[#E9F6F6] relative overflow-hidden">
           {/* Header */}
-          <div
-            style={{
-              background: "#E9F6F6",
-              width: "100%",
-              height: "100%",
-              borderBottomLeftRadius: "50% 100%",
-              borderBottomRightRadius: "50% 100%",
-              boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
-            }}
-            className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
-          >
+          <div className="relative w-full overflow-hidden mb-12 bg-[#E9F6F6] md:shadow-[0_35px_44px_0_rgba(30,66,66,0.05)] md:border-b md:border-[#E9F6F6] md:rounded-bl-[50%_100%] md:rounded-br-[50%_100%]">
             <div className="relative flex flex-col gap-2 items-center pt- pb-24">
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                 The Problems
               </h2>
-              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-188">
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full md:w-150 lg:w-188">
                 After the extensive research, surveys, and interviews I was able
                 to find out these problems in the current user experience and
                 visual elements, below mentioned are only the high priority
@@ -1711,22 +1671,12 @@ export default function EarlyFoods() {
         </div>
         <div className="w-full mx-auto  mb-30 px-6 bg-[#E9F6F6] relative overflow-hidden">
           {/* Header */}
-          <div
-            style={{
-              background: "#E9F6F6",
-              width: "100%",
-              height: "100%",
-              borderBottomLeftRadius: "50% 100%",
-              borderBottomRightRadius: "50% 100%",
-              boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
-            }}
-            className="relative w-full overflow-hidden bg-[#E9F6F6] mb-12"
-          >
+          <div className="relative w-full overflow-hidden mb-12 bg-[#E9F6F6] md:shadow-[0_35px_44px_0_rgba(30,66,66,0.05)] md:border-b md:border-[#E9F6F6] md:rounded-bl-[50%_100%] md:rounded-br-[50%_100%]">
             <div className="relative flex flex-col gap-2 items-center pt- pb-24">
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                 The Solutions
               </h2>
-              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-188">
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full md:w-150 lg:w-188">
                 Based on the problems we found out below are the solutions that
                 we proposed client in order to enhance the overall User
                 experience and enhance the joy of shopping from the Early Foods.
@@ -2021,22 +1971,12 @@ export default function EarlyFoods() {
           </div>
         </div>
         <div className="w-full mx-auto mt-20  px-6 bg-[#E8F4F4] relative overflow-hidden">
-          <div
-            style={{
-              background: "#E9F6F6",
-              width: "100%",
-              height: "100%",
-              borderBottomLeftRadius: "50% 100%",
-              borderBottomRightRadius: "50% 100%",
-              boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
-            }}
-            className="relative w-full overflow-hidden bg-[#E9F6F6] "
-          >
+          <div className="relative w-full overflow-hidden mb-12 bg-[#E9F6F6] md:shadow-[0_35px_44px_0_rgba(30,66,66,0.05)] md:border-b md:border-[#E9F6F6] md:rounded-bl-[50%_100%] md:rounded-br-[50%_100%]">
             <div className="relative flex flex-col gap-2 items-center  pb-24">
               <h2 className="text-[#52B7B7] text-5xl font-extrabold">
                 Information Architecture
               </h2>
-              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full lg:w-187.5">
+              <p className="text-[#377D7D] leading-relaxed text-base font-normal text-center w-full md:w-150 lg:w-188">
                 People often use the word “Information Architecture” to mean the
                 menus on website or apps, but thats not really correct. while
                 menus are a part of IA. they’re really only one part of it.
@@ -2057,24 +1997,13 @@ export default function EarlyFoods() {
             />
           </div>
         </div>
-        <div className="w-full mx-auto  px-6 bg-[#E9F6F6] relative overflow-hidden">
-          <div
-            style={{
-              background: "#E9F6F6",
-              width: "100%",
-              height: "100%",
-              borderBottomLeftRadius: "50% 100%",
-              borderBottomRightRadius: "50% 100%",
-              boxShadow: "0 35px 44px 0 rgba(30, 66, 66, 0.05)",
-              top: "10rem",
-            }}
-            className="relative w-full overflow-hidden bg-[#E9F6F6] "
-          >
+        <div className="w-full mx-auto px-6 bg-[#E9F6F6] relative overflow-hidden">
+          <div className="relative top-56 w-full overflow-hidden mb-12 bg-[#E9F6F6] md:shadow-[0_35px_44px_0_rgba(30,66,66,0.05)] md:border-b md:border-[#E9F6F6] md:rounded-bl-[50%_100%] md:rounded-br-[50%_100%]">
             <div className="relative z-12 flex flex-col gap-2 items-center pb-16 sm:pb-24">
               <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold">
                 UI Design
               </h2>
-              <p className="text-[#377D7D] leading-relaxed text-sm sm:text-base font-normal text-center w-full max-w-188 px-4">
+              <p className="text-[#377D7D] leading-relaxed text-sm sm:text-base font-normal text-center w-full md:w-150 lg:w-188 px-4">
                 Every components layout structures, and color combinations are
                 backed by strong human psychology of perceiving experiences
                 quoted by sir Don Norman in the book - The design of everyday
