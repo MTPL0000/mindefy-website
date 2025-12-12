@@ -13,6 +13,7 @@ import {
   JEGOContent,
   memolectContent,
 } from "@/config/contents";
+import FAQSection from "@/components/HomePage/FAQs";
 
 export const metadata = {
   title:
@@ -48,6 +49,7 @@ export default function HomePage() {
       <ProductShowcase imagePosition="right" data={memolectContent} />
       <Testimonials />
       <Blog />
+      <FAQSection />
     </>
   );
 }

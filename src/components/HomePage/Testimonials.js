@@ -8,7 +8,7 @@ const testimonials = [
     id: 1,
     title: "Trusted Java Development Partner for a Decade",
     content:
-      "For the past 10 years, Mindefy Technologies has been our trusted Java development partner, providing a dedicated offshore team from India. Their...",
+      "For the past 10 years, Mindefy Technologies has been our trusted Java development partner, providing a dedicated offshore team from India. Their expertise, transparency, and commitment to quality have helped us scale efficiently. The outsourcing model has optimized costs while ensuring innovation and agility. Highly recommended!",
     author: "Mr. Bunrak Saraggananda",
     position: "Chairman & CEO at Magic Software, Thailand",
     logo: "/images/mst-icon.svg",
@@ -18,7 +18,7 @@ const testimonials = [
     id: 2,
     title: "JEGO Platform Transformation & Innovation",
     content:
-      "Over the past three years, the transformation of the JEGO platform has been incredible. From revamping mobile apps and the admin web to migrating...",
+      "Over the past three years, the transformation of the JEGO platform has been incredible. From revamping mobile apps and the admin web to migrating the entire cloud architecture, the expertise and dedication of the team have been outstanding. Their ability to deliver scalable, high-performance solutions has significantly enhanced our platform’s efficiency and user experience. A truly reliable and innovative tech partner!",
     author: "Mr. Gaurav Gupta",
     position: "Poem Media Techinvest LLC, Dubai",
     logo: "/images/jego-icon.svg",
@@ -28,7 +28,7 @@ const testimonials = [
     id: 3,
     title: "Exceptional Website Development for Beloved Beauty Salon",
     content:
-      "Mindefy Technologies has been an outstanding partner in developing the website and mobile app for Beloved Beauty Salon. Their team understood...",
+      "Mindefy Technologies has been an outstanding partner in developing the website and mobile app for Beloved Beauty Salon. Their team understood our vision and delivered a seamless, user-friendly platform that has enhanced our customer experience. Their professionalism, technical expertise, and dedication made the entire process smooth and efficient. I highly recommend them for anyone looking for top-notch digital solutions!",
     author: "Mr. Sameer Khan",
     position: "Founder, Beloved Beauty Salon, Dubai",
     logo: "/images/beloved.svg",
@@ -38,7 +38,7 @@ const testimonials = [
     id: 4,
     title: "Precision-Driven Website Design & Execution",
     content:
-      "Mindefy has been extremely intricate in doing both our website design and executing it well. They are a process oriented company, and have all the...",
+      "Mindefy has been extremely intricate in doing both our website design and executing it well. They are a process oriented company, and have all the steps documented, quality checks made thoroughly and most importantly available for discussion easily. Love their ethics and principles. It’s great when another company also thinks well for you!",
     author: "Mrs. Shalini Santhosh",
     position: "Founder & Director at Early Foods, Dubai",
     logo: "/images/earlyfoods.webp",
@@ -49,7 +49,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="px-4 lg:px-10 py-8 lg:py-16 bg-[#F6F6F6]">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
           <p className="text-sm sm:text-base font-bold text-[#FF5225] font-poppins tracking-widest mb-5 md:mb-7 uppercase">
@@ -75,13 +75,14 @@ export default function Testimonials() {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-5 md:mb-7">
           {testimonials.map((testimonial) => (
-            <div
+            <Link
+              href="/customer-testimonials-reviews"
               key={testimonial.id}
               className="bg-white rounded-2xl py-8 px-6 border border-[#EFF0F6] shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4 min-h-80 max-w-2xl flex flex-col"
             >
               {/* Testimonial Title */}
               <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#02000D] font-poppins mb-6 leading-tight shrink-0">
-                {testimonial.title}
+                "{testimonial.title}"
               </h3>
 
               {/* Testimonial Content */}
@@ -104,15 +105,15 @@ export default function Testimonials() {
 
                 {/* Author Info */}
                 <div className="min-w-0 flex-1">
-                  <p className="text-base sm:text-lg font-medium text-[#000000] leading-tight">
+                  <p className="text-base sm:text-lg font-medium text-[#000000] leading-tight mb-2">
                     {testimonial.author}
                   </p>
-                  <p className="text-sm font-normal text-[#000000] mb-1 leading-tight">
+                  <p className="text-sm font-normal text-[#000000] leading-tight">
                     {testimonial.position}
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
