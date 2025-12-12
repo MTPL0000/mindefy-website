@@ -67,7 +67,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="px-4 lg:px-10 py-16 bg-white">
+    <section className="px-5 lg:px-10 py-16 bg-white">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -97,7 +97,7 @@ export default function FAQSection() {
                 </span>
 
                 <ChevronDown
-                  className={`w-5 h-5 text-[#2A2A2A] transition-transform duration-300 ${
+                  className={`w-5 h-5 shrink-0 text-[#2A2A2A] transition-transform duration-300 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 />

@@ -14,6 +14,9 @@ import {
   memolectContent,
 } from "@/config/contents";
 import FAQSection from "@/components/HomePage/FAQs";
+import CTAPanel from "@/components/HomePage/CTAPanel";
+import BlueprintSection from "@/components/HomePage/BluePrint";
+import IndustriesSection from "@/components/HomePage/IndustryCard";
 
 export const metadata = {
   title:
@@ -48,6 +51,9 @@ export default function HomePage() {
       <ProductShowcase imagePosition="left" data={JEGOContent} />
       <ProductShowcase imagePosition="right" data={memolectContent} />
       <Testimonials />
+      <BlueprintSection />
+      <IndustriesSection />
+      <CTAPanel />
       <Blog />
       <FAQSection />
     </>
