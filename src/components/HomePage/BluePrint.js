@@ -34,11 +34,11 @@ export default function BlueprintSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* LEFT SECTION */}
         <div>
-          <p className="tracking-widest text-center md:text-left text-[#FF5225] text-sm sm:text-base font-bold mb-5 sm:mb-7 uppercase">
+          <p className="tracking-widest text-center lg:text-left text-[#FF5225] text-sm sm:text-base font-bold mb-5 sm:mb-7 uppercase">
             THE MINDEFY APPROACH
           </p>
 
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center md:text-left font-normal leading-normal mb-5 sm:mb-7">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center lg:text-left font-normal leading-normal mb-5 sm:mb-7">
             The Blueprint: <br />
             How We Build{" "}
             <span className="font-bold">
@@ -47,7 +47,7 @@ export default function BlueprintSection() {
             </span>
           </h2>
 
-          <p className="text-[#444444] text-center md:text-left font-poppins text-base leading-relaxed max-w-md">
+          <p className="text-[#444444] text-center lg:text-left font-poppins text-base leading-relaxed mx-auto lg:mx-0 max-w-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>

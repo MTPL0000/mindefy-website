@@ -51,27 +51,27 @@ export default function IndustriesSection() {
     <section className="px-4 lg:px-10 py-16 bg-[#F6F6F6]">
       <div className="max-w-7xl mx-auto">
         {/* TOP HEADING */}
-        <div className="text-center mb-12">
-          <p className="tracking-widest text-[#FF5225] text-sm font-bold font-poppins uppercase mb-3">
+        <div className="text-center mb-12 md:mb-15">
+          <p className="tracking-widest text-[#FF5225] text-sm sm:text-base font-bold mb-5 sm:mb-6 uppercase">
             INDUSTRIES WE SERVE
           </p>
 
-          <h2 className="text-3xl sm:text-4xl font-poppins text-[#2A2A2A] font-semibold leading-tight mb-3">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-poppins text-[#2A2A2A] font-bold leading-normal mb-5 sm:mb-6">
             Tech Solutions Tailored For Every Industry
           </h2>
 
-          <p className="text-base font-poppins text-[#444444] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base font-poppins text-[#444444] font-normal max-w-2xl mx-auto leading-relaxed">
             We craft products that fit your users, your workflows, and your
             future.
           </p>
         </div>
 
         {/* INDUSTRY GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12 md:mb-15">
           {industries.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition"
+              className="bg-white rounded-3xl p-6 border border-[#F0F0F0] hover:shadow-sm transition"
             >
               {/* Icon + Badge */}
               <div className="flex items-center justify-between mb-5">
