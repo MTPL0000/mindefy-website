@@ -1,42 +1,44 @@
 "use client";
 
+import Image from "next/image";
+
 export default function IndustriesSection() {
   const industries = [
     {
-      icon: "/icons/saas.svg",
+      icon: "/images/AI-ML/manufactur-icon.svg",
       title: "SaaS",
-      badge: "40+ Projects",
-      text: "We help SaaS companies turn ideas into intelligent platforms that scale effortlessly. From MVP product development to AI-driven automation and analytics dashboards, we design solutions that reduce operational friction and boost customer retention.",
+      project: "40+ Projects",
+      text: "We help SaaS companies turn ideas into intelligent platforms that scale effortlessly. From MVP product development to AI-driven automation and analytics dashboards, we design solutions that reduce operational friction and boost customer retention. Whether you’re building a new SaaS product or enhancing an existing one, our software development services ensure smarter, data-informed performance.",
     },
     {
-      icon: "/icons/healthcare.svg",
+      icon: "/images/AI-ML/health-icon.svg",
       title: "Healthcare",
-      badge: "40+ Projects",
-      text: "We build AI-powered healthcare applications that improve patient outcomes and streamline clinical workflows. From remote monitoring to predictive health analytics, we create HIPAA-compliant, secure, and innovative digital solutions.",
+      project: "40+ Projects",
+      text: "We build AI-powered healthcare applications that improve patient outcomes and streamline clinical workflows. From remote monitoring platforms to predictive health analytics, Mindefy’s custom software development approach ensures privacy, compliance, and innovation helping healthcare organizations focus on care, not complexity.",
     },
     {
-      icon: "/icons/enterprise.svg",
+      icon: "/images/enterprise.svg",
       title: "Enterprise",
-      badge: "40+ Projects",
-      text: "For modern enterprises, we create digital transformation ecosystems powered by intelligence. Our enterprise software development services help automate workflows, predict trends, and enhance productivity.",
+      project: "40+ Projects",
+      text: "For modern enterprises, we create digital transformation ecosystems driven by intelligence. Our custom AI development and software integration services empower teams to automate workflows, predict market trends, and drive strategic decisions through real-time insights.",
     },
     {
-      icon: "/icons/edtech.svg",
+      icon: "/images/edTech.svg",
       title: "EdTech",
-      badge: "40+ Projects",
-      text: "We enable education platforms to personalize learning using AI-based recommendation engines and assessment systems. Our secure, scalable learning solutions improve outcomes for both educators and students.",
+      project: "40+ Projects",
+      text: "We enable education platforms to personalize learning experiences using AI-based recommendation engines and smart assessment systems. Our digital product development team builds engaging, secure, and scalable learning platforms that help students and educators connect in meaningful, measurable ways.",
     },
     {
-      icon: "/icons/retail.svg",
+      icon: "/images/AI-ML/glob-icon.svg",
       title: "Retail & eCommerce",
-      badge: "40+ Projects",
-      text: "From predictive intelligence to personalized shopping experiences, our eCommerce solutions help retailers boost conversions, optimize inventory, and meet customer needs with precision.",
+      project: "40+ Projects",
+      text: "From personalized shopping experiences to demand forecasting, our eCommerce development solutions help retailers stay ahead of customer needs. We blend mobile app development with predictive intelligence to optimize inventory, enhance product discovery, and boost conversions.",
     },
     {
-      icon: "/icons/fintech.svg",
+      icon: "/images/AI-ML/retail-icon.svg",
       title: "FinTech",
-      badge: "40+ Projects",
-      text: "We build secure, compliant financial technologies including fraud detection, AML, automated risk systems, and next-gen digital banking experiences.",
+      project: "40+ Projects",
+      text: "We develop secure, compliant, and intelligent FinTech applications that redefine digital finance. With expertise in custom software development, Mindefy helps FinTech innovators detect fraud faster, automate risk management, and create seamless user experiences.",
     },
   ];
 
@@ -71,18 +73,25 @@ export default function IndustriesSection() {
           {industries.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl p-6 border border-[#F0F0F0] hover:shadow-sm transition"
+              className="bg-white min-h-100 rounded-3xl p-6 border border-[#F0F0F0] hover:shadow-sm transition"
             >
-              {/* Icon + Badge */}
+              {/* Icon + project */}
               <div className="flex items-center justify-between mb-5">
-                <img src={item.icon} alt={item.title} className="w-10 h-10" />
-
-                <span className="px-3 py-1 rounded-full bg-[#F0F0F0] text-xs font-semibold text-[#2A2A2A]">
-                  {item.badge}
+                <div className="relative p-2 rounded-full w-12 h-12">
+                  <Image
+                    src={item.icon}
+                    alt="icon"
+                    fill
+                    loading="lazy"
+                    className="object-contain"
+                  />
+                </div>
+                <span className="p-2 text-center rounded-full bg-[#EBE6E6] text-xs font-semibold text-[#332771]">
+                  {item.project}
                 </span>
               </div>
 
-              <h3 className="font-poppins text-xl font-semibold text-[#2A2A2A] mb-3">
+              <h3 className="font-poppins text-xl md:text-2xl font-bold text-[#000000] mb-5">
                 {item.title}
               </h3>
 
@@ -94,27 +103,28 @@ export default function IndustriesSection() {
         </div>
 
         {/* BOTTOM STATS BAR */}
-        <div className="w-fit mx-auto bg-white shadow-lg rounded-2xl py-8 px-6">
-          <div className="flex flex-wrap justify-center gap-10 md:gap-14">
-            {stats.map((s, index) => (
+        <div className="w-fit mx-auto bg-white shadow-md rounded-2xl flex flex-wrap justify-center items-center py-8 px-6">
+          {stats.map((s, index) => (
+            <>
               <div
                 key={index}
-                className="relative px-6 text-center flex flex-col items-center"
+                className="px-4 md:px-8 lg:px-16 text-center flex flex-col items-center mb-4"
               >
-                {/* LEFT DIVIDER */}
-                {index !== 0 && (
-                  <span className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 h-10 w-px bg-[#D9D9D9]"></span>
-                )}
-
-                {/* GRADIENT NUMBER */}
-                <p className="text-3xl sm:text-4xl font-bold font-poppins bg-linear-to-r from-[#4A3AFF] to-[#FF5225] bg-clip-text text-transparent mb-2">
+                <p className="text-3xl sm:text-4xl font-semibold font-poppins bg-linear-to-r from-[#4A3AFF] to-[#FF5225] bg-clip-text text-transparent mb-3">
                   {s.value}
                 </p>
-
-                <p className="text-sm text-[#444444] font-poppins">{s.label}</p>
+                <p className="text-sm text-[#444444] font-bold font-poppins">
+                  {s.label}
+                </p>
               </div>
-            ))}
-          </div>
+              {index < stats.length - 1 && (
+                <div
+                  key={`divider-${index}`}
+                  className="hidden md:block h-14 w-px bg-[#E0E0E0]"
+                ></div>
+              )}
+            </>
+          ))}
         </div>
       </div>
     </section>
