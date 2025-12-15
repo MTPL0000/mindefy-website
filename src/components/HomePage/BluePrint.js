@@ -10,61 +10,64 @@ export default function BlueprintSection() {
     {
       number: "02",
       title: "Design & Prototype",
-      text: "Our design team translates strategy into intuitive experiences. We create wireframes, UI concepts, and functional prototypes that reflect your brand and user intent.",
+      text: "Our design team translates strategy into intuitive experiences. We create wireframes, UI concepts, and functional prototypes that reflect your brand and user intent, forming the foundation for a seamless AI-powered digital product.",
     },
     {
       number: "03",
       title: "Develop & Integrate",
-      text: "This is where innovation takes form. Our engineers leverage modern frameworks, APIs, and machine learning models to build custom AI software.",
+      text: "This is where innovation takes form. Our engineers leverage the latest frameworks, APIs, and machine learning models to build custom AI software and scalable applications. As a custom product development company, we ensure every line of code meets enterprise-grade standards.",
     },
     {
       number: "04",
       title: "Test & Optimize",
-      text: "We run extensive testing from performance and load to AI model accuracy, ensuring reliability and precision.",
+      text: "Quality is non-negotiable. We run extensive testing from performance and load to AI model accuracy, ensuring reliability and precision. Every product development solution undergoes continuous optimization to adapt to user behavior and new data.",
     },
     {
       number: "05",
       title: "Launch & Evolve",
-      text: "Once deployed, we stay connected with support, optimization, and scaling as your solution grows.",
+      text: "Once deployed, we stay connected. Our post-launch support includes maintenance, model retraining, and product scaling. Whether it’s an MVP or enterprise rollout, our AI product development process ensures your solution grows smarter with every interaction.",
     },
   ];
 
   return (
-    <section className="px-4 lg:px-10 py-16 bg-white">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+    <section className="px-4 lg:px-10 py-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* LEFT SECTION */}
         <div>
-          <p className="text-[#FF5225] text-sm tracking-widest font-bold font-poppins uppercase mb-4">
+          <p className="tracking-widest text-center md:text-left text-[#FF5225] text-sm sm:text-base font-bold mb-5 sm:mb-7 uppercase">
             THE MINDEFY APPROACH
           </p>
 
-          <h2 className="text-3xl sm:text-4xl font-poppins font-normal text-[#2A2A2A] leading-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center md:text-left font-normal leading-normal mb-5 sm:mb-7">
             The Blueprint: <br />
             How We Build{" "}
-            <span className="font-semibold">Future-Ready Products</span>
+            <span className="font-bold">
+              Future- <br />
+              Ready Products
+            </span>
           </h2>
 
-          <p className="text-[#444444] font-poppins text-base leading-relaxed max-w-md">
+          <p className="text-[#444444] text-center md:text-left font-poppins text-base leading-relaxed max-w-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="space-y-10">
+        <div className="space-y-8">
           {steps.map((s, index) => (
-            <div key={index} className="flex items-start gap-6">
+            <div key={index} className="flex items-start gap-8">
               {/* GRADIENT NUMBER */}
-              <span className="text-3xl font-bold font-poppins bg-linear-to-r from-[#4A3AFF] to-[#FF5225] bg-clip-text text-transparent">
+              <span className="text-5xl font-semibold font-poppins bg-linear-to-r from-[#4A3AFF] to-[#FF5225] bg-clip-text text-transparent">
                 {s.number}
               </span>
 
               <div>
-                <h3 className="font-poppins text-lg font-semibold text-[#2A2A2A] mb-1">
+                <h3 className="font-poppins text-xl md:text-2xl font-semibold text-[#332771] mb-5">
                   {s.title}
                 </h3>
 
-                <p className="text-[#444444] font-poppins text-base leading-relaxed">
+                <p className="text-[#444444] font-poppins text-base font-normal leading-relaxed">
                   {s.text}
                 </p>
               </div>
