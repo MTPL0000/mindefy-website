@@ -53,6 +53,71 @@ const nextConfig = {
         destination: "/crm-software-solutions",
         permanent: true,
       },
+      {
+        source: "/testimonials",
+        destination: "/customer-testimonials-reviews",
+        permanent: true,
+      },
+      {
+        source: "/mindful-ux",
+        destination: "/mindful-ux-design-user-experience",
+        permanent: true,
+      },
+      {
+        source: "/low-code-development",
+        destination: "/low-code-app-development-services",
+        permanent: true,
+      },
+      {
+        source: "/web-application-development",
+        destination: "/web-application-development-solutions",
+        permanent: true,
+      },
+      {
+        source: "/staff-services",
+        destination: "/staff-augmentation-services",
+        permanent: true,
+      },
+      {
+        source: "/android-app-development",
+        destination: "/android-app-development-experts",
+        permanent: true,
+      },
+      {
+        source: "/hybrid-app-development",
+        destination: "/hybrid-app-development-services",
+        permanent: true,
+      },
+      {
+        source: "/cloud-devops",
+        destination: "/cloud-devops-engineering",
+        permanent: true,
+      },
+      {
+        source: "/business-process-management",
+        destination: "/business-process-management-solutions",
+        permanent: true,
+      },
+      {
+        source: "/unity-unreal",
+        destination: "/unity-unreal-engine-development",
+        permanent: true,
+      },
+      {
+        source: "/soli-stack",
+        destination: "/soli-stack-integration-solutions",
+        permanent: true,
+      },
+      {
+        source: "/digi-bill",
+        destination: "/greenbill-paperless-billing-software",
+        permanent: true,
+      },
+      {
+        source: "/early-foods",
+        destination: "/early-foods-e-commerce",
+        permanent: true,
+      },
     ];
   },
 };
