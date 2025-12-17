@@ -24,6 +24,7 @@ export const services = [
 
   {
     title: "Product Development",
+    link: "/hybrid-app-development-services",
     icon: "/images/product.svg",
     description:
       "As a trusted product development company, we transform bold ideas into powerful digital products from intuitive mobile apps to enterprise-grade platforms. Our process combines design thinking, agile development, and emerging technologies to deliver solutions that are seamless, user-driven, and ready to scale.",
@@ -47,6 +48,7 @@ export const services = [
 
   {
     title: "Cloud & Platform Engineering",
+    link: "/cloud-engineering-services",
     icon: "/images/cloud.svg",
     description:
       "We design and manage cloud platforms that are secure, adaptive, and built for performance. From modernization to migration, our engineering teams create infrastructures that enhance reliability, scalability, and operational efficiency across your ecosystem.",
@@ -68,6 +70,7 @@ export const services = [
 
   {
     title: "Business IT Solutions",
+    link: "/it-consulting-strategy",
     icon: "/images/business.svg",
     description:
       "We help businesses unlock new possibilities through strategic innovation and operational agility. From digital transformation to process optimization, our experts align technology with business goals to accelerate outcomes and fuel long-term growth.",
@@ -91,6 +94,7 @@ export const services = [
 
   {
     title: "Game Development",
+    link: "/game-animation-graphics",
     icon: "/images/game.svg",
     description:
       "We design and develop games that captivate players and inspire creativity. From 2D and 3D to immersive AR experiences, our artists and developers blend storytelling with technology to deliver engaging gameplay across platforms.",
@@ -108,6 +112,7 @@ export const services = [
 
   {
     title: "E-commerce & Marketplace Solutions",
+    link: "/ecommerce-marketplace-development",
     icon: "/images/marketplace.svg",
     description:
       "We craft e-commerce and marketplace ecosystems that deliver seamless, personalized shopping experiences. From intuitive design to advanced analytics, we help brands connect with customers and grow faster in the digital economy.",
@@ -128,7 +133,7 @@ export const services = [
 
 export default function Services() {
   return (
-    <section className="px-4 lg:px-10 py-8 lg:py-16 bg-[#F6F6F6]">
+    <section className="px-4 lg:px-10 pb-8 lg:pb-16 bg-[#F6F6F6]">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-10 lg:mb-15">
@@ -179,12 +184,12 @@ export default function Services() {
               </div>
 
               {/* Service Description */}
-              <p className="text-sm sm:text-base font-medium text-[#000000] font-poppins mb-4 sm:mb-6 leading-relaxed">
+              <p className="text-sm sm:text-base font-normal text-[#444444] font-poppins mb-4 sm:mb-6 leading-relaxed">
                 {service.description}
               </p>
 
               {/* Service Points */}
-              <ul className="list-none space-y-4 sm:space-y-6 text-[#000000] font-poppins font-medium text-sm sm:text-base uppercase">
+              <ul className="list-none space-y-4 sm:space-y-6 text-[#444444] font-poppins font-normal text-sm sm:text-base uppercase">
                 {service.points.map((point, i) => {
                   const pointLink =
                     service.pointsLinks && service.pointsLinks[i]
@@ -197,16 +202,16 @@ export default function Services() {
                       {pointLink ? (
                         <Link
                           href={pointLink}
-                          className="text-[#000000] font-poppins text-sm leading-relaxed hover:text-[#FF5225] transition"
+                          className="text-[#444444] font-poppins text-sm font-semibold leading-relaxed hover:text-[#FF5225] transition"
                         >
-                          <span className="text-[#000000] font-poppins text-base shrink-0 mr-3 hover:text-[#FF5225] transition">
+                          <span className="text-[#444444] font-poppins text-base shrink-0 mr-3 hover:text-[#FF5225] transition">
                             ➔
                           </span>
                           {point}
                         </Link>
                       ) : (
-                        <span className="text-[#000000] font-poppins text-sm leading-relaxed">
-                          <span className="text-[#000000] font-poppins text-base shrink-0 mr-3">
+                        <span className="text-[#444444] font-semibold font-poppins text-sm leading-relaxed">
+                          <span className="text-[#444444] font-poppins text-base shrink-0 mr-3">
                             ➔
                           </span>
                           {point}

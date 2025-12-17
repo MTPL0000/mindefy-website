@@ -86,9 +86,10 @@ export default function IndustriesSection() {
                     className="object-contain"
                   />
                 </div>
-                <span className="p-2 text-center rounded-full bg-[#EBE6E6] text-xs font-semibold text-[#332771]">
+                {/* <span className="p-2 text-center rounded-full bg-[#EBE6E6] text-xs font-semibold text-[#332771]">
                   {item.project}
                 </span>
+                */}
               </div>
 
               <h3 className="font-poppins text-xl md:text-2xl font-bold text-[#000000] mb-5">

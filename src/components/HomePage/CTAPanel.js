@@ -78,7 +78,7 @@ export default function CTAPanel() {
         </p>
 
         {/* FEATURES */}
-        <div className="mx-auto max-w-2xl flex flex-wrap justify-center gap-x-10 gap-y-4 mt-12">
+        <div className="mx-auto max-w-2xl flex flex-wrap md:justify-center gap-x-10 gap-y-4 mt-12">
           {[
             "AI-Powered Product Innovation",
             "Custom Software Engineering",
@@ -87,7 +87,7 @@ export default function CTAPanel() {
           ].map((item, i) => (
             <div
               key={i}
-              className="flex items-center gap-2 text-white font-poppins text-sm sm:text-base"
+              className="flex items-center text-left md:text-center gap-2 text-white font-poppins text-sm sm:text-base"
             >
               <CheckCircle className="w-5 h-5 text-white" />
               <span>{item}</span>

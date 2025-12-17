@@ -12,7 +12,7 @@ export default function AboutSection() {
           </p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light font-poppins text-[#3D3D3D] leading-tight mb-4">
             <span className="font-normal">Leading The Next Wave of</span>
-            <br className="hidden sm:block" />
+            <br className="hidden sm:block" />{" "}
             <span className="font-bold">AI Software Development</span>
           </h2>
         </div>

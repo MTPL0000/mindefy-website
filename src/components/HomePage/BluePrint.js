@@ -46,10 +46,14 @@ export default function BlueprintSection() {
               Ready Products
             </span>
           </h2>
-
-          <p className="text-[#444444] text-center lg:text-left font-poppins text-base leading-relaxed mx-auto lg:mx-0 max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="text-[#444444] text-center lg:text-left font-poppins text-base leading-relaxed mx-auto lg:mx-0 lg:max-w-md">
+            We begin by understanding your business goals, target audience, and
+            project requirements. Through in-depth research and strategic
+            analysis, we define a clear product vision. Our team identifies
+            challenges, opportunities, and success metrics early on. This phase
+            ensures alignment between business objectives and user needs. A
+            structured roadmap is then created to guide development with clarity
+            and confidence.
           </p>
         </div>
 
