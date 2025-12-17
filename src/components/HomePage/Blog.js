@@ -4,21 +4,21 @@ import Link from "next/link";
 
 export default function Blog() {
   return (
-    <section className="w-full py-12 sm:py-16 lg:py-18 px-4 sm:px-6 lg:px-8">
+    <section className="px-5 lg:px-10 py-16">
       <div className="container mx-auto">
         {/* Blog Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <p className="tracking-widest text-[#FF5225] text-sm sm:text-base font-bold mb-4 sm:mb-6 uppercase">
             BLOGS
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-normal leading-tight">
-            <span className="text-gray-900 font-bold">Insights & Advice</span>{" "}
-            From <span className="text-gray-900 font-bold">Our Team</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal leading-tight">
+            <span className="font-bold">Insights & Advice</span> From{" "}
+            <span className="font-bold">Our Team</span>
           </h2>
         </div>
 
         {/* Blog Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-12 lg:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {/* Card 1 */}
           <Link
             href="https://www.yourhourapp.com/blog/yourhour-screentime-app-screen-time-tracker-mobile-addiction-show-behind-11"

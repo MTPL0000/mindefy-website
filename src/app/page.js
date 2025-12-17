@@ -1,16 +1,22 @@
 import AboutSection from "@/components/HomePage/AboutSection";
 import HeroSection from "@/components/HomePage/HeroSection";
-import Content from "@/components/HomePage/Content";
 import Services from "@/components/HomePage/Services";
-import YouHour from "@/components/HomePage/YourHour";
-import JEGO from "@/components/HomePage/JEGO";
-import GreenBill from "@/components/HomePage/GreenBill";
 import Testimonials from "@/components/HomePage/Testimonials";
 import Blog from "@/components/HomePage/Blog";
 import StructuredData, {
   organizationData,
   websiteData,
 } from "@/components/StructuredData";
+import ProductShowcase from "@/components/HomePage/ProductShowCase";
+import {
+  yourHourContent,
+  JEGOContent,
+  memolectContent,
+} from "@/config/contents";
+import FAQSection from "@/components/HomePage/FAQs";
+import CTAPanel from "@/components/HomePage/CTAPanel";
+import BlueprintSection from "@/components/HomePage/BluePrint";
+import IndustriesSection from "@/components/HomePage/IndustryCard";
 
 export const metadata = {
   title:
@@ -39,14 +45,17 @@ export default function HomePage() {
       <StructuredData data={organizationData} />
       <StructuredData data={websiteData} />
       <HeroSection />
-      <AboutSection />
-      <Content />
       <Services />
-      <YouHour />
-      <JEGO />
-      <GreenBill />
+      <AboutSection />
+      <ProductShowcase imagePosition="right" data={yourHourContent} />
+      <ProductShowcase imagePosition="left" data={JEGOContent} />
+      <ProductShowcase imagePosition="right" data={memolectContent} />
       <Testimonials />
+      <BlueprintSection />
+      <IndustriesSection />
+      <CTAPanel />
       <Blog />
+      <FAQSection />
     </>
   );
 }
