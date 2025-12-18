@@ -133,8 +133,8 @@ export const services = [
 
 export default function Services() {
   return (
-    <section className="px-4 lg:px-10 pb-8 lg:pb-16 bg-[#F6F6F6]">
-      <div className="max-w-6xl mx-auto">
+    <section className="px-4 lg:px-10 pb-8 pt-2 lg:pb-16 bg-[#F6F6F6]">
+      <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-10 lg:mb-15">
           <p className="text-sm sm:text-base font-bold text-[#FF5225] font-poppins tracking-widest mb-6 md:mb-8 uppercase">
@@ -153,10 +153,10 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="w-full max-w-sm min-h-148 bg-white shadow-lg rounded-2xl px-6 py-8 transition hover:shadow-xl duration-300"
+              className="w-full max-w-md min-h-148 bg-white shadow-lg rounded-2xl px-6 py-8 transition hover:shadow-xl duration-300"
             >
               {/* Service Header */}
-              <div className="flex items-start gap-4 mb-6">
+              <div className="flex items-center gap-4 mb-6">
                 <div className="relative w-16 h-16 p-3 border border-[#33277140] rounded-full shrink-0">
                   <Image
                     src={service.icon}

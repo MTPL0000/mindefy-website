@@ -38,12 +38,12 @@ export default function Blog() {
               <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold">
                 "MOBILE ADDICTION" - The Show Behind!
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg font-normal text-[#444444] font-poppins leading-relaxed text-justify">
                 It is often said, “Change is the inevitable truth”. Things
                 change, situations change and people change. It spares no
                 one....
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium hover:underline transition-colors">
+              <div className="text-[#6A53E1] flex items-center text-base md:text-lg font-medium hover:underline transition-colors">
                 <span className="flex items-center">
                   Read more "MOBILE ADDICTION"
                   <svg
@@ -84,11 +84,11 @@ export default function Blog() {
               <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold leading-tight lg:mb-1">
                 "YOUNG V/S THE OLD!" Smart Phones Seperating Generations!
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg font-normal text-[#444444] font-poppins leading-relaxed text-justify">
                 Addiction is injurious to health! And while most narcotics
                 damage a person’s Biological wellbeing, Smart Phones attack....
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium hover:underline transition-colors">
+              <div className="text-[#6A53E1] flex items-center text-base md:text-lg font-medium hover:underline transition-colors">
                 <span className="flex items-center">
                   Read more: "Smart Phones Separating"
                   <svg
@@ -129,11 +129,11 @@ export default function Blog() {
               <h3 className="text-xl sm:text-2xl lg:text-2xl lg:mb-8 font-semibold">
                 Mindfulness and Productivity!
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-justify font-normal leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg font-normal text-[#444444] font-poppins leading-relaxed text-justify">
                 The esteemed poet, Robert Frost, once wrote, “two roads divulged
                 in a yellow wood…” he was talking, centuries ago....
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base sm:text-lg font-medium hover:underline transition-colors">
+              <div className="text-[#6A53E1] flex items-center text-base md:text-lg font-medium hover:underline transition-colors">
                 <span className="flex items-center">
                   Read more: "Mindfulness and Productivity"
                   <svg

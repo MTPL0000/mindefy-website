@@ -60,7 +60,7 @@ export default function Testimonials() {
             <span className="font-semibold">Our Customers</span>
             {""} Are Saying
           </h2>
-          <p className="text-left md:text-center text-sm md:text-base mt-5 md:mt-7 font-poppins mx-auto text-[#444444] leading-relaxed">
+          <p className="text-left md:text-center text-sm sm:text-base font-normal text-[#444444] font-poppins leading-relaxed mt-5 md:mt-7 mx-auto">
             Partnering with Mindefy has been a game-changer for their business.
             Their team of experts has helped us modernize our IT infrastructure,
             streamline our processes, and enhance overall efficiency. Mindefy's
@@ -86,7 +86,7 @@ export default function Testimonials() {
               </h3>
 
               {/* Testimonial Content */}
-              <p className="text-sm sm:text-base font-normal text-[#000000] font-poppins leading-relaxed mb-6 grow">
+              <p className="text-sm sm:text-base font-normal text-[#444444] font-poppins leading-relaxed mb-6 grow">
                 {testimonial.content}
               </p>
 

@@ -664,10 +664,7 @@ export default function ALMLandingPage() {
                     </div>
 
                     {/* Title */}
-                    <h3
-                      className="text-base xl:text-lg 2xl:text-xl font-poppins font-semibold mb-2 text-center"
-                      style={{ color: "#FF5225" }}
-                    >
+                    <h3 className="text-base xl:text-lg 2xl:text-xl text-[#FF5225] font-poppins font-semibold mb-2 text-center">
                       {card.title}
                     </h3>
 
