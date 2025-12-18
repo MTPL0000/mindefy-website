@@ -440,11 +440,11 @@ export default function ALMLandingPage() {
 
           {/* Mobile/Tablet static content */}
           <div className="lg:hidden text-center max-w-lg mx-auto px-4">
-            <h1 className="mb-6 font-poppins text-xl md:text-2xl font-normal text-[#3D3D3D] leading-tight">
+            <h2 className="mb-6 font-poppins text-xl md:text-2xl font-normal text-[#3D3D3D] leading-tight">
               <div>Built With Data.</div>
               <div className="font-semibold mt-1">Powered By AI.</div>
               <div className="font-semibold mt-1">Delivered For Impact.</div>
-            </h1>
+            </h2>
 
             <div className="space-y-4 text-sm md:text-base font-poppins text-gray-700 mb-8 leading-relaxed">
               <p>

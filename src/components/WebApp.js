@@ -76,9 +76,9 @@ export default function WebApp() {
       <section className="mt-20 lg:mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className=" mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-5">
+          <h2 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-5">
             Mean and Mern Stack Development
-          </h1>
+          </h2>
 
           {/* Main Title */}
           <p className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2.25rem]  font-semibold text-[#000000] mb-7 leading-tight max-w-200 mx-auto px-4 sm:px-0">

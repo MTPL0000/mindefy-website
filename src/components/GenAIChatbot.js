@@ -269,11 +269,11 @@ const GenAIChatbot = () => {
                 <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-4">
                   Solutions
                 </h2>
-                <h1 className="text-[1.25rem] font-normal leading-12 text-[#333333] max-w-181 mx-auto">
+                <h2 className="text-[1.25rem] font-normal leading-12 text-[#333333] max-w-181 mx-auto">
                   We built a RAG-based AI chatbot integrated into YourHour to
                   serve
                   <br /> as a digital wellness buddy. Key features:
-                </h1>
+                </h2>
               </div>
 
               {/* Solution Cards Grid */}
@@ -348,10 +348,10 @@ const GenAIChatbot = () => {
                 <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-4">
                   TECHNICAL IMPLEMENTATION
                 </h2>
-                <h1 className="text-[1.25rem] font-normal leading-9 text-[#333333]">
+                <h2 className="text-[1.25rem] font-normal leading-9 text-[#333333]">
                   The project was completed in 2 weeks following an agile,
                   <br /> parallel workflow. Key steps included:
-                </h1>
+                </h2>
               </div>
 
               {/* Implementation Steps Grid */}
