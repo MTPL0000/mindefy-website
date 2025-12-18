@@ -215,7 +215,7 @@ export default function HeroSection() {
   return (
     <section
       data-hero-section
-      className="relative w-full overflow-hidden bg-linear-to-r from-[#f3f4ff] via-[#FFFFFF] to-[#fff3f0] flex flex-col items-center justify-center text-center pb-10 lg:pt-0 lg:pb-0 lg:min-h-screen"
+      className="relative w-full overflow-hidden bg-linear-to-r from-[#f3f4ff] via-[#FFFFFF] to-[#fff3f0] flex flex-col items-center justify-center text-center py-10 lg:pt-0 lg:pb-0 lg:min-h-screen"
     >
       {/* Heading Section */}
       <div className="px-4 max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 md:gap-10 lg:gap-15">

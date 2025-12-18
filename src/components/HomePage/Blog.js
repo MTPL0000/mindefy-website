@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Blog() {
   return (
     <section className="px-5 lg:px-10 py-16">
-      <div className="container mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Blog Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <p className="tracking-widest text-[#FF5225] text-sm sm:text-base font-bold mb-4 sm:mb-6 uppercase">
@@ -35,15 +35,15 @@ export default function Blog() {
               />
             </div>
             <div className="flex flex-col items-start gap-3 p-4 sm:p-6 lg:pt-6 lg:px-2 text-[#30233D]">
-              <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold">
+              <h3 className="text-lg sm:text-xl font-semibold">
                 "MOBILE ADDICTION" - The Show Behind!
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg font-normal text-[#444444] font-poppins leading-relaxed text-justify">
+              <p className="text-sm sm:text-base font-normal text-[#444444] font-poppins leading-relaxed text-justify">
                 It is often said, “Change is the inevitable truth”. Things
                 change, situations change and people change. It spares no
                 one....
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base md:text-lg font-medium hover:underline transition-colors">
+              <div className="text-[#6A53E1] flex items-center text-base font-medium hover:underline transition-colors">
                 <span className="flex items-center">
                   Read more "MOBILE ADDICTION"
                   <svg
@@ -81,14 +81,14 @@ export default function Blog() {
               />
             </div>
             <div className="flex flex-col items-start gap-3 p-4 sm:p-6 lg:pt-6 lg:px-2 text-[#30233D]">
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold leading-tight lg:mb-1">
-                "YOUNG V/S THE OLD!" Smart Phones Seperating Generations!
+              <h3 className="text-lg sm:text-xl font-semibold leading-tight lg:mb-1">
+                "YOUNG V/S OLD" Smart Phones Seperating Generations!
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg font-normal text-[#444444] font-poppins leading-relaxed text-justify">
+              <p className="text-sm sm:text-base font-normal text-[#444444] font-poppins leading-relaxed text-justify">
                 Addiction is injurious to health! And while most narcotics
                 damage a person’s Biological wellbeing, Smart Phones attack....
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base md:text-lg font-medium hover:underline transition-colors">
+              <div className="text-[#6A53E1] flex items-center text-base font-medium hover:underline transition-colors">
                 <span className="flex items-center">
                   Read more: "Smart Phones Separating"
                   <svg
@@ -126,14 +126,14 @@ export default function Blog() {
               />
             </div>
             <div className="flex flex-col items-start gap-3 p-4 sm:p-6 lg:pt-6 lg:px-2 text-[#30233D]">
-              <h3 className="text-xl sm:text-2xl lg:text-2xl lg:mb-8 font-semibold">
+              <h3 className="text-lg sm:text-xl lg:mb-8 font-semibold">
                 Mindfulness and Productivity!
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg font-normal text-[#444444] font-poppins leading-relaxed text-justify">
+              <p className="text-sm sm:text-base font-normal text-[#444444] font-poppins leading-relaxed text-justify">
                 The esteemed poet, Robert Frost, once wrote, “two roads divulged
                 in a yellow wood…” he was talking, centuries ago....
               </p>
-              <div className="text-[#6A53E1] flex items-center text-base md:text-lg font-medium hover:underline transition-colors">
+              <div className="text-[#6A53E1] flex items-center text-base font-medium hover:underline transition-colors">
                 <span className="flex items-center">
                   Read more: "Mindfulness and Productivity"
                   <svg
