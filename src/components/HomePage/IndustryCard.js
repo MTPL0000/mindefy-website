@@ -76,7 +76,7 @@ export default function IndustriesSection() {
               className="bg-white min-h-100 rounded-3xl p-6 border border-[#F0F0F0] hover:shadow-sm transition"
             >
               {/* Icon + project */}
-              <div className="flex items-center justify-between mb-5">
+              <div className="flex items-center gap-4 mb-5">
                 <div className="relative p-2 rounded-full w-12 h-12">
                   <Image
                     src={item.icon}
@@ -90,13 +90,12 @@ export default function IndustriesSection() {
                   {item.project}
                 </span>
                 */}
+                <h3 className="font-poppins text-xl md:text-2xl font-bold text-[#000000]">
+                  {item.title}
+                </h3>
               </div>
 
-              <h3 className="font-poppins text-xl md:text-2xl font-bold text-[#000000] mb-5">
-                {item.title}
-              </h3>
-
-              <p className="text-[#444444] font-poppins text-sm leading-relaxed">
+              <p className="text-sm sm:text-base font-normal text-[#444444] font-poppins leading-relaxed">
                 {item.text}
               </p>
             </div>

@@ -86,19 +86,19 @@ export default function ProductShowcase({
         >
           {/* App Title */}
           <div className="text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2B2B2B] mb-2">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-poppins text-[#3D3D3D] mb-2">
               {title}
             </h2>
-            <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-gray-700 mb-4 lg:mb-6">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-normal font-poppins text-[#353535] mb-4 lg:mb-6">
               {subtitle}
             </h3>
-            <p className="text-sm sm:text-base lg:text-lg text-justify text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base text-justify font-normal font-poppins text-[#444444] leading-relaxed max-w-2xl mx-auto lg:mx-0">
               {description}
             </p>
           </div>
 
           {/* Dropdown Sections */}
-          <div className="space-y-4 sm:space-y-5 lg:space-y-6">
+          <div className="space-y-4">
             {dropdowns.map((dropdown, index) => (
               <div key={index} className="pb-3 sm:pb-1">
                 <div className="dropdown dropdown-bottom w-full">
@@ -107,11 +107,11 @@ export default function ProductShowcase({
                     className="dropdown-details"
                   >
                     <summary className="w-full flex items-center justify-between text-left px-2 sm:px-3 py-2 sm:py-3 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer list-none dropdown-summary">
-                      <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold text-gray-700 dropdown-text">
+                      <span className="text-sm sm:text-base lg:text-lg font-semibold text-[#393939] dropdown-text">
                         {dropdown.title}
                       </span>
                       <svg
-                        className="w-5 h-5 lg:w-6 lg:h-6 text-gray-400 transition-transform duration-300 ease-in-out dropdown-arrow shrink-0"
+                        className="w-5 h-5 lg:w-6 lg:h-6 text-[#393939] transition-transform duration-300 ease-in-out dropdown-arrow shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -125,7 +125,7 @@ export default function ProductShowcase({
                       </svg>
                     </summary>
                     <div className="mt-3">
-                      <p className="text-xs sm:text-sm lg:text-base font-medium text-gray-600 text-justify leading-relaxed pl-1">
+                      <p className="text-sm sm:text-base font-normal text-[#444444] text-justify leading-relaxed pl-3">
                         {dropdown.content}
                       </p>
                     </div>
@@ -138,7 +138,7 @@ export default function ProductShowcase({
             {caseStudyLink && (
               <Link
                 href={caseStudyLink}
-                className="ml-2 inline-flex items-center text-lg font-medium text-[#6A53E1] hover:underline group transition-all duration-300"
+                className="ml-2 inline-flex items-center text-base md:text-lg font-medium text-[#6A53E1] hover:underline group transition-all duration-300"
               >
                 {caseStudyText}
                 <span className="ml-2 transition-transform group-hover:translate">
@@ -195,15 +195,14 @@ export default function ProductShowcase({
 
         /* Change text color to purple when dropdown is open */
         details[open] .dropdown-text {
-          color: #9333ea !important;
+          color: #6a53e1 !important;
           transition: color 0.3s ease;
         }
 
         /* Add background, rounded corners, and padding when open */
         details[open] {
-          background-color: #f4f0ff;
+          background-color: #f5f3ff;
           border-radius: 0.5rem;
-          padding: 1rem;
         }
 
         /* Default text color transition */

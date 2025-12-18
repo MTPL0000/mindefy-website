@@ -264,11 +264,11 @@ const CustomMLSolution = () => {
                 <h2 className="text-2xl font-semibold uppercase text-[#2B7575] mb-4">
                   Solutions
                 </h2>
-                <h1 className="text-[1.25rem] font-normal text-[#333333] max-w-181 mx-auto">
+                <h2 className="text-[1.25rem] font-normal text-[#333333] max-w-181 mx-auto">
                   We added an AI-powered “You may also like” section that shows
                   smart product suggestions based on your browsing and
                   preferences.
-                </h1>
+                </h2>
               </div>
 
               {/* Solution Cards Grid */}
@@ -365,10 +365,10 @@ const CustomMLSolution = () => {
                 <h2 className="text-2xl font-semibold text-[#2B7575] mb-4">
                   TECHNICAL IMPLEMENTATION
                 </h2>
-                <h1 className="text-[1.25rem] font-normal text-[#333333]">
+                <h2 className="text-[1.25rem] font-normal text-[#333333]">
                   The recommendation engine was built as follows (high-level
                   overview):
-                </h1>
+                </h2>
               </div>
 
               {/* Implementation Steps Grid */}
