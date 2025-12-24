@@ -28,22 +28,12 @@ export const metadata = {
     description:
       "Offers expert AR VR development, VR game development, AR app development, and immersive experiences with Unity AR VR, Unreal Engine, ARKit, ARCore, Oculus, and Meta Quest.",
     url: "https://mindefy.tech/ar-vr-game-development",
-    type: "website",
-    images: [
-      {
-        url: "https://mindefy.tech/images/ARVR1.png",
-        width: 1200,
-        height: 630,
-        alt: "AR VR Game Development Services by Mindefy Technologies",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AR, VR & Game Development Services | Mindefy Technologies",
     description:
       "Offers expert AR VR development, VR game development, AR app development, and immersive experiences with Unity AR VR, Unreal Engine, ARKit, ARCore, Oculus, and Meta Quest.",
-    images: ["https://mindefy.tech/images/ARVR1.png"],
   },
   alternates: {
     canonical: "https://mindefy.tech/ar-vr-game-development",
