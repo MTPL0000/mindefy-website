@@ -50,7 +50,7 @@ export default function IndustriesSection() {
   ];
 
   return (
-    <section className="px-4 lg:px-10 py-16 bg-[#F6F6F6]">
+    <section className="px-4 lg:px-10 py-16">
       <div className="max-w-7xl mx-auto">
         {/* TOP HEADING */}
         <div className="text-center mb-12 md:mb-15">

@@ -290,9 +290,9 @@ export default function EarlyFoods() {
       <section className="w-full flex flex-col items-center justify-center gap-6 sm:gap-8 lg:gap-12">
         <div className="relative max-w-360 mx-auto overflow-hidden pt-12 sm:pt-16 lg:pt-24">
           <div className="m-auto max-w-232 flex flex-col items-center justify-center gap-3 sm:gap-4 relative z-10 px-4 text-center">
-            <h3 className="text-[#FC6B81] text-xl sm:text-2xl lg:text-3xl font-medium">
+            <h1 className="text-[#FC6B81] text-xl sm:text-2xl lg:text-3xl font-medium">
               CASE STUDY
-            </h3>
+            </h1>
             <div className="relative aspect-2/1 w-40 sm:w-44 lg:w-53">
               <Image
                 src="/images/projects/EF-logo.png"

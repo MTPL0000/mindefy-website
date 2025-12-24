@@ -8,9 +8,9 @@ export default function Spector() {
       <section className="flex flex-col items-center justify-center gap-8 md:gap-16 lg:gap-24 pt-8 md:pt-16">
         <div className="w-full flex flex-col gap-2 items-center justify-center">
           <div className="flex flex-col gap-1 items-center justify-center max-w-4xl lg:max-w-6xl mx-auto mt-4 md:mt-8 px-4">
-            <p className="text-[#333333] text-2xl md:text-3xl lg:text-4xl font-normal">
+            <h1 className="text-[#333333] text-2xl md:text-3xl lg:text-4xl font-normal">
               Case Study
-            </p>
+            </h1>
             <div className="m-auto relative aspect-3/1 w-[16rem] sm:w-[18rem] md:w-[20rem] overflow-hidden">
               <Image
                 src="/images/sp-logo.png"
