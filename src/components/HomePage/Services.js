@@ -133,7 +133,7 @@ export const services = [
 
 export default function Services() {
   return (
-    <section className="px-4 lg:px-10 pb-8 pt-2 lg:pb-16 bg-[#F6F6F6]">
+    <section className="px-4 lg:px-10 pb-8 pt-2 lg:pb-16">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-10 lg:mb-15">

@@ -126,9 +126,9 @@ export default function JEGO() {
       </section>
       {/* GIF Section */}
       <section className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 w-full flex flex-col gap-8">
-        <h3 className="text-[#FFFFFF] font-bold text-2xl sm:text-3xl font-poppins text-left">
+        <h1 className="text-[#FFFFFF] font-bold text-2xl sm:text-3xl font-poppins text-left">
           The Process
-        </h3>
+        </h1>
         <div className="relative w-full max-w-3xl mx-auto">
           <Image
             src="/images/projects/JG-GIF.gif"
