@@ -73,10 +73,10 @@ export const metadata = {
       "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
     images: [
       {
-        url: "/images/logo/mindefy-logo.png",
+        url: "/images/logo/mindefy-og.png",
         width: 1200,
         height: 630,
-        alt: "Mindefy Technologies Logo",
+        alt: "Mindefy Technologies",
       },
     ],
   },
@@ -86,7 +86,7 @@ export const metadata = {
       "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
     description:
       "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
-    images: ["/images/logo/mindefy-logo.png"],
+    images: ["/images/logo/mindefy-og.png"],
   },
   verification: {
     google: "your-google-site-verification-code",
@@ -149,7 +149,6 @@ export default function RootLayout({ children }) {
       className={`${poppins.variable} ${notoSans.variable} ${fredoka.variable} ${lobster.variable}`}
     >
       <head>
-        <link rel="canonical" href="https://mindefy.tech" />
         {/* New Links */}
         <link
           rel="preconnect"
@@ -220,7 +219,7 @@ export default function RootLayout({ children }) {
             width={1}
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=2176304166214926&ev=PageView&noscript=1"
-            alt=""
+            alt="none"
           />
         </noscript>
         {/* End Facebook Meta Pixel Code */}
@@ -253,11 +252,8 @@ export default function RootLayout({ children }) {
           sizes="167x167"
           href="/images/logo/mindefy-logo.png"
         />
-
-        {/* Additional Meta Tags for PWA */}
-        <meta name="theme-color" content="#D84426" />
-        <meta name="color-scheme" content="light" />
       </head>
+
       <body className="font-poppins overflow-x-hidden">
         {/* Google Tag Manager (noscript) */}
         <noscript>
