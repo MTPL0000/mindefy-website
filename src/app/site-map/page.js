@@ -4,7 +4,7 @@ export const metadata = {
   title: "Sitemap | Mindefy Technologies",
   description:
     "Browse the complete sitemap of Mindefy Technologies. Access all service pages, product pages, case studies, and business solutions in one organized index.",
-  alternates: { canonical: "https://mindefy.tech/sitemap" },
+  alternates: { canonical: "https://mindefy.tech/site-map" },
   robots: { index: true, follow: true },
 };
 
@@ -13,7 +13,7 @@ const baseUrl = "https://mindefy.tech";
 const routes = [
   // Dashboard/Home
   {
-    url: baseUrl,
+    url: "/",
     label: "Home",
     lastModified: new Date(),
     changeFrequency: "weekly",

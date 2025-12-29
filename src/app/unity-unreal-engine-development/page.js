@@ -23,7 +23,7 @@ export const metadata = {
     title: "Unity & Unreal Engine Development Services | Mindefy Technologies",
     description:
       "Offers expert Unity and Unreal Engine development services specializing in 2D and 3D game animation, immersive game development, and cutting-edge technologies to create engaging, high-performance gaming experiences.",
-    url: "https://mindefy.tech/game-animation-graphics",
+    url: "https://mindefy.tech/unity-unreal-engine-development",
   },
   twitter: {
     title: "Unity & Unreal Engine Development Services | Mindefy Technologies",
@@ -31,7 +31,7 @@ export const metadata = {
       "Offers expert Unity and Unreal Engine development services specializing in 2D and 3D game animation, immersive game development, and cutting-edge technologies to create engaging, high-performance gaming experiences.",
   },
   alternates: {
-    canonical: "https://mindefy.tech/game-animation-graphics",
+    canonical: "https://mindefy.tech/unity-unreal-engine-development",
   },
 };
 

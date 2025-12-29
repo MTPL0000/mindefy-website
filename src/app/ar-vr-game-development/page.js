@@ -45,19 +45,8 @@ export default function ARVRGameDevelopmentPage() {
     name: "AR/VR Game Development",
     description:
       "Expert AR/VR game development services by Mindefy Technologies. Create immersive augmented and virtual reality experiences using Unity, Unreal Engine, ARKit, ARCore, Oculus, and Meta Quest platforms.",
-    serviceType: "AR/VR Development",
+    serviceType: "Game Development",
     url: "/ar-vr-game-development",
-    provider: {
-      "@type": "Organization",
-      name: "Mindefy Technologies",
-      url: "https://mindefy.tech",
-      logo: "https://mindefy.tech/images/logo/mindefy-logo.png",
-    },
-    areaServed: "Worldwide",
-    availableChannel: {
-      "@type": "ServiceChannel",
-      serviceUrl: "https://mindefy.tech/ar-vr-game-development",
-    },
   });
 
   const breadcrumbData = createBreadcrumbData([
@@ -69,35 +58,10 @@ export default function ARVRGameDevelopmentPage() {
     },
   ]);
 
-  // Additional schema for AR/VR specific services
-  const arvrSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "AR/VR Game Development Services",
-    description:
-      "Professional Augmented Reality and Virtual Reality game development services including mobile AR apps, VR simulations, 360° experiences, and immersive training applications.",
-    brand: {
-      "@type": "Brand",
-      name: "Mindefy Technologies",
-    },
-    category: "Software Development",
-    applicationCategory: "AR/VR Development",
-    operatingSystem: ["iOS", "Android", "Windows", "macOS"],
-    softwareRequirements: [
-      "Unity 3D",
-      "Unreal Engine",
-      "ARKit",
-      "ARCore",
-      "Oculus SDK",
-      "Meta Quest SDK",
-    ],
-  };
-
   return (
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <StructuredData data={arvrSchema} />
       <ARVRGameDevelopment />
     </>
   );
