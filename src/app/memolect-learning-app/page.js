@@ -1,20 +1,21 @@
 import MemolectFlashcardsCaseStudy from "@/components/projects/MemolectFlashcardsApp";
 
 export const metadata = {
-  title: "Memolect Flashcard Learning App Case Study | Mindefy Technologies",
+  title: "Memolect: Smart Learning & EdTech App",
   description:
-    "Memolect flashcard learning app case study showcases interactive flashcard app UX/UI design and product development for effective learning experiences.",
+    "Discover Memolect, the smart learning app designed to boost retention. Explore our EdTech solutions for personalized education and corporate training.",
+  keywords: ["EdTech", "Learning App"],
   alternates: { canonical: "https://mindefy.tech/memolect-learning-app" },
   openGraph: {
-    title: "Memolect Flashcard Learning App Case Study | Mindefy Technologies",
+    title: "Memolect: Smart Learning & EdTech App",
     description:
-      "Memolect flashcard learning app case study showcases interactive flashcard app UX/UI design and product development for effective learning experiences.",
+      "Discover Memolect, the smart learning app designed to boost retention. Explore our EdTech solutions for personalized education and corporate training.",
     url: "https://mindefy.tech/memolect-learning-app",
   },
   twitter: {
-    title: "Memolect Flashcard Learning App Case Study | Mindefy Technologies",
+    title: "Memolect: Smart Learning & EdTech App",
     description:
-      "Memolect flashcard learning app case study showcases interactive flashcard app UX/UI design and product development for effective learning experiences.",
+      "Discover Memolect, the smart learning app designed to boost retention. Explore our EdTech solutions for personalized education and corporate training.",
   },
 };
 

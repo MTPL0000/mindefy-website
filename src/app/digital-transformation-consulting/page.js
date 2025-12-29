@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Digital Transformation Consulting | Mindefy Technologies",
+  title: "Enterprise Digital Transformation Consulting",
   description:
-    "Offers comprehensive digital transformation consulting services to modernize business processes and technology infrastructure. Our expertise includes strategic digital strategy, business modernization, enterprise transformation, technology upgrades, and business automation. We help enterprises embrace the digital age with tailored solutions that drive efficiency, innovation, and growth.",
-  keywords: [
-    "digital transformation",
-    "business modernization",
-    "technology upgrade",
-    "enterprise transformation",
-    "digital strategy",
-    "business automation",
-  ],
+    "Future-proof your business with our digital transformation consulting. We implement AI, cloud, and automation strategies to drive operational efficiency.",
+  keywords: ["Digital Strategy", "Enterprise Tech"],
   openGraph: {
-    title: "Digital Transformation Consulting | Mindefy Technologies",
+    title: "Enterprise Digital Transformation Consulting",
     description:
-      "Offers comprehensive digital transformation consulting services to modernize business processes and technology infrastructure. Our expertise includes strategic digital strategy, business modernization, enterprise transformation, technology upgrades, and business automation. We help enterprises embrace the digital age with tailored solutions that drive efficiency, innovation, and growth.",
+      "Future-proof your business with our digital transformation consulting. We implement AI, cloud, and automation strategies to drive operational efficiency.",
     url: "https://mindefy.tech/digital-transformation-consulting",
   },
   twitter: {
-    title: "Digital Transformation Consulting | Mindefy Technologies",
+    title: "Enterprise Digital Transformation Consulting",
     description:
-      "Offers comprehensive digital transformation consulting services to modernize business processes and technology infrastructure. Our expertise includes strategic digital strategy, business modernization, enterprise transformation, technology upgrades, and business automation. We help enterprises embrace the digital age with tailored solutions that drive efficiency, innovation, and growth.",
+      "Future-proof your business with our digital transformation consulting. We implement AI, cloud, and automation strategies to drive operational efficiency.",
   },
   alternates: {
     canonical: "https://mindefy.tech/digital-transformation-consulting",

@@ -1,20 +1,21 @@
 import ALMLandingPage from "./page";
 
 export const metadata = {
-  title: "AI & ML Services | Mindefy Technologies",
+  title: "Custom AI & Machine Learning Development Company",
   description:
-    "Expert provides AI & ML services, including AI engineering, machine learning models, data analytics, and scalable cloud solutions for enterprise impact and innovation.",
+    "Hire expert AI/ML developers for custom recommendation engines, NLP, and predictive analytics. We build intelligent AI solutions for business automation.",
+  keywords: ["AI/ML", "NLP", "Predictive Analytics"],
   alternates: { canonical: "https://mindefy.tech/ai-ml-services" },
   openGraph: {
-    title: "AI & ML Services | Mindefy Technologies",
+    title: "Custom AI & Machine Learning Development Company",
     description:
-      "Expert provides AI & ML services, including AI engineering, machine learning models, data analytics, and scalable cloud solutions for enterprise impact and innovation.",
+      "Hire expert AI/ML developers for custom recommendation engines, NLP, and predictive analytics. We build intelligent AI solutions for business automation.",
     url: "https://mindefy.tech/ai-ml-services",
   },
   twitter: {
-    title: "AI & ML Services | Mindefy Technologies",
+    title: "Custom AI & Machine Learning Development Company",
     description:
-      "Expert provides AI & ML services, including AI engineering, machine learning models, data analytics, and scalable cloud solutions for enterprise impact and innovation.",
+      "Hire expert AI/ML developers for custom recommendation engines, NLP, and predictive analytics. We build intelligent AI solutions for business automation.",
   },
 };
 

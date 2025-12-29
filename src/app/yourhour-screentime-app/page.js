@@ -4,9 +4,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "YourHour – Screen Time & Digital Wellbeing App by Mindefy",
+  title: "YourHour: Screen Time Control & Digital Wellbeing",
   description:
-    "YourHour is a powerful screen time and mobile addiction tracker app created by Mindefy Technologies. Take control of your digital habits, improve focus, and boost productivity with smart insights.",
+    "YourHour app helps millions boost productivity. Download our top-rated digital wellbeing solution to track usage, limit screen time, and beat phone addiction.",
   keywords: [
     "YourHour",
     "YourHour ScreenTime App",
@@ -26,15 +26,15 @@ export const metadata = {
     "productivity app",
   ],
   openGraph: {
-    title: "YourHour – Screen Time & Digital Wellbeing App by Mindefy",
+    title: "YourHour: Screen Time Control & Digital Wellbeing",
     description:
-      "YourHour is a powerful screen time and mobile addiction tracker app created by Mindefy Technologies. Take control of your digital habits, improve focus, and boost productivity with smart insights.",
+      "YourHour app helps millions boost productivity. Download our top-rated digital wellbeing solution to track usage, limit screen time, and beat phone addiction.",
     url: "https://mindefy.tech/yourhour-screentime-app",
   },
   twitter: {
-    title: "YourHour – Screen Time & Digital Wellbeing App by Mindefy",
+    title: "YourHour: Screen Time Control & Digital Wellbeing",
     description:
-      "YourHour is a powerful screen time and mobile addiction tracker app created by Mindefy Technologies. Take control of your digital habits, improve focus, and boost productivity with smart insights.",
+      "YourHour app helps millions boost productivity. Download our top-rated digital wellbeing solution to track usage, limit screen time, and beat phone addiction.",
   },
   alternates: {
     canonical: "https://mindefy.tech/yourhour-screentime-app",

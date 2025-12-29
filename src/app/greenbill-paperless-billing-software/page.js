@@ -4,27 +4,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "GreenBill Paperless Billing Software | Mindefy Technologies",
+  title: "GreenBill: Digital Paperless Billing Software",
   description:
-    "Presents GreenBill, innovative paperless billing software featuring digital billing, invoice management, and comprehensive billing solutions to streamline fintech processes efficiently.",
-  keywords: [
-    "GreenBill",
-    "digital billing",
-    "billing software",
-    "invoice management",
-    "billing solution",
-    "fintech",
-  ],
+    "Discover GreenBill, the eco-friendly digital billing solution. Eliminate paper waste and streamline invoicing ",
+  keywords: ["FinTech", "Paperless Billing"],
   openGraph: {
-    title: "GreenBill Paperless Billing Software | Mindefy Technologies",
+    title: "GreenBill: Digital Paperless Billing Software",
     description:
-      "Presents GreenBill, innovative paperless billing software featuring digital billing, invoice management, and comprehensive billing solutions to streamline fintech processes efficiently.",
+      "Discover GreenBill, the eco-friendly digital billing solution. Eliminate paper waste and streamline invoicing ",
     url: "https://mindefy.tech/greenbill-paperless-billing-software",
   },
   twitter: {
-    title: "GreenBill Paperless Billing Software | Mindefy Technologies",
+    title: "GreenBill: Digital Paperless Billing Software",
     description:
-      "Presents GreenBill, innovative paperless billing software featuring digital billing, invoice management, and comprehensive billing solutions to streamline fintech processes efficiently.",
+      "Discover GreenBill, the eco-friendly digital billing solution. Eliminate paper waste and streamline invoicing ",
   },
   alternates: {
     canonical: "https://mindefy.tech/greenbill-paperless-billing-software",

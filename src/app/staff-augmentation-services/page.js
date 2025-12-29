@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Staff Augmentation & Services | Mindefy Technologies",
+  title: "IT Staff Augmentation Services",
   description:
-    "Provides staff augmentation services to scale teams with skilled developers, remote developers, offshore development, team augmentation, and technical staff experts on demand for flexibility and cost efficiency.",
-  keywords: [
-    "staff augmentation",
-    "team augmentation",
-    "skilled developers",
-    "technical staff",
-    "offshore development",
-    "remote developers",
-  ],
+    "Scale your team with Mindefy's IT staff augmentation. Hire pre-vetted, dedicated developers and engineers to accelerate your software projects immediately.",
+  keywords: ["Staffing", "Dedicated Developers"],
   openGraph: {
-    title: "Staff Augmentation & Services | Mindefy Technologies",
+    title: "IT Staff Augmentation Services",
     description:
-      "Provides staff augmentation services to scale teams with skilled developers, remote developers, offshore development, team augmentation, and technical staff experts on demand for flexibility and cost efficiency.",
+      "Scale your team with Mindefy's IT staff augmentation. Hire pre-vetted, dedicated developers and engineers to accelerate your software projects immediately.",
     url: "https://mindefy.tech/staff-augmentation-services",
   },
   twitter: {
-    title: "Staff Augmentation & Services | Mindefy Technologies",
+    title: "IT Staff Augmentation Services",
     description:
-      "Provides staff augmentation services to scale teams with skilled developers, remote developers, offshore development, team augmentation, and technical staff experts on demand for flexibility and cost efficiency.",
+      "Scale your team with Mindefy's IT staff augmentation. Hire pre-vetted, dedicated developers and engineers to accelerate your software projects immediately.",
   },
   alternates: {
     canonical: "https://mindefy.tech/staff-augmentation-services",

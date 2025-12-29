@@ -5,33 +5,20 @@ import { ImpactDeliveredSection } from "@/components/AIML/ImpactDeliveredSection
 import { WhyAISection } from "@/components/AIML/WhyAISection";
 
 export const metadata = {
-  title: "AI & Machine Learning Development Services | Mindefy Technologies",
+  title: "Machine Learning Services & Consulting",
   description:
-    "Delivers custom ML solutions and AI solutions through expert machine learning development, AI recommendation engines, predictive modeling, and data science services for intelligent business applications.",
-  keywords: [
-    "custom ml solutions",
-    "machine learning development",
-    "AI recommendation engine",
-    "predictive modeling",
-    "collaborative filtering",
-    "content-based filtering",
-    "ML algorithms",
-    "artificial intelligence development",
-    "data science services",
-    "ML consulting",
-    "AI solutions",
-    "machine learning consulting",
-  ],
+    "Leverage data with our machine learning services. We provide end-to-end ML consulting, model development, and deployment for business intelligence.",
+  keywords: ["ML Consulting", " Data Science"],
   openGraph: {
-    title: "AI & Machine Learning Development Services | Mindefy Technologies",
+    title: "Machine Learning Services & Consulting",
     description:
-      "Delivers custom ML solutions and AI solutions through expert machine learning development, AI recommendation engines, predictive modeling, and data science services for intelligent business applications.",
+      "Leverage data with our machine learning services. We provide end-to-end ML consulting, model development, and deployment for business intelligence.",
     url: "https://mindefy.tech/machine-learning-services",
   },
   twitter: {
-    title: "AI & Machine Learning Development Services | Mindefy Technologies",
+    title: "Machine Learning Services & Consulting",
     description:
-      "Delivers custom ML solutions and AI solutions through expert machine learning development, AI recommendation engines, predictive modeling, and data science services for intelligent business applications.",
+      "Leverage data with our machine learning services. We provide end-to-end ML consulting, model development, and deployment for business intelligence.",
   },
   alternates: {
     canonical: "https://mindefy.tech/machine-learning-services",

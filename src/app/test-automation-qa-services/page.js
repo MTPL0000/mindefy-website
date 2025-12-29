@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Test Automation & QA Services | Mindefy Technologies",
+  title: "Software Test Automation & QA Services",
   description:
-    "Delivers comprehensive test automation and quality assurance services to ensure software reliability, enhanced performance, and adherence to quality standards through automated testing strategies.",
-  keywords: [
-    "test automation",
-    "qa services",
-    "software testing",
-    "quality assurance",
-    "automated testing",
-    "software quality",
-  ],
+    "Ensure zero bugs with our QA and test automation services. We provide rigorous performance, security, and regression testing for flawless software.",
+  keywords: ["QA", "Automation Testing"],
   openGraph: {
-    title: "Test Automation & QA Services | Mindefy Technologies",
+    title: "Software Test Automation & QA Services",
     description:
-      "Delivers comprehensive test automation and quality assurance services to ensure software reliability, enhanced performance, and adherence to quality standards through automated testing strategies.",
+      "Ensure zero bugs with our QA and test automation services. We provide rigorous performance, security, and regression testing for flawless software.",
     url: "https://mindefy.tech/test-automation-qa-services",
   },
   twitter: {
-    title: "Test Automation & QA Services | Mindefy Technologies",
+    title: "Software Test Automation & QA Services",
     description:
-      "Delivers comprehensive test automation and quality assurance services to ensure software reliability, enhanced performance, and adherence to quality standards through automated testing strategies.",
+      "Ensure zero bugs with our QA and test automation services. We provide rigorous performance, security, and regression testing for flawless software.",
   },
   alternates: {
     canonical: "https://mindefy.tech/test-automation-qa-services",

@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "iOS App Development Services | Mindefy Technologies",
+  title: "iOS App Development Services & Company",
   description:
-    "Offers expert iOS app development services, building native iPhone app development and iPad app development with Swift development for high-performance native iOS apps.",
-  keywords: [
-    "ios app development",
-    "iphone app development",
-    "ipad app development",
-    "swift development",
-    "native ios apps",
-    "apple app development",
-  ],
+    "Hire top iOS developers for custom iPhone and iPad apps. We build secure, high-performance native iOS applications using Swift and Objective-C.",
+  keywords: ["iOS", "Swift", "iPhone Apps"],
   openGraph: {
-    title: "iOS App Development Services | Mindefy Technologies",
+    title: "iOS App Development Services & Company",
     description:
-      "Offers expert iOS app development services, building native iPhone app development and iPad app development with Swift development for high-performance native iOS apps.",
+      "Hire top iOS developers for custom iPhone and iPad apps. We build secure, high-performance native iOS applications using Swift and Objective-C.",
     url: "https://mindefy.tech/ios-app-development-services",
   },
   twitter: {
-    title: "iOS App Development Services | Mindefy Technologies",
+    title: "iOS App Development Services & Company",
     description:
-      "Offers expert iOS app development services, building native iPhone app development and iPad app development with Swift development for high-performance native iOS apps.",
+      "Hire top iOS developers for custom iPhone and iPad apps. We build secure, high-performance native iOS applications using Swift and Objective-C.",
   },
   alternates: {
     canonical: "https://mindefy.tech/ios-app-development-services",

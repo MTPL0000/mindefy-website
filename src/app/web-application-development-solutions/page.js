@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Web Application Development Services in USA | Mindefy Technologies",
+  title: "Custom Web Application Development Company",
   description:
-    "Offers professional web application development services in the USA, building scalable, responsive, and custom web applications using modern frameworks and technologies to enhance performance and user experience.",
+    "Build robust, scalable web apps with Mindefy. Our full-stack developers deliver secure, high-performance web solutions for modern enterprises.",
   keywords: [
     "web application development",
     "web app development",
@@ -17,15 +17,15 @@ export const metadata = {
     "custom web applications",
   ],
   openGraph: {
-    title: "Web Application Development Services in USA | Mindefy Technologies",
+    title: "Custom Web Application Development Company",
     description:
-      "Offers professional web application development services in the USA, building scalable, responsive, and custom web applications using modern frameworks and technologies to enhance performance and user experience.",
+      "Build robust, scalable web apps with Mindefy. Our full-stack developers deliver secure, high-performance web solutions for modern enterprises.",
     url: "https://mindefy.tech/web-application-development-solutions",
   },
   twitter: {
-    title: "Web Application Development Services in USA | Mindefy Technologies",
+    title: "Custom Web Application Development Company",
     description:
-      "Offers professional web application development services in the USA, building scalable, responsive, and custom web applications using modern frameworks and technologies to enhance performance and user experience.",
+      "Build robust, scalable web apps with Mindefy. Our full-stack developers deliver secure, high-performance web solutions for modern enterprises.",
   },
   alternates: {
     canonical: "https://mindefy.tech/web-application-development-solutions",

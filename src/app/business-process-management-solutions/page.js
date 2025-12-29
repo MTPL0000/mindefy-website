@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Business Process Management Solutions | Mindefy Technologies",
+  title: "Business Process Management (BPM) Solutions",
   description:
-    "Provides business process management (BPM) solutions, workflow automation, process optimization, and business automation to streamline operations and boost operational efficiency.",
-  keywords: [
-    "business process management",
-    "bpm solutions",
-    "workflow automation",
-    "process optimization",
-    "business automation",
-    "operational efficiency",
-  ],
+    "Streamline operations with custom Business Process Management (BPM) software. We automate complex workflows to reduce costs and improve enterprise agility.",
+  keywords: ["BPM", "Workflow Automation"],
   openGraph: {
-    title: "Business Process Management Solutions | Mindefy Technologies",
+    title: "Business Process Management (BPM) Solutions",
     description:
-      "Provides business process management (BPM) solutions, workflow automation, process optimization, and business automation to streamline operations and boost operational efficiency.",
+      "Streamline operations with custom Business Process Management (BPM) software. We automate complex workflows to reduce costs and improve enterprise agility.",
     url: "https://mindefy.tech/business-process-management-solutions",
   },
   twitter: {
-    title: "Business Process Management Solutions | Mindefy Technologies",
+    title: "Business Process Management (BPM) Solutions",
     description:
-      "Provides business process management (BPM) solutions, workflow automation, process optimization, and business automation to streamline operations and boost operational efficiency.",
+      "Streamline operations with custom Business Process Management (BPM) software. We automate complex workflows to reduce costs and improve enterprise agility.",
   },
   alternates: {
     canonical: "https://mindefy.tech/business-process-management-solutions",

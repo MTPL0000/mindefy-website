@@ -5,30 +5,20 @@ import StructuredData, {
 import UnityUnreal from "@/components/unityunreal";
 
 export const metadata = {
-  title: "Unity & Unreal Engine Development Services | Mindefy Technologies",
+  title: "Unity & Unreal Engine Development Services",
   description:
-    "Offers expert Unity and Unreal Engine development services specializing in 2D and 3D game animation, immersive game development, and cutting-edge technologies to create engaging, high-performance gaming experiences.",
-  keywords: [
-    "game animation",
-    "game development",
-    "2D game animation",
-    "3D game animation",
-    "game art",
-    "unity development",
-    "unreal engine",
-    "mobile game development",
-    "game design",
-  ],
+    "Build high-fidelity 3D experiences. Our Unity and Unreal Engine developers create stunning games, simulations, and enterprise AR/VR applications.",
+  keywords: ["Unity", "Unreal", "3D"],
   openGraph: {
-    title: "Unity & Unreal Engine Development Services | Mindefy Technologies",
+    title: "Unity & Unreal Engine Development Services",
     description:
-      "Offers expert Unity and Unreal Engine development services specializing in 2D and 3D game animation, immersive game development, and cutting-edge technologies to create engaging, high-performance gaming experiences.",
+      "Build high-fidelity 3D experiences. Our Unity and Unreal Engine developers create stunning games, simulations, and enterprise AR/VR applications.",
     url: "https://mindefy.tech/unity-unreal-engine-development",
   },
   twitter: {
-    title: "Unity & Unreal Engine Development Services | Mindefy Technologies",
+    title: "Unity & Unreal Engine Development Services",
     description:
-      "Offers expert Unity and Unreal Engine development services specializing in 2D and 3D game animation, immersive game development, and cutting-edge technologies to create engaging, high-performance gaming experiences.",
+      "Build high-fidelity 3D experiences. Our Unity and Unreal Engine developers create stunning games, simulations, and enterprise AR/VR applications.",
   },
   alternates: {
     canonical: "https://mindefy.tech/unity-unreal-engine-development",

@@ -4,27 +4,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "MachOne Platform Services | Mindefy Technologies",
+  title: "MACH One Platform & Architecture Services",
   description:
-    "MachOne platform offers a high-performance, scalable enterprise solution with lightning-fast processing and exceptional reliability, leveraging MACH architecture for modularity, flexibility, and rapid scalability.",
-  keywords: [
-    "mach one",
-    "high performance",
-    "enterprise solution",
-    "fast processing",
-    "scalable platform",
-    "business software",
-  ],
+    "Modernize your tech stack with MACH architecture. We build Microservices, API-first, Cloud-native, and Headless solutions for future-proof agility.",
+  keywords: ["MACH", "Headless", "Microservices"],
   openGraph: {
-    title: "MachOne Platform Services | Mindefy Technologies",
+    title: "MACH One Platform & Architecture Services",
     description:
-      "MachOne platform offers a high-performance, scalable enterprise solution with lightning-fast processing and exceptional reliability, leveraging MACH architecture for modularity, flexibility, and rapid scalability.",
+      "Modernize your tech stack with MACH architecture. We build Microservices, API-first, Cloud-native, and Headless solutions for future-proof agility.",
     url: "https://mindefy.tech/mach-one-platform-services",
   },
   twitter: {
-    title: "MachOne Platform Services | Mindefy Technologies",
+    title: "MACH One Platform & Architecture Services",
     description:
-      "MachOne platform offers a high-performance, scalable enterprise solution with lightning-fast processing and exceptional reliability, leveraging MACH architecture for modularity, flexibility, and rapid scalability.",
+      "Modernize your tech stack with MACH architecture. We build Microservices, API-first, Cloud-native, and Headless solutions for future-proof agility.",
   },
   alternates: {
     canonical: "https://mindefy.tech/mach-one-platform-services",

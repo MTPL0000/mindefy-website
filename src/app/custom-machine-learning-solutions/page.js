@@ -5,33 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Custom Machine Learning Solutions Services | Mindefy Technologies",
+  title: "Custom Machine Learning Solutions Company",
   description:
-    "Delivers custom machine learning solutions and AI development services, building intelligent recommendation engines, predictive models, and ML-driven applications using advanced ML algorithms and data science for business growth.",
-  keywords: [
-    "custom ml solutions",
-    "machine learning development",
-    "AI recommendation engine",
-    "predictive modeling",
-    "collaborative filtering",
-    "content-based filtering",
-    "ML algorithms",
-    "artificial intelligence development",
-    "data science services",
-    "ML consulting",
-    "AI solutions",
-    "machine learning consulting",
-  ],
+    "Hire expert ML engineers for custom machine learning solutions. We develop predictive models and algorithms tailored to your specific business data.",
+  keywords: ["Custom ML", "Predictive Models"],
   openGraph: {
-    title: "Custom Machine Learning Solutions Services | Mindefy Technologies",
+    title: "Custom Machine Learning Solutions Company",
     description:
-      "Delivers custom machine learning solutions and AI development services, building intelligent recommendation engines, predictive models, and ML-driven applications using advanced ML algorithms and data science for business growth.",
+      "Hire expert ML engineers for custom machine learning solutions. We develop predictive models and algorithms tailored to your specific business data.",
     url: "https://mindefy.tech/custom-machine-learning-solutions",
   },
   twitter: {
-    title: "Custom Machine Learning Solutions Services | Mindefy Technologies",
+    title: "Custom Machine Learning Solutions Company",
     description:
-      "Delivers custom machine learning solutions and AI development services, building intelligent recommendation engines, predictive models, and ML-driven applications using advanced ML algorithms and data science for business growth.",
+      "Hire expert ML engineers for custom machine learning solutions. We develop predictive models and algorithms tailored to your specific business data.",
   },
   alternates: {
     canonical: "https://mindefy.tech/custom-machine-learning-solutions",

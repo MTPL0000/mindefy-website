@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "White Label Software Solutions | Mindefy Technologies",
+  title: "White Label Software Development Solutions",
   description:
-    "Provides white label software solutions for seamless custom branding, enabling resellers to rebrand proven white label solutions, branded applications, and partner solutions as their own with rapid time-to-market.",
-  keywords: [
-    "white label solutions",
-    "custom branding",
-    "reseller solutions",
-    "white label software",
-    "partner solutions",
-    "branded applications",
-  ],
+    "Expand your agency's portfolio with our white label software services. We build high-quality, unbranded software that you can resell as your own.",
+  keywords: ["White Label", "SaaS", "Reseller"],
   openGraph: {
-    title: "White Label Software Solutions | Mindefy Technologies",
+    title: "White Label Software Development Solutions",
     description:
-      "Provides white label software solutions for seamless custom branding, enabling resellers to rebrand proven white label solutions, branded applications, and partner solutions as their own with rapid time-to-market.",
+      "Expand your agency's portfolio with our white label software services. We build high-quality, unbranded software that you can resell as your own.",
     url: "https://mindefy.tech/white-label-software-solutions",
   },
   twitter: {
-    title: "White Label Software Solutions | Mindefy Technologies",
+    title: "White Label Software Development Solutions",
     description:
-      "Provides white label software solutions for seamless custom branding, enabling resellers to rebrand proven white label solutions, branded applications, and partner solutions as their own with rapid time-to-market.",
+      "Expand your agency's portfolio with our white label software services. We build high-quality, unbranded software that you can resell as your own.",
   },
   alternates: {
     canonical: "https://mindefy.tech/white-label-software-solutions",

@@ -4,20 +4,21 @@ import { ImpactDeliveredSection } from "@/components/AIML/ImpactDeliveredSection
 import { WhyAISection } from "@/components/AIML/WhyAISection";
 
 export const metadata = {
-  title: "Cloud Engineering | Mindefy Technologies",
+  title: "Cloud Engineering & Migration Services",
   description:
-    "Delivers expert cloud engineering services including cloud strategy, cloud migration, cloud-native engineering, AI/ML infrastructure, cloud security, and DevOps/FinOps for scalable enterprise solutions.",
+    "Scalable cloud architecture and migration services. We help enterprises move to the cloud securely, optimizing performance and reducing infrastructure costs.",
+  keywords: ["Cloud Migration", "Architecture"],
   alternates: { canonical: "https://mindefy.tech/cloud-engineering-services" },
   openGraph: {
-    title: "Cloud Engineering | Mindefy Technologies",
+    title: "Cloud Engineering & Migration Services",
     description:
-      "Delivers expert cloud engineering services including cloud strategy, cloud migration, cloud-native engineering, AI/ML infrastructure, cloud security, and DevOps/FinOps for scalable enterprise solutions.",
+      "Scalable cloud architecture and migration services. We help enterprises move to the cloud securely, optimizing performance and reducing infrastructure costs.",
     url: "https://mindefy.tech/cloud-engineering-services",
   },
   twitter: {
-    title: "Cloud Engineering | Mindefy Technologies",
+    title: "Cloud Engineering & Migration Services",
     description:
-      "Delivers expert cloud engineering services including cloud strategy, cloud migration, cloud-native engineering, AI/ML infrastructure, cloud security, and DevOps/FinOps for scalable enterprise solutions.",
+      "Scalable cloud architecture and migration services. We help enterprises move to the cloud securely, optimizing performance and reducing infrastructure costs.",
   },
 };
 

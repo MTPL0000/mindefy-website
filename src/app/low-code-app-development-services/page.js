@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Low-Code App Development Services | Mindefy Technologies",
+  title: "Low Code App Development Services",
   description:
-    "Accelerates digital transformation with low-code development services, enabling rapid application development, no-code solutions, visual development, and low-code platforms for faster app building.",
-  keywords: [
-    "low-code development",
-    "no-code solutions",
-    "rapid application development",
-    "visual development",
-    "low-code platform",
-    "application modernization",
-  ],
+    "Build business apps 10x faster with low-code development. We use platforms like OutSystems and Mendix to deliver rapid, scalable enterprise solutions.",
+  keywords: ["Low Code", "No Code", "Rapid Dev"],
   openGraph: {
-    title: "Low-Code App Development Services | Mindefy Technologies",
+    title: "Low Code App Development Services",
     description:
-      "Accelerates digital transformation with low-code development services, enabling rapid application development, no-code solutions, visual development, and low-code platforms for faster app building.",
+      "Build business apps 10x faster with low-code development. We use platforms like OutSystems and Mendix to deliver rapid, scalable enterprise solutions.",
     url: "https://mindefy.tech/low-code-app-development-services",
   },
   twitter: {
-    title: "Low-Code App Development Services | Mindefy Technologies",
+    title: "Low Code App Development Services",
     description:
-      "Accelerates digital transformation with low-code development services, enabling rapid application development, no-code solutions, visual development, and low-code platforms for faster app building.",
+      "Build business apps 10x faster with low-code development. We use platforms like OutSystems and Mendix to deliver rapid, scalable enterprise solutions.",
   },
   alternates: {
     canonical: "https://mindefy.tech/low-code-app-development-services",

@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "CRM Software Solutions | Mindefy Technologies",
+  title: "Custom CRM Software Development & Integration",
   description:
-    "Delivers custom CRM solutions and CRM software for customer relationship management, featuring CRM development, sales automation, and advanced customer management to drive growth and efficiency.",
-  keywords: [
-    "crm solutions",
-    "customer relationship management",
-    "crm development",
-    "sales automation",
-    "customer management",
-    "crm software",
-  ],
+    "Boost sales with custom CRM software solutions. We develop and integrate tailored CRM platforms to streamline customer management and automation.",
+  keywords: ["Custom CRM", "Salesforce"],
   openGraph: {
-    title: "CRM Software Solutions | Mindefy Technologies",
+    title: "Custom CRM Software Development & Integration",
     description:
-      "Delivers custom CRM solutions and CRM software for customer relationship management, featuring CRM development, sales automation, and advanced customer management to drive growth and efficiency.",
+      "Boost sales with custom CRM software solutions. We develop and integrate tailored CRM platforms to streamline customer management and automation.",
     url: "https://mindefy.tech/crm-software-solutions",
   },
   twitter: {
-    title: "CRM Software Solutions | Mindefy Technologies",
+    title: "Custom CRM Software Development & Integration",
     description:
-      "Delivers custom CRM solutions and CRM software for customer relationship management, featuring CRM development, sales automation, and advanced customer management to drive growth and efficiency.",
+      "Boost sales with custom CRM software solutions. We develop and integrate tailored CRM platforms to streamline customer management and automation.",
   },
   alternates: {
     canonical: "https://mindefy.tech/crm-software-solutions",

@@ -5,22 +5,23 @@ import { WhyAISection } from "@/components/AIML/WhyAISection";
 import { WhyChooseSection } from "@/components/AIML/WhyChooseSection";
 
 export const metadata = {
-  title: "Advanced Data Engineering Services | Mindefy Technologies",
+  title: "Advanced Data Engineering & Big Data Services",
   description:
-    "Advanced data engineering services: enterprise-grade data platforms, ETL pipelines, data governance, analytics & AI-powered insights for smarter business decisions.",
+    "Build scalable data pipelines and architectures. Our data engineering services cover ETL, cloud warehousing, and analytics to transform raw data into insights.",
+  keywords: ["Data Pipelines", "Big Data", "ETL"],
   alternates: {
     canonical: "https://mindefy.tech/advanced-data-engineering-services",
   },
   openGraph: {
-    title: "Advanced Data Engineering Services | Mindefy Technologies",
+    title: "Advanced Data Engineering & Big Data Services",
     description:
-      "Advanced data engineering services: enterprise-grade data platforms, ETL pipelines, data governance, analytics & AI-powered insights for smarter business decisions.",
+      "Build scalable data pipelines and architectures. Our data engineering services cover ETL, cloud warehousing, and analytics to transform raw data into insights.",
     url: "https://mindefy.tech/advanced-data-engineering-services",
   },
   twitter: {
-    title: "Advanced Data Engineering Services | Mindefy Technologies",
+    title: "Advanced Data Engineering & Big Data Services",
     description:
-      "Advanced data engineering services: enterprise-grade data platforms, ETL pipelines, data governance, analytics & AI-powered insights for smarter business decisions.",
+      "Build scalable data pipelines and architectures. Our data engineering services cover ETL, cloud warehousing, and analytics to transform raw data into insights.",
   },
 };
 

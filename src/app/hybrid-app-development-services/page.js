@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Hybrid App Development Services | Mindefy Technologies",
+  title: "Hybrid Mobile App Development Services",
   description:
-    "Delivers expert hybrid app development services using React Native, Flutter development, and Ionic development for seamless cross platform mobile apps on iOS and Android from a single codebase.",
-  keywords: [
-    "hybrid app development",
-    "cross platform development",
-    "react native",
-    "flutter development",
-    "ionic development",
-    "cross platform mobile apps",
-  ],
+    "Build cost-effective apps with our hybrid development services. We use React Native and Flutter to deliver native-like performance on iOS and Android.",
+  keywords: ["React Native", "Flutter", "Cross-Platform"],
   openGraph: {
-    title: "Hybrid App Development Services | Mindefy Technologies",
+    title: "Hybrid Mobile App Development Services",
     description:
-      "Delivers expert hybrid app development services using React Native, Flutter development, and Ionic development for seamless cross platform mobile apps on iOS and Android from a single codebase.",
+      "Build cost-effective apps with our hybrid development services. We use React Native and Flutter to deliver native-like performance on iOS and Android.",
     url: "https://mindefy.tech/hybrid-app-development-services",
   },
   twitter: {
-    title: "Hybrid App Development Services | Mindefy Technologies",
+    title: "Hybrid Mobile App Development Services",
     description:
-      "Delivers expert hybrid app development services using React Native, Flutter development, and Ionic development for seamless cross platform mobile apps on iOS and Android from a single codebase.",
+      "Build cost-effective apps with our hybrid development services. We use React Native and Flutter to deliver native-like performance on iOS and Android.",
   },
   alternates: {
     canonical: "https://mindefy.tech/hybrid-app-development-services",

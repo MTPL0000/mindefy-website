@@ -5,29 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Cloud & DevOps Engineering | Mindefy Technologies",
+  title: "Cloud DevOps Engineering & Infrastructure Services",
   description:
-    "Offers professional cloud solutions and DevOps services to streamline development life cycles with robust cloud infrastructure, automated deployment, and seamless integration of AWS, Azure, Kubernetes, Docker, and CI/CD pipelines.",
-  keywords: [
-    "cloud solutions",
-    "devops services",
-    "cloud infrastructure",
-    "aws",
-    "azure",
-    "kubernetes",
-    "docker",
-    "ci/cd",
-  ],
+    "Accelerate release cycles with expert Cloud DevOps services. We specialize in CI/CD automation, AWS/Azure migration, and secure infrastructure management.",
+  keywords: ["DevOps", "CI / CD", "AWS / Azure"],
   openGraph: {
-    title: "Cloud & DevOps Engineering | Mindefy Technologies",
+    title: "Cloud DevOps Engineering & Infrastructure Services",
     description:
-      "Offers professional cloud solutions and DevOps services to streamline development life cycles with robust cloud infrastructure, automated deployment, and seamless integration of AWS, Azure, Kubernetes, Docker, and CI/CD pipelines.",
+      "Accelerate release cycles with expert Cloud DevOps services. We specialize in CI/CD automation, AWS/Azure migration, and secure infrastructure management.",
     url: "https://mindefy.tech/cloud-devops-engineering",
   },
   twitter: {
-    title: "Cloud & DevOps Engineering | Mindefy Technologies",
+    title: "Cloud DevOps Engineering & Infrastructure Services",
     description:
-      "Offers professional cloud solutions and DevOps services to streamline development life cycles with robust cloud infrastructure, automated deployment, and seamless integration of AWS, Azure, Kubernetes, Docker, and CI/CD pipelines.",
+      "Accelerate release cycles with expert Cloud DevOps services. We specialize in CI/CD automation, AWS/Azure migration, and secure infrastructure management.",
   },
   alternates: {
     canonical: "https://mindefy.tech/cloud-devops-engineering",

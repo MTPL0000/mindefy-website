@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "MVP Development & Startup Support Services | Mindefy Technologies",
+  title: "MVP Development Services for Startups",
   description:
-    "Provides MVP development services for startups, delivering minimum viable product solutions with rapid prototyping, product validation, startup development, and accelerated market launch.",
-  keywords: [
-    "mvp development",
-    "minimum viable product",
-    "startup development",
-    "prototype development",
-    "rapid development",
-    "product validation",
-  ],
+    "Launch fast with our MVP development services. We build scalable prototypes and Minimum Viable Products to help startups validate ideas and raise capital.",
+  keywords: ["MVP", "Startups", "Prototype"],
   openGraph: {
-    title: "MVP Development & Startup Support Services | Mindefy Technologies",
+    title: "MVP Development Services for Startups",
     description:
-      "Provides MVP development services for startups, delivering minimum viable product solutions with rapid prototyping, product validation, startup development, and accelerated market launch.",
+      "Launch fast with our MVP development services. We build scalable prototypes and Minimum Viable Products to help startups validate ideas and raise capital.",
     url: "https://mindefy.tech/mvp-development-startup-support",
   },
   twitter: {
-    title: "MVP Development & Startup Support Services | Mindefy Technologies",
+    title: "MVP Development Services for Startups",
     description:
-      "Provides MVP development services for startups, delivering minimum viable product solutions with rapid prototyping, product validation, startup development, and accelerated market launch.",
+      "Launch fast with our MVP development services. We build scalable prototypes and Minimum Viable Products to help startups validate ideas and raise capital.",
   },
   alternates: {
     canonical: "https://mindefy.tech/mvp-development-startup-support",

@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "IT Consulting & Strategy | Mindefy Technologies",
+  title: "IT Consulting & Technology Strategy Services",
   description:
-    "Offers professional IT consulting services with strategic technology consulting, digital strategy, and expert technical advisory to drive digital transformation and optimize IT solutions for business growth.",
-  keywords: [
-    "it consulting",
-    "technology consulting",
-    "digital strategy",
-    "technical advisory",
-    "it solutions",
-    "technology guidance",
-  ],
+    "Align technology with business goals using our IT consulting services. We provide strategic roadmaps, digital transformation, and tech advisory for growth.",
+  keywords: ["IT Strategy", "Tech Advisory"],
   openGraph: {
-    title: "IT Consulting & Strategy | Mindefy Technologies",
+    title: "IT Consulting & Technology Strategy Services",
     description:
-      "Offers professional IT consulting services with strategic technology consulting, digital strategy, and expert technical advisory to drive digital transformation and optimize IT solutions for business growth.",
+      "Align technology with business goals using our IT consulting services. We provide strategic roadmaps, digital transformation, and tech advisory for growth.",
     url: "https://mindefy.tech/it-consulting-strategy",
   },
   twitter: {
-    title: "IT Consulting & Strategy | Mindefy Technologies",
+    title: "IT Consulting & Technology Strategy Services",
     description:
-      "Offers professional IT consulting services with strategic technology consulting, digital strategy, and expert technical advisory to drive digital transformation and optimize IT solutions for business growth.",
+      "Align technology with business goals using our IT consulting services. We provide strategic roadmaps, digital transformation, and tech advisory for growth.",
   },
   alternates: {
     canonical: "https://mindefy.tech/it-consulting-strategy",
