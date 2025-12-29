@@ -2,9 +2,9 @@ import { LazyAboutUs } from "../../utils/lazyLoadService";
 
 export const metadata = {
   title:
-    "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
+    "About Us | Mindefy Technologies - AI & Digital Transformation in Dubai & USA",
   description:
-    "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+    "Mindefy Technologies: Delivers cutting-edge AI, mobile apps & digital transformation for Dubai/USA enterprises. Join us to redefine business innovation.",
   keywords: [
     "about mindefy",
     "software development company",
@@ -14,16 +14,16 @@ export const metadata = {
   ],
   openGraph: {
     title:
-      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
+      "About Us | Mindefy Technologies - AI & Digital Transformation in Dubai & USA",
     description:
-      "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+      "Mindefy Technologies: Delivers cutting-edge AI, mobile apps & digital transformation for Dubai/USA enterprises. Join us to redefine business innovation.",
     url: "https://mindefy.tech/about-us-technology-innovators",
   },
   twitter: {
     title:
-      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
+      "About Us | Mindefy Technologies - AI & Digital Transformation in Dubai & USA",
     description:
-      "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+      "Mindefy Technologies: Delivers cutting-edge AI, mobile apps & digital transformation for Dubai/USA enterprises. Join us to redefine business innovation.",
   },
   alternates: {
     canonical: "https://mindefy.tech/about-us-technology-innovators",

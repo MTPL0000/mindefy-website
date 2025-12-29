@@ -65,12 +65,6 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/mean-mern-stack-development`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/digital-transformation-consulting`,
       lastModified: new Date(),
       changeFrequency: "monthly",

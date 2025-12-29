@@ -210,6 +210,12 @@ export default function Footer() {
                   MVP Development
                 </a>
                 <a
+                  href="/agile-rapid-development-practices"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  Agile & Rapid Application Development Model
+                </a>
+                <a
                   href="/staff-augmentation-services"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >

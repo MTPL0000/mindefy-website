@@ -331,6 +331,8 @@ export default function ALMLandingPage() {
 
         <motion.img
           src="/images/ai/cloud-left-1.png"
+          alt="cloud-left"
+          loading="lazy"
           className="hidden lg:block absolute left-0 top-[-10%] 2xl:top-0 aspect-auto opacity-40 -z-10"
           animate={cloudLeftControls}
           initial={{ x: 0, opacity: 1 }}
@@ -338,6 +340,8 @@ export default function ALMLandingPage() {
 
         <motion.img
           src="/images/ai/cloud-left-2.png"
+          alt="cloud-left"
+          loading="lazy"
           className="hidden lg:block absolute left-0 top-[10%] 2xl:top-[20%] aspect-auto -z-10"
           animate={cloudLeftControls}
           initial={{ x: 0, opacity: 1 }}
@@ -345,6 +349,8 @@ export default function ALMLandingPage() {
 
         <motion.img
           src="/images/ai/cloud-left-3.png"
+          alt="cloud-left"
+          loading="lazy"
           className="hidden lg:block w-[50%] absolute left-0 bottom-0 aspect-auto -z-10"
           animate={cloudLeftControls}
           initial={{ x: 0, opacity: 1 }}
@@ -352,6 +358,8 @@ export default function ALMLandingPage() {
 
         <motion.img
           src="/images/ai/cloud-c-top.png"
+          alt="cloud-top"
+          loading="lazy"
           className="hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 w-[50.5%] -z-10"
           animate={cloudTopControls}
           initial={{ y: 0, opacity: 1 }}
@@ -359,12 +367,16 @@ export default function ALMLandingPage() {
 
         <motion.img
           src="/images/ai/center.png"
+          alt="center"
+          loading="lazy"
           className="hidden lg:block absolute top-[13%] left-1/2 -translate-x-1/2 h-[80%] aspect-aut z-0"
           animate={zoomControls}
         />
 
         <motion.img
           src="/images/ai/cloud-right-1.png"
+          alt="cloud-right"
+          loading="lazy"
           className="hidden lg:block absolute right-0 top-[0%] aspect-auto -z-10"
           animate={cloudRightControls}
           initial={{ x: 0, opacity: 1 }}
@@ -372,6 +384,8 @@ export default function ALMLandingPage() {
 
         <motion.img
           src="/images/ai/cloud-right-1.png"
+          alt="cloud-right"
+          loading="lazy"
           className="hidden lg:block absolute right-0 top-[20%] aspect-auto -z-10"
           animate={cloudRightControls}
           initial={{ x: 0, opacity: 1 }}
@@ -379,6 +393,8 @@ export default function ALMLandingPage() {
 
         <motion.img
           src="/images/ai/cloud-right-2.png"
+          alt="cloud-right"
+          loading="lazy"
           className="hidden lg:block w-[50%] absolute right-0 bottom-0 aspect-auto -z-10"
           animate={cloudRightControls}
           initial={{ x: 0, opacity: 1 }}
@@ -659,6 +675,7 @@ export default function ALMLandingPage() {
                       <img
                         src={card.icon}
                         alt={card.title}
+                        loading="lazy"
                         className="w-full h-full object-contain"
                       />
                     </div>
@@ -721,6 +738,7 @@ export default function ALMLandingPage() {
                   <img
                     src={card.icon}
                     alt={card.title}
+                    loading="lazy"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -756,6 +774,7 @@ export default function ALMLandingPage() {
                 <img
                   src="/images/YH-MN.gif"
                   alt="Gen AI-Chatbot Interface"
+                  loading="lazy"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -816,6 +835,7 @@ export default function ALMLandingPage() {
                 <img
                   src="/images/YH-MN.gif"
                   alt="Gen AI-Chatbot Interface"
+                  loading="lazy"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -897,6 +917,7 @@ export default function ALMLandingPage() {
                 <img
                   src="/images/ai/early-foods.png"
                   alt="ML Driven Recommendations Interface"
+                  loading="lazy"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -925,6 +946,7 @@ export default function ALMLandingPage() {
                 <img
                   src="/images/ai/early-foods.png"
                   alt="ML Driven Recommendations Interface"
+                  loading="lazy"
                   className="w-full h-full object-contain"
                 />
               </div>

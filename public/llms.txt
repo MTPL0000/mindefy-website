@@ -1,0 +1,23 @@
+site: Mindefy Technologies Private Limited
+
+url: https://mindefy.tech
+
+description: Mindefy Technologies is a software development company providing AI solutions, web and mobile app development, AR/VR solutions, cloud engineering, and digital transformation services for startups and enterprises worldwide.
+
+primary_language: en
+region: Global
+
+important_pages:
+- https://mindefy.tech/
+- https://mindefy.tech/custom-ai-solutions-enterprises
+- https://mindefy.tech/hybrid-app-development-services
+- https://mindefy.tech/cloud-engineering-services
+- https://mindefy.tech/ecommerce-marketplace-development
+- https://mindefy.tech/it-consulting-strategy
+- https://mindefy.tech/ar-vr-game-development
+- https://mindefy.tech/mindful-ux-design-user-experience
+
+sitemap: https://mindefy.tech/sitemap.xml
+
+contact:
+- https://mindefy.tech/#contact 
