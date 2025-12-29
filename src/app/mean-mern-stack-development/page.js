@@ -5,32 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title:
-    "MEAN & MERN Stack Development Services in Dubai | Mindefy Technologies",
+  title: "MEAN & MERN Stack Development Company",
   description:
-    "Offers expert MEAN stack development and MERN stack development services in Dubai, US and India, building scalable full stack development apps with MongoDB, Express.js, React, Angular, and Node.js",
-  keywords: [
-    "mean stack development",
-    "mern stack development",
-    "full stack development",
-    "mongodb",
-    "nodejs",
-    "react",
-    "angular",
-    "express.js",
-  ],
+    "Hire full-stack developers for MEAN and MERN stack projects. We build dynamic web applications using MongoDB, Express, React/Angular, and Node.js.",
+  keywords: ["MEAN", "MERN", "Full Stack"],
   openGraph: {
-    title:
-      "MEAN & MERN Stack Development Services in Dubai | Mindefy Technologies",
+    title: "MEAN & MERN Stack Development Company",
     description:
-      "Offers expert MEAN stack development and MERN stack development services in Dubai, US and India, building scalable full stack development apps with MongoDB, Express.js, React, Angular, and Node.js",
+      "Hire full-stack developers for MEAN and MERN stack projects. We build dynamic web applications using MongoDB, Express, React/Angular, and Node.js.",
     url: "https://mindefy.tech/mean-mern-stack-development",
   },
   twitter: {
-    title:
-      "MEAN & MERN Stack Development Services in Dubai | Mindefy Technologies",
+    title: "MEAN & MERN Stack Development Company",
     description:
-      "Offers expert MEAN stack development and MERN stack development services in Dubai, US and India, building scalable full stack development apps with MongoDB, Express.js, React, Angular, and Node.js",
+      "Hire full-stack developers for MEAN and MERN stack projects. We build dynamic web applications using MongoDB, Express, React/Angular, and Node.js.",
   },
   alternates: {
     canonical: "https://mindefy.tech/mean-mern-stack-development",

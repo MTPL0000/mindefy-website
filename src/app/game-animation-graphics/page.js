@@ -5,30 +5,20 @@ import StructuredData, {
 import GameAnimation from "@/components/gameAnimation";
 
 export const metadata = {
-  title: "Game Animation & Graphics Services | Mindefy Technologies",
+  title: "Game Animation & 3D Graphics Services",
   description:
-    "Provides expert game animation and game development services, creating immersive 2D game animation, 3D game animation, game art with Unity development and Unreal Engine.",
-  keywords: [
-    "game animation",
-    "game development",
-    "2D game animation",
-    "3D game animation",
-    "game art",
-    "unity development",
-    "unreal engine",
-    "mobile game development",
-    "game design",
-  ],
+    "Bring your games to life with our 3D animation and game graphics services. We create stunning visual assets, characters, and environments for mobile & PC.",
+  keywords: ["3D Animation", "Game Art"],
   openGraph: {
-    title: "Game Animation & Graphics Services | Mindefy Technologies",
+    title: "Game Animation & 3D Graphics Services",
     description:
-      "Provides expert game animation and game development services, creating immersive 2D game animation, 3D game animation, game art with Unity development and Unreal Engine.",
+      "Bring your games to life with our 3D animation and game graphics services. We create stunning visual assets, characters, and environments for mobile & PC.",
     url: "https://mindefy.tech/game-animation-graphics",
   },
   twitter: {
-    title: "Game Animation & Graphics Services | Mindefy Technologies",
+    title: "Game Animation & 3D Graphics Services",
     description:
-      "Provides expert game animation and game development services, creating immersive 2D game animation, 3D game animation, game art with Unity development and Unreal Engine.",
+      "Bring your games to life with our 3D animation and game graphics services. We create stunning visual assets, characters, and environments for mobile & PC.",
   },
   alternates: {
     canonical: "https://mindefy.tech/game-animation-graphics",

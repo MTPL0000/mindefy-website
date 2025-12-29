@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Sitemap | Mindefy Technologies",
+  title: "Mindefy Website Map & Service Directory",
   description:
-    "Browse the complete sitemap of Mindefy Technologies. Access all service pages, product pages, case studies, and business solutions in one organized index.",
+    "Browse the complete Mindefy directory. Quick links to all software services, case studies, AI solutions, and company resources.",
+  keywords: ["Sitemap", "Navigation"],
   alternates: { canonical: "https://mindefy.tech/site-map" },
   robots: { index: true, follow: true },
 };

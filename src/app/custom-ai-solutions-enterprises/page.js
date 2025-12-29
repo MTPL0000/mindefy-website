@@ -6,22 +6,23 @@ import { WhyAISection } from "@/components/AIML/WhyAISection";
 import { WhyChooseSection } from "@/components/AIML/WhyChooseSection";
 
 export const metadata = {
-  title: "Custom AI Development for Enterprises | Mindefy Technologies",
+  title: "Enterprise AI Solutions & Custom Development",
   description:
-    "Delivers custom enterprise AI solutions including Generative AI, RAG, AI agents, and decision intelligence to design and deploy scalable, enterprise-ready AI systems for real business impact.",
+    "Transform your enterprise with custom AI solutions. We build scalable artificial intelligence systems to drive innovation, automation, and efficiency.",
+  keywords: ["Enterprise AI", "Automation"],
   alternates: {
     canonical: "https://mindefy.tech/custom-ai-solutions-enterprises",
   },
   openGraph: {
-    title: "Custom AI Development for Enterprises | Mindefy Technologies",
+    title: "Enterprise AI Solutions & Custom Development",
     description:
-      "Delivers custom enterprise AI solutions including Generative AI, RAG, AI agents, and decision intelligence to design and deploy scalable, enterprise-ready AI systems for real business impact.",
+      "Transform your enterprise with custom AI solutions. We build scalable artificial intelligence systems to drive innovation, automation, and efficiency.",
     url: "https://mindefy.tech/custom-ai-solutions-enterprises",
   },
   twitter: {
-    title: "Custom AI Development for Enterprises | Mindefy Technologies",
+    title: "Enterprise AI Solutions & Custom Development",
     description:
-      "Delivers custom enterprise AI solutions including Generative AI, RAG, AI agents, and decision intelligence to design and deploy scalable, enterprise-ready AI systems for real business impact.",
+      "Transform your enterprise with custom AI solutions. We build scalable artificial intelligence systems to drive innovation, automation, and efficiency.",
   },
 };
 

@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Android App Development Services | Mindefy Technologies",
+  title: "Android App Development Company",
   description:
-    "Delivers Android app development services, building native Android apps with Kotlin development, Java development, and cutting-edge tech for superior performance.",
-  keywords: [
-    "android app development",
-    "native android apps",
-    "android development services",
-    "mobile app development",
-    "kotlin development",
-    "java development",
-  ],
+    "Hire Mindefy's expert Android developers. We build scalable, secure, and high-performance native Android apps using Kotlin and Java for global ",
+  keywords: ["Android", "Kotlin", " Mobile App Dev"],
   openGraph: {
-    title: "Android App Development Services | Mindefy Technologies",
+    title: "Android App Development Company",
     description:
-      "Delivers Android app development services, building native Android apps with Kotlin development, Java development, and cutting-edge tech for superior performance.",
+      "Hire Mindefy's expert Android developers. We build scalable, secure, and high-performance native Android apps using Kotlin and Java for global ",
     url: "https://mindefy.tech/android-app-development-experts",
   },
   twitter: {
-    title: "Android App Development Services | Mindefy Technologies",
+    title: "Android App Development Company",
     description:
-      "Delivers Android app development services, building native Android apps with Kotlin development, Java development, and cutting-edge tech for superior performance.",
+      "Hire Mindefy's expert Android developers. We build scalable, secure, and high-performance native Android apps using Kotlin and Java for global ",
   },
   alternates: {
     canonical: "https://mindefy.tech/android-app-development-experts",

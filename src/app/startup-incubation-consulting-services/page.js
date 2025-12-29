@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Startup Incubation & Consulting Services | Mindefy Technologies",
+  title: "Startup Incubation & Tech Consulting Services",
   description:
-    "Offers startup incubation and business incubation services with startup accelerator programs, startup mentoring, entrepreneurship support, and business development guidance from concept to market success.",
-  keywords: [
-    "startup incubation",
-    "business incubation",
-    "startup accelerator",
-    "entrepreneurship support",
-    "startup mentoring",
-    "business development",
-  ],
+    "From concept to exit. We provide startup incubation and tech consulting, offering product strategy, CTO services, and engineering resources for founders.",
+  keywords: ["Incubation", "Tech Strategy"],
   openGraph: {
-    title: "Startup Incubation & Consulting Services | Mindefy Technologies",
+    title: "Startup Incubation & Tech Consulting Services",
     description:
-      "Offers startup incubation and business incubation services with startup accelerator programs, startup mentoring, entrepreneurship support, and business development guidance from concept to market success.",
+      "From concept to exit. We provide startup incubation and tech consulting, offering product strategy, CTO services, and engineering resources for founders.",
     url: "https://mindefy.tech/startup-incubation-consulting-services",
   },
   twitter: {
-    title: "Startup Incubation & Consulting Services | Mindefy Technologies",
+    title: "Startup Incubation & Tech Consulting Services",
     description:
-      "Offers startup incubation and business incubation services with startup accelerator programs, startup mentoring, entrepreneurship support, and business development guidance from concept to market success.",
+      "From concept to exit. We provide startup incubation and tech consulting, offering product strategy, CTO services, and engineering resources for founders.",
   },
   alternates: {
     canonical: "https://mindefy.tech/startup-incubation-consulting-services",

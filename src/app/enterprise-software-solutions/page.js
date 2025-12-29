@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Enterprise Software Solutions | Mindefy Technologies",
+  title: "Enterprise Software Development Solutions",
   description:
-    "Delivers custom enterprise software solutions and enterprise applications through expert custom software development, business automation, and scalable enterprise systems to streamline operations for large organizations.",
-  keywords: [
-    "enterprise software",
-    "business solutions",
-    "custom software development",
-    "enterprise applications",
-    "business automation",
-    "enterprise systems",
-  ],
+    "Custom enterprise software development to streamline operations. We build secure, scalable ERP and business management software for large organizations.",
+  keywords: ["ERP", "Enterprise Apps"],
   openGraph: {
-    title: "Enterprise Software Solutions | Mindefy Technologies",
+    title: "Enterprise Software Development Solutions",
     description:
-      "Delivers custom enterprise software solutions and enterprise applications through expert custom software development, business automation, and scalable enterprise systems to streamline operations for large organizations.",
+      "Custom enterprise software development to streamline operations. We build secure, scalable ERP and business management software for large organizations.",
     url: "https://mindefy.tech/enterprise-software-solutions",
   },
   twitter: {
-    title: "Enterprise Software Solutions | Mindefy Technologies",
+    title: "Enterprise Software Development Solutions",
     description:
-      "Delivers custom enterprise software solutions and enterprise applications through expert custom software development, business automation, and scalable enterprise systems to streamline operations for large organizations.",
+      "Custom enterprise software development to streamline operations. We build secure, scalable ERP and business management software for large organizations.",
   },
   alternates: {
     canonical: "https://mindefy.tech/enterprise-software-solutions",

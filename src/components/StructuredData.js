@@ -13,7 +13,7 @@ export const organizationData = {
   "@type": "Organization",
   name: "Mindefy Technologies",
   description:
-    "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+    "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
   url: "https://mindefy.tech",
   logo: "https://mindefy.tech/images/logo/mindefy-logo.png",
   contactPoint: {
@@ -52,7 +52,7 @@ export const websiteData = {
   name: "Mindefy Technologies",
   url: "https://mindefy.tech",
   description:
-    "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+    "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
   publisher: {
     "@type": "Organization",
     name: "Mindefy Technologies",

@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Agile & Rapid Development Practices | Mindefy Technologies",
+  title: "Agile Software Development & Rapid Prototyping",
   description:
-    "Specializes in agile software development, rapid development, scrum methodology, and iterative development to accelerate product launches with fast, flexible methodologies for enterprises.",
-  keywords: [
-    "agile development",
-    "rapid development",
-    "scrum methodology",
-    "agile software development",
-    "iterative development",
-    "fast development",
-  ],
+    "Accelerate launch times with our Agile development services. We use Scrum and rapid prototyping to deliver high-quality software with faster iterations.",
+  keywords: ["Agile", "Scrum", "Rapid Prototyping"],
   openGraph: {
-    title: "Agile & Rapid Development Practices | Mindefy Technologies",
+    title: "Agile Software Development & Rapid Prototyping",
     description:
-      "Specializes in agile software development, rapid development, scrum methodology, and iterative development to accelerate product launches with fast, flexible methodologies for enterprises.",
+      "Accelerate launch times with our Agile development services. We use Scrum and rapid prototyping to deliver high-quality software with faster iterations.",
     url: "https://mindefy.tech/agile-rapid-development-practices",
   },
   twitter: {
-    title: "Agile & Rapid Development Practices | Mindefy Technologies",
+    title: "Agile Software Development & Rapid Prototyping",
     description:
-      "Specializes in agile software development, rapid development, scrum methodology, and iterative development to accelerate product launches with fast, flexible methodologies for enterprises.",
+      "Accelerate launch times with our Agile development services. We use Scrum and rapid prototyping to deliver high-quality software with faster iterations.",
   },
   alternates: {
     canonical: "https://mindefy.tech/agile-rapid-development-practices",

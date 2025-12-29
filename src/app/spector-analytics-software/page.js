@@ -4,29 +4,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Spector Analytics Software | Mindefy Technologies",
+  title: "Spector Analytics: AI-Driven Asset Health",
   description:
-    "Presents Spector.ai, the leading 360° asset health platform powered by AI asset management and AI agents for asset performance, asset integrity, and industrial sustainability.",
-  keywords: [
-    "spector.ai",
-    "asset health platform",
-    "AI asset management",
-    "AI agents",
-    "asset performance",
-    "sustainability",
-    "machine learning",
-    "asset integrity",
-  ],
+    "Optimize industrial performance with Spector Analytics. Our AI-driven platform offers predictive maintenance and real-time asset health monitoring.",
+  keywords: ["Asset Management", "Predictive Maintenance"],
   openGraph: {
-    title: "Spector Analytics Software | Mindefy Technologies",
+    title: "Spector Analytics: AI-Driven Asset Health",
     description:
-      "Presents Spector.ai, the leading 360° asset health platform powered by AI asset management and AI agents for asset performance, asset integrity, and industrial sustainability.",
+      "Optimize industrial performance with Spector Analytics. Our AI-driven platform offers predictive maintenance and real-time asset health monitoring.",
     url: "https://mindefy.tech/spector-analytics-software",
   },
   twitter: {
-    title: "Spector Analytics Software | Mindefy Technologies",
+    title: "Spector Analytics: AI-Driven Asset Health",
     description:
-      "Presents Spector.ai, the leading 360° asset health platform powered by AI asset management and AI agents for asset performance, asset integrity, and industrial sustainability.",
+      "Optimize industrial performance with Spector Analytics. Our AI-driven platform offers predictive maintenance and real-time asset health monitoring.",
   },
   alternates: {
     canonical: "https://mindefy.tech/spector-analytics-software",

@@ -5,33 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Generative AI Chatbot Development Services  | Mindefy Technologies",
+  title: "Generative AI & Chatbot Development Company",
   description:
-    "Offers generative AI chatbot development services, building custom AI chatbot development, RAG chatbot, and conversational AI solutions for enhanced engagement and mental health support.",
-  keywords: [
-    "gen ai chatbot",
-    "generative ai chatbot",
-    "AI chatbot development",
-    "RAG chatbot",
-    "conversational AI",
-    "mental health chatbot",
-    "AI companion",
-    "chatbot development",
-    "retrieval augmented generation",
-    "AI conversation",
-    "intelligent chatbot",
-    "custom chatbot",
-  ],
+    "Integrate Generative AI and custom chatbots into your business. We build LLM-powered solutions using ChatGPT, GPT-4, and LLaMA for smarter automation.",
+  keywords: ["GenAI", "LLM", "ChatGPT"],
   openGraph: {
-    title: "Generative AI Chatbot Development Services  | Mindefy Technologies",
+    title: "Generative AI & Chatbot Development Company",
     description:
-      "Offers generative AI chatbot development services, building custom AI chatbot development, RAG chatbot, and conversational AI solutions for enhanced engagement and mental health support.",
+      "Integrate Generative AI and custom chatbots into your business. We build LLM-powered solutions using ChatGPT, GPT-4, and LLaMA for smarter automation.",
     url: "https://mindefy.tech/generative-ai-chatbot-development",
   },
   twitter: {
-    title: "Generative AI Chatbot Development Services  | Mindefy Technologies",
+    title: "Generative AI & Chatbot Development Company",
     description:
-      "Offers generative AI chatbot development services, building custom AI chatbot development, RAG chatbot, and conversational AI solutions for enhanced engagement and mental health support.",
+      "Integrate Generative AI and custom chatbots into your business. We build LLM-powered solutions using ChatGPT, GPT-4, and LLaMA for smarter automation.",
   },
   alternates: {
     canonical: "https://mindefy.tech/generative-ai-chatbot-development",

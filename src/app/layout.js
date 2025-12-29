@@ -34,20 +34,11 @@ const lobster = Lobster_Two({
 export const metadata = {
   metadataBase: new URL("https://mindefy.tech"),
   title: {
-    default:
-      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
+    default: "AI Solutions & Digital Transformation Company",
   },
   description:
-    "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
-  keywords: [
-    "software development",
-    "mobile app development",
-    "web development",
-    "AI solutions",
-    "digital transformation",
-    "enterprise solutions",
-    "startup consulting",
-  ],
+    "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
+  keywords: ["AI", "Mobile Apps", "Digital Transformation"],
   authors: [{ name: "Mindefy Technologies" }],
   creator: "Mindefy Technologies",
   publisher: "Mindefy Technologies",
@@ -67,10 +58,9 @@ export const metadata = {
     locale: "en_US",
     url: "https://mindefy.tech",
     siteName: "Mindefy Technologies",
-    title:
-      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
+    title: "AI Solutions & Digital Transformation Company",
     description:
-      "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+      "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
     images: [
       {
         url: "/images/logo/mindefy-og.png",
@@ -82,10 +72,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
+    title: "AI Solutions & Digital Transformation Company",
     description:
-      "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+      "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
     images: ["/images/logo/mindefy-og.png"],
   },
   verification: {

@@ -5,30 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title:
-    "Microservices Architecture Consulting Services | Mindefy Technologies",
+  title: "Microservices Architecture Consulting Services",
   description:
-    "Provides microservices architecture consulting services for designing scalable distributed systems, cloud native applications, robust API development, and optimized microservices design with superior performance.",
-  keywords: [
-    "microservices architecture",
-    "distributed systems",
-    "scalable applications",
-    "api development",
-    "cloud native",
-    "microservices design",
-  ],
+    "Transition to a scalable microservices architecture. Our consulting services help you break down monoliths into resilient, independent services.",
+  keywords: ["Microservices", "API", "Scalability"],
   openGraph: {
-    title:
-      "Microservices Architecture Consulting Services | Mindefy Technologies",
+    title: "Microservices Architecture Consulting Services",
     description:
-      "Provides microservices architecture consulting services for designing scalable distributed systems, cloud native applications, robust API development, and optimized microservices design with superior performance.",
+      "Transition to a scalable microservices architecture. Our consulting services help you break down monoliths into resilient, independent services.",
     url: "https://mindefy.tech/microservices-architecture-consulting",
   },
   twitter: {
-    title:
-      "Microservices Architecture Consulting Services | Mindefy Technologies",
+    title: "Microservices Architecture Consulting Services",
     description:
-      "Provides microservices architecture consulting services for designing scalable distributed systems, cloud native applications, robust API development, and optimized microservices design with superior performance.",
+      "Transition to a scalable microservices architecture. Our consulting services help you break down monoliths into resilient, independent services.",
   },
   alternates: {
     canonical: "https://mindefy.tech/microservices-architecture-consulting",

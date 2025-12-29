@@ -4,27 +4,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "SoliStack Integration Solutions | Mindefy Technologies",
+  title: "SoliStack: Enterprise System Integration Solutions",
   description:
-    "SoliStack delivers modern development stack solutions for building scalable applications with integrated tech stack, seamless modern platform capabilities, and efficient integrated solutions.",
-  keywords: [
-    "soli stack",
-    "development stack",
-    "modern platform",
-    "scalable applications",
-    "integrated solution",
-    "tech stack",
-  ],
+    "Seamlessly connect your apps with SoliStack. Our enterprise integration services ensure smooth data flow between CRM, ERP, and legacy systems.",
+  keywords: ["API Integration", "Enterprise Stack"],
   openGraph: {
-    title: "SoliStack Integration Solutions | Mindefy Technologiess",
+    title: "SoliStack: Enterprise System Integration Solutionss",
     description:
-      "SoliStack delivers modern development stack solutions for building scalable applications with integrated tech stack, seamless modern platform capabilities, and efficient integrated solutions.",
+      "Seamlessly connect your apps with SoliStack. Our enterprise integration services ensure smooth data flow between CRM, ERP, and legacy systems.",
     url: "https://mindefy.tech/soli-stack-integration-solutions",
   },
   twitter: {
-    title: "SoliStack Integration Solutions | Mindefy Technologies",
+    title: "SoliStack: Enterprise System Integration Solutions",
     description:
-      "SoliStack delivers modern development stack solutions for building scalable applications with integrated tech stack, seamless modern platform capabilities, and efficient integrated solutions.",
+      "Seamlessly connect your apps with SoliStack. Our enterprise integration services ensure smooth data flow between CRM, ERP, and legacy systems.",
   },
   alternates: {
     canonical: "https://mindefy.tech/soli-stack-integration-solutions",

@@ -4,27 +4,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Customer Testimonials & Reviews | Mindefy Technologies",
+  title: "Mindefy Client Testimonials & Success Stories",
   description:
-    "Read what our clients say about Mindefy Technologies. Discover testimonials and reviews from satisfied customers who have experienced our exceptional services.",
-  keywords: [
-    "testimonials",
-    "client reviews",
-    "customer feedback",
-    "success stories",
-    "client satisfaction",
-    "recommendations",
-  ],
+    "Explore success stories from global clients. See how Mindefy's AI and software solutions drive digital transformation and business growth.",
+  keywords: ["Reviews", "Case Studies"],
   openGraph: {
-    title: "Customer Testimonials & Reviews | Mindefy Technologies",
+    title: "Mindefy Client Testimonials & Success Stories",
     description:
-      "Read what our clients say about Mindefy Technologies. Discover testimonials and reviews from satisfied customers who have experienced our exceptional services.",
+      "Explore success stories from global clients. See how Mindefy's AI and software solutions drive digital transformation and business growth.",
     url: "https://mindefy.tech/customer-testimonials-reviews",
   },
   twitter: {
-    title: "Customer Testimonials & Reviews | Mindefy Technologies",
+    title: "Mindefy Client Testimonials & Success Stories",
     description:
-      "Read what our clients say about Mindefy Technologies. Discover testimonials and reviews from satisfied customers who have experienced our exceptional services.",
+      "Explore success stories from global clients. See how Mindefy's AI and software solutions drive digital transformation and business growth.",
   },
   alternates: {
     canonical: "https://mindefy.tech/customer-testimonials-reviews",

@@ -5,27 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Startup Support & Consulting Services | Mindefy Technologies",
+  title: "Strategic Startup Support & Tech Consulting",
   description:
-    "Offers comprehensive startup support and startup consulting services, guiding startups through ideation to launch with expertise in business incubation, technology startup solutions, and startup advisory for scalable success.",
-  keywords: [
-    "startup support",
-    "startup consulting",
-    "startup development",
-    "business incubation",
-    "technology startup",
-    "startup advisory",
-  ],
+    "Comprehensive tech support for startups. We offer product roadmap planning, engineering strategy, and consulting to help you scale your venture.",
+  keywords: ["Mentorship", "Product Roadmap"],
   openGraph: {
-    title: "Startup Support & Consulting Services | Mindefy Technologies",
+    title: "Strategic Startup Support & Tech Consulting",
     description:
-      "Offers comprehensive startup support and startup consulting services, guiding startups through ideation to launch with expertise in business incubation, technology startup solutions, and startup advisory for scalable success.",
+      "Comprehensive tech support for startups. We offer product roadmap planning, engineering strategy, and consulting to help you scale your venture.",
     url: "https://mindefy.tech/startup-support-consulting",
   },
   twitter: {
-    title: "Startup Support & Consulting Services | Mindefy Technologies",
+    title: "Strategic Startup Support & Tech Consulting",
     description:
-      "Offers comprehensive startup support and startup consulting services, guiding startups through ideation to launch with expertise in business incubation, technology startup solutions, and startup advisory for scalable success.",
+      "Comprehensive tech support for startups. We offer product roadmap planning, engineering strategy, and consulting to help you scale your venture.",
   },
   alternates: {
     canonical: "https://mindefy.tech/startup-support-consulting",

@@ -5,29 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Mindful UX Design & User Experience Services | Mindefy Technologies",
+  title: "UI/UX Design & User Experience Services",
   description:
-    "Delivers mindful UX design and user experience design services with user-centered UI design, design thinking, and intuitive user interface solutions that boost usability, engagement, and mindfulness.",
-  keywords: [
-    "ux design",
-    "user experience design",
-    "ui design",
-    "mindful design",
-    "user interface",
-    "design thinking",
-  ],
+    "Create intuitive digital products with our UI/UX design agency. We focus on user-centric research, wireframing, and prototyping for higher engagement.",
+  keywords: ["UI/UX", "Product Design"],
   openGraph: {
-    title:
-      "Mindful UX Design & User Experience Services | Mindefy Technologies",
+    title: "UI/UX Design & User Experience Services",
     description:
-      "Delivers mindful UX design and user experience design services with user-centered UI design, design thinking, and intuitive user interface solutions that boost usability, engagement, and mindfulness.",
+      "Create intuitive digital products with our UI/UX design agency. We focus on user-centric research, wireframing, and prototyping for higher engagement.",
     url: "https://mindefy.tech/mindful-ux-design-user-experience",
   },
   twitter: {
-    title:
-      "Mindful UX Design & User Experience Services | Mindefy Technologies",
+    title: "UI/UX Design & User Experience Services",
     description:
-      "Delivers mindful UX design and user experience design services with user-centered UI design, design thinking, and intuitive user interface solutions that boost usability, engagement, and mindfulness.",
+      "Create intuitive digital products with our UI/UX design agency. We focus on user-centric research, wireframing, and prototyping for higher engagement.",
   },
   alternates: {
     canonical: "https://mindefy.tech/mindful-ux-design-user-experience",

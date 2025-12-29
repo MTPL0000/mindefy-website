@@ -5,29 +5,20 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "E-commerce & Marketplace Development Services | Mindefy Technologies",
+  title: "E-commerce & Marketplace Development Services",
   description:
-    "Delivers custom ecommerce development and marketplace development services, building scalable online stores, multi-vendor platforms, and e-commerce solutions with modern tech stacks.",
-  keywords: [
-    "ecommerce development",
-    "marketplace development",
-    "online store",
-    "multi-vendor platform",
-    "e-commerce solutions",
-    "shopping platform",
-  ],
+    "Build scalable multi-vendor marketplaces and e-commerce platforms. Our developers create secure, high-conversion shopping experiences for global retail.",
+  keywords: ["Marketplace", "Multi - vendor", "Retail"],
   openGraph: {
-    title:
-      "E-commerce & Marketplace Development Services | Mindefy Technologies",
+    title: "E-commerce & Marketplace Development Services",
     description:
-      "Delivers custom ecommerce development and marketplace development services, building scalable online stores, multi-vendor platforms, and e-commerce solutions with modern tech stacks.",
+      "Build scalable multi-vendor marketplaces and e-commerce platforms. Our developers create secure, high-conversion shopping experiences for global retail.",
     url: "https://mindefy.tech/ecommerce-marketplace-development",
   },
   twitter: {
-    title:
-      "E-commerce & Marketplace Development Services | Mindefy Technologies",
+    title: "E-commerce & Marketplace Development Services",
     description:
-      "Delivers custom ecommerce development and marketplace development services, building scalable online stores, multi-vendor platforms, and e-commerce solutions with modern tech stacks.",
+      "Build scalable multi-vendor marketplaces and e-commerce platforms. Our developers create secure, high-conversion shopping experiences for global retail.",
   },
   alternates: {
     canonical: "https://mindefy.tech/ecommerce-marketplace-development",

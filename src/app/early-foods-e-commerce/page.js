@@ -1,20 +1,21 @@
 import EarlyFoods from "@/components/projects/EarlyFoods";
 
 export const metadata = {
-  title: "Early Foods E-Commerce | Mindefy Technologies",
+  title: "Case Study: Early Foods E-Commerce AI Solution",
   description:
-    "Optimized the EarlyFoods e-commerce experience through in-depth UX research and design, enhancing user engagement and driving sales growth.",
+    "How Mindefy built a scalable e-commerce platform for Early Foods. Learn how our AI recommendation engines boosted sales and customer retention.",
+  keywords: ["E-commerce", "AI Recommendation"],
   alternates: { canonical: "https://mindefy.tech/early-foods-e-commerce" },
   openGraph: {
-    title: "Early Foods E-Commerce | Mindefy Technologies",
+    title: "Case Study: Early Foods E-Commerce AI Solution",
     description:
-      "Optimized the EarlyFoods e-commerce experience through in-depth UX research and design, enhancing user engagement and driving sales growth.",
+      "How Mindefy built a scalable e-commerce platform for Early Foods. Learn how our AI recommendation engines boosted sales and customer retention.",
     url: "https://mindefy.tech/early-foods-e-commerce",
   },
   twitter: {
-    title: "Early Foods E-Commerce | Mindefy Technologies",
+    title: "Case Study: Early Foods E-Commerce AI Solution",
     description:
-      "Optimized the EarlyFoods e-commerce experience through in-depth UX research and design, enhancing user engagement and driving sales growth.",
+      "How Mindefy built a scalable e-commerce platform for Early Foods. Learn how our AI recommendation engines boosted sales and customer retention.",
   },
 };
 

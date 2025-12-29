@@ -1,29 +1,20 @@
 import { LazyAboutUs } from "../../utils/lazyLoadService";
 
 export const metadata = {
-  title:
-    "About Us | Mindefy Technologies - AI & Digital Transformation in Dubai & USA",
+  title: "About Mindefy: Top Technology Innovation Partner",
   description:
-    "Mindefy Technologies: Delivers cutting-edge AI, mobile apps & digital transformation for Dubai/USA enterprises. Join us to redefine business innovation.",
-  keywords: [
-    "about mindefy",
-    "software development company",
-    "technology experts",
-    "mobile app development",
-    "digital transformation",
-  ],
+    "We are a global technology partner delivering AI, cloud, and software solutions. Learn how our expert engineering teams help businesses scale and innovate.",
+  keywords: ["Tech Partner", "Software Agency"],
   openGraph: {
-    title:
-      "About Us | Mindefy Technologies - AI & Digital Transformation in Dubai & USA",
+    title: "About Mindefy: Top Technology Innovation Partner",
     description:
-      "Mindefy Technologies: Delivers cutting-edge AI, mobile apps & digital transformation for Dubai/USA enterprises. Join us to redefine business innovation.",
+      "We are a global technology partner delivering AI, cloud, and software solutions. Learn how our expert engineering teams help businesses scale and innovate.",
     url: "https://mindefy.tech/about-us-technology-innovators",
   },
   twitter: {
-    title:
-      "About Us | Mindefy Technologies - AI & Digital Transformation in Dubai & USA",
+    title: "About Mindefy: Top Technology Innovation Partner",
     description:
-      "Mindefy Technologies: Delivers cutting-edge AI, mobile apps & digital transformation for Dubai/USA enterprises. Join us to redefine business innovation.",
+      "We are a global technology partner delivering AI, cloud, and software solutions. Learn how our expert engineering teams help businesses scale and innovate.",
   },
   alternates: {
     canonical: "https://mindefy.tech/about-us-technology-innovators",

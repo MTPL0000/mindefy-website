@@ -19,23 +19,21 @@ import BlueprintSection from "@/components/HomePage/BluePrint";
 import IndustriesSection from "@/components/HomePage/IndustryCard";
 
 export const metadata = {
-  title:
-    "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
+  title: "AI Solutions & Digital Transformation Company",
   description:
-    "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+    "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
+  keywords: ["AI", "Mobile Apps", "Digital Transformation"],
   alternates: { canonical: "https://mindefy.tech" },
   openGraph: {
-    title:
-      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
+    title: "AI Solutions & Digital Transformation Company",
     description:
-      "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+      "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
     url: "https://mindefy.tech",
   },
   twitter: {
-    title:
-      "Mindefy Technologies | Leading AI Solutions & Digital Transformation Services for Enterprises in Dubai & USA",
+    title: "AI Solutions & Digital Transformation Company",
     description:
-      "Mindefy Technologies: Leading AI solutions, mobile app development & digital transformation for enterprises in Dubai & USA. Innovate with expert software services.",
+      "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
   },
 };
 
