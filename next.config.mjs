@@ -15,8 +15,12 @@ const nextConfig = {
 
   // Experimental features for better performance
   experimental: {
+    // Inline CSS directly into <style> tags to eliminate render-blocking CSS
+    inlineCss: true,
+    // Optimize CSS for critical CSS extraction
     optimizeCss: true,
-    optimizePackageImports: ["react", "react-dom"],
+    // Optimize package imports for better tree-shaking
+    optimizePackageImports: ["react", "react-dom", "framer-motion", "lucide-react"],
   },
 
   webpack: (config) => {
