@@ -11,44 +11,44 @@ export default function HeroSection() {
     {
       src: "/images/sp-logo.png",
       alt: "Spector-Mindefy",
-      aspectRatio: "36/11",
+      aspectRatio: "184/56",
     },
-    { src: "/images/kotak.png", alt: "Kotak-Mindefy", aspectRatio: "1/1" },
+    { src: "/images/kotak.png", alt: "Kotak-Mindefy", aspectRatio: "218/56" },
     {
-      src: "/images/netlink.svg",
+      src: "/images/netlink.png",
       alt: "Netlink-Mindefy",
-      aspectRatio: "2.39/1",
+      aspectRatio: "245/56",
     },
-    { src: "/images/mst-hero.webp", alt: "MST-Mindefy", aspectRatio: "2.41/1" },
+    { src: "/images/mst-hero.png", alt: "MST-Mindefy", aspectRatio: "135/56" },
     {
-      src: "/images/krungthai.webp",
+      src: "/images/krungthai.png",
       alt: "Krungthai-Mindefy",
-      aspectRatio: "100/22",
+      aspectRatio: "255/56",
     },
     {
       src: "/images/solistack.png",
       alt: "Solistack-Mindefy",
-      aspectRatio: "1685/451",
+      aspectRatio: "210/56",
     },
     {
       src: "/images/early-foods-hero.png",
       alt: "Early-Foods-Mindefy",
-      aspectRatio: "46/31",
+      aspectRatio: "76/56",
     },
     {
-      src: "/images/Bottomline.svg",
+      src: "/images/Bottomline.png",
       alt: "Bottomline-Mindefy",
       aspectRatio: "2.39/1",
     },
     {
       src: "/images/jego-hero.png",
       alt: "Jego-Mindefy",
-      aspectRatio: "1.91/1",
+      aspectRatio: "107/56",
     },
     {
       src: "/images/memolect-hero.png",
       alt: "Memolect-Mindefy",
-      aspectRatio: "2.92/1",
+      aspectRatio: "164/56",
     },
   ];
 
@@ -141,7 +141,7 @@ export default function HeroSection() {
   useEffect(() => {
     function updateWidth() {
       if (tickerRef.current) {
-        setRowWidth((tickerRef.current.scrollWidth + 20) / 2); // Only one set of logos
+        setRowWidth(tickerRef.current.scrollWidth / 3); // Width of one set (total is 3 sets)
       }
       setBaseFontSize(getBaseFontSize());
       setIsDesktop(checkIsDesktop());
@@ -194,8 +194,8 @@ export default function HeroSection() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isDesktop]);
 
-  // Duration based on width (optional: 100px/sec)
-  const duration = rowWidth ? rowWidth / 100 : 20;
+  // Duration based on width - slower speed for better visibility across all screen sizes
+  const duration = rowWidth ? rowWidth / 80 : 20;
 
   // Calculate transform values based on scroll progress (only for desktop)
   const translateX = isDesktop ? -750 * scrollProgress : 0;
@@ -305,7 +305,7 @@ export default function HeroSection() {
         </p>
 
         {/* Ticker Container */}
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden mt-6 sm:mt-6 lg:mt-12">
           {/* Gradient overlays for smooth fade effect */}
           <div className="absolute left-0 top-0 w-8 sm:w-16 h-full bg-linear-to-r from-[#f3f4ff] to-transparent z-10"></div>
           <div className="absolute right-0 top-0 w-8 sm:w-16 h-full bg-linear-to-l from-[#fff3f0] to-transparent z-10"></div>
@@ -327,61 +327,27 @@ export default function HeroSection() {
                   }
                 : {}
             }
-            style={{ width: rowWidth ? rowWidth * 2 : "auto" }}
           >
-            {/* First set of logos */}
-            {clientLogos.map((logo, index) => (
-              <div
-                key={`first-${index}`}
-                className={`shrink-0 mx-4 sm:mx-6 lg:mx-8 ${
-                  logo.alt === "MST-Mindefy"
-                    ? "w-12 sm:w-16 lg:w-20"
-                    : logo.alt === "Jego-Mindefy"
-                    ? "w-10 sm:w-14 lg:w-18"
-                    : logo.alt === "Early-Foods-Mindefy"
-                    ? "w-10 sm:w-14 lg:w-20"
-                    : "w-20 sm:w-28 lg:w-36"
-                }`}
-                style={{ aspectRatio: logo.aspectRatio }}
-              >
-                <div className="relative w-full h-full p-2 sm:p-3 lg:p-4">
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    fill
-                    sizes="(max-width: 640px) 80px, (max-width: 1024px) 120px, 160px"
-                    loading="lazy"
-                    className="object-contain"
-                  />
+            {/* Render logos multiple times for seamless infinite scroll */}
+            {[...Array(3)].map((_, setIndex) => (
+              clientLogos.map((logo, index) => (
+                <div
+                  key={`set-${setIndex}-${index}`}
+                  className="shrink-0 mx-4 sm:mx-6 lg:mx-8 h-5 sm:h-6 lg:h-8 xl:h-10"
+                  style={{ aspectRatio: logo.aspectRatio }}
+                >
+                  <div className="relative w-full h-full p-1 sm:p-2 lg:p-2">
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      fill
+                      sizes="(max-width: 640px) 80px, (max-width: 1024px) 120px, 160px"
+                      loading="lazy"
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {clientLogos.map((logo, index) => (
-              <div
-                key={`second-${index}`}
-                className={`shrink-0 mx-4 sm:mx-6 lg:mx-8 ${
-                  logo.alt === "MST-Mindefy"
-                    ? "w-12 sm:w-16 lg:w-20"
-                    : logo.alt === "Jego-Mindefy"
-                    ? "w-10 sm:w-14 lg:w-18"
-                    : logo.alt === "Early-Foods-Mindefy"
-                    ? "w-10 sm:w-14 lg:w-20"
-                    : "w-20 sm:w-28 lg:w-36"
-                }`}
-                style={{ aspectRatio: logo.aspectRatio }}
-              >
-                <div className="relative w-full h-full p-2 sm:p-3 lg:p-4">
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    fill
-                    sizes="(max-width: 640px) 80px, (max-width: 1024px) 120px, 160px"
-                    loading="lazy"
-                    className="object-contain"
-                  />
-                </div>
-              </div>
+              ))
             ))}
           </motion.div>
         </div>
