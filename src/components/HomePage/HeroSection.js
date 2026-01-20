@@ -9,44 +9,44 @@ export default function HeroSection() {
   // Client logos data
   const clientLogos = [
     {
-      src: "/images/sp-logo.png",
+      src: "/images/sp-logo.webp",
       alt: "Spector-Mindefy",
       aspectRatio: "184/56",
     },
-    { src: "/images/kotak.png", alt: "Kotak-Mindefy", aspectRatio: "218/56" },
+    { src: "/images/kotak.webp", alt: "Kotak-Mindefy", aspectRatio: "218/56" },
     {
-      src: "/images/netlink.png",
+      src: "/images/netlink.webp",
       alt: "Netlink-Mindefy",
       aspectRatio: "245/56",
     },
-    { src: "/images/mst-hero.png", alt: "MST-Mindefy", aspectRatio: "135/56" },
+    { src: "/images/mst-hero.webp", alt: "MST-Mindefy", aspectRatio: "135/56" },
     {
-      src: "/images/krungthai.png",
+      src: "/images/krungthai.webp",
       alt: "Krungthai-Mindefy",
       aspectRatio: "255/56",
     },
     {
-      src: "/images/solistack.png",
+      src: "/images/solistack.webp",
       alt: "Solistack-Mindefy",
       aspectRatio: "210/56",
     },
     {
-      src: "/images/early-foods-hero.png",
+      src: "/images/early-foods-hero.webp",
       alt: "Early-Foods-Mindefy",
-      aspectRatio: "76/56",
+      aspectRatio: "74/56",
     },
     {
-      src: "/images/Bottomline.png",
+      src: "/images/Bottomline.webp",
       alt: "Bottomline-Mindefy",
       aspectRatio: "2.39/1",
     },
     {
-      src: "/images/jego-hero.png",
+      src: "/images/jego-hero.webp",
       alt: "Jego-Mindefy",
       aspectRatio: "107/56",
     },
     {
-      src: "/images/memolect-hero.png",
+      src: "/images/memolect-hero.webp",
       alt: "Memolect-Mindefy",
       aspectRatio: "164/56",
     },
