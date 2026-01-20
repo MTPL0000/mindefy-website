@@ -67,7 +67,7 @@ export default function AboutSection() {
 
           {/* Right Content - 3D Character */}
           <div className="w-full lg:w-1/2 flex justify-center items-center">
-            <div className="relative w-64 sm:w-80 lg:w-96 xl:w-119 aspect-square">
+            <div className="relative w-64 sm:w-80 lg:w-96 xl:w-119 aspect-415/436">
               <Image
                 src="/images/specs.webp"
                 fill

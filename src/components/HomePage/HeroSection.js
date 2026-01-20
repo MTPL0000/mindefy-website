@@ -38,7 +38,7 @@ export default function HeroSection() {
     {
       src: "/images/Bottomline.webp",
       alt: "Bottomline-Mindefy",
-      aspectRatio: "2.39/1",
+      aspectRatio: "230/56",
     },
     {
       src: "/images/jego-hero.webp",
