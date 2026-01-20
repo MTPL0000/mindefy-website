@@ -34,7 +34,7 @@ export const yourHourContent = {
   ],
   caseStudyLink: "/yourhour-screentime-app",
   caseStudyText: "VIEW CASE STUDY",
-  aspectRatio: "886/1140",
+  aspectRatio: "665/855",
 };
 
 export const JEGOContent = {
