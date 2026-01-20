@@ -7,6 +7,7 @@ import ProductsDropdown from "./ProductsDropdown";
 import { ProjectDropdown } from "./ProjectDropdown";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { ChevronDown } from "lucide-react";
 import {
   servicesData,
   productsData,
@@ -519,16 +520,13 @@ export default function Navbar() {
                 }}
               >
                 Services
-                <Image
-                  src="/images/dropdown-icon.png"
-                  alt="Dropdown"
-                  width={10}
-                  height={10}
-                  className={`object-contain transition-transform ${
+                <ChevronDown
+                  className={`object-contain transition-transform w-5 h-5 ${
                     showServicesDropdown ? "rotate-180" : ""
                   }`}
                 />
               </p>
+              
 
               {/* Services Dropdown with hover bridge */}
               {showServicesDropdown && (
@@ -566,12 +564,8 @@ export default function Navbar() {
             >
               <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
                 Products
-                <Image
-                  src="/images/dropdown-icon.png"
-                  alt="Dropdown"
-                  width={10}
-                  height={10}
-                  className={`object-contain transition-transform ${
+                <ChevronDown
+                  className={`object-contain transition-transform w-5 h-5 ${
                     showProductsDropdown ? "rotate-180" : ""
                   }`}
                 />
@@ -605,12 +599,8 @@ export default function Navbar() {
             >
               <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
                 Projects
-                <Image
-                  src="/images/dropdown-icon.png"
-                  alt="Dropdown"
-                  width={10}
-                  height={10}
-                  className={`object-contain transition-transform ${
+                <ChevronDown
+                  className={`object-contain transition-transform w-5 h-5 ${
                     showProjectsDropdown ? "rotate-180" : ""
                   }`}
                 />
@@ -681,12 +671,8 @@ export default function Navbar() {
                   className="flex items-center justify-between w-full hover:text-[#2c2178] py-1 text-left cursor-pointer"
                 >
                   Services
-                  <Image
-                    src="/images/dropdown-icon.png"
-                    alt="Dropdown"
-                    width={10}
-                    height={10}
-                    className={`object-contain transition-transform ${
+                  <ChevronDown
+                    className={`object-contain transition-transform w-5 h-5 ${
                       mobileServicesOpen ? "rotate-180" : ""
                     }`}
                   />
@@ -702,12 +688,8 @@ export default function Navbar() {
                             className="flex items-center justify-between w-full font-semibold text-[#332771] text-sm cursor-pointer"
                           >
                             {category}
-                            <Image
-                              src="/images/dropdown-icon.png"
-                              alt="Dropdown"
-                              width={8}
-                              height={8}
-                              className={`object-contain transition-transform ${
+                            <ChevronDown
+                              className={`object-contain transition-transform w-5 h-5 ${
                                 openCategories[category] ? "rotate-180" : ""
                               }`}
                             />
@@ -740,12 +722,8 @@ export default function Navbar() {
                   className="flex items-center justify-between w-full hover:text-[#2c2178] py-1 text-left cursor-pointer"
                 >
                   Products
-                  <Image
-                    src="/images/dropdown-icon.png"
-                    alt="Dropdown"
-                    width={10}
-                    height={10}
-                    className={`object-contain transition-transform ${
+                  <ChevronDown
+                    className={`object-contain transition-transform w-5 h-5 ${
                       mobileProductsOpen ? "rotate-180" : ""
                     }`}
                   />
@@ -773,12 +751,8 @@ export default function Navbar() {
                   className="flex items-center justify-between w-full hover:text-[#2c2178] py-1 text-left cursor-pointer"
                 >
                   Projects
-                  <Image
-                    src="/images/dropdown-icon.png"
-                    alt="Dropdown"
-                    width={10}
-                    height={10}
-                    className={`object-contain transition-transform ${
+                  <ChevronDown
+                    className={`object-contain transition-transform w-5 h-5 ${
                       mobileProjectsOpen ? "rotate-180" : ""
                     }`}
                   />
@@ -840,12 +814,8 @@ export default function Navbar() {
                 className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Services
-                <Image
-                  src="/images/dropdown-icon.png"
-                  alt="Dropdown"
-                  width={10}
-                  height={10}
-                  className={`object-contain transition-transform ${
+                <ChevronDown
+                  className={`object-contain transition-transform w-5 h-5 ${
                     tabletServicesOpen ? "rotate-180" : ""
                   }`}
                 />
@@ -861,12 +831,8 @@ export default function Navbar() {
                           className="flex items-center justify-between text-left w-full font-semibold text-[#332771] text-sm cursor-pointer"
                         >
                           {category}
-                          <Image
-                            src="/images/dropdown-icon.png"
-                            alt="Dropdown"
-                            width={8}
-                            height={8}
-                            className={`object-contain transition-transform ${
+                          <ChevronDown
+                            className={`object-contain transition-transform w-5 h-5 ${
                               tabletOpenCategories[category] ? "rotate-180" : ""
                             }`}
                           />
@@ -899,12 +865,8 @@ export default function Navbar() {
                 className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Products
-                <Image
-                  src="/images/dropdown-icon.png"
-                  alt="Dropdown"
-                  width={10}
-                  height={10}
-                  className={`object-contain transition-transform ${
+                <ChevronDown
+                  className={`object-contain transition-transform w-5 h-5 ${
                     tabletProductsOpen ? "rotate-180" : ""
                   }`}
                 />
@@ -932,12 +894,8 @@ export default function Navbar() {
                 className="flex items-center justify-between w-full hover:text-[#2c2178] py-2 text-left cursor-pointer"
               >
                 Projects
-                <Image
-                  src="/images/dropdown-icon.png"
-                  alt="Dropdown"
-                  width={10}
-                  height={10}
-                  className={`object-contain transition-transform ${
+                <ChevronDown
+                  className={`object-contain transition-transform w-5 h-5 ${
                     tabletProjectsOpen ? "rotate-180" : ""
                   }`}
                 />
