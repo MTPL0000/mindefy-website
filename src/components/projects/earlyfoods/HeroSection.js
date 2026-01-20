@@ -78,7 +78,7 @@ export default function HeroSection() {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="relative aspect-[1.2/1] w-[1.2rem] sm:w-6 overflow-hidden">
+            <div className="relative aspect-[1.3/1] w-[1.2rem] sm:w-6 overflow-hidden">
               <Image src="/images/globe-icon.svg" alt="image" fill className="object-contain" />
             </div>
             <span className="text-white text-base sm:text-lg font-medium">Web</span>
@@ -101,7 +101,7 @@ export default function HeroSection() {
             Think about Instagram—some people are a bit wary about buying stuff online because of bad experiences on other platforms. It gets even trickier when it's about health, especially for themselves and their kids. So, we need to figure out how to make them feel comfy and trust us right from the start.
           </p>
         </div>
-        <div className="relative w-full lg:w-[80%] aspect-[1.3/1] max-w-[400px] lg:max-w-none">
+        <div className="relative aspect-[1.3/1] w-full lg:w-[80%] max-w-[400px] lg:max-w-none">
           <Image src="/images/projects/EF-3.png" alt="EarlyFoods circular visual" fill className="object-contain" loading="lazy" />
         </div>
       </div>
