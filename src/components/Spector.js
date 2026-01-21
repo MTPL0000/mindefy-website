@@ -13,7 +13,7 @@ export default function Spector() {
             </h1>
             <div className="m-auto relative aspect-3/1 w-[16rem] sm:w-[18rem] md:w-[20rem] overflow-hidden">
               <Image
-                src="/images/sp-logo.png"
+                src="/images/sp-logo.webp"
                 alt="Spector Dashboard"
                 fill
                 className="object-contain"
