@@ -59,7 +59,7 @@ export const LazyStartupIncubationConsulting = createLazyServiceComponent(
 );
 export const LazyWhiteLabel = createLazyServiceComponent("WhiteLabel");
 export const LazyMVPDevelopment = createLazyServiceComponent("MVPDevelopment");
-export const LazyMindfulUX = createLazyServiceComponent("MindfulUX");
+export const LazyMindfulUX = createLazyServiceComponent("MindfulUX/index");
 export const LazyCDS = createLazyServiceComponent("CDS/index");
 export const LazyBPM = createLazyServiceComponent("BPM");
 export const LazyAboutUs = createLazyServiceComponent("AboutUs");
