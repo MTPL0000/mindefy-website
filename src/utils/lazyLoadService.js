@@ -59,14 +59,16 @@ export const LazyStartupIncubationConsulting = createLazyServiceComponent(
 );
 export const LazyWhiteLabel = createLazyServiceComponent("WhiteLabel");
 export const LazyMVPDevelopment = createLazyServiceComponent("MVPDevelopment");
-export const LazyMindfulUX = createLazyServiceComponent("MindfulUX");
-export const LazyCDS = createLazyServiceComponent("CDS");
+export const LazyMindfulUX = createLazyServiceComponent("MindfulUX/index");
+export const LazyCDS = createLazyServiceComponent("CDS/index");
 export const LazyBPM = createLazyServiceComponent("BPM");
-export const LazyAboutUs = createLazyServiceComponent("AboutUs");
+export const LazyAboutUs = createLazyServiceComponent("AboutUs/index");
 export const LazySolistack = createLazyServiceComponent("projects/Solistack");
-export const LazyYourHour = createLazyServiceComponent("products/YourHour");
+export const LazyYourHour = createLazyServiceComponent("products/YourHour/index");
 export const LazyGreenBill = createLazyServiceComponent("projects/GreenBill");
 export const LazyMachONE = createLazyServiceComponent("projects/MachONE");
 export const LazyTestimonialsMore =
-  createLazyServiceComponent("TestimonialsMore");
+  createLazyServiceComponent("TestimonialsMore/index");
 export const LazySpector = createLazyServiceComponent("Spector");
+export const LazyGenAIChatbot = createLazyServiceComponent("GenAIChatbot/index");
+export const LazyMemolect = createLazyServiceComponent("projects/Memolect/index");

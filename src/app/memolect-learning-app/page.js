@@ -1,4 +1,4 @@
-import MemolectFlashcardsCaseStudy from "@/components/projects/MemolectFlashcardsApp";
+import { LazyMemolect } from "../../utils/lazyLoadService";
 
 export const metadata = {
   title: "Memolect: Smart Learning & EdTech App",
@@ -20,5 +20,5 @@ export const metadata = {
 };
 
 export default function MemolectLayout() {
-  return <MemolectFlashcardsCaseStudy />;
+  return <LazyMemolect />;
 }
