@@ -70,3 +70,4 @@ export const LazyMachONE = createLazyServiceComponent("projects/MachONE");
 export const LazyTestimonialsMore =
   createLazyServiceComponent("TestimonialsMore");
 export const LazySpector = createLazyServiceComponent("Spector");
+export const LazyGenAIChatbot = createLazyServiceComponent("GenAIChatbot/index");

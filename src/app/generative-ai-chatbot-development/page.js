@@ -1,4 +1,4 @@
-import GenAIChatbot from "@/components/GenAIChatbot";
+import { LazyGenAIChatbot } from "../../utils/lazyLoadService";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -49,7 +49,7 @@ export default function Home() {
     <main>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <GenAIChatbot />
+      <LazyGenAIChatbot />
     </main>
   );
 }
