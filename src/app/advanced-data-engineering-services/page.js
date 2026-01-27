@@ -1,8 +1,4 @@
-import { AIOfferingsSection } from "@/components/AIML/AIOfferingsSection";
-import { HeroSection } from "@/components/AIML/HeroSection";
-import { ImpactDeliveredSection } from "@/components/AIML/ImpactDeliveredSection";
-import { WhyAISection } from "@/components/AIML/WhyAISection";
-import { WhyChooseSection } from "@/components/AIML/WhyChooseSection";
+import DataEngineeringContent from "@/components/DataEngineering/DataEngineeringContent";
 
 export const metadata = {
   title: "Advanced Data Engineering & Big Data Services",
@@ -163,12 +159,12 @@ export const positioningStatement = {
 
 export default function Page() {
   return (
-    <div>
-      <HeroSection data={heroData} />
-      <WhyAISection data={ourEngineerStack} />
-      <AIOfferingsSection data={whatWeExcelAt} />
-      <ImpactDeliveredSection data={worldImpact} />
-      <WhyChooseSection data={positioningStatement} />
-    </div>
+    <DataEngineeringContent
+      heroData={heroData}
+      ourEngineerStack={ourEngineerStack}
+      whatWeExcelAt={whatWeExcelAt}
+      worldImpact={worldImpact}
+      positioningStatement={positioningStatement}
+    />
   );
 }
