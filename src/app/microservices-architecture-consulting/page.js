@@ -1,4 +1,4 @@
-import { LazyMicroservices } from "../../utils/lazyLoadService";
+import MicroservicesContent from "@/components/Microservices/MicroservicesContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function MicroservicesArchitecturePage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyMicroservices />
+      <MicroservicesContent />
     </>
   );
 }
