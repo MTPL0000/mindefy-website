@@ -1,9 +1,4 @@
-import { AIOfferingsSection } from "@/components/AIML/AIOfferingsSection";
-import { EngagementModelSection } from "@/components/AIML/EngagementModelSection";
-import { HeroSection } from "@/components/AIML/HeroSection";
-import { ImpactDeliveredSection } from "@/components/AIML/ImpactDeliveredSection";
-import { WhyAISection } from "@/components/AIML/WhyAISection";
-import { WhyChooseSection } from "@/components/AIML/WhyChooseSection";
+import CustomAIContent from "@/components/AIML/CustomAIContent";
 
 export const metadata = {
   title: "Enterprise AI Solutions & Custom Development",
@@ -321,13 +316,13 @@ export const impactDeliveredData = {
 
 export default function Page() {
   return (
-    <div>
-      <HeroSection data={heroData} />
-      <WhyAISection data={whyAIData} />
-      <AIOfferingsSection data={aiOfferingsData} />
-      <WhyChooseSection data={whyChooseData} />
-      <EngagementModelSection data={engagementModelData} />
-      <ImpactDeliveredSection data={impactDeliveredData} />
-    </div>
+    <CustomAIContent
+      heroData={heroData}
+      whyAIData={whyAIData}
+      aiOfferingsData={aiOfferingsData}
+      whyChooseData={whyChooseData}
+      engagementModelData={engagementModelData}
+      impactDeliveredData={impactDeliveredData}
+    />
   );
 }
