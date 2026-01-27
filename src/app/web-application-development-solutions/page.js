@@ -1,4 +1,4 @@
-import { LazyWebApp } from "../../utils/lazyLoadService";
+import WebAppContent from "@/components/WebApp/WebAppContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -54,7 +54,7 @@ export default function WebApplicationDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyWebApp />
+      <WebAppContent />
     </>
   );
 }
