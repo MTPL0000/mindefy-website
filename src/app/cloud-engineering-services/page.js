@@ -1,7 +1,4 @@
-import { AIOfferingsSection } from "@/components/AIML/AIOfferingsSection";
-import { HeroSection } from "@/components/AIML/HeroSection";
-import { ImpactDeliveredSection } from "@/components/AIML/ImpactDeliveredSection";
-import { WhyAISection } from "@/components/AIML/WhyAISection";
+import CloudContent from "@/components/CloudEngineering/CloudContent";
 
 export const metadata = {
   title: "Cloud Engineering & Migration Services",
@@ -130,11 +127,11 @@ export const outcomesDelivered = {
 
 export default function Page() {
   return (
-    <div>
-      <HeroSection data={heroData} />
-      <WhyAISection data={ourCloudServices} />
-      <AIOfferingsSection data={ourCloudEdge} />
-      <ImpactDeliveredSection data={outcomesDelivered} />
-    </div>
+    <CloudContent
+      heroData={heroData}
+      ourCloudServices={ourCloudServices}
+      ourCloudEdge={ourCloudEdge}
+      outcomesDelivered={outcomesDelivered}
+    />
   );
 }
