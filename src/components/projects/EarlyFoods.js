@@ -4,42 +4,52 @@ import dynamic from "next/dynamic";
 import HeroSection from "./earlyfoods/HeroSection";
 
 const DesignProcessSection = dynamic(() => import("./earlyfoods/DesignProcessSection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#E9F6F6] animate-pulse" />,
 });
 
 const UXAuditSection = dynamic(() => import("./earlyfoods/UXAuditSection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#E9F6F6] animate-pulse" />,
 });
 
 const UserResearchSection = dynamic(() => import("./earlyfoods/UserResearchSection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#E9F6F6] animate-pulse" />,
 });
 
 const EmpathyMapSection = dynamic(() => import("./earlyfoods/EmpathyMapSection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#E9F6F6] animate-pulse" />,
 });
 
 const UserJourneySection = dynamic(() => import("./earlyfoods/UserJourneySection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#E9F6F6] animate-pulse" />,
 });
 
 const ExtensiveResearchSection = dynamic(() => import("./earlyfoods/ExtensiveResearchSection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#E8F4F4] animate-pulse" />,
 });
 
 const CompetitorAnalysisSection = dynamic(() => import("./earlyfoods/CompetitorAnalysisSection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#E9F6F6] animate-pulse" />,
 });
 
 const MarketResearchSection = dynamic(() => import("./earlyfoods/MarketResearchSection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#E9F6F6] animate-pulse" />,
 });
 
 const VisualDesignSection = dynamic(() => import("./earlyfoods/VisualDesignSection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#eaf6f6] animate-pulse" />,
 });
 
 const InformationArchitectureSection = dynamic(() => import("./earlyfoods/InformationArchitectureSection"), {
+  ssr: false,
   loading: () => <div className="min-h-96 bg-[#E8F4F4] animate-pulse" />,
 });
 

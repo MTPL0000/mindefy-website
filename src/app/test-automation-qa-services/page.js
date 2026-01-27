@@ -1,4 +1,4 @@
-import { LazyTestAutomation } from "../../utils/lazyLoadService";
+import TestAutomationContent from "@/components/TestAutomation/TestAutomationContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function TestAutomationQAPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyTestAutomation />
+      <TestAutomationContent />
     </>
   );
 }

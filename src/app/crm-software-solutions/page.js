@@ -1,4 +1,4 @@
-import { LazyCRMSolutions } from "../../utils/lazyLoadService";
+import CRMContent from "@/components/CRMSolutions/CRMContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function CRMSolutionsPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyCRMSolutions />
+      <CRMContent />
     </>
   );
 }

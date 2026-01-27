@@ -1,4 +1,4 @@
-import { LazyHAD } from "../../utils/lazyLoadService";
+import HADContent from "@/components/HAD/HADContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function HybridAppDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyHAD />
+      <HADContent />
     </>
   );
 }

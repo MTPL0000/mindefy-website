@@ -1,4 +1,4 @@
-import CustomMLSolution from "@/components/CustomMLSolution";
+import CustomMLContent from "@/components/custommlsolution/CustomMLContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -49,7 +49,7 @@ export default function Home() {
     <main>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <CustomMLSolution />
+      <CustomMLContent />
     </main>
   );
 }

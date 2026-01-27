@@ -1,4 +1,4 @@
-import { LazyAAD } from "../../utils/lazyLoadService";
+import AADContent from "@/components/AAD/AADContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function AndroidAppDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyAAD />
+      <AADContent />
     </>
   );
 }

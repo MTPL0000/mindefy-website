@@ -1,4 +1,4 @@
-import { LazyMVPDevelopment } from "../../utils/lazyLoadService";
+import MVPContent from "@/components/MVPDevelopment/MVPContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function MVPDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyMVPDevelopment />
+      <MVPContent />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { LazySAS } from "../../utils/lazyLoadService";
+import SASContent from "@/components/SAS/SASContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function StaffServicesPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazySAS />
+      <SASContent />
     </>
   );
 }

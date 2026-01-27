@@ -1,4 +1,4 @@
-import { LazyGreenBill } from "../../utils/lazyLoadService";
+import GreenBillContent from "@/components/GreenBill/GreenBillContent";
 import StructuredData, {
   createBreadcrumbData,
 } from "@/components/StructuredData";
@@ -37,7 +37,7 @@ export default function GreenBillPage() {
   return (
     <>
       <StructuredData data={breadcrumbData} />
-      <LazyGreenBill />
+      <GreenBillContent />
     </>
   );
 }

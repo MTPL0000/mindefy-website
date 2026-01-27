@@ -1,4 +1,4 @@
-import { LazyDigitalTransformation } from "../../utils/lazyLoadService";
+import DTContent from "@/components/DigitalTransformation/DTContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function DigitalTransformationPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyDigitalTransformation />
+      <DTContent />
     </>
   );
 }
