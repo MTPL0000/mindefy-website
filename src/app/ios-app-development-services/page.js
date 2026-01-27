@@ -1,4 +1,4 @@
-import { LazyIOS } from "../../utils/lazyLoadService";
+import IOSContent from "@/components/IOS/IOSContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function IOSAppDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyIOS />
+      <IOSContent />
     </>
   );
 }
