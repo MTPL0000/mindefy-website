@@ -1,4 +1,4 @@
-import { LazyBPM } from "../../utils/lazyLoadService";
+import BPMContent from "@/components/BPM/BPMContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function BusinessProcessManagementPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyBPM />
+      <BPMContent />
     </>
   );
 }
