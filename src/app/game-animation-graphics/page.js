@@ -2,7 +2,7 @@ import StructuredData, {
   createServiceData,
   createBreadcrumbData,
 } from "@/components/StructuredData";
-import GameAnimation from "@/components/gameAnimation";
+import GameAnimationContent from "@/components/GameAnimation/GameAnimationContent";
 
 export const metadata = {
   title: "Game Animation & 3D Graphics Services",
@@ -47,7 +47,7 @@ export default function gameAnimation() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <GameAnimation />
+      <GameAnimationContent />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { LazyLowCode } from "../../utils/lazyLoadService";
+import LowCodeContent from "@/components/LowCode/LowCodeContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function LowCodeDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyLowCode />
+      <LowCodeContent />
     </>
   );
 }

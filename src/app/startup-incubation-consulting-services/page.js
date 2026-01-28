@@ -1,4 +1,4 @@
-import { LazyStartupIncubationConsulting } from "../../utils/lazyLoadService";
+import StartupIncubationContent from "@/components/StartupIncubation/StartupIncubationContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function StartupIncubationConsultingPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyStartupIncubationConsulting />
+      <StartupIncubationContent />
     </>
   );
 }

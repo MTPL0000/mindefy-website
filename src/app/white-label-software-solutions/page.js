@@ -1,4 +1,4 @@
-import { LazyWhiteLabel } from "../../utils/lazyLoadService";
+import WhiteLabelContent from "@/components/WhiteLabel/WhiteLabelContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function WhiteLabelSolutionsPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyWhiteLabel />
+      <WhiteLabelContent />
     </>
   );
 }
