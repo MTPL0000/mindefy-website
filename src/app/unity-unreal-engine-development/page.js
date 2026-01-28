@@ -2,7 +2,7 @@ import StructuredData, {
   createServiceData,
   createBreadcrumbData,
 } from "@/components/StructuredData";
-import UnityUnreal from "@/components/unityunreal";
+import UnityUnrealContent from "@/components/UnityUnreal/UnityUnrealContent";
 
 export const metadata = {
   title: "Unity & Unreal Engine Development Services",
@@ -47,7 +47,7 @@ export default function UnityUnrealPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <UnityUnreal />
+      <UnityUnrealContent />
     </>
   );
 }
