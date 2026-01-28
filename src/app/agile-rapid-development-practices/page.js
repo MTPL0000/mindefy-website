@@ -1,4 +1,4 @@
-import { LazyAgileRapid } from "../../utils/lazyLoadService";
+import AgileRapidContent from "@/components/AgileRapid/AgileRapidContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
@@ -47,7 +47,7 @@ export default function AgileRapidDevelopmentPage() {
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
-      <LazyAgileRapid />
+      <AgileRapidContent />
     </>
   );
 }
