@@ -34,10 +34,10 @@ const lobster = Lobster_Two({
 export const metadata = {
   metadataBase: new URL("https://mindefy.tech"),
   title: {
-    default: "AI Solutions & Digital Transformation Company",
+    default: "Mindefy: Custom Software, AI & App Development Agency",
   },
   description:
-    "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
+    "The agency behind 4.5M+ user apps. We build custom software, AI solutions, and mobile apps for startups and enterprises. Based in Indore, India.",
   keywords: ["AI", "Mobile Apps", "Digital Transformation"],
   authors: [{ name: "Mindefy Technologies" }],
   creator: "Mindefy Technologies",
