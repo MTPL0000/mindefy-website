@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "MVP Development Services for Startups",
+  title: "Android App Experts (Builders of 4.5M+ User Apps)",
   description:
-    "Launch fast with our MVP development services. We build scalable prototypes and Minimum Viable Products to help startups validate ideas and raise capital.",
+    'Hire the team behind "YourHour." We build battery-optimized, high-retention Android apps that scale to millions. Deep expertise in background services.',
   keywords: ["MVP", "Startups", "Prototype"],
   openGraph: {
     title: "MVP Development Services for Startups",

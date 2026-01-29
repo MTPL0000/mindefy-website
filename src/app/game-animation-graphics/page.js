@@ -5,9 +5,9 @@ import StructuredData, {
 import GameAnimationContent from "@/components/GameAnimation/GameAnimationContent";
 
 export const metadata = {
-  title: "Game Animation & 3D Graphics Services",
+  title: "Game Animation, Graphics & 3D Art Services",
   description:
-    "Bring your games to life with our 3D animation and game graphics services. We create stunning visual assets, characters, and environments for mobile & PC.",
+    "Bring your game to life. We provide high-quality 3D character modeling, 2D sprites, and UI/UX design specifically for mobile and PC games.",
   keywords: ["3D Animation", "Game Art"],
   openGraph: {
     title: "Game Animation & 3D Graphics Services",

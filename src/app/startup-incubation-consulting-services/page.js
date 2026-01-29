@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Startup Incubation & Tech Consulting Services",
+  title: "Startup Incubation & Consulting | Tech for Equity",
   description:
-    "From concept to exit. We provide startup incubation and tech consulting, offering product strategy, CTO services, and engineering resources for founders.",
+    "More than just dev. We partner with founders to provide technical mentorship, product strategy, and MVP development support.",
   keywords: ["Incubation", "Tech Strategy"],
   openGraph: {
     title: "Startup Incubation & Tech Consulting Services",

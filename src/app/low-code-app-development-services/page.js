@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Low Code App Development Services",
+  title: "Low Code Development Services | Launch 3x Faster",
   description:
-    "Build business apps 10x faster with low-code development. We use platforms like OutSystems and Mendix to deliver rapid, scalable enterprise solutions.",
+    "Accelerate your digital transformation. We build internal business tools and enterprise apps rapidly using Retool, PowerApps, and low-code platforms.",
   keywords: ["Low Code", "No Code", "Rapid Dev"],
   openGraph: {
     title: "Low Code App Development Services",

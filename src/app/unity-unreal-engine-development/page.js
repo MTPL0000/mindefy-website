@@ -5,9 +5,9 @@ import StructuredData, {
 import UnityUnrealContent from "@/components/UnityUnreal/UnityUnrealContent";
 
 export const metadata = {
-  title: "Unity & Unreal Engine Development Services",
+  title: "Unity & Unreal Game Development Studio | 2D & 3D Games",
   description:
-    "Build high-fidelity 3D experiences. Our Unity and Unreal Engine developers create stunning games, simulations, and enterprise AR/VR applications.",
+    "Create immersive gaming experiences. Our studio specializes in mobile game development, physics engines, and multiplayer server architecture.",
   keywords: ["Unity", "Unreal", "3D"],
   openGraph: {
     title: "Unity & Unreal Engine Development Services",

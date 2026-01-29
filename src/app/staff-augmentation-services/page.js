@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "IT Staff Augmentation Services",
+  title: "IT Staff Augmentation | Hire Dedicated Developers",
   description:
-    "Scale your team with Mindefy's IT staff augmentation. Hire pre-vetted, dedicated developers and engineers to accelerate your software projects immediately.",
+    "Scale your tech team instantly. Hire vetted, senior developers for React, Python, and Mobile projects. Flexible contracts, zero overhead.",
   keywords: ["Staffing", "Dedicated Developers"],
   openGraph: {
     title: "IT Staff Augmentation Services",

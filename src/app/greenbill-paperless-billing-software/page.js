@@ -4,9 +4,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "GreenBill: Digital Paperless Billing Software",
+  title: "GreenBill: Paperless GST Billing & Invoicing Software",
   description:
-    "Discover GreenBill, the eco-friendly digital billing solution. Eliminate paper waste and streamline invoicing ",
+    "The eco-friendly billing solution for retail. Send digital receipts, manage GST invoicing, and save paper. Ideal for supermarkets and shops.",
   keywords: ["FinTech", "Paperless Billing"],
   openGraph: {
     title: "GreenBill: Digital Paperless Billing Software",

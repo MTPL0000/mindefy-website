@@ -4,9 +4,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "YourHour: Screen Time Control & Digital Wellbeing",
+  title: "YourHour Case Study: Scaling to 4.5M+ Users",
   description:
-    "YourHour app helps millions boost productivity. Download our top-rated digital wellbeing solution to track usage, limit screen time, and beat phone addiction.",
+    'See how we built the #1 digital wellbeing app. Learn our strategies for "Local-First" privacy, battery optimization, and scaling without VC funding.',
   keywords: [
     "YourHour",
     "YourHour ScreenTime App",

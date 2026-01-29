@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "UI/UX Design & User Experience Services",
+  title: "UI/UX Design & Product Strategy Agency | Mindful UX",
   description:
-    "Create intuitive digital products with our UI/UX design agency. We focus on user-centric research, wireframing, and prototyping for higher engagement.",
+    "Design that converts. We create user-centric interfaces for mobile apps and SaaS platforms. From wireframes to high-fidelity prototypes.",
   keywords: ["UI/UX", "Product Design"],
   openGraph: {
     title: "UI/UX Design & User Experience Services",

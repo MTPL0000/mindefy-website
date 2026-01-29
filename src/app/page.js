@@ -10,7 +10,7 @@ import LazyHomeSections from "@/components/HomePage/LazyHomeSections";
 export const metadata = {
   title: "AI Solutions & Digital Transformation Company",
   description:
-    "Mindefy is a top digital transformation company offering custom AI solutions, mobile app development, and cloud engineering for global enterprises.",
+    "The agency behind 4.5M+ user apps. We build custom software, AI solutions, and mobile apps for startups and enterprises. Based in Indore, India..",
   keywords: ["AI", "Mobile Apps", "Digital Transformation"],
   alternates: { canonical: "https://mindefy.tech" },
   openGraph: {

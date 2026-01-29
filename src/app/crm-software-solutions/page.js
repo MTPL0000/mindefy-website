@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Custom CRM Software Development & Integration",
+  title: "Custom CRM Software Solutions | Tailored for Growth",
   description:
-    "Boost sales with custom CRM software solutions. We develop and integrate tailored CRM platforms to streamline customer management and automation.",
+    "Stop using generic CRMs. We build custom Customer Relationship Management software designed specifically for your sales process and industry.",
   keywords: ["Custom CRM", "Salesforce"],
   openGraph: {
     title: "Custom CRM Software Development & Integration",

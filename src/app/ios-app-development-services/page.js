@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "iOS App Development Services & Company",
+  title: "Custom iOS App Development Company | Enterprise Grade",
   description:
-    "Hire top iOS developers for custom iPhone and iPad apps. We build secure, high-performance native iOS applications using Swift and Objective-C.",
+    "Premium iOS app development for fintech and enterprise. We build secure, scalable iPhone apps with seamless UX. Hire dedicated iOS developers in India.",
   keywords: ["iOS", "Swift", "iPhone Apps"],
   openGraph: {
     title: "iOS App Development Services & Company",

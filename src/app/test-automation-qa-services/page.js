@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Software Test Automation & QA Services",
+  title: "QA & Test Automation Services | Bug-Free Releases",
   description:
-    "Ensure zero bugs with our QA and test automation services. We provide rigorous performance, security, and regression testing for flawless software.",
+    "Ensure 100% reliability. We offer automated regression testing, mobile app performance testing, and security audits. Ship your software with confidence.",
   keywords: ["QA", "Automation Testing"],
   openGraph: {
     title: "Software Test Automation & QA Services",

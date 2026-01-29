@@ -1,9 +1,9 @@
 import CloudContent from "@/components/CloudEngineering/CloudContent";
 
 export const metadata = {
-  title: "Cloud Engineering & Migration Services",
+  title: "Cloud Engineering & Migration Services (AWS & Azure)",
   description:
-    "Scalable cloud architecture and migration services. We help enterprises move to the cloud securely, optimizing performance and reducing infrastructure costs.",
+    "Modernize your legacy infrastructure. Our certified cloud engineers handle migration, serverless architecture, and cost optimization. Secure your data today.",
   keywords: ["Cloud Migration", "Architecture"],
   alternates: { canonical: "https://mindefy.tech/cloud-engineering-services" },
   openGraph: {

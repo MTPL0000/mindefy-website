@@ -4,9 +4,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Mindefy Client Testimonials & Success Stories",
+  title: "Client Success Stories & Reviews | Mindefy",
   description:
-    "Explore success stories from global clients. See how Mindefy's AI and software solutions drive digital transformation and business growth.",
+    "Don't just take our word for it. Read verified reviews from global clients who built their software, MVPs, and apps with Mindefy Technologies.",
   keywords: ["Reviews", "Case Studies"],
   openGraph: {
     title: "Mindefy Client Testimonials & Success Stories",

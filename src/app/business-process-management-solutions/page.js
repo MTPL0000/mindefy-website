@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Business Process Management (BPM) Solutions",
+  title: "BPM & Workflow Automation Solutions | Operational Efficiency",
   description:
-    "Streamline operations with custom Business Process Management (BPM) software. We automate complex workflows to reduce costs and improve enterprise agility.",
+    "Eliminate manual work. We build custom Business Process Management (BPM) software to automate workflows, logistics, and inventory systems.",
   keywords: ["BPM", "Workflow Automation"],
   openGraph: {
     title: "Business Process Management (BPM) Solutions",

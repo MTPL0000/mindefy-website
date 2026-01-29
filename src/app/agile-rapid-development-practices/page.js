@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Agile Software Development & Rapid Prototyping",
+  title: "Agile & Rapid Software Development Services",
   description:
-    "Accelerate launch times with our Agile development services. We use Scrum and rapid prototyping to deliver high-quality software with faster iterations.",
+    "Speed to market without chaos. Our agile squads deliver working software in 2-week sprints using Scrum and CI/CD best practices.",
   keywords: ["Agile", "Scrum", "Rapid Prototyping"],
   openGraph: {
     title: "Agile Software Development & Rapid Prototyping",
