@@ -5,9 +5,9 @@ import StructuredData, {
 import ARVRGameDevelopment from "@/components/ARVRGameDevelopment";
 
 export const metadata = {
-  title: "AR/VR Game Development & Immersive Solutions",
+  title: "AR & VR Game Development Services | Immersive Tech",
   description:
-    "Transform user engagement with our AR/VR development services. We create immersive virtual reality apps and augmented reality games for enterprise & gaming.",
+    "Build the future of gaming. We develop Augmented Reality (AR) and Virtual Reality (VR) experiences for training, marketing, and entertainment.",
   keywords: ["AR / VR", "Unity", "Immersive"],
   openGraph: {
     title: "AR/VR Game Development & Immersive Solutions",

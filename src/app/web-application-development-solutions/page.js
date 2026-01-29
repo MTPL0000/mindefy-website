@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Custom Web Application Development Company",
+  title: "Custom Web Application Development | Scalable SaaS Platforms",
   description:
-    "Build robust, scalable web apps with Mindefy. Our full-stack developers deliver secure, high-performance web solutions for modern enterprises.",
+    "Build robust, cloud-ready web applications. We specialize in MERN stack and complex SaaS architectures for growing businesses. Secure & Scalable.",
   keywords: [
     "web application development",
     "web app development",

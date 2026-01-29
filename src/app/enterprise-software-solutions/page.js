@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Enterprise Software Development Solutions",
+  title: "Enterprise Software Solutions & Systems Integration",
   description:
-    "Custom enterprise software development to streamline operations. We build secure, scalable ERP and business management software for large organizations.",
+    "Scalable software for large organizations. We build custom ERPs, HRMS, and supply chain solutions that integrate seamlessly with your existing stack.",
   keywords: ["ERP", "Enterprise Apps"],
   openGraph: {
     title: "Enterprise Software Development Solutions",

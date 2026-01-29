@@ -1,9 +1,9 @@
 import CustomAIContent from "@/components/AIML/CustomAIContent";
 
 export const metadata = {
-  title: "Enterprise AI Solutions & Custom Development",
+  title: "Enterprise AI Solutions | Secure & Private AI Infrastructure",
   description:
-    "Transform your enterprise with custom AI solutions. We build scalable artificial intelligence systems to drive innovation, automation, and efficiency.",
+    "Deploy Large Language Models (LLMs) and private AI clouds securely. We build custom AI agents for finance, healthcare, and enterprise workflows.",
   keywords: ["Enterprise AI", "Automation"],
   alternates: {
     canonical: "https://mindefy.tech/custom-ai-solutions-enterprises",

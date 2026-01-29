@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Generative AI & Chatbot Development Company",
+  title: "Generative AI & Custom Chatbot Development (GPT-4)",
   description:
-    "Integrate Generative AI and custom chatbots into your business. We build LLM-powered solutions using ChatGPT, GPT-4, and LLaMA for smarter automation.",
+    "Enhance customer support with AI. We build custom LLM-powered chatbots that understand context and automate complex business queries.",
   keywords: ["GenAI", "LLM", "ChatGPT"],
   openGraph: {
     title: "Generative AI & Chatbot Development Company",

@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Custom Machine Learning Solutions Company",
+  title: "Custom Machine Learning Solutions for Business",
   description:
-    "Hire expert ML engineers for custom machine learning solutions. We develop predictive models and algorithms tailored to your specific business data.",
+    "Unlock the power of your data. We develop custom ML models for fraud detection, recommendation engines, and process automation. Tailored to your industry.",
   keywords: ["Custom ML", "Predictive Models"],
   openGraph: {
     title: "Custom Machine Learning Solutions Company",

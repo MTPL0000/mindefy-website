@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "White Label Software Development Solutions",
+  title: "White Label Software Solutions (Source Code Included)",
   description:
-    "Expand your agency's portfolio with our white label software services. We build high-quality, unbranded software that you can resell as your own.",
+    "Scale your agency with rebrandable software. We provide 100% source code ownership for ride-booking, edtech, and delivery apps. Book a demo.",
   keywords: ["White Label", "SaaS", "Reseller"],
   openGraph: {
     title: "White Label Software Development Solutions",

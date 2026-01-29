@@ -7,7 +7,7 @@ import StructuredData, {
 export const metadata = {
   title: "IT Consulting & Technology Strategy Services",
   description:
-    "Align technology with business goals using our IT consulting services. We provide strategic roadmaps, digital transformation, and tech advisory for growth.",
+    "Align technology with business goals. Our consultants provide digital roadmaps, software audits, and fractional CTO services for growing SMEs.",
   keywords: ["IT Strategy", "Tech Advisory"],
   openGraph: {
     title: "IT Consulting & Technology Strategy Services",

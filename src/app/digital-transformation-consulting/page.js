@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Enterprise Digital Transformation Consulting",
+  title: "Digital Transformation Consulting | Modernize Your Business",
   description:
-    "Future-proof your business with our digital transformation consulting. We implement AI, cloud, and automation strategies to drive operational efficiency.",
+    "Move beyond legacy systems. We help enterprises digitize processes, adopt cloud technologies, and improve operational efficiency.",
   keywords: ["Digital Strategy", "Enterprise Tech"],
   openGraph: {
     title: "Enterprise Digital Transformation Consulting",

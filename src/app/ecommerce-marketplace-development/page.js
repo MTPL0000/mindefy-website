@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "E-commerce & Marketplace Development Services",
+  title: "E-commerce & Multi-Vendor Marketplace Development",
   description:
-    "Build scalable multi-vendor marketplaces and e-commerce platforms. Our developers create secure, high-conversion shopping experiences for global retail.",
+    "Build the next Amazon or Etsy. We develop scalable multi-vendor marketplaces with custom commission structures and secure payment gateways.",
   keywords: ["Marketplace", "Multi - vendor", "Retail"],
   openGraph: {
     title: "E-commerce & Marketplace Development Services",

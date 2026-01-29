@@ -1,9 +1,9 @@
 import DataEngineeringContent from "@/components/DataEngineering/DataEngineeringContent";
 
 export const metadata = {
-  title: "Advanced Data Engineering & Big Data Services",
+  title: "Advanced Data Engineering & Analytics Services",
   description:
-    "Build scalable data pipelines and architectures. Our data engineering services cover ETL, cloud warehousing, and analytics to transform raw data into insights.",
+    "Turn raw data into insights. We design scalable ETL pipelines, data warehouses, and real-time processing architectures. Privacy-first data engineering.",
   keywords: ["Data Pipelines", "Big Data", "ETL"],
   alternates: {
     canonical: "https://mindefy.tech/advanced-data-engineering-services",

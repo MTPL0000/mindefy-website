@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Hybrid Mobile App Development Services",
+  title: "Hybrid App Development (Flutter & React Native) | Cost-Effective",
   description:
-    "Build cost-effective apps with our hybrid development services. We use React Native and Flutter to deliver native-like performance on iOS and Android.",
+    "Get native-like performance on iOS & Android with a single codebase. Save 40% on development costs with our expert Flutter & React Native services.",
   keywords: ["React Native", "Flutter", "Cross-Platform"],
   openGraph: {
     title: "Hybrid Mobile App Development Services",
