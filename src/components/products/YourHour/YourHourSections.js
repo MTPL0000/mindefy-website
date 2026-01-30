@@ -81,7 +81,7 @@ export default function YourHourSections() {
             </p>
           </div>
           <img
-            src="/images/yourhour/alerts1.webp"
+            src="/images/yourhour/alerts.webp"
             alt="YourHour image"
             className="aspect-square w-full md:w-4xl object-contain mx-auto"
             loading="lazy"
