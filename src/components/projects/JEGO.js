@@ -129,12 +129,11 @@ export default function JEGO() {
         <h1 className="text-[#FFFFFF] font-bold text-2xl sm:text-3xl font-poppins text-left">
           The Process
         </h1>
-        <div className="relative w-full max-w-3xl mx-auto">
+        <div className="relative w-full max-w-3xl aspect-[1148/464] mx-auto">
           <Image
             src="/images/projects/JG-GIF.gif"
             alt="Animation"
-            width={1126}
-            height={426}
+            fill
             className="object-contain w-full h-auto"
           />
         </div>
