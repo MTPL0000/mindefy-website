@@ -5,9 +5,9 @@ import StructuredData, {
 } from "@/components/StructuredData";
 
 export const metadata = {
-  title: "Android App Experts (Builders of 4.5M+ User Apps)",
+  title: "MVP Development for Startups (Launch in 12 Weeks) | Mindefy",
   description:
-    'Hire the team behind "YourHour." We build battery-optimized, high-retention Android apps that scale to millions. Deep expertise in background services.',
+    'Validate your startup idea fast. We build scalable MVPs with fixed timelines and costs. Trusted by bootstrapped founders. Get your roadmap today.',
   keywords: ["MVP", "Startups", "Prototype"],
   openGraph: {
     title: "MVP Development Services for Startups",
