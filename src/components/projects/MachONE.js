@@ -47,7 +47,7 @@ const MachONE = () => {
 
         <div className="relative aspect-2/1 w-full max-w-5xl overflow-hidden px-4 sm:px-6 lg:px-8">
           <Image
-            src="/images/projects/mach-2.png"
+            src="/images/projects/mach-2.webp"
             alt="mach Screens"
             fill
             className="object-contain"

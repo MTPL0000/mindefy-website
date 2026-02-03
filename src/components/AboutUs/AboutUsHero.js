@@ -33,7 +33,7 @@ export default function AboutUsHero() {
         {/* Responsive image container */}
         <div className="m-auto relative aspect-2/1 w-full max-w-5xl overflow-hidden mt-6 sm:mt-8 lg:mt-10">
           <Image
-            src="/images/abt-1.png"
+            src="/images/abt-1.webp"
             alt="soli-stack"
             fill
             className="object-contain"
