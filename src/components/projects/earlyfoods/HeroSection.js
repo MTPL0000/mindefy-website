@@ -10,7 +10,7 @@ export default function HeroSection() {
           </h1>
           <div className="relative aspect-2/1 w-40 sm:w-44 lg:w-53">
             <Image
-              src="/images/projects/EF-logo.png"
+              src="/images/projects/EF-logo.webp"
               alt="logo"
               fill
               className="object-contain"
@@ -29,7 +29,7 @@ export default function HeroSection() {
           </p>
         </div>
         <Image
-          src="/images/projects/EF-bg-1.png"
+          src="/images/projects/EF-bg-1.webp"
           alt="bg-decor"
           width={1440}
           height={866}
@@ -85,7 +85,7 @@ export default function HeroSection() {
           </a>
         </div>
         <div className="relative w-full lg:w-[80%] aspect-[1.3/1] max-w-[400px] lg:max-w-none">
-          <Image src="/images/projects/EF-2.png" alt="EarlyFoods circular visual" fill className="object-contain" loading="lazy" />
+          <Image src="/images/projects/EF-2.webp" alt="EarlyFoods circular visual" fill className="object-contain" loading="lazy" />
         </div>
       </div>
       <div className="max-w-286 mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-15 mt-5">
@@ -102,7 +102,7 @@ export default function HeroSection() {
           </p>
         </div>
         <div className="relative aspect-[1.3/1] w-full lg:w-[80%] max-w-[400px] lg:max-w-none">
-          <Image src="/images/projects/EF-3.png" alt="EarlyFoods circular visual" fill className="object-contain" loading="lazy" />
+          <Image src="/images/projects/EF-3.webp" alt="EarlyFoods circular visual" fill className="object-contain" loading="lazy" />
         </div>
       </div>
     </>

@@ -41,7 +41,7 @@ export default function DesignProcessSection() {
           <h2 className="text-[#52B7B7] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold mt-2">Design Timeline</h2>
           <span className="text-[#2B7575] text-base sm:text-lg font-normal">Our achievement in the journey depicted in numbers</span>
           <div className="relative aspect-2/1 w-full overflow-hidden">
-            <Image src="/images/projects/EF-4.png" alt="image" fill className="object-contain" loading="lazy" />
+            <Image src="/images/projects/EF-4.webp" alt="image" fill className="object-contain" loading="lazy" />
           </div>
         </div>
       </div>
