@@ -1,4 +1,9 @@
 import CloudContent from "@/components/CloudEngineering/CloudContent";
+import StructuredData, {
+  createServiceData,
+  createBreadcrumbData,
+  createFAQData,
+} from "@/components/StructuredData";
 
 export const metadata = {
   title: "Cloud Engineering & Migration Services (AWS & Azure)",
@@ -126,12 +131,56 @@ export const outcomesDelivered = {
 };
 
 export default function Page() {
+  const serviceData = createServiceData({
+    name: "Cloud Engineering Services",
+    description: heroData.description,
+    serviceType: "Cloud Engineering",
+    url: "https://mindefy.tech/cloud-engineering-services",
+  });
+
+  const breadcrumbData = createBreadcrumbData([
+    { name: "Home", url: "https://mindefy.tech" },
+    { name: "Services", url: "https://mindefy.tech/#services" },
+    {
+      name: "Cloud Engineering",
+      url: "https://mindefy.tech/cloud-engineering-services",
+    },
+  ]);
+
+  const faqData = createFAQData([
+    {
+      question: "How does Mindefy approach Cloud Strategy & Migration?",
+      answer:
+        "We help enterprises move to the cloud with confidence — balancing cost, performance, and risk. From discovery and TCO analysis to phased migrations with rollback safety, our strategies ensure transformation without disruption.",
+    },
+    {
+      question: "What are your Cloud-Native capabilities?",
+      answer:
+        "We specialize in Microservices, Kubernetes, and serverless architectures. Our multi-region, disaster-ready designs keep businesses always on and always fast.",
+    },
+    {
+      question: "Do you offer Cloud solutions for AI & ML?",
+      answer:
+        "Yes, we build GPU-powered clusters, scalable ML pipelines, and data flows optimized for training, inference, and real-time intelligence.",
+    },
+    {
+      question: "How do you ensure Cloud Security?",
+      answer:
+        "We implement Zero-trust architectures, enterprise IAM, encryption everywhere, and compliance frameworks (HIPAA, GDPR, SOC2) built in from day one.",
+    },
+  ]);
+
   return (
-    <CloudContent
-      heroData={heroData}
-      ourCloudServices={ourCloudServices}
-      ourCloudEdge={ourCloudEdge}
-      outcomesDelivered={outcomesDelivered}
-    />
+    <>
+      <StructuredData data={serviceData} />
+      <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqData} />
+      <CloudContent
+        heroData={heroData}
+        ourCloudServices={ourCloudServices}
+        ourCloudEdge={ourCloudEdge}
+        outcomesDelivered={outcomesDelivered}
+      />
+    </>
   );
 }
