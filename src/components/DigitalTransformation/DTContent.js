@@ -3,13 +3,9 @@
 import dynamic from "next/dynamic";
 import DTHero from "./DTHero";
 
-const ServicesTimeline = dynamic(() => import("./ServicesTimeline"), {
-  ssr: false,
-});
+const ServicesTimeline = dynamic(() => import("./ServicesTimeline"));
 
-const WhyChooseSection = dynamic(() => import("./WhyChooseSection"), {
-  ssr: false,
-});
+const WhyChooseSection = dynamic(() => import("./WhyChooseSection"));
 
 export default function DTContent() {
   return (
