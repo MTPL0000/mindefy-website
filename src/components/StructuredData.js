@@ -97,3 +97,35 @@ export const createBreadcrumbData = (items) => ({
     item: item.url,
   })),
 });
+
+// FAQ structured data template
+export const createFAQData = (faqs) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+});
+
+// AboutPage structured data template
+export const createAboutPageData = (data) => ({
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  mainEntity: {
+    "@type": "Organization",
+    name: "Mindefy Technologies",
+    description: data.description,
+    url: "https://mindefy.tech",
+    logo: "https://mindefy.tech/images/logo/mindefy-logo.png",
+    sameAs: [
+      "https://www.linkedin.com/company/mindefy-technologies",
+      "https://twitter.com/mindefy",
+      "https://www.facebook.com/mindefy",
+    ],
+  },
+});

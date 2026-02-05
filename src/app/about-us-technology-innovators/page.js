@@ -1,3 +1,9 @@
+import StructuredData, {
+  createBreadcrumbData,
+  createAboutPageData,
+  createFAQData,
+  organizationData,
+} from "@/components/StructuredData";
 import { LazyAboutUs } from "../../utils/lazyLoadService";
 
 export const metadata = {
@@ -22,5 +28,39 @@ export const metadata = {
 };
 
 export default function AboutUs() {
-  return <LazyAboutUs />;
+  const aboutData = createAboutPageData({
+    description:
+      'We are a product-focused software agency in Indore. Builders of "YourHour" (4.5M users). We combine engineering excellence with business logic.',
+  });
+
+  const breadcrumbData = createBreadcrumbData([
+    { name: "Home", url: "https://mindefy.tech" },
+    {
+      name: "About Us",
+      url: "https://mindefy.tech/about-us-technology-innovators",
+    },
+  ]);
+
+  const faqData = createFAQData([
+    {
+      question: "What services does Mindefy Technologies offer?",
+      answer:
+        "Mindefy Technologies offers custom AI solutions, mobile app development, web development, digital transformation, enterprise solutions, and startup consulting.",
+    },
+    {
+      question: "Where is Mindefy Technologies located?",
+      answer:
+        "Mindefy Technologies is located in Indore, India, serving clients worldwide.",
+    },
+  ]);
+
+  return (
+    <>
+      <StructuredData data={organizationData} />
+      <StructuredData data={aboutData} />
+      <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqData} />
+      <LazyAboutUs />
+    </>
+  );
 }

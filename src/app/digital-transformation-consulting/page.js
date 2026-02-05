@@ -2,6 +2,7 @@ import DTContent from "@/components/DigitalTransformation/DTContent";
 import StructuredData, {
   createServiceData,
   createBreadcrumbData,
+  createFAQData,
 } from "@/components/StructuredData";
 
 export const metadata = {
@@ -43,10 +44,29 @@ export default function DigitalTransformationPage() {
     },
   ]);
 
+  const faqData = createFAQData([
+    {
+      question: "What sets Mindefy apart for Digital Transformation?",
+      answer:
+        "We act as a Service-Based Product Development Company, treating your projects with the same passion and dedication as our own products, resulting in a holistic vision and innovative solutions.",
+    },
+    {
+      question: "What industries do you serve?",
+      answer:
+        "We have extensive experience in healthcare, finance, retail, and other sectors, allowing us to provide tailored solutions that address unique industry needs.",
+    },
+    {
+      question: "What is your approach to digital transformation?",
+      answer:
+        "We take a holistic approach, examining your processes, people, and technology landscape to identify areas for improvement and develop comprehensive strategies.",
+    },
+  ]);
+
   return (
     <>
       <StructuredData data={serviceData} />
       <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqData} />
       <DTContent />
     </>
   );
