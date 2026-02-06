@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FeaturesSection() {
   return (
-    <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-290 mx-auto gap-16 lg:gap-21 px-4 lg:px-8">
+    <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-290 mx-auto gap-16 lg:gap-21 py-16 px-4 lg:px-8">
       <div className="flex flex-col items-center justify-center max-w-4xl lg:max-w-6xl mx-auto gap-8 lg:gap-12">
         <div className="flex flex-col items-center justify-center gap-4 lg:gap-5">
           <p className="text-[#FF5225] text-sm lg:text-base font-bold tracking-wider uppercase">
