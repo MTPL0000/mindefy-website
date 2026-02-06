@@ -10,7 +10,7 @@ export default function StartupIncubationFeatures() {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:flex xl:flex-wrap w-full max-w-251 mx-auto">
             <div className="bg-white border border-[#000000] md:border-r md:border-b md:border-l-0 md:border-t-0 xl:flex-1 xl:max-w-125.5 xl:border-r xl:border-b xl:border-l-0 xl:border-t-0 xl:basis-[calc(50%-1rem)]">
               <div className="flex items-center justify-center xl:justify-end xl:ml-105.5 mb-4">
-                <div className="relative w-15 h-15 mt-5">
+                <div className="relative w-15 h-15 mt-5 xl:mr-3">
                   <Image
                     src="/images/SIS1.svg"
                     alt="Expertise and Experience"
@@ -71,7 +71,7 @@ export default function StartupIncubationFeatures() {
 
             <div className="bg-white border border-[#000000] md:border-r md:border-t md:border-l-0 md:border-b-0 xl:flex-1 xl:max-w-125.5 xl:border-r xl:border-t xl:border-l-0 xl:border-b-0 xl:basis-[calc(50%-1rem)]">
               <div className="flex items-center justify-center xl:justify-end xl:ml-105.5 mb-4">
-                <div className="relative w-15 h-15 mt-5">
+                <div className="relative w-15 h-15 mt-5 xl:mr-5">
                   <Image
                     src="/images/SIS3.svg"
                     alt="Agile Testing Methodologies"
