@@ -2,6 +2,86 @@
 
 import Image from "next/image";
 import YourHourGrowthChart from "../YourHourGrowthChart";
+import FeatureSection from "./FeatureSection";
+
+const learnedItems = [
+  {
+    title: "Importance of Education",
+    description:
+      "Serving a large user base highlighted the significance of educating users about the impact of excessive screen time and the benefits of digital wellbeing. YourHour invested in creating informative content, including blog posts, newsletters, and in-app resources, to educate and raise awareness among users.",
+  },
+  {
+    title: "Customization is Key",
+    description:
+      "User preferences and requirements vary widely when it comes to managing screen time. Through interactions with millions of users, YourHour learned the importance of providing customizable features, allowing users to tailor their experience and adapt the app to their individual needs.",
+  },
+  {
+    title: "Continuous Innovation",
+    description:
+      "Serving a significant user base emphasized the need for continuous innovation. YourHour implemented new features, such as app usage categorization, goal setting, and screen-free challenges, to cater to evolving user demands and remain competitive in the digital wellbeing space.",
+  },
+  {
+    title: "Overloading with Features",
+    description:
+      "Despite numerous ideas and feature requests, the team resisted the temptation to include every possible feature in YourHour. They recognized the importance of keeping the app focused and user-friendly, avoiding feature bloat that could overwhelm or confuse users.",
+  },
+  {
+    title: "Compromising User Privacy",
+    description:
+      "YourHour prioritized user privacy and security from the outset. They ensured that the app collected only essential data for functionality, implemented strong encryption protocols, and maintained transparent data handling practices, earning user trust in an era of increasing data privacy concerns.",
+  },
+];
+
+const responseItems = [
+  {
+    title: "Positive User Reviews",
+    description:
+      "Users Have Praised YourHour For Its User-Friendly Interface, Accurate Tracking, And Effective Tools For Managing Screen Time. Many Have Reported Improvements In Productivity, Reduced Digital Distractions, And A Healthier Balance Between Screen Time And Real-Life Activities.",
+  },
+  {
+    title: "Behavioral Shifts",
+    description:
+      "YourHour's Impact Extends Beyond Individual Users. By Helping Millions Of People Manage Their Screen Time, The App Has Contributed To A Broader Behavioral Shift Towards Healthier Digital Habits, Fostering Better Mental Health, Improved Focus, And Increased Productivity.",
+  },
+  {
+    title: "Digital Wellbeing Advocacy",
+    description:
+      "YourHour's Success Has Positioned The App As A Key Player In The Digital Wellbeing Space. It Has Become An Advocate For Responsible Technology Usage And Has Inspired Conversations About The Importance Of Digital Balance, Leading To Increased Awareness And Discussions Around Digital Wellness.",
+  },
+  {
+    title: "User Retention and Engagement",
+    description:
+      "YourHour Has Achieved High User Retention Rates Due To Its Valuable Features, Regular Updates, And Strong Customer Support. The App's Active User Community And Engagement Through Forums And Social Media Platforms Have Created A Sense Of Belonging And Motivated Users To Continue Their Digital Wellbeing Journey.",
+  },
+];
+
+const releaseCards = [
+  {
+    title: "Agile Development Methodology",
+    description:
+      "The team adopted an agile development approach, breaking down tasks into manageable sprints and maintaining a continuous feedback loop with users. This methodology allowed for faster iterations and the ability to address issues promptly.",
+    heightClass: "xl:h-[16.3rem]",
+  },
+  {
+    title: "Prioritizing User Feedback",
+    description:
+      "User feedback played a crucial role in shaping each update. The developers actively sought user input through surveys, app reviews, and direct communication channels, ensuring that updates addressed the most pressing user concerns and pain points.",
+    heightClass: "xl:h-[16.3rem]",
+  },
+  {
+    title: "Efficient Collaboration And Task Management",
+    description:
+      "The team utilized project management tools and effective communication channels to streamline collaboration and task management. Clear roles, responsibilities, and efficient workflows enabled them to deliver updates regularly, maintaining a rapid release cycle.",
+    heightClass: "xl:h-72",
+  },
+];
+
+const wentRightPoints = [
+  "Your Hour entered the market at a time when concerns about smartphone addiction and digital wellness were on the rise. The product tapped into a growing need, positioning itself as a solution for individuals seeking to regain control over their screen time.",
+  "Your Hour's success can be attributed to its user-centric design and features. The developers conducted extensive research to understand user pain points and preferences, leading to the creation of a comprehensive suite of tools and features that addressed users' needs.",
+  "Your Hour prioritized delivering a seamless user experience. The app's intuitive interface, smooth navigation, and straightforward setup process allowed users to easily monitor their screen time, set limits, and track progress without feeling overwhelmed or confused.",
+  "The developers consistently listened to user feedback and incorporated valuable suggestions into the app's updates. This approach helped in enhancing the functionality, performance, and overall user experience of Your Hour, contributing to user retention and positive reviews.",
+];
 
 export default function YourHourSections() {
   return (
@@ -21,121 +101,57 @@ export default function YourHourSections() {
             </span>
           </div>
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="w-full max-w-[33.15rem]">
-                <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
-                  Screen Time Monitoring
-                </h3>
-                <p className="text-sm md:text-base xl:text-lg font-poppins font-normal text-[#444444] leading-relaxed text-center lg:text-left">
-                  Users can track their daily and weekly screen time usage
-                  across various apps and categories, gaining insights into
-                  their digital habits and identifying areas for improvement.
-                </p>
-              </div>
-              <img
-                src="/images/yourhour/dashboard.webp"
-                alt="YourHour image"
-                className="aspect-square w-full md:w-4xl object-contain mx-auto"
-                loading="lazy"
-              />
-            </div>
+            <FeatureSection
+              title="Screen Time Monitoring"
+              description="Users can track their daily and weekly screen time usage across various apps and categories, gaining insights into their digital habits and identifying areas for improvement."
+              imageSrc="/images/yourhour/dashboard.webp"
+              imageAlt="YourHour image"
+              contentClassName="w-full max-w-[33.15rem]"
+            />
           </div>
         </div>
       </div>
 
       {/* App Usage Analysis */}
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <img
-              src="/images/yourhour/analysis.webp"
-              alt="YourHour image"
-              className="aspect-square w-full md:w-4xl object-contain mx-auto"
-              loading="lazy"
-            />
-          </div>
-          <div className="order-1 md:order-2">
-            <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
-              App Usage Analysis
-            </h3>
-            <p className="text-sm md:text-base xl:text-lg font-poppins font-normal text-[#444444] leading-relaxed text-center lg:text-left">
-              YourHour provides a detailed breakdown of app usage, allowing
-              users to understand which apps consume the most time and make
-              informed decisions about app usage management.
-            </p>
-          </div>
-        </div>
+        <FeatureSection
+          title="App Usage Analysis"
+          description="YourHour provides a detailed breakdown of app usage, allowing users to understand which apps consume the most time and make informed decisions about app usage management."
+          imageSrc="/images/yourhour/analysis.webp"
+          imageAlt="YourHour image"
+          reverse
+        />
       </div>
 
       {/* Customizable Reminders And Alerts */}
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
-              Customizable Reminders And Alerts
-            </h3>
-            <p className="text-sm md:text-base xl:text-lg font-poppins font-normal text-[#444444] leading-relaxed text-center lg:text-left">
-              Users can set personalized reminders and alerts to help them take
-              regular breaks, reduce excessive screen time, and establish
-              healthier usage patterns.
-            </p>
-          </div>
-          <img
-            src="/images/yourhour/alerts.webp"
-            alt="YourHour image"
-            className="aspect-square w-full md:w-4xl object-contain mx-auto"
-            loading="lazy"
-          />
-        </div>
+        <FeatureSection
+          title="Customizable Reminders And Alerts"
+          description="Users can set personalized reminders and alerts to help them take regular breaks, reduce excessive screen time, and establish healthier usage patterns."
+          imageSrc="/images/yourhour/alerts.webp"
+          imageAlt="YourHour image"
+        />
       </div>
 
       {/* Curated & Scheduled Challenges */}
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <img
-              src="/images/yourhour/challenges.webp"
-              alt="YourHour image"
-              className="aspect-square w-full md:w-4xl object-contain mx-auto"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="order-1 md:order-2">
-            <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
-              Curated & Scheduled Challenges
-            </h3>
-            <p className="text-sm md:text-base xl:text-lg font-poppins font-normal text-[#444444] leading-relaxed text-center lg:text-left">
-              YourHour app has an algorithm based feature of curated challenges,
-              as you progress on your Detox Journey with YourHour, the app
-              starts auto-suggesting and curating Fast & Diet challenges on the
-              apps you are most addicted to.
-            </p>
-          </div>
-        </div>
+        <FeatureSection
+          title="Curated & Scheduled Challenges"
+          description="YourHour app has an algorithm based feature of curated challenges, as you progress on your Detox Journey with YourHour, the app starts auto-suggesting and curating Fast & Diet challenges on the apps you are most addicted to."
+          imageSrc="/images/yourhour/challenges.webp"
+          imageAlt="YourHour image"
+          reverse
+        />
       </div>
 
       {/* Personalized Detailed Reports */}
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-semibold text-[#000000] mb-6 xl:mb-10 text-center lg:text-left">
-              Personalized Detailed Reports
-            </h3>
-            <p className="text-sm md:text-base xl:text-lg font-poppins font-normal text-[#444444] leading-relaxed text-center lg:text-left">
-              YourHour app provides its users Detailed Daily, Weekly and Monthly
-              report of their app usage. Daily usage report reviews the usage of
-              individual apps through a consolidated report sent through push
-              notification to the user at the end of each day.
-            </p>
-          </div>
-          <img
-            src="/images/yourhour/reports.webp"
-            alt="YourHour image"
-            className="aspect-square w-full md:w-4xl object-contain mx-auto"
-            loading="lazy"
-          />
-        </div>
+        <FeatureSection
+          title="Personalized Detailed Reports"
+          description="YourHour app provides its users Detailed Daily, Weekly and Monthly report of their app usage. Daily usage report reviews the usage of individual apps through a consolidated report sent through push notification to the user at the end of each day."
+          imageSrc="/images/yourhour/reports.webp"
+          imageAlt="YourHour image"
+        />
       </div>
 
       {/* NEW FEATURES Mindful Pause */}
@@ -196,66 +212,16 @@ export default function YourHourSections() {
             />
           </div>
           <div className="space-y-10 md:space-y-15">
-            <div>
-              <h3 className="text-xl md:text-2xl text-[#000000] font-poppins font-semibold mb-4">
-                Importance of Education
-              </h3>
-              <p className="text-sm md:text-base leading-relaxed text-[#000000] font-poppins font-normal">
-                Serving a large user base highlighted the significance of
-                educating users about the impact of excessive screen time and
-                the benefits of digital wellbeing. YourHour invested in creating
-                informative content, including blog posts, newsletters, and
-                in-app resources, to educate and raise awareness among users.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl md:text-2xl text-[#000000] font-poppins font-semibold mb-4">
-                Customization is Key
-              </h3>
-              <p className="text-sm md:text-base leading-relaxed text-[#000000] font-poppins font-normal">
-                User preferences and requirements vary widely when it comes to
-                managing screen time. Through interactions with millions of
-                users, YourHour learned the importance of providing customizable
-                features, allowing users to tailor their experience and adapt
-                the app to their individual needs.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl md:text-2xl text-[#000000] font-poppins font-semibold mb-4">
-                Continuous Innovation
-              </h3>
-              <p className="text-sm md:text-base leading-relaxed text-[#000000] font-poppins font-normal">
-                Serving a significant user base emphasized the need for
-                continuous innovation. YourHour implemented new features, such
-                as app usage categorization, goal setting, and screen-free
-                challenges, to cater to evolving user demands and remain
-                competitive in the digital wellbeing space.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl md:text-2xl text-[#000000] font-poppins font-semibold mb-4">
-                Overloading with Features
-              </h3>
-              <p className="text-sm md:text-base leading-relaxed text-[#000000] font-poppins font-normal">
-                Despite numerous ideas and feature requests, the team resisted
-                the temptation to include every possible feature in YourHour.
-                They recognized the importance of keeping the app focused and
-                user-friendly, avoiding feature bloat that could overwhelm or
-                confuse users.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl md:text-2xl text-[#000000] font-poppins font-semibold mb-4">
-                Compromising User Privacy
-              </h3>
-              <p className="text-sm md:text-base leading-relaxed text-[#000000] font-poppins font-normal">
-                YourHour prioritized user privacy and security from the outset.
-                They ensured that the app collected only essential data for
-                functionality, implemented strong encryption protocols, and
-                maintained transparent data handling practices, earning user
-                trust in an era of increasing data privacy concerns.
-              </p>
-            </div>
+            {learnedItems.map((item) => (
+              <div key={item.title}>
+                <h3 className="text-xl md:text-2xl text-[#000000] font-poppins font-semibold mb-4">
+                  {item.title}
+                </h3>
+                <p className="text-sm md:text-base leading-relaxed text-[#000000] font-poppins font-normal">
+                  {item.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -269,34 +235,9 @@ export default function YourHourSections() {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-12 lg:gap-20">
           <YourHourGrowthChart />
           <div className="space-y-12 text-sm md:text-base font-normal font-poppins text-[#101010] leading-relaxed">
-            <p>
-              Your Hour entered the market at a time when concerns about
-              smartphone addiction and digital wellness were on the rise. The
-              product tapped into a growing need, positioning itself as a
-              solution for individuals seeking to regain control over their
-              screen time.
-            </p>
-            <p>
-              Your Hour's success can be attributed to its user-centric design
-              and features. The developers conducted extensive research to
-              understand user pain points and preferences, leading to the
-              creation of a comprehensive suite of tools and features that
-              addressed users' needs.
-            </p>
-            <p>
-              Your Hour prioritized delivering a seamless user experience. The
-              app's intuitive interface, smooth navigation, and straightforward
-              setup process allowed users to easily monitor their screen time,
-              set limits, and track progress without feeling overwhelmed or
-              confused.
-            </p>
-            <p>
-              The developers consistently listened to user feedback and
-              incorporated valuable suggestions into the app's updates. This
-              approach helped in enhancing the functionality, performance, and
-              overall user experience of Your Hour, contributing to user
-              retention and positive reviews.
-            </p>
+            {wentRightPoints.map((point) => (
+              <p key={point}>{point}</p>
+            ))}
           </div>
         </div>
       </div>
@@ -413,55 +354,16 @@ export default function YourHourSections() {
             </div>
           </div>
           <div className="space-y-10">
-            <div>
-              <h4 className="text-xl font-semibold text-[#101010] mb-2">
-                Positive User Reviews
-              </h4>
-              <p className="text-sm md:text-base font-normal font-poppins text-[#101010] leading-relaxed">
-                Users Have Praised YourHour For Its User-Friendly Interface,
-                Accurate Tracking, And Effective Tools For Managing Screen Time.
-                Many Have Reported Improvements In Productivity, Reduced Digital
-                Distractions, And A Healthier Balance Between Screen Time And
-                Real-Life Activities.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xl font-semibold text-[#101010] mb-2">
-                Behavioral Shifts
-              </h4>
-              <p className="text-sm md:text-base font-normal font-poppins text-[#101010] leading-relaxed">
-                YourHour&apos;s Impact Extends Beyond Individual Users. By
-                Helping Millions Of People Manage Their Screen Time, The App Has
-                Contributed To A Broader Behavioral Shift Towards Healthier
-                Digital Habits, Fostering Better Mental Health, Improved Focus,
-                And Increased Productivity.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xl font-semibold text-[#101010] mb-2">
-                Digital Wellbeing Advocacy
-              </h4>
-              <p className="text-sm md:text-base font-normal font-poppins text-[#101010] leading-relaxed">
-                YourHour&apos;s Success Has Positioned The App As A Key Player
-                In The Digital Wellbeing Space. It Has Become An Advocate For
-                Responsible Technology Usage And Has Inspired Conversations
-                About The Importance Of Digital Balance, Leading To Increased
-                Awareness And Discussions Around Digital Wellness.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xl font-semibold text-[#101010] mb-2">
-                User Retention and Engagement
-              </h4>
-              <p className="text-sm md:text-base font-normal font-poppins text-[#101010] leading-relaxed">
-                YourHour Has Achieved High User Retention Rates Due To Its
-                Valuable Features, Regular Updates, And Strong Customer Support.
-                The App&apos;s Active User Community And Engagement Through
-                Forums And Social Media Platforms Have Created A Sense Of
-                Belonging And Motivated Users To Continue Their Digital
-                Wellbeing Journey.
-              </p>
-            </div>
+            {responseItems.map((item) => (
+              <div key={item.title}>
+                <h4 className="text-xl font-semibold text-[#101010] mb-2">
+                  {item.title}
+                </h4>
+                <p className="text-sm md:text-base font-normal font-poppins text-[#101010] leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -479,56 +381,37 @@ export default function YourHourSections() {
             </div>
             <div className="flex flex-col items-center">
               <div className="flex flex-col xl:flex-row gap-5 mb-14">
+                {releaseCards.slice(0, 2).map((card) => (
+                  <div
+                    key={card.title}
+                    className={`bg-[#FFFFFF] rounded-2xl p-6 xl:p-8 w-full xl:w-[35.65rem] h-auto ${card.heightClass} text-center`}
+                    style={{
+                      boxShadow: "4px 4px 17px rgba(54, 47, 115, 0.5)",
+                    }}
+                  >
+                    <h3 className="text-xl xl:text-2xl font-semibold mb-4 xl:mb-7">
+                      {card.title}
+                    </h3>
+                    <p className="text-sm xl:text-base font-normal text-[#444444] leading-relaxed">
+                      {card.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              {releaseCards.slice(2).map((card) => (
                 <div
-                  className="bg-[#FFFFFF] rounded-2xl p-6 xl:p-8 w-full xl:w-[35.65rem] h-auto xl:h-[16.3rem] text-center"
-                  style={{
-                    boxShadow: "4px 4px 17px rgba(54, 47, 115, 0.5)",
-                  }}
+                  key={card.title}
+                  className={`bg-[#FFFFFF] rounded-2xl p-6 xl:p-8 w-full xl:w-[35.65rem] h-auto ${card.heightClass} text-center`}
+                  style={{ boxShadow: "4px 4px 17px rgba(54, 47, 115, 0.5)" }}
                 >
                   <h3 className="text-xl xl:text-2xl font-semibold mb-4 xl:mb-7">
-                    Agile Development Methodology
+                    {card.title}
                   </h3>
                   <p className="text-sm xl:text-base font-normal text-[#444444] leading-relaxed">
-                    The team adopted an agile development approach, breaking
-                    down tasks into manageable sprints and maintaining a
-                    continuous feedback loop with users. This methodology
-                    allowed for faster iterations and the ability to address
-                    issues promptly.
+                    {card.description}
                   </p>
                 </div>
-                <div
-                  className="bg-[#FFFFFF] rounded-2xl p-6 xl:p-8 w-full xl:w-[35.65rem] h-auto xl:h-[16.3rem] text-center"
-                  style={{
-                    boxShadow: "4px 4px 17px rgba(54, 47, 115, 0.5)",
-                  }}
-                >
-                  <h3 className="text-xl xl:text-2xl font-semibold mb-4 xl:mb-7">
-                    Prioritizing User Feedback
-                  </h3>
-                  <p className="text-sm xl:text-base font-normal text-[#444444] leading-relaxed">
-                    User feedback played a crucial role in shaping each update.
-                    The developers actively sought user input through surveys,
-                    app reviews, and direct communication channels, ensuring
-                    that updates addressed the most pressing user concerns and
-                    pain points.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="bg-[#FFFFFF] rounded-2xl p-6 xl:p-8 w-full xl:w-[35.65rem] h-auto xl:h-72 text-center"
-                style={{ boxShadow: "4px 4px 17px rgba(54, 47, 115, 0.5)" }}
-              >
-                <h3 className="text-xl xl:text-2xl font-semibold mb-4 xl:mb-7">
-                  Efficient Collaboration And Task Management
-                </h3>
-                <p className="text-sm xl:text-base font-normal text-[#444444] leading-relaxed">
-                  The team utilized project management tools and effective
-                  communication channels to streamline collaboration and task
-                  management. Clear roles, responsibilities, and efficient
-                  workflows enabled them to deliver updates regularly,
-                  maintaining a rapid release cycle.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
