@@ -74,8 +74,7 @@ export default function TestimonialsGrid() {
             cardSpacing = "xl:w-[26.25rem] xl:h-[34.75rem]";
             break;
           case 4:
-            cardSpacing =
-              "xl:w-[26.25rem] xl:h-[31.125rem] xl:mt-[-5.25rem]";
+            cardSpacing = "xl:w-[26.25rem] xl:h-[31.125rem] xl:mt-[-5.25rem]";
             break;
           case 5:
             cardSpacing =
@@ -91,11 +90,11 @@ export default function TestimonialsGrid() {
             key={testimonial.id}
             className={`${responsiveClasses} ${cardSpacing} border border-gray-200 rounded-lg xl:rounded-[1.25rem] p-4 md:p-6 xl:p-6 shadow-sm hover:shadow-md transition-shadow`}
           >
-            <h3 className="text-lg md:text-xl xl:text-[1.375rem] font-semibold text-[#02000D] mb-4 md:mb-6 xl:mb-6 leading-tight">
+            <h3 className="text-lg md:text-xl xl:text-2xl font-semibold text-[#02000D] mb-4 md:mb-6 xl:mb-6 leading-tight">
               {testimonial.title}
             </h3>
 
-            <p className="text-sm md:text-base xl:text-[1rem] font-normal text-[#000000] mb-4 md:mb-6 xl:mb-6 leading-relaxed">
+            <p className="text-sm md:text-base xl:text-base font-normal text-[#000000] mb-4 md:mb-6 xl:mb-6 leading-relaxed">
               {testimonial.content}
             </p>
 
@@ -113,11 +112,11 @@ export default function TestimonialsGrid() {
               </div>
 
               <div className="p-3 md:p-4 xl:p-4">
-                <p className="text-sm md:text-base xl:text-[0.875rem] font-medium text-[#000000]">
+                <p className="text-sm md:text-base xl:text-sm font-medium text-[#000000]">
                   {testimonial.clientName}
                 </p>
                 {testimonial.clientPosition && (
-                  <p className="text-xs md:text-sm xl:text-[0.75rem] text-[#2B2B2B]">
+                  <p className="text-xs md:text-sm xl:text-xs text-[#2B2B2B]">
                     {testimonial.clientPosition}
                   </p>
                 )}

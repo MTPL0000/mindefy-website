@@ -14,10 +14,10 @@ export default function SolutionCard({ solution }) {
             : "lg:w-123.5 lg:my-11 lg:ml-5.5 lg:p-0"
         }`}
       >
-        <h3 className="text-lg sm:text-xl lg:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4">
+        <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#000000] mb-3 sm:mb-4">
           {solution.name}
         </h3>
-        <p className="text-sm sm:text-base lg:text-[1rem] w-full lg:w-117.5 text-[#444444] leading-relaxed text-justify">
+        <p className="text-sm sm:text-base lg:text-base w-full lg:w-117.5 text-[#444444] leading-relaxed text-justify">
           {solution.description}
         </p>
       </div>

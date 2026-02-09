@@ -17,20 +17,19 @@ export default function GenAIChatbotIntro({ introductionRef }) {
               <p className="font-bold text-sm mb-4 text-center lg:text-left">
                 CASE STUDY
               </p>
-              <h1 className="text-[1.86rem] font-semibold text-center lg:text-left">
+              <h1 className="text-3xl font-semibold text-center lg:text-left">
                 Gen AI-Chatbot
               </h1>
             </div>
             <p className="text-[#000000] font-normal text-sm leading-relaxed tracking-normal text-center lg:text-left">
               YourHour was originally designed to monitor and reduce daily
-              screen time with alerts. Facing rising demand for mental
-              health support, the team enhanced the app by integrating a
+              screen time with alerts. Facing rising demand for mental health
+              support, the team enhanced the app by integrating a
               Retrieval-Augmented Generation (RAG) AI chatbot. This "AI
-              companion" continued screen-time coaching while also
-              answering mental health questions, providing personalized
-              advice on anxiety or depression, and offering
-              companionship—based on how screen time affects health and
-              emotional well-being.
+              companion" continued screen-time coaching while also answering
+              mental health questions, providing personalized advice on anxiety
+              or depression, and offering companionship—based on how screen time
+              affects health and emotional well-being.
             </p>
           </div>
 

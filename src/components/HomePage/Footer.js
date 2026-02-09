@@ -228,7 +228,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-[#212353] border-t pt-3 sm:pt-4 pb-3 sm:pb-4">
-          <p className="text-sm sm:text-base lg:text-[1rem]">
+          <p className="text-sm sm:text-base lg:text-base">
             ©{" "}
             <span className="font-bold">
               Mindefy Technologies Private Limited

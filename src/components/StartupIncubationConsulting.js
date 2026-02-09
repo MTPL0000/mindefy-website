@@ -9,12 +9,12 @@ export default function StartupIncubationConsulting() {
       <section className="mt-28 mx-auto px-4 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-5">
+          <h1 className="text-[#FF5225] text-sm lg:text-base font-bold tracking-widest uppercase mb-5">
             Startup Incubation Services
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-221 mx-auto px-4 xl:px-0">
+          <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-semibold text-[#000000] mb-7 leading-tight max-w-221 mx-auto px-4 xl:px-0">
             <span className="font-medium">Unlock Your </span>Startup Potential
             with <br className="hidden sm:block"></br>Mindefy's Incubation
             Services
@@ -22,14 +22,14 @@ export default function StartupIncubationConsulting() {
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-245.5 font-normal mx-auto mb-9 text-justify space-y-5 px-4 xl:px-0">
-            <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-sm lg:text-base text-[#444444] leading-relaxed">
               <span className="font-semibold">
                 Are you an aspiring entrepreneur brimming with groundbreaking
                 ideas
               </span>
               , but not sure how to bring them to life?
             </p>
-            <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-sm lg:text-base text-[#444444] leading-relaxed">
               Look no further! At Mindefy, we specialize in incubating
               innovative concepts and nurturing them into successful ventures.
               Our Startup Incubation Services are designed to empower
@@ -73,11 +73,11 @@ export default function StartupIncubationConsulting() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:ml-37.75 xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000]">
+                <h3 className="text-center xl:ml-37.75 xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#000000]">
                   Turning Ideas into Action
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   We specialize in taking these initial concepts and
                   transforming them into actionable strategies. Whether your
                   idea is in its infancy or well-formed, our team collaborates
@@ -103,11 +103,11 @@ export default function StartupIncubationConsulting() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000]">
+                <h3 className="text-center xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#000000]">
                   End-to-End Support
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   Mindefy offers comprehensive, end-to-end services to assist
                   you in navigating the intricacies of transforming your idea
                   into a viable startup. This level of support covers every
@@ -134,11 +134,11 @@ export default function StartupIncubationConsulting() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:ml-46 xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000]">
+                <h3 className="text-center xl:ml-46 xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#000000]">
                   Prototyping Excellence
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   An essential stage in our incubation process involves creating
                   the first prototype of your product or service. This phase is
                   pivotal as it takes your concept from the abstract to the
@@ -165,11 +165,11 @@ export default function StartupIncubationConsulting() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000]">
+                <h3 className="text-center xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#000000]">
                   Market Testing
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   Before making a full-scale commitment to production, it's
                   vital to test the market. Mindefy assists you in conducting
                   rigorous market research and validation. This step ensures
@@ -190,7 +190,7 @@ export default function StartupIncubationConsulting() {
         <div className="max-w-273.5 mx-auto">
           {/* Section Header */}
           <div className="text-center mb-15">
-            <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] px-4 xl:px-0">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#000000] px-4 xl:px-0">
               Mindefy offers a range of compelling reasons that make it a top
               choice for incubating startup ideas:
             </h2>
@@ -207,10 +207,10 @@ export default function StartupIncubationConsulting() {
               }}
             >
               <div className="flex-1 p-6 lg:py-16.5 lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
-                <p className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <p className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Experience and Expertise
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   With years of experience in startup incubation, Mindefy has
                   accumulated invaluable knowledge and insights. We've
                   successfully shepherded numerous ideas to thriving businesses,
@@ -245,10 +245,10 @@ export default function StartupIncubationConsulting() {
                 </div>
               </div>
               <div className="flex-1 p-6 lg:py-13 lg:pl-4 lg:pr-6 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Tailored Solutions
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Mindefy understands that every startup idea is unique, and a
                   one-size-fits-all approach doesn't work. Our strength lies in
                   our ability to customize our services to fit your specific
@@ -270,10 +270,10 @@ export default function StartupIncubationConsulting() {
               }}
             >
               <div className="flex-1 p-6 lg:py-9.5 lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Comprehensive Resources
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Mindefy provides a wealth of resources to support your
                   entrepreneurial journey. This includes mentorship from
                   experienced professionals who offer invaluable guidance,
@@ -310,10 +310,10 @@ export default function StartupIncubationConsulting() {
                 </div>
               </div>
               <div className="flex-1 p-6 lg:py-13 lg:pl-4 lg:pr-6 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Strategic Partnerships
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   We develop scalable and maintainable test frameworks that
                   serve as a foundation for your test automation efforts. Our
                   frameworks provide a structured approach to test script
@@ -334,10 +334,10 @@ export default function StartupIncubationConsulting() {
               }}
             >
               <div className="flex-1 p-6 lg:py-13 lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Test Planning and Strategy
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Our experienced QA professionals work closely with you to
                   create a comprehensive test plan and strategy. We conduct a
                   thorough analysis of your application, define testing
@@ -372,10 +372,10 @@ export default function StartupIncubationConsulting() {
                 </div>
               </div>
               <div className="flex-1 p-6 lg:py-13 lg:pl-4 lg:pr-6 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Test Execution and Reporting
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Mindefy has cultivated strategic partnerships with industry
                   leaders, investors, and seasoned mentors. These partnerships
                   offer a wealth of opportunities for your startup's success.
@@ -395,12 +395,12 @@ export default function StartupIncubationConsulting() {
       <div className="w-full max-w-273.5 mx-auto px-4 xl:px-3 flex flex-col lg:flex-row justify-between items-center">
         <div className="w-full lg:w-[36.18rem] lg:mx-1.5 lg:ml-3">
           <div className="lg:mx-3.5 mt-8 lg:mt-[5.09rem] mb-6 lg:mb-8">
-            <p className="font-semibold text-[1.5rem] lg:text-2xl text-[#2C1010] text-center lg:text-left">
+            <p className="font-semibold text-2xl lg:text-2xl text-[#2C1010] text-center lg:text-left">
               Proven Track Record
             </p>
           </div>
           <div className="lg:mx-3.5 mb-8 lg:mb-[5.093rem]">
-            <p className="font-normal text-[0.875rem] lg:text-[1rem] text-justify text-[#444444] leading-relaxed">
+            <p className="font-normal text-sm lg:text-base text-justify text-[#444444] leading-relaxed">
               Mindefy's portfolio of successful startups serves as a testament
               to our capabilities. These are entrepreneurs who entrusted Mindefy
               to incubate their ideas, and the results speak for themselves:

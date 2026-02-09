@@ -8,19 +8,19 @@ export default function GameAnimation() {
       <section className="mt-28 mx-auto px-4 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-5">
+          <h1 className="text-[#FF5225] text-sm lg:text-base font-bold tracking-widest uppercase mb-5">
             2D & 3D Game Animation
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-221 mx-auto px-4 xl:px-0">
+          <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-semibold text-[#000000] mb-7 leading-tight max-w-221 mx-auto px-4 xl:px-0">
             Immersive Game Animation That Brings
             <br className="hidden sm:block"></br> Worlds to Life
           </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-245.5 font-normal mx-auto mb-9 text-justify space-y-5 px-4 xl:px-0">
-            <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-sm lg:text-base text-[#444444] leading-relaxed">
               Our in-house animation team brings every frame to life with
               creativity, precision, and storytelling finesse. Whether it's
               charming pixel art, smooth 2D animations, or hyper-realistic 3D
@@ -99,7 +99,7 @@ export default function GameAnimation() {
                 </ul>
               </div>
 
-              <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
+              <p className="text-sm sm:text-base text-[#444444] text-justify leading-relaxed">
                 Whether you're building a fast-paced arcade game or a
                 story-driven adventure, we combine creativity and code to make
                 it happen.
@@ -142,7 +142,7 @@ export default function GameAnimation() {
                 </ul>
               </div>
 
-              <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
+              <p className="text-sm sm:text-base text-[#444444] text-justify leading-relaxed">
                 Whether it's a casual 3D game or a complex simulation, we bring
                 your vision to life with precision, creativity, and scalability.
               </p>
@@ -166,14 +166,14 @@ export default function GameAnimation() {
       {/* Our Work Section */}
       <section className="bg-white px-4 xl:px-0">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-[2.5rem] font-bold text-[#000000] text-center mb-8 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#000000] text-center mb-8 lg:mb-12">
             Our Work
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             {/* 3D Game Column */}
             <div className="flex-1 w-full">
-              <h3 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] text-center mb-4 lg:mb-3">
+              <h3 className="text-lg sm:text-xl lg:text-3xl font-semibold text-[#000000] text-center mb-4 lg:mb-3">
                 3D Game
               </h3>
               <div className="relative w-full max-w-113.5 mx-auto h-60 sm:h-72 lg:h-80.5">
@@ -188,7 +188,7 @@ export default function GameAnimation() {
 
             {/* 2D Game Column */}
             <div className="flex-1 w-full">
-              <h3 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] text-center mb-4 lg:mb-3">
+              <h3 className="text-lg sm:text-xl lg:text-3xl font-semibold text-[#000000] text-center mb-4 lg:mb-3">
                 2D Game
               </h3>
               <div className="relative w-full max-w-157 mx-auto h-60 sm:h-72 lg:h-[20.687rem]">

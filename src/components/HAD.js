@@ -9,12 +9,12 @@ export default function HAD() {
       <section className="mt-16 sm:mt-20 lg:mt-28 mx-auto px-4 sm:px-6 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-5">
+          <h1 className="text-[#FF5225] text-sm sm:text-base lg:text-base font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-5">
             Hybrid Application Development
           </h1>
 
           {/* Main Title */}
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-6 lg:mb-7 leading-tight max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-200 mx-auto px-2 sm:px-0">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#000000] mb-4 sm:mb-6 lg:mb-7 leading-tight max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-200 mx-auto px-2 sm:px-0">
             <span className="font-normal">Elevate </span>Your Mobile App
             Experience <span className="font-normal">with </span>
             <span className="font-medium">Hybrid App Development </span>
@@ -23,7 +23,7 @@ export default function HAD() {
 
           {/* Description Paragraphs */}
           <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:w-241 font-normal mx-auto mb-6 sm:mb-8 lg:mb-9 text-center sm:text-justify lg:text-justify space-y-3 sm:space-y-4 lg:space-y-5 px-2 sm:px-0">
-            <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed">
               As a leading hybrid app development company, we pride ourselves on
               delivering top-notch solutions that redefine industry standards.
               With an impressive track record and a team of highly skilled
@@ -53,13 +53,13 @@ export default function HAD() {
         <div className="max-w-sm sm:max-w-lg md:max-w-4xl lg:max-w-300 mx-auto lg:px-6">
           {/* Section Header */}
           <div className="text-center mb-8 sm:mb-10 lg:mb-10">
-            <p className="text-[#FF5225] text-sm sm:text-base lg:text-[1rem] font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-5">
+            <p className="text-[#FF5225] text-sm sm:text-base lg:text-base font-bold tracking-wider lg:tracking-widest uppercase mb-3 sm:mb-4 lg:mb-5">
               BENEFITS OF CHOOSING IN HYBRID APPS
             </p>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold text-[#000000] mb-6 sm:mb-8 lg:mb-10">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#000000] mb-6 sm:mb-8 lg:mb-10">
               Seamless Cross-Platform Compatibility
             </h2>
-            <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] text-center sm:text-justify lg:text-justify leading-relaxed max-w-full lg:max-w-241 mx-auto">
+            <p className="text-sm sm:text-base lg:text-base text-[#444444] text-center sm:text-justify lg:text-justify leading-relaxed max-w-full lg:max-w-241 mx-auto">
               Hybrid apps built using React Native, Flutter, and PWAs seamlessly
               work across various platforms, including iOS, Android, and the
               web. This unified approach eliminates the need for separate
@@ -82,10 +82,10 @@ export default function HAD() {
                   />
                 </div>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
                 Native-Like Performance
               </h3>
-              <p className="text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+              <p className="text-sm sm:text-base lg:text-base font-normal text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                 With React Native and Flutter, you can create hybrid apps that
                 offer native-like performance and user interfaces. These
                 frameworks leverage the power of native components and optimized
@@ -107,10 +107,10 @@ export default function HAD() {
                   />
                 </div>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
                 Faster Time-to-Market
               </h3>
-              <p className="text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+              <p className="text-sm sm:text-base lg:text-base font-normal text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                 Hybrid app development accelerates the time-to-market process by
                 utilizing frameworks like React Native and Flutter. These
                 frameworks enable code sharing and reusability, allowing
@@ -132,10 +132,10 @@ export default function HAD() {
                   />
                 </div>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
                 Cost-Effective Solution
               </h3>
-              <p className="text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+              <p className="text-sm sm:text-base lg:text-base font-normal text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                 Choosing hybrid app development can significantly reduce costs
                 compared to developing separate native apps. With a single
                 codebase, you save on development time, resources, and ongoing
@@ -167,10 +167,10 @@ export default function HAD() {
                 </div>
               </div>
               <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
                   Versatility with Progressive Web Apps (PWAs)
                 </h3>
-                <p className="text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+                <p className="text-sm sm:text-base lg:text-base font-normal text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                   Progressive Web Apps offer a unique hybrid solution, combining
                   the best features of web and mobile apps. PWAs can be accessed
                   through web browsers and provide an app-like experience with
@@ -196,11 +196,11 @@ export default function HAD() {
                 </div>
               </div>
               <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
                   React Native
                 </h3>
                 <div className="space-y-3 sm:space-y-4">
-                  <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+                  <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     Mindefy stands out as the ideal choice for React Native app
                     development. With a wealth of experience and a highly
                     skilled team of developers, we have the expertise and
@@ -210,7 +210,7 @@ export default function HAD() {
                     us the preferred partner for businesses looking to create
                     cutting-edge React Native applications.
                   </p>
-                  <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+                  <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     React Native is powered by the robust React framework. React
                     Native allows developers to create native-like apps using
                     JavaScript. It offers a rich set of pre-built components,
@@ -238,11 +238,11 @@ export default function HAD() {
                 </div>
               </div>
               <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
                   Flutter
                 </h3>
                 <div className="space-y-3 sm:space-y-4">
-                  <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+                  <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     Discover the advantages of partnering with Mindefy for your
                     Flutter app development needs. With a proven track record
                     and a team of experienced Flutter developers, we offer
@@ -251,19 +251,19 @@ export default function HAD() {
                     our commitment to delivering exceptional results sets us
                     apart.
                   </p>
-                  <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+                  <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     With our personalized solutions, collaborative approach, and
                     agile development methodologies, we ensure your Flutter app
                     is tailored to your unique requirements.
                   </p>
-                  <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+                  <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     Benefit from Flutter's cross-platform capabilities to reach
                     a wider audience, while our focus on quality, innovation,
                     and timely delivery ensures a remarkable user experience.
                     Choose us as your Flutter development partner and unlock the
                     full potential of your app idea.
                   </p>
-                  <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+                  <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     Flutter is a versatile UI toolkit for building natively
                     compiled apps for mobile, web, and desktop. Using the Dart
                     programming language, Flutter provides a highly performant
@@ -291,11 +291,11 @@ export default function HAD() {
                 </div>
               </div>
               <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[1.5rem] font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold text-[#000000] mb-3 sm:mb-4 lg:mb-2.5">
                   Progressive Web Apps (PWAs)
                 </h3>
                 <div className="space-y-3 sm:space-y-4">
-                  <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+                  <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     Experience the transformative power of Progressive Web Apps
                     (PWAs) with Mindefy as your trusted development partner. As
                     industry leaders in PWA development, our experienced team of
@@ -313,7 +313,7 @@ export default function HAD() {
                     development needs and elevate your web presence to new
                     heights.
                   </p>
-                  <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
+                  <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed text-center sm:text-justify lg:text-justify">
                     PWAs combine the best of web and mobile app technologies,
                     delivering a seamless user experience. PWAs leverage modern
                     web capabilities such as service workers, web app manifests,

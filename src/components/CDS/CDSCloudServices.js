@@ -25,7 +25,7 @@ export default function CDSCloudServices() {
     <section className="px-4 sm:px-6 xl:px-0">
       <div className="max-w-full xl:max-w-290 mx-auto">
         <div className="text-center">
-          <h2 className="text-center text-lg sm:text-xl lg:text-2xl xl:text-[1.75rem] font-semibold text-[#000000] mb-8 xl:mb-15 px-4 xl:px-0">
+          <h2 className="text-center text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold text-[#000000] mb-8 xl:mb-15 px-4 xl:px-0">
             Embracе Our Gamе-Changing Cloud Sеrvicеs
           </h2>
         </div>
@@ -40,7 +40,7 @@ export default function CDSCloudServices() {
               }}
             >
               <div className="w-full xl:w-85 min-h-12 xl:h-18 flex items-center justify-center">
-                <h3 className="font-semibold text-base sm:text-lg lg:text-xl xl:text-[1.25rem] leading-tight">
+                <h3 className="font-semibold text-base sm:text-lg lg:text-xl xl:text-xl leading-tight">
                   {item.title}
                 </h3>
               </div>

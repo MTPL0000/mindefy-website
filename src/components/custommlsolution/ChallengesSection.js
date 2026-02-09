@@ -12,7 +12,7 @@ export default function ChallengesSection() {
           <h2 className="text-2xl font-semibold text-[#2B7575] mb-4">
             CHALLENGES
           </h2>
-          <h1 className="text-[1.25rem] font-normal text-[#333333]">
+          <h1 className="text-xl font-normal text-[#333333]">
             Boosting Product Discovery for Busy Mothers
           </h1>
         </div>
@@ -20,13 +20,12 @@ export default function ChallengesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
           {challengeCards.map((card, index) => (
             <div key={index} className="text-center max-w-md mx-auto">
-              <div className={`relative mx-auto mb-4 h-32 ${card.aspectClass || "w-[7.81rem] h-[7.81rem]"}`}>
-                <Image
-                  src={card.icon}
-                  alt={card.alt}
-                  fill
-                  loading="lazy"
-                />
+              <div
+                className={`relative mx-auto mb-4 h-32 ${
+                  card.aspectClass || "w-[7.81rem] h-[7.81rem]"
+                }`}
+              >
+                <Image src={card.icon} alt={card.alt} fill loading="lazy" />
               </div>
               <h3 className="text-lg font-medium mb-4 text-[#000000]">
                 {card.title}

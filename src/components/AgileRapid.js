@@ -9,12 +9,12 @@ export default function AgileRapid() {
       <section className="mt-28 mx-auto px-4 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-5">
+          <h1 className="text-[#FF5225] text-sm sm:text-base font-bold tracking-widest uppercase mb-5">
             Agile and Rapid Application Development
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-180 lg:max-w-200 mx-auto px-4 lg:px-0">
+          <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-180 lg:max-w-200 mx-auto px-4 lg:px-0">
             <span className="font-normal">Unleashing </span> the Power of Agile
             <span className="font-normal"> and </span>
             <span className="font-medium">Rapid Application Development</span>
@@ -22,11 +22,11 @@ export default function AgileRapid() {
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-[90%] sm:max-w-180 lg:w-241 font-normal mx-auto mb-9 text-justify space-y-5 px-4 lg:px-0">
-            <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-sm sm:text-base text-[#444444] leading-relaxed">
               You can rely on Mindefy's unique expertise in RAD Models and Agile
               Development to deliver Unmatched Results.
             </p>
-            <p className="text-[0.875rem] sm:text-[1rem] font-medium text-[#444444] leading-relaxed">
+            <p className="text-sm sm:text-base font-medium text-[#444444] leading-relaxed">
               Using our expertise in RAD models and agile development, we
               provide you with customized solutions that meet your unique
               business goals and deliver superior results. Our team of highly
@@ -57,12 +57,12 @@ export default function AgileRapid() {
 
       <div className="w-full max-w-[90%] sm:max-w-180 lg:w-241 mx-auto px-4 lg:px-0">
         <div className="">
-          <p className="font-semibold text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] mb-5">
+          <p className="font-semibold text-xl sm:text-2xl lg:text-3xl mb-5">
             Agile Development <br className="hidden lg:block" />
             <span className="lg:hidden"> </span>Accelerating Innovation and
             Collaboration
           </p>
-          <p className="font-normal text-[0.875rem] sm:text-[1rem] mb-15 text-[#444444] text-justify">
+          <p className="font-normal text-sm sm:text-base mb-15 text-[#444444] text-justify">
             Our agile development methodology emphasizes iterative and
             collaborative project management to deliver high-quality software
             faster. We facilitate adaptability and responsiveness to changing
@@ -80,10 +80,10 @@ export default function AgileRapid() {
         <div className="max-w-[90%] sm:max-w-200 lg:max-w-247 mx-auto">
           {/* Section Header */}
           <div className="text-center mb-10">
-            <p className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-4">
+            <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#000000] mb-4">
               The Agile Development Journey at Mindefy
             </p>
-            <p className="text-[0.875rem] sm:text-[1rem] lg:text-[1.125rem] mx-auto text-justify w-full max-w-[90%] sm:max-w-160 lg:w-204 font-normal text-[#444444] mb-11">
+            <p className="text-sm sm:text-base lg:text-lg mx-auto text-justify w-full max-w-[90%] sm:max-w-160 lg:w-204 font-normal text-[#444444] mb-11">
               The Agile development process is a collaborative and iterative
               approach to software development that focuses on delivering value
               to customers through continuous improvement and adaptive planning.
@@ -94,7 +94,7 @@ export default function AgileRapid() {
           <div className="flex flex-col gap-11 max-w-full lg:max-w-247 mx-auto">
             {/* Project Initiation */}
             <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[11.43rem] lg:ml-99.5 text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+              <p className="w-full lg:w-[11.43rem] lg:ml-99.5 text-center font-semibold text-base lg:text-2xl text-[#2B4473]">
                 Project Initiation
               </p>
             </div>
@@ -112,7 +112,7 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 lg:mt-[5.65rem] w-full lg:w-[36.06rem] lg:my-[2.93rem] lg:ml-2.5 px-4 lg:px-0">
-                <p className="text-[0.875rem] lg:text-[1.125rem] font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-lg font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
                   We start by understanding your business goals, requirements
                   and project scope. Our team works closely with you to define
                   clear goals and establish effective communication channels.
@@ -122,13 +122,13 @@ export default function AgileRapid() {
 
             {/* Agile Framework Selection */}
             <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[19.68rem] lg:ml-[21.31rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+              <p className="w-full lg:w-[19.68rem] lg:ml-[21.31rem] text-center font-semibold text-base lg:text-2xl text-[#2B4473]">
                 Agile Framework Selection
               </p>
             </div>
             <div className="flex flex-col lg:flex-row bg-[#FFFFFF] gap-4 lg:gap-0">
               <div className="flex-1 order-2 lg:order-1 lg:mt-[5.65rem] w-full lg:w-[36.06rem] lg:my-[2.93rem] lg:ml-2.5 px-4 lg:px-0">
-                <p className="text-[0.875rem] lg:text-[1.125rem] font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-lg font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
                   We help you choose the most suitable agile framework, such as
                   Scrum or Kanban, based on your project requirements and
                   organizational needs. Each system has its own set of practices
@@ -151,7 +151,7 @@ export default function AgileRapid() {
 
             {/* Product Backlog Creation */}
             <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[17.87rem] lg:ml-[22.18rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+              <p className="w-full lg:w-[17.87rem] lg:ml-[22.18rem] text-center font-semibold text-base lg:text-2xl text-[#2B4473]">
                 Product Backlog Creation
               </p>
             </div>
@@ -169,7 +169,7 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 lg:mt-[5.65rem] w-full lg:w-[36.06rem] lg:my-[2.93rem] lg:ml-2.5 px-4 lg:px-0">
-                <p className="text-[0.875rem] lg:text-[1.125rem] font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-lg font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
                   With your input, we created a product backlog, a prioritized
                   list of features and requirements. This work-in-progress acts
                   as a roadmap for the development process, ensuring that the
@@ -180,13 +180,13 @@ export default function AgileRapid() {
 
             {/* Sprint planning */}
             <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[11.43rem] lg:ml-[25.81rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+              <p className="w-full lg:w-[11.43rem] lg:ml-[25.81rem] text-center font-semibold text-base lg:text-2xl text-[#2B4473]">
                 Sprint planning
               </p>
             </div>
             <div className="flex flex-col lg:flex-row bg-[#FFFFFF] gap-4 lg:gap-0">
               <div className="flex-1 order-2 lg:order-1 lg:mt-[5.65rem] w-full lg:w-[36.06rem] lg:my-[2.93rem] lg:ml-2.5 px-4 lg:px-0">
-                <p className="text-[0.875rem] lg:text-[1.125rem] font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-lg font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
                   We plan our work for each iteration, called a sprint. During
                   the sprint planning meeting, we collaborate to select a
                   backlog to work on. We break them down into smaller,
@@ -210,7 +210,7 @@ export default function AgileRapid() {
 
             {/* Sprint Execution */}
             <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[11.43rem] lg:ml-99.5 text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+              <p className="w-full lg:w-[11.43rem] lg:ml-99.5 text-center font-semibold text-base lg:text-2xl text-[#2B4473]">
                 Sprint Execution
               </p>
             </div>
@@ -228,7 +228,7 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 lg:mt-[5.65rem] w-full lg:w-[36.06rem] lg:my-[2.93rem] lg:ml-2.5 px-4 lg:px-0">
-                <p className="text-[0.875rem] lg:text-[1.125rem] font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-lg font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
                   The development team starts work on the tasks defined in the
                   sprint plan. Daily stand-ups keep everyone on the same page,
                   encourage collaboration, and provide an opportunity to address
@@ -239,13 +239,13 @@ export default function AgileRapid() {
 
             {/* Continuous Testing and Integration */}
             <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-104 lg:ml-[18.815rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+              <p className="w-full lg:w-104 lg:ml-[18.815rem] text-center font-semibold text-base lg:text-2xl text-[#2B4473]">
                 Continuous Testing and Integration
               </p>
             </div>
             <div className="flex flex-col lg:flex-row bg-[#FFFFFF] gap-4 lg:gap-0">
               <div className="flex-1 order-2 lg:order-1 lg:mt-[5.65rem] w-full lg:w-[36.06rem] lg:my-[2.93rem] lg:ml-2.5 px-4 lg:px-0">
-                <p className="text-[0.875rem] lg:text-[1.125rem] font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-lg font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
                   We emphasize the importance of continuous testing and
                   integration throughout the development process. By regularly
                   testing and integrating new features into existing systems, we
@@ -269,7 +269,7 @@ export default function AgileRapid() {
 
             {/* Sprint Review and Retrospective */}
             <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-98.5 lg:ml-78 text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+              <p className="w-full lg:w-98.5 lg:ml-78 text-center font-semibold text-base lg:text-2xl text-[#2B4473]">
                 Sprint Review and Retrospective
               </p>
             </div>
@@ -287,7 +287,7 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 lg:mt-[5.65rem] w-full lg:w-[36.06rem] lg:my-[2.93rem] lg:ml-2.5 px-4 lg:px-0">
-                <p className="text-[0.875rem] lg:text-[1.125rem] font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-lg font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
                   At the end of each sprint, we conduct a sprint review to show
                   the work we've done to stakeholders and gather feedback. This
                   feedback helps us improve and improve our products. We also
@@ -299,7 +299,7 @@ export default function AgileRapid() {
 
             {/* Repeat and Iterate */}
             <div className="flex items-center w-full lg:w-247 mx-auto h-16 lg:h-22 bg-[#D0DEF8] px-4 lg:px-0">
-              <p className="w-full lg:w-[14.18rem] lg:ml-[24.685rem] text-center font-semibold text-[1rem] lg:text-[1.375rem] text-[#2B4473]">
+              <p className="w-full lg:w-[14.18rem] lg:ml-[24.685rem] text-center font-semibold text-base lg:text-2xl text-[#2B4473]">
                 Repeat and Iterate
               </p>
             </div>
@@ -317,7 +317,7 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 lg:mt-[5.65rem] w-full lg:w-[36.06rem] lg:my-[2.93rem] lg:ml-2.5 px-4 lg:px-0">
-                <p className="text-[0.875rem] lg:text-[1.125rem] font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-lg font-normal w-full lg:w-[34.312rem] text-[#444444] leading-relaxed text-justify">
                   Agile development processes are iterative and incremental.
                   After each sprint, we repeat this cycle, starting with backlog
                   adjustment and sprint planning. This allows us to continuously
@@ -333,7 +333,7 @@ export default function AgileRapid() {
       {/* Agile Benefits Section using Flex */}
       <section className="px-4 lg:px-0">
         <div className="max-w-[90%] lg:max-w-296.5 mx-auto">
-          <h2 className="text-center text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-10">
+          <h2 className="text-center text-xl sm:text-2xl lg:text-3xl font-semibold text-[#000000] mb-10">
             Maximize Agile Development Benefits at Mindefy
           </h2>
           <div className="flex flex-wrap justify-center gap-5">
@@ -372,7 +372,7 @@ export default function AgileRapid() {
                     "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
                 }}
               >
-                <h3 className="font-semibold text-[1rem] lg:text-[1.25rem] mb-6">
+                <h3 className="font-semibold text-base lg:text-xl mb-6">
                   {item.title}
                 </h3>
                 <div className="relative w-40 h-36 lg:w-55.5 lg:h-49.5 mb-4">
@@ -384,7 +384,7 @@ export default function AgileRapid() {
                   />
                 </div>
 
-                <p className="text-[0.875rem] lg:text-sm text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-sm text-[#444444] leading-relaxed text-justify">
                   {item.desc}
                 </p>
               </div>
@@ -397,11 +397,11 @@ export default function AgileRapid() {
         <div className="max-w-[90%] lg:max-w-251 mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12 mx-auto w-full lg:w-241">
-            <p className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] mx-auto lg:mx-51.5 font-semibold text-[#000000] w-full lg:w-138 mb-5">
+            <p className="text-xl sm:text-2xl lg:text-3xl mx-auto lg:mx-51.5 font-semibold text-[#000000] w-full lg:w-138 mb-5">
               Rapid Application Development (RAD) Streamlining Software
               Development
             </p>
-            <p className="text-[0.875rem] lg:text-[1rem] mx-auto text-justify font-normal text-[#444444]">
+            <p className="text-sm lg:text-base mx-auto text-justify font-normal text-[#444444]">
               At Mindefy, we specialize in RAD, a methodology that emphasizes
               rapid prototyping, iterative development, and close collaboration
               between developers and stakeholders. RAD enables companies to
@@ -430,10 +430,10 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
-                <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
+                <p className="text-lg lg:text-2xl mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Requirements Gathering
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   We work closely with you to understand your business goals,
                   functional needs and target audience. By gathering
                   comprehensive requirements, we ensure you have a clear
@@ -457,10 +457,10 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
-                <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
+                <p className="text-lg lg:text-2xl mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Rapid Prototyping
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   We rapidly develop functional prototypes based on the initial
                   requirements. These prototypes provide a visual representation
                   of the application's interface and functionality. Through
@@ -485,10 +485,10 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
-                <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
+                <p className="text-lg lg:text-2xl mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Iterative Development
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   The RAD model process involves breaking down a project into
                   small iterations or steps. During each iteration, we develop
                   and test specific features. This iterative approach allows for
@@ -512,10 +512,10 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
-                <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
+                <p className="text-lg lg:text-2xl mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Continuous Feedback and Collaboration
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   Regular communication and collaboration is essential to the
                   RAD model process. We engage stakeholders and end users
                   throughout the development cycle, collect their feedback and
@@ -539,10 +539,10 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
-                <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
+                <p className="text-lg lg:text-2xl mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Rapid Testing and Quality Assurance
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   We prioritize testing and quality assurance in all phases of
                   the RAD model process. Through constant testing and timely
                   problem solving, we ensure that the application is stable and
@@ -566,10 +566,10 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
-                <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
+                <p className="text-lg lg:text-2xl mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Iteration Review and Refinement
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   At the end of each iteration, we review the features developed
                   with stakeholders and end users. This feedback helps us
                   improve and improve the application to ensure that it meets
@@ -593,10 +593,10 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
-                <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
+                <p className="text-lg lg:text-2xl mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Incremental Deployment
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   As each iteration is completed and reviewed, we gradually
                   introduce features so that you can begin to realize the
                   benefits of your application as you continue to evolve.
@@ -619,10 +619,10 @@ export default function AgileRapid() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-99 lg:my-11 lg:mr-[5.31rem]">
-                <p className="text-[1.125rem] lg:text-[1.5rem] mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
+                <p className="text-lg lg:text-2xl mb-4 font-semibold lg:mt-2.5 lg:ml-3.5 text-[#232323]">
                   Continuous Enhancement
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal lg:mx-3.5 w-full lg:w-92 text-[#444444] leading-relaxed text-justify">
                   The RAD model process is a continuous cycle of development,
                   feedback and refinement. We are constantly iterating and
                   improving the application based on user feedback and evolving
@@ -637,7 +637,7 @@ export default function AgileRapid() {
       {/* RAD Benefits Section using Flex */}
       <section className="px-4 lg:px-0">
         <div className="max-w-[90%] lg:max-w-290 mx-auto">
-          <h2 className="text-center text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-15">
+          <h2 className="text-center text-xl sm:text-2xl lg:text-3xl font-semibold text-[#000000] mb-15">
             Exploring the Key Benefits of the
             <br className="hidden lg:block" />
             <span className="lg:hidden"> </span>RAD Model Process
@@ -673,7 +673,7 @@ export default function AgileRapid() {
                     "1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)",
                 }}
               >
-                <h3 className="font-semibold text-[1rem] lg:text-[1.25rem] mb-6">
+                <h3 className="font-semibold text-base lg:text-xl mb-6">
                   {item.title}
                 </h3>
                 <div className="relative w-40 h-36 lg:w-55.5 lg:h-49.5 mb-6">
@@ -685,7 +685,7 @@ export default function AgileRapid() {
                   />
                 </div>
 
-                <p className="text-[0.875rem] lg:text-sm text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-sm text-[#444444] leading-relaxed text-justify">
                   {item.desc}
                 </p>
               </div>

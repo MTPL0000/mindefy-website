@@ -13,10 +13,10 @@ export default function LowCodeFeatureCard({
   return (
     <div className={containerClassName}>
       <div className={contentClassName}>
-        <h3 className="text-base sm:text-lg lg:text-[1.5rem] font-semibold text-[#000000] mb-3 lg:mb-4">
+        <h3 className="text-base sm:text-lg lg:text-2xl font-semibold text-[#000000] mb-3 lg:mb-4">
           {title}
         </h3>
-        <p className="text-sm lg:text-[1rem] text-[#444444] leading-relaxed text-justify lg:max-w-[34.312rem]">
+        <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify lg:max-w-[34.312rem]">
           {description}
         </p>
       </div>

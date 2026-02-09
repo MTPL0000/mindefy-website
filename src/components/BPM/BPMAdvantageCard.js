@@ -14,10 +14,10 @@ export default function BPMAdvantageCard({
   return (
     <div className={containerClassName}>
       <div className={contentClassName}>
-        <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
+        <h3 className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
           {title}
         </h3>
-        <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
+        <p className="text-sm md:text-base lg:text-base text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
           {description}
         </p>
       </div>

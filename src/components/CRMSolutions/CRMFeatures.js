@@ -121,7 +121,7 @@ export default function CRMFeatures() {
       <section className="mt-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-250 mx-auto">
           <div className="text-center mb-15">
-            <h2 className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-semibold text-[#000000] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-[#000000] mb-4">
               Our CRM Solutions<br></br> Where Connections Lead to Triumph
             </h2>
           </div>
@@ -147,10 +147,10 @@ export default function CRMFeatures() {
                   </div>
                 </div>
                 <div className="flex-1 lg:mx-2.5">
-                  <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+                  <h3 className="text-lg lg:text-xl mt-2.5 font-semibold text-[#000000] mb-4">
                     {feature.title}
                   </h3>
-                  <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
+                  <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                     {feature.description}
                   </p>
                 </div>
@@ -163,7 +163,7 @@ export default function CRMFeatures() {
       <section className="mt-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-220 mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-semibold text-[#000000]">
+            <h2 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-[#000000]">
               The Advantages of Opting for Mindefy's CRM Services
             </h2>
           </div>

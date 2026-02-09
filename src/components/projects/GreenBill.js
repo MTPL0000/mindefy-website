@@ -106,7 +106,7 @@ const GreenBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                       Simplified bill generation
                     </h4>
                     <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
@@ -125,7 +125,7 @@ const GreenBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                       Sales tracking
                     </h4>
                     <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
@@ -147,7 +147,7 @@ const GreenBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                       Transaction history
                     </h4>
                     <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
@@ -166,7 +166,7 @@ const GreenBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                       Customization options
                     </h4>
                     <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
@@ -185,7 +185,7 @@ const GreenBill = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4">
-                    <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                    <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                       Instant digital billing
                     </h4>
                     <p className="text-sm lg:text-base font-normal text-[#000000] text-center">
@@ -236,7 +236,7 @@ const GreenBill = () => {
 
             <div className="flex flex-col items-center justify-center gap-10 lg:gap-15">
               <div className="w-full max-w-136 bg-linear-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-4 lg:py-6 px-8 lg:px-15 rounded-[10px]">
-                <span className="text-lg lg:text-[1.25rem] text-[#FFFFFF] font-semibold text-center block">
+                <span className="text-lg lg:text-xl text-[#FFFFFF] font-semibold text-center block">
                   Key Features of Our Dynamic Admin App
                 </span>
               </div>
@@ -315,7 +315,7 @@ const GreenBill = () => {
 
             <div className="flex flex-col items-center justify-center gap-10 lg:gap-15">
               <div className="w-full max-w-fit bg-linear-to-l from-[rgba(140,237,83,1)] to-[rgba(48,177,60,1)] py-4 lg:py-6 px-8 lg:px-15 rounded-[10px]">
-                <span className="text-lg lg:text-[1.25rem] text-[#FFFFFF] font-semibold text-center block">
+                <span className="text-lg lg:text-xl text-[#FFFFFF] font-semibold text-center block">
                   Key Features of Our Innovative Customer App
                 </span>
               </div>
@@ -331,7 +331,7 @@ const GreenBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                         Digital bill access
                       </h4>
                       <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -350,7 +350,7 @@ const GreenBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                         Family member integration
                       </h4>
                       <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -369,7 +369,7 @@ const GreenBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                         Real-time notifications
                       </h4>
                       <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -391,7 +391,7 @@ const GreenBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                         Expense tracking
                       </h4>
                       <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -410,7 +410,7 @@ const GreenBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                         Spending insights
                       </h4>
                       <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -429,7 +429,7 @@ const GreenBill = () => {
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-3">
-                      <h4 className="text-lg lg:text-[1.25rem] font-semibold text-[#000000]">
+                      <h4 className="text-lg lg:text-xl font-semibold text-[#000000]">
                         Personalized offers
                       </h4>
                       <p className="text-sm lg:text-base font-normal text-[#000000]">
@@ -469,7 +469,7 @@ const GreenBill = () => {
               <div className="w-full max-w-4xl lg:max-w-240 flex flex-col items-center justify-center gap-8 lg:gap-12">
                 <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
                       Environmental Sustainability
                       <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
@@ -484,7 +484,7 @@ const GreenBill = () => {
                 </div>
                 <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
                       Growth and Scalability
                       <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
@@ -503,7 +503,7 @@ const GreenBill = () => {
                 </div>
                 <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
                       Streamlined Operations
                       <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
@@ -521,7 +521,7 @@ const GreenBill = () => {
                 </div>
                 <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
                       Centralized Management
                       <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
@@ -541,7 +541,7 @@ const GreenBill = () => {
                 </div>
                 <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
                       Cost Savings
                       <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
@@ -560,7 +560,7 @@ const GreenBill = () => {
                 </div>
                 <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
                       Data Security and Accessibility
                       <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>
@@ -578,7 +578,7 @@ const GreenBill = () => {
                 </div>
                 <div className="flex flex-col items-start justify-center gap-5 lg:gap-7">
                   <div className="flex flex-col items-start gap-1">
-                    <h4 className="text-xl lg:text-[1.9rem] font-semibold text-[#000000] relative w-fit">
+                    <h4 className="text-xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
                       Enhanced Customer Experience
                       <span className="absolute left-0 -bottom-1 h-1 lg:h-1.5 w-full rounded-lg bg-[linear-gradient(90deg,#34D042_-0.55%,#7EDA48_52.31%,rgba(154,231,109,0.5)_100%)]"></span>
                     </h4>

@@ -184,10 +184,10 @@ export default function ServicesSection() {
                     </div>
                     <div className="flex items-start w-123 ">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           Agile Methodology-based Prototyping
                         </h3>
-                        <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base font-normal text-[#444444] leading-relaxed text-justify">
                           We follow Agile methodologies to streamline the
                           prototyping phase of your product development journey.
                           By adopting an iterative and collaborative approach,
@@ -219,10 +219,10 @@ export default function ServicesSection() {
                     </div>
                     <div className="flex items-start w-123">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           MVP Design and Development
                         </h3>
-                        <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base text-[#444444] leading-relaxed text-justify">
                           Our MVP (Minimum Viable Product) design and
                           development services work closely with you to identify
                           the core features and functionalities that will
@@ -251,10 +251,10 @@ export default function ServicesSection() {
                     </div>
                     <div className="flex items-start w-123">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           MVP Launch and Market Research
                         </h3>
-                        <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base text-[#444444] leading-relaxed text-justify">
                           We provide support throughout the MVP launch phase,
                           conducting comprehensive market research to identify
                           target audiences, analyze competitor trends, and
@@ -284,10 +284,10 @@ export default function ServicesSection() {
                     </div>
                     <div className="flex items-start w-123">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           Product Development as-a-Service
                         </h3>
-                        <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base text-[#444444] leading-relaxed text-justify">
                           We offer Product Development as-a-Service, a
                           comprehensive solution designed to support companies
                           throughout their entire product development journey.
@@ -316,10 +316,10 @@ export default function ServicesSection() {
                     </div>
                     <div className="flex items-start w-123">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           Innovation Lab
                         </h3>
-                        <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base text-[#444444] leading-relaxed text-justify">
                           Our Innovation Lab serves as a collaborative space
                           where creative ideas and cutting-edge technologies
                           come together to drive breakthrough innovations. Our

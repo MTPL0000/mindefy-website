@@ -10,10 +10,10 @@ export default function ServiceCard({ service }) {
             : "my-2 lg:my-4 mb-4 lg:mb-0"
         }`}
       >
-        <h3 className="text-[1.25rem] sm:text-[1.5rem] font-semibold text-[#000000] mb-2 sm:mb-2.5 text-center lg:text-left">
+        <h3 className="text-xl sm:text-2xl font-semibold text-[#000000] mb-2 sm:mb-2.5 text-center lg:text-left">
           {service.title}
         </h3>
-        <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed text-justify">
+        <p className="text-sm sm:text-base text-[#444444] leading-relaxed text-justify">
           {service.description}
         </p>
       </div>

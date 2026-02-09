@@ -12,10 +12,9 @@ export default function SolutionsSection() {
           <h2 className="text-2xl font-semibold uppercase text-[#2B7575] mb-4">
             Solutions
           </h2>
-          <h2 className="text-[1.25rem] font-normal text-[#333333] max-w-181 mx-auto">
-            We added an AI-powered "You may also like" section that shows
-            smart product suggestions based on your browsing and
-            preferences.
+          <h2 className="text-xl font-normal text-[#333333] max-w-181 mx-auto">
+            We added an AI-powered "You may also like" section that shows smart
+            product suggestions based on your browsing and preferences.
           </h2>
         </div>
 
@@ -23,12 +22,7 @@ export default function SolutionsSection() {
           {solutionCards.map((card, index) => (
             <div key={index} className="text-center max-w-md mx-auto">
               <div className={`relative mx-auto mb-4 h-32 ${card.aspectClass}`}>
-                <Image
-                  src={card.icon}
-                  alt={card.alt}
-                  fill
-                  loading="lazy"
-                />
+                <Image src={card.icon} alt={card.alt} fill loading="lazy" />
               </div>
               <h3 className="text-lg font-medium mb-4 text-[#000000]">
                 {card.title}

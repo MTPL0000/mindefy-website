@@ -9,12 +9,12 @@ export default function MVPDevelopment() {
       <section className="mt-16 sm:mt-20 md:mt-24 xl:mt-28 mx-auto px-4 sm:px-6 lg:px-8 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-sm sm:text-base xl:text-[1rem] font-bold tracking-widest uppercase mb-4 sm:mb-5 xl:mb-5">
+          <h1 className="text-[#FF5225] text-sm sm:text-base xl:text-base font-bold tracking-widest uppercase mb-4 sm:mb-5 xl:mb-5">
             product development
           </h1>
 
           {/* Main Title */}
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 sm:mb-5 md:mb-6 xl:mb-7 leading-tight max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-[63.56rem] mx-auto px-2 sm:px-4 xl:px-0">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-semibold text-[#000000] mb-4 sm:mb-5 md:mb-6 xl:mb-7 leading-tight max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-[63.56rem] mx-auto px-2 sm:px-4 xl:px-0">
             <span className="font-normal">Accelerate Your </span>Product
             Development
             <span className="font-normal"> with </span>Innovative Solutions
@@ -24,7 +24,7 @@ export default function MVPDevelopment() {
 
           {/* Description Paragraphs */}
           <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:w-240.5 font-normal mx-auto mb-6 sm:mb-8 xl:mb-9 text-justify space-y-4 sm:space-y-5 xl:space-y-5 px-2 sm:px-4 xl:px-0">
-            <p className="text-sm sm:text-base xl:text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-sm sm:text-base xl:text-base text-[#444444] leading-relaxed">
               Mindefy is your trusted partner for efficient and seamless product
               development solutions. We offer comprehensive services that cater
               to every stage of the product development lifecycle. Our unique
@@ -52,7 +52,7 @@ export default function MVPDevelopment() {
             />
           </div>
           <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:w-241 mx-auto mb-12 sm:mb-16 md:mb-20 xl:mb-20 tracking-wide leading-relaxed px-2 sm:px-4 xl:px-0">
-            <p className="text-justify text-sm sm:text-base xl:text-[1rem] font-normal text-[#444444] mb-4 sm:mb-5 md:mb-6 xl:mb-7">
+            <p className="text-justify text-sm sm:text-base xl:text-base font-normal text-[#444444] mb-4 sm:mb-5 md:mb-6 xl:mb-7">
               Unleash the transformative potential of our comprehensive product
               development services. From Agile methodology-based prototyping to
               MVP design, market research, launch, and our state-of-the-art
@@ -62,7 +62,7 @@ export default function MVPDevelopment() {
               explore our innovative solutions and take your product development
               to new heights.
             </p>
-            <p className="text-justify text-sm sm:text-base xl:text-[1rem] font-normal text-[#444444]">
+            <p className="text-justify text-sm sm:text-base xl:text-base font-normal text-[#444444]">
               Embark on a faster and more efficient product development journey
               with Mindefy. Our comprehensive services and specialized expertise
               empower you to overcome challenges, mitigate risks, and propel
@@ -259,10 +259,10 @@ export default function MVPDevelopment() {
                     </div>
                     <div className="flex items-start w-123 ">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           Agile Methodology-based Prototyping
                         </h3>
-                        <p className="text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base font-normal text-[#444444] leading-relaxed text-justify">
                           We follow Agile methodologies to streamline the
                           prototyping phase of your product development journey.
                           By adopting an iterative and collaborative approach,
@@ -294,10 +294,10 @@ export default function MVPDevelopment() {
                     </div>
                     <div className="flex items-start w-123">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           MVP Design and Development
                         </h3>
-                        <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base text-[#444444] leading-relaxed text-justify">
                           Our MVP (Minimum Viable Product) design and
                           development services work closely with you to identify
                           the core features and functionalities that will
@@ -326,10 +326,10 @@ export default function MVPDevelopment() {
                     </div>
                     <div className="flex items-start w-123">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           MVP Launch and Market Research
                         </h3>
-                        <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base text-[#444444] leading-relaxed text-justify">
                           We provide support throughout the MVP launch phase,
                           conducting comprehensive market research to identify
                           target audiences, analyze competitor trends, and
@@ -359,10 +359,10 @@ export default function MVPDevelopment() {
                     </div>
                     <div className="flex items-start w-123">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           Product Development as-a-Service
                         </h3>
-                        <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base text-[#444444] leading-relaxed text-justify">
                           We offer Product Development as-a-Service, a
                           comprehensive solution designed to support companies
                           throughout their entire product development journey.
@@ -391,10 +391,10 @@ export default function MVPDevelopment() {
                     </div>
                     <div className="flex items-start w-123">
                       <div className="flex-1">
-                        <h3 className="text-[1.5rem] font-semibold text-[#000000] mb-3 leading-tight">
+                        <h3 className="text-2xl font-semibold text-[#000000] mb-3 leading-tight">
                           Innovation Lab
                         </h3>
-                        <p className="text-[1rem] text-[#444444] leading-relaxed text-justify">
+                        <p className="text-base text-[#444444] leading-relaxed text-justify">
                           Our Innovation Lab serves as a collaborative space
                           where creative ideas and cutting-edge technologies
                           come together to drive breakthrough innovations. Our

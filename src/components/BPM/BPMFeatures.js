@@ -113,7 +113,7 @@ export default function BPMFeatures() {
       <section className="px-4 md:px-6 lg:px-8 xl:px-0">
         <div className="max-w-[95%] md:max-w-220 lg:max-w-260 xl:max-w-289.5 mx-auto">
           <div className="text-center">
-            <h2 className="text-center text-lg md:text-xl lg:text-2xl xl:text-[1.75rem] font-semibold text-[#000000] mb-8 md:mb-10 lg:mb-11 px-2">
+            <h2 className="text-center text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-[#000000] mb-8 md:mb-10 lg:mb-11 px-2">
               The Upsides of Opting for Mindefy's BPM Solutions
             </h2>
           </div>
@@ -128,7 +128,7 @@ export default function BPMFeatures() {
                 }}
               >
                 <div className="w-full h-auto mb-4 xl:mb-4.5 flex items-center justify-center">
-                  <h3 className="font-semibold text-base md:text-lg lg:text-xl xl:text-[1.5rem] leading-tight text-center px-2 py-2 wrap-break-word hyphens-auto">
+                  <h3 className="font-semibold text-base md:text-lg lg:text-xl xl:text-2xl leading-tight text-center px-2 py-2 wrap-break-word hyphens-auto">
                     {item.title}
                   </h3>
                 </div>
@@ -157,10 +157,10 @@ export default function BPMFeatures() {
       <section className="mt-16 md:mt-18 lg:mt-20 xl:mt-24 px-3 md:px-6 lg:px-8 xl:px-0">
         <div className="w-full max-w-[98%] md:max-w-220 lg:max-w-240 xl:max-w-252 mx-auto">
           <div className="w-full max-w-[98%] md:max-w-180 lg:max-w-200 xl:w-235.5 mx-auto text-center mb-8 md:mb-9 lg:mb-10 xl:mb-10">
-            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[1.75rem] font-semibold text-[#000000] mb-4 md:mb-6 lg:mb-7 px-3">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-[#000000] mb-4 md:mb-6 lg:mb-7 px-3">
               The Upsides of Opting for Mindefy's BPM Solutions
             </h2>
-            <h2 className="text-sm md:text-base lg:text-[1rem] font-normal text-[#000000] px-3">
+            <h2 className="text-sm md:text-base lg:text-base font-normal text-[#000000] px-3">
               At Mindefy, we take a comprehensive and systematic approach to
               BPM, with a focus on delivering tangible results
             </h2>
@@ -189,7 +189,7 @@ export default function BPMFeatures() {
       <section className="mt-16 md:mt-18 lg:mt-20 px-3 md:px-6 lg:px-8 xl:px-0">
         <div className="w-full max-w-[98%] md:max-w-220 lg:max-w-240 xl:max-w-251 mx-auto">
           <div className="text-center w-full max-w-[98%] md:max-w-md lg:max-w-120 xl:w-134 mx-auto mb-8 md:mb-10 lg:mb-12 xl:mb-12">
-            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[1.75rem] font-semibold text-[#000000] px-3">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-[#000000] px-3">
               Why Mindefy Excels in BPM ?
             </h2>
           </div>
@@ -208,11 +208,11 @@ export default function BPMFeatures() {
                 </div>
               </div>
               <div className="px-2 md:px-4 lg:px-6 xl:px-6 mb-4 md:mb-5 lg:mb-6 xl:mb-6 w-full">
-                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] wrap-break-word">
+                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-[#000000] wrap-break-word">
                   Expertise
                 </h3>
 
-                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
+                <p className="text-sm md:text-sm lg:text-base xl:text-base font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   Mindefy's team of seasoned BPM professionals brings a proven
                   track record of delivering results to businesses across a
                   diverse range of industries. Our collective expertise ensures
@@ -235,11 +235,11 @@ export default function BPMFeatures() {
                 </div>
               </div>
               <div className="px-2 md:px-4 lg:px-6 xl:px-6 mb-4 md:mb-5 lg:mb-6 xl:mb-6 w-full">
-                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] wrap-break-word">
+                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-[#000000] wrap-break-word">
                   Tailored Solutions
                 </h3>
 
-                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
+                <p className="text-sm md:text-sm lg:text-base xl:text-base font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   We firmly believe in the principle that there is no
                   one-size-fits-all solution in BPM. As such, our BPM offerings
                   are never off-the-shelf; they are always customized to meet
@@ -262,11 +262,11 @@ export default function BPMFeatures() {
                 </div>
               </div>
               <div className="px-2 md:px-4 lg:px-6 xl:px-6 mb-2 md:mb-3 lg:mb-2.5 xl:mb-2.5 w-full">
-                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] wrap-break-word">
+                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-[#000000] wrap-break-word">
                   Cutting-Edge Technology
                 </h3>
 
-                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
+                <p className="text-sm md:text-sm lg:text-base xl:text-base font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   Mindefy consistently leverages the latest BPM tools and
                   technologies to keep your business ahead of the competition.
                   With the rapid pace of technological change, our commitment to
@@ -289,11 +289,11 @@ export default function BPMFeatures() {
                 </div>
               </div>
               <div className="px-2 md:px-4 lg:px-6 xl:px-6 mb-2 md:mb-3 lg:mb-2.5 xl:mb-2.5 w-full">
-                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] wrap-break-word">
+                <h3 className="text-center md:text-center lg:text-left xl:text-left mb-3 md:mb-4 lg:mb-5 xl:mb-5 text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-[#000000] wrap-break-word">
                   Client-Centric Approach
                 </h3>
 
-                <p className="text-sm md:text-sm lg:text-base xl:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
+                <p className="text-sm md:text-sm lg:text-base xl:text-base font-normal text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
                   Your success is our success. We work closely with you to
                   achieve your goals and drive business growth. Our commitment
                   to your success is unwavering, and we consider ourselves not

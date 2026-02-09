@@ -121,7 +121,7 @@ export default function LowCodeFeatures() {
   return (
     <>
       <div className="mx-auto max-w-full sm:max-w-2xl lg:max-w-241 mb-12 lg:mb-20 px-4 sm:px-6 lg:px-0">
-        <div className="text-[#000000] text-lg sm:text-xl lg:text-[1.5rem] font-semibold mb-4 lg:mb-6">
+        <div className="text-[#000000] text-lg sm:text-xl lg:text-2xl font-semibold mb-4 lg:mb-6">
           <p>
             Collaborate with Mindefy for Low-Code
             <br className="hidden lg:block"></br>Platform Excellence
@@ -165,7 +165,7 @@ export default function LowCodeFeatures() {
       <section className="mt-12 lg:mt-24 px-4 sm:px-6 lg:px-0">
         <div className="max-w-full lg:max-w-250 mx-auto">
           <div className="text-center mb-8 lg:mb-10">
-            <h2 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] mb-4">
+            <h2 className="text-lg sm:text-xl lg:text-3xl font-semibold text-[#000000] mb-4">
               Why Low-Code Platform Development ?
             </h2>
           </div>
@@ -190,7 +190,7 @@ export default function LowCodeFeatures() {
       <section className="mt-12 lg:mt-20 px-4 sm:px-6 lg:px-0">
         <div className="max-w-full lg:max-w-250 mx-auto">
           <div className="text-center mb-8 lg:mb-9">
-            <h2 className="text-lg sm:text-xl lg:text-[2rem] font-semibold text-[#000000] mb-4">
+            <h2 className="text-lg sm:text-xl lg:text-3xl font-semibold text-[#000000] mb-4">
               Our Expertise in Low-Code Platform
               <br className="hidden lg:block"></br> Development
             </h2>
@@ -222,7 +222,7 @@ export default function LowCodeFeatures() {
                   </div>
                 </div>
                 <div className="flex-1 p-4 lg:mx-2.5">
-                  <h3 className="text-base sm:text-lg lg:text-[1.25rem] lg:mt-2.5 font-semibold text-[#000000] mb-3 lg:mb-4">
+                  <h3 className="text-base sm:text-lg lg:text-xl lg:mt-2.5 font-semibold text-[#000000] mb-3 lg:mb-4">
                     {card.title}
                   </h3>
                   <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify mb-4 lg:mb-12">

@@ -9,12 +9,12 @@ export default function CRMSolutions() {
       <section className="mt-28 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[1rem] font-bold tracking-widest uppercase mb-5">
+          <h1 className="text-[#FF5225] text-base font-bold tracking-widest uppercase mb-5">
             CRM Solutions
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-200 mx-auto px-4">
+          <p className="text-3xl sm:text-3xl lg:text-4xl font-semibold text-[#000000] mb-7 leading-tight max-w-200 mx-auto px-4">
             <span className="font-normal">Unleash the </span>Power of
             Connections
             <span className="font-normal"> with </span>Mindefy's CRM Mastery
@@ -22,7 +22,7 @@ export default function CRMSolutions() {
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-245.5 font-normal mx-auto mb-9 px-4 lg:text-justify text-left space-y-5">
-            <p className="text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-base text-[#444444] leading-relaxed">
               Mindefy , your trusted partner in the art of forging meaningful
               relationships with your customers. In today's dynamic business
               world, customer relationships are the lifeblood of success. But to
@@ -49,7 +49,7 @@ export default function CRMSolutions() {
         <div className="max-w-250 mx-auto">
           {/* Section Header */}
           <div className="text-center mb-15">
-            <h2 className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-semibold text-[#000000] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-[#000000] mb-4">
               Our CRM Solutions<br></br> Where Connections Lead to Triumph
             </h2>
           </div>
@@ -75,10 +75,10 @@ export default function CRMSolutions() {
                 </div>
               </div>
               <div className="flex-1 lg:mx-2.5">
-                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-lg lg:text-xl mt-2.5 font-semibold text-[#000000] mb-4">
                   Customer-Centric Brilliance
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   At Mindefy, our core mission is to make every customer feel
                   like a VIP. Our CRM solutions are meticulously designed to
                   enhance every touchpoint with your customers, fostering
@@ -112,10 +112,10 @@ export default function CRMSolutions() {
                 </div>
               </div>
               <div className="flex-1 lg:mx-2.5">
-                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-lg lg:text-xl mt-2.5 font-semibold text-[#000000] mb-4">
                   Seamless Harmony
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   Appian is a powerful Low-Code platform that combines business
                   process management, artificial intelligence, and low-code
                   development capabilities. With Appian, you can streamline and
@@ -147,10 +147,10 @@ export default function CRMSolutions() {
                 </div>
               </div>
               <div className="flex-1 lg:mx-2.5">
-                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-lg lg:text-xl mt-2.5 font-semibold text-[#000000] mb-4">
                   Tailored Brilliance
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   Every business is as unique as a fingerprint, and
                   cookie-cutter CRM solutions won't suffice. At Mindefy, we
                   approach CRM as an art, not a science. We pay keen attention
@@ -183,10 +183,10 @@ export default function CRMSolutions() {
                 </div>
               </div>
               <div className="flex-1 lg:mx-2.5">
-                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-lg lg:text-xl mt-2.5 font-semibold text-[#000000] mb-4">
                   Real-Time Vision
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   Mindefy's CRM solutions provide real-time insights into
                   customer behavior, market trends, and sales performance. Armed
                   with this visionary knowledge, you can make data-powered
@@ -218,10 +218,10 @@ export default function CRMSolutions() {
                 </div>
               </div>
               <div className="flex-1 lg:mx-2.5">
-                <h3 className="text-[1.125rem] lg:text-[1.25rem] mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-lg lg:text-xl mt-2.5 font-semibold text-[#000000] mb-4">
                   Legendary Support
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-left lg:text-justify mb-4">
                   Mindefy's commitment to your success knows no bounds. Our
                   dedicated support team is at your service around the clock,
                   24/7. From the initial implementation of the CRM solution to
@@ -242,7 +242,7 @@ export default function CRMSolutions() {
         <div className="max-w-220 mx-auto">
           {/* Section Header */}
           <div className="text-center mb-10">
-            <h2 className="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-semibold text-[#000000]">
+            <h2 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-[#000000]">
               The Advantages of Opting for Mindefy's CRM Services
             </h2>
           </div>
@@ -258,10 +258,10 @@ export default function CRMSolutions() {
               }}
             >
               <div className="flex-1 w-full lg:w-111 my-2.5 lg:ml-6 order-2 lg:order-1">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Maestros at Your Service
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-sm lg:text-base lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Mindefy's CRM services provide you with access to a team of
                   CRM virtuosos. These experts have honed their skills in the
                   art of customer relationship management across diverse
@@ -307,10 +307,10 @@ export default function CRMSolutions() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-111 my-4 lg:my-14 lg:ml-6 order-2">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Innovation Unleashed
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-sm sm:text-xl lg:text-base lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Stay ahead of the curve with Mindefy's groundbreaking CRM
                   solutions, infused with the latest technology and
                   industry-leading best practices. We're committed to keeping
@@ -331,10 +331,10 @@ export default function CRMSolutions() {
               }}
             >
               <div className="flex-1 w-full lg:w-111 my-4 lg:my-14 lg:ml-6 order-2 lg:order-1">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Scale the Summit
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-sm lg:text-base lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Mindefy's CRM solutions are flexible and scalable, designed to
                   grow with your business. Whether you're a budding startup or
                   an established global enterprise, our CRM systems evolve to
@@ -379,10 +379,10 @@ export default function CRMSolutions() {
                 </div>
               </div>
               <div className="flex-1 w-full lg:w-111 my-4 lg:my-14 lg:ml-6 order-2">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Ironclad Security
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-sm lg:text-base lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Mindefy places a paramount emphasis on the security of your
                   data. We employ state-of-the-art security measures to protect
                   your sensitive information. Your data's safety is our utmost
@@ -403,10 +403,10 @@ export default function CRMSolutions() {
               }}
             >
               <div className="flex-1 w-full lg:w-111 my-4 lg:my-16.5 lg:ml-6 order-2 lg:order-1">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl lg:ml-3.5 mt-2.5 font-semibold text-[#000000] mb-4">
                   Results That Shine
                 </h3>
-                <p className="text-[0.9rem] lg:text-[1rem] lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
+                <p className="text-sm lg:text-base lg:mx-3.5 mb-2.5 w-full lg:w-104 text-[#444444] leading-relaxed text-left lg:text-justify">
                   Join the ranks of delighted clients who have experienced
                   tangible outcomes, from soaring customer satisfaction to
                   turbocharged sales, all thanks to Mindefy's CRM brilliance.

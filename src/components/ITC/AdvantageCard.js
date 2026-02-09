@@ -8,12 +8,14 @@ export default function AdvantageCard({ item }) {
       } rounded-2xl py-4 lg:py-2.5 px-4 lg:px-3.5`}
     >
       <div
-        className={`flex-1 ${item.reverse ? "order-1 lg:order-2" : "mb-4 lg:mb-0"}`}
+        className={`flex-1 ${
+          item.reverse ? "order-1 lg:order-2" : "mb-4 lg:mb-0"
+        }`}
       >
-        <h3 className="text-lg sm:text-xl lg:text-[1.5rem] font-semibold text-[#000000] mb-3 lg:mb-4 text-center lg:text-left">
+        <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#000000] mb-3 lg:mb-4 text-center lg:text-left">
           {item.title}
         </h3>
-        <p className="text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+        <p className="text-sm sm:text-base lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
           {item.description}
         </p>
       </div>

@@ -647,7 +647,7 @@ export default function JEGO() {
       {/* User Behavior Mapping Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center">
         <div className="w-full flex flex-col gap-8 md:gap-18">
-          <h2 className="text-[#F5FDFF] font-bold text-2xl md:text-[2rem] text-left">
+          <h2 className="text-[#F5FDFF] font-bold text-2xl md:text-3xl text-left">
             User Behavior Mapping
           </h2>
 
@@ -801,7 +801,7 @@ export default function JEGO() {
       {/* Empathy Map Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center">
         <div className="w-full max-w-6xl flex flex-col gap-8 md:gap-18">
-          <h2 className="text-[#F5FDFF] font-bold text-2xl md:text-[2rem] text-left">
+          <h2 className="text-[#F5FDFF] font-bold text-2xl md:text-3xl text-left">
             Empathy Map
           </h2>
 
@@ -1078,7 +1078,7 @@ export default function JEGO() {
       {/* User Persona Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center">
         <div className="w-full max-w-6xl flex flex-col items-start gap-8 md:gap-18">
-          <h2 className="text-[#FFFFFF] font-bold text-2xl md:text-[2rem] text-left">
+          <h2 className="text-[#FFFFFF] font-bold text-2xl md:text-3xl text-left">
             User Persona
           </h2>
 
@@ -1126,7 +1126,7 @@ export default function JEGO() {
                 <h4 className="text-[#F7DE66] font-semibold text-2xl md:text-4xl mb-2">
                   Siddharth Desai
                 </h4>
-                <span className="text-[#F7DE66] text-lg md:text-[1.625rem] font-semibold block mb-2">
+                <span className="text-[#F7DE66] text-lg md:text-2xl font-semibold block mb-2">
                   Bio
                 </span>
                 <p className="text-[#C9F5FF] text-base md:text-xl text-justify font-normal ">
@@ -1140,7 +1140,7 @@ export default function JEGO() {
 
               {/* Personality Traits */}
               <div className="ml-0">
-                <h5 className="text-[#F7DE66] font-semibold text-lg md:text-[1.25rem] mb-4 md:mb-4.5">
+                <h5 className="text-[#F7DE66] font-semibold text-lg md:text-xl mb-4 md:mb-4.5">
                   Personality
                 </h5>
                 <div className="relative w-full h-40 md:w-[45.43rem] md:h-[26.43rem]">
@@ -1239,7 +1239,7 @@ export default function JEGO() {
       {/* Storyboard Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
         <div className="mb-8 md:mb-18">
-          <p className="font-semibold text-xl md:text-[2rem] text-[#FFFFFF]">
+          <p className="font-semibold text-xl md:text-3xl text-[#FFFFFF]">
             Storyboard
           </p>
         </div>
@@ -1258,7 +1258,7 @@ export default function JEGO() {
         return (
           <section className="w-full max-w-6x px-4 flex flex-col items-center justify-center">
             <div className="w-full max-w-6xl flex flex-col items-start gap-10">
-              <h2 className="font-semibold text-xl md:text-[2rem] text-[#FFFFFF] mb-4">
+              <h2 className="font-semibold text-xl md:text-3xl text-[#FFFFFF] mb-4">
                 Brainstorm and Ideation
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-20 w-full">
@@ -1302,7 +1302,7 @@ export default function JEGO() {
 
       {/* Backlogs Section */}
       <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-        <p className="text-white text-[2rem] font-bold mb-18">Backlogs</p>
+        <p className="text-white text-3xl font-bold mb-18">Backlogs</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-0.5">
           {backlogItems.map((item, index) => (
             <div
@@ -1445,7 +1445,7 @@ export default function JEGO() {
 
       <div className="w-full max-w-6xl mx-auto px-2 sm:px-4">
         {/* Header */}
-        <p className="text-[#FFFFFF] text-2xl md:text-[2rem] font-bold mb-8 md:mb-12 text-center">
+        <p className="text-[#FFFFFF] text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center">
           Branding
         </p>
 
@@ -1473,7 +1473,7 @@ export default function JEGO() {
                   </p>
                 </div>
               </div>
-              <div className="text-lg md:text-[2rem] text-justify font-fredoka font-semibold text-[#C9F5FF] w-full md:w-100 tracking-widest leading-relaxed mb-6 md:mb-12">
+              <div className="text-lg md:text-3xl text-justify font-fredoka font-semibold text-[#C9F5FF] w-full md:w-100 tracking-widest leading-relaxed mb-6 md:mb-12">
                 a b c d e f g h i j <br />k l m n o p q r s<br /> t u v w x y z
               </div>
             </div>
@@ -1492,7 +1492,7 @@ export default function JEGO() {
                   </p>
                 </div>
               </div>
-              <div className="text-lg md:text-[2rem] font-noto font-semibold text-[#C9F5FF] lg:w-full md:w-100 tracking-widest leading-relaxed mb-6 md:mb-12">
+              <div className="text-lg md:text-3xl font-noto font-semibold text-[#C9F5FF] lg:w-full md:w-100 tracking-widest leading-relaxed mb-6 md:mb-12">
                 a b c d e f g h i j <br />k l m n o p q r s<br /> t u v w x y z
               </div>
             </div>

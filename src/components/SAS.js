@@ -9,12 +9,12 @@ export default function SAS() {
       <section className="mt-20 md:mt-28 mx-auto px-4 lg:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] md:text-[1rem] font-bold tracking-widest uppercase mb-4 md:mb-5">
+          <h1 className="text-[#FF5225] text-sm md:text-base font-bold tracking-widest uppercase mb-4 md:mb-5">
             it/staff Augmentation
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] md:text-[2rem] lg:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-7 leading-tight max-w-[90%] md:max-w-180 lg:max-w-200 mx-auto px-2 md:px-0">
+          <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#000000] mb-4 md:mb-7 leading-tight max-w-[90%] md:max-w-180 lg:max-w-200 mx-auto px-2 md:px-0">
             <span className="font-normal">Reliable</span> IT Staff Augmentation
             Services
             <span className="font-normal"> for </span> Flexible{" "}
@@ -24,7 +24,7 @@ export default function SAS() {
 
           {/* Description Paragraphs */}
           <div className="w-[95%] md:w-[85%] lg:w-241 font-normal mx-auto mb-6 md:mb-9 text-justify space-y-4 md:space-y-7 px-2 md:px-0">
-            <p className="text-[0.875rem] md:text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-sm md:text-base text-[#444444] leading-relaxed">
               Mindеfy, your trustеd partner for IT staffing sеrvicеs. We
               specialize in strengthening IT teams by providing highly skilled
               resources in a variety of technologies. With our competitive
@@ -35,7 +35,7 @@ export default function SAS() {
               India, we have successfully met the technical requirements of our
               customers in these regions.
             </p>
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-[#444444] leading-relaxed">
+            <p className="text-sm md:text-base font-normal text-[#444444] leading-relaxed">
               Wе mееt your spеcific projеct rеquirеmеnts through flеxiblе
               rеsourcе modеls, including full-time, part-time and task-basеd
               contracts. Choose from on-site or off-site options to optimize
@@ -60,10 +60,10 @@ export default function SAS() {
       <section className="px-4 lg:px-0">
         <div className="max-w-[90%] md:max-w-310.5 mx-auto">
           <div className="text-center">
-            <p className="text-[#FF5225] mx-auto text-[1.25rem] md:text-[1.75rem] lg:text-[2rem] font-bold tracking-widest uppercase mb-4 md:mb-6">
+            <p className="text-[#FF5225] mx-auto text-xl md:text-3xl lg:text-3xl font-bold tracking-widest uppercase mb-4 md:mb-6">
               Resourcing Models at Mindefy
             </p>
-            <h2 className="text-center text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-6 md:mb-8 lg:mb-11 px-2 md:px-0">
+            <h2 className="text-center text-lg md:text-xl lg:text-2xl font-semibold text-[#000000] mb-6 md:mb-8 lg:mb-11 px-2 md:px-0">
               <span className="font-normal">Resource </span>Long-term/Short-Term
               <span className="font-normal"> Assignments</span>
             </h2>
@@ -105,7 +105,7 @@ export default function SAS() {
                 }}
               >
                 <div className="w-full md:w-[18rem] lg:w-87.5 h-12 md:h-16 lg:h-18 mb-3 md:mb-4.5">
-                  <h3 className="font-semibold text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem]">
+                  <h3 className="font-semibold text-lg md:text-xl lg:text-2xl">
                     {item.title}
                   </h3>
                 </div>
@@ -118,7 +118,7 @@ export default function SAS() {
                   />
                 </div>
 
-                <p className="text-[0.75rem] md:text-sm font-normal pb-4 md:pb-7 w-full md:w-[18rem] lg:w-87.5 text-[#444444] leading-relaxed text-justify">
+                <p className="text-xs md:text-sm font-normal pb-4 md:pb-7 w-full md:w-[18rem] lg:w-87.5 text-[#444444] leading-relaxed text-justify">
                   {item.desc}
                 </p>
               </div>

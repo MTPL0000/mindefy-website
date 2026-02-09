@@ -9,19 +9,19 @@ export default function TestAutomation() {
       <section className="mt-28 mx-auto px-4 xl:px-0">
         <div className="mx-auto text-center">
           {/* Header Tag */}
-          <h1 className="text-[#FF5225] text-[0.875rem] lg:text-[1rem] font-bold tracking-widest uppercase mb-5">
+          <h1 className="text-[#FF5225] text-sm lg:text-base font-bold tracking-widest uppercase mb-5">
             Application test Automation
           </h1>
 
           {/* Main Title */}
-          <p className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-221 mx-auto px-4 xl:px-0">
+          <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-semibold text-[#000000] mb-7 leading-tight max-w-221 mx-auto px-4 xl:px-0">
             Application Test Automation and QA Services Ensuring Seamless
             Software Performance
           </p>
 
           {/* Description Paragraphs */}
           <div className="w-full max-w-245.5 font-normal mx-auto mb-9 text-justify space-y-5 px-4 xl:px-0">
-            <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-sm lg:text-base text-[#444444] leading-relaxed">
               At Mindefy, we understand the importance of rigorous testing in
               delivering high-performing applications. Our Application Test
               Automation and QA Services encompass a range of advanced
@@ -50,7 +50,7 @@ export default function TestAutomation() {
         <div className="max-w-273.5 mx-auto">
           {/* Section Header */}
           <div className="text-center mb-15">
-            <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-4 px-4 xl:px-0">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#000000] mb-4 px-4 xl:px-0">
               Explore Mindefy's Reliable Testing Services
             </h2>
           </div>
@@ -60,10 +60,10 @@ export default function TestAutomation() {
             {/* Test Automation using Selenium */}
             <div className="flex flex-col lg:flex-row bg-[#EDF3FF] rounded-2xl overflow-hidden">
               <div className="flex-1 p-6 lg:py-[1.15rem] lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
-                <p className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <p className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Test Automation using Selenium
                 </p>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   We harness the power of Selenium, an open-source test
                   automation framework, to automate your application testing
                   process. Our experts create robust and scalable automation
@@ -99,10 +99,10 @@ export default function TestAutomation() {
                 </div>
               </div>
               <div className="flex-1 p-6 lg:py-[1.15rem] lg:pl-4 lg:pr-6 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Behavior-Driven Development (BDD) and Cucumber
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   We adopt a BDD approach, combined with the popular Cucumber
                   framework, to facilitate effective collaboration between
                   stakeholders and streamline the testing process. Through BDD,
@@ -118,10 +118,10 @@ export default function TestAutomation() {
             {/* Customized Test Scripts */}
             <div className="flex flex-col lg:flex-row bg-[#EDF3FF] rounded-2xl overflow-hidden">
               <div className="flex-1 p-6 lg:py-[1.15rem] lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Customized Test Scripts
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Our team of skilled professionals excels in creating
                   customized test scripts tailored to your specific application
                   requirements. By developing test scripts using
@@ -157,10 +157,10 @@ export default function TestAutomation() {
                 </div>
               </div>
               <div className="flex-1 p-6 lg:py-[1.15rem] lg:pl-4 lg:pr-6 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Test Framework Development
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   We develop scalable and maintainable test frameworks that
                   serve as a foundation for your test automation efforts. Our
                   frameworks provide a structured approach to test script
@@ -175,10 +175,10 @@ export default function TestAutomation() {
             {/* Test Planning and Strategy */}
             <div className="flex flex-col lg:flex-row rounded-2xl bg-[#EDF3FF] overflow-hidden">
               <div className="flex-1 p-6 lg:py-[1.15rem] lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Test Planning and Strategy
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Our experienced QA professionals work closely with you to
                   create a comprehensive test plan and strategy. We conduct a
                   thorough analysis of your application, define testing
@@ -214,10 +214,10 @@ export default function TestAutomation() {
                 </div>
               </div>
               <div className="flex-1 p-6 lg:py-[1.15rem] lg:pl-4 lg:pr-6 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Test Execution and Reporting
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   We execute tests using automated frameworks and tools,
                   ensuring reliable and consistent test results. Our testing
                   experts meticulously analyze test outcomes, identify defects,
@@ -233,10 +233,10 @@ export default function TestAutomation() {
             {/* Seamless Integration */}
             <div className="flex flex-col lg:flex-row rounded-2xl bg-[#EDF3FF] overflow-hidden">
               <div className="flex-1 p-6 lg:py-[2.906rem] lg:pl-6 lg:pr-4 xl:w-[36.06rem]">
-                <h3 className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
                   Seamless Integration
                 </h3>
-                <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+                <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
                   Low-Code platforms provide robust integration capabilities,
                   allowing for seamless integration with existing systems and
                   third-party applications. This enables organizations to
@@ -264,7 +264,7 @@ export default function TestAutomation() {
         <div className="max-w-251 mx-auto">
           {/* Section Header */}
           <div className="text-center w-full max-w-134 mx-auto mb-12">
-            <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000]">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#000000]">
               Why Mindefy is the Ideal Partner for Application Test Automation
               and QA
             </h2>
@@ -285,11 +285,11 @@ export default function TestAutomation() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:ml-39.5 xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
+                <h3 className="text-center xl:ml-39.5 xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#332771]">
                   Expertise and Experience
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   Mindefy has a team of highly skilled QA professionals with
                   extensive experience in application testing and quality
                   assurance. Our expertise spans across diverse industries,
@@ -314,11 +314,11 @@ export default function TestAutomation() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
+                <h3 className="text-center xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#332771]">
                   Advanced Tools and Technologies
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   We stay up-to-date with the latest advancements in test
                   automation and QA technologies. By utilizing industry-leading
                   tools such as Selenium, Cucumber, and scripting languages, we
@@ -341,11 +341,11 @@ export default function TestAutomation() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:ml-[7.31rem] xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
+                <h3 className="text-center xl:ml-[7.31rem] xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#332771]">
                   Agile Testing Methodologies
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   We embrace agile testing methodologies that emphasize
                   collaboration, adaptability, and responsiveness. Our agile
                   approach allows us to quickly respond to changing
@@ -370,11 +370,11 @@ export default function TestAutomation() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
+                <h3 className="text-center xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#332771]">
                   Customer Satisfaction
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   At Mindefy, customer satisfaction is our top priority. We are
                   dedicated to understanding your unique business requirements,
                   providing personalized attention, and delivering solutions

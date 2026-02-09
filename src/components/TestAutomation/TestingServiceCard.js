@@ -16,10 +16,10 @@ export default function TestingServiceCard({
 
   const content = (
     <div className={contentClassName}>
-      <TitleTag className="text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-4">
+      <TitleTag className="text-xl lg:text-2xl font-semibold text-[#000000] mb-4">
         {title}
       </TitleTag>
-      <p className="text-[0.875rem] lg:text-[1rem] text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
+      <p className="text-sm lg:text-base text-[#444444] leading-relaxed text-justify xl:w-[34.312rem]">
         {description}
       </p>
     </div>

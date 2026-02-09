@@ -4,31 +4,31 @@ export default function WhiteLabelHero() {
   return (
     <section className="mt-28 mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mx-auto text-center">
-        <h1 className="text-[#FF5225] text-[0.875rem] sm:text-[1rem] font-bold tracking-widest uppercase mb-5">
+        <h1 className="text-[#FF5225] text-sm sm:text-base font-bold tracking-widest uppercase mb-5">
           White Label App Solution
         </h1>
 
-        <p className="text-[1.75rem] sm:text-[2rem] lg:text-[2.25rem] xl:text-[2.25rem] font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[80%] lg:max-w-200 mx-auto px-4 sm:px-0">
+        <p className="text-3xl sm:text-3xl lg:text-4xl xl:text-4xl font-semibold text-[#000000] mb-7 leading-tight max-w-[90%] sm:max-w-[80%] lg:max-w-200 mx-auto px-4 sm:px-0">
           White Label App Solutions <br className="hidden sm:block" /> for
           Various Industries
         </p>
 
         <div className="w-[90%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-241 font-normal mx-auto mb-9 text-justify space-y-6 px-4 sm:px-0">
-          <p className="text-[0.875rem] sm:text-[1rem] text-[#444444] leading-relaxed">
-            At Mindefy, we strive to provide superior white label app
-            solutions you can trust. With our extensive knowledge and
-            experience, we provide excellent services in multiple areas,
-            enabling businesses to excel in the digital environment.
+          <p className="text-sm sm:text-base text-[#444444] leading-relaxed">
+            At Mindefy, we strive to provide superior white label app solutions
+            you can trust. With our extensive knowledge and experience, we
+            provide excellent services in multiple areas, enabling businesses to
+            excel in the digital environment.
           </p>
-          <p className="text-[0.875rem] sm:text-[1rem] font-normal text-[#444444] leading-relaxed">
+          <p className="text-sm sm:text-base font-normal text-[#444444] leading-relaxed">
             Our white label app solutions are fully customizable to match your
-            brand image, providing a seamless and engaging user experience.
-            From app design and functionality to color schemes and logos, we
-            work closely with you to create unique branding solutions. Our
+            brand image, providing a seamless and engaging user experience. From
+            app design and functionality to color schemes and logos, we work
+            closely with you to create unique branding solutions. Our
             customizable and end-to-end applications address a variety of
             industry needs, including Digital Health, Payments and Point of
-            Sale, School Automation, Live Streaming and OTT, Food Delivery,
-            Taxi and Ride Sharing, Unity 3D Gaming and Edtech
+            Sale, School Automation, Live Streaming and OTT, Food Delivery, Taxi
+            and Ride Sharing, Unity 3D Gaming and Edtech
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function WhiteLabelHero() {
       </div>
 
       <div className="w-[90%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-[60.43rem] mx-auto mb-16 sm:mb-20 px-4 sm:px-0">
-        <p className="font-medium text-[0.875rem] sm:text-[1rem] text-[#000000] tracking-normal text-center sm:text-left">
+        <p className="font-medium text-sm sm:text-base text-[#000000] tracking-normal text-center sm:text-left">
           We further unlock your business potential by providing customized
           white label application solutions to increase productivity and
           optimize operations
@@ -58,7 +58,7 @@ export default function WhiteLabelHero() {
                    1px 1px 4px rgba(0, 0, 0, 0.2), 8px 8px 18px rgba(0, 0, 0, 0.1)`,
         }}
       >
-        <p className="w-full xl:w-161 text-center font-medium text-[1.25rem] sm:text-[1.5rem] lg:text-2xl tracking-normal text-[#2F2175] px-2 sm:px-0">
+        <p className="w-full xl:w-161 text-center font-medium text-xl sm:text-2xl lg:text-2xl tracking-normal text-[#2F2175] px-2 sm:px-0">
           Partner with us and experience the transformative Power of Our
           Cutting-Edge Technology
         </p>

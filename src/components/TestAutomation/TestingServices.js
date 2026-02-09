@@ -118,7 +118,7 @@ export default function TestingServices() {
       <section className="mt-24 px-4 xl:px-0">
         <div className="max-w-273.5 mx-auto">
           <div className="text-center mb-15">
-            <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000] mb-4 px-4 xl:px-0">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#000000] mb-4 px-4 xl:px-0">
               Explore Mindefy's Reliable Testing Services
             </h2>
           </div>
@@ -145,7 +145,7 @@ export default function TestingServices() {
       <section className="mt-20 px-4 xl:px-0">
         <div className="max-w-251 mx-auto">
           <div className="text-center w-full max-w-134 mx-auto mb-12">
-            <h2 className="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-semibold text-[#000000]">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#000000]">
               Why Mindefy is the Ideal Partner for Application Test Automation
               and QA
             </h2>
@@ -165,11 +165,11 @@ export default function TestingServices() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:ml-39.5 xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
+                <h3 className="text-center xl:ml-39.5 xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#332771]">
                   Expertise and Experience
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   Mindefy has a team of highly skilled QA professionals with
                   extensive experience in application testing and quality
                   assurance. Our expertise spans across diverse industries,
@@ -194,11 +194,11 @@ export default function TestingServices() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
+                <h3 className="text-center xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#332771]">
                   Advanced Tools and Technologies
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   We stay up-to-date with the latest advancements in test
                   automation and QA technologies. By utilizing industry-leading
                   tools such as Selenium, Cucumber, and scripting languages, we
@@ -221,11 +221,11 @@ export default function TestingServices() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:ml-[7.31rem] xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
+                <h3 className="text-center xl:ml-[7.31rem] xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#332771]">
                   Agile Testing Methodologies
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   We embrace agile testing methodologies that emphasize
                   collaboration, adaptability, and responsiveness. Our agile
                   approach allows us to quickly respond to changing
@@ -250,11 +250,11 @@ export default function TestingServices() {
                 </div>
               </div>
               <div className="mx-5 mb-5 xl:w-115.5">
-                <h3 className="text-center xl:text-left mb-5 text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#332771]">
+                <h3 className="text-center xl:text-left mb-5 text-xl lg:text-2xl font-semibold text-[#332771]">
                   Customer Satisfaction
                 </h3>
 
-                <p className="text-[0.875rem] lg:text-[1rem] font-normal text-[#444444] leading-relaxed text-justify">
+                <p className="text-sm lg:text-base font-normal text-[#444444] leading-relaxed text-justify">
                   At Mindefy, customer satisfaction is our top priority. We are
                   dedicated to understanding your unique business requirements,
                   providing personalized attention, and delivering solutions

@@ -10,17 +10,17 @@ export default function MagentoSection({ data }) {
         >
           <div className="flex-1 w-full xl:w-136 ml-0 xl:ml-2.5 mb-6 lg:mb-0">
             <p
-              className={`text-xl xl:text-[1.75rem] font-semibold uppercase ${data.titleColor}`}
+              className={`text-xl xl:text-3xl font-semibold uppercase ${data.titleColor}`}
             >
               {data.title}
             </p>
             <p
-              className={`text-xl xl:text-[1.75rem] mb-3 font-normal ${data.titleColor}`}
+              className={`text-xl xl:text-3xl mb-3 font-normal ${data.titleColor}`}
             >
               {data.subtitle}
             </p>
             <p
-              className={`text-[1rem] w-full xl:w-136 tracking-wide font-normal ${data.textColor} leading-relaxed text-justify`}
+              className={`text-base w-full xl:w-136 tracking-wide font-normal ${data.textColor} leading-relaxed text-justify`}
             >
               {data.description}
             </p>
