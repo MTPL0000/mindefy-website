@@ -1,6 +1,111 @@
 "use client";
 
 import Image from "next/image";
+import BPMAdvantageCard from "./BPMAdvantageCard";
+
+const BPMItem = [
+  {
+    title: "Process Efficiency",
+    desc: "Mindefy acts as a perceptive diagnostician for your business, identifying bottlenecks, redundancies, and inefficiencies within your processes. Once identified, we systematically streamline these processes, resulting in a reduction in costs and an increase in productivity. In essence, we transform your processes into lean and efficient mechanisms that drive your business forward.",
+    img: "/images/BPM1.webp",
+  },
+  {
+    title: "Improved Visibility",
+    desc: "With Mindefy's advanced BPM tools, you gain real-time insights into your operations. You can monitor key performance indicators (KPIs) and make data-driven decisions that lead to more favorable outcomes. This visibility enables you to stay agile and responsive in a rapidly changing business environment.",
+    img: "/images/BPM2.webp",
+  },
+  {
+    title: "Enhanced Collaboration",
+    desc: "Mindefy's BPM solutions foster seamless collaboration among teams and departments, breaking down silos and improving communication. The result is increased innovation and elevated levels of customer satisfaction. When your teams can work harmoniously and communicate effectively, it enhances your organization's ability to adapt and serve customers more effectively. ",
+    img: "/images/BPM3.webp",
+  },
+  {
+    title: "Flexibility and Scalability",
+    desc: "As your business evolves and grows, your processes must adapt to support these changes. Mindefy's BPM solutions are flexible and scalable, ensuring that they not only keep pace with your business but also facilitate your expansion. This adaptability is crucial in helping your business remain agile and responsive in a dynamic marketplace.",
+    img: "/images/BPM4.webp",
+  },
+  {
+    title: "Compliance and Risk Management",
+    desc: "Staying compliant with industry regulations and mitigating risks effectively is of paramount importance in today's business landscape. Mindefy's BPM tools include robust compliance and risk management features, which help ensure that your processes adhere to relevant regulations and are equipped to manage and mitigate risks effectively.",
+    img: "/images/BPM5.webp",
+  },
+];
+
+const advantageCards = [
+  {
+    title: "Process Discovery",
+    description:
+      "We work closely with your team to identify existing processes, pinpoint pain points, and identify opportunities for improvement. This phase sets the stage for transformation.",
+    imageSrc: "/images/TA4.svg",
+    imageAlt: "Process Discovery",
+    containerClassName:
+      "flex flex-col lg:flex-row xl:flex-row bg-[#E6E6E7] rounded-xl overflow-hidden",
+    contentClassName:
+      "flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5",
+    imageWrapperClassName: "shrink-0 p-4 lg:p-0",
+    imageContainerClassName: "flex items-center justify-center",
+    imageSizeClassName:
+      "w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:mr-2.5 xl:h-[16.56rem] relative",
+  },
+  {
+    title: "Process Design",
+    description:
+      "Leveraging industry best practices, we design optimized processes that align with your business objectives. Our designs are not just improvements; they are tailored to enhance your strategic goals.",
+    imageSrc: "/images/BPM6.webp",
+    imageAlt: "Process Design",
+    containerClassName: "flex flex-col lg:flex-row xl:flex-row",
+    contentClassName:
+      "flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5 order-1 lg:order-2 xl:order-2",
+    imageWrapperClassName: "shrink-0 order-2 lg:order-1 xl:order-1 p-4 lg:p-0",
+    imageContainerClassName: "flex items-center justify-center",
+    imageSizeClassName:
+      "w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:ml-2.5 xl:h-[16.56rem] relative",
+  },
+  {
+    title: "Process Automation",
+    description:
+      "Automation is the cornerstone of efficiency. Mindefy leverages automation to reduce manual tasks, minimize errors, and elevate the overall efficiency of your processes. Automation allows your team to focus on high-value tasks while routine operations are handled seamlessly.",
+    imageSrc: "/images/BPM7.webp",
+    imageAlt: "Process Automation",
+    containerClassName:
+      "flex flex-col lg:flex-row xl:flex-row bg-[#E6E6E7] rounded-xl overflow-hidden",
+    contentClassName:
+      "flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5",
+    imageWrapperClassName: "shrink-0 p-4 lg:p-0",
+    imageContainerClassName: "flex items-center justify-center",
+    imageSizeClassName:
+      "w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:mr-2.5 xl:h-[16.56rem] relative",
+  },
+  {
+    title: "Monitoring and Analytics",
+    description:
+      "Real-time monitoring and data analytics provide you with insights into process performance. This transparency empowers you to make data-driven decisions, pivot as needed, and optimize your operations continually.",
+    imageSrc: "/images/BPM8.webp",
+    imageAlt: "Monitoring and Analytics",
+    containerClassName: "flex flex-col lg:flex-row xl:flex-row",
+    contentClassName:
+      "flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5 order-1 lg:order-2 xl:order-2",
+    imageWrapperClassName: "shrink-0 order-2 lg:order-1 xl:order-1 p-4 lg:p-0",
+    imageContainerClassName: "flex items-center justify-center",
+    imageSizeClassName:
+      "w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:ml-2.5 xl:h-[16.56rem] relative",
+  },
+  {
+    title: "Continuous Improvement",
+    description:
+      "We embrace the philosophy of continuous improvement. Our team collaborates closely with you to refine processes as your business evolves, ensuring that they remain aligned with your dynamic business goals.",
+    imageSrc: "/images/BPM9.webp",
+    imageAlt: "Continuous Improvement",
+    containerClassName:
+      "flex flex-col lg:flex-row xl:flex-row bg-[#E6E6E7] rounded-xl overflow-hidden",
+    contentClassName:
+      "flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5",
+    imageWrapperClassName: "shrink-0 p-4 lg:p-0",
+    imageContainerClassName: "flex items-center justify-center",
+    imageSizeClassName:
+      "w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:mr-2.5 xl:h-[16.56rem] relative",
+  },
+];
 
 export default function BPMFeatures() {
   return (
@@ -13,33 +118,7 @@ export default function BPMFeatures() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:flex xl:flex-wrap xl:justify-center gap-4 md:gap-5 lg:gap-6">
-            {[
-              {
-                title: "Process Efficiency",
-                desc: "Mindefy acts as a perceptive diagnostician for your business, identifying bottlenecks, redundancies, and inefficiencies within your processes. Once identified, we systematically streamline these processes, resulting in a reduction in costs and an increase in productivity. In essence, we transform your processes into lean and efficient mechanisms that drive your business forward.",
-                img: "/images/BPM1.webp",
-              },
-              {
-                title: "Improved Visibility",
-                desc: "With Mindefy's advanced BPM tools, you gain real-time insights into your operations. You can monitor key performance indicators (KPIs) and make data-driven decisions that lead to more favorable outcomes. This visibility enables you to stay agile and responsive in a rapidly changing business environment.",
-                img: "/images/BPM2.webp",
-              },
-              {
-                title: "Enhanced Collaboration",
-                desc: "Mindefy's BPM solutions foster seamless collaboration among teams and departments, breaking down silos and improving communication. The result is increased innovation and elevated levels of customer satisfaction. When your teams can work harmoniously and communicate effectively, it enhances your organization's ability to adapt and serve customers more effectively. ",
-                img: "/images/BPM3.webp",
-              },
-              {
-                title: "Flexibility and Scalability",
-                desc: "As your business evolves and grows, your processes must adapt to support these changes. Mindefy's BPM solutions are flexible and scalable, ensuring that they not only keep pace with your business but also facilitate your expansion. This adaptability is crucial in helping your business remain agile and responsive in a dynamic marketplace.",
-                img: "/images/BPM4.webp",
-              },
-              {
-                title: "Compliance and Risk Management",
-                desc: "Staying compliant with industry regulations and mitigating risks effectively is of paramount importance in today's business landscape. Mindefy's BPM tools include robust compliance and risk management features, which help ensure that your processes adhere to relevant regulations and are equipped to manage and mitigate risks effectively.",
-                img: "/images/BPM5.webp",
-              },
-            ].map((item, idx) => (
+            {BPMItem.map((item, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-xl p-4 md:p-5 lg:p-6 xl:px-6 xl:py-5 w-full h-auto min-h-[400px] md:min-h-[450px] lg:min-h-[500px] xl:w-[23.12rem] xl:h-auto flex flex-col items-center text-center justify-start overflow-hidden"
@@ -87,141 +166,22 @@ export default function BPMFeatures() {
             </h2>
           </div>
 
+          {/* Advantages Content */}
           <div className="flex flex-col gap-6 md:gap-7 lg:gap-8 xl:gap-11.5 w-full max-w-[98%] md:max-w-200 lg:max-w-220 xl:max-w-225 mx-auto">
-            <div className="flex flex-col lg:flex-row xl:flex-row bg-[#E6E6E7] rounded-xl overflow-hidden">
-              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
-                  Process Discovery
-                </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
-                  We work closely with your team to identify existing processes,
-                  pinpoint pain points, and identify opportunities for
-                  improvement. This phase sets the stage for transformation.
-                </p>
-              </div>
-              <div className="shrink-0 p-4 lg:p-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:mr-2.5 xl:h-[16.56rem] relative">
-                    <Image
-                      src="/images/TA4.svg"
-                      alt="Process Discovery"
-                      fill
-                      className="object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row xl:flex-row">
-              <div className="shrink-0 order-2 lg:order-1 xl:order-1 p-4 lg:p-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:ml-2.5 xl:h-[16.56rem] relative">
-                    <Image
-                      src="/images/BPM6.webp"
-                      alt="Process Design"
-                      fill
-                      className="object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5 order-1 lg:order-2 xl:order-2">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
-                  Process Design
-                </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
-                  Leveraging industry best practices, we design optimized
-                  processes that align with your business objectives. Our
-                  designs are not just improvements; they are tailored to
-                  enhance your strategic goals.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row xl:flex-row bg-[#E6E6E7] rounded-xl overflow-hidden">
-              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
-                  Process Automation
-                </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
-                  Automation is the cornerstone of efficiency. Mindefy leverages
-                  automation to reduce manual tasks, minimize errors, and
-                  elevate the overall efficiency of your processes. Automation
-                  allows your team to focus on high-value tasks while routine
-                  operations are handled seamlessly.
-                </p>
-              </div>
-              <div className="shrink-0 p-4 lg:p-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:mr-2.5 xl:h-[16.56rem] relative">
-                    <Image
-                      src="/images/BPM7.webp"
-                      alt="Process Automation"
-                      fill
-                      className="object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row xl:flex-row">
-              <div className="shrink-0 order-2 lg:order-1 xl:order-1 p-4 lg:p-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:ml-2.5 xl:h-[16.56rem] relative">
-                    <Image
-                      src="/images/BPM8.webp"
-                      alt="Monitoring and Analytics"
-                      fill
-                      className="object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5 order-1 lg:order-2 xl:order-2">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
-                  Monitoring and Analytics
-                </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
-                  Real-time monitoring and data analytics provide you with
-                  insights into process performance. This transparency empowers
-                  you to make data-driven decisions, pivot as needed, and
-                  optimize your operations continually.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row xl:flex-row bg-[#E6E6E7] rounded-xl overflow-hidden">
-              <div className="flex-1 w-full lg:w-auto xl:w-123.5 p-4 md:p-5 lg:p-6 xl:my-[3.781rem] xl:mx-0 xl:ml-5.5">
-                <h3 className="text-base md:text-lg lg:text-xl xl:text-[1.5rem] font-semibold text-[#000000] mb-3 md:mb-3.5 lg:mb-4 wrap-break-word">
-                  Continuous Improvement
-                </h3>
-                <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify wrap-break-word hyphens-auto">
-                  We embrace the philosophy of continuous improvement. Our team
-                  collaborates closely with you to refine processes as your
-                  business evolves, ensuring that they remain aligned with your
-                  dynamic business goals.
-                </p>
-              </div>
-              <div className="shrink-0 p-4 lg:p-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-40 h-24 md:w-48 md:h-28 lg:w-64 lg:h-36 xl:w-[23.18rem] xl:my-2.5 xl:mr-2.5 xl:h-[16.56rem] relative">
-                    <Image
-                      src="/images/BPM9.webp"
-                      alt="Continuous Improvement"
-                      fill
-                      className="object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            {advantageCards.map((card) => (
+              <BPMAdvantageCard
+                key={card.title}
+                title={card.title}
+                description={card.description}
+                imageSrc={card.imageSrc}
+                imageAlt={card.imageAlt}
+                containerClassName={card.containerClassName}
+                contentClassName={card.contentClassName}
+                imageWrapperClassName={card.imageWrapperClassName}
+                imageContainerClassName={card.imageContainerClassName}
+                imageSizeClassName={card.imageSizeClassName}
+              />
+            ))}
           </div>
         </div>
       </section>
