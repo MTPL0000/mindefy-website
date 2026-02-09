@@ -10,7 +10,7 @@ export default function CustomizedSection({ data }) {
           </p>
         </div>
         <div className="lg:mx-3.5 mb-8 sm:mb-12 lg:mb-[5.093rem]">
-          <p className="font-normal text-sm sm:text-base lg:text-[1rem] text-justify text-[#444444] leading-relaxed tracking-wide">
+          <p className="font-normal text-sm sm:text-base lg:text-base text-justify text-[#444444] leading-relaxed tracking-wide">
             {data.description}
           </p>
         </div>

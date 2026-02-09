@@ -49,7 +49,7 @@ export default function FeatureCard({ feature, index }) {
           ))}
         </h3>
         <p
-          className={`text-sm sm:text-base lg:text-[1rem] font-normal text-[#444444] leading-relaxed ${descMargins[index]} text-justify mt-2 lg:mt-0`}
+          className={`text-sm sm:text-base lg:text-base font-normal text-[#444444] leading-relaxed ${descMargins[index]} text-justify mt-2 lg:mt-0`}
         >
           {feature.description}
         </p>

@@ -134,7 +134,7 @@ function SolutionsSection() {
           <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-4">
             Solutions
           </h2>
-          <h2 className="text-[1.25rem] font-normal leading-12 text-[#333333] max-w-181 mx-auto">
+          <h2 className="text-xl font-normal leading-12 text-[#333333] max-w-181 mx-auto">
             We built a RAG-based AI chatbot integrated into YourHour to serve
             <br /> as a digital wellness buddy. Key features:
           </h2>
@@ -144,7 +144,9 @@ function SolutionsSection() {
           {solutionCards.map((card, idx) => (
             <div
               key={idx}
-              className={`text-center ${idx === 2 ? "max-w-md" : "max-w-[20rem]"} mx-auto`}
+              className={`text-center ${
+                idx === 2 ? "max-w-md" : "max-w-[20rem]"
+              } mx-auto`}
             >
               <div className={`relative mx-auto mb-4 h-32 ${card.aspectRatio}`}>
                 <Image src={card.image} alt={card.alt} fill loading="lazy" />
@@ -176,7 +178,7 @@ function TechnicalImplementationSection() {
           <h2 className="text-2xl font-semibold uppercase text-[#21ABE1] mb-4">
             TECHNICAL IMPLEMENTATION
           </h2>
-          <h2 className="text-[1.25rem] font-normal leading-9 text-[#333333]">
+          <h2 className="text-xl font-normal leading-9 text-[#333333]">
             The project was completed in 2 weeks following an agile,
             <br /> parallel workflow. Key steps included:
           </h2>
@@ -190,10 +192,17 @@ function TechnicalImplementationSection() {
             >
               <div className="flex items-center justify-between">
                 <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
-                  <Image src={step.image} alt={step.title} fill loading="lazy" />
+                  <Image
+                    src={step.image}
+                    alt={step.title}
+                    fill
+                    loading="lazy"
+                  />
                 </div>
                 <div
-                  className={`text-7xl ${idx === 6 ? "mr-8" : "mr-7"} font-normal text-[#3894FF26]`}
+                  className={`text-7xl ${
+                    idx === 6 ? "mr-8" : "mr-7"
+                  } font-normal text-[#3894FF26]`}
                 >
                   {idx + 1}
                 </div>
@@ -226,14 +235,19 @@ function TechnologyStackSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 sm:gap-12 mb-8 sm:mb-12">
           {/* Languages & Frameworks */}
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
               Languages & Frameworks
             </h3>
             <div className="flex justify-center gap-4 sm:gap-6 lg:gap-8">
               {techStack.languagesFrameworks.map((tech, idx) => (
                 <div key={idx} className="text-center">
                   <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                    <Image src={tech.image} alt={tech.name} fill loading="lazy" />
+                    <Image
+                      src={tech.image}
+                      alt={tech.name}
+                      fill
+                      loading="lazy"
+                    />
                   </div>
                   <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                     {tech.name}
@@ -245,14 +259,19 @@ function TechnologyStackSection() {
 
           {/* Models & Data */}
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
               Models & Data
             </h3>
             <div className="flex justify-center">
               {techStack.modelsData.map((tech, idx) => (
                 <div key={idx} className="text-center">
                   <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                    <Image src={tech.image} alt={tech.name} fill loading="lazy" />
+                    <Image
+                      src={tech.image}
+                      alt={tech.name}
+                      fill
+                      loading="lazy"
+                    />
                   </div>
                   <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                     {tech.name}
@@ -267,14 +286,19 @@ function TechnologyStackSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Vector Database */}
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
               Vector Database
             </h3>
             <div className="grid grid-cols-2 sm:flex sm:justify-center sm:gap-4 lg:gap-8 gap-4 sm:flex-wrap">
               {techStack.vectorDatabase.map((tech, idx) => (
                 <div key={idx} className="text-center">
                   <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                    <Image src={tech.image} alt={tech.name} fill loading="lazy" />
+                    <Image
+                      src={tech.image}
+                      alt={tech.name}
+                      fill
+                      loading="lazy"
+                    />
                   </div>
                   <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                     {tech.name}
@@ -286,14 +310,19 @@ function TechnologyStackSection() {
 
           {/* Cloud & Deployment */}
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-normal mb-6 sm:mb-8 lg:mb-10 text-gray-800">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-6 sm:mb-8 lg:mb-10 text-gray-800">
               Cloud & Deployment
             </h3>
             <div className="flex justify-center gap-4 sm:gap-6 lg:gap-8">
               {techStack.cloudDeployment.map((tech, idx) => (
                 <div key={idx} className="text-center">
                   <div className="relative w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3">
-                    <Image src={tech.image} alt={tech.name} fill loading="lazy" />
+                    <Image
+                      src={tech.image}
+                      alt={tech.name}
+                      fill
+                      loading="lazy"
+                    />
                   </div>
                   <p className="text-sm sm:text-base uppercase font-normal text-[#000000]">
                     {tech.name}

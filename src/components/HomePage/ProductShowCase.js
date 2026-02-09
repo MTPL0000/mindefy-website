@@ -66,7 +66,7 @@ export default function ProductShowcase({
           <p className="text-[#FF5225] text-sm sm:text-base font-bold tracking-wider uppercase mb-6 sm:mb-8">
             {headerLabel}
           </p>
-          <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-semibold text-gray-900">
+          <p className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-semibold text-gray-900">
             {headerTitle}
           </p>
         </div>

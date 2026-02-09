@@ -5,17 +5,17 @@ export default function BPMHero() {
     <>
       <section className="mt-20 md:mt-24 lg:mt-28 mx-auto px-4 md:px-6 lg:px-8 xl:px-0">
         <div className="mx-auto text-center">
-          <h1 className="text-[#FF5225] text-sm md:text-base lg:text-[1rem] font-bold tracking-widest uppercase mb-4 md:mb-5 lg:mb-5">
+          <h1 className="text-[#FF5225] text-sm md:text-base lg:text-base font-bold tracking-widest uppercase mb-4 md:mb-5 lg:mb-5">
             Buisness Process Management
           </h1>
 
-          <p className="text-xl md:text-2xl lg:text-3xl xl:text-[2.25rem] font-semibold text-[#000000] mb-4 md:mb-6 lg:mb-7 leading-tight max-w-[95%] md:max-w-160 lg:max-w-180 xl:max-w-200 mx-auto px-2 md:px-0">
+          <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-[#000000] mb-4 md:mb-6 lg:mb-7 leading-tight max-w-[95%] md:max-w-160 lg:max-w-180 xl:max-w-200 mx-auto px-2 md:px-0">
             Revolutionize Your Business with <br className="hidden md:block" />
             Mindefy's Business Process Management
           </p>
 
           <div className="w-full max-w-[95%] md:max-w-180 lg:max-w-220 xl:w-241 font-normal mx-auto mb-6 md:mb-8 lg:mb-9 text-justify space-y-4 md:space-y-5 lg:space-y-7 px-2 md:px-4 lg:px-6 xl:px-0">
-            <p className="text-sm md:text-base lg:text-[1rem] text-[#444444] leading-relaxed">
+            <p className="text-sm md:text-base lg:text-base text-[#444444] leading-relaxed">
               To thrive, your business needs to be at the forefront of
               innovation, and Mindefy's BPM solutions are the key to this
               transformation. In this fast-paced environment, it's not just
@@ -47,7 +47,7 @@ export default function BPMHero() {
             </p>
           </div>
           <div className="mx-2 md:mx-3 lg:mx-4 xl:mx-2.5 mb-2 md:mb-2.5">
-            <p className="font-normal text-sm md:text-base lg:text-[1rem] text-justify text-[#444444] leading-relaxed tracking-wide">
+            <p className="font-normal text-sm md:text-base lg:text-base text-justify text-[#444444] leading-relaxed tracking-wide">
               Business Process Management is the amalgamation of art and
               science, focused on optimizing your organization's processes to
               enhance performance, efficiency, and agility. BPM encompasses a

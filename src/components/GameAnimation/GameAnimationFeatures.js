@@ -54,7 +54,7 @@ export default function GameAnimationFeatures() {
                 </ul>
               </div>
 
-              <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
+              <p className="text-sm sm:text-base text-[#444444] text-justify leading-relaxed">
                 Whether you're building a fast-paced arcade game or a
                 story-driven adventure, we combine creativity and code to make
                 it happen.
@@ -95,7 +95,7 @@ export default function GameAnimationFeatures() {
                 </ul>
               </div>
 
-              <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
+              <p className="text-sm sm:text-base text-[#444444] text-justify leading-relaxed">
                 Whether it's a casual 3D game or a complex simulation, we bring
                 your vision to life with precision, creativity, and scalability.
               </p>
@@ -118,13 +118,13 @@ export default function GameAnimationFeatures() {
 
       <section className="bg-white px-4 xl:px-0">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-[2.5rem] font-bold text-[#000000] text-center mb-8 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#000000] text-center mb-8 lg:mb-12">
             Our Work
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="flex-1 w-full">
-              <h3 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] text-center mb-4 lg:mb-3">
+              <h3 className="text-lg sm:text-xl lg:text-3xl font-semibold text-[#000000] text-center mb-4 lg:mb-3">
                 3D Game
               </h3>
               <div className="relative w-full max-w-113.5 mx-auto h-60 sm:h-72 lg:h-80.5">
@@ -139,7 +139,7 @@ export default function GameAnimationFeatures() {
             </div>
 
             <div className="flex-1 w-full">
-              <h3 className="text-lg sm:text-xl lg:text-[1.75rem] font-semibold text-[#000000] text-center mb-4 lg:mb-3">
+              <h3 className="text-lg sm:text-xl lg:text-3xl font-semibold text-[#000000] text-center mb-4 lg:mb-3">
                 2D Game
               </h3>
               <div className="relative w-full max-w-157 mx-auto h-60 sm:h-72 lg:h-[20.687rem]">

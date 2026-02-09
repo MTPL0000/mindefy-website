@@ -31,13 +31,13 @@ export default function VRSection({ data }) {
               </ul>
             </div>
 
-            <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
+            <p className="text-sm sm:text-base text-[#444444] text-justify leading-relaxed">
               {data.footer}
             </p>
           </div>
 
           <div className="flex-1 w-full flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="relative w-[20rem] sm:w-[22rem] lg:w-100 xl:w-100 h-80 sm:h-88 lg:h-100 xl:h-100 lg:mr-2.5">
+            <div className="relative w-[20rem] sm:w-88 lg:w-100 xl:w-100 h-80 sm:h-88 lg:h-100 xl:h-100 lg:mr-2.5">
               <Image
                 src={data.image}
                 alt={data.imageAlt}

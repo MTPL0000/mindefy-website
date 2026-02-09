@@ -43,7 +43,7 @@ export default function ARSection({ data }) {
               </ul>
             </div>
 
-            <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
+            <p className="text-sm sm:text-base text-[#444444] text-justify leading-relaxed">
               {data.footer}
             </p>
           </div>

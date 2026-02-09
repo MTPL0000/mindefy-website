@@ -5,7 +5,7 @@ export default function ITPartnershipSection({ data }) {
     <section className="mt-12 sm:mt-16 md:mt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-250 mx-auto">
         <div className="text-center mb-8 sm:mb-12 md:mb-15">
-          <h2 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] xl:text-[2.25rem] font-semibold text-[#1E1E1E]">
+          <h2 className="text-2xl sm:text-3xl md:text-3xl xl:text-4xl font-semibold text-[#1E1E1E]">
             {data.title}
           </h2>
         </div>

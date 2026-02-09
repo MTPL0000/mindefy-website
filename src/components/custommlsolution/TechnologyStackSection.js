@@ -18,7 +18,7 @@ export default function TechnologyStackSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-12">
           {/* Languages */}
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
               Languages
             </h3>
             <div className="flex justify-center gap-4 sm:gap-6 lg:gap-8">
@@ -37,7 +37,7 @@ export default function TechnologyStackSection() {
 
           {/* Monitoring */}
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
               Monitoring
             </h3>
             <div className="flex justify-center">
@@ -56,7 +56,7 @@ export default function TechnologyStackSection() {
 
           {/* Data Storage */}
           <div className="text-center sm:col-span-2 lg:col-span-1">
-            <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
               Data Storage
             </h3>
             <div className="flex justify-center gap-4 sm:gap-6 lg:gap-8">
@@ -79,7 +79,7 @@ export default function TechnologyStackSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Deployment/Cloud */}
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-6 sm:mb-8 lg:mb-10 text-[#333333]">
               Deployment/Cloud
             </h3>
             <div className="grid grid-cols-2 sm:flex sm:justify-center sm:gap-4 lg:gap-8 gap-4 sm:flex-wrap">
@@ -98,7 +98,7 @@ export default function TechnologyStackSection() {
 
           {/* Front-End Integration */}
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-normal mb-6 sm:mb-8 lg:mb-10 text-gray-800">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-6 sm:mb-8 lg:mb-10 text-gray-800">
               Front-End Integration
             </h3>
             <div className="flex justify-center gap-4 sm:gap-6 lg:gap-8">

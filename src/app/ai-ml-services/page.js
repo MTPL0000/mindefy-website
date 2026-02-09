@@ -418,7 +418,7 @@ export default function ALMLandingPage() {
                 animate={contentZoomControls}
                 initial={{ scale: 1, opacity: 1 }}
               >
-                <h1 className="mb-6 font-poppins text-[2rem] lg:text-[2.5rem] xl:text-[3rem] 2xl:text-[3.5rem] font-normal text-[#3D3D3D]">
+                <h1 className="mb-6 font-poppins text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-normal text-[#3D3D3D]">
                   <div>Built With Data. Powered By AI.</div>
                   <div className="font-semibold mt-2">
                     Delivered For Impact.

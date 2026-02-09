@@ -50,7 +50,7 @@ export default function UnityUnrealFeatures() {
                 </ul>
               </div>
 
-              <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
+              <p className="text-sm sm:text-base text-[#444444] text-justify leading-relaxed">
                 Unity 3D is perfect for both startups and enterprises looking
                 for powerful yet agile game solutions.
               </p>
@@ -90,9 +90,9 @@ export default function UnityUnrealFeatures() {
                 </ul>
               </div>
 
-              <p className="text-sm sm:text-[1rem] text-[#444444] text-justify leading-relaxed">
-                Choose Unreal Engine when you want to push visual and
-                technical boundaries
+              <p className="text-sm sm:text-base text-[#444444] text-justify leading-relaxed">
+                Choose Unreal Engine when you want to push visual and technical
+                boundaries
               </p>
             </div>
 

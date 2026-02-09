@@ -7,10 +7,10 @@ export default function ResourceModels() {
     <section className="px-4 lg:px-0">
       <div className="max-w-[90%] md:max-w-310.5 mx-auto">
         <div className="text-center">
-          <p className="text-[#FF5225] mx-auto text-[1.25rem] md:text-[1.75rem] lg:text-[2rem] font-bold tracking-widest uppercase mb-4 md:mb-6">
+          <p className="text-[#FF5225] mx-auto text-xl md:text-3xl lg:text-3xl font-bold tracking-widest uppercase mb-4 md:mb-6">
             Resourcing Models at Mindefy
           </p>
-          <h2 className="text-center text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] font-semibold text-[#000000] mb-6 md:mb-8 lg:mb-11 px-2 md:px-0">
+          <h2 className="text-center text-lg md:text-xl lg:text-2xl font-semibold text-[#000000] mb-6 md:mb-8 lg:mb-11 px-2 md:px-0">
             <span className="font-normal">Resource </span>Long-term/Short-Term
             <span className="font-normal"> Assignments</span>
           </h2>
@@ -52,7 +52,7 @@ export default function ResourceModels() {
               }}
             >
               <div className="w-full md:w-[18rem] lg:w-87.5 h-12 md:h-16 lg:h-18 mb-3 md:mb-4.5">
-                <h3 className="font-semibold text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem]">
+                <h3 className="font-semibold text-lg md:text-xl lg:text-2xl">
                   {item.title}
                 </h3>
               </div>
@@ -66,7 +66,7 @@ export default function ResourceModels() {
                 />
               </div>
 
-              <p className="text-[0.75rem] md:text-sm font-normal pb-4 md:pb-7 w-full md:w-[18rem] lg:w-87.5 text-[#444444] leading-relaxed text-justify">
+              <p className="text-xs md:text-sm font-normal pb-4 md:pb-7 w-full md:w-[18rem] lg:w-87.5 text-[#444444] leading-relaxed text-justify">
                 {item.desc}
               </p>
             </div>

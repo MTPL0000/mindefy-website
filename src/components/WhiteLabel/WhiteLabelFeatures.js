@@ -66,11 +66,11 @@ export default function WhiteLabelFeatures() {
                   loading="lazy"
                 />
               </div>
-              <h3 className="font-semibold text-[1.25rem] sm:text-[1.5rem] mb-2.5 text-center lg:text-left">
+              <h3 className="font-semibold text-xl sm:text-2xl mb-2.5 text-center lg:text-left">
                 {item.title}
               </h3>
 
-              <p className="text-[0.8125rem] sm:text-sm font-normal text-[#444444] leading-relaxed text-justify">
+              <p className="text-xs sm:text-sm font-normal text-[#444444] leading-relaxed text-justify">
                 {item.desc}
               </p>
             </div>

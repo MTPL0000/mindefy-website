@@ -16,11 +16,11 @@ export default function SolutionCard({ card }) {
       </div>
 
       <div className="pl-3 lg:pl-2.5 pr-4 lg:pr-6 pb-6 lg:pb-9">
-        <h3 className="text-lg sm:text-xl lg:text-[1.5rem] font-semibold text-[#000000] mb-4 lg:mb-5">
+        <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#000000] mb-4 lg:mb-5">
           {card.title}
         </h3>
 
-        <p className="text-sm sm:text-base lg:text-[1rem] text-[#444444] leading-relaxed text-justify">
+        <p className="text-sm sm:text-base lg:text-base text-[#444444] leading-relaxed text-justify">
           {card.description}
         </p>
       </div>

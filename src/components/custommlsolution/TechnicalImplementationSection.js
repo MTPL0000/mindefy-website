@@ -12,7 +12,7 @@ export default function TechnicalImplementationSection() {
           <h2 className="text-2xl font-semibold text-[#2B7575] mb-4">
             TECHNICAL IMPLEMENTATION
           </h2>
-          <h2 className="text-[1.25rem] font-normal text-[#333333]">
+          <h2 className="text-xl font-normal text-[#333333]">
             The recommendation engine was built as follows (high-level
             overview):
           </h2>
@@ -26,12 +26,7 @@ export default function TechnicalImplementationSection() {
             >
               <div className="flex items-center justify-between">
                 <div className="relative mb-5 ml-6 mt-6 w-20 h-20">
-                  <Image
-                    src={step.icon}
-                    alt={step.alt}
-                    fill
-                    loading="lazy"
-                  />
+                  <Image src={step.icon} alt={step.alt} fill loading="lazy" />
                 </div>
                 <div className="text-7xl mr-7.5 font-normal text-[#3894FF26]">
                   {step.number}

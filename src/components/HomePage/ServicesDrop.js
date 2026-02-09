@@ -10,10 +10,10 @@ export default function ServicesDrop({ onItemClick }) {
         {/* Column 1: AI Development & Data Services + Business IT Solutions  */}
         <div className="space-y-4 sm:space-y-6">
           <div>
-            <h3 className="text-base sm:text-lg lg:text-[1.25rem] xl:text-[1.3rem] font-semibold text-[#332771] mb-2 lg:mb-3">
+            <h3 className="text-base sm:text-lg lg:text-xl xl:text-xl font-semibold text-[#332771] mb-2 lg:mb-3">
               AI Development & Data Services
             </h3>
-            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem] xl:text-[0.9rem]">
+            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-text-xs xl:text-sm">
               {groupedServices["AI Development & Data Services"]?.map(
                 (service) => (
                   <li key={service.id}>
@@ -31,10 +31,10 @@ export default function ServicesDrop({ onItemClick }) {
           </div>
 
           <div>
-            <h3 className="text-base sm:text-lg lg:text-[1.25rem] xl:text-[1.3rem] font-semibold text-[#332771] mb-2 lg:mb-3">
+            <h3 className="text-base sm:text-lg lg:text-xl xl:text-xl font-semibold text-[#332771] mb-2 lg:mb-3">
               Business IT Solutions
             </h3>
-            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem] xl:text-[0.9rem]">
+            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-text-xs xl:text-sm">
               {groupedServices["Business IT Solutions"]?.map((service) => (
                 <li key={service.id}>
                   <Link
@@ -53,10 +53,10 @@ export default function ServicesDrop({ onItemClick }) {
         {/* Column 2: Product Development + Game Development */}
         <div className="space-y-4 sm:space-y-6">
           <div>
-            <h3 className="text-base sm:text-lg lg:text-[1.25rem] xl:text-[1.3rem] font-semibold text-[#332771] mb-2 lg:mb-3">
+            <h3 className="text-base sm:text-lg lg:text-xl xl:text-xl font-semibold text-[#332771] mb-2 lg:mb-3">
               Product Development
             </h3>
-            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem] xl:text-[0.9rem]">
+            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-text-xs xl:text-sm">
               {groupedServices["Product Development"]?.map((service) => (
                 <li key={service.id}>
                   <Link
@@ -72,10 +72,10 @@ export default function ServicesDrop({ onItemClick }) {
           </div>
 
           <div>
-            <h3 className="text-base sm:text-lg lg:text-[1.25rem] xl:text-[1.3rem] font-semibold text-[#332771] mb-2 lg:mb-3">
+            <h3 className="text-base sm:text-lg lg:text-xl xl:text-xl font-semibold text-[#332771] mb-2 lg:mb-3">
               Game Development
             </h3>
-            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem] xl:text-[0.9rem]">
+            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-text-xs xl:text-sm">
               {groupedServices["Game Development"]?.map((service) => (
                 <li key={service.id}>
                   <Link
@@ -94,10 +94,10 @@ export default function ServicesDrop({ onItemClick }) {
         {/* Column 3: Cloud & Platform Engineering + E-commerce and Marketplace +  */}
         <div className="space-y-4 sm:space-y-6">
           <div>
-            <h3 className="text-base sm:text-lg lg:text-[1.25rem] xl:text-[1.3rem] font-semibold text-[#332771] mb-2 lg:mb-3">
+            <h3 className="text-base sm:text-lg lg:text-xl xl:text-xl font-semibold text-[#332771] mb-2 lg:mb-3">
               Cloud & Platform Engineering
             </h3>
-            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem] xl:text-[0.9rem]">
+            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-text-xs xl:text-sm">
               {groupedServices["Cloud & Platform Engineering"]?.map(
                 (service) => (
                   <li key={service.id}>
@@ -115,10 +115,10 @@ export default function ServicesDrop({ onItemClick }) {
           </div>
 
           <div>
-            <h3 className="text-base sm:text-lg lg:text-[1.25rem] xl:text-[1.3rem] font-semibold text-[#332771] mb-2 lg:mb-3">
+            <h3 className="text-base sm:text-lg lg:text-xl xl:text-xl font-semibold text-[#332771] mb-2 lg:mb-3">
               E-commerce and Marketplace
             </h3>
-            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-[0.85rem] xl:text-[0.9rem]">
+            <ul className="space-y-1 sm:space-y-1.5 lg:space-y-2 text-[#333333] font-medium text-xs sm:text-sm lg:text-text-xs xl:text-sm">
               {groupedServices["E-commerce and Marketplace"]?.map((service) => (
                 <li key={service.id}>
                   <Link

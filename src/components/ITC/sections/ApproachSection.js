@@ -5,10 +5,10 @@ export default function ApproachSection({ approach, features }) {
   return (
     <>
       <div className="mx-auto max-w-xs sm:max-w-2xl lg:max-w-251 mb-8 lg:mb-15 px-4 sm:px-6 lg:px-0">
-        <div className="text-[#2E0473] w-full lg:w-241 mx-0 lg:mx-5 text-lg sm:text-xl lg:text-[2rem] font-medium mb-2 lg:mb-2.5">
+        <div className="text-[#2E0473] w-full lg:w-241 mx-0 lg:mx-5 text-lg sm:text-xl lg:text-3xl font-medium mb-2 lg:mb-2.5">
           <p>What sets us apart</p>
         </div>
-        <div className="font-normal mx-0 lg:mx-5 text-sm sm:text-base lg:text-[1rem] text-justify text-[#000000]">
+        <div className="font-normal mx-0 lg:mx-5 text-sm sm:text-base lg:text-base text-justify text-[#000000]">
           <p>
             is our commitment to offering these services separately from
             development, allowing you the flexibility to choose only the
@@ -20,7 +20,7 @@ export default function ApproachSection({ approach, features }) {
       <section className="bg-white">
         <div className="max-w-full sm:max-w-4xl lg:max-w-290 mx-auto px-4 sm:px-6 lg:px-0">
           <div className="mb-8 lg:mb-15">
-            <div className="mb-8 lg:mb-15 h-auto lg:h-21 mx-auto text-center w-full sm:max-w-lg lg:w-[32.81rem] font-semibold text-lg sm:text-xl lg:text-[1.75rem] px-4 sm:px-0">
+            <div className="mb-8 lg:mb-15 h-auto lg:h-21 mx-auto text-center w-full sm:max-w-lg lg:w-[32.81rem] font-semibold text-lg sm:text-xl lg:text-3xl px-4 sm:px-0">
               <p>{approach.title}</p>
             </div>
             <div className="relative w-full h-48 sm:h-64 lg:h-120.5 mx-auto mb-12 lg:mb-29">

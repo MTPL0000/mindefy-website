@@ -1,4 +1,86 @@
 import Image from "next/image";
+import SolistackFeature from "./solistack/SolistackFeature";
+
+const features = [
+  {
+    title: "Automated Planning",
+    paragraphs: [
+      "Easily import orders and get the most effective routes & schedules, Constraints, Multi-driver, Workload balancing.",
+      "Soliroute gets you route planning results that work – in a matter of seconds. For your routes to work, they need to regard your business's real- world challenges while delivering cost-effective routes and schedules.",
+    ],
+    imageSrc: "/images/projects/ST-2.webp",
+    imageAlt: "soli-stack",
+    swapOnLg: true,
+    imageFirst: false,
+  },
+  {
+    title: "One Click Order Scheduling",
+    paragraphs: [
+      "Whether you need to record specific delivery or service time windows, account for specific vehicle availability, or meet specific clients, Soliroute can help you produce the most effective routes possible.",
+    ],
+    imageSrc: "/images/projects/ST-3.webp",
+    imageAlt: "soli-stack",
+    swapOnLg: false,
+    imageFirst: true,
+  },
+  {
+    title: "Live Tracking & ETA",
+    paragraphs: [
+      "Easily import orders and get the most effective routes & schedules, Constraints, Multi-driver, Workload balancing.",
+      "This feature helps you to seamlessly track your orders. See where your orders are at any time. What is done, who is on time, who is before. Easy to assign rush orders.",
+    ],
+    imageSrc: "/images/projects/ST-2.webp",
+    imageAlt: "soli-stack",
+    swapOnLg: true,
+    imageFirst: false,
+  },
+  {
+    title: "Proof Of Delivery",
+    paragraphs: [
+      "With Proof of Delivery, your delivery persons, technicians, and all other field staff can gather a range of applicable information — like Digital Signatures, prints and notes in real time via the Soliroute Mobile App. This Increases accuracy and Resolve all inquiries seamlessly.",
+    ],
+    imageSrc: "/images/projects/ST-4.webp",
+    imageAlt: "soli-stack",
+    swapOnLg: false,
+    imageFirst: true,
+  },
+  {
+    title: "Analytics",
+    paragraphs: [
+      "Auto-Induce detailed stats from route data. Identify drivers according to their work, reasons for service detainments, and more.",
+    ],
+    imageSrc: "/images/projects/ST-5.webp",
+    imageAlt: "soli-stack",
+    swapOnLg: true,
+    imageFirst: false,
+  },
+  {
+    title: "Driver Mobile App",
+    paragraphs: [
+      <>
+        Shares detailed routes directly to Drivers' phone. Orders, schedules,
+        navigation, and client details on one app. <br />
+        Whether you're a delivery person or a field service company, Soliroute
+        Driver App can help you streamline your work and stay connected with
+        your colleagues.
+      </>,
+    ],
+    imageSrc: "/images/projects/ST-6.webp",
+    imageAlt: "soli-stack",
+    swapOnLg: false,
+    imageFirst: true,
+  },
+  {
+    title: "Dark Mode Light Mode",
+    paragraphs: [
+      "Additionally, App is designed to be user-friendly. Its intuitive interface and different modes helps drivers to breeze through their daily routes and gives them quick and easy access to information with just a few taps.",
+    ],
+    imageSrc: "/images/projects/ST-7.webp",
+    imageAlt: "soli-stack",
+    swapOnLg: true,
+    imageFirst: false,
+  },
+];
 
 const Solistack = () => {
   return (
@@ -51,175 +133,17 @@ const Solistack = () => {
           <span className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#000000] text-center px-4">
             Solistack's Transformative Service Offerings
           </span>
-
-          {/* Feature 1 - Automated Planning */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 xl:gap-16 w-full">
-            <div className="flex flex-col items-start justify-center gap-3 md:gap-5 flex-1 order-2 lg:order-1">
-              <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
-                Automated Planning
-              </h4>
-              <p className="text-sm md:text-base font-normal text-[#000000] text-justify leading-relaxed">
-                Easily import orders and get the most effective routes &
-                schedules, Constraints, Multi-driver, Workload balancing.
-              </p>
-              <p className="text-sm md:text-base font-normal text-[#000000] text-justify leading-relaxed">
-                Soliroute gets you route planning results that work – in a
-                matter of seconds. For your routes to work, they need to regard
-                your business's real- world challenges while delivering
-                cost-effective routes and schedules.
-              </p>
-            </div>
-            <div className="relative aspect-square w-full max-w-md lg:max-w-lg xl:max-w-xl overflow-hidden flex-1 order-1 lg:order-2">
-              <Image
-                src="/images/projects/ST-2.webp"
-                alt="soli-stack"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-
-          {/* Feature 2 - One Click Order Scheduling */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 xl:gap-16 w-full">
-            <div className="relative aspect-square w-full max-w-md lg:max-w-lg xl:max-w-xl overflow-hidden flex-1 order-1">
-              <Image
-                src="/images/projects/ST-3.webp"
-                alt="soli-stack"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className="flex flex-col items-start justify-center gap-3 md:gap-5 flex-1 order-2">
-              <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
-                One Click Order Scheduling
-              </h4>
-              <p className="text-sm md:text-base font-normal text-[#000000] text-justify leading-relaxed">
-                Whether you need to record specific delivery or service time
-                windows, account for specific vehicle availability, or meet
-                specific clients, Soliroute can help you produce the most
-                effective routes possible.
-              </p>
-            </div>
-          </div>
-
-          {/* Feature 3 - Live Tracking & ETA */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 xl:gap-16 w-full">
-            <div className="flex flex-col items-start justify-center gap-3 md:gap-5 flex-1 order-2 lg:order-1">
-              <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
-                Live Tracking & ETA
-              </h4>
-              <p className="text-sm md:text-base font-normal text-[#000000] text-justify leading-relaxed">
-                Easily import orders and get the most effective routes &
-                schedules, Constraints, Multi-driver, Workload balancing.
-              </p>
-              <p className="text-sm md:text-base font-normal text-[#000000] text-justify leading-relaxed">
-                This feature helps you to seamlessly track your orders. See
-                where your orders are at any time. What is done, who is on time,
-                who is before. Easy to assign rush orders.
-              </p>
-            </div>
-            <div className="relative aspect-square w-full max-w-md lg:max-w-lg xl:max-w-xl overflow-hidden flex-1 order-1 lg:order-2">
-              <Image
-                src="/images/projects/ST-2.webp"
-                alt="soli-stack"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-
-          {/* Feature 4 - Proof Of Delivery */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 xl:gap-16 w-full">
-            <div className="relative aspect-square w-full max-w-md lg:max-w-lg xl:max-w-xl overflow-hidden flex-1 order-1">
-              <Image
-                src="/images/projects/ST-4.webp"
-                alt="soli-stack"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className="flex flex-col items-start justify-center gap-3 md:gap-5 flex-1 order-2">
-              <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
-                Proof Of Delivery
-              </h4>
-              <p className="text-sm md:text-base font-normal text-[#000000] text-justify leading-relaxed">
-                With Proof of Delivery, your delivery persons, technicians, and
-                all other field staff can gather a range of applicable
-                information — like Digital Signatures, prints and notes in real
-                time via the Soliroute Mobile App. This Increases accuracy and
-                Resolve all inquiries seamlessly.
-              </p>
-            </div>
-          </div>
-
-          {/* Feature 5 - Analytics */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 xl:gap-16 w-full">
-            <div className="flex flex-col items-start justify-center gap-3 md:gap-5 flex-1 order-2 lg:order-1">
-              <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
-                Analytics
-              </h4>
-              <p className="text-sm md:text-base font-normal text-[#000000] text-justify leading-relaxed">
-                Auto-Induce detailed stats from route data. Identify drivers
-                according to their work, reasons for service detainments, and
-                more.
-              </p>
-            </div>
-            <div className="relative aspect-square w-full max-w-md lg:max-w-lg xl:max-w-xl overflow-hidden flex-1 order-1 lg:order-2">
-              <Image
-                src="/images/projects/ST-5.webp"
-                alt="soli-stack"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-
-          {/* Feature 6 - Driver Mobile App */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 xl:gap-16 w-full">
-            <div className="relative aspect-square w-full max-w-md lg:max-w-lg xl:max-w-xl overflow-hidden flex-1 order-1">
-              <Image
-                src="/images/projects/ST-6.webp"
-                alt="soli-stack"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className="flex flex-col items-start justify-center gap-3 md:gap-5 flex-1 order-2">
-              <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
-                Driver Mobile App
-              </h4>
-              <p className="text-sm md:text-base font-normal text-[#000000] text-justify leading-relaxed">
-                Shares detailed routes directly to Drivers' phone. Orders,
-                schedules, navigation, and client details on one app. <br />
-                Whether you're a delivery person or a field service company,
-                Soliroute Driver App can help you streamline your work and stay
-                connected with your colleagues.
-              </p>
-            </div>
-          </div>
-
-          {/* Feature 7 - Dark Mode Light Mode */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 xl:gap-16 w-full">
-            <div className="flex flex-col items-start justify-center gap-3 md:gap-5 flex-1 order-2 lg:order-1">
-              <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#000000] relative w-fit">
-                Dark Mode Light Mode
-              </h4>
-              <p className="text-sm md:text-base font-normal text-[#000000] text-justify leading-relaxed">
-                Additionally, App is designed to be user-friendly. Its intuitive
-                interface and different modes helps drivers to breeze through
-                their daily routes and gives them quick and easy access to
-                information with just a few taps.
-              </p>
-            </div>
-            <div className="relative aspect-square w-full max-w-md lg:max-w-lg xl:max-w-xl overflow-hidden flex-1 order-1 lg:order-2">
-              <Image
-                src="/images/projects/ST-7.webp"
-                alt="soli-stack"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
+          {features.map((feature) => (
+            <SolistackFeature
+              key={feature.title}
+              title={feature.title}
+              paragraphs={feature.paragraphs}
+              imageSrc={feature.imageSrc}
+              imageAlt={feature.imageAlt}
+              swapOnLg={feature.swapOnLg}
+              imageFirst={feature.imageFirst}
+            />
+          ))}
         </div>
       </section>
     </div>
