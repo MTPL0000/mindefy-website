@@ -8,9 +8,9 @@ export default function IntroductionSection() {
     >
       <div className="max-w-4xl mx-auto">
         <div className="mb-8 sm:mb-10 lg:mb-12">
-          <p className="text-sm sm:text-base font-bold text-center mb-3 sm:mb-4 text-[#2B7575] uppercase tracking-wide sm:tracking-widest">
+          <h1 className="text-sm sm:text-base font-bold text-center mb-3 sm:mb-4 text-[#2B7575] uppercase tracking-wide sm:tracking-widest">
             Early Foods: Boosting Sales and Trust
-          </p>
+          </h1>
           <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-8 sm:mb-10 lg:mb-12 text-[#000000] leading-tight">
             ML Driven Recommendations
           </p>
