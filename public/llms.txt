@@ -1,23 +1,68 @@
-site: Mindefy Technologies Private Limited
+# Mindefy
 
-url: https://mindefy.tech
+> Mindefy is a digital transformation and AI solutions company building custom AI, data, cloud, and software products for startups and enterprises.
 
-description: Mindefy Technologies is a software development company providing AI solutions, web and mobile app development, AR/VR solutions, cloud engineering, and digital transformation services for startups and enterprises worldwide.
+Primary language: en
+Base URL: https://mindefy.tech
+Contact: https://mindefy.tech/#contact (email: rahul@mindefy.tech)
+Last updated: 2026-02-11
 
-primary_language: en
-region: Global
+## Company
+- [Home](https://mindefy.tech/): Company overview, services, products, and contact.
+- [About Mindefy](https://mindefy.tech/about-us-technology-innovators): Mission, values, and company background.
+- [Customer Testimonials](https://mindefy.tech/customer-testimonials-reviews): Client reviews and feedback.
+- [Site Map](https://mindefy.tech/site-map): Full list of pages.
 
-important_pages:
-- https://mindefy.tech/
-- https://mindefy.tech/custom-ai-solutions-enterprises
-- https://mindefy.tech/hybrid-app-development-services
-- https://mindefy.tech/cloud-engineering-services
-- https://mindefy.tech/ecommerce-marketplace-development
-- https://mindefy.tech/it-consulting-strategy
-- https://mindefy.tech/ar-vr-game-development
-- https://mindefy.tech/mindful-ux-design-user-experience
+## AI & Data
+- [AI & ML Services](https://mindefy.tech/ai-ml-services): Overview of AI and ML offerings.
+- [Custom AI Solutions for Enterprises](https://mindefy.tech/custom-ai-solutions-enterprises): Enterprise AI solutions and deployments.
+- [Machine Learning Services](https://mindefy.tech/machine-learning-services): ML development services.
+- [Custom Machine Learning Solutions](https://mindefy.tech/custom-machine-learning-solutions): Tailored ML solutions.
+- [Generative AI & Chatbot Development](https://mindefy.tech/generative-ai-chatbot-development): GenAI and chatbot development.
+- [Advanced Data Engineering Services](https://mindefy.tech/advanced-data-engineering-services): Data pipelines and analytics.
 
-sitemap: https://mindefy.tech/sitemap.xml
+## Product & App Development
+- [Web Application Development Solutions](https://mindefy.tech/web-application-development-solutions): Web product engineering.
+- [Android App Development Experts](https://mindefy.tech/android-app-development-experts): Android development services.
+- [iOS App Development Services](https://mindefy.tech/ios-app-development-services): iOS development services.
+- [Hybrid App Development Services](https://mindefy.tech/hybrid-app-development-services): Cross-platform app development.
+- [MVP Development & Startup Support](https://mindefy.tech/mvp-development-startup-support): MVP delivery and startup support.
+- [Startup Support Consulting](https://mindefy.tech/startup-support-consulting): Startup advisory services.
+- [Startup Incubation Consulting](https://mindefy.tech/startup-incubation-consulting-services): Incubation and growth support.
+- [Low-Code App Development Services](https://mindefy.tech/low-code-app-development-services): Low-code delivery.
+- [Agile & Rapid Development Practices](https://mindefy.tech/agile-rapid-development-practices): Agile delivery practices.
+- [White Label Software Solutions](https://mindefy.tech/white-label-software-solutions): White-label product builds.
+- [E-commerce Marketplace Development](https://mindefy.tech/ecommerce-marketplace-development): Marketplace platforms.
+- [Mindful UX Design & User Experience](https://mindefy.tech/mindful-ux-design-user-experience): UX research and design.
+- [Test Automation & QA Services](https://mindefy.tech/test-automation-qa-services): QA automation and testing.
 
-contact:
-- https://mindefy.tech/#contact 
+## Cloud, DevOps & Architecture
+- [Cloud Engineering Services](https://mindefy.tech/cloud-engineering-services): Cloud architecture and delivery.
+- [Cloud DevOps Engineering](https://mindefy.tech/cloud-devops-engineering): DevOps, CI/CD, and operations.
+- [Microservices Architecture Consulting](https://mindefy.tech/microservices-architecture-consulting): Microservices planning and implementation.
+
+## Enterprise & Business Solutions
+- [Digital Transformation Consulting](https://mindefy.tech/digital-transformation-consulting): Digital transformation strategy.
+- [IT Consulting & Strategy](https://mindefy.tech/it-consulting-strategy): Technology strategy services.
+- [Enterprise Software Solutions](https://mindefy.tech/enterprise-software-solutions): Enterprise application development.
+- [Business Process Management Solutions](https://mindefy.tech/business-process-management-solutions): BPM consulting and implementation.
+- [CRM Software Solutions](https://mindefy.tech/crm-software-solutions): CRM platforms and customization.
+- [Staff Augmentation Services](https://mindefy.tech/staff-augmentation-services): Team extension and talent.
+
+## Game & AR/VR
+- [AR/VR Game Development](https://mindefy.tech/ar-vr-game-development): Immersive experience development.
+- [Unity & Unreal Engine Development](https://mindefy.tech/unity-unreal-engine-development): Game engine development services.
+- [Game Animation & Graphics](https://mindefy.tech/game-animation-graphics): Art, animation, and graphics.
+
+## Products & Case Studies
+- [YourHour Screen Time App](https://mindefy.tech/yourhour-screentime-app): Digital wellbeing product.
+- [Spector Analytics Software](https://mindefy.tech/spector-analytics-software): Analytics platform case study.
+- [Early Foods E-commerce](https://mindefy.tech/early-foods-e-commerce): E-commerce case study.
+- [JEGO OTT Platform](https://mindefy.tech/jego-ott-platform): OTT platform case study.
+- [GreenBill Paperless Billing](https://mindefy.tech/greenbill-paperless-billing-software): Paperless billing case study.
+- [Memolect Learning App](https://mindefy.tech/memolect-learning-app): Learning app case study.
+- [Mach One Platform Services](https://mindefy.tech/mach-one-platform-services): Platform services case study.
+- [Soli Stack Integration Solutions](https://mindefy.tech/soli-stack-integration-solutions): Integration case study.
+
+## Optional
+- [Sitemap XML](https://mindefy.tech/sitemap.xml): Machine-readable site index.
