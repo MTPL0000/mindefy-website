@@ -294,9 +294,9 @@ export const projectsData = [
     description: "Paperless billing software",
   },
   {
-    id: "machone",
-    title: "MachOne",
-    route: "/mach-one-platform-services",
-    description: "Platform services",
+    id: "spector",
+    title: "Spector",
+    route: "/spector-analytics-software",
+    description: "AI-driven asset health platform",
   },
 ];
