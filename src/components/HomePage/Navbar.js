@@ -555,14 +555,16 @@ export default function Navbar() {
               className="relative"
               onMouseEnter={() => setShowProductsDropdown(true)}
               onMouseLeave={() => setShowProductsDropdown(false)}
-              style={{
-                transform: showAIInNavbar
-                  ? "translateX(0)"
-                  : "translateX(-30px)",
-                transition: "transform 0.5s ease-out",
-              }}
             >
-              <p className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap">
+              <p
+                className="flex items-center justify-center gap-1 hover:text-[#2c2178] h-12 mt-1.5 cursor-pointer py-2 whitespace-nowrap"
+                style={{
+                  transform: showAIInNavbar
+                    ? "translateX(0)"
+                    : "translateX(-30px)",
+                  transition: "transform 0.5s ease-out",
+                }}
+              >
                 Products
                 <ChevronDown
                   className={`object-contain transition-transform w-5 h-5 ${
@@ -573,15 +575,18 @@ export default function Navbar() {
 
               {/* Products Dropdown */}
               {showProductsDropdown && (
-                <div
-                  className={`absolute left-1/2 transform -translate-x-1/2 top-12 z-40 transition-opacity duration-200 ease-in-out ${
-                    productsTransitioning ? "opacity-0" : "opacity-100"
-                  }`}
-                >
-                  <ProductsDropdown
-                    onItemClick={handleDesktopDropdownItemClick}
-                  />
-                </div>
+                <>
+                  <div className="fixed left-0 top-16 w-full h-20 z-30"></div>
+                  <div
+                    className={`fixed left-0 top-18 w-full px-2 sm:px-4 flex justify-center z-40 transition-opacity duration-200 ease-in-out ${
+                      productsTransitioning ? "opacity-0" : "opacity-100"
+                    }`}
+                  >
+                    <ProductsDropdown
+                      onItemClick={handleDesktopDropdownItemClick}
+                    />
+                  </div>
+                </>
               )}
             </div>
 
