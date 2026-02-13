@@ -40,6 +40,8 @@ const projectCardConfig = {
   },
 };
 
+const headerColorCycle = ["#5E4EA0", "#FF7A57", "#6F6F7E"];
+
 export const ProjectDropdown = ({ onItemClick }) => {
   const [activeView, setActiveView] = useState("featured");
 
@@ -141,8 +143,10 @@ export const ProjectDropdown = ({ onItemClick }) => {
           {activeView === "featured" ? (
             <div className="max-h-[52vh] overflow-y-auto pr-2">
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                {projectsData.map((project) => {
+                {projectsData.map((project, index) => {
                   const meta = projectCardConfig[project.id] || {};
+                  const headerColor =
+                    headerColorCycle[index % headerColorCycle.length];
                   return (
                     <Link
                       key={project.id}
@@ -151,28 +155,28 @@ export const ProjectDropdown = ({ onItemClick }) => {
                       className="group block overflow-hidden rounded-2xl border border-[#ecded5] bg-gradient-to-br from-[#ffffff] via-[#fff9f4] to-[#f6f1ff] transition-all hover:-translate-y-0.5 hover:border-[#FF5225]"
                     >
                       <div
-                        className={`relative flex h-24 items-center justify-center bg-gradient-to-br from-[#fffaf6] via-[#fff4ee] to-[#f5f1ff]`}
+                        className="relative flex h-24 items-center justify-center px-4 py-3"
+                        style={{ backgroundColor: headerColor }}
                       >
-                        <div className="pointer-events-none absolute -right-9 -top-5 h-28 w-32 rounded-full bg-[#ffdbcf] opacity-85 blur-xl"></div>
-                        <div className="pointer-events-none absolute -left-8 -bottom-4 h-28 w-32 rounded-full bg-[#d9d3ff] opacity-80 blur-xl"></div>
-                        <div className="relative h-18 w-24">
-                          <Image
-                            src={meta.logo || "/images/nav-logo.svg"}
-                            alt={meta.logoAlt || `${project.title} logo`}
-                            fill
-                            className="object-contain"
-                            sizes="96px"
-                          />
-                        </div>
+                        <p className="relative z-10 text-3xl font-bold text-white">
+                          {project.title}
+                        </p>
                       </div>
 
                       <div className="px-4 py-4">
-                        <h5 className="text-lg font-bold text-[#332771] transition-colors">
-                          {project.title}
-                        </h5>
-                        <p className="mt-1 text-sm text-[#4f4f5f]">
-                          {meta.summary || project.description}
-                        </p>
+                        <div className="flex items-center gap-3">
+                          <div className="relative mb-2 h-11 w-24">
+                            <Image
+                              src={meta.logo || "/images/nav-logo.svg"}
+                              alt={meta.logoAlt || `${project.title} logo`}
+                              fill
+                              className="object-contain object-left"
+                            />
+                          </div>
+                          <p className="mt-1 text-sm text-[#4f4f5f]">
+                            {meta.summary || project.description}
+                          </p>
+                        </div>
                         <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#332771] transition-colors group-hover:text-[#FF5225]">
                           Read Case Study
                           <ArrowRight size={16} />

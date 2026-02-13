@@ -295,7 +295,7 @@ export const projectsData = [
   },
   {
     id: "spector",
-    title: "Spector",
+    title: "Spector.ai",
     route: "/spector-analytics-software",
     description: "AI-driven asset health platform",
   },
