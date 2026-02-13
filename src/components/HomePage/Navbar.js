@@ -526,7 +526,6 @@ export default function Navbar() {
                   }`}
                 />
               </p>
-              
 
               {/* Services Dropdown with hover bridge */}
               {showServicesDropdown && (
@@ -543,6 +542,7 @@ export default function Navbar() {
                     <div className="w-full max-w-none">
                       <ServicesDrop
                         onItemClick={handleDesktopDropdownItemClick}
+                        onCtaClick={scrollToContact}
                       />
                     </div>
                   </div>
