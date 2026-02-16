@@ -36,9 +36,8 @@ export default function ProductsDropdown({ onItemClick }) {
                   className="object-contain"
                 />
               </div>
-              <h4 className="text-4xl font-bold leading-tight lg:text-5xl">
-                <span className="text-[#332771]">Your</span>
-                <span className="text-[#21ABE1]">Hour</span>
+              <h4 className="text-4xl text-[#21ABE1] font-bold leading-tight lg:text-5xl">
+                YourHour
               </h4>
             </div>
 
@@ -48,13 +47,13 @@ export default function ProductsDropdown({ onItemClick }) {
             </p>
           </div>
 
-          <p className="max-w-xl text-base leading-relaxed text-[#4f4f5f]">
+          <p className="max-w-xl text-base font-medium leading-relaxed text-[#4f4f5f]">
             Join millions of users regaining control of their time. Track usage,
             set challenge timers, and get personalized reports to boost
             productivity.
           </p>
 
-          <div className="mt-7 space-y-3 text-base text-[#3f4c63]">
+          <div className="mt-7 space-y-3 text-base text-[#3f4c63] font-medium">
             <div className="group/feature flex items-center gap-3 rounded-xl px-2 py-1.5 transition-all hover:bg-[#fff7f2]">
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-[#efe3da] bg-white text-[#332771]">
                 <PieChart size={17} />
@@ -79,7 +78,7 @@ export default function ProductsDropdown({ onItemClick }) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={onItemClick}
-              className="group/cta inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-[#332771] via-[#4a3aff] to-[#FF5225] px-7 py-3.5 text-base font-bold text-white shadow-[0_12px_24px_-16px_rgba(74,58,255,0.65)] transition-all hover:-translate-y-0.5 hover:brightness-105"
+              className="group/cta inline-flex items-center gap-2 rounded-2xl bg-white text-[#FF5225] hover:text-[#332771] border border-[#FF5225] hover:border-[#332771] px-7 py-3.5 text-base font-bold transition-all hover:-translate-y-0.5 hover:brightness-105"
             >
               Get Started Free
             </a>
@@ -87,7 +86,7 @@ export default function ProductsDropdown({ onItemClick }) {
             <Link
               href="/yourhour-screentime-app"
               onClick={onItemClick}
-              className="group/cta inline-flex items-center gap-2 rounded-2xl border border-[#e3d6cd] bg-white px-7 py-3.5 text-base font-bold text-[#332771] transition-all hover:-translate-y-0.5 hover:border-[#FF5225] hover:text-[#FF5225] hover:shadow-[0_10px_22px_-16px_rgba(255,82,37,0.7)]"
+              className="group/cta inline-flex items-center gap-2 rounded-2xl border border-[#e3d6cd] bg-white px-7 py-3.5 text-base font-bold text-[#332771] transition-all hover:-translate-y-0.5 hover:border-[#332771]"
             >
               View Features
               <ArrowRight
@@ -98,10 +97,7 @@ export default function ProductsDropdown({ onItemClick }) {
           </div>
         </div>
 
-        <div className="relative overflow-hidden border-t border-[#eadfd7] bg-gradient-to-br from-[#fff8f4] via-[#fff4ef] to-[#faf4ff] md:border-t-0 md:border-l">
-          <div className="pointer-events-none absolute -top-10 right-8 h-28 w-28 rounded-full bg-[#e1d8ff] opacity-50 blur-2xl"></div>
-          <div className="pointer-events-none absolute bottom-6 left-8 h-24 w-24 rounded-full bg-[#ffd8ca] opacity-55 blur-2xl"></div>
-
+        <div className="relative overflow-hidden border-t border-[#eadfd7] bg-[#ffff] md:border-t-0 md:border-l">
           <div className="relative mx-auto min-h-[280px] w-full max-w-[460px] md:h-full">
             <Image
               src="/images/yourhour/yourhour-mockup.webp"

@@ -30,18 +30,14 @@ const sectionConfig = [
     id: "ai-data",
     label: "AI Development & Data Services",
     title: "AI Development & Data Services",
-    highlight: "Core AI & Data Services",
+    highlight: "AI DEVELOPMENT",
     icon: Brain,
     pillIds: [
       "custom-ai-solutions-enterprises",
-      "machine-learning-services",
       "generative-ai-chatbot-development",
-      "advanced-data-engineering-services",
     ],
     cardIds: [
-      "custom-ai-solutions-enterprises",
       "machine-learning-services",
-      "generative-ai-chatbot-development",
       "advanced-data-engineering-services",
     ],
   },
@@ -49,18 +45,14 @@ const sectionConfig = [
     id: "product",
     label: "Product Development",
     title: "Product Development",
-    highlight: "Mobile, Web and Product Engineering",
+    highlight: "APP DEVELOPMENT",
     icon: Smartphone,
     pillIds: [
       "android-app-development-experts",
       "ios-app-development-services",
       "hybrid-app-development-services",
-      "web-app-development",
     ],
     cardIds: [
-      "android-app-development-experts",
-      "ios-app-development-services",
-      "hybrid-app-development-services",
       "web-app-development",
       "mvp-development-startup-support",
       "mindful-ux-design-user-experience",
@@ -70,77 +62,58 @@ const sectionConfig = [
     id: "cloud-platform",
     label: "Cloud & Platform Engineering",
     title: "Cloud & Platform Engineering",
-    highlight: "Cloud, DevOps and Platform Engineering",
+    highlight: "CLOUD & DEVOPS",
     icon: Cloud,
     pillIds: [
       "cloud-engineering-services",
       "cloud-devops-engineering",
       "digital-transformation-consulting",
-      "test-automation-qa-services",
     ],
     cardIds: [
-      "cloud-engineering-services",
-      "cloud-devops-engineering",
-      "digital-transformation-consulting",
       "test-automation-qa-services",
       "microservices-architecture-consulting",
-    ],
-  },
-  {
-    id: "business-it",
-    label: "Business IT Solutions",
-    title: "Business IT Solutions",
-    highlight: "Strategic Business Technology Services",
-    icon: Building2,
-    pillIds: [
-      "IT Consulting Services",
-      "enterprise-software-solutions",
-      "staff-augmentation-services",
-      "startup-support-consulting",
-    ],
-    cardIds: [
-      "IT Consulting Services",
-      "enterprise-software-solutions",
-      "staff-augmentation-services",
-      "startup-support-consulting",
-      "startup-incubation-consulting-services",
-      "white-label-software-solutions",
     ],
   },
   {
     id: "game",
     label: "Game Development",
     title: "Game Development",
-    highlight: "Immersive Game Experiences",
+    highlight: "GAME DEVELOPMENT",
     icon: Gamepad2,
     pillIds: [
       "2D & 3D Game Animation",
       "Unity and unreal Game Development",
       "AR VR Game Development",
     ],
-    cardIds: [
-      "2D & 3D Game Animation",
-      "Unity and unreal Game Development",
-      "AR VR Game Development",
-    ],
+    cardIds: [""],
   },
   {
     id: "ecom-marketplace",
     label: "E-commerce and Marketplace",
     title: "E-commerce and Marketplace",
-    highlight: "Commerce and Business Platform Services",
+    highlight: "E-COMMERCE DEVELOPMENT",
     icon: ShoppingCart,
-    pillIds: [
-      "ecommerce-marketplace-development",
-      "crm-software-solutions",
+    pillIds: ["ecommerce-marketplace-development", "crm-software-solutions"],
+    cardIds: [
       "business-process-management-solutions",
       "low-code-app-development-services",
     ],
+  },
+  {
+    id: "business-it",
+    label: "Business IT Solutions",
+    title: "Business IT Solutions",
+    highlight: "ENTERPRISE IT SOLUTIONS",
+    icon: Building2,
+    pillIds: [
+      "IT Consulting Services",
+      "enterprise-software-solutions",
+      "staff-augmentation-services",
+    ],
     cardIds: [
-      "ecommerce-marketplace-development",
-      "crm-software-solutions",
-      "business-process-management-solutions",
-      "low-code-app-development-services",
+      "startup-support-consulting",
+      "startup-incubation-consulting-services",
+      "white-label-software-solutions",
     ],
   },
 ];
@@ -149,13 +122,13 @@ const pillIconMap = {
   "ios-app-development-services": Apple,
   "android-app-development-experts": Smartphone,
   "hybrid-app-development-services": Smartphone,
-  "web-app-development": Globe,
   "generative-ai-chatbot-development": Sparkles,
   "custom-ai-solutions-enterprises": Brain,
-  "machine-learning-services": Brain,
   "cloud-devops-engineering": Cloud,
   "ecommerce-marketplace-development": ShoppingCart,
   "IT Consulting Services": Building2,
+  "2D & 3D Game Animation": Gamepad2,
+  "Unity and unreal Game Development": Gamepad2,
 };
 
 function getServicesByIds(ids) {
@@ -181,7 +154,7 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
     <div className="max-w-7xl mx-auto pt-3 px-1 pointer-events-auto">
       <div className="overflow-hidden rounded-[18px] border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)]">
         <div className="grid grid-cols-[34%_66%] min-h-[500px]">
-          <aside className="border-r border-[#eadfd7] bg-[#fff6f1] p-6">
+          <aside className="border-r border-[#eadfd7] bg-[#ffff] p-6">
             <h3 className="mb-4 px-2 text-[12px] font-bold uppercase tracking-[0.16em] text-[#8f8078]">
               Core Authorities
             </h3>
@@ -199,7 +172,7 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
                     className={`flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left border transition-all cursor-pointer ${
                       active
                         ? "border-[#e5d8ce] bg-white text-[#332771] shadow-sm"
-                        : "border-transparent bg-transparent text-[#3B3C4A] hover:bg-white/85 hover:border-[#eadfd6]"
+                        : "border-transparent bg-transparent text-[#3B3C4A] hover:bg-white/90 hover:border-[#eadfd6]"
                     }`}
                   >
                     <Icon
@@ -217,10 +190,10 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
 
           <div className="p-5">
             <h4 className="mb-6 text-xs font-bold uppercase tracking-[0.16em] text-[#FF5225]">
-              {String(sectionIndex).padStart(2, "0")}. {section.title}
+              {section.title}
             </h4>
 
-            <div className="mb-6 rounded-2xl border border-[#efdfd5] bg-[#fff8f3] p-5">
+            <div className="mb-6 rounded-2xl border border-[#efdfd5] bg-[#ffff] p-5">
               <h5 className="mb-4 text-base font-semibold text-[#212353]">
                 {section.highlight}
               </h5>
@@ -243,20 +216,22 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 gap-4">
               {cards.map((service) => (
                 <Link
                   key={service.id}
                   href={service.route}
                   onClick={onItemClick}
-                  className="group rounded-2xl border border-[#ecded5] bg-white px-4 py-3 transition-all hover:-translate-y-0.5 hover:bg-[#fffaf5] hover:border-[#FF5225]"
+                  className="group rounded-2xl bg-white px-2 transition-all hover:-translate-y-0.5 hover:bg-[#fffaf5]"
                 >
-                  <h6 className="mb-1 text-base font-semibold text-[#332771] transition-colors group-hover:text-[#FF5225]">
-                    {service.title}
-                  </h6>
-                  <p className="text-xs font-normal text-[#444444]">
-                    {service.description}
-                  </p>
+                  <div>
+                    <h6 className="mb-1 text-base font-semibold text-[#332771] transition-colors group-hover:text-[#FF5225]">
+                      {service.title}
+                    </h6>
+                    <p className="text-xs font-normal text-[#444444]">
+                      {service.description}
+                    </p>
+                  </div>
                 </Link>
               ))}
             </div>

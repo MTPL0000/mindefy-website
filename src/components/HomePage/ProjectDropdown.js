@@ -51,7 +51,7 @@ export const ProjectDropdown = ({ onItemClick }) => {
   return (
     <div className="w-full max-w-7xl mx-auto pt-3 px-1 overflow-hidden rounded-[18px] border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed]">
       <div className="grid lg:grid-cols-[31%_69%] min-h-[500px]">
-        <aside className="flex flex-col justify-between border-b border-[#eadfd7] bg-[#fff6f1] p-6 lg:border-b-0 lg:border-r">
+        <aside className="flex flex-col justify-between border-b border-[#eadfd7] bg-[#ffff] p-6 lg:border-b-0 lg:border-r">
           <div>
             <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.16em] text-[#8f8078]">
               Our Portfolio
