@@ -27,7 +27,7 @@ export default function ProductsDropdown({ onItemClick }) {
 
           <div className="relative mb-4">
             <div className="mb-2 flex items-center gap-1">
-              <div className="relative h-12 w-12 shrink-0">
+              <div className="relative h-14 w-12 shrink-0">
                 <Image
                   src="/images/yourhour/yourhour-logo.svg"
                   alt="YourHour icon"
@@ -36,14 +36,13 @@ export default function ProductsDropdown({ onItemClick }) {
                   className="object-contain"
                 />
               </div>
-              <h4 className="text-4xl text-[#21ABE1] font-bold leading-tight lg:text-5xl">
+              <h4 className="text-4xl text-[#21ABE1] font-bold lg:text-5xl">
                 YourHour
               </h4>
             </div>
 
-            <p className="mt-2 text-xl font-semibold leading-tight text-[#332771] sm:text-2xl">
-              Cure Phone Addiction &<br />
-              Beat Procrastination.
+            <p className="mt-4 text-xl font-bold text-[#332771] sm:text-2xl">
+              Cure Phone Addiction & Beat Procrastination.
             </p>
           </div>
 
@@ -72,13 +71,13 @@ export default function ProductsDropdown({ onItemClick }) {
             </div>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center gap-5">
             <a
               href="https://play.google.com/store/apps/details?id=com.mindefy.phoneaddiction.mobilepe&hl=en_IN&gl=US"
               target="_blank"
               rel="noopener noreferrer"
               onClick={onItemClick}
-              className="group/cta inline-flex items-center gap-2 rounded-2xl bg-white text-[#FF5225] hover:text-[#332771] border border-[#FF5225] hover:border-[#332771] px-7 py-3.5 text-base font-bold transition-all hover:-translate-y-0.5 hover:brightness-105"
+              className="group/cta inline-flex items-center gap-2 rounded-full text-black border border-black px-6 py-3 text-base font-semibold opacity-85 transition-all hover:bg-black hover:text-white hover:border-black hover:-translate-y-1 hover:opacity-95"
             >
               Get Started Free
             </a>
@@ -86,7 +85,7 @@ export default function ProductsDropdown({ onItemClick }) {
             <Link
               href="/yourhour-screentime-app"
               onClick={onItemClick}
-              className="group/cta inline-flex items-center gap-2 rounded-2xl border border-[#e3d6cd] bg-white px-7 py-3.5 text-base font-bold text-[#332771] transition-all hover:-translate-y-0.5 hover:border-[#332771]"
+              className="group/cta inline-flex items-center gap-2 rounded-full border border-black bg-black px-6 py-3 text-base font-semibold text-white opacity-85 transition-all hover:-translate-y-1 hover:opacity-95"
             >
               View Features
               <ArrowRight
