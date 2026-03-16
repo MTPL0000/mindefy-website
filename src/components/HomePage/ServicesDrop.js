@@ -151,7 +151,7 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
     sectionConfig.findIndex((item) => item.id === section.id) + 1;
 
   return (
-    <div className="max-w-7xl mx-auto pt-3 px-1 pointer-events-auto">
+    <div className="max-w-7xl mx-auto pt-2 px-1 pointer-events-auto">
       <div className="overflow-hidden rounded-[18px] border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)]">
         <div className="grid grid-cols-[34%_66%] min-h-[500px]">
           <aside className="border-r border-[#eadfd7] bg-[#ffff] p-6">
@@ -222,7 +222,7 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
                   key={service.id}
                   href={service.route}
                   onClick={onItemClick}
-                  className="group rounded-2xl bg-white px-2 transition-all hover:-translate-y-0.5 hover:bg-[#fffaf5]"
+                  className="group rounded-2xl bg-white px-3 py-2 transition-all hover:-translate-y-0.5 hover:bg-[#fffaf5]"
                 >
                   <div>
                     <h6 className="mb-1 text-base font-semibold text-[#332771] transition-colors group-hover:text-[#FF5225]">

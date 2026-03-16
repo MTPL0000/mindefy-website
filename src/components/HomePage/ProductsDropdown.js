@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle2, Hand, PieChart, Star } from "lucide-react";
 
 export default function ProductsDropdown({ onItemClick }) {
   return (
-    <div className="group w-full max-w-[940px] overflow-hidden font-poppins rounded-[18px] border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)] transition-shadow duration-300 hover:shadow-[0_36px_80px_-44px_rgba(20,24,34,0.5)]">
+    <div className="group w-full max-w-[940px] pt-2 overflow-hidden font-poppins rounded-[18px] border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)] transition-shadow duration-300 hover:shadow-[0_36px_80px_-44px_rgba(20,24,34,0.5)]">
       <div className="grid items-stretch md:grid-cols-[52%_48%]">
         <div className="relative overflow-hidden p-6 lg:p-8">
           <div className="pointer-events-none absolute -left-12 top-20 h-28 w-28 rounded-full bg-[#ffe0d3] opacity-55 blur-2xl"></div>
@@ -52,7 +52,7 @@ export default function ProductsDropdown({ onItemClick }) {
             productivity.
           </p>
 
-          <div className="mt-7 space-y-3 text-base text-[#3f4c63] font-medium">
+          <div className="mt-7 space-y-1.5 text-base text-[#3f4c63] font-medium">
             <div className="group/feature flex items-center gap-3 rounded-xl px-2 py-1.5 transition-all hover:bg-[#fff7f2]">
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-[#efe3da] bg-white text-[#332771]">
                 <PieChart size={17} />

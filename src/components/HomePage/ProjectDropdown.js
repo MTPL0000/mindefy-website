@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { projectsData } from "@/config/servicesConfig";
-import { ArrowRight, List, Rocket, Star } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const projectCardConfig = {
   memolect: {
@@ -37,170 +36,84 @@ const projectCardConfig = {
     logoAlt: "Spector.ai logo",
     summary:
       "360° Asset Health Platform powered by AI and AI Agents for industry.",
+    accent: "#f2e9ff",
   },
 };
 
-const headerColorCycle = ["#5E4EA0", "#FF7A57", "#6F6F7E"];
+const accentColorCycle = ["#e7f0ff", "#fff1e8", "#ecf6ed", "#f3edff"];
 
 export const ProjectDropdown = ({ onItemClick }) => {
-  const [activeView, setActiveView] = useState("featured");
-
-  const listHeading =
-    activeView === "featured" ? "Success Stories" : "All Projects List";
-
   return (
-    <div className="w-full max-w-7xl mx-auto pt-3 px-1 overflow-hidden rounded-[18px] border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed]">
-      <div className="grid lg:grid-cols-[31%_69%] min-h-[500px]">
-        <aside className="flex flex-col justify-between border-b border-[#eadfd7] bg-[#ffff] p-6 lg:border-b-0 lg:border-r">
-          <div>
-            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.16em] text-[#8f8078]">
-              Our Portfolio
+    <div className="group w-full max-w-5xl pt-2 overflow-hidden font-poppins rounded-[18px] border border-[#e8ddd4] bg-[#ffffff] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)] transition-shadow duration-300 hover:shadow-[0_36px_80px_-44px_rgba(20,24,34,0.5)]">
+      <div className="relative px-5 py-6 sm:px-8 sm:py-8">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+          <div className="flex flex-col gap-2">
+            <p className="text-xs font-bold uppercase text-[#FF5225]">
+              Success Stories
+            </p>
+            <h3 className="text-2xl font-bold text-[#332771]">
+              Projects that mirror your screenshot layout
             </h3>
-
-            <div className="space-y-2">
-              <button
-                type="button"
-                onClick={() => setActiveView("featured")}
-                onMouseEnter={() => setActiveView("featured")}
-                onFocus={() => setActiveView("featured")}
-                className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-all cursor-pointer ${
-                  activeView === "featured"
-                    ? "border-[#e5d8ce] bg-white text-[#332771] shadow-sm"
-                    : "border-transparent bg-transparent text-[#3B3C4A] hover:border-[#eadfd6] hover:bg-white"
-                }`}
-              >
-                <Star
-                  size={18}
-                  className={
-                    activeView === "featured"
-                      ? "text-[#FF5225]"
-                      : "text-[#332771]"
-                  }
-                />
-                <span className="text-base font-semibold">Success Stories</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setActiveView("all")}
-                onMouseEnter={() => setActiveView("all")}
-                onFocus={() => setActiveView("all")}
-                className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-all cursor-pointer ${
-                  activeView === "all"
-                    ? "border-[#e5d8ce] bg-white text-[#332771] shadow-sm"
-                    : "border-transparent bg-transparent text-[#3B3C4A] hover:border-[#eadfd6] hover:bg-white"
-                }`}
-              >
-                <List
-                  size={18}
-                  className={
-                    activeView === "all" ? "text-[#FF5225]" : "text-[#332771]"
-                  }
-                />
-                <span className="text-base font-semibold">All Projects</span>
-              </button>
-            </div>
+            <p className="text-sm text-[#4f4f5f] font-medium">
+              Explore the products and platforms we have shipped recently.
+            </p>
           </div>
 
-          <div className="group relative mt-8 overflow-hidden rounded-2xl border border-[#ecded4] bg-gradient-to-br from-[#fffaf6] via-[#fff4ee] to-[#f5f1ff] px-4 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
-            <div className="pointer-events-none absolute -right-9 -top-10 h-24 w-24 rounded-full bg-[#ffdbcf] opacity-55 blur-xl"></div>
-            <div className="pointer-events-none absolute -left-8 -bottom-9 h-24 w-24 rounded-full bg-[#d9d3ff] opacity-60 blur-xl"></div>
+          <Link
+            href="/mindful-ux-design-user-experience"
+            onClick={onItemClick}
+            className="inline-flex items-center gap-1 text-sm font-semibold text-[#332771] hover:text-[#FF5225]"
+          >
+            View all case studies
+            <ArrowRight
+              size={16}
+              className="transition-transform group-hover:translate-x-0.5"
+            />
+          </Link>
+        </div>
 
-            <div className="relative flex items-start gap-3">
-              <span className="inline-flex p-2 items-center justify-center rounded-full bg-gradient-to-br from-[#332771] to-[#FF5225] text-white">
-                <Rocket size={18} />
-              </span>
-              <div>
-                <p className="text-sm font-bold text-[#332771]">
-                  Have an idea?
-                </p>
-                <p className="mt-1 text-xs text-[#53556a]">
-                  Explore real delivery stories and outcomes from our case
-                  studies.
-                </p>
-              </div>
-            </div>
+        <div className="mt-6 max-h-[68vh] overflow-y-auto pr-1">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6">
+            {projectsData.map((project, index) => {
+              const meta = projectCardConfig[project.id] || {};
+              const accent =
+                meta.accent ||
+                accentColorCycle[index % accentColorCycle.length];
 
-            <Link
-              href="/mindful-ux-design-user-experience"
-              onClick={onItemClick}
-              className="relative mt-4 inline-flex items-center gap-1 rounded-full bg-white/85 px-4 py-2 text-xs font-bold text-[#332771] transition-all hover:bg-white hover:text-[#FF5225]"
-            >
-              View Case Studies
-              <ArrowRight
-                size={16}
-                className="transition-transform group-hover:translate-x-0.5"
-              />
-            </Link>
-          </div>
-        </aside>
-
-        <div className="p-6 lg:p-8">
-          <h4 className="mb-6 text-xs font-bold uppercase tracking-[0.16em] text-[#FF5225]">
-            {listHeading}
-          </h4>
-
-          {activeView === "featured" ? (
-            <div className="max-h-[52vh] overflow-y-auto pr-2">
-              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                {projectsData.map((project, index) => {
-                  const meta = projectCardConfig[project.id] || {};
-                  const headerColor =
-                    headerColorCycle[index % headerColorCycle.length];
-                  return (
-                    <Link
-                      key={project.id}
-                      href={project.route}
-                      onClick={onItemClick}
-                      className="group block overflow-hidden rounded-2xl border border-[#ecded5] bg-gradient-to-br from-[#ffffff] via-[#fff9f4] to-[#f6f1ff] transition-all hover:-translate-y-0.5 hover:border-[#FF5225]"
-                    >
-                      <div
-                        className="relative flex h-24 items-center justify-center px-4 py-3"
-                        style={{ backgroundColor: headerColor }}
-                      >
-                        <p className="relative z-10 text-3xl font-bold text-white">
-                          {project.title}
-                        </p>
-                      </div>
-
-                      <div className="px-4 py-4">
-                        <div className="flex items-center gap-3">
-                          <div className="relative mb-2 h-11 w-24">
-                            <Image
-                              src={meta.logo || "/images/nav-logo.svg"}
-                              alt={meta.logoAlt || `${project.title} logo`}
-                              fill
-                              className="object-contain object-left"
-                            />
-                          </div>
-                          <p className="mt-1 text-sm text-[#4f4f5f]">
-                            {meta.summary || project.description}
-                          </p>
-                        </div>
-                        <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#332771] transition-colors group-hover:text-[#FF5225]">
-                          Read Case Study
-                          <ArrowRight size={16} />
-                        </span>
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-          ) : (
-            <div className="max-h-[52vh] overflow-y-auto pr-2">
-              <div className="space-y-4">
-                {projectsData.map((project) => (
+              return (
+                <Link
+                  key={project.id}
+                  href={project.route}
+                  onClick={onItemClick}
+                  className="group/card relative flex items-start gap-4 rounded-2xl border border-[#ecded5] bg-white px-4 py-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_-28px_rgba(51,39,113,0.35)]"
+                >
                   <div
-                    key={project.id}
-                    className="rounded-xl border border-[#ecded5] bg-white px-4 py-3 text-base font-medium text-[#332771]"
+                    className="flex h-18 w-18 shrink-0 items-center justify-center rounded-xl border border-[#e6dcd2]"
+                    style={{ backgroundColor: accent }}
                   >
-                    {project.title}
+                    <div className="relative h-12 w-12">
+                      <Image
+                        src={meta.logo || "/images/nav-logo.svg"}
+                        alt={meta.logoAlt || `${project.title} logo`}
+                        fill
+                        className="object-contain"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
-          )}
+
+                  <div className="space-y-1.5">
+                    <p className="text-base font-semibold text-[#1f1d38] sm:text-lg">
+                      {project.title}
+                    </p>
+                    <p className="text-sm font-medium leading-relaxed text-[#4f4f5f]">
+                      {meta.summary || project.description}
+                    </p>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
