@@ -222,7 +222,7 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
                   key={service.id}
                   href={service.route}
                   onClick={onItemClick}
-                  className="group rounded-2xl bg-white px-3 py-2 transition-all hover:-translate-y-0.5 hover:bg-[#fffaf5]"
+                  className="group rounded-2xl bg-white px-3 py-2 transition-all hover:-translate-y-0.5"
                 >
                   <div>
                     <h6 className="mb-1 text-base font-semibold text-[#332771] transition-colors group-hover:text-[#FF5225]">
@@ -238,7 +238,7 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 bg-gradient-to-r from-[#332771] via-[#4a3aff] to-[#FF5225] px-6 py-5 text-white lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex flex-col gap-4 bg-gradient-to-r from-[#332771] via-[#4a3aba] to-[#FF5225] px-6 py-5 text-white lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-wrap items-center gap-x-4 gap-y-3 text-sm font-semibold">
             <span className="inline-flex items-center gap-2">
               <ShieldCheck size={18} className="text-[#edbaad]" />

@@ -53,7 +53,7 @@ export default function ProductsDropdown({ onItemClick }) {
           </p>
 
           <div className="mt-7 space-y-1.5 text-base text-[#3f4c63] font-medium">
-            <div className="group/feature flex items-center gap-3 rounded-xl px-2 py-1.5 transition-all hover:bg-[#fff7f2]">
+            <div className="group/feature flex items-center gap-3 rounded-xl px-2 py-1.5 transition-all hover:bg-[#f8f4ff]">
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-[#efe3da] bg-white text-[#332771]">
                 <PieChart size={17} />
               </span>
