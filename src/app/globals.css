@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+:root {
+  --white: #fff;
+  --theme: #F94D00;
+  --header: #0B0D17;
+}
+
 @plugin "daisyui" {
   themes: light --default;
 }
@@ -86,4 +92,103 @@ html {
   to {
     transform: rotate(-360deg);
   }
+}
+
+/* Custom Button Animation - Reference: Infitech */
+.theme-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none !important;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  padding: 16px 40px 14px;
+  transition: 0.5s ease-in-out;
+  text-transform: capitalize;
+  overflow: hidden;
+  gap: 5px;
+  text-align: center;
+  background-color: var(--theme);
+  z-index: 1;
+  border-radius: 100px;
+}
+
+.theme-btn i {
+  margin-left: 5px;
+}
+
+.theme-btn::before {
+  content: "";
+  background-color: var(--header);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  clip-path: circle(0% at 50% 50%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.8s;
+  z-index: -1;
+}
+
+.theme-btn:hover::before {
+  clip-path: circle(100% at 50% 50%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 4s;
+  transition-delay: 200ms;
+}
+
+.theme-btn::after {
+  content: "";
+  background-color: rgba(11, 13, 23, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  clip-path: circle(0% at 50% 50%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.8s;
+  z-index: -1;
+}
+
+.theme-btn:hover::after {
+  clip-path: circle(100% at 50% 50%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 4s;
+}
+
+.theme-btn span {
+  font-size: 16px;
+  position: relative;
+  top: -1px;
+  font-weight: 700;
+  transition: all 500ms ease;
+  z-index: 1;
+}
+
+.theme-btn:hover {
+  color: var(--white);
+}
+
+.theme-btn:hover img {
+  filter: brightness(0);
+}
+
+.theme-btn.style-btn {
+  background-color: var(--white);
+  color: var(--header);
+}
+
+.theme-btn.style-btn::before {
+  background-color: var(--theme);
+}
+
+.theme-btn.style-btn:hover {
+  color: var(--white);
+  border-color: var(--theme);
 }
