@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ScrollReveal, StaggerGrid, Counter, Chip, H2, fadeUp } from "./ui";
+import { ScrollReveal, Counter, H2, ArrowIcon, fadeUp } from "./ui";
+import { Settings } from "lucide-react";
+import Link from "next/link";
 
 const METRICS = [
   {
@@ -10,14 +12,14 @@ const METRICS = [
     suffix: "%",
     label: "Uptime",
     desc: "Average availability for Mindefy-engineered core systems",
-    orange: false,
+    tags: ["Available", "Reliable", "Scalable"],
   },
   {
     numStr: "4.5M+",
     numInt: null,
     label: "Users Handled",
     desc: "By our most scalable digital ecosystem to date",
-    orange: true,
+    tags: ["Concurrent", "Active", "Growth"],
   },
   {
     numStr: null,
@@ -25,62 +27,89 @@ const METRICS = [
     suffix: "%",
     label: "Debt Reduction",
     desc: "Average decrease in technical debt for modernized legacy systems",
-    orange: false,
+    tags: ["Refactor", "Clean", "Velocity"],
   },
   {
     numStr: "Zero",
     numInt: null,
     label: "Failure Rate",
     desc: "Maintained during high-concurrency traffic spikes",
-    orange: true,
+    tags: ["Robust", "Secure", "Durable"],
   },
 ];
 
 export default function EngineeringImpact() {
   return (
-    <section id="metrics" className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
-        <ScrollReveal className="text-center mb-14">
-          <Chip>Engineering Impact</Chip>
-          <H2 className="text-center">
-            The ROI of <span className="text-[#E84B27]">High-Performance</span>{" "}
-            Architecture
+    <section className="feature-section py-12 bg-white fix overflow-hidden">
+      <div className="container mx-auto px-4">
+        <div className="section-title text-center mb-16">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-1 px-3 py-2 text-sm font-bold text-[#0B0D17] bg-[#F2F5F7] rounded-full uppercase leading-none font-poppins shadow-sm mb-5"
+          >
+            <Settings width={16} height={16} />
+            ENGINEERING IMPACT
+          </motion.span>
+          <H2 className="text-center font-poppins font-bold">
+            High-Performance <br />
+            <span className="text-[#FF5225]">Software Solutions</span>
           </H2>
-          <p className="text-gray-500 text-[17px] max-w-lg mx-auto">
-            Real numbers from real systems built under real load.
-          </p>
-        </ScrollReveal>
+        </div>
 
-        <StaggerGrid className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {METRICS.map((m, i) => (
-            <motion.div
+        <div className="flex flex-wrap -mx-4">
+          {METRICS.map((item, i) => (
+            <div
               key={i}
-              variants={fadeUp}
-              className="group relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden cursor-default"
+              className="w-full md:w-1/2 lg:w-1/2 xl:w-1/4 px-4 mb-8"
             >
-              {/* animated bottom gradient bar */}
-              <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#E84B27] to-[#162560] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
-
-              <div
-                className={`font-extrabold leading-none mb-2 tracking-tight ${
-                  m.orange ? "text-[#E84B27]" : "text-[#162560]"
-                }`}
-                style={{
-                  fontSize: "clamp(36px, 4vw, 52px)",
-                  fontFamily: "'Bricolage Grotesque', sans-serif",
-                }}
+              <ScrollReveal
+                variants={fadeUp}
+                delay={i * 0.1}
+                className="h-full"
               >
-                {m.numStr ?? <Counter end={m.numInt} suffix={m.suffix ?? ""} />}
-              </div>
-              <h3 className="text-[#162560] font-bold text-sm mb-2">
-                {m.label}
-              </h3>
-              <div className="text-gray-400 text-xs leading-relaxed">
-                {m.desc}
-              </div>
-            </motion.div>
+                <div className="feature-box-itemss group h-full flex flex-col bg-[#F2F5F7] rounded-xl px-5 py-7 relative z-10 transition-all duration-500 hover:text-white before:absolute before:content-[''] before:inset-0 before:bg-[#FF5225] before:rounded-xl before:scale-y-[0.3] before:opacity-0 before:origin-center before:transition-all before:duration-500 hover:before:scale-y-100 hover:before:opacity-100 before:-z-10 overflow-hidden shadow-sm hover:shadow-2xl">
+                  <h3 className="text-[#534F5A] group-hover:text-white/80 font-poppins text-base font-medium tracking-tighter mb-6 transition-colors duration-500">
+                    00{i + 1}.
+                  </h3>
+                  <h4 className="text-[#0B0D17] group-hover:text-white font-poppins text-2xl font-bold mb-5 transition-colors duration-500">
+                    <span className="block text-[#FF5225] group-hover:text-white text-3xl mb-1">
+                      {item.numStr ?? (
+                        <Counter end={item.numInt} suffix={item.suffix ?? ""} />
+                      )}
+                    </span>
+                    {item.label}
+                  </h4>
+                  <p className="text-[#534F5A] group-hover:text-white/90 font-poppins text-base leading-relaxed mb-14 transition-colors duration-500 flex-1">
+                    {item.desc}
+                  </p>
+
+                  <div className="feature-info-box bg-white rounded-lg px-4 py-6 flex items-center justify-between mt-auto transition-all duration-500">
+                    <ul className="flex flex-wrap items-center gap-2">
+                      {item.tags.map((tag, j) => (
+                        <li
+                          key={j}
+                          className="px-2 py-1 rounded-full border border-[#E6E8EB] text-[#0B0D17] text-xs font-semibold font-poppins transition-all duration-400 hover:bg-[#FF5225] hover:text-white hover:border-[#FF5225]"
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      href="#"
+                      className="icon w-8 h-8 rounded-full bg-[#0B0D17] flex items-center justify-center text-white transition-all duration-400 hover:bg-[#FF5225] shrink-0 ml-4"
+                    >
+                      <span className="transition-transform duration-300 group-hover:rotate-45">
+                        <ArrowIcon />
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div>
           ))}
-        </StaggerGrid>
+        </div>
       </div>
     </section>
   );

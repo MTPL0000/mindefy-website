@@ -8,12 +8,18 @@ const BRAND_LOGOS = [
     src: "/images/sp-logo.webp",
     alt: "Spector-Mindefy",
   },
-  { src: "/images/kotak.webp", alt: "Kotak-Mindefy" },
+  {
+    src: "/images/kotak.webp",
+    alt: "Kotak-Mindefy",
+  },
   {
     src: "/images/netlink.webp",
     alt: "Netlink-Mindefy",
   },
-  { src: "/images/mst-hero.webp", alt: "MST-Mindefy" },
+  {
+    src: "/images/mst-hero.webp",
+    alt: "MST-Mindefy",
+  },
   {
     src: "/images/krungthai.webp",
     alt: "Krungthai-Mindefy",
@@ -42,7 +48,7 @@ const BRAND_LOGOS = [
 
 export default function TrustBar() {
   return (
-    <div className="brand-section-5 relative z-40 -mt-10 lg:-mt-20 pb-20 lg:pb-32">
+    <div className="brand-section-5 relative z-10 -mt-10 lg:-mt-20 pb-20 lg:pb-32">
       <h2 className="sr-only">Trusted by Leading Brands</h2>
       <div className="container mx-auto px-4">
         <div className="overflow-hidden">
