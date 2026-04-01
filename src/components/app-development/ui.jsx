@@ -12,6 +12,7 @@ export const fadeUp = {
     transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
   },
 };
+
 export const fadeLeft = {
   hidden: { opacity: 0, x: -50 },
   visible: {
@@ -20,6 +21,7 @@ export const fadeLeft = {
     transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
   },
 };
+
 export const fadeRight = {
   hidden: { opacity: 0, x: 50 },
   visible: {
@@ -28,6 +30,7 @@ export const fadeRight = {
     transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
   },
 };
+
 export const stagger = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.11 } },
@@ -106,17 +109,19 @@ export function Counter({ end, suffix = "" }) {
 /* ── Chip ──────────────────────────────────────────────────────────────────── */
 export function Chip({ children, as: Tag = "span" }) {
   return (
-    <Tag
-      className="inline-flex items-center gap-1.5 text-[#E84B27] bg-[rgba(232,75,39,0.07)] border border-[rgba(232,75,39,0.2)] text-[11px] font-medium tracking-[0.16em] uppercase px-4 py-1.5 rounded-full mb-5"
-      style={{ fontFamily: "monospace" }}
-    >
+    <Tag className="inline-flex items-center gap-1.5 font-poppins font-bold text-[#E84B27] bg-[rgba(232,75,39,0.07)] border border-[rgba(232,75,39,0.2)] text-xs tracking-[0.16em] uppercase px-4 py-1.5 rounded-full mb-5">
       {children}
     </Tag>
   );
 }
 
 /* ── Section Heading ───────────────────────────────────────────────────────── */
-export function H2({ children, light = false, className = "", as: Tag = "h2" }) {
+export function H2({
+  children,
+  light = false,
+  className = "",
+  as: Tag = "h2",
+}) {
   return (
     <Tag
       className={`font-extrabold leading-[1.08] tracking-[-0.025em] mb-4 ${
@@ -136,7 +141,7 @@ export function H2({ children, light = false, className = "", as: Tag = "h2" }) 
 export function ArrowIcon() {
   return (
     <svg
-      className="w-4 h-4 flex-shrink-0"
+      className="w-4 h-4 shrink-0"
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"

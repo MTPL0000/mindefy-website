@@ -85,25 +85,17 @@ export default function EngineeringImpact() {
                     {item.desc}
                   </p>
 
-                  <div className="feature-info-box bg-white rounded-lg px-4 py-6 flex items-center justify-between mt-auto transition-all duration-500">
-                    <ul className="flex flex-wrap items-center gap-2">
+                  <div className="feature-info-box bg-white rounded-lg px-4 py-6 flex items-center justify-center mt-auto transition-all duration-500">
+                    <ul className="flex flex-wrap items-center gap-3">
                       {item.tags.map((tag, j) => (
                         <li
                           key={j}
-                          className="px-2 py-1 rounded-full border border-[#E6E8EB] text-[#0B0D17] text-xs font-semibold font-poppins transition-all duration-400 hover:bg-[#FF5225] hover:text-white hover:border-[#FF5225]"
+                          className="px-3 py-1 rounded-full border border-[#E6E8EB] text-[#0B0D17] text-xs font-semibold font-poppins transition-all duration-400 hover:bg-[#FF5225] hover:text-white hover:border-[#FF5225]"
                         >
                           {tag}
                         </li>
                       ))}
                     </ul>
-                    <Link
-                      href="#"
-                      className="icon w-8 h-8 rounded-full bg-[#0B0D17] flex items-center justify-center text-white transition-all duration-400 hover:bg-[#FF5225] shrink-0 ml-4"
-                    >
-                      <span className="transition-transform duration-300 group-hover:rotate-45">
-                        <ArrowIcon />
-                      </span>
-                    </Link>
                   </div>
                 </div>
               </ScrollReveal>
