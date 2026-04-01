@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ScrollReveal, Counter, H2, ArrowIcon, fadeUp } from "./ui";
+import { ScrollReveal, Counter, H2, fadeUp } from "./ui";
 import { Settings } from "lucide-react";
-import Link from "next/link";
 
 const METRICS = [
   {
