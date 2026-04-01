@@ -63,7 +63,7 @@ const CATEGORIES = [
 
 export default function ScalingCeiling() {
   return (
-    <section className="relative py-14 bg-white overflow-hidden">
+    <section className="relative py-20 md:py-24 bg-white overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
         <div

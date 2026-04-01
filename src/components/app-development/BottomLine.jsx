@@ -5,7 +5,7 @@ import { ScrollReveal, Chip, H2, ArrowIcon } from "./ui";
 export default function BottomLine() {
   return (
     <section
-      className="relative py-28 overflow-hidden"
+      className="relative py-20 md:py-24 overflow-hidden"
       style={{
         background: "linear-gradient(135deg, #0E1A45 0%, #162560 100%)",
       }}

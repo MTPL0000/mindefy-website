@@ -40,7 +40,7 @@ const METRICS = [
 
 export default function EngineeringImpact() {
   return (
-    <section className="feature-section py-12 bg-white fix overflow-hidden">
+    <section className="feature-section py-20 md:py-24 bg-white fix overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="section-title text-center mb-16">
           <motion.span

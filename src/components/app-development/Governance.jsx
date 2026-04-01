@@ -29,7 +29,7 @@ const FITS = [
 
 export default function Governance() {
   return (
-    <section className="py-24 bg-[#F8F7F4]">
+    <section className="py-20 md:py-24 bg-[#F8F7F4]">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center mb-14">
           <Chip>Risk Management &amp; Compliance</Chip>

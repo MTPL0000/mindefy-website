@@ -4,7 +4,7 @@ import { ScrollReveal, Chip, H2, ArrowIcon, fadeLeft, fadeRight } from "./ui";
 
 export default function StrategicAlignment() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-20 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center mb-14">
           <Chip>Strategic Alignment</Chip>

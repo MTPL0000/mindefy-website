@@ -34,7 +34,7 @@ const ITEMS = [
 
 export default function EngineeringDNA() {
   return (
-    <section className="py-24 bg-[#EEF1FA]">
+    <section className="py-20 md:py-24 bg-[#EEF1FA]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left */}

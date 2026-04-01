@@ -12,7 +12,7 @@ export default function ExpertPerspective() {
   return (
     <section
       id="expert-perspective"
-      className="relative isolate overflow-hidden py-16 md:py-24"
+      className="relative isolate overflow-hidden py-20 md:py-24 my-20 md:my-24"
     >
       {/* background + glow */}
       <div

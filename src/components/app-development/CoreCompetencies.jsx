@@ -48,7 +48,7 @@ const SERVICES = [
 
 export default function CoreCompetencies() {
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="services" className="py-20 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center mb-14">
           <Chip>Core Competencies</Chip>

@@ -62,7 +62,7 @@ export default function TechStack() {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="stack" className="py-24 bg-white">
+    <section id="stack" className="py-20 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center mb-14">
           <Chip>Technology Stack</Chip>

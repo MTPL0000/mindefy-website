@@ -44,7 +44,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-20 md:py-24 bg-white">
       {/* FAQ Schema for SEO */}
       <script
         type="application/ld+json"

@@ -20,7 +20,6 @@ import ResourcesModels from "@/components/app-development/ResourcesModels";
 import FAQ from "@/components/app-development/FAQ";
 import BottomLine from "@/components/app-development/BottomLine";
 import ConversionPath from "@/components/app-development/ConversionPath";
-import StickyBar from "@/components/app-development/StickyBar";
 
 export default function AppDevelopmentPage() {
   return (
@@ -47,7 +46,6 @@ export default function AppDevelopmentPage() {
         <BottomLine />
         <ConversionPath />
       </main>
-      <StickyBar />
     </>
   );
 }
