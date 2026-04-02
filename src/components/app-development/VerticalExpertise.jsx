@@ -2,72 +2,99 @@
 
 import { motion } from "framer-motion";
 import { StaggerGrid, ScrollReveal, Chip, H2, fadeUp } from "./ui";
+import {
+  Stethoscope,
+  CreditCard,
+  ShoppingBag,
+  Truck,
+  GraduationCap,
+} from "lucide-react";
 
 const INDUSTRIES = [
   {
-    icon: "🏥",
+    icon: Stethoscope,
     title: "Healthcare",
     desc: "HIPAA/GDPR compliance and 99.9% uptime",
-    bg: "#EEF1FA",
+    color: "#4CD4D9",
   },
   {
-    icon: "💳",
+    icon: CreditCard,
     title: "Fintech",
     desc: "High-throughput latency & data integrity",
-    bg: "rgba(232,75,39,0.06)",
+    color: "#6F7AE6",
   },
   {
-    icon: "🛒",
+    icon: ShoppingBag,
     title: "E-commerce",
     desc: "Survive massive traffic spikes at peak",
-    bg: "#EEF1FA",
+    color: "#3ECF8E",
   },
   {
-    icon: "🚚",
+    icon: Truck,
     title: "Logistics",
     desc: "Real-time data consistency & recovery",
-    bg: "rgba(232,75,39,0.06)",
+    color: "#FF9F43",
   },
   {
-    icon: "🎓",
+    icon: GraduationCap,
     title: "Education",
     desc: "Engagement & massive concurrency",
-    bg: "#EEF1FA",
+    color: "#9B7BFF",
   },
 ];
 
 export default function VerticalExpertise() {
   return (
-    <section className="py-20 md:py-24 bg-[#F8F7F4]">
-      <div className="max-w-6xl mx-auto px-6">
-        <ScrollReveal className="text-center mb-14">
+    <section className="relative isolate overflow-hidden py-20 md:py-24 bg-white">
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(circle at 20% 20%, rgba(79,209,197,0.12) 0, transparent 30%), radial-gradient(circle at 80% 30%, rgba(111,122,230,0.12) 0, transparent 28%), radial-gradient(circle at 50% 80%, rgba(255,122,69,0.10) 0, transparent 28%)",
+        }}
+        aria-hidden
+      />
+      <div className="relative container mx-auto px-6">
+        <ScrollReveal className="text-center mb-16">
           <Chip>Vertical Expertise</Chip>
-          <H2 className="text-center">
+          <H2 className="text-center font-poppins mt-6">
             Industries We Work In{" "}
-            <span className="text-[#E84B27]">(By Constraint)</span>
+            <span className="text-[#E84B27] font-poppins">(By Constraint)</span>
           </H2>
         </ScrollReveal>
 
-        <StaggerGrid className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {INDUSTRIES.map((ind, i) => (
-            <motion.div
-              key={i}
+        <StaggerGrid className="flex items-center justify-center flex-wrap gap-10">
+          {INDUSTRIES.map((ind) => (
+            <motion.article
+              key={ind.title}
               variants={fadeUp}
-              className="group bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300"
+              className="group relative text-center w-sm h-64 px-6 py-8 rounded-3xl bg-white/70 backdrop-blur border border-[#E6E8EB] shadow-[0_12px_40px_-22px_rgba(12,23,54,0.25)] hover:-translate-y-2 hover:shadow-[0_20px_70px_-24px_rgba(12,23,54,0.25)] transition-all duration-400"
             >
-              <div
-                className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 transition-all group-hover:bg-[#162560]"
-                style={{ background: ind.bg }}
-              >
-                {ind.icon}
+              <div className="space-y-4">
+                <div
+                  className="mx-auto w-18 h-18 rounded-full flex items-center justify-center shadow-lg transition-transform duration-400 group-hover:scale-105"
+                  style={{
+                    background: `${ind.color}22`,
+                    color: ind.color,
+                  }}
+                >
+                  <ind.icon className="w-10 h-10" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-[#0B0D17] font-semibold text-2xl font-poppins">
+                  {ind.title}
+                </h3>
+                <p className="text-[#4A5568] text-base font-poppins leading-relaxed">
+                  {ind.desc}
+                </p>
               </div>
-              <h3 className="text-[#162560] font-bold text-sm mb-2">
-                {ind.title}
-              </h3>
-              <p className="text-gray-400 text-[12px] leading-relaxed">
-                {ind.desc}
-              </p>
-            </motion.div>
+              <div
+                className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-400"
+                style={{
+                  boxShadow: `0 0 0 1px ${ind.color}33, 0 20px 60px -30px ${ind.color}66`,
+                }}
+                aria-hidden
+              />
+            </motion.article>
           ))}
         </StaggerGrid>
       </div>

@@ -124,7 +124,7 @@ export function H2({
 }) {
   return (
     <Tag
-      className={`font-extrabold leading-[1.08] tracking-[-0.025em] font-poppins mb-4 ${
+      className={`font-extrabold leading-snug tracking-[-0.025em] font-poppins mb-4 ${
         light ? "text-white" : "text-[#162560]"
       } ${className}`}
       style={{
