@@ -36,7 +36,7 @@ export default function ExpertPerspective() {
               <Chip as="div">Expert Perspective</Chip>
 
               <h2
-                className="text-white font-extrabold leading-tight tracking-tight"
+                className="text-white font-extrabold font-poppins leading-tight tracking-tight"
                 style={{
                   fontSize: "clamp(32px, 4vw, 48px)",
                 }}
@@ -45,10 +45,10 @@ export default function ExpertPerspective() {
                 them.
               </h2>
 
-              <p className="text-white/80 text-base md:text-lg leading-relaxed max-w-3xl">
+              <p className="text-white/80 text-base md:text-lg leading-relaxed font-poppins max-w-3xl">
                 Whether you are launching your first MVP or rescuing a legacy
                 product,{" "}
-                <span className="text-[#FFB59E] font-semibold">
+                <span className="text-[#FFB59E] font-semibold font-poppins">
                   architecture is your only defense against irrelevance.
                 </span>
               </p>
@@ -61,10 +61,10 @@ export default function ExpertPerspective() {
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-[#FF5225]/15 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="relative flex flex-col items-center">
-                      <div className="text-2xl font-extrabold text-white">
+                      <div className="text-2xl font-extrabold text-white font-poppins">
                         {item.val}
                       </div>
-                      <p className="text-white/70 text-sm leading-snug">
+                      <p className="text-white/70 text-sm leading-snug font-poppins">
                         {item.label}
                       </p>
                     </div>
@@ -87,24 +87,24 @@ export default function ExpertPerspective() {
                   &ldquo;
                 </div>
 
-                <p className="text-white/90 text-lg leading-relaxed">
+                <p className="text-white/90 text-lg leading-relaxed font-poppins">
                   We don&apos;t build features; we build the systems that
                   deliver them. Whether you are launching your first MVP or
                   rescuing a legacy product,{" "}
-                  <em className="not-italic text-[#FFB59E]">
+                  <em className="not-italic text-[#FFB59E] font-poppins">
                     architecture is your only defense against irrelevance.
                   </em>
                 </p>
 
                 <div className="flex items-center gap-4 pt-4 border-t border-white/10">
-                  <div className="h-12 w-12 rounded-full bg-[#FF5225]/15 text-white flex items-center justify-center font-semibold">
+                  <div className="h-12 w-12 rounded-full bg-[#FF5225]/15 text-white flex items-center justify-center font-semibold font-poppins">
                     ML
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold">
+                    <h4 className="text-white font-semibold font-poppins">
                       Mindefy Leadership
                     </h4>
-                    <span className="text-white/60 text-xs uppercase tracking-[0.2em]">
+                    <span className="text-white/60 text-xs uppercase tracking-[0.2em] font-poppins">
                       Expert Perspective
                     </span>
                   </div>

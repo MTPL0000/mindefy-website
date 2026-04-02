@@ -53,7 +53,9 @@ export default function EngineeringImpact() {
           </motion.span>
           <H2 className="text-center font-poppins font-bold">
             High-Performance <br />
-            <span className="text-[#FF5225]">Software Solutions</span>
+            <span className="text-[#FF5225] font-poppins">
+              Software Solutions
+            </span>
           </H2>
         </div>
 

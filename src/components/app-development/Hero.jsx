@@ -66,7 +66,7 @@ export default function Hero() {
               >
                 <Link
                   href="/contact-us-technology-innovators"
-                  className="theme-btn hover:shadow-xl hover:shadow-orange-500/20 group no-underline"
+                  className="theme-btn font-poppins hover:shadow-xl hover:shadow-orange-500/20 group no-underline"
                 >
                   <span>Get started now</span>
                   <span className="ml-1 transition-transform duration-300 group-hover:rotate-45 flex items-center">
@@ -75,7 +75,7 @@ export default function Hero() {
                 </Link>
                 <Link
                   href="/contact-us-technology-innovators"
-                  className="theme-btn style-btn hover:shadow-xl group no-underline"
+                  className="theme-btn style-btn font-poppins hover:shadow-xl group no-underline"
                 >
                   <span>Let’s talk</span>
                   <span className="ml-1 transition-transform duration-300 group-hover:rotate-45 flex items-center">
@@ -99,7 +99,7 @@ export default function Hero() {
                 alt="App Development Hero Section Image"
                 width={1000}
                 height={600}
-                className="w-full h-[600px] object-cover transform transition-transform duration-700 hover:scale-105"
+                className="w-full h-150 object-cover transform transition-transform duration-700 hover:scale-105"
                 priority
               />
             </motion.div>

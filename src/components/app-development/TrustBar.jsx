@@ -49,7 +49,7 @@ const BRAND_LOGOS = [
 export default function TrustBar() {
   return (
     <div className="brand-section-5 relative z-10 -mt-10 lg:-mt-20 pb-20">
-      <h2 className="sr-only">Trusted by Leading Brands</h2>
+      <h2 className="sr-only font-poppins">Trusted by Leading Brands</h2>
       <div className="container mx-auto px-4">
         <div className="overflow-hidden">
           <motion.div

@@ -50,20 +50,20 @@ export default function ArchPhilosophy() {
           {/* Left */}
           <ScrollReveal variants={fadeLeft}>
             <Chip>Architectural Philosophy</Chip>
-            <H2 className="max-w-2xl text-[#0B0D17]">
+            <H2 className="max-w-2xl text-[#0B0D17] font-poppins">
               We Design{" "}
-              <span className="bg-gradient-to-r from-[#FF7A45] via-[#FF5E2E] to-[#FF5225] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#FF7A45] via-[#FF5E2E] to-[#FF5225] bg-clip-text text-transparent font-poppins">
                 Decision Systems
               </span>
             </H2>
-            <p className="text-[#4A5568] text-base md:text-lg leading-relaxed mb-4">
+            <p className="text-[#4A5568] text-base md:text-lg leading-relaxed font-poppins mb-4">
               Every application is a system of decisions: how data flows, where
               logic lives, and what breaks first. While most agencies optimize
               for delivery milestones, we optimize for long-term system
               behavior.
             </p>
-            <p className="text-[#4A5568] text-sm md:text-base leading-relaxed">
-              <strong className="text-[#0B0D17]">
+            <p className="text-[#4A5568] text-sm md:text-base leading-relaxed font-poppins">
+              <strong className="text-[#0B0D17] font-poppins">
                 We Don&apos;t &ldquo;Build Apps.&rdquo;
               </strong>{" "}
               We Engineer Predictable Systems.
@@ -91,13 +91,13 @@ export default function ArchPhilosophy() {
                     />
                   </div>
                   <div className="space-y-1.5">
-                    <div className="text-xs uppercase tracking-[0.2em] text-[#7A7F86]">
+                    <div className="text-xs uppercase tracking-[0.2em] text-[#7A7F86] font-poppins">
                       {item.num}
                     </div>
-                    <h3 className="text-[#0B0D17] font-semibold text-base md:text-lg leading-snug">
+                    <h3 className="text-[#0B0D17] font-semibold text-base md:text-lg leading-snug font-poppins">
                       {item.title}
                     </h3>
-                    <p className="text-[#4A5568] text-sm md:text-base leading-relaxed">
+                    <p className="text-[#4A5568] text-sm md:text-base leading-relaxed font-poppins">
                       {item.desc}
                     </p>
                   </div>

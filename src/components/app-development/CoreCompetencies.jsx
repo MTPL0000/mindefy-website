@@ -108,14 +108,14 @@ function ServiceCard({ s }) {
               <s.Icon size={32} color="#fff" strokeWidth={1.3} />
             </div>
 
-            <h3 className="text-[#162560] text-xl font-semibold leading-snug">
+            <h3 className="text-[#162560] text-xl font-poppins font-semibold leading-snug">
               {s.title}
             </h3>
           </div>
 
           {/* Bottom tag */}
           <div className="flex items-center pt-1">
-            <span className="text-sm text-[#C93D0E] uppercase tracking-[0.18em]">
+            <span className="text-sm font-poppins text-[#C93D0E] uppercase tracking-[0.18em]">
               {s.tag ?? "Hover to explore →"}
             </span>
           </div>
@@ -146,20 +146,22 @@ function ServiceCard({ s }) {
             <div className="bg-white/20 w-12 h-12 shrink-0 flex items-center justify-center rounded-xl">
               <s.Icon size={28} color="#fff" strokeWidth={1.3} />
             </div>
-            <h3 className="text-white text-xl font-bold leading-tight">
+            <h3 className="text-white text-xl font-poppins font-bold leading-tight">
               {s.title}
             </h3>
           </div>
 
           <div className="relative top-8 flex-1 overflow-hidden">
-            <p className="text-white text-base leading-relaxed">{s.desc}</p>
+            <p className="text-white text-base font-poppins leading-relaxed">
+              {s.desc}
+            </p>
           </div>
 
           {/* CTA button */}
           <div className="relative">
             <a
               href="#contact"
-              className="bg-[#ffff] text-[#162560] cursor-pointer inline-flex items-center gap-2 rounded-full text-sm font-semibold transition-all hover:scale-95 hover:opacity-90 px-5 py-2.5"
+              className="bg-[#ffff] text-[#162560] font-poppins cursor-pointer inline-flex items-center gap-2 rounded-full text-sm font-semibold transition-all hover:scale-95 hover:opacity-90 px-5 py-2.5"
             >
               {s.cta ? "Start Architecture Review" : "Service Details"}
               <ArrowIcon />
@@ -198,10 +200,10 @@ export default function CoreCompetencies() {
         {/* Header */}
         <ScrollReveal className="text-center mb-14">
           <Chip>Core Competencies</Chip>
-          <H2 className="text-center">
+          <H2 className="text-center font-poppins">
             Specialized{" "}
             <span
-              className="bg-clip-text text-transparent"
+              className="bg-clip-text text-transparent font-poppins"
               style={{
                 backgroundImage:
                   "linear-gradient(90deg, #F15A24 0%, #C93D0E 100%)",
@@ -211,7 +213,7 @@ export default function CoreCompetencies() {
             </span>{" "}
             Services
           </H2>
-          <p className="text-[#4A5568] text-lg max-w-xl mx-auto">
+          <p className="text-[#4A5568] text-lg font-poppins max-w-xl mx-auto">
             We help teams navigate the transition from concept to
             high-performance system through specialized engineering tracks.
           </p>

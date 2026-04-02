@@ -124,12 +124,11 @@ export function H2({
 }) {
   return (
     <Tag
-      className={`font-extrabold leading-[1.08] tracking-[-0.025em] mb-4 ${
+      className={`font-extrabold leading-[1.08] tracking-[-0.025em] font-poppins mb-4 ${
         light ? "text-white" : "text-[#162560]"
       } ${className}`}
       style={{
         fontSize: "clamp(30px, 4vw, 54px)",
-        fontFamily: "'Bricolage Grotesque', sans-serif",
       }}
     >
       {children}
