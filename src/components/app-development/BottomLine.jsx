@@ -1,12 +1,12 @@
 "use client";
 
 import { Settings } from "lucide-react";
-import { ScrollReveal, Chip, H2, ArrowIcon } from "./ui";
+import { ScrollReveal, Chip, H2, AppDevButton } from "./ui";
 
 export default function BottomLine() {
   return (
     <section
-      className="relative py-20 md:py-24 overflow-hidden"
+      className="relative py-20 md:py-24 my-20 md:my-24 overflow-hidden"
       style={{
         background: "linear-gradient(135deg, #0E1A45 0%, #162560 100%)",
       }}
@@ -65,18 +65,23 @@ export default function BottomLine() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
+            <AppDevButton
               href="#contact"
-              className="inline-flex items-center gap-2 bg-[#E84B27] text-white font-bold px-8 py-4 rounded-lg text-sm hover:bg-[#FF5C35] hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[rgba(232,75,39,0.3)] transition-all no-underline"
+              primaryColor="#E84B27"
+              secondaryColor="#0B0D17"
+              textColor="#FFFFFF"
             >
-              Claim Your 30-Day Technical Audit <ArrowIcon />
-            </a>
-            <a
+              Claim Your 30-Day Technical Audit
+            </AppDevButton>
+            <AppDevButton
               href="#case-studies"
-              className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white font-semibold px-8 py-4 rounded-lg text-sm hover:bg-white/20 transition-all no-underline"
+              primaryColor="rgba(255,255,255,0.12)"
+              secondaryColor="#0B0D17"
+              textColor="#FFFFFF"
+              className="backdrop-blur"
             >
-              View Our Work <ArrowIcon />
-            </a>
+              View Our Work
+            </AppDevButton>
           </div>
         </ScrollReveal>
       </div>

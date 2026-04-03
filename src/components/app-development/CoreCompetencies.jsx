@@ -2,7 +2,14 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { StaggerGrid, ScrollReveal, Chip, H2, ArrowIcon, fadeUp } from "./ui";
+import {
+  StaggerGrid,
+  ScrollReveal,
+  Chip,
+  H2,
+  AppDevButton,
+  fadeUp,
+} from "./ui";
 import {
   Rocket,
   Building2,
@@ -160,13 +167,17 @@ function ServiceCard({ s }) {
 
           {/* CTA button */}
           <div className="relative">
-            <a
+            <AppDevButton
               href="#contact"
-              className="bg-[#ffff] text-[#162560] font-poppins cursor-pointer inline-flex items-center gap-2 rounded-full text-sm font-semibold transition-all hover:scale-95 hover:opacity-90 px-5 py-2.5"
+              variant="outline"
+              primaryColor="#0B0D17"
+              secondaryColor="#162560"
+              surfaceColor="#FFFFFF"
+              size="sm"
+              className="!px-5 !py-2.5 !text-sm !font-semibold"
             >
               {s.cta ? "Start Architecture" : "Service Details"}
-              <ArrowIcon />
-            </a>
+            </AppDevButton>
           </div>
         </div>
       </motion.div>

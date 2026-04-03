@@ -19,7 +19,6 @@ import StrategicAlignment from "@/components/app-development/StrategicAlignment"
 import ResourcesModels from "@/components/app-development/ResourcesModels";
 import FAQ from "@/components/app-development/FAQ";
 import BottomLine from "@/components/app-development/BottomLine";
-import ConversionPath from "@/components/app-development/ConversionPath";
 
 export default function AppDevelopmentPage() {
   return (
@@ -44,7 +43,6 @@ export default function AppDevelopmentPage() {
         <ResourcesModels />
         <FAQ />
         <BottomLine />
-        <ConversionPath />
       </main>
     </>
   );

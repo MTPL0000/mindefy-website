@@ -2,8 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowIcon } from "./ui";
+import { AppDevButton } from "./ui";
 import { Settings } from "lucide-react";
 
 export default function Hero() {
@@ -64,24 +63,24 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="flex flex-wrap items-center gap-4 mt-7"
               >
-                <Link
+                <AppDevButton
                   href="/contact-us-technology-innovators"
-                  className="theme-btn font-poppins hover:shadow-xl hover:shadow-orange-500/20 group no-underline"
+                  primaryColor="#F94D00"
+                  secondaryColor="#0B0D17"
+                  textColor="#FFFFFF"
+                  className="hover:shadow-orange-500/20"
                 >
-                  <span>Get started now</span>
-                  <span className="ml-1 transition-transform duration-300 group-hover:rotate-45 flex items-center">
-                    <ArrowIcon />
-                  </span>
-                </Link>
-                <Link
+                  Get started now
+                </AppDevButton>
+                <AppDevButton
                   href="/contact-us-technology-innovators"
-                  className="theme-btn style-btn font-poppins hover:shadow-xl group no-underline"
+                  variant="outline"
+                  primaryColor="#F94D00"
+                  secondaryColor="#0B0D17"
+                  surfaceColor="#FFFFFF"
                 >
-                  <span>Let’s talk</span>
-                  <span className="ml-1 transition-transform duration-300 group-hover:rotate-45 flex items-center">
-                    <ArrowIcon />
-                  </span>
-                </Link>
+                  Let’s talk
+                </AppDevButton>
               </motion.div>
             </div>
           </div>

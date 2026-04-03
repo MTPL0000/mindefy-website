@@ -6,12 +6,11 @@ import {
   StaggerGrid,
   Chip,
   H2,
-  ArrowIcon,
+  AppDevButton,
   fadeLeft,
   fadeUp,
 } from "./ui";
 import { Rocket, RefreshCw, Compass, Settings } from "lucide-react";
-import Link from "next/link";
 
 const ITEMS = [
   {
@@ -66,15 +65,15 @@ export default function EngineeringDNA() {
               technical execution through high-end custom software development.
             </p>
 
-            <Link
+            <AppDevButton
               href="/contact-us-technology-innovators"
-              className="theme-btn style-btn hover:shadow-xl group no-underline font-poppins"
+              variant="outline"
+              primaryColor="#F94D00"
+              secondaryColor="#0B0D17"
+              surfaceColor="#FFFFFF"
             >
-              <span>Start a Technical Architecture Review</span>
-              <span className="ml-1 transition-transform duration-300 group-hover:rotate-45 flex items-center">
-                <ArrowIcon />
-              </span>
-            </Link>
+              Start a Technical Architecture Review
+            </AppDevButton>
 
             <div className="mt-10 relative">
               <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 text-white text-center px-6 py-16 backdrop-blur shadow-2xl">

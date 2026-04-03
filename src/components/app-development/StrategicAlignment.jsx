@@ -1,7 +1,14 @@
 "use client";
 
 import { Settings } from "lucide-react";
-import { ScrollReveal, Chip, H2, ArrowIcon, fadeLeft, fadeRight } from "./ui";
+import {
+  ScrollReveal,
+  Chip,
+  H2,
+  AppDevButton,
+  fadeLeft,
+  fadeRight,
+} from "./ui";
 
 export default function StrategicAlignment() {
   return (
@@ -51,12 +58,17 @@ export default function StrategicAlignment() {
                   right from day one so you never have to rebuild under
                   pressure.
                 </p>
-                <a
+                <AppDevButton
                   href="#contact"
-                  className="inline-flex items-center gap-2 bg-white text-[#162560] font-bold px-6 py-3.5 rounded-lg text-sm hover:bg-[#EEF1FA] transition-colors shadow-lg no-underline"
+                  variant="outline"
+                  primaryColor="#F94D00"
+                  secondaryColor="#162560"
+                  surfaceColor="#FFFFFF"
+                  size="sm"
+                  className="shadow-lg !px-6 !py-3.5 !text-sm"
                 >
-                  Start My MVP Architecture <ArrowIcon />
-                </a>
+                  Start My MVP Architecture
+                </AppDevButton>
               </div>
             </div>
           </ScrollReveal>
@@ -82,12 +94,16 @@ export default function StrategicAlignment() {
                 rescue products that have become too expensive or slow to
                 maintain.
               </p>
-              <a
+              <AppDevButton
                 href="#contact"
-                className="inline-flex items-center gap-2 bg-[#E84B27] text-white font-bold px-6 py-3.5 rounded-lg text-sm hover:bg-[#FF5C35] hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[rgba(232,75,39,0.3)] transition-all no-underline"
+                primaryColor="#E84B27"
+                secondaryColor="#0B0D17"
+                textColor="#FFFFFF"
+                size="sm"
+                className="hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[rgba(232,75,39,0.3)] !px-6 !py-3.5 !text-sm"
               >
-                Begin Legacy Audit <ArrowIcon />
-              </a>
+                Begin Legacy Audit
+              </AppDevButton>
             </div>
           </ScrollReveal>
         </div>

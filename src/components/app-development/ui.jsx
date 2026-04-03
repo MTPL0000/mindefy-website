@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
 /* ── Animation presets ─────────────────────────────────────────────────────── */
 export const fadeUp = {
@@ -171,5 +172,55 @@ export function CheckIcon() {
         d="M5 13l4 4L19 7"
       />
     </svg>
+  );
+}
+
+/* ── CTA Button ────────────────────────────────────────────────────────────── */
+export function AppDevButton({
+  href,
+  children,
+  variant = "solid",
+  primaryColor = "#F94D00",
+  secondaryColor = "#0B0D17",
+  textColor = "#fff",
+  surfaceColor = "#fff",
+  size = "md",
+  icon = <ArrowIcon />,
+  className = "",
+  style = {},
+  ...rest
+}) {
+  const isOutline = variant === "outline" || variant === "light";
+
+  const colorStyles = {
+    "--theme": primaryColor,
+    "--header": secondaryColor,
+    "--white": isOutline ? surfaceColor : textColor,
+  };
+
+  const sizeStyles = {
+    sm: { padding: "12px 20px", fontSize: "14px" },
+    md: {},
+    lg: { padding: "18px 44px", fontSize: "17px" },
+  };
+
+  const mergedStyle = { ...colorStyles, ...(sizeStyles[size] || {}), ...style };
+
+  return (
+    <Link
+      href={href}
+      className={`theme-btn font-poppins hover:shadow-xl group no-underline ${
+        isOutline ? "style-btn" : ""
+      } ${className}`}
+      style={mergedStyle}
+      {...rest}
+    >
+      <span>{children}</span>
+      {icon ? (
+        <span className="ml-1 transition-transform duration-300 group-hover:rotate-45 flex items-center">
+          {icon}
+        </span>
+      ) : null}
+    </Link>
   );
 }
