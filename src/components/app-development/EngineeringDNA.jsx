@@ -92,9 +92,9 @@ export default function EngineeringDNA() {
                 className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur px-5 py-5 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:border-white hover:shadow-2xl"
               >
                 <div className="relative flex items-start gap-4">
-                  <div className="relative flex p-3 items-center justify-center rounded-xl bg-[#FF5225]/70 text-white">
+                  <div className="relative flex p-3 items-center justify-center rounded-xl bg-[#FF5225]/80 text-white">
                     <item.icon
-                      className="w-6 h-6 relative z-10"
+                      className="w-8 h-8 relative z-10"
                       strokeWidth={1.5}
                     />
                   </div>

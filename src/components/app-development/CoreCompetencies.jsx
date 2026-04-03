@@ -81,7 +81,7 @@ function ServiceCard({ s }) {
         <div className="absolute inset-0 rounded-2xl bg-[#162560]/8 px-6 py-8 flex flex-col justify-between border border-[#E2DDD4] shadow-[0 8px 32px -12px rgba(22,37,96,0.10)] overflow-hidden">
           {/* Number + corner tick */}
           <div className="flex items-start justify-between">
-            <span className="text-4xl text-[#C93D0E] font-semibold">
+            <span className="text-4xl text-[#F15A24] font-semibold">
               {s.num ?? "—"}
             </span>
             {!s.cta && (
@@ -116,7 +116,7 @@ function ServiceCard({ s }) {
 
           {/* Bottom tag */}
           <div className="flex items-center pt-1">
-            <span className="text-sm font-poppins text-[#C93D0E] uppercase tracking-[0.18em]">
+            <span className="text-sm font-poppins text-[#F15A24] uppercase tracking-[0.18em]">
               {s.tag ?? "Hover to explore →"}
             </span>
           </div>
@@ -144,7 +144,7 @@ function ServiceCard({ s }) {
 
           {/* Icon + title header */}
           <div className="relative flex items-center gap-4">
-            <div className="bg-white/20 w-12 h-12 shrink-0 flex items-center justify-center rounded-xl">
+            <div className="bg-white/30 w-12 h-12 shrink-0 flex items-center justify-center rounded-xl">
               <s.Icon size={28} color="#fff" strokeWidth={1.3} />
             </div>
             <h3 className="text-white text-xl font-poppins font-bold leading-tight">
@@ -164,7 +164,7 @@ function ServiceCard({ s }) {
               href="#contact"
               className="bg-[#ffff] text-[#162560] font-poppins cursor-pointer inline-flex items-center gap-2 rounded-full text-sm font-semibold transition-all hover:scale-95 hover:opacity-90 px-5 py-2.5"
             >
-              {s.cta ? "Start Architecture Review" : "Service Details"}
+              {s.cta ? "Start Architecture" : "Service Details"}
               <ArrowIcon />
             </a>
           </div>
