@@ -1,5 +1,6 @@
 "use client";
 
+import { Settings } from "lucide-react";
 import { ScrollReveal, Chip, H2, ArrowIcon } from "./ui";
 
 export default function BottomLine() {
@@ -39,7 +40,10 @@ export default function BottomLine() {
 
       <div className="max-w-6xl mx-auto px-6 relative z-10 text-center">
         <ScrollReveal>
-          <Chip>The Bottom Line</Chip>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            The Bottom Line
+          </Chip>
 
           <H2
             light

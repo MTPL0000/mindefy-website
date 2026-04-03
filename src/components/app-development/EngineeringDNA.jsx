@@ -10,7 +10,7 @@ import {
   fadeLeft,
   fadeUp,
 } from "./ui";
-import { Rocket, RefreshCw, Compass } from "lucide-react";
+import { Rocket, RefreshCw, Compass, Settings } from "lucide-react";
 import Link from "next/link";
 
 const ITEMS = [
@@ -51,7 +51,10 @@ export default function EngineeringDNA() {
         <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-16">
           {/* Left */}
           <ScrollReveal variants={fadeLeft}>
-            <Chip>Engineering DNA</Chip>
+            <Chip>
+              <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+              Engineering DNA
+            </Chip>
             <H2 light>
               What We Actually{" "}
               <span className="bg-gradient-to-r from-[#FFB59E] via-[#FF7A45] to-[#FF5225] bg-clip-text text-transparent font-poppins">

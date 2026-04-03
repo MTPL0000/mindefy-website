@@ -10,6 +10,7 @@ import {
   Globe2,
   Cog,
   HelpCircle,
+  Settings,
 } from "lucide-react";
 
 const SERVICES = [
@@ -199,7 +200,10 @@ export default function CoreCompetencies() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <ScrollReveal className="text-center mb-14">
-          <Chip>Core Competencies</Chip>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            Core Competencies
+          </Chip>
           <H2 className="text-center font-poppins">
             Specialized{" "}
             <span

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ScrollReveal, Chip, H2 } from "./ui";
+import { Settings } from "lucide-react";
 
 const STEPS = [
   {
@@ -46,7 +47,10 @@ export default function DeliveryFramework() {
     <section id="process" className="py-20 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center mb-16">
-          <Chip>Delivery Framework</Chip>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            Delivery Framework
+          </Chip>
           <H2 className="text-center">
             The Mindefy{" "}
             <span className="text-[#E84B27]">Durability Protocol</span>

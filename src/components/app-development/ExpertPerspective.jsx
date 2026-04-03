@@ -1,5 +1,6 @@
 "use client";
 
+import { Settings } from "lucide-react";
 import { ScrollReveal, Chip, fadeLeft, fadeRight } from "./ui";
 
 const STATS = [
@@ -33,7 +34,10 @@ export default function ExpertPerspective() {
           {/* Left: headline + stats */}
           <ScrollReveal variants={fadeLeft}>
             <div className="space-y-6">
-              <Chip as="div">Expert Perspective</Chip>
+              <Chip as="div">
+                <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+                Expert Perspective
+              </Chip>
 
               <h2
                 className="text-white font-extrabold font-poppins leading-tight tracking-tight"

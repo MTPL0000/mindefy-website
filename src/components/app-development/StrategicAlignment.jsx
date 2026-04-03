@@ -1,5 +1,6 @@
 "use client";
 
+import { Settings } from "lucide-react";
 import { ScrollReveal, Chip, H2, ArrowIcon, fadeLeft, fadeRight } from "./ui";
 
 export default function StrategicAlignment() {
@@ -7,7 +8,10 @@ export default function StrategicAlignment() {
     <section className="py-20 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center mb-14">
-          <Chip>Strategic Alignment</Chip>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            Strategic Alignment
+          </Chip>
           <H2 className="text-center">
             Choose <span className="text-[#E84B27]">Your Path</span>
           </H2>

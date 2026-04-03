@@ -100,9 +100,9 @@ export default function ScalingCeiling() {
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-[#F2F5F7] rounded-full mb-6 border border-gray-100 shadow-sm"
           >
-            <Settings className="w-4 h-4 text-[#0B0D17] animate-spin-slow" />
-            <span className="text-xs font-bold text-[#0B0D17] uppercase tracking-widest font-poppins">
-              [DIAGNOSTIC ANALYSIS]
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            <span className="text-xs font-bold text-[#F15A24] uppercase tracking-widest font-poppins">
+              DIAGNOSTIC ANALYSIS
             </span>
           </motion.div>
 

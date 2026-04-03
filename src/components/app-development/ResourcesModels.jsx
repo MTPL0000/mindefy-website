@@ -11,6 +11,7 @@ import {
   fadeRight,
   fadeUp,
 } from "./ui";
+import { Settings } from "lucide-react";
 
 const RESOURCES = [
   {
@@ -60,7 +61,10 @@ export default function ResourcesModels() {
           {/* ── Intellectual Capital ─────────────────────────────────────── */}
           <div>
             <ScrollReveal variants={fadeLeft}>
-              <Chip>Intellectual Capital</Chip>
+              <Chip>
+                <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+                Intellectual Capital
+              </Chip>
               <H2>
                 Authority Content{" "}
                 <span className="text-[#E84B27]">&amp; Lead Magnets</span>
@@ -102,7 +106,10 @@ export default function ResourcesModels() {
           {/* ── Engagement Models ────────────────────────────────────────── */}
           <div>
             <ScrollReveal variants={fadeRight}>
-              <Chip>Engagement Models</Chip>
+              <Chip>
+                <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+                Engagement Models
+              </Chip>
               <H2>
                 How We Work{" "}
                 <span className="text-[#E84B27]">With Your Team</span>

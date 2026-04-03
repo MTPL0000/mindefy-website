@@ -18,7 +18,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-1 px-3 py-2 text-sm font-bold text-[#0B0D17] bg-white rounded-full uppercase leading-none font-poppins shadow-sm"
+                className="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-[#F15A24] bg-white rounded-full uppercase leading-none font-poppins shadow-sm"
               >
                 <Settings width={16} height={16} />
                 APP DEVELOPMENT

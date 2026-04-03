@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Target, Building2, Radar } from "lucide-react";
+import { Target, Building2, Radar, Settings } from "lucide-react";
 import { ScrollReveal, StaggerGrid, Chip, H2, fadeLeft, fadeUp } from "./ui";
 
 const ITEMS = [
@@ -49,7 +49,10 @@ export default function ArchPhilosophy() {
         <div className="grid items-start gap-14 lg:grid-cols-[1.05fr_0.95fr]">
           {/* Left */}
           <ScrollReveal variants={fadeLeft}>
-            <Chip>Architectural Philosophy</Chip>
+            <Chip>
+              <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+              Architectural Philosophy
+            </Chip>
             <H2 className="max-w-2xl text-[#0B0D17] font-poppins">
               We Design{" "}
               <span className="bg-gradient-to-r from-[#FF7A45] via-[#FF5E2E] to-[#FF5225] bg-clip-text text-transparent font-poppins">

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal, Chip, H2, fadeUp } from "./ui";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight, Quote, Settings } from "lucide-react";
 
 const ITEMS = [
   {
@@ -65,7 +65,10 @@ export default function Testimonials() {
       />
       <div className="relative max-w-7xl mx-auto px-4">
         <ScrollReveal className="text-center mb-14">
-          <Chip>TESTIMONIALS</Chip>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            TESTIMONIALS
+          </Chip>
           <H2 className="text-center">
             Voice of the{" "}
             <span className="text-[#E84B27] font-poppins">Customer</span>

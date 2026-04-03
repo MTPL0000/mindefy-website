@@ -8,6 +8,7 @@ import {
   ShoppingBag,
   Truck,
   GraduationCap,
+  Settings,
 } from "lucide-react";
 
 const INDUSTRIES = [
@@ -56,7 +57,10 @@ export default function VerticalExpertise() {
       />
       <div className="relative container mx-auto px-6">
         <ScrollReveal className="text-center mb-16">
-          <Chip>Vertical Expertise</Chip>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            Vertical Expertise
+          </Chip>
           <H2 className="text-center font-poppins mt-6">
             Industries We Work In{" "}
             <span className="text-[#E84B27] font-poppins">(By Constraint)</span>

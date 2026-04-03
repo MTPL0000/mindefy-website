@@ -46,7 +46,7 @@ export default function EngineeringImpact() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-1 px-3 py-2 text-sm font-bold text-[#0B0D17] bg-[#F2F5F7] rounded-full uppercase leading-none font-poppins shadow-sm mb-5"
+            className="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-[#F15A24] bg-[#F2F5F7] rounded-full uppercase leading-none font-poppins shadow-sm mb-5"
           >
             <Settings width={16} height={16} />
             ENGINEERING IMPACT
@@ -70,7 +70,7 @@ export default function EngineeringImpact() {
                 delay={i * 0.1}
                 className="h-full"
               >
-                <div className="feature-box-itemss group h-full flex flex-col bg-[#F2F5F7] rounded-xl px-5 py-7 relative z-10 transition-all duration-500 hover:text-white before:absolute before:content-[''] before:inset-0 before:bg-[#FF5225] before:rounded-xl before:scale-y-[0.3] before:opacity-0 before:origin-center before:transition-all before:duration-500 hover:before:scale-y-100 hover:before:opacity-100 before:-z-10 overflow-hidden shadow-sm hover:shadow-2xl">
+                <div className="feature-box-itemss group h-full flex flex-col bg-[#F2F5F7] border border-[#162560] rounded-xl px-5 py-7 relative z-10 transition-all duration-500 hover:border-none hover:text-white before:absolute before:content-[''] before:inset-0 before:bg-[#FF5225] before:rounded-xl before:scale-y-[0.3] before:opacity-0 before:origin-center before:transition-all before:duration-500 hover:before:scale-y-100 hover:before:opacity-100 before:-z-10 overflow-hidden shadow-sm hover:shadow-2xl">
                   <h3 className="text-[#534F5A] group-hover:text-white/80 font-poppins text-base font-medium tracking-tighter mb-6 transition-colors duration-500">
                     00{i + 1}.
                   </h3>

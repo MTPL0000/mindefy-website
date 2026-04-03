@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal, Chip, H2 } from "./ui";
+import { Settings } from "lucide-react";
 
 const FAQS = [
   {
@@ -52,7 +53,10 @@ export default function FAQ() {
       />
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center mb-14">
-          <Chip>FAQ</Chip>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            FAQ
+          </Chip>
           <H2 className="text-center">
             Common <span className="text-[#E84B27]">Questions</span>
           </H2>

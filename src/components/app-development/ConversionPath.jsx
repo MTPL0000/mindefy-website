@@ -1,5 +1,6 @@
 "use client";
 
+import { Settings } from "lucide-react";
 import { ScrollReveal, Chip, H2, ArrowIcon } from "./ui";
 
 const FIELDS = [
@@ -31,7 +32,10 @@ export default function ConversionPath() {
     <section id="contact" className="py-20 md:py-24 bg-[#F8F7F4]">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center mb-14">
-          <Chip>Conversion Path</Chip>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            Conversion Path
+          </Chip>
           <H2 className="text-center">
             Ready to{" "}
             <span className="text-[#E84B27]">Engineer for Growth?</span>
