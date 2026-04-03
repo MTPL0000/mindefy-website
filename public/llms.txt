@@ -5,7 +5,7 @@
 Primary language: en
 Base URL: https://mindefy.tech
 Contact: https://mindefy.tech/#contact (email: rahul@mindefy.tech)
-Last updated: 2026-02-11
+Last updated: 2026-04-03
 
 ## Company
 - [Home](https://mindefy.tech/): Company overview, services, products, and contact.
@@ -66,3 +66,6 @@ Last updated: 2026-02-11
 
 ## Optional
 - [Sitemap XML](https://mindefy.tech/sitemap.xml): Machine-readable site index.
+
+## Legal
+- [Privacy Policy](https://mindefy.tech/privacy-policy): Exact policy text (Effective: April 3, 2024; Last Updated: October 24, 2024).

@@ -137,6 +137,12 @@ export default function Footer() {
                 >
                   Sitemap
                 </a>
+                <a
+                  href="/privacy-policy"
+                  className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
+                >
+                  Privacy Policy
+                </a>
               </div>
             </div>
 

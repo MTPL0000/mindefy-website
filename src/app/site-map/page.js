@@ -322,6 +322,13 @@ const routes = [
     changeFrequency: "monthly",
     priority: 0.8,
   },
+  {
+    url: `${baseUrl}/privacy-policy`,
+    label: "Privacy Policy",
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 0.6,
+  },
 ];
 
 export default function SitemapPage() {
@@ -345,7 +352,7 @@ export default function SitemapPage() {
     { title: "E-commerce and Marketplace", items: items.slice(25, 29) },
     { title: "Product", items: items.slice(29, 30) },
     { title: "Projects", items: items.slice(30, 36) },
-    { title: "Other Pages", items: items.slice(36, 39) },
+    { title: "Other Pages", items: items.slice(36) },
   ];
 
   return (
