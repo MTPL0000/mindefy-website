@@ -97,11 +97,11 @@ export default function IntellectualCapitalEngagementModels() {
 
           <div>
             <ScrollReveal variants={fadeLeft}>
-              <h3 className="text-[#F15A24] text-xl font-bold mb-2">
+              <h3 className="text-[#F15A24] text-xl font-poppins font-bold mb-2">
                 Authority Content & Lead Magnets
               </h3>
 
-              <p className="text-gray-600 text-sm mb-6">
+              <p className="text-gray-600 font-poppins text-sm mb-6">
                 Explore our technical insights, diagnostic tools, and
                 research-driven content designed to help engineering leaders
                 make better architectural decisions.
@@ -126,12 +126,12 @@ export default function IntellectualCapitalEngagementModels() {
 
                       {/* Content */}
                       <div className="flex-1">
-                        <h4 className="text-[#162560] font-bold text-base mt-1 mb-2 leading-snug">
+                        <h4 className="text-[#162560] font-bold text-base font-poppins mt-1 mb-2 leading-snug">
                           {item.title}
                         </h4>
 
                         {item.desc && (
-                          <p className="text-gray-600 text-sm leading-relaxed">
+                          <p className="text-gray-600 text-sm font-poppins leading-relaxed">
                             {item.desc}
                           </p>
                         )}
@@ -153,7 +153,7 @@ export default function IntellectualCapitalEngagementModels() {
                 How We Work With Your Team
               </h3>
 
-              <p className="text-gray-600 text-sm mb-6">
+              <p className="text-gray-600 font-poppins text-sm mb-6">
                 Flexible engagement models designed to support your engineering
                 team, accelerate delivery, and ensure long-term technical
                 stability.
@@ -178,11 +178,11 @@ export default function IntellectualCapitalEngagementModels() {
 
                       {/* Content */}
                       <div>
-                        <h4 className="text-[#162560] font-bold text-base mb-2">
+                        <h4 className="text-[#162560] font-bold font-poppins text-base mb-2">
                           {item.title}
                         </h4>
 
-                        <p className="text-gray-600 text-sm leading-relaxed">
+                        <p className="text-gray-600 text-sm font-poppins leading-relaxed">
                           {item.desc}
                         </p>
                       </div>

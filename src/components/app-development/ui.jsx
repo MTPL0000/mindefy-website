@@ -199,9 +199,9 @@ export function AppDevButton({
   };
 
   const sizeStyles = {
-    sm: { padding: "12px 20px", fontSize: "14px" },
+    sm: { padding: "12px 28px", fontSize: "14px" },
     md: {},
-    lg: { padding: "18px 44px", fontSize: "17px" },
+    lg: { padding: "18px 32px", fontSize: "16px" },
   };
 
   const mergedStyle = { ...colorStyles, ...(sizeStyles[size] || {}), ...style };
