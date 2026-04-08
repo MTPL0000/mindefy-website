@@ -1,123 +1,142 @@
 "use client";
 
 import { motion } from "framer-motion";
+import {
+  Settings,
+  Search,
+  Layers,
+  PenTool,
+  ShieldCheck,
+  Activity,
+  Rocket,
+  Eye,
+} from "lucide-react";
+
 import { ScrollReveal, Chip, H2 } from "./ui";
-import { Settings } from "lucide-react";
+
+/* ================================
+   DELIVERY FRAMEWORK DATA
+================================ */
 
 const STEPS = [
   {
     n: "01",
     title: "Product Discovery & Strategy",
-    desc: "User journeys vs. technical constraints",
+    desc: "Mapping user journeys vs. technical constraints.",
+    icon: Search,
   },
   {
     n: "02",
     title: "Architectural Design",
-    desc: "Service boundaries & stack selection",
+    desc: "Defining service boundaries and stack selection.",
+    icon: Layers,
   },
   {
     n: "03",
     title: "Intent-Driven UI/UX",
-    desc: "Prototyping for real-world patterns",
+    desc: "Prototyping flows for real-world interaction patterns.",
+    icon: PenTool,
   },
   {
     n: "04",
     title: "Engineering Guardrails",
-    desc: "Clean Architecture, strict type-safety",
+    desc: "Modular development using Clean Architecture and strict type-safety.",
+    icon: ShieldCheck,
   },
   {
     n: "05",
     title: "Stress Testing (QA)",
-    desc: "Chaos Engineering finds failure points",
+    desc: "Chaos Engineering to find failure points.",
+    icon: Activity,
   },
   {
     n: "06",
     title: "Orchestrated Deployment",
-    desc: "Zero-downtime releases & ASO",
+    desc: "Zero-downtime releases and ASO.",
+    icon: Rocket,
   },
   {
     n: "07",
     title: "Intelligent Observability",
-    desc: "Real-time monitoring drives iteration",
+    desc: "Real-time monitoring to drive the next iteration.",
+    icon: Eye,
   },
 ];
+
+/* ================================
+   COMPONENT
+================================ */
 
 export default function DeliveryFramework() {
   return (
     <section id="process" className="py-20 md:py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Header */}
+
         <ScrollReveal className="text-center mb-16">
           <Chip>
             <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            Delivery Framework
+            DELIVERY FRAMEWORK
           </Chip>
+
           <H2 className="text-center">
             The Mindefy{" "}
-            <span className="text-[#E84B27]">Durability Protocol</span>
+            <span className="text-[#E84B27] font-poppins">
+              Durability Protocol
+            </span>
           </H2>
-          <p className="text-gray-500 text-[17px] max-w-lg mx-auto">
-            Our proprietary 7-step lifecycle works for both new builds and deep
-            audits.
+
+          <p className="text-gray-500 text-lg font-poppins max-w-2xl mx-auto mt-4">
+            The Mindefy Durability Protocol (7-Step Lifecycle). Our proprietary
+            Agile development process works for both new builds and deep audits.
           </p>
         </ScrollReveal>
 
-        {/* Desktop — horizontal timeline */}
-        <div className="hidden lg:block relative mt-20">
-          <div className="absolute top-[22px] left-[6%] right-[6%] h-0.5 bg-gradient-to-r from-[#162560] to-[#E84B27]" />
-          <div className="grid grid-cols-7">
-            {STEPS.map((step, i) => (
+        {/* Process Grid */}
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {STEPS.map((step, index) => {
+            const Icon = step.icon;
+
+            return (
               <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 28 }}
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.09, duration: 0.5 }}
-                className="flex flex-col items-center text-center px-1 group"
+                transition={{ delay: index * 0.08 }}
+                className="group bg-[#F8F7F4] rounded-2xl p-8 border border-gray-200 hover:border-[#162560]  hover:shadow-xl hover:-translate-y-1 transition relative overflow-hidden"
               >
-                <div
-                  className="w-[44px] h-[44px] rounded-full bg-white border-2 border-[#162560] flex items-center justify-center text-[#162560] font-bold text-[11px] mb-4 relative z-10 shadow-md group-hover:bg-[#162560] group-hover:text-white transition-all group-hover:scale-110"
-                  style={{ fontFamily: "monospace" }}
-                >
+                {/* Step Number */}
+
+                <div className="absolute right-6 top-8 text-6xl font-poppins font-extrabold text-[#162560]">
                   {step.n}
                 </div>
-                <h3 className="text-[#162560] font-bold text-[11px] mb-1.5 leading-tight">
-                  {step.title}
-                </h3>
-                <div className="text-gray-400 text-[11px] leading-relaxed">
-                  {step.desc}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
 
-        {/* Mobile — vertical list */}
-        <div className="lg:hidden space-y-3">
-          {STEPS.map((step, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: -18 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.07 }}
-              className="flex gap-4 items-start bg-[#F8F7F4] rounded-xl p-4"
-            >
-              <div
-                className="w-10 h-10 rounded-full bg-[#162560] text-white flex items-center justify-center font-bold text-[11px] flex-shrink-0"
-                style={{ fontFamily: "monospace" }}
-              >
-                {step.n}
-              </div>
-              <div>
-                <h3 className="text-[#162560] font-bold text-sm mb-0.5">
+                {/* Icon */}
+
+                <div className="w-14 h-14 rounded-xl bg-white border border-[#E84B27] flex items-center justify-center mb-12 shadow-sm group-hover:scale-110 transition">
+                  <Icon className="w-8 h-8 text-[#E84B27]" />
+                </div>
+
+                {/* Title */}
+
+                <h3 className="text-[#E84B27] font-poppins font-bold text-xl mb-5">
                   {step.title}
                 </h3>
-                <div className="text-gray-500 text-xs leading-relaxed">
+
+                {/* Description */}
+
+                <p className="text-gray-500 font-poppins text-base leading-relaxed">
                   {step.desc}
-                </div>
-              </div>
-            </motion.div>
-          ))}
+                </p>
+
+                {/* Bottom Accent */}
+
+                <div className="mt-6 h-1 w-10 bg-gradient-to-r from-[#162560] to-[#E84B27] rounded-full group-hover:w-20 transition-all" />
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
