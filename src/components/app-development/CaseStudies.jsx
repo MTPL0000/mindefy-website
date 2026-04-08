@@ -1,99 +1,148 @@
 "use client";
 
-import { Settings } from "lucide-react";
+import { Settings, Rocket, Database, ShieldCheck, Layers } from "lucide-react";
+
 import { ScrollReveal, Chip, H2, fadeLeft, fadeRight } from "./ui";
+
+/* ================================
+   CASE STUDIES DATA
+================================ */
 
 const CASES = [
   {
+    id: "01",
+    subtitle: "Success Story 01",
     tag: "Greenfield → Scale",
-    tagCls: "bg-[#EEF1FA] text-[#162560]",
-    num: "01",
+    tagCls: "bg-[#EEF1FA] text-[#162560] border border-[#162560]",
     title: "The 4.5 Million User Scale",
-    desc: "Engineered a digital wellbeing ecosystem (YourHour) that handled growth from zero to millions of daily sessions with zero performance decay across all scaling milestones.",
-    stats: [
-      { l: "Users", v: "4.5M+" },
-      { l: "Uptime", v: "99.99%" },
-      { l: "Growth", v: "10×" },
-    ],
+    icon: Rocket,
+    description:
+      "Engineered a digital wellbeing ecosystem (YourHour) that handled growth from zero to millions of daily sessions with zero performance decay.",
+    techIcons: [Rocket, Layers, ShieldCheck],
     variants: fadeLeft,
   },
   {
+    id: "02",
+    subtitle: "Success Story 02",
     tag: "Legacy Rescue",
     tagCls:
       "bg-[rgba(232,75,39,0.08)] text-[#E84B27] border border-[rgba(232,75,39,0.2)]",
-    num: "02",
     title: "Zero-Failure Enterprise Logistics",
-    desc: "Re-engineered a mission-critical logistics platform plagued by data inconsistency, creating layered redundancy architecture for thousands of daily transactions without incident.",
-    stats: [
-      { l: "Failure Rate", v: "0%" },
-      { l: "Trans./day", v: "10K+" },
-      { l: "Debt Cut", v: "60%" },
-    ],
+    icon: Database,
+    description:
+      "Re-engineered a mission-critical logistics platform plagued by data inconsistency, creating layered redundancy for thousands of daily transactions.",
+    techIcons: [Database, ShieldCheck, Layers],
     variants: fadeRight,
   },
 ];
 
+/* ================================
+   COMPONENT
+================================ */
+
 export default function CaseStudies() {
   return (
     <section id="case-studies" className="py-20 md:py-24 bg-[#F8F7F4]">
-      <div className="max-w-6xl mx-auto px-6">
-        <ScrollReveal className="text-center mb-14">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Header */}
+
+        <ScrollReveal className="text-center mb-16">
           <Chip>
-            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            Case Studies
+            <Settings className="w-4 h-4 text-[#F15A24] font-poppins animate-spin-slow" />
+            CASE STUDIES
           </Chip>
-          <H2 className="text-center">
+
+          <H2 className="text-center font-poppins">
             Proof:{" "}
-            <span className="text-[#E84B27]">Systems Under Real Load</span>
+            <span className="text-[#E84B27] font-poppins">
+              Systems Under Real Load
+            </span>
           </H2>
         </ScrollReveal>
 
-        <div className="grid lg:grid-cols-2 gap-6">
-          {CASES.map((c, i) => (
-            <ScrollReveal key={i} variants={c.variants}>
-              <div className="group bg-white rounded-2xl p-10 border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all relative overflow-hidden h-full">
-                {/* Background number */}
-                <div
-                  className="absolute right-6 top-4 text-[110px] font-extrabold text-gray-100 leading-none select-none"
-                  style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
-                >
-                  {c.num}
-                </div>
-                <span
-                  className={`inline-block text-[10px] font-medium tracking-[0.14em] uppercase px-3 py-1 rounded-full mb-5 ${c.tagCls}`}
-                  style={{ fontFamily: "monospace" }}
-                >
-                  {c.tag}
-                </span>
-                <h3
-                  className="text-[#162560] font-extrabold text-2xl mb-4 leading-tight relative z-10"
-                  style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
-                >
-                  {c.title}
-                </h3>
-                <p className="text-gray-500 text-[15px] leading-relaxed mb-8 relative z-10">
-                  {c.desc}
-                </p>
-                <div className="grid grid-cols-3 gap-4 pt-5 border-t border-gray-100">
-                  {c.stats.map((s, j) => (
-                    <div key={j} className="text-center">
-                      <div
-                        className="text-[#162560] font-extrabold text-[22px] leading-none"
-                        style={{
-                          fontFamily: "'Bricolage Grotesque', sans-serif",
-                        }}
+        {/* Case Cards */}
+
+        <div className="grid lg:grid-cols-2 gap-10">
+          {CASES.map((c, index) => {
+            const Icon = c.icon;
+
+            return (
+              <ScrollReveal key={index} variants={c.variants}>
+                <div className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all overflow-hidden h-full">
+                  {/* Top Accent Bar */}
+
+                  <div className="h-1 bg-gradient-to-r from-[#162560] to-[#E84B27]" />
+
+                  <div className="p-10">
+                    {/* Tag & Story */}
+
+                    <div className="flex items-center justify-between mb-6">
+                      <span
+                        className={`text-xs font-poppins font-medium tracking-[0.14em] uppercase px-3 py-2 rounded-full ${c.tagCls}`}
                       >
-                        {s.v}
-                      </div>
-                      <div className="text-gray-400 text-[11px] mt-1">
-                        {s.l}
+                        {c.tag}
+                      </span>
+
+                      <span className="text-gray-300 font-poppins font-bold text-xl">
+                        {c.id}
+                      </span>
+                    </div>
+
+                    {/* Icon */}
+
+                    <div className="w-14 h-14 rounded-xl bg-[#E84B27]/15 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                      <Icon
+                        className="w-8 h-8 text-[#E84B27]"
+                        strokeWidth={1.4}
+                      />
+                    </div>
+
+                    {/* Subtitle */}
+
+                    <div className="text-[#E84B27] font-poppins text-xs uppercase tracking-widest mb-2">
+                      {c.subtitle}
+                    </div>
+
+                    {/* Title */}
+
+                    <h3 className="text-[#162560] font-poppins font-extrabold text-2xl leading-tight mb-4">
+                      {c.title}
+                    </h3>
+
+                    {/* Description */}
+
+                    <p className="text-gray-500 font-poppins text-base leading-relaxed mb-8">
+                      {c.description}
+                    </p>
+
+                    {/* Divider */}
+
+                    <div className="border-t border-gray-100 pt-6">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs text-gray-500 font-poppins uppercase tracking-wider">
+                          System Highlights
+                        </span>
+
+                        <div className="flex gap-3">
+                          {c.techIcons.map((TIcon, i) => (
+                            <div
+                              key={i}
+                              className="w-9 h-9 rounded-lg bg-[#F8F7F4] flex items-center justify-center"
+                            >
+                              <TIcon
+                                className="w-6 h-6 text-[#162560]"
+                                strokeWidth={1.7}
+                              />
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  ))}
+                  </div>
                 </div>
-              </div>
-            </ScrollReveal>
-          ))}
+              </ScrollReveal>
+            );
+          })}
         </div>
       </div>
     </section>
