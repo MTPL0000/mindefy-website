@@ -1,106 +1,217 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ScrollReveal, Chip, H2 } from "./ui";
-import { Settings } from "lucide-react";
+import {
+  Settings,
+  Target,
+  Layers,
+  AlertTriangle,
+  Activity,
+  Trophy,
+  CheckCircle,
+  XCircle,
+} from "lucide-react";
+import { AppDevButton } from "./ui";
 
-const ROWS = [
-  { feature: "Focus", trad: 'Speed to "Demo"', mindefy: "Stability at Scale" },
+/* ================================
+   DATA
+================================ */
+
+const comparisonData = [
   {
-    feature: "Architecture",
-    trad: "Templated / Off-the-shelf",
+    title: "Focus",
+    icon: Target,
+    traditional: 'Speed to "Demo"',
+    mindefy: "Stability at Scale",
+  },
+  {
+    title: "Architecture",
+    icon: Layers,
+    traditional: "Templated / Off-the-shelf",
     mindefy: "Bespoke / Scale-ready",
   },
   {
-    feature: "Tech Debt",
-    trad: '"Fix it later" (High Debt)',
-    mindefy: '"Build it right" (Clean Arch)',
+    title: "Tech Debt",
+    icon: AlertTriangle,
+    traditional: '"Fix it later" (High Debt)',
+    mindefy: '"Build it right" (Clean Architecture)',
   },
   {
-    feature: "Testing",
-    trad: "Manual / Surface level",
+    title: "Testing",
+    icon: Activity,
+    traditional: "Manual / Surface level",
     mindefy: "AI-Driven Chaos Engineering",
   },
   {
-    feature: "Outcome",
-    trad: "A Launchable MVP",
+    title: "Outcome",
+    icon: Trophy,
+    traditional: "A Launchable MVP",
     mindefy: "An Evolvable Asset",
   },
 ];
 
-export default function MarketDiff() {
-  return (
-    <section className="py-20 md:py-24 bg-[#F8F7F4]">
-      <div className="max-w-6xl mx-auto px-6">
-        <ScrollReveal className="text-center mb-14">
-          <Chip>
-            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            Market Differentiation
-          </Chip>
-          <H2 className="text-center">
-            Mindefy vs.{" "}
-            <span className="text-[#E84B27]">Traditional Agencies</span>
-          </H2>
-        </ScrollReveal>
+/* ================================
+   COMPONENT
+================================ */
 
-        <ScrollReveal>
-          <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-xl">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr
-                  style={{
-                    background:
-                      "linear-gradient(135deg, #0E1A45 0%, #162560 100%)",
-                  }}
-                >
-                  <th
-                    scope="col"
-                    className="text-left px-8 py-5 text-white/50 text-[11px] font-normal tracking-[0.16em] uppercase w-[28%]"
-                    style={{ fontFamily: "monospace" }}
-                  >
-                    Feature
-                  </th>
-                  <th
-                    scope="col"
-                    className="text-left px-8 py-5 text-white/50 text-[11px] font-normal tracking-[0.16em] uppercase w-[36%]"
-                    style={{ fontFamily: "monospace" }}
-                  >
-                    Traditional Agencies
-                  </th>
-                  <th
-                    scope="col"
-                    className="text-left px-8 py-5 text-[#FFB59E] text-[11px] font-normal tracking-[0.16em] uppercase w-[36%]"
-                    style={{ fontFamily: "monospace" }}
-                  >
-                    Mindefy Engineering
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {ROWS.map((row, i) => (
-                  <motion.tr
+export default function MarketDifferentiation() {
+  return (
+    <section className="bg-[#F8F7F4] py-20 md:py-24 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Header */}
+
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm mb-6"
+          >
+            <Settings className="w-4 h-4 text-[#E84B27]" />
+            <span className="text-sm font-poppins font-semibold text-[#E84B27]">
+              MARKET DIFFERENTIATION
+            </span>
+          </motion.div>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-5xl font-bold font-poppins text-[#162560] leading-tight"
+          >
+            Traditional Agencies vs{" "}
+            <span className="text-[#E84B27] font-poppins">
+              Mindefy Engineering
+            </span>
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-gray-600 text-base font-poppins mt-4 max-w-2xl mx-auto"
+          >
+            We don't just build software fast — we build systems that scale,
+            evolve, and remain stable under real-world pressure.
+          </motion.p>
+        </div>
+
+        {/* Comparison Section */}
+
+        <div className="grid lg:grid-cols-2 gap-10">
+          {/* Traditional Card */}
+
+          <motion.div
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 200 }}
+            className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300"
+          >
+            <h3 className="text-xl font-poppins font-semibold text-gray-700 mb-8">
+              Traditional Agencies
+            </h3>
+
+            <div className="space-y-4">
+              {comparisonData.map((item, i) => {
+                const Icon = item.icon;
+
+                return (
+                  <motion.div
                     key={i}
-                    initial={{ opacity: 0, x: -16 }}
+                    initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: i * 0.09 }}
-                    className="group hover:bg-gray-50 transition-colors"
+                    whileHover={{ x: 5 }}
+                    className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-200 transition"
                   >
-                    <td className="px-8 py-4 border-b border-gray-100 text-[#162560] font-bold text-sm">
-                      {row.feature}
-                    </td>
-                    <td className="px-8 py-4 border-b border-gray-100 text-gray-500 text-sm">
-                      {row.trad}
-                    </td>
-                    <td className="px-8 py-4 border-b border-gray-100 text-[#162560] font-semibold text-sm bg-[#EEF1FA]/40">
-                      {row.mindefy}
-                    </td>
-                  </motion.tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </ScrollReveal>
+                    <Icon className="w-6 h-6 text-gray-400 mt-1" />
+
+                    <div>
+                      <p className="text-sm text-gray-500 font-poppins">
+                        {item.title}
+                      </p>
+
+                      <div className="flex items-center gap-3 font-poppins text-base font-medium text-gray-600 mt-1">
+                        <XCircle className="w-5 h-5 text-[#E84B27]" />
+
+                        {item.traditional}
+                      </div>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </motion.div>
+
+          {/* Mindefy Card */}
+
+          <motion.div
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 200 }}
+            className="bg-gradient-to-br from-[#162560] to-[#0E1A45] rounded-2xl shadow-xl p-8 text-white relative overflow-hidden hover:shadow-2xl"
+          >
+            {/* Glow Effect */}
+
+            <div className="absolute top-0 right-0 w-40 h-40 bg-[#E84B27] opacity-20 rounded-full blur-3xl"></div>
+
+            <h3 className="text-xl font-semibold mb-6">Mindefy Engineering</h3>
+
+            <div className="space-y-4">
+              {comparisonData.map((item, i) => {
+                const Icon = item.icon;
+
+                return (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.1 }}
+                    viewport={{ once: true }}
+                    whileHover={{ x: 5 }}
+                    className="flex items-start gap-4 p-3 rounded-lg hover:bg-white/10 transition"
+                  >
+                    <Icon className="w-6 h-6 text-[#E84B27] mt-1" />
+
+                    <div>
+                      <p className="font-poppins text-sm text-white/50">
+                        {item.title}
+                      </p>
+
+                      <div className="flex items-center gap-3 font-poppins text-base font-medium mt-1">
+                        <CheckCircle className="w-5 h-5 text-[#E84B27]" />
+
+                        {item.mindefy}
+                      </div>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* CTA */}
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          viewport={{ once: true }}
+          className="text-center mt-16"
+        >
+          <AppDevButton
+            href="/contact-us-technology-innovators"
+            primaryColor="#F94D00"
+            secondaryColor="#0B0D17"
+            textColor="#FFFFFF"
+            className="hover:shadow-orange-500/20"
+          >
+            Start Your Engineering Journey
+          </AppDevButton>
+        </motion.div>
       </div>
     </section>
   );
