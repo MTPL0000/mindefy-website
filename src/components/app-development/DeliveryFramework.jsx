@@ -87,7 +87,7 @@ export default function DeliveryFramework() {
           </H2>
 
           <p className="text-gray-500 text-lg font-poppins max-w-2xl mx-auto mt-4">
-            The Mindefy Durability Protocol (7-Step Lifecycle). Our proprietary
+            The Mindefy Durability Protocol. Our proprietary
             Agile development process works for both new builds and deep audits.
           </p>
         </ScrollReveal>

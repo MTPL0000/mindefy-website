@@ -205,7 +205,7 @@ export default function MarketDifferentiation() {
           <AppDevButton
             href="/contact-us-technology-innovators"
             primaryColor="#F94D00"
-            secondaryColor="#0B0D17"
+            secondaryColor="#162560"
             textColor="#FFFFFF"
             className="hover:shadow-orange-500/20"
           >

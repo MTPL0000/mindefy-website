@@ -53,10 +53,8 @@ export default function CaseStudies() {
           </Chip>
 
           <H2 className="text-center font-poppins">
-            Proof:{" "}
-            <span className="text-[#E84B27] font-poppins">
-              Systems Under Real Load
-            </span>
+            Systems{" "}
+            <span className="text-[#E84B27] font-poppins">Under Real Load</span>
           </H2>
         </ScrollReveal>
 

@@ -58,7 +58,7 @@ export default function IdealPartnerProfile({
           </Chip>
 
           <H2 className="mt-4 max-w-2xl">
-            Qualification:{" "}
+            Qualification{" "}
             <span className="text-[#E84B27]">Who This Approach Is For</span>
           </H2>
         </ScrollReveal>

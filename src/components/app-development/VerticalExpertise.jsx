@@ -62,8 +62,8 @@ export default function VerticalExpertise() {
             Vertical Expertise
           </Chip>
           <H2 className="text-center font-poppins mt-6">
-            Industries We Work In{" "}
-            <span className="text-[#E84B27] font-poppins">(By Constraint)</span>
+            Industries{" "}
+            <span className="text-[#E84B27] font-poppins">We Work In</span>
           </H2>
         </ScrollReveal>
 

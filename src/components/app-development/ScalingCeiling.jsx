@@ -107,9 +107,8 @@ export default function ScalingCeiling() {
           </motion.div>
 
           <H2 className="text-3xl md:text-5xl font-bold text-[#0B0D17] leading-snug mb-8 font-poppins">
-            The Scaling Ceiling: <br />
-            <span className="text-[#F94D00]">The Real Problem</span> (Not
-            Symptoms)
+            The Scaling Ceiling <br />
+            <span className="text-[#F94D00]">The Real Problem</span>
           </H2>
 
           <p className="text-[#534F5A] text-lg md:text-xl max-w-2xl mx-auto font-poppins leading-relaxed">

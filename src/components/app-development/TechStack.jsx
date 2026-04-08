@@ -92,7 +92,7 @@ export default function TechStack() {
         {/* Header */}
 
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 font-poppins px-4 py-2 rounded-full bg-[#F8F7F4] text-sm text-[#162560]">
+          <div className="inline-flex items-center gap-2 font-poppins font-bold px-4 py-2 rounded-full bg-[#F8F7F4] text-sm text-[#F15A24]">
             <Settings className="w-4 h-4 text-[#F15A24]" />
             Technology Stack
           </div>

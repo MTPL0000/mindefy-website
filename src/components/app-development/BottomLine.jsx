@@ -54,7 +54,7 @@ export default function BottomLine() {
           >
             Build Something That
             <br />
-            <span style={{ color: "#FFB59E" }}>Doesn&apos;t Need</span>
+            <span className="text-[#F15A24]">Doesn&apos;t Need</span>
             <br />
             to Be Rewritten.
           </H2>

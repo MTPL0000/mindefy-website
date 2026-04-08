@@ -73,8 +73,8 @@ function StrategicCard({ data }) {
           <div className="relative z-10">
             {/* Label */}
             <div className="flex items-center gap-2 mb-6">
-              <Icon className="w-5 h-5 text-[#FFB59E]" />
-              <span className="text-[#FFB59E] text-xs tracking-widest uppercase">
+              <Icon className="w-5 h-5 text-[#F15A24]" />
+              <span className="text-[#F15A24] text-xs tracking-widest uppercase">
                 {data.label}
               </span>
             </div>

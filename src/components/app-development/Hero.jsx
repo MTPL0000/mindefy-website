@@ -29,7 +29,7 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#0B0D17] lg:leading-18 font-poppins"
               >
-                Scalable App Development Services:{" "}
+                Scalable App Development Services{" "}
                 <span className="text-[#F94D00]">
                   From Startup MVPs to Enterprise Modernization
                 </span>
