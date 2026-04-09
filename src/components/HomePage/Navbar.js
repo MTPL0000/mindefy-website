@@ -531,15 +531,23 @@ export default function Navbar() {
               {showServicesDropdown && (
                 <>
                   {/* Invisible hover bridge */}
-                  <div className="fixed left-0 top-16  w-full h-20 z-30"></div>
-
-                  {/* Actual dropdown positioned to take full width */}
                   <div
-                    className={`fixed left-0 top-18 w-full flex justify-center z-40 transition-opacity duration-200 ease-in-out ${
+                    className="fixed left-1/2 top-16 -translate-x-1/2 h-20 z-30 pointer-events-auto"
+                    style={{ width: "min(90vw, 1280px)" }}
+                  ></div>
+
+                  {/* Actual dropdown centered with limited width so blank sides close it */}
+                  <div
+                    className={`fixed left-1/2 top-18 -translate-x-1/2 z-40 transition-opacity duration-200 ease-in-out pointer-events-none flex justify-center ${
                       servicesTransitioning ? "opacity-0" : "opacity-100"
                     }`}
+                    style={{ width: "min(90vw, 1280px)" }}
                   >
-                    <div className="w-full max-w-none">
+                    <div
+                      className="pointer-events-auto inline-block"
+                      onMouseEnter={() => setShowServicesDropdown(true)}
+                      onMouseLeave={() => setShowServicesDropdown(false)}
+                    >
                       <ServicesDrop
                         onItemClick={handleDesktopDropdownItemClick}
                         onCtaClick={scrollToContact}
@@ -576,15 +584,26 @@ export default function Navbar() {
               {/* Products Dropdown */}
               {showProductsDropdown && (
                 <>
-                  <div className="fixed left-0 top-16 w-full h-20 z-30"></div>
                   <div
-                    className={`fixed left-0 top-18 w-full px-2 sm:px-4 flex justify-center z-40 transition-opacity duration-200 ease-in-out ${
+                    className="fixed left-1/2 top-16 -translate-x-1/2 h-20 z-30 pointer-events-auto"
+                    style={{ width: "min(90vw, 1280px)" }}
+                  ></div>
+                  <div
+                    className={`fixed left-1/2 top-18 -translate-x-1/2 px-2 sm:px-4 z-40 transition-opacity duration-200 ease-in-out pointer-events-none flex justify-center ${
                       productsTransitioning ? "opacity-0" : "opacity-100"
                     }`}
+                    style={{ width: "min(90vw, 1024px)" }}
                   >
-                    <ProductsDropdown
-                      onItemClick={handleDesktopDropdownItemClick}
-                    />
+                    <div
+                      className="pointer-events-auto inline-block"
+                      style={{ width: "stretch" }}
+                      onMouseEnter={() => setShowProductsDropdown(true)}
+                      onMouseLeave={() => setShowProductsDropdown(false)}
+                    >
+                      <ProductsDropdown
+                        onItemClick={handleDesktopDropdownItemClick}
+                      />
+                    </div>
                   </div>
                 </>
               )}
@@ -616,15 +635,25 @@ export default function Navbar() {
               {/* Projects Dropdown */}
               {showProjectsDropdown && (
                 <>
-                  <div className="fixed left-0 top-16 w-full h-20 z-30"></div>
                   <div
-                    className={`fixed left-0 top-18 w-full px-2 sm:px-4 flex justify-center z-40 transition-opacity duration-200 ease-in-out ${
+                    className="fixed left-1/2 top-16 -translate-x-1/2 h-20 z-30 pointer-events-auto"
+                    style={{ width: "min(90vw, 1280px)" }}
+                  ></div>
+                  <div
+                    className={`fixed left-1/2 top-18 -translate-x-1/2 px-2 sm:px-4 z-40 transition-opacity duration-200 ease-in-out pointer-events-none flex justify-center ${
                       projectsTransitioning ? "opacity-0" : "opacity-100"
                     }`}
+                    style={{ width: "min(90vw, 1280px)" }}
                   >
-                    <ProjectDropdown
-                      onItemClick={handleDesktopDropdownItemClick}
-                    />
+                    <div
+                      className="pointer-events-auto inline-block"
+                      onMouseEnter={() => setShowProjectsDropdown(true)}
+                      onMouseLeave={() => setShowProjectsDropdown(false)}
+                    >
+                      <ProjectDropdown
+                        onItemClick={handleDesktopDropdownItemClick}
+                      />
+                    </div>
                   </div>
                 </>
               )}
