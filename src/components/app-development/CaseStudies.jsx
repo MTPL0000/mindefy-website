@@ -29,7 +29,7 @@ const CASES = [
     description:
       "Engineered a digital wellbeing ecosystem (YourHour) that handled growth from zero to millions of daily sessions with zero performance decay.",
     techIcons: [Rocket, Layers, ShieldCheck],
-    image: "/images/case1.jpg",
+    image: "/images/yourhour/customer-response.webp",
   },
   {
     id: "02",
@@ -42,7 +42,7 @@ const CASES = [
     description:
       "Re-engineered a mission-critical logistics platform plagued by data inconsistency, creating layered redundancy for thousands of daily transactions.",
     techIcons: [Database, ShieldCheck, Layers],
-    image: "/images/case2.jpg",
+    image: "/images/AAD.webp",
   },
 ];
 
@@ -134,7 +134,7 @@ export default function CaseStudies() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -80 }}
                 transition={{ duration: 0.6 }}
-                className={`grid lg:grid-cols-2 gap-12 items-center py-3`}
+                className={`grid lg:grid-cols-2 gap-12 items-center justify-center py-3`}
               >
                 {/* Image */}
 
@@ -143,12 +143,12 @@ export default function CaseStudies() {
                   animate={{ scale: 1 }}
                   className={`${isReverse ? "lg:order-2" : ""}`}
                 >
-                  <div className="rounded-2xl overflow-hidden shadow-xl">
+                  <div className="rounded-2xl p-3 overflow-hidden shadow-xl">
                     <img
                       src={currentCase.image}
                       alt={currentCase.title}
                       loading="lazy"
-                      className="w-full h-115 object-cover"
+                      className="w-full aspect-auto"
                     />
                   </div>
                 </motion.div>

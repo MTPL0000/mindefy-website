@@ -76,8 +76,13 @@ export default function EngineeringDNA() {
             </AppDevButton>
 
             <div className="mt-10 relative">
-              <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 text-white text-center px-6 py-16 backdrop-blur shadow-2xl">
-                Image Box
+              <div className="relative overflow-hidden rounded-2xl px-2 py-2 backdrop-blur shadow-xl">
+                <img
+                  src="/images/yourhour/learn-serving.webp"
+                  alt="image"
+                  loading="lazy"
+                  className="w-full aspect-auto"
+                />
               </div>
             </div>
           </ScrollReveal>

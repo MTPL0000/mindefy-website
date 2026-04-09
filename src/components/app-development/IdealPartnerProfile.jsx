@@ -43,7 +43,7 @@ const QUALIFICATIONS = [
 ================================ */
 
 export default function IdealPartnerProfile({
-  bannerImage = "/images/ideal-partner-banner.jpg",
+  bannerImage = "/images/yourhour/mindful-pause.webp",
   sectionId = "ideal-partner-profile",
 }) {
   return (
@@ -73,11 +73,8 @@ export default function IdealPartnerProfile({
               loading="lazy"
               width={1200}
               height={500}
-              className="w-full h-64 md:h-80 object-cover"
+              className="w-full aspect-auto object-cover"
             />
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-[#162560]/50" />
           </div>
         </ScrollReveal>
 
