@@ -52,7 +52,7 @@ export default function ExpertPerspective() {
               <p className="text-white/80 text-base md:text-lg leading-relaxed font-poppins max-w-3xl">
                 Whether you are launching your first MVP or rescuing a legacy
                 product,{" "}
-                <span className="text-[#FFB59E] font-semibold font-poppins">
+                <span className="text-[#F15A24] font-semibold font-poppins">
                   architecture is your only defense against irrelevance.
                 </span>
               </p>

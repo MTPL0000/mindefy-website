@@ -151,9 +151,9 @@ export default function Testimonials() {
               <button
                 key={k}
                 onClick={() => setIdx(k)}
-                className={`h-1.5 rounded-full transition-all duration-300 border-0 cursor-pointer ${
+                className={`h-2.5 rounded-full transition-all duration-300 border-0 cursor-pointer ${
                   k === idx
-                    ? "bg-[#FF7A45] w-7"
+                    ? "bg-[#FF7A45] w-6"
                     : "bg-[#C7CCD6] w-4 hover:bg-[#9EA6B7]"
                 }`}
               />
