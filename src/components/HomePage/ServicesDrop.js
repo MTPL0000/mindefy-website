@@ -152,10 +152,10 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
 
   return (
     <div className="max-w-7xl mx-auto pt-2 px-1 pointer-events-auto">
-      <div className="overflow-hidden rounded-[18px] border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)]">
-        <div className="grid grid-cols-[34%_66%] min-h-[500px]">
+      <div className="overflow-hidden rounded-2xl border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)]">
+        <div className="grid grid-cols-[34%_66%] min-h-125">
           <aside className="border-r border-[#eadfd7] bg-[#ffff] p-6">
-            <h3 className="mb-4 px-2 text-[12px] font-bold uppercase tracking-[0.16em] text-[#8f8078]">
+            <h3 className="mb-4 px-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8f8078]">
               Core Authorities
             </h3>
 
@@ -206,7 +206,7 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
                       key={service.id}
                       href={service.route}
                       onClick={onItemClick}
-                      className="inline-flex items-center gap-1.5 rounded-[10px] border border-[#eadbcf] bg-white px-4 py-2 text-sm font-medium text-[#3B3C4A] transition-colors hover:border-[#FF5225] hover:text-[#FF5225]"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-[#eadbcf] bg-white px-4 py-2 text-sm font-medium text-[#3B3C4A] transition-colors hover:border-[#FF5225] hover:text-[#FF5225]"
                     >
                       <PillIcon size={18} />
                       {service.title}

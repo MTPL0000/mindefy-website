@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle2, Hand, PieChart, Star } from "lucide-react";
 
 export default function ProductsDropdown({ onItemClick }) {
   return (
-    <div className="group w-full max-w-[940px] pt-2 overflow-hidden font-poppins rounded-[18px] border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)] transition-shadow duration-300 hover:shadow-[0_36px_80px_-44px_rgba(20,24,34,0.5)]">
+    <div className="group w-full max-w-5xl pt-2 overflow-hidden font-poppins rounded-2xl border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)] transition-shadow duration-300 hover:shadow-[0_36px_80px_-44px_rgba(20,24,34,0.5)]">
       <div className="grid items-stretch md:grid-cols-[52%_48%]">
         <div className="relative overflow-hidden p-6 lg:p-8">
           <div className="pointer-events-none absolute -left-12 top-20 h-28 w-28 rounded-full bg-[#ffe0d3] opacity-55 blur-2xl"></div>
@@ -97,7 +97,7 @@ export default function ProductsDropdown({ onItemClick }) {
         </div>
 
         <div className="relative overflow-hidden border-t border-[#eadfd7] bg-[#ffff] md:border-t-0 md:border-l">
-          <div className="relative mx-auto min-h-[280px] w-full max-w-[460px] md:h-full">
+          <div className="relative mx-auto min-h-70 w-full max-w-115 md:h-full">
             <Image
               src="/images/yourhour/yourhour-mockup.webp"
               alt="YourHour app mockup"

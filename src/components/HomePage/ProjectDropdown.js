@@ -44,7 +44,7 @@ const accentColorCycle = ["#e7f0ff", "#fff1e8", "#ecf6ed", "#f3edff"];
 
 export const ProjectDropdown = ({ onItemClick }) => {
   return (
-    <div className="group w-full max-w-5xl pt-2 overflow-hidden font-poppins rounded-[18px] border border-[#e8ddd4] bg-[#ffffff] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)] transition-shadow duration-300 hover:shadow-[0_36px_80px_-44px_rgba(20,24,34,0.5)]">
+    <div className="group w-full max-w-5xl pt-2 overflow-hidden font-poppins rounded-2xl border border-[#e8ddd4] bg-[#ffffff] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)] transition-shadow duration-300 hover:shadow-[0_36px_80px_-44px_rgba(20,24,34,0.5)]">
       <div className="relative px-5 py-6 sm:px-8 sm:py-8">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
           <div className="flex flex-col gap-2">
