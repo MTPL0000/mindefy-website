@@ -589,7 +589,7 @@ export default function Navbar() {
                     style={{ width: "min(90vw, 1280px)" }}
                   ></div>
                   <div
-                    className={`fixed left-1/2 top-18 -translate-x-1/2 px-2 sm:px-4 z-40 transition-opacity duration-200 ease-in-out pointer-events-none flex justify-center ${
+                    className={`fixed left-1/2 top-20 -translate-x-1/2 px-2 sm:px-4 z-40 transition-opacity duration-200 ease-in-out pointer-events-none flex justify-center ${
                       productsTransitioning ? "opacity-0" : "opacity-100"
                     }`}
                     style={{ width: "min(90vw, 1024px)" }}
@@ -640,7 +640,7 @@ export default function Navbar() {
                     style={{ width: "min(90vw, 1280px)" }}
                   ></div>
                   <div
-                    className={`fixed left-1/2 top-18 -translate-x-1/2 px-2 sm:px-4 z-40 transition-opacity duration-200 ease-in-out pointer-events-none flex justify-center ${
+                    className={`fixed left-1/2 top-20 -translate-x-1/2 px-2 sm:px-4 z-40 transition-opacity duration-200 ease-in-out pointer-events-none flex justify-center ${
                       projectsTransitioning ? "opacity-0" : "opacity-100"
                     }`}
                     style={{ width: "min(90vw, 1280px)" }}

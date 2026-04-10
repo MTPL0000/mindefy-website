@@ -97,7 +97,7 @@ export default function ProductsDropdown({ onItemClick }) {
         </div>
 
         <div className="relative overflow-hidden border-t border-[#eadfd7] bg-[#ffff] md:border-t-0 md:border-l">
-          <div className="relative mx-auto min-h-[280px] w-full max-w-[460px] md:h-full">
+          <div className="relative mx-auto min-h-70 w-full max-w-115 md:h-full">
             <Image
               src="/images/yourhour/yourhour-mockup.webp"
               alt="YourHour app mockup"
