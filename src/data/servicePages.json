@@ -1,0 +1,330 @@
+[
+  {
+    "id": "app-development",
+    "slug": "app-development",
+    "title": "Scalable App Development Services",
+    "category": "Product Development",
+    "description": "Scalable app development services from startup MVPs to enterprise modernization.",
+    "metadata": {
+      "title": "Scalable App Development Services | Mindefy",
+      "description": "Mindefy offers scalable app development services from startup MVPs to enterprise modernization. We engineer applications with architecture that holds up at scale."
+    },
+    "sections": [
+      {
+        "type": "Hero",
+        "content": {
+          "badge": "APP DEVELOPMENT",
+          "headingPrefix": "Scalable App Development Services ",
+          "headingHighlight": "From Startup MVPs to Enterprise Modernization",
+          "paragraph1": "Whether you're starting from zero or fixing what's broken, stop building fragile software.",
+          "paragraph2": "Most software breaks not at launch, but at scale. We engineer applications with the architecture, data flow, and decision systems that hold up whether you are launching a fresh product or modernizing a legacy system that has hit a wall.",
+          "button1": {
+            "label": "Get started now",
+            "link": "/contact-us-technology-innovators"
+          },
+          "button2": {
+            "label": "Let’s talk",
+            "link": "/contact-us-technology-innovators"
+          },
+          "image": "/images/AAD.webp"
+        }
+      }
+    ]
+  },
+  {
+    "id": "android-app-development-experts",
+    "slug": "android-app-development-experts",
+    "title": "Android App Development",
+    "category": "Product Development",
+    "description": "Native Android app development services",
+    "metadata": {
+      "title": "Native Android App Development Experts | Mindefy",
+      "description": "We build high-performance, scalable Android applications using the latest technologies and best practices."
+    },
+    "sections": [
+      {
+        "type": "Hero",
+        "content": {
+          "badge": "ANDROID DEVELOPMENT",
+          "headingPrefix": "Expert Android App Development ",
+          "headingHighlight": "Building Scalable & Robust Mobile Solutions",
+          "paragraph1": "Empower your business with native Android applications that deliver exceptional user experiences.",
+          "paragraph2": "Our team of expert Android developers creates custom mobile solutions tailored to your business needs, ensuring high performance, security, and scalability.",
+          "button1": {
+            "label": "Start Your Project",
+            "link": "/contact-us-technology-innovators"
+          },
+          "button2": {
+            "label": "Our Work",
+            "link": "/case-studies"
+          },
+          "image": "/images/AAD1.webp"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ios-app-development-services",
+    "slug": "ios-app-development-services",
+    "title": "iOS App Development",
+    "category": "Product Development",
+    "description": "Native iOS app development services",
+    "metadata": {
+      "title": "iOS App Development Services | Mindefy",
+      "description": "High-quality iOS application development services."
+    }
+  },
+  {
+    "id": "hybrid-app-development-services",
+    "slug": "hybrid-app-development-services",
+    "title": "Hybrid App Development",
+    "category": "Product Development",
+    "description": "Cross-platform hybrid app development",
+    "metadata": {
+      "title": "Hybrid App Development Services | Mindefy",
+      "description": "Scalable hybrid mobile apps for Android and iOS."
+    }
+  },
+  {
+    "id": "web-application-development-solutions",
+    "slug": "web-application-development-solutions",
+    "title": "Web Application Development",
+    "category": "Product Development",
+    "description": "Modern web application development",
+    "metadata": {
+      "title": "Web Application Development | Mindefy",
+      "description": "Custom web solutions for enterprises."
+    }
+  },
+  {
+    "id": "custom-ai-solutions-enterprises",
+    "slug": "custom-ai-solutions-enterprises",
+    "title": "Custom AI Development",
+    "category": "AI Development & Data Services",
+    "description": "Custom AI Development development services",
+    "metadata": {
+      "title": "Custom AI Solutions for Enterprises | Mindefy",
+      "description": "Harness the power of AI for your business."
+    }
+  },
+  {
+    "id": "machine-learning-services",
+    "slug": "machine-learning-services",
+    "title": "Machine Learning Development",
+    "category": "AI Development & Data Services",
+    "description": "Custom ML Development & solution development services",
+    "metadata": {
+      "title": "Machine Learning Development Services | Mindefy",
+      "description": "Advanced ML models for predictive analytics."
+    }
+  },
+  {
+    "id": "generative-ai-chatbot-development",
+    "slug": "generative-ai-chatbot-development",
+    "title": "Generative AI & Chatbot",
+    "category": "AI Development & Data Services",
+    "description": "Generative AI & Chatbot — Powering AI",
+    "metadata": {
+      "title": "Generative AI & Chatbot Development | Mindefy",
+      "description": "AI-powered chatbots and generative AI solutions."
+    }
+  },
+  {
+    "id": "advanced-data-engineering-services",
+    "slug": "advanced-data-engineering-services",
+    "title": "Data Engineering & Analytics",
+    "category": "AI Development & Data Services",
+    "description": "Data Engineering & Analytics development services",
+    "metadata": {
+      "title": "Advanced Data Engineering Services | Mindefy",
+      "description": "Data pipelines and analytics solutions."
+    }
+  },
+  {
+    "id": "cloud-engineering-services",
+    "slug": "cloud-engineering-services",
+    "title": "Cloud Migration",
+    "category": "Cloud & Platform Engineering",
+    "description": "Cloud Engineering —Powering AI, Data & Scale",
+    "metadata": {
+      "title": "Cloud Engineering & Migration | Mindefy",
+      "description": "Seamless cloud migration and engineering."
+    }
+  },
+  {
+    "id": "cloud-devops-engineering",
+    "slug": "cloud-devops-engineering",
+    "title": "DevOps Automation",
+    "category": "Cloud & Platform Engineering",
+    "description": "Cloud and DevOps solutions",
+    "metadata": {
+      "title": "Cloud & DevOps Engineering | Mindefy",
+      "description": "Automate your infrastructure with DevOps."
+    }
+  },
+  {
+    "id": "digital-transformation-consulting",
+    "slug": "digital-transformation-consulting",
+    "title": "Digital Transformation Services",
+    "category": "Cloud & Platform Engineering",
+    "description": "Complete digital transformation",
+    "metadata": {
+      "title": "Digital Transformation Consulting | Mindefy",
+      "description": "Transform your business for the digital age."
+    }
+  },
+  {
+    "id": "test-automation-qa-services",
+    "slug": "test-automation-qa-services",
+    "title": "QA & Test Automation",
+    "category": "Cloud & Platform Engineering",
+    "description": "Quality assurance and testing",
+    "metadata": {
+      "title": "QA & Test Automation Services | Mindefy",
+      "description": "Ensure software quality with automated testing."
+    }
+  },
+  {
+    "id": "microservices-architecture-consulting",
+    "slug": "microservices-architecture-consulting",
+    "title": "Building Micro-services Architecture",
+    "category": "Cloud & Platform Engineering",
+    "description": "Scalable microservices solutions",
+    "metadata": {
+      "title": "Microservices Architecture Consulting | Mindefy",
+      "description": "Scalable and modular architecture."
+    }
+  },
+  {
+    "id": "it-consulting-strategy",
+    "slug": "it-consulting-strategy",
+    "title": "IT Consulting Services",
+    "category": "Business IT Solutions",
+    "description": "Comprehensive IT Consulting Services Support",
+    "metadata": {
+      "title": "IT Consulting & Strategy | Mindefy",
+      "description": "Strategic IT consulting for business growth."
+    }
+  },
+  {
+    "id": "enterprise-software-solutions",
+    "slug": "enterprise-software-solutions",
+    "title": "Enterprise Solutions",
+    "category": "Business IT Solutions",
+    "description": "Enterprise business solutions",
+    "metadata": {
+      "title": "Enterprise Software Solutions | Mindefy",
+      "description": "Robust software for enterprise needs."
+    }
+  },
+  {
+    "id": "staff-augmentation-services",
+    "slug": "staff-augmentation-services",
+    "title": "Team Augmentation",
+    "category": "Business IT Solutions",
+    "description": "Professional IT consulting",
+    "metadata": {
+      "title": "Staff Augmentation Services | Mindefy",
+      "description": "Scale your team with expert developers."
+    }
+  },
+  {
+    "id": "startup-support-consulting",
+    "slug": "startup-support-consulting",
+    "title": "Startup Support and Consulting",
+    "category": "Business IT Solutions",
+    "description": "Comprehensive startup support",
+    "metadata": {
+      "title": "Startup Support & Consulting | Mindefy",
+      "description": "Expert guidance for startups."
+    }
+  },
+  {
+    "id": "game-animation-graphics",
+    "slug": "game-animation-graphics",
+    "title": "2D & 3D Game Animation",
+    "category": "Game Development",
+    "description": "2D & 3D Game Animation",
+    "metadata": {
+      "title": "2D & 3D Game Animation | Mindefy",
+      "description": "Immersive game animations."
+    }
+  },
+  {
+    "id": "unity-unreal-engine-development",
+    "slug": "unity-unreal-engine-development",
+    "title": "Unity and unreal Game Development",
+    "category": "Game Development",
+    "description": "Unity and unreal Game Development",
+    "metadata": {
+      "title": "Unity & Unreal Engine Development | Mindefy",
+      "description": "High-end game development."
+    }
+  },
+  {
+    "id": "ar-vr-game-development",
+    "slug": "ar-vr-game-development",
+    "title": "AR VR Game Development",
+    "category": "Game Development",
+    "description": "AR VR Game Development",
+    "metadata": {
+      "title": "AR VR Game Development | Mindefy",
+      "description": "Next-gen AR/VR experiences."
+    }
+  },
+  {
+    "id": "ecommerce-marketplace-development",
+    "slug": "ecommerce-marketplace-development",
+    "title": "E-commerce and Marketplace",
+    "category": "E-commerce and Marketplace",
+    "description": "E-commerce and marketplace solutions",
+    "metadata": {
+      "title": "E-commerce & Marketplace Development | Mindefy",
+      "description": "Build your online store."
+    }
+  },
+  {
+    "id": "crm-software-solutions",
+    "slug": "crm-software-solutions",
+    "title": "CRM Solutions",
+    "category": "E-commerce and Marketplace",
+    "description": "Customer relationship management",
+    "metadata": {
+      "title": "CRM Software Solutions | Mindefy",
+      "description": "Manage customer relations effectively."
+    }
+  },
+  {
+    "id": "business-process-management-solutions",
+    "slug": "business-process-management-solutions",
+    "title": "Business Process Management",
+    "category": "E-commerce and Marketplace",
+    "description": "Business process optimization",
+    "metadata": {
+      "title": "Business Process Management | Mindefy",
+      "description": "Optimize your business processes."
+    }
+  },
+  {
+    "id": "low-code-app-development-services",
+    "slug": "low-code-app-development-services",
+    "title": "Low Code Development",
+    "category": "E-commerce and Marketplace",
+    "description": "Rapid low-code solutions",
+    "metadata": {
+      "title": "Low Code App Development | Mindefy",
+      "description": "Build apps faster with low-code."
+    }
+  },
+  {
+    "id": "agile-rapid-development-practices",
+    "slug": "agile-rapid-development-practices",
+    "title": "Agile & Rapid Development",
+    "category": "Cloud & Platform Engineering",
+    "description": "Agile and rapid development practices.",
+    "metadata": {
+      "title": "Agile & Rapid Development Practices | Mindefy",
+      "description": "We follow agile methodologies for rapid delivery."
+    }
+  }
+]

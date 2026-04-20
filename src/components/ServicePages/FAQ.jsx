@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal, Chip, H2 } from "./ui";
 import { Settings, Plus, Minus } from "lucide-react";
 
-const FAQS = [
+const DEFAULT_FAQS = [
   {
     question: "How long does app development take?",
     answer:
@@ -33,13 +33,14 @@ const FAQS = [
   },
 ];
 
-export default function FAQ() {
+export default function FAQ({ content }) {
   const [open, setOpen] = useState(null);
+  const faqs = content?.faqs || DEFAULT_FAQS;
 
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: FAQS.map((faq) => ({
+    mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
@@ -61,16 +62,20 @@ export default function FAQ() {
         <ScrollReveal className="text-center mb-14">
           <Chip>
             <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            FAQ
+            {content?.badge || "FAQ"}
           </Chip>
 
           <H2 className="text-center">
-            Common <span className="text-[#E84B27]">Questions</span>
+            {content?.heading || (
+              <>
+                Common <span className="text-[#E84B27]">Questions</span>
+              </>
+            )}
           </H2>
         </ScrollReveal>
 
         <div className="space-y-6">
-          {FAQS.map((faq, i) => (
+          {faqs.map((faq, i) => (
             <motion.div
               key={i}
               layout
@@ -98,35 +103,9 @@ export default function FAQ() {
                   initial={false}
                   animate={{ rotate: open === i ? 180 : 0 }}
                   transition={{ duration: 0.25 }}
-                  className={`p-3 rounded-full flex items-center justify-center transition-colors ${
-                    open === i
-                      ? "bg-[#E84B27] text-white"
-                      : "bg-[#F8F7F4] text-[#E84B27]"
-                  }`}
+                  className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-50 text-[#E84B27]"
                 >
-                  <AnimatePresence mode="wait">
-                    {open === i ? (
-                      <motion.div
-                        key="minus"
-                        initial={{ scale: 0.5, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        exit={{ scale: 0.5, opacity: 0 }}
-                        transition={{ duration: 0.15 }}
-                      >
-                        <Minus size={20} strokeWidth={2.5} />
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key="plus"
-                        initial={{ scale: 0.5, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        exit={{ scale: 0.5, opacity: 0 }}
-                        transition={{ duration: 0.15 }}
-                      >
-                        <Plus size={20} strokeWidth={2} />
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  {open === i ? <Minus size={20} /> : <Plus size={20} />}
                 </motion.div>
               </button>
 
@@ -134,25 +113,14 @@ export default function FAQ() {
               <AnimatePresence>
                 {open === i && (
                   <motion.div
-                    layout
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{
-                      duration: 0.35,
-                      ease: "easeInOut",
-                    }}
-                    className="overflow-hidden"
+                    transition={{ duration: 0.35, ease: [0.33, 1, 0.68, 1] }}
                   >
-                    <motion.div
-                      initial={{ y: 10 }}
-                      animate={{ y: 0 }}
-                      exit={{ y: 5 }}
-                      transition={{ duration: 0.25 }}
-                      className="px-6 pb-6 text-gray-600 text-lg leading-relaxed"
-                    >
+                    <div className="px-6 pb-6 text-[#4A5568] leading-relaxed font-poppins text-lg border-t border-gray-100 pt-4">
                       {faq.answer}
-                    </motion.div>
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>

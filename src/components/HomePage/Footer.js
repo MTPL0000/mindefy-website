@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const getYear = new Date().getFullYear();
@@ -110,39 +111,39 @@ export default function Footer() {
                 COMPANY
               </h2>
               <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
-                <a
+                <Link
                   href="/about-us-technology-innovators"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   About
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="/customer-testimonials-reviews"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Testimonials
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="https://www.yourhourapp.com/blogs"
                   target="_blank"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   YourHour Blogs
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/site-map"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Sitemap
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/privacy-policy"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -152,36 +153,36 @@ export default function Footer() {
                 PORTFOLIO
               </h2>
               <div className="space-y-4 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
-                <a
+                <Link
                   href="/yourhour-screentime-app"
                   className="w-fit block  hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   YourHour
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/spector-analytics-software"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Spector
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/early-foods-e-commerce"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   EarlyFoods
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/jego-ott-platform"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   JEGO
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/greenbill-paperless-billing-software"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   GreenBill
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -191,42 +192,42 @@ export default function Footer() {
                 SERVICES
               </h2>
               <div className="space-y-2 sm:space-y-3 lg:space-y-4 text-xs sm:text-sm opacity-90">
-                <a
+                <Link
                   href="/hybrid-app-development-services"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Hybrid App Development
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/startup-support-consulting"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Startup Support & Consulting
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/digital-transformation-consulting"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Digital Transformation
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/mvp-development-startup-support"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   MVP Development
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/agile-rapid-development-practices"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Agile & Rapid Application Development Model
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/staff-augmentation-services"
                   className="w-fit block hover:opacity-100 cursor-pointer transition-opacity"
                 >
                   Staff Augmenation Services
-                </a>
+                </Link> 
               </div>
             </div>
           </div>

@@ -5,7 +5,18 @@ import Image from "next/image";
 import { AppDevButton } from "./ui";
 import { Settings } from "lucide-react";
 
-export default function Hero() {
+export default function Hero({ content }) {
+  // Use provided content or fallback to defaults
+  const badge = content?.badge || "APP DEVELOPMENT";
+  const headingPrefix = content?.headingPrefix || "Scalable App Development Services ";
+  const headingHighlight = content?.headingHighlight || "From Startup MVPs to Enterprise Modernization";
+  const paragraph1 = content?.paragraph1 || "Whether you're starting from zero or fixing what's broken, stop building fragile software.";
+  const paragraph2 = content?.paragraph2 || "Most software breaks not at launch, but at scale. We engineer applications with the architecture, data flow, and decision systems that hold up whether you are launching a fresh product or modernizing a legacy system that has hit a wall.";
+  const image = content?.image || "/images/AAD.webp";
+  
+  const button1 = content?.button1 || { label: "Get started now", link: "/contact-us-technology-innovators" };
+  const button2 = content?.button2 || { label: "Let’s talk", link: "/contact-us-technology-innovators" };
+
   return (
     <section className="relative overflow-hidden bg-linear-to-l from-[#FFFFFF] via-[#FFFFFF] to-[#ebdad4] pt-16 pb-0 lg:pb-25 hero-5 fix">
       <div className="container mx-auto px-4">
@@ -20,7 +31,7 @@ export default function Hero() {
                 className="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-[#F15A24] bg-white rounded-full uppercase leading-none font-poppins shadow-sm"
               >
                 <Settings width={16} height={16} />
-                APP DEVELOPMENT
+                {badge}
               </motion.span>
 
               <motion.h1
@@ -29,9 +40,9 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#0B0D17] lg:leading-18 font-poppins"
               >
-                Scalable App Development Services{" "}
+                {headingPrefix}{" "}
                 <span className="text-[#F94D00]">
-                  From Startup MVPs to Enterprise Modernization
+                  {headingHighlight}
                 </span>
               </motion.h1>
 
@@ -41,8 +52,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-[#534F5A] text-lg font-poppins font-semibold max-w-120 leading-relaxed"
               >
-                Whether you're starting from zero or fixing what's broken, stop
-                building fragile software.
+                {paragraph1}
               </motion.p>
 
               <motion.p
@@ -51,10 +61,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-[#534F5A] text-lg font-poppins mb-6 max-w-120 leading-relaxed"
               >
-                Most software breaks not at launch, but at scale. We engineer
-                applications with the architecture, data flow, and decision
-                systems that hold up whether you are launching a fresh product
-                or modernizing a legacy system that has hit a wall.
+                {paragraph2}
               </motion.p>
 
               <motion.div
@@ -63,24 +70,28 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="flex flex-wrap items-center gap-4 mt-7"
               >
-                <AppDevButton
-                  href="/contact-us-technology-innovators"
-                  primaryColor="#F94D00"
-                  secondaryColor="#0B0D17"
-                  textColor="#FFFFFF"
-                  className="hover:shadow-orange-500/20"
-                >
-                  Get started now
-                </AppDevButton>
-                <AppDevButton
-                  href="/contact-us-technology-innovators"
-                  variant="outline"
-                  primaryColor="#F94D00"
-                  secondaryColor="#0B0D17"
-                  surfaceColor="#FFFFFF"
-                >
-                  Let’s talk
-                </AppDevButton>
+                {button1 && (
+                  <AppDevButton
+                    href={button1.link}
+                    primaryColor="#F94D00"
+                    secondaryColor="#0B0D17"
+                    textColor="#FFFFFF"
+                    className="hover:shadow-orange-500/20"
+                  >
+                    {button1.label}
+                  </AppDevButton>
+                )}
+                {button2 && (
+                  <AppDevButton
+                    href={button2.link}
+                    variant="outline"
+                    primaryColor="#F94D00"
+                    secondaryColor="#0B0D17"
+                    surfaceColor="#FFFFFF"
+                  >
+                    {button2.label}
+                  </AppDevButton>
+                )}
               </motion.div>
             </div>
           </div>
@@ -94,8 +105,8 @@ export default function Hero() {
               className="hero-image-5 relative overflow-hidden rounded-2xl shadow-xl"
             >
               <Image
-                src="/images/AAD.webp"
-                alt="App Development Hero Section Image"
+                src={image}
+                alt={badge || "Service Hero Image"}
                 width={1000}
                 height={600}
                 className="w-full h-150 object-cover transform transition-transform duration-700 hover:scale-105"
