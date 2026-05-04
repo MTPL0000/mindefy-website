@@ -5,34 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal, Chip, H2, fadeUp } from "./ui";
 import { ChevronLeft, ChevronRight, Quote, Settings } from "lucide-react";
 
-const ITEMS = [
-  {
-    q: "Mindefy didn't just give us an app; they gave us a foundation that hasn't flinched through two massive growth rounds.",
-    name: "Esther Howard",
-    role: "Nursing Assistant",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=240&q=80",
-  },
-  {
-    q: "The transparency in their architectural decisions saved us from a $200k rewrite that our previous agency had made inevitable.",
-    name: "Courtney Henry",
-    role: "Nursing Assistant",
-    avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=240&q=80",
-  },
-  {
-    q: "Working with Mindefy felt like having a senior architecture team embedded in our company. They caught design problems we had not even thought about yet.",
-    name: "Wade Warren",
-    role: "Product Lead",
-    avatar:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=240&q=80",
-  },
-];
+export default function Testimonials({ content }) {
+  const items = Array.isArray(content?.items) ? content.items : [];
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const autoplayMs = content?.autoplayMs || 5000;
 
-export default function Testimonials() {
   const [idx, setIdx] = useState(0);
   const [dir, setDir] = useState(1);
-  const len = ITEMS.length;
+  const len = items.length;
   const next = () => {
     setDir(1);
     setIdx((p) => (p + 1) % len);
@@ -44,14 +26,22 @@ export default function Testimonials() {
 
   // autoplay
   useEffect(() => {
+    if (!len) {
+      return;
+    }
+
     const t = setInterval(() => {
       setDir(1);
       setIdx((p) => (p + 1) % len);
-    }, 5000);
+    }, autoplayMs);
     return () => clearInterval(t);
-  }, [len]);
+  }, [len, autoplayMs]);
 
-  const visible = [ITEMS[idx], ITEMS[(idx + 1) % len]];
+  if (!items.length) {
+    return null;
+  }
+
+  const visible = [items[idx], items[(idx + 1) % len]];
 
   return (
     <section className="relative isolate overflow-hidden px-3 py-20 md:py-24 bg-[#F5F3EE]">
@@ -67,11 +57,13 @@ export default function Testimonials() {
         <ScrollReveal className="text-center mb-14">
           <Chip>
             <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            TESTIMONIALS
+            {badge}
           </Chip>
           <H2 className="text-center">
-            Voice of the{" "}
-            <span className="text-[#E84B27] font-poppins">Customer</span>
+            {headingPrefix}
+            <span className="text-[#E84B27] font-poppins">
+              {headingHighlight}
+            </span>
           </H2>
         </ScrollReveal>
 
@@ -110,14 +102,16 @@ export default function Testimonials() {
                   <Quote className="absolute top-4 right-4 w-8 h-8 text-[#7A7F86]" />
 
                   <div className="flex items-center gap-4">
-                    <div className="relative h-18 w-18">
-                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white to-[#dfe3eb] shadow-inner" />
-                      <img
-                        src={item.avatar}
-                        alt={item.name}
-                        className="relative h-18 w-18 rounded-full object-cover border-2 border-white shadow"
-                      />
-                    </div>
+                    {item.avatar && (
+                      <div className="relative h-18 w-18">
+                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white to-[#dfe3eb] shadow-inner" />
+                        <img
+                          src={item.avatar}
+                          alt={item.name}
+                          className="relative h-18 w-18 rounded-full object-cover border-2 border-white shadow"
+                        />
+                      </div>
+                    )}
                     <div>
                       <div className="flex gap-1 mb-1">
                         {[...Array(5)].map((_, k) => (
@@ -147,7 +141,7 @@ export default function Testimonials() {
 
           {/* Dots */}
           <div className="flex gap-2 mt-10 justify-center">
-            {ITEMS.map((_, k) => (
+            {items.map((_, k) => (
               <button
                 key={k}
                 onClick={() => setIdx(k)}

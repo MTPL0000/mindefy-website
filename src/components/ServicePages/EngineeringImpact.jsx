@@ -1,66 +1,37 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ScrollReveal, Counter, H2, fadeUp } from "./ui";
+import { ScrollReveal, Counter, H2, fadeUp, Chip } from "./ui";
 import { Settings } from "lucide-react";
 
-const METRICS = [
-  {
-    numStr: null,
-    numInt: 99.99,
-    suffix: "%",
-    label: "Uptime",
-    desc: "Average availability for Mindefy-engineered core systems",
-    tags: ["Available", "Reliable", "Scalable"],
-  },
-  {
-    numStr: "4.5M+",
-    numInt: null,
-    label: "Users Handled",
-    desc: "By our most scalable digital ecosystem to date",
-    tags: ["Concurrent", "Active", "Growth"],
-  },
-  {
-    numStr: null,
-    numInt: 60,
-    suffix: "%",
-    label: "Debt Reduction",
-    desc: "Average decrease in technical debt for modernized legacy systems",
-    tags: ["Refactor", "Clean", "Velocity"],
-  },
-  {
-    numStr: "Zero",
-    numInt: null,
-    label: "Failure Rate",
-    desc: "Maintained during high-concurrency traffic spikes",
-    tags: ["Robust", "Secure", "Durable"],
-  },
-];
+export default function EngineeringImpact({ content }) {
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const metrics = Array.isArray(content?.metrics) ? content.metrics : [];
 
-export default function EngineeringImpact() {
+  if (!metrics.length) {
+    return null;
+  }
+
   return (
     <section className="feature-section py-20 md:py-24 bg-white fix overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="section-title text-center mb-16">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-[#F15A24] bg-[#F2F5F7] rounded-full uppercase leading-none font-poppins shadow-sm mb-5"
-          >
-            <Settings width={16} height={16} />
-            ENGINEERING IMPACT
-          </motion.span>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            {badge}
+          </Chip>
           <H2 className="text-center font-poppins font-bold">
-            High-Performance <br />
+            {headingPrefix}
+            <br />
             <span className="text-[#FF5225] font-poppins">
-              Software Solutions
+              {headingHighlight}
             </span>
           </H2>
         </div>
 
         <div className="flex flex-wrap -mx-4">
-          {METRICS.map((item, i) => (
+          {metrics.map((item, i) => (
             <div
               key={i}
               className="w-full md:w-1/2 lg:w-1/2 xl:w-1/4 px-4 mb-8"
@@ -88,7 +59,7 @@ export default function EngineeringImpact() {
 
                   <div className="feature-info-box bg-white rounded-lg px-4 py-6 flex items-center justify-center mt-auto transition-all duration-500">
                     <ul className="flex flex-wrap items-center gap-3">
-                      {item.tags.map((tag, j) => (
+                      {(item.tags || []).map((tag, j) => (
                         <li
                           key={j}
                           className="px-3 py-1 rounded-full border border-[#E6E8EB] text-[#0B0D17] text-xs font-semibold font-poppins transition-all duration-400 hover:bg-[#FF5225] hover:text-white hover:border-[#FF5225]"

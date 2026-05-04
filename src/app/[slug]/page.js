@@ -1,5 +1,9 @@
 import { notFound } from "next/navigation";
-import servicesData from "@/data/servicePages.json";
+import {
+  getRenderableServiceSections,
+  getServicePageBySlug,
+  servicePages,
+} from "@/lib/servicePages";
 
 // Import all components from the service pages folder
 import Hero from "@/components/ServicePages/Hero";
@@ -47,33 +51,9 @@ const componentMap = {
   BottomLine,
 };
 
-// The fixed sequence of components as requested by the user
-const componentSequence = [
-  "Hero",
-  "TrustBar",
-  "EngineeringImpact",
-  "ScalingCeiling",
-  "ExpertPerspective",
-  "ArchPhilosophy",
-  "MarketDiff",
-  "CoreCompetencies",
-  "EngineeringDNA",
-  "TechStack",
-  "VerticalExpertise",
-  "DeliveryFramework",
-  "CaseStudies",
-  "Testimonials",
-  "Governance",
-  "IdealPartnerProfile",
-  "StrategicAlignment",
-  "ResourcesModels",
-  "FAQ",
-  "BottomLine",
-];
-
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const service = servicesData.find((s) => s.slug === slug);
+  const service = getServicePageBySlug(slug);
 
   if (!service) {
     return {
@@ -84,34 +64,49 @@ export async function generateMetadata({ params }) {
   return {
     title: service.metadata?.title || service.title,
     description: service.metadata?.description || service.description,
+    alternates: {
+      canonical: service.metadata?.canonical || service.route,
+    },
+    openGraph: {
+      title:
+        service.metadata?.openGraph?.title ||
+        service.metadata?.title ||
+        service.title,
+      description:
+        service.metadata?.openGraph?.description ||
+        service.metadata?.description ||
+        service.description,
+      images: service.metadata?.openGraph?.images,
+    },
   };
 }
 
 export default async function ServicePage({ params }) {
   const { slug } = await params;
-  const service = servicesData.find((s) => s.slug === slug);
+  const service = getServicePageBySlug(slug);
 
   if (!service) {
     notFound();
   }
 
-  // Map sections from JSON by type for easy lookup
-  const sectionsMap = (service.sections || []).reduce((acc, section) => {
-    acc[section.type] = section.content;
-    return acc;
-  }, {});
+  const sections = getRenderableServiceSections(service, componentMap);
+
+  if (!sections.length) {
+    notFound();
+  }
 
   return (
     <main>
-      {componentSequence.map((type, index) => {
+      {sections.map((section, index) => {
+        const type = section.type;
         const Component = componentMap[type];
-        if (!Component) {
-          console.warn(`Component type "${type}" not found.`);
-          return null;
-        }
-        // Pass content if it exists in JSON for this specific service, otherwise pass undefined
+
         return (
-          <Component key={`${type}-${index}`} content={sectionsMap[type]} />
+          <Component
+            key={`${type}-${index}`}
+            content={section.content}
+            service={service}
+          />
         );
       })}
     </main>
@@ -119,7 +114,7 @@ export default async function ServicePage({ params }) {
 }
 
 export async function generateStaticParams() {
-  return servicesData.map((service) => ({
+  return servicePages.map((service) => ({
     slug: service.slug,
   }));
 }

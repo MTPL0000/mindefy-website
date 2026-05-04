@@ -11,107 +11,96 @@ import {
   fadeUp,
   AppDevButton,
 } from "./ui";
-import {
-  BadgeCheck,
-  Rocket,
-  Wrench,
-  ShieldCheck,
-  ArrowRight,
-} from "lucide-react";
-
-/* ================================
-   DATA
-================================ */
-
-const QUALIFICATIONS = [
-  {
-    icon: Rocket,
-    text: "Are starting a new build that must grow without constant rewrites.",
-  },
-  {
-    icon: Wrench,
-    text: "Are struggling with a legacy system that has become too expensive or slow to maintain.",
-  },
-  {
-    icon: ShieldCheck,
-    text: 'Value architectural clarity, security, and long-term maintainability over "cheap and fast."',
-  },
-];
-
-/* ================================
-   COMPONENT
-================================ */
+import { BadgeCheck } from "lucide-react";
 
 export default function IdealPartnerProfile({
+  content,
   bannerImage = "/images/yourhour/mindful-pause.webp",
   sectionId = "ideal-partner-profile",
 }) {
+  const qualifications = content?.qualifications || [];
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const heading = content?.heading || "";
+  const heading1 = content?.heading1 || "";
+  const intro = content?.description1 || "";
+  const intro2 = content?.description2 || "";
+  const ctaLabel = content?.ctaLabel || "";
+  const ctaLink = content?.ctaLink || "";
+  const image = content?.bannerImage || bannerImage;
+
+  if (!qualifications.length) {
+    return null;
+  }
+
   return (
     <section id={sectionId} className="bg-[#F8F7F4] py-20 md:py-24 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* ================= Header Centered ================= */}
-
         <ScrollReveal className="text-center mb-10 flex flex-col items-center">
           <Chip className="bg-white/90">
             <BadgeCheck className="w-4 h-4 text-[#F15A24]" />
-            Ideal Partner Profile
+            {badge}
           </Chip>
 
           <H2 className="mt-4 max-w-2xl">
-            Qualification{" "}
-            <span className="text-[#E84B27]">Who This Approach Is For</span>
+            {headingPrefix}
+            <span className="text-[#E84B27]">{headingHighlight}</span>
           </H2>
         </ScrollReveal>
 
-        {/* ================= Banner ================= */}
+        {/* == Banner == */}
 
-        <ScrollReveal className="mb-14">
-          <div className="relative rounded-3xl overflow-hidden">
-            <Image
-              src={bannerImage}
-              alt="Ideal Partner Profile"
-              loading="lazy"
-              width={1200}
-              height={500}
-              className="w-full aspect-auto object-cover"
-            />
-          </div>
-        </ScrollReveal>
+        {image && (
+          <ScrollReveal className="mb-14">
+            <div className="relative rounded-3xl overflow-hidden">
+              <Image
+                src={image}
+                alt="Ideal Partner Profile"
+                loading="lazy"
+                width={1200}
+                height={500}
+                className="w-full aspect-auto object-cover"
+              />
+            </div>
+          </ScrollReveal>
+        )}
 
-        {/* ================= Content ================= */}
+        {/* == Content == */}
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
 
           <ScrollReveal variants={fadeLeft}>
+            {/* <H2>{heading}</H2> */}
             <H2>
-              This approach is designed for{" "}
-              <span className="text-[#E84B27]">growing engineering teams</span>
+              {heading} <br/>
+              <span className="text-[#FF5225] font-poppins">
+                {heading1}
+              </span>
             </H2>
 
             <p className="text-gray-500 mt-6 text-base font-poppins leading-relaxed">
-              We partner with companies that want to build scalable,
-              maintainable, and secure software systems that can grow without
-              frequent rewrites or costly technical debt.
+              {intro}
             </p>
 
             <p className="text-gray-500 mt-4 text-base font-poppins leading-relaxed">
-              Our approach focuses on long-term engineering clarity,
-              architectural stability, and structured development practices to
-              ensure your product remains reliable and future-ready.
+              {intro2}
             </p>
 
-            <div className="mt-8">
-              <AppDevButton
-                href="/contact-us-technology-innovators"
-                primaryColor="#F94D00"
-                secondaryColor="#162560"
-                textColor="#FFFFFF"
-                className="hover:shadow-orange-500/20"
-              >
-                Check Your Project Fit
-              </AppDevButton>
-            </div>
+            {ctaLabel && ctaLink && (
+              <div className="mt-8">
+                <AppDevButton
+                  href={ctaLink}
+                  primaryColor="#F94D00"
+                  secondaryColor="#162560"
+                  textColor="#FFFFFF"
+                  className="hover:shadow-orange-500/20"
+                >
+                  {ctaLabel}
+                </AppDevButton>
+              </div>
+            )}
           </ScrollReveal>
 
           {/* Right Checklist */}
@@ -119,11 +108,11 @@ export default function IdealPartnerProfile({
           <ScrollReveal variants={fadeRight}>
             <div className="space-y-6">
               <p className="text-[#F95B27] font-semibold text-xl font-poppins">
-                This is a strong fit if you:
+                {content?.checklistTitle || ""}
               </p>
 
-              {QUALIFICATIONS.map((item, index) => {
-                const Icon = item.icon;
+              {qualifications.map((item, index) => {
+                const Icon = item.icon || BadgeCheck;
 
                 return (
                   <motion.div

@@ -2,117 +2,46 @@
 
 import { motion } from "framer-motion";
 import { Settings } from "lucide-react";
+import { Chip } from "./ui";
 
-/* ================================
-   TECHNOLOGY DATA
-================================ */
+export default function TechStack({ content }) {
+  const layers = Array.isArray(content?.techLayers)
+    ? content.techLayers
+    : Array.isArray(content?.layers)
+    ? content.layers
+    : [];
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const description = content?.description || "";
 
-const TECH_LAYERS = [
-  {
-    id: "01",
-    title: "Infrastructure & Reliability",
-    description:
-      "Scalable and secure cloud infrastructure to ensure high availability and performance.",
-    tech: [
-      { name: "AWS", icon: "/icons/aws.svg" },
-      { name: "Azure", icon: "/icons/azure.svg" },
-      { name: "Google Cloud", icon: "/icons/gcp.svg" },
-      { name: "Vercel", icon: "/icons/kubernetes.svg" },
-      { name: "Hostinger", icon: "/icons/terraform.svg" },
-      { name: "GoDaddy", icon: "/icons/terraform.svg" },
-      { name: "Docker", icon: "/icons/docker.svg" },
-      { name: "Kubernetes", icon: "/icons/kubernetes.svg" },
-      { name: "Terraform", icon: "/icons/terraform.svg" },
-    ],
-  },
-  {
-    id: "02",
-    title: "Backend & Distributed Data",
-    description:
-      "Robust backend systems and distributed data architecture for enterprise-grade applications.",
-    tech: [
-      { name: "Java", icon: "/icons/java.svg" },
-      { name: ".NET", icon: "/icons/dotnet.svg" },
-      { name: "Node.js", icon: "/icons/nodejs.svg" },
-      { name: "Python", icon: "/icons/python.svg" },
-      { name: "Go", icon: "/icons/go.svg" },
-      { name: "Spring Boot", icon: "/icons/spring.svg" },
-      { name: "MySQL", icon: "/icons/postgresql.svg" },
-      { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
-      { name: "MongoDB", icon: "/icons/mongodb.svg" },
-      { name: "Redis", icon: "/icons/redis.svg" },
-      { name: "Kafka", icon: "/icons/kafka.svg" },
-    ],
-  },
-  {
-    id: "03",
-    title: "Frontend & Applications",
-    description:
-      "Modern UI frameworks and mobile technologies for seamless user experiences.",
-    tech: [
-      { name: "JavaScript", icon: "/icons/javascript.svg" },
-      { name: "TypeScript", icon: "/icons/typescript.svg" },
-      { name: "React", icon: "/icons/react.svg" },
-      { name: "Angular", icon: "/icons/angular.svg" },
-      { name: "Next.js", icon: "/icons/nextjs.svg" },
-      { name: "Flutter", icon: "/icons/flutter.svg" },
-      { name: "React Native", icon: "/icons/reactnative.svg" },
-      { name: "Kotlin", icon: "/icons/flutter.svg" },
-      { name: "Swift", icon: "/icons/reactnative.svg" },
-      { name: "HTML", icon: "/icons/flutter.svg" },
-      { name: "CSS", icon: "/icons/reactnative.svg" },
-    ],
-  },
-  {
-    id: "04",
-    title: "AI & Intelligence",
-    description:
-      "AI-powered systems and data intelligence to drive smarter business decisions.",
-    tech: [
-      { name: "GPT", icon: "/icons/gpt.svg" },
-      { name: "Claude", icon: "/icons/claude.svg" },
-      { name: "Llama", icon: "/icons/llama.svg" },
-      { name: "PyTorch", icon: "/icons/pytorch.svg" },
-      { name: "LangChain", icon: "/icons/langchain.svg" },
-      { name: "OpenCV", icon: "/icons/opencv.svg" },
-      { name: "Pinecone", icon: "/icons/pinecone.svg" },
-      { name: "Chroma", icon: "/icons/pinecone.svg" },
-    ],
-  },
-];
+  if (!layers.length) {
+    return null;
+  }
 
-/* ================================
-   COMPONENT
-================================ */
-
-export default function TechStack() {
   return (
     <section className="bg-white py-20 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
-
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 font-poppins font-bold px-4 py-2 rounded-full bg-[#F8F7F4] text-sm text-[#F15A24]">
-            <Settings className="w-4 h-4 text-[#F15A24]" />
-            Technology Stack
-          </div>
+          <Chip>
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            {badge}
+          </Chip>
 
           <h2 className="text-3xl md:text-4xl font-bold font-poppins text-[#162560] mt-5">
-            A Layered{" "}
-            <span className="text-[#E84B27]">Engineering Architecture</span>
+            {headingPrefix}
+            <span className="text-[#E84B27]">{headingHighlight}</span>
           </h2>
 
           <p className="text-gray-500 font-poppins max-w-2xl mx-auto mt-4">
-            We design scalable, secure, and high-performance software systems
-            using modern technologies across infrastructure, backend, frontend,
-            and AI layers.
+            {description}
           </p>
         </div>
 
         {/* Layers */}
 
         <div className="space-y-8">
-          {TECH_LAYERS.map((layer, index) => (
+          {layers.map((layer, index) => (
             <motion.div
               key={layer.id}
               initial={{ opacity: 0, y: 40 }}
@@ -141,7 +70,7 @@ export default function TechStack() {
                 {/* Technologies */}
 
                 <div className="lg:col-span-2 flex flex-wrap gap-5">
-                  {layer.tech.map((tech, i) => (
+                  {(layer.tech || []).map((tech, i) => (
                     <motion.div
                       key={i}
                       whileHover={{ y: -4 }}

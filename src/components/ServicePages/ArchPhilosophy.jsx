@@ -1,49 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Target, Building2, Radar, Settings } from "lucide-react";
+import { Target, Settings } from "lucide-react";
 import { ScrollReveal, StaggerGrid, Chip, H2, fadeLeft, fadeUp } from "./ui";
 
-const DEFAULT_ITEMS = [
-  {
-    num: "01",
-    Icon: Target,
-    title: "Product Thinking Before Feature Lists",
-    desc: 'We define the "why" before the "how." No feature gets built without a validated systems rationale.',
-  },
-  {
-    num: "02",
-    Icon: Building2,
-    title: "Architecture Before UI Polish",
-    desc: "We don't decorate what isn't structurally sound. Foundation first, finishes second — always.",
-  },
-  {
-    num: "03",
-    Icon: Radar,
-    title: "Observability Before Assumptions",
-    desc: "Monitoring is built into core logic so the system signals stress before failure occurs.",
-  },
-];
-
 export default function ArchPhilosophy({ content }) {
-  const items = content?.items || DEFAULT_ITEMS;
-  const heading = content?.heading || (
-    <>
-      We Design{" "}
-      <span className="bg-gradient-to-r from-[#FF7A45] via-[#FF5E2E] to-[#FF5225] bg-clip-text text-transparent font-poppins">
-        Decision Systems
-      </span>
-    </>
-  );
-  const description = content?.description || "Every application is a system of decisions: how data flows, where logic lives, and what breaks first. While most agencies optimize for delivery milestones, we optimize for long-term system behavior.";
-  const subtext = content?.subtext || (
-    <>
-      <strong className="text-[#0B0D17] font-poppins">
-        We Don&apos;t &ldquo;Build Apps.&rdquo;
-      </strong>{" "}
-      We Engineer Predictable Systems.
-    </>
-  );
+  const items = content?.items || [];
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const description = content?.description || "";
+  const subtext = content?.subtext || "";
+
+  if (!items.length && !heading && !description && !subtext) {
+    return null;
+  }
 
   return (
     <section
@@ -68,17 +38,22 @@ export default function ArchPhilosophy({ content }) {
         <div className="grid items-start gap-14 lg:grid-cols-[1.05fr_0.95fr]">
           {/* Left */}
           <ScrollReveal variants={fadeLeft}>
-            <Chip>
-              <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-              {content?.badge || "Architectural Philosophy"}
-            </Chip>
-            <H2 className="max-w-2xl text-[#0B0D17] font-poppins">
-              {heading}
-            </H2>
+            <div className="section-title">
+              <Chip as="div">
+                <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+                {content?.badge}
+              </Chip>
+              <H2 className="font-poppins font-bold">
+                {headingPrefix}
+                <span className="text-[#FF5225] font-poppins">
+                  {headingHighlight}
+                </span>
+              </H2>
+            </div>
             <p className="text-[#4A5568] text-base md:text-lg leading-relaxed font-poppins mb-4">
               {description}
             </p>
-            <p className="text-[#4A5568] text-sm md:text-base leading-relaxed font-poppins">
+            <p className="text-[#4A5568] font-semibold text-sm md:text-base leading-relaxed font-poppins">
               {subtext}
             </p>
           </ScrollReveal>

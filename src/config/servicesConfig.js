@@ -1,23 +1,4 @@
-import servicesDataRaw from "@/data/servicePages.json";
-
-// Map JSON data to the structure expected by the app
-export const servicesData = servicesDataRaw.map((service) => ({
-  id: service.id,
-  title: service.title,
-  category: service.category,
-  route: `/${service.slug}`,
-  component: service.title, // or some other mapping
-  description: service.description,
-}));
-
-// Group services by category to match your layout
-export const groupedServices = servicesData.reduce((acc, service) => {
-  if (!acc[service.category]) {
-    acc[service.category] = [];
-  }
-  acc[service.category].push(service);
-  return acc;
-}, {});
+export { groupedServices, servicesData } from "@/lib/servicePages";
 
 //product dropdown data
 export const productsData = [

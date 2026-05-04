@@ -3,13 +3,20 @@
 import { Settings } from "lucide-react";
 import { ScrollReveal, Chip, fadeLeft, fadeRight } from "./ui";
 
-const STATS = [
-  { val: "11+", label: "Years Engineering at Scale" },
-  { val: "150+", label: "Systems Delivered" },
-  { val: "40+", label: "Engineers on Staff" },
-];
+export default function ExpertPerspective({ content }) {
+  const stats = content?.stats || [];
+  const heading = content?.heading || "";
+  const description = content?.description || "";
+  const highlight = content?.highlight || "";
+  const quote = content?.quote || "";
+  const authorName = content?.authorName || "";
+  const authorRole = content?.authorRole || "";
+  const initials = content?.authorInitials || "";
 
-export default function ExpertPerspective() {
+  if (!stats.length && !heading && !description && !quote) {
+    return null;
+  }
+
   return (
     <section
       id="expert-perspective"
@@ -36,7 +43,7 @@ export default function ExpertPerspective() {
             <div className="space-y-6">
               <Chip as="div">
                 <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-                Expert Perspective
+                {content?.badge}
               </Chip>
 
               <h2
@@ -45,20 +52,25 @@ export default function ExpertPerspective() {
                   fontSize: "clamp(32px, 4vw, 48px)",
                 }}
               >
-                We don&apos;t build features; we build the systems that deliver
-                them.
+                {heading}
               </h2>
 
               <p className="text-white/80 text-base md:text-lg leading-relaxed font-poppins max-w-3xl">
-                Whether you are launching your first MVP or rescuing a legacy
-                product,{" "}
-                <span className="text-[#F15A24] font-semibold font-poppins">
-                  architecture is your only defense against irrelevance.
-                </span>
+                {description.split(highlight).length > 1 ? (
+                  <>
+                    {description.split(highlight)[0]}
+                    <span className="text-[#F15A24] font-semibold font-poppins">
+                      {highlight}
+                    </span>
+                    {description.split(highlight)[1]}
+                  </>
+                ) : (
+                  description
+                )}
               </p>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {STATS.map((item) => (
+                {stats.map((item) => (
                   <div
                     key={item.label}
                     className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#FF5225]/50 hover:shadow-2xl"
@@ -92,24 +104,19 @@ export default function ExpertPerspective() {
                 </div>
 
                 <p className="text-white/90 text-lg leading-relaxed font-poppins">
-                  We don&apos;t build features; we build the systems that
-                  deliver them. Whether you are launching your first MVP or
-                  rescuing a legacy product,{" "}
-                  <em className="not-italic text-[#FFB59E] font-poppins">
-                    architecture is your only defense against irrelevance.
-                  </em>
+                  {quote}
                 </p>
 
                 <div className="flex items-center gap-4 pt-4 border-t border-white/10">
                   <div className="h-12 w-12 rounded-full bg-[#FF5225]/15 text-white flex items-center justify-center font-semibold font-poppins">
-                    ML
+                    {initials}
                   </div>
                   <div>
                     <h4 className="text-white font-semibold font-poppins">
-                      Mindefy Leadership
+                      {authorName}
                     </h4>
                     <span className="text-white/60 text-xs uppercase tracking-[0.2em] font-poppins">
-                      Expert Perspective
+                      {authorRole}
                     </span>
                   </div>
                 </div>

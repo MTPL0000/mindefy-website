@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { servicesData } from "@/config/servicesConfig";
+import { groupedServices } from "@/config/servicesConfig";
 import {
   Apple,
   ArrowRight,
@@ -20,103 +20,51 @@ import {
   Zap,
 } from "lucide-react";
 
-const serviceById = servicesData.reduce((acc, service) => {
-  acc[service.id] = service;
-  return acc;
-}, {});
-
-const sectionConfig = [
-  {
-    id: "ai-data",
-    label: "AI Development & Data Services",
-    title: "AI Development & Data Services",
+const categoryMeta = {
+  "AI Development & Data Services": {
     highlight: "AI DEVELOPMENT",
     icon: Brain,
-    pillIds: [
-      "custom-ai-solutions-enterprises",
-      "generative-ai-chatbot-development",
-    ],
-    cardIds: [
-      "machine-learning-services",
-      "advanced-data-engineering-services",
-    ],
   },
-  {
-    id: "product",
-    label: "Product Development",
-    title: "Product Development",
+  "Product Development": {
     highlight: "APP DEVELOPMENT",
     icon: Smartphone,
-    pillIds: [
-      "android-app-development-experts",
-      "ios-app-development-services",
-      "hybrid-app-development-services",
-    ],
-    cardIds: [
-      "web-app-development",
-      "mvp-development-startup-support",
-      "mindful-ux-design-user-experience",
-    ],
   },
-  {
-    id: "cloud-platform",
-    label: "Cloud & Platform Engineering",
-    title: "Cloud & Platform Engineering",
+  "Cloud & Platform Engineering": {
     highlight: "CLOUD & DEVOPS",
     icon: Cloud,
-    pillIds: [
-      "cloud-engineering-services",
-      "cloud-devops-engineering",
-      "digital-transformation-consulting",
-    ],
-    cardIds: [
-      "test-automation-qa-services",
-      "microservices-architecture-consulting",
-    ],
   },
-  {
-    id: "game",
-    label: "Game Development",
-    title: "Game Development",
+  "Game Development": {
     highlight: "GAME DEVELOPMENT",
     icon: Gamepad2,
-    pillIds: [
-      "2D & 3D Game Animation",
-      "Unity and unreal Game Development",
-      "AR VR Game Development",
-    ],
-    cardIds: [""],
   },
-  {
-    id: "ecom-marketplace",
-    label: "E-commerce and Marketplace",
-    title: "E-commerce and Marketplace",
+  "E-commerce and Marketplace": {
     highlight: "E-COMMERCE DEVELOPMENT",
     icon: ShoppingCart,
-    pillIds: ["ecommerce-marketplace-development", "crm-software-solutions"],
-    cardIds: [
-      "business-process-management-solutions",
-      "low-code-app-development-services",
-    ],
   },
-  {
-    id: "business-it",
-    label: "Business IT Solutions",
-    title: "Business IT Solutions",
+  "Business IT Solutions": {
     highlight: "ENTERPRISE IT SOLUTIONS",
     icon: Building2,
-    pillIds: [
-      "IT Consulting Services",
-      "enterprise-software-solutions",
-      "staff-augmentation-services",
-    ],
-    cardIds: [
-      "startup-support-consulting",
-      "startup-incubation-consulting-services",
-      "white-label-software-solutions",
-    ],
   },
-];
+};
+
+function slugifyCategory(category) {
+  return category.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+const sectionConfig = Object.entries(groupedServices).map(
+  ([category, services]) => {
+    const meta = categoryMeta[category] || {};
+
+    return {
+      id: slugifyCategory(category),
+      label: category,
+      title: category,
+      highlight: meta.highlight || category.toUpperCase(),
+      icon: meta.icon || Code2,
+      services,
+    };
+  }
+);
 
 const pillIconMap = {
   "ios-app-development-services": Apple,
@@ -126,17 +74,14 @@ const pillIconMap = {
   "custom-ai-solutions-enterprises": Brain,
   "cloud-devops-engineering": Cloud,
   "ecommerce-marketplace-development": ShoppingCart,
-  "IT Consulting Services": Building2,
-  "2D & 3D Game Animation": Gamepad2,
-  "Unity and unreal Game Development": Gamepad2,
+  "it-consulting-strategy": Building2,
+  "game-animation-graphics": Gamepad2,
+  "unity-unreal-engine-development": Gamepad2,
+  "ar-vr-game-development": Gamepad2,
 };
 
-function getServicesByIds(ids) {
-  return ids.map((id) => serviceById[id]).filter(Boolean);
-}
-
 export default function ServicesDrop({ onItemClick, onCtaClick }) {
-  const [activeSection, setActiveSection] = useState(sectionConfig[0].id);
+  const [activeSection, setActiveSection] = useState(sectionConfig[0]?.id || "");
 
   const section = useMemo(
     () =>
@@ -145,10 +90,12 @@ export default function ServicesDrop({ onItemClick, onCtaClick }) {
     [activeSection]
   );
 
-  const pills = getServicesByIds(section.pillIds);
-  const cards = getServicesByIds(section.cardIds);
-  const sectionIndex =
-    sectionConfig.findIndex((item) => item.id === section.id) + 1;
+  if (!section) {
+    return null;
+  }
+
+  const pills = section.services.slice(0, 3);
+  const cards = section.services.slice(3);
 
   return (
     <div className="max-w-7xl mx-auto pt-2 px-1 pointer-events-auto">

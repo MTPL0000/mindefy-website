@@ -1,5 +1,5 @@
 import Link from "next/link";
-import servicesDataRaw from "@/data/servicePages.json";
+import { servicesData } from "@/config/servicesConfig";
 
 export const metadata = {
   title: "Mindefy Website Map & Service Directory",
@@ -12,12 +12,12 @@ export const metadata = {
 
 const baseUrl = "https://mindefy.tech";
 
-const servicesByCategory = servicesDataRaw.reduce((acc, service) => {
+const servicesByCategory = servicesData.reduce((acc, service) => {
   if (!acc[service.category]) {
     acc[service.category] = [];
   }
   acc[service.category].push({
-    url: `/${service.slug}`,
+    url: service.route,
     label: service.title,
   });
   return acc;

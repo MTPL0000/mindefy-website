@@ -1,99 +1,60 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import {
-  Settings,
-  Rocket,
-  Database,
-  ShieldCheck,
-  Layers,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
+import { Settings, Rocket, ChevronLeft, ChevronRight } from "lucide-react";
 
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal, Chip, H2 } from "./ui";
 
-/* ================================
-   CASE STUDIES DATA
-================================ */
+export default function CaseStudies({ content }) {
+  const cases = Array.isArray(content?.cases) ? content.cases : [];
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const autoplayMs = content?.autoplayMs || 5000;
 
-const CASES = [
-  {
-    id: "01",
-    subtitle: "Success Story 01",
-    tag: "Greenfield → Scale",
-    tagCls: "bg-[#EEF1FA] text-[#162560] border border-[#162560]",
-    title: "The 4.5 Million User Scale",
-    icon: Rocket,
-    description:
-      "Engineered a digital wellbeing ecosystem (YourHour) that handled growth from zero to millions of daily sessions with zero performance decay.",
-    techIcons: [Rocket, Layers, ShieldCheck],
-    image: "/images/yourhour/customer-response.webp",
-  },
-  {
-    id: "02",
-    subtitle: "Success Story 02",
-    tag: "Legacy Rescue",
-    tagCls:
-      "bg-[rgba(232,75,39,0.08)] text-[#E84B27] border border-[rgba(232,75,39,0.2)]",
-    title: "Zero-Failure Enterprise Logistics",
-    icon: Database,
-    description:
-      "Re-engineered a mission-critical logistics platform plagued by data inconsistency, creating layered redundancy for thousands of daily transactions.",
-    techIcons: [Database, ShieldCheck, Layers],
-    image: "/images/AAD.webp",
-  },
-];
-
-/* ================================
-   COMPONENT
-================================ */
-
-export default function CaseStudies() {
   const [index, setIndex] = useState(0);
 
-  /* ================================
-     AUTO SLIDE
-  ================================ */
-
   useEffect(() => {
+    if (!cases.length) {
+      return;
+    }
+
     const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
+      setIndex((prev) => (prev + 1) % cases.length);
+    }, autoplayMs);
 
     return () => clearInterval(interval);
-  }, [index]);
-
-  /* ================================
-     SLIDE FUNCTIONS
-  ================================ */
+  }, [autoplayMs, cases.length]);
 
   const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % CASES.length);
+    setIndex((prev) => (prev + 1) % cases.length);
   };
 
   const prevSlide = () => {
-    setIndex((prev) => (prev - 1 + CASES.length) % CASES.length);
+    setIndex((prev) => (prev - 1 + cases.length) % cases.length);
   };
 
-  const currentCase = CASES[index];
-  const Icon = currentCase.icon;
+  if (!cases.length) {
+    return null;
+  }
+
+  const currentCase = cases[index];
+  const Icon = currentCase.icon || Rocket;
   const isReverse = index % 2 !== 0;
 
   return (
     <section id="case-studies" className="py-20 md:py-24 bg-[#F8F7F4]">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
-
         <ScrollReveal className="text-center mb-16">
           <Chip>
             <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            CASE STUDIES
+            {badge}
           </Chip>
 
           <H2 className="text-center">
-            Systems <span className="text-[#E84B27]">Under Real Load</span>
+            {headingPrefix}{" "}
+            <span className="text-[#E84B27]">{headingHighlight}</span>
           </H2>
         </ScrollReveal>
 
@@ -144,12 +105,14 @@ export default function CaseStudies() {
                   className={`${isReverse ? "lg:order-2" : ""}`}
                 >
                   <div className="rounded-2xl p-3 overflow-hidden shadow-xl">
-                    <img
-                      src={currentCase.image}
-                      alt={currentCase.title}
-                      loading="lazy"
-                      className="w-full aspect-auto"
-                    />
+                    {currentCase.image && (
+                      <img
+                        src={currentCase.image}
+                        alt={currentCase.title}
+                        loading="lazy"
+                        className="w-full aspect-auto"
+                      />
+                    )}
                   </div>
                 </motion.div>
 
@@ -197,7 +160,7 @@ export default function CaseStudies() {
                       </span>
 
                       <div className="flex gap-3">
-                        {currentCase.techIcons.map((TIcon, i) => (
+                        {(currentCase.techIcons || []).map((TIcon, i) => (
                           <div
                             key={i}
                             className="w-9 h-9 rounded-lg bg-[#F8F7F4] flex items-center justify-center"
@@ -214,13 +177,12 @@ export default function CaseStudies() {
           </div>
 
           {/* Dots */}
-
           <div className="flex justify-center gap-3 mt-10">
-            {CASES.map((_, i) => (
+            {cases.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setIndex(i)}
-                className={`w-4 h-2.5 rounded-full font-poppins transition ${
+                className={`w-4 h-2.5 cursor-pointer rounded-full font-poppins transition ${
                   index === i ? "bg-[#E84B27] w-6" : "bg-gray-300"
                 }`}
               />

@@ -5,37 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal, Chip, H2 } from "./ui";
 import { Settings, Plus, Minus } from "lucide-react";
 
-const DEFAULT_FAQS = [
-  {
-    question: "How long does app development take?",
-    answer:
-      "As long as required to avoid shortcuts. We don't optimize for artificial deadlines that compromise architecture. Discovery typically takes 2–3 weeks, with honest timelines provided upfront based on your project complexity and requirements.",
-  },
-  {
-    question: "How do you balance speed vs. quality?",
-    answer:
-      "We decide what must be perfect (architecture, data models, security) and what must be adaptable (UI, feature scope). This deliberate split lets us move fast where it's safe and slow down where shortcuts cost millions later.",
-  },
-  {
-    question: "How does AI integration fit into your process?",
-    answer:
-      "AI accelerates analysis — code review, pattern detection, load testing simulation — but human judgment governs architecture. We use AI to stress-test and surface risks faster, not to make structural decisions autonomously.",
-  },
-  {
-    question: "What engagement models do you offer?",
-    answer:
-      "Three models: Dedicated Engineering Squads for long-term growth (full-stack TL, Frontend, Backend, QA), Project-Based Modernization for fixed-outcome legacy rescues or MVP launches, and Architecture-as-a-Service for ongoing consulting to maintain structural guardrails.",
-  },
-  {
-    question: "Do you work with regulated industries?",
-    answer:
-      "Yes — we have deep experience in Healthcare (HIPAA/GDPR), Fintech (data integrity, audit trails), and Logistics (real-time consistency). Compliance is treated as architecture, not a checkbox applied at the end of the project.",
-  },
-];
-
 export default function FAQ({ content }) {
   const [open, setOpen] = useState(null);
-  const faqs = content?.faqs || DEFAULT_FAQS;
+  const faqs = Array.isArray(content?.faqs) ? content.faqs : [];
+  const heading =
+    content?.heading ||
+    `${content?.headingPrefix || ""}${content?.headingHighlight || ""}`.trim();
+
+  if (!faqs.length) {
+    return null;
+  }
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -62,16 +41,10 @@ export default function FAQ({ content }) {
         <ScrollReveal className="text-center mb-14">
           <Chip>
             <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            {content?.badge || "FAQ"}
+            {content?.badge || ""}
           </Chip>
 
-          <H2 className="text-center">
-            {content?.heading || (
-              <>
-                Common <span className="text-[#E84B27]">Questions</span>
-              </>
-            )}
-          </H2>
+          <H2 className="text-center">{heading}</H2>
         </ScrollReveal>
 
         <div className="space-y-6">

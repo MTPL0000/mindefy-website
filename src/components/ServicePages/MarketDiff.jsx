@@ -1,78 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Settings,
-  Target,
-  Layers,
-  AlertTriangle,
-  Activity,
-  Trophy,
-  CheckCircle,
-  XCircle,
-} from "lucide-react";
-import { AppDevButton } from "./ui";
+import { Settings, Target, CheckCircle, XCircle } from "lucide-react";
+import { AppDevButton, Chip } from "./ui";
 
-/* ================================
-   DATA
-================================ */
+export default function MarketDifferentiation({ content }) {
+  const data = Array.isArray(content?.comparisonData)
+    ? content.comparisonData
+    : [];
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const description = content?.description || "";
+  const traditionalTitle = content?.traditionalTitle || "";
+  const mindefyTitle = content?.mindefyTitle || "";
+  const ctaLabel = content?.ctaLabel || "";
+  const ctaLink = content?.ctaLink || "";
 
-const comparisonData = [
-  {
-    title: "Focus",
-    icon: Target,
-    traditional: 'Speed to "Demo"',
-    mindefy: "Stability at Scale",
-  },
-  {
-    title: "Architecture",
-    icon: Layers,
-    traditional: "Templated / Off-the-shelf",
-    mindefy: "Bespoke / Scale-ready",
-  },
-  {
-    title: "Tech Debt",
-    icon: AlertTriangle,
-    traditional: '"Fix it later" (High Debt)',
-    mindefy: '"Build it right" (Clean Architecture)',
-  },
-  {
-    title: "Testing",
-    icon: Activity,
-    traditional: "Manual / Surface level",
-    mindefy: "AI-Driven Chaos Engineering",
-  },
-  {
-    title: "Outcome",
-    icon: Trophy,
-    traditional: "A Launchable MVP",
-    mindefy: "An Evolvable Asset",
-  },
-];
+  if (!data.length) {
+    return null;
+  }
 
-/* ================================
-   COMPONENT
-================================ */
-
-export default function MarketDifferentiation() {
   return (
     <section className="bg-[#F8F7F4] py-20 md:py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
-
         <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm mb-6"
-          >
-            <Settings className="w-4 h-4 text-[#E84B27]" />
-            <span className="text-sm font-poppins font-semibold text-[#E84B27]">
-              MARKET DIFFERENTIATION
-            </span>
-          </motion.div>
+          <Chip as="div">
+            <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
+            {badge}
+          </Chip>
 
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -81,9 +37,9 @@ export default function MarketDifferentiation() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold font-poppins text-[#162560] leading-tight"
           >
-            Traditional Agencies vs{" "}
+            {headingPrefix}
             <span className="text-[#E84B27] font-poppins">
-              Mindefy Engineering
+              {headingHighlight}
             </span>
           </motion.h2>
 
@@ -94,8 +50,7 @@ export default function MarketDifferentiation() {
             viewport={{ once: true }}
             className="text-gray-600 text-base font-poppins mt-4 max-w-2xl mx-auto"
           >
-            We don't just build software fast — we build systems that scale,
-            evolve, and remain stable under real-world pressure.
+            {description}
           </motion.p>
         </div>
 
@@ -110,12 +65,12 @@ export default function MarketDifferentiation() {
             className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300"
           >
             <h3 className="text-xl font-poppins font-semibold text-gray-700 mb-8">
-              Traditional Agencies
+              {traditionalTitle}
             </h3>
 
             <div className="space-y-4">
-              {comparisonData.map((item, i) => {
-                const Icon = item.icon;
+              {data.map((item, i) => {
+                const Icon = item.icon || Target;
 
                 return (
                   <motion.div
@@ -157,11 +112,11 @@ export default function MarketDifferentiation() {
 
             <div className="absolute top-0 right-0 w-40 h-40 bg-[#E84B27] opacity-20 rounded-full blur-3xl"></div>
 
-            <h3 className="text-xl font-semibold mb-6">Mindefy Engineering</h3>
+            <h3 className="text-xl font-semibold mb-6">{mindefyTitle}</h3>
 
             <div className="space-y-4">
-              {comparisonData.map((item, i) => {
-                const Icon = item.icon;
+              {data.map((item, i) => {
+                const Icon = item.icon || Target;
 
                 return (
                   <motion.div
@@ -195,23 +150,25 @@ export default function MarketDifferentiation() {
 
         {/* CTA */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <AppDevButton
-            href="/contact-us-technology-innovators"
-            primaryColor="#F94D00"
-            secondaryColor="#162560"
-            textColor="#FFFFFF"
-            className="hover:shadow-orange-500/20"
+        {ctaLabel && ctaLink && (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-center mt-16"
           >
-            Start Your Engineering Journey
-          </AppDevButton>
-        </motion.div>
+            <AppDevButton
+              href={ctaLink}
+              primaryColor="#F94D00"
+              secondaryColor="#162560"
+              textColor="#FFFFFF"
+              className="hover:shadow-orange-500/20"
+            >
+              {ctaLabel}
+            </AppDevButton>
+          </motion.div>
+        )}
       </div>
     </section>
   );

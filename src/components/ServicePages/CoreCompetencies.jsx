@@ -10,65 +10,12 @@ import {
   AppDevButton,
   fadeUp,
 } from "./ui";
-import {
-  Rocket,
-  Building2,
-  Smartphone,
-  Globe2,
-  Cog,
-  HelpCircle,
-  Settings,
-} from "lucide-react";
-
-const SERVICES = [
-  {
-    num: "01",
-    tag: "Startup",
-    Icon: Rocket,
-    title: "Startup Development",
-    desc: "Robust, audit-ready foundations for early-stage companies designed to survive rapid growth and Series A due diligence.",
-  },
-  {
-    num: "02",
-    tag: "Enterprise",
-    Icon: Building2,
-    title: "Enterprise Development",
-    desc: "High-complexity systems designed to modernize legacy logic, ensure strict compliance, and handle massive organizational data.",
-  },
-  {
-    num: "03",
-    tag: "Mobile",
-    Icon: Smartphone,
-    title: "Mobile Development",
-    desc: "High-fidelity native and cross-platform development (iOS, Android, React Native, Flutter) engineered for performance.",
-  },
-  {
-    num: "04",
-    tag: "Web",
-    Icon: Globe2,
-    title: "Web Development",
-    desc: "Distributed web systems and Progressive Web Apps (PWAs) built for high-concurrency and SEO authority.",
-  },
-  {
-    num: "05",
-    tag: "Custom",
-    Icon: Cog,
-    title: "Custom Development",
-    desc: "Bespoke solutions designed for unique business logic that off-the-shelf templates cannot handle.",
-  },
-  {
-    cta: true,
-    num: null,
-    tag: null,
-    Icon: HelpCircle,
-    title: "Not sure which track fits?",
-    desc: "Let's evaluate your requirements and recommend the right engineering approach for your project.",
-  },
-];
+import { Cog, Settings } from "lucide-react";
 
 /* ─── Service Card ─── */
 function ServiceCard({ s }) {
   const [flipped, setFlipped] = useState(false);
+  const IconComponent = typeof s.Icon === "function" ? s.Icon : Cog;
 
   return (
     <div
@@ -84,7 +31,7 @@ function ServiceCard({ s }) {
         transition={{ duration: 0.65, ease: [0.43, 0.13, 0.23, 0.96] }}
         style={{ transformStyle: "preserve-3d" }}
       >
-        {/* ══ FRONT ══════════════════════════════════════════════════════ */}
+        {/* ══ FRONT ═══ */}
         <div className="absolute inset-0 rounded-2xl bg-[#162560]/8 px-6 py-8 flex flex-col justify-between border border-[#E2DDD4] shadow-[0 8px 32px -12px rgba(22,37,96,0.10)] overflow-hidden">
           {/* Number + corner tick */}
           <div className="flex items-start justify-between">
@@ -113,7 +60,7 @@ function ServiceCard({ s }) {
           {/* Icon bubble */}
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="bg-[#162560]/90 flex items-center justify-center rounded-xl w-16 h-14 shadow-[0 6px 18px -4px rgba(22,37,96,0.35)]">
-              <s.Icon size={32} color="#fff" strokeWidth={1.3} />
+              <IconComponent size={32} color="#fff" strokeWidth={1.3} />
             </div>
 
             <h3 className="text-[#162560] text-xl font-poppins font-semibold leading-snug">
@@ -129,7 +76,7 @@ function ServiceCard({ s }) {
           </div>
         </div>
 
-        {/* ══ BACK ═══════════════════════════════════════════════════════ */}
+        {/* ══ BACK ══ */}
         <div
           className="absolute bg-[#F15A24] inset-0 rounded-2xl px-5 py-5 flex flex-col gap-4 overflow-hidden"
           style={{
@@ -152,7 +99,7 @@ function ServiceCard({ s }) {
           {/* Icon + title header */}
           <div className="relative flex items-center gap-4">
             <div className="bg-white/30 w-12 h-12 shrink-0 flex items-center justify-center rounded-xl">
-              <s.Icon size={28} color="#fff" strokeWidth={1.3} />
+              <IconComponent size={28} color="#fff" strokeWidth={1.3} />
             </div>
             <h3 className="text-white text-xl font-poppins font-bold leading-tight">
               {s.title}
@@ -185,8 +132,18 @@ function ServiceCard({ s }) {
   );
 }
 
-/* ─── Section ─── */
-export default function CoreCompetencies() {
+export default function CoreCompetencies({ content }) {
+  const services = Array.isArray(content?.services) ? content.services : [];
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const headingSuffix = content?.headingSuffix || "";
+  const description = content?.description || "";
+
+  if (!services.length) {
+    return null;
+  }
+
   return (
     <section
       id="services"
@@ -213,10 +170,10 @@ export default function CoreCompetencies() {
         <ScrollReveal className="text-center mb-14">
           <Chip>
             <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            Core Competencies
+            {badge}
           </Chip>
           <H2 className="text-center font-poppins">
-            Specialized{" "}
+            {headingPrefix}
             <span
               className="bg-clip-text text-transparent font-poppins"
               style={{
@@ -224,18 +181,17 @@ export default function CoreCompetencies() {
                   "linear-gradient(90deg, #F15A24 0%, #C93D0E 100%)",
               }}
             >
-              Engineering
+              {headingHighlight}
             </span>{" "}
-            Services
+            {headingSuffix}
           </H2>
           <p className="text-[#4A5568] text-lg font-poppins max-w-xl mx-auto">
-            We help teams navigate the transition from concept to
-            high-performance system through specialized engineering tracks.
+            {description}
           </p>
         </ScrollReveal>
 
         <StaggerGrid className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
-          {SERVICES.map((s, i) => (
+          {services.map((s, i) => (
             <motion.div key={i} variants={fadeUp}>
               <ServiceCard s={s} />
             </motion.div>

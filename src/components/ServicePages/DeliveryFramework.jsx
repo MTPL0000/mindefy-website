@@ -1,102 +1,46 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Settings,
-  Search,
-  Layers,
-  PenTool,
-  ShieldCheck,
-  Activity,
-  Rocket,
-  Eye,
-} from "lucide-react";
-
+import { Settings } from "lucide-react";
 import { ScrollReveal, Chip, H2 } from "./ui";
 
-/* ================================
-   DELIVERY FRAMEWORK DATA
-================================ */
+export default function DeliveryFramework({ content }) {
+  const steps = Array.isArray(content?.steps) ? content.steps : [];
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const description = content?.description || "";
 
-const STEPS = [
-  {
-    n: "01",
-    title: "Product Discovery & Strategy",
-    desc: "Mapping user journeys vs. technical constraints.",
-    icon: Search,
-  },
-  {
-    n: "02",
-    title: "Architectural Design",
-    desc: "Defining service boundaries and stack selection.",
-    icon: Layers,
-  },
-  {
-    n: "03",
-    title: "Intent-Driven UI/UX",
-    desc: "Prototyping flows for real-world interaction patterns.",
-    icon: PenTool,
-  },
-  {
-    n: "04",
-    title: "Engineering Guardrails",
-    desc: "Modular development using Clean Architecture and strict type-safety.",
-    icon: ShieldCheck,
-  },
-  {
-    n: "05",
-    title: "Stress Testing (QA)",
-    desc: "Chaos Engineering to find failure points.",
-    icon: Activity,
-  },
-  {
-    n: "06",
-    title: "Orchestrated Deployment",
-    desc: "Zero-downtime releases and ASO.",
-    icon: Rocket,
-  },
-  {
-    n: "07",
-    title: "Intelligent Observability",
-    desc: "Real-time monitoring to drive the next iteration.",
-    icon: Eye,
-  },
-];
+  if (!steps.length) {
+    return null;
+  }
 
-/* ================================
-   COMPONENT
-================================ */
-
-export default function DeliveryFramework() {
   return (
     <section id="process" className="py-20 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
-
         <ScrollReveal className="text-center mb-16">
           <Chip>
             <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            DELIVERY FRAMEWORK
+            {badge}
           </Chip>
 
           <H2 className="text-center">
-            The Mindefy{" "}
+            {headingPrefix}
             <span className="text-[#E84B27] font-poppins">
-              Durability Protocol
+              {headingHighlight}
             </span>
           </H2>
 
           <p className="text-gray-500 text-lg font-poppins max-w-2xl mx-auto mt-4">
-            The Mindefy Durability Protocol. Our proprietary
-            Agile development process works for both new builds and deep audits.
+            {description}
           </p>
         </ScrollReveal>
 
         {/* Process Grid */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {STEPS.map((step, index) => {
-            const Icon = step.icon;
+          {steps.map((step, index) => {
+            const Icon = step.icon || Settings;
 
             return (
               <motion.div

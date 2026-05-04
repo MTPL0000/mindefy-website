@@ -1,62 +1,10 @@
 "use client";
 
-import { Settings, Rocket, Wrench, CheckCircle } from "lucide-react";
-import {
-  ScrollReveal,
-  Chip,
-  H2,
-  AppDevButton,
-  fadeLeft,
-  fadeRight,
-} from "./ui";
-
-/* ================================
-   DATA (Reusable & Extendable)
-================================ */
-
-const strategicPaths = [
-  {
-    id: "founder",
-    label: "For Founders — Fresh Build",
-    title: "Build a Scalable Foundation",
-    description:
-      "Create a strong technical base ready for Series A due diligence, rapid scaling, and long-term product stability.",
-    icon: Rocket,
-    variant: "dark",
-    cta: "Build My MVP Architecture",
-    benefits: [
-      "Scalable architecture from day one",
-      "Cloud-ready infrastructure",
-      "Clean and maintainable codebase",
-      "Fast MVP and product launch",
-    ],
-    animation: fadeLeft,
-  },
-  {
-    id: "cto",
-    label: "For CTOs — Legacy Project",
-    title: "Modernize Your Stack",
-    description:
-      "Remove technical debt, improve performance, and restore engineering velocity in complex legacy systems.",
-    icon: Wrench,
-    variant: "light",
-    cta: "Audit My Legacy System",
-    benefits: [
-      "Complete technical audit",
-      "Performance optimization",
-      "Infrastructure modernization",
-      "Faster engineering delivery",
-    ],
-    animation: fadeRight,
-  },
-];
-
-/* ================================
-   CARD COMPONENT
-================================ */
+import { Settings, Rocket, CheckCircle } from "lucide-react";
+import { ScrollReveal, Chip, H2, AppDevButton } from "./ui";
 
 function StrategicCard({ data }) {
-  const Icon = data.icon;
+  const Icon = data.icon || Rocket;
 
   if (data.variant === "dark") {
     return (
@@ -91,7 +39,7 @@ function StrategicCard({ data }) {
 
             {/* Benefits */}
             <ul className="space-y-4 mb-10">
-              {data.benefits.map((item, index) => (
+              {(data.benefits || []).map((item, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-[#F15A24]" />
                   <span className="text-white/80">{item}</span>
@@ -109,7 +57,7 @@ function StrategicCard({ data }) {
               size="sm"
               className="!px-7 !py-3.5 !text-sm shadow-lg"
             >
-              {data.cta}
+              {data.cta || "Start Conversation"}
             </AppDevButton>
           </div>
         </div>
@@ -146,7 +94,7 @@ function StrategicCard({ data }) {
 
           {/* Benefits */}
           <ul className="space-y-4 mb-10">
-            {data.benefits.map((item, index) => (
+            {(data.benefits || []).map((item, index) => (
               <li key={index} className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-[#E84B27]" />
                 <span className="text-gray-600">{item}</span>
@@ -163,7 +111,7 @@ function StrategicCard({ data }) {
             size="sm"
             className="!px-7 !py-3.5 !text-sm hover:shadow-lg hover:shadow-[rgba(232,75,39,0.3)]"
           >
-            {data.cta}
+            {data.cta || "Start Conversation"}
           </AppDevButton>
         </div>
       </div>
@@ -171,32 +119,37 @@ function StrategicCard({ data }) {
   );
 }
 
-/* ================================
-   MAIN COMPONENT
-================================ */
-
 export default function StrategicAlignment({
-  title = "Choose Your Path",
-  highlight = "Your Path",
-  description = "Whether you're building a new product or modernizing an existing system, we provide the right technical direction to accelerate growth and reduce engineering risks.",
+  content,
   sectionId = "strategic-alignment",
 }) {
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const description = content?.description || "";
+  const paths = Array.isArray(content?.strategicPaths)
+    ? content.strategicPaths
+    : [];
+
+  if (!paths.length) {
+    return null;
+  }
+
   return (
     <section
       id={sectionId}
       className="py-20 md:py-24 bg-gradient-to-b from-white to-gray-50"
     >
       <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
           <Chip>
             <Settings className="w-4 h-4 text-[#F15A24]" />
-            Strategic Alignment
+            {badge}
           </Chip>
 
           <H2 className="text-center mt-4">
-            {title.replace(highlight, "")}
-            <span className="text-[#E84B27]"> {highlight}</span>
+            {headingPrefix}
+            <span className="text-[#E84B27]"> {headingHighlight}</span>
           </H2>
 
           <p className="text-gray-500 mt-4 text-lg leading-relaxed">
@@ -206,17 +159,14 @@ export default function StrategicAlignment({
 
         {/* Cards */}
         <div className="grid lg:grid-cols-2 gap-10">
-          {strategicPaths.map((path) => (
+          {paths.map((path) => (
             <StrategicCard key={path.id} data={path} />
           ))}
         </div>
 
         {/* Bottom Note */}
         <ScrollReveal className="text-center mt-14">
-          <p className="text-gray-400 text-sm">
-            Not sure which path fits your situation? We help you decide during
-            the discovery call.
-          </p>
+          <p className="text-gray-400 text-sm">{content?.bottomNote || ""}</p>
         </ScrollReveal>
       </div>
     </section>

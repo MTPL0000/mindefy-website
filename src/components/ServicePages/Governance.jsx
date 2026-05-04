@@ -3,34 +3,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ScrollReveal, StaggerGrid, H2, fadeUp } from "./ui";
-import {
-  Cog,
-  ShieldCheck,
-  LockKeyhole,
-  SearchCheck,
-  Settings,
-} from "lucide-react";
-
-const ITEMS = [
-  {
-    Icon: ShieldCheck,
-    title: "100% IP & Asset Ownership",
-    desc: "You own every line of code, design asset, and diagram.",
-  },
-  {
-    Icon: LockKeyhole,
-    title: "Security By Design",
-    desc: "Integrated OWASP security checks and AI-powered scanning.",
-  },
-  {
-    Icon: SearchCheck,
-    title: "Transparent Engineering",
-    desc: "Real-time access to our progress and architectural decisions.",
-  },
-];
+import { Cog, Settings } from "lucide-react";
 
 function ServiceCard({ item }) {
   const [hovered, setHovered] = useState(false);
+  const IconComponent = typeof item.Icon === "function" ? item.Icon : Cog;
 
   return (
     <motion.article
@@ -87,7 +64,7 @@ function ServiceCard({ item }) {
               hovered ? "bg-white" : "bg-[#F15A24]"
             }`}
           >
-            <item.Icon
+            <IconComponent
               size={38}
               strokeWidth={1.5}
               color={hovered ? "#F15A24" : "#FFFFFF"}
@@ -118,7 +95,16 @@ function ServiceCard({ item }) {
   );
 }
 
-export default function Governance() {
+export default function Governance({ content }) {
+  const items = content?.items || [];
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+
+  if (!items.length) {
+    return null;
+  }
+
   return (
     <section
       id="governance"
@@ -146,12 +132,12 @@ export default function Governance() {
             <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
 
             <span className="font-poppins text-xs font-semibold uppercase tracking-[0.16em] text-[#E84B27]">
-              GOVERNANCE
+              {badge}
             </span>
           </div>
 
           <H2 className="text-center font-poppins mt-5">
-            Risk Management &
+            {headingPrefix}
             <span
               className="bg-clip-text text-transparent ml-2"
               style={{
@@ -159,13 +145,13 @@ export default function Governance() {
                   "linear-gradient(90deg, #F15A24 0%, #C93D0E 100%)",
               }}
             >
-              Compliance
+              {headingHighlight}
             </span>
           </H2>
         </ScrollReveal>
 
         <StaggerGrid className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
-          {ITEMS.map((item, i) => (
+          {items.map((item, i) => (
             <ServiceCard key={i} item={item} />
           ))}
         </StaggerGrid>

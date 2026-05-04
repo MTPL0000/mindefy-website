@@ -1,67 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ScrollReveal, H2, fadeUp } from "./ui";
-import {
-  Zap,
-  Layers,
-  Activity,
-  Lock,
-  DollarSign,
-  Settings,
-} from "lucide-react";
+import { ScrollReveal, H2, fadeUp, Chip } from "./ui";
+import { Settings } from "lucide-react";
 
-const CATEGORIES = [
-  {
-    id: "fresh",
-    label: "For Fresh Builds",
-    tagline: "The Greenfield Trap",
-    color: "#0B0D17",
-    bg: "bg-[#F2F5F7]",
-    hoverBg: "hover:bg-white",
-    border: "border-l-4 border-[#332771]",
-    items: [
-      {
-        icon: <Zap className="w-5 h-5" />,
-        title: "Speed Over Structure",
-        desc: 'Initial builds that become technical liabilities within months because they were optimized for "demo speed" only.',
-      },
-      {
-        icon: <Layers className="w-5 h-5" />,
-        title: "Architectural Debt",
-        desc: "Most scalability problems are designed in during the first 20% of development.",
-      },
-    ],
-  },
-  {
-    id: "legacy",
-    label: "For Legacy Systems",
-    tagline: "The Legacy Wall",
-    color: "#F94D00",
-    bg: "bg-[#F2F5F7]",
-    hoverBg: "hover:bg-white",
-    border: "border-l-4 border-[#F94D00]",
-    items: [
-      {
-        icon: <Activity className="w-5 h-5" />,
-        title: "Performance Decay",
-        desc: "Apps that worked once but now degrade under modern user loads.",
-      },
-      {
-        icon: <Lock className="w-5 h-5" />,
-        title: "Engineering Paralysis",
-        desc: "Teams stuck maintaining decisions they can’t undo, making every new feature a risk.",
-      },
-      {
-        icon: <DollarSign className="w-5 h-5" />,
-        title: "Infrastructure Bloat",
-        desc: "Rising operational costs paired with declining system performance.",
-      },
-    ],
-  },
-];
+export default function ScalingCeiling({ content }) {
+  const badge = content?.badge || "";
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
+  const description = content?.description || "";
+  const categories = Array.isArray(content?.categories)
+    ? content.categories
+    : [];
 
-export default function ScalingCeiling() {
+  if (!categories.length) {
+    return null;
+  }
+
   return (
     <section className="relative py-20 md:py-24 bg-white overflow-hidden">
       {/* Background elements */}
@@ -94,32 +49,23 @@ export default function ScalingCeiling() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-[#F2F5F7] rounded-full mb-6 border border-gray-100 shadow-sm"
-          >
+          <Chip>
             <Settings className="w-4 h-4 text-[#F15A24] animate-spin-slow" />
-            <span className="text-xs font-bold text-[#F15A24] uppercase tracking-widest font-poppins">
-              DIAGNOSTIC ANALYSIS
-            </span>
-          </motion.div>
+            {badge}
+          </Chip>
 
           <H2 className="text-3xl md:text-5xl font-bold text-[#0B0D17] leading-snug mb-8 font-poppins">
-            The Scaling Ceiling <br />
-            <span className="text-[#F94D00]">The Real Problem</span>
+            {headingPrefix} <br />
+            <span className="text-[#F94D00]">{headingHighlight}</span>
           </H2>
 
           <p className="text-[#534F5A] text-lg md:text-xl max-w-2xl mx-auto font-poppins leading-relaxed">
-            Most teams don’t fail because they lack developers. They fail
-            because technical decisions are made without understanding long-term
-            consequences.
+            {description}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-          {CATEGORIES.map((cat, idx) => (
+          {categories.map((cat, idx) => (
             <ScrollReveal key={cat.id} variants={fadeUp} delay={idx * 0.2}>
               <div
                 className={`group h-full ${cat.bg} ${cat.hoverBg} ${cat.border} p-8 lg:p-12 rounded-2xl shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-2`}
@@ -151,7 +97,7 @@ export default function ScalingCeiling() {
                 </div>
 
                 <div className="space-y-10">
-                  {cat.items.map((item, i) => (
+                  {(cat.items || []).map((item, i) => (
                     <div key={i} className="flex gap-6 items-start">
                       <div
                         className={`shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-500 ${
@@ -160,7 +106,9 @@ export default function ScalingCeiling() {
                             : "bg-[#F94D00]/5 text-[#F94D00] group-hover:bg-[#F94D00] group-hover:text-white"
                         }`}
                       >
-                        {item.icon}
+                        {item.icon || (
+                          <Settings className="w-6 h-6" strokeWidth={1.5} />
+                        )}
                       </div>
                       <div className="flex-1">
                         <h4 className="text-lg font-bold text-[#0B0D17] mb-2 font-poppins leading-tight">

@@ -659,7 +659,7 @@ export default function Navbar() {
               )}
             </div>
 
-            <a
+            <Link
               href="/mindful-ux-design-user-experience"
               className="hover:text-[#2c2178] cursor-pointer whitespace-nowrap hidden lg:block"
               style={{
@@ -670,7 +670,7 @@ export default function Navbar() {
               }}
             >
               Mindful UX "Design Studio"
-            </a>
+            </Link>
           </div>
 
           {/* Desktop CTA */}
@@ -812,13 +812,13 @@ export default function Navbar() {
                 )}
               </div>
 
-              <a
+              <Link
                 href="/mindful-ux-design-user-experience"
                 onClick={handleMobileMenuItemClick}
                 className="hover:text-[#2c2178] cursor-pointer py-1"
               >
                 Mindful UX "Design Studio"
-              </a>
+              </Link>
 
               <button
                 onClick={scrollToContact}
@@ -955,13 +955,13 @@ export default function Navbar() {
               )}
             </div>
 
-            <a
+            <Link
               href="/mindful-ux-design-user-experience"
               onClick={handleTabletDrawerItemClick}
               className="hover:text-[#2c2178] cursor-pointer py-2"
             >
               Mindful UX "Design Studio"
-            </a>
+            </Link>
 
             <button
               onClick={scrollToContact}

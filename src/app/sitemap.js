@@ -1,4 +1,4 @@
-import servicesDataRaw from "@/data/servicePages.json";
+import { servicePages } from "@/lib/servicePages";
 
 export const dynamic = "force-static";
 
@@ -32,8 +32,8 @@ export default function sitemap() {
     },
   ];
 
-  const serviceRoutes = servicesDataRaw.map((service) => ({
-    url: `${baseUrl}/${service.slug}`,
+  const serviceRoutes = servicePages.map((service) => ({
+    url: `${baseUrl}${service.route}`,
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.9,
