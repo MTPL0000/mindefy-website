@@ -8,9 +8,8 @@ import { Settings, Plus, Minus } from "lucide-react";
 export default function FAQ({ content }) {
   const [open, setOpen] = useState(null);
   const faqs = Array.isArray(content?.faqs) ? content.faqs : [];
-  const heading =
-    content?.heading ||
-    `${content?.headingPrefix || ""}${content?.headingHighlight || ""}`.trim();
+  const headingPrefix = content?.headingPrefix || "";
+  const headingHighlight = content?.headingHighlight || "";
 
   if (!faqs.length) {
     return null;
@@ -44,7 +43,12 @@ export default function FAQ({ content }) {
             {content?.badge || ""}
           </Chip>
 
-          <H2 className="text-center">{heading}</H2>
+          <H2 className="text-center font-poppins font-bold">
+            {headingPrefix}
+            <span className="text-[#FF5225] font-poppins">
+              {headingHighlight}
+            </span>
+          </H2>
         </ScrollReveal>
 
         <div className="space-y-6">
