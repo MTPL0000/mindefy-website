@@ -5,6 +5,8 @@ import Image from "next/image";
 import { ArrowRight, CheckCircle2, Hand, PieChart, Star } from "lucide-react";
 
 export default function ProductsDropdown({ onItemClick }) {
+  const starRatings = [1, 2, 3, 4, 5];
+
   return (
     <div className="group w-full max-w-5xl pt-2 overflow-hidden font-poppins rounded-2xl border border-[#e8ddd4] bg-gradient-to-br from-[#ffffff] via-[#fffaf6] to-[#fff4ed] shadow-[0_30px_70px_-40px_rgba(20,24,34,0.45)] transition-shadow duration-300 hover:shadow-[0_36px_80px_-44px_rgba(20,24,34,0.5)]">
       <div className="grid items-stretch md:grid-cols-[52%_48%]">
@@ -18,10 +20,30 @@ export default function ProductsDropdown({ onItemClick }) {
               Free Download
             </span>
             <span className="inline-flex items-center gap-1 text-[#FF5225]">
-              {[1, 2, 3, 4, 5].map((item) => (
-                <Star key={item} size={16} fill="currentColor" />
-              ))}
-              <span className="text-[#5e547e]">(4.3/5)</span>
+              {starRatings.map((item) => {
+                if (item === 5) {
+                  return (
+                    <span key={item} className="relative inline-flex">
+                      <Star
+                        size={16}
+                        fill="#d9d9d9"
+                        color="#d9d9d9"
+                        className="block"
+                      />
+                      <Star
+                        size={16}
+                        fill="currentColor"
+                        color="currentColor"
+                        className="absolute left-0 top-0 block"
+                        style={{ clipPath: "inset(0 50% 0 0)" }}
+                      />
+                    </span>
+                  );
+                }
+
+                return <Star key={item} size={16} fill="currentColor" />;
+              })}
+              <span className="text-[#5e547e]">(4.4/5) 77K+ reviews</span>
             </span>
           </div>
 
@@ -71,21 +93,47 @@ export default function ProductsDropdown({ onItemClick }) {
             </div>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-5">
+          <div className="mt-8 flex flex-wrap items-center gap-2">
             <a
-              href="https://play.google.com/store/apps/details?id=com.mindefy.phoneaddiction.mobilepe&hl=en_IN&gl=US"
+              href="https://play.google.com/store/apps/details?id=com.mindefy.phoneaddiction.mobilepe"
               target="_blank"
               rel="noopener noreferrer"
               onClick={onItemClick}
-              className="group/cta inline-flex items-center gap-2 rounded-full text-black border border-black px-6 py-3 text-base font-semibold opacity-85 transition-all hover:bg-black hover:text-white hover:border-black hover:-translate-y-1 hover:opacity-95"
+              className="group/cta inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-black px-3 py-3 text-sm font-semibold text-black opacity-85 transition-all hover:-translate-y-1 hover:border-black hover:bg-black hover:text-white hover:opacity-95"
             >
-              Get Started Free
+              Get free for
+              <Image
+                src="/images/android-icon.svg"
+                alt="Android"
+                loading="lazy"
+                width={20}
+                height={20}
+                className="shrink-0 brightness-0 transition-[filter] group-hover/cta:invert"
+              />
+            </a>
+
+            <a
+              href="https://apps.apple.com/in/app/yourhour-screen-time-control/id6784166547"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={onItemClick}
+              className="group/cta inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-black px-3 py-3 text-sm font-semibold text-black opacity-85 transition-all hover:-translate-y-1 hover:border-black hover:bg-black hover:text-white hover:opacity-95"
+            >
+              Get free for
+              <Image
+                src="/images/ios-icon.svg"
+                alt="iOS"
+                loading="lazy"
+                width={20}
+                height={20}
+                className="transition-[filter] group-hover/cta:invert"
+              />
             </a>
 
             <Link
               href="/yourhour-screentime-app"
               onClick={onItemClick}
-              className="group/cta inline-flex items-center gap-2 rounded-full border border-black bg-black px-6 py-3 text-base font-semibold text-white opacity-85 transition-all hover:-translate-y-1 hover:opacity-95"
+              className="group/cta inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-black bg-black px-3 py-3 text-sm font-semibold text-white opacity-85 transition-all hover:-translate-y-1 hover:opacity-95"
             >
               View Features
               <ArrowRight

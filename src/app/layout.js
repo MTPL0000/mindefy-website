@@ -243,7 +243,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className="font-poppins overflow-x-hidden">
+      <body className="font-poppins overflow-x-hidden" suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

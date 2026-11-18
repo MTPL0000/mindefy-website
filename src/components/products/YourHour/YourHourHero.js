@@ -1,99 +1,53 @@
 "use client";
 
+import Image from "next/image";
+
 export default function YourHourHero() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative mb-12 w-full lg:min-h-[90vh] overflow-hidden">
-        {/* Left Side - White with Cyan Gradient */}
-        <div
-          className="absolute top-0 left-0 w-1/2 h-full"
-          style={{
-            background: "rgba(255, 255, 255, 1)",
-          }}
-        ></div>
-
-        {/* Left Side - Blurred Cyan Gradient Only */}
-        <div
-          className="absolute top-0 left-0 w-1/2 h-full"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(34, 171, 223, 0.5) 68%, rgba(255, 255, 255, 0) 95%)",
-            filter: "blur(50px)",
-          }}
-        ></div>
-
-        {/* Right Side - Dark Background */}
-        <div
-          className="absolute top-0 right-0 w-1/2 h-full"
-          style={{
-            background: "rgba(18, 18, 18, 1)",
-          }}
-        ></div>
-
-        {/* Right Side - Blurred Cyan Gradient Only */}
-        <div
-          className="absolute top-0 right-0 w-1/2 h-full"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(18, 18, 18, 0) 30%, rgba(34, 171, 223, 0.5) 68%, rgba(18, 18, 18, 0) 95%)",
-            filter: "blur(50px)",
-          }}
-        ></div>
-
-        <div className="relative z-10 container mx-auto px-4 pt-12 h-full">
-          {/* Logo and Title */}
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center mb-4">
-              {/* Logo */}
-              <div className="w-20 mr-3">
-                <img
-                  src="/images/yourhour/yourhour-logo.svg"
-                  alt="Case Study"
-                  className="w-full object-contain"
-                  loading="lazy"
-                />
-              </div>
-              <div className="text-left">
-                <h1 className="text-4xl lg:text-5xl font-lobster font-bold text-[#21ABE1] border-b-2 border-[#21ABE1]">
-                  YourHour
-                </h1>
-                <p className="text-sm font-poppins text-[#21ABE1] uppercase tracking-wide">
-                  The Digital Wellness App
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Split Content Container */}
-          <div className="flex items-center justify-between w-full ">
-            {/* LEFT SIDE - Case (Light Theme) */}
-            <div className="w-1/2 flex flex-col items-end">
-              <h2 className="text-3xl md:text-4xl font-normal text-black font-poppins mb-6 pr-1">
-                Case
-              </h2>
-              <img
-                src="/images/yourhour/yourhour-lightImg.webp"
-                alt="Case Study"
-                className="w-full max-w-lg object-contain"
-                loading="lazy"
-              />
-            </div>
-
-            {/* RIGHT SIDE - Study (Dark Theme) */}
-            <div className="w-1/2 flex flex-col items-start">
-              <h2 className="text-3xl md:text-4xl font-normal text-white font-poppins mb-6 pl-1">
-                Study
-              </h2>
-              <img
-                src="/images/yourhour/yourhour-darkImg.webp"
-                alt="Study"
-                className="w-full max-w-lg object-contain"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
+      <div
+        className="relative mb-12 w-full overflow-hidden bg-center bg-no-repeat"
+        style={{
+          aspectRatio: "9 / 5",
+          backgroundImage: "url('/images/CaseStudy-Hero-image.webp')",
+          backgroundSize: "100% 100%"
+        }}
+      >
+        <a
+          href="https://play.google.com/store/apps/details?id=com.mindefy.phoneaddiction.mobilepe"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Get YourHour on Google Play"
+          className="absolute z-10 block"
+          style={{ left: "72.7%", top: "8%", width: "12.9%", height: "6%" }}
+        >
+          <Image
+            src="/images/CaseStudy-play-store.svg"
+            alt="Case Study"
+            loading="lazy"
+            width={185}
+            height={56}
+            className="block h-full w-full"
+          />
+        </a>
+        <a
+          href="https://apps.apple.com/in/app/yourhour-screen-time-control/id6784166547"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Download YourHour on the App Store"
+          className="absolute z-10 block"
+          style={{ left: "86%", top: "8%", width: "11.6%", height: "6%" }}
+        >
+          <Image
+            src="/images/CaseStudy-app-store.svg"
+            alt="Case Study"
+            loading="lazy"
+            width={167}
+            height={56}
+            className="block h-full w-full"
+          />
+        </a>
       </div>
 
       {/* Section with content */}

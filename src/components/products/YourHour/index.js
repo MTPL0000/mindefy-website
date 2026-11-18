@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import YourHourHero from "./YourHourHero";
 import SectionLoader from "../../ui/SectionLoader";
+import YourHourDownloadBanner from "./YourHourDownloadBanner";
 
 const YourHourSections = dynamic(() => import("./YourHourSections"), {
   loading: () => <SectionLoader minHeight="min-h-screen" />,
@@ -17,6 +18,7 @@ export default function YourHourProduct() {
 
       {/* Below-the-fold sections - Lazy loaded */}
       <YourHourSections />
+      <YourHourDownloadBanner />
     </section>
   );
 }
