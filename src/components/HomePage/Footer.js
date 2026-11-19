@@ -64,6 +64,19 @@ export default function Footer() {
                     className="object-contain"
                   />
                 </a>
+                <a
+                  className="bg-[#edbaad] bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 cursor-pointer transition-all"
+                  href="https://www.youtube.com/@YourHourApp"
+                  target="_blank"
+                >
+                  <Image
+                    src="/images/yt.svg"
+                    alt="YouTube"
+                    width={28}
+                    height={28}
+                    className="object-contain"
+                  />
+                </a>
               </div>
             </div>
           </div>

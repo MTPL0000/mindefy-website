@@ -2,6 +2,26 @@
 
 import Image from "next/image";
 
+function PlatformIcon({ platform }) {
+  const iconSources = {
+    android: "/images/android-icon.svg",
+    ios: "/images/ios-icon.svg",
+    tv: "/images/tv-icon.svg",
+  };
+
+  return (
+    <Image
+      src={iconSources[platform]}
+      alt="icon"
+      loading="lazy"
+      aria-hidden="true"
+      width={67}
+      height={67}
+      className="h-full w-full object-contain"
+    />
+  );
+}
+
 const caseStudies = [
   {
     title: "Mindful Wellness",
@@ -10,8 +30,23 @@ const caseStudies = [
       "The ultimate mobile application designed to help you break your digital addictions and focus on what really matters. Over 10 million users and 70,000+ positive feedbacks on the Play Store, Yourhour is the go-to solution for anyone looking to improve their digital wellness.",
     image: "/images/mfux-1.webp",
     aspectRatio: "aspect-[1.5/1]",
-    productLink:
-      "https://play.google.com/store/apps/details?id=com.mindefy.phoneaddiction.mobilepe&hl=en_IN&gl=US",
+    storeLinks: [
+      {
+        href: "https://play.google.com/store/apps/details?id=com.mindefy.phoneaddiction.mobilepe",
+        label: "Google Play",
+        platform: "android",
+      },
+      {
+        href: "https://apps.apple.com/in/app/yourhour-screen-time-control/id6784166547",
+        label: "App Store",
+        platform: "ios",
+      },
+      {
+        href: "https://play.google.com/store/apps/details?id=com.mindefy.phoneaddiction.mobilepe",
+        label: "Google Play for TV",
+        platform: "tv",
+      },
+    ],
     caseStudyLink: "/yourhour-screentime-app",
     imagePosition: "left",
   },
@@ -44,8 +79,7 @@ const caseStudies = [
       "A video streaming platform designed to help you have access to precise courses and talks from world-renowned mentors in the fields of psychology, yoga, and the tools and knowledge you need to live your life in full spectrum, and achieve True Fulfilment.",
     image: "/images/mfux-3.webp",
     aspectRatio: "aspect-[1.8/1]",
-    productLink:
-      "https://play.google.com/store/apps/details?id=com.miraclelensapp",
+    productLink: null,
     caseStudyLink: "/jego-ott-platform",
     imagePosition: "right",
   },
@@ -135,6 +169,24 @@ function CaseStudyCard({ study, index }) {
             </h3>
           </div>
 
+          {study.storeLinks && (
+            <div className="flex items-center gap-4">
+              {study.storeLinks.map(({ href, label, platform }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  title={label}
+                  className="w-10 h-10"
+                >
+                  <PlatformIcon platform={platform} />
+                </a>
+              ))}
+            </div>
+          )}
+
           {study.productLink && (
             <a
               href={study.productLink}
@@ -142,7 +194,7 @@ function CaseStudyCard({ study, index }) {
               rel="noopener noreferrer"
               className="text-[#1E4494] text-base md:text-lg cursor-pointer font-semibold hover:underline"
             >
-              {"{Link to Product}"}
+              {"Link to Product"}
             </a>
           )}
 
